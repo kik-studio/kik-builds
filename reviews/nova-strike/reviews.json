@@ -17,6 +17,9 @@
   "pinned_utc": "2026-09-25 10:38",
   "web": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1a/web/index.html",
   "apk": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1a/nova-strike.apk",
-  "build_page": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1a/"
+  "build_page": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1a/",
+  "package": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1a/package/",
+  "owner_files": "https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1a",
+  "published_utc": "2026-09-25 11:33 UTC"
  }
 ]
