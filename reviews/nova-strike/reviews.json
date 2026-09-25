@@ -1,0 +1,12 @@
+[
+ {
+  "slug": "rb1",
+  "label": "Review Build 1 (baseline — draft)",
+  "build_id": "0.1.0+0c2fc79",
+  "source_commit": "0c2fc79",
+  "pinned_utc": "2026-09-25 08:13",
+  "web": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/web/index.html",
+  "apk": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/nova-strike.apk",
+  "build_page": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/"
+ }
+]
