@@ -1,0 +1,269 @@
+{
+ "build": "0.1.0+e83ae23",
+ "targets": {
+  "empty_share_max": 0.1,
+  "longest_gap_max_s": 3.0,
+  "gaps_over_2s_max": 1,
+  "time_to_p2_max_s": 30.0,
+  "top_level_share_min": 0.2,
+  "pickup_collect_min": 0.7,
+  "deaths_max": 0,
+  "mean_enemies_min": 2.0
+ },
+ "targets_source": "config/build_checks.json feel.targets (+ studio defaults)",
+ "runs": [
+  {
+   "run": "1.01",
+   "unit": "unit_arcanist",
+   "build": "0.1.0+e83ae23",
+   "result": "victory",
+   "seconds": 84.3,
+   "opening_s": 0.0,
+   "play_s": 84.3,
+   "empty_s": 13.2,
+   "empty_share": 0.156,
+   "longest_gap_s": 3.1,
+   "gaps_over_2s": 3,
+   "level_time_s": {
+    "P1": 11.4,
+    "P2": 19.0,
+    "P3": 29.5,
+    "P4": 24.4
+   },
+   "level_share": {
+    "P1": 0.136,
+    "P2": 0.225,
+    "P3": 0.35,
+    "P4": 0.289
+   },
+   "time_to_p2_s": 11.4,
+   "top_level_share": 0.289,
+   "pickups": {
+    "power": {
+     "spawned": 7,
+     "collected": 7,
+     "lost": 0
+    },
+    "light": {
+     "spawned": 2,
+     "collected": 2,
+     "lost": 0
+    }
+   },
+   "pickup_collect": 1.0,
+   "deaths": 0,
+   "min_hull": 121.0,
+   "supers": 2,
+   "bombs": 0,
+   "mean_enemies": 1.36,
+   "mean_hostile_bullets": 0.67,
+   "waves": 9,
+   "checks": {
+    "empty_share_max": {
+     "value": 0.156,
+     "pass": false
+    },
+    "longest_gap_max_s": {
+     "value": 3.1,
+     "pass": false
+    },
+    "gaps_over_2s_max": {
+     "value": 3,
+     "pass": false
+    },
+    "time_to_p2_max_s": {
+     "value": 11.4,
+     "pass": true
+    },
+    "top_level_share_min": {
+     "value": 0.289,
+     "pass": true
+    },
+    "pickup_collect_min": {
+     "value": 1.0,
+     "pass": true
+    },
+    "deaths_max": {
+     "value": 0,
+     "pass": true
+    },
+    "mean_enemies_min": {
+     "value": 1.36,
+     "pass": false
+    }
+   }
+  },
+  {
+   "run": "1.05",
+   "unit": "unit_striker",
+   "build": "0.1.0+e83ae23",
+   "result": "victory",
+   "seconds": 86.0,
+   "opening_s": 0.0,
+   "play_s": 86.0,
+   "empty_s": 3.5,
+   "empty_share": 0.04,
+   "longest_gap_s": 2.1,
+   "gaps_over_2s": 1,
+   "level_time_s": {
+    "P1": 20.8,
+    "P2": 25.2,
+    "P3": 28.0,
+    "P4": 12.0
+   },
+   "level_share": {
+    "P1": 0.242,
+    "P2": 0.293,
+    "P3": 0.326,
+    "P4": 0.139
+   },
+   "time_to_p2_s": 20.8,
+   "top_level_share": 0.139,
+   "pickups": {
+    "power": {
+     "spawned": 10,
+     "collected": 7,
+     "lost": 3
+    },
+    "light": {
+     "spawned": 1,
+     "collected": 1,
+     "lost": 0
+    }
+   },
+   "pickup_collect": 0.727,
+   "deaths": 0,
+   "min_hull": 110.0,
+   "supers": 2,
+   "bombs": 0,
+   "mean_enemies": 2.26,
+   "mean_hostile_bullets": 2.61,
+   "waves": 9,
+   "checks": {
+    "empty_share_max": {
+     "value": 0.04,
+     "pass": true
+    },
+    "longest_gap_max_s": {
+     "value": 2.1,
+     "pass": true
+    },
+    "gaps_over_2s_max": {
+     "value": 1,
+     "pass": true
+    },
+    "time_to_p2_max_s": {
+     "value": 20.8,
+     "pass": true
+    },
+    "top_level_share_min": {
+     "value": 0.139,
+     "pass": false
+    },
+    "pickup_collect_min": {
+     "value": 0.727,
+     "pass": true
+    },
+    "deaths_max": {
+     "value": 0,
+     "pass": true
+    },
+    "mean_enemies_min": {
+     "value": 2.26,
+     "pass": true
+    }
+   }
+  },
+  {
+   "run": "2.01",
+   "unit": "unit_striker",
+   "build": "0.1.0+e83ae23",
+   "result": "victory",
+   "seconds": 85.5,
+   "opening_s": 0.0,
+   "play_s": 85.5,
+   "empty_s": 7.8,
+   "empty_share": 0.092,
+   "longest_gap_s": 3.1,
+   "gaps_over_2s": 2,
+   "level_time_s": {
+    "P1": 13.6,
+    "P2": 32.2,
+    "P3": 26.7,
+    "P4": 13.0
+   },
+   "level_share": {
+    "P1": 0.159,
+    "P2": 0.377,
+    "P3": 0.312,
+    "P4": 0.152
+   },
+   "time_to_p2_s": 13.6,
+   "top_level_share": 0.152,
+   "pickups": {
+    "light": {
+     "spawned": 7,
+     "collected": 7,
+     "lost": 0
+    },
+    "power": {
+     "spawned": 9,
+     "collected": 7,
+     "lost": 2
+    }
+   },
+   "pickup_collect": 0.875,
+   "deaths": 0,
+   "min_hull": 120.0,
+   "supers": 2,
+   "bombs": 0,
+   "mean_enemies": 2.1,
+   "mean_hostile_bullets": 1.07,
+   "waves": 9,
+   "checks": {
+    "empty_share_max": {
+     "value": 0.092,
+     "pass": true
+    },
+    "longest_gap_max_s": {
+     "value": 3.1,
+     "pass": false
+    },
+    "gaps_over_2s_max": {
+     "value": 2,
+     "pass": false
+    },
+    "time_to_p2_max_s": {
+     "value": 13.6,
+     "pass": true
+    },
+    "top_level_share_min": {
+     "value": 0.152,
+     "pass": false
+    },
+    "pickup_collect_min": {
+     "value": 0.875,
+     "pass": true
+    },
+    "deaths_max": {
+     "value": 0,
+     "pass": true
+    },
+    "mean_enemies_min": {
+     "value": 2.1,
+     "pass": true
+    }
+   }
+  }
+ ],
+ "passing_runs": {
+  "empty_share_max": 2,
+  "longest_gap_max_s": 1,
+  "gaps_over_2s_max": 1,
+  "time_to_p2_max_s": 3,
+  "top_level_share_min": 1,
+  "pickup_collect_min": 3,
+  "deaths_max": 3,
+  "mean_enemies_min": 2
+ }
+}

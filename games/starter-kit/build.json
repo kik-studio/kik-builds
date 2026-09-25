@@ -1,0 +1,37 @@
+{
+ "game_id": "starter-kit",
+ "version": "0.1.0",
+ "updated": "2026-09-25",
+ "commit": "1bf63fd",
+ "links": {
+  "web": "https://kik-studio.github.io/kik-builds/games/starter-kit/web/index.html",
+  "apk": "https://kik-studio.github.io/kik-builds/games/starter-kit/starter-kit.apk"
+ },
+ "screenshots": {
+  "en": [
+   "https://kik-studio.github.io/kik-builds/games/starter-kit/screens/game_en.png",
+   "https://kik-studio.github.io/kik-builds/games/starter-kit/screens/menu_en.png",
+   "https://kik-studio.github.io/kik-builds/games/starter-kit/screens/settings_en.png"
+  ],
+  "ar": [
+   "https://kik-studio.github.io/kik-builds/games/starter-kit/screens/game_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/starter-kit/screens/menu_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/starter-kit/screens/settings_ar.png"
+  ]
+ },
+ "apk_bytes": 27603145,
+ "shapes": [
+  "https://kik-studio.github.io/kik-builds/games/starter-kit/screens/game_en_desktop.png",
+  "https://kik-studio.github.io/kik-builds/games/starter-kit/screens/game_en_tablet.png"
+ ],
+ "video": [
+  "https://kik-studio.github.io/kik-builds/games/starter-kit/video/gameplay.mp4",
+  "https://kik-studio.github.io/kik-builds/games/starter-kit/video/showcase_fx.mp4",
+  "https://kik-studio.github.io/kik-builds/games/starter-kit/video/showcase_ui.mp4"
+ ],
+ "tests": "https://kik-studio.github.io/kik-builds/games/starter-kit/tests.txt",
+ "benchmark_apk": "https://kik-studio.github.io/kik-builds/games/starter-kit/starter-kit-benchmark.apk",
+ "branch": "main",
+ "checks": null,
+ "build_id": "0.1.0+1bf63fd"
+}

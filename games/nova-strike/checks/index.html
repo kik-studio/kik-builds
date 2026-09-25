@@ -1,0 +1,137 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Checks · 0.1.0+e83ae23</title>
+<style>body{font:15px/1.5 system-ui,sans-serif;background:#0f1218;color:#e8ebf0;max-width:1200px;margin:auto;padding:16px}
+table{border-collapse:collapse;display:block;overflow-x:auto;margin:8px 0}td,th{border:1px solid #2c3340;padding:4px 8px;white-space:nowrap}
+th{background:#1a1f28}a{color:#9cc8ff}img{max-width:48%;margin:4px;border:1px solid #2c3340;vertical-align:top}
+@media(max-width:700px){img{max-width:100%}}</style>
+<p><a href="../build.json">build.json</a> · automated checks for build <b>0.1.0+e83ae23</b></p>
+<h1>Game-feel report · build 0.1.0+e83ae23</h1>
+<p>Automated: measured from 3 bot run(s) (event logs). Targets: config/build_checks.json feel.targets (+ studio defaults). It shows pacing and systems working; it does <strong>not</strong> show that a person finds it fun.</p>
+<h2>Summary (runs passing each target)</h2>
+<table>
+<thead>
+<tr>
+<th>Target</th>
+<th>Threshold</th>
+<th>Passing runs</th>
+<th>Median</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Empty screen time (share of play)</td>
+<td>≤ 0.1</td>
+<td>2/3 ⚠️</td>
+<td>0.09</td>
+</tr>
+<tr>
+<td>Longest empty gap (s)</td>
+<td>≤ 3.0</td>
+<td>1/3 ⚠️</td>
+<td>3.1</td>
+</tr>
+<tr>
+<td>Empty gaps over 2 s</td>
+<td>≤ 1</td>
+<td>1/3 ⚠️</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Time to first power-up P2 (s)</td>
+<td>≤ 30.0</td>
+<td>3/3 ✅</td>
+<td>13.6</td>
+</tr>
+<tr>
+<td>Time at top power level (share)</td>
+<td>≥ 0.2</td>
+<td>1/3 ⚠️</td>
+<td>0.15</td>
+</tr>
+<tr>
+<td>Pickups collected (share)</td>
+<td>≥ 0.7</td>
+<td>3/3 ✅</td>
+<td>0.88</td>
+</tr>
+<tr>
+<td>Bot deaths</td>
+<td>≤ 0</td>
+<td>3/3 ✅</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Mean enemies on screen</td>
+<td>≥ 2.0</td>
+<td>2/3 ⚠️</td>
+<td>2.1</td>
+</tr>
+</tbody>
+</table>
+<h2>Per run</h2>
+<table>
+<thead>
+<tr>
+<th>Run</th>
+<th>Unit</th>
+<th>Result</th>
+<th>Play s</th>
+<th>Empty %</th>
+<th>Longest gap</th>
+<th>Gaps&gt;2s</th>
+<th>→ P2 s</th>
+<th>Time at P1/P2/P3/P4 %</th>
+<th>Pickups</th>
+<th>Mean enemies</th>
+<th>Supers</th>
+<th>Fails</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.01</td>
+<td>arcanist</td>
+<td>victory</td>
+<td>84.3</td>
+<td>16</td>
+<td>3.1</td>
+<td>3</td>
+<td>11.4</td>
+<td>14/22/35/29</td>
+<td>100%</td>
+<td>1.36</td>
+<td>2</td>
+<td>Empty screen time (share of play), Longest empty gap (s), Empty gaps over 2 s, Mean enemies on screen</td>
+</tr>
+<tr>
+<td>1.05</td>
+<td>striker</td>
+<td>victory</td>
+<td>86.0</td>
+<td>4</td>
+<td>2.1</td>
+<td>1</td>
+<td>20.8</td>
+<td>24/29/33/14</td>
+<td>73%</td>
+<td>2.26</td>
+<td>2</td>
+<td>Time at top power level (share)</td>
+</tr>
+<tr>
+<td>2.01</td>
+<td>striker</td>
+<td>victory</td>
+<td>85.5</td>
+<td>9</td>
+<td>3.1</td>
+<td>2</td>
+<td>13.6</td>
+<td>16/38/31/15</td>
+<td>88%</td>
+<td>2.1</td>
+<td>2</td>
+<td>Longest empty gap (s), Empty gaps over 2 s, Time at top power level (share)</td>
+</tr>
+</tbody>
+</table>
