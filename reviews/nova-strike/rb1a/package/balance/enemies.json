@@ -1,0 +1,295 @@
+{
+ "roles": {
+  "moth": {
+   "sprite": "res://assets/enemies/moth.png",
+   "tier": "fodder",
+   "hp": 40.0,
+   "armor": 0.0,
+   "size": 176.0,
+   "radius": 53.0,
+   "speed": 420.0,
+   "score": 100,
+   "charge": 3.0,
+   "threat": 1.0,
+   "lens": "Vector2(0, 0.3)",
+   "drops": {
+    "power": 0.04,
+    "light": 0.1,
+    "bomb": 0.005
+   }
+  },
+  "weaver": {
+   "sprite": "res://assets/enemies/weaver.png",
+   "tier": "assault",
+   "hp": 130.0,
+   "armor": 1.0,
+   "size": 240.0,
+   "radius": 72.0,
+   "speed": 150.0,
+   "score": 350,
+   "charge": 7.0,
+   "threat": 3.0,
+   "lens": "Vector2(0, 0.42)",
+   "drops": {
+    "power": 0.1,
+    "light": 0.3,
+    "bomb": 0.02
+   }
+  },
+  "tender": {
+   "sprite": "res://assets/enemies/tender.png",
+   "tier": "assault",
+   "hp": 110.0,
+   "armor": 2.0,
+   "size": 210.0,
+   "radius": 66.0,
+   "speed": 190.0,
+   "score": 300,
+   "charge": 6.0,
+   "threat": 1.5,
+   "lens": "Vector2(0, 0.3)",
+   "drops": {
+    "power": 0.08,
+    "light": 0.25,
+    "bomb": 0.02
+   }
+  },
+  "diver": {
+   "sprite": "res://assets/enemies/diver.png",
+   "tier": "fodder",
+   "hp": 55.0,
+   "armor": 0.0,
+   "size": 180.0,
+   "radius": 43.0,
+   "speed": 300.0,
+   "score": 150,
+   "charge": 3.5,
+   "threat": 1.5,
+   "lens": "Vector2(0, 0.4)",
+   "drops": {
+    "power": 0.04,
+    "light": 0.12,
+    "bomb": 0.005
+   }
+  },
+  "bomber": {
+   "sprite": "res://assets/enemies/bomber.png",
+   "tier": "assault",
+   "hp": 150.0,
+   "armor": 2.0,
+   "size": 246.0,
+   "radius": 82.0,
+   "speed": 120.0,
+   "score": 400,
+   "charge": 7.0,
+   "threat": 3.0,
+   "lens": "Vector2(0, 0.36)",
+   "drops": {
+    "power": 0.12,
+    "light": 0.3,
+    "bomb": 0.04
+   }
+  },
+  "sniper": {
+   "sprite": "res://assets/enemies/sniper.png",
+   "tier": "assault",
+   "hp": 90.0,
+   "armor": 0.0,
+   "size": 234.0,
+   "radius": 36.0,
+   "speed": 160.0,
+   "score": 350,
+   "charge": 6.0,
+   "threat": 2.5,
+   "lens": "Vector2(0, 0.48)",
+   "drops": {
+    "power": 0.08,
+    "light": 0.25,
+    "bomb": 0.02
+   }
+  },
+  "mine_layer": {
+   "sprite": "res://assets/enemies/mine_layer.png",
+   "tier": "assault",
+   "hp": 140.0,
+   "armor": 2.0,
+   "size": 246.0,
+   "radius": 84.0,
+   "speed": 150.0,
+   "score": 380,
+   "charge": 7.0,
+   "threat": 2.5,
+   "lens": "Vector2(0, 0.4)",
+   "drops": {
+    "power": 0.1,
+    "light": 0.3,
+    "bomb": 0.03
+   }
+  },
+  "carrier": {
+   "sprite": "res://assets/enemies/carrier.png",
+   "tier": "elite",
+   "hp": 520.0,
+   "armor": 3.0,
+   "size": 360.0,
+   "radius": 96.0,
+   "speed": 70.0,
+   "score": 1500,
+   "charge": 16.0,
+   "threat": 5.0,
+   "lens": "Vector2(0, 0.1)",
+   "drops": {
+    "power": 0.45,
+    "light": 0.55,
+    "bomb": 0.15
+   }
+  },
+  "repair_tender": {
+   "sprite": "res://assets/enemies/repair_tender.png",
+   "tier": "assault",
+   "hp": 120.0,
+   "armor": 1.0,
+   "size": 222.0,
+   "radius": 66.0,
+   "speed": 170.0,
+   "score": 350,
+   "charge": 6.0,
+   "threat": 1.5,
+   "lens": "Vector2(0, 0.3)",
+   "drops": {
+    "power": 0.1,
+    "light": 0.3,
+    "bomb": 0.02
+   }
+  },
+  "phase_warden": {
+   "sprite": "res://assets/enemies/phase_warden.png",
+   "tier": "assault",
+   "hp": 160.0,
+   "armor": 1.0,
+   "size": 246.0,
+   "radius": 84.0,
+   "speed": 110.0,
+   "score": 450,
+   "charge": 8.0,
+   "threat": 3.0,
+   "lens": "Vector2(0, 0.3)",
+   "drops": {
+    "power": 0.12,
+    "light": 0.35,
+    "bomb": 0.03
+   }
+  },
+  "relay": {
+   "sprite": "res://assets/enemies/relay.png",
+   "tier": "assault",
+   "hp": 110.0,
+   "armor": 1.0,
+   "size": 210.0,
+   "radius": 72.0,
+   "speed": 130.0,
+   "score": 320,
+   "charge": 6.0,
+   "threat": 2.0,
+   "lens": "Vector2(0, 0.3)",
+   "drops": {
+    "power": 0.08,
+    "light": 0.3,
+    "bomb": 0.02
+   }
+  },
+  "siege_barge": {
+   "sprite": "res://assets/enemies/siege_barge.png",
+   "tier": "elite",
+   "hp": 480.0,
+   "armor": 3.0,
+   "size": 400.0,
+   "radius": 77.0,
+   "speed": 60.0,
+   "score": 1800,
+   "charge": 18.0,
+   "threat": 5.0,
+   "lens": "Vector2(0, 0.46)",
+   "drops": {
+    "power": 0.55,
+    "light": 0.45,
+    "bomb": 0.2
+   }
+  },
+  "command_elite": {
+   "sprite": "res://assets/enemies/command_elite.png",
+   "tier": "elite",
+   "hp": 600.0,
+   "armor": 2.0,
+   "size": 306.0,
+   "radius": 86.0,
+   "speed": 140.0,
+   "score": 2000,
+   "charge": 20.0,
+   "threat": 4.0,
+   "lens": "Vector2(0, 0.38)",
+   "drops": {
+    "power": 0.6,
+    "light": 0.4,
+    "bomb": 0.25
+   }
+  },
+  "turret": {
+   "sprite": "",
+   "tier": "assault",
+   "hp": 90.0,
+   "armor": 1.0,
+   "size": 72.0,
+   "radius": 36.0,
+   "speed": 0.0,
+   "score": 250,
+   "charge": 4.0,
+   "threat": 1.0,
+   "lens": "Vector2(0, 0.5)",
+   "drops": {}
+  },
+  "dummy": {
+   "sprite": "res://assets/enemies/relay.png",
+   "tier": "assault",
+   "hp": 400.0,
+   "armor": 0.0,
+   "size": 170.0,
+   "radius": 60.0,
+   "speed": 120.0,
+   "score": 0,
+   "charge": 5.0,
+   "threat": 0.0,
+   "lens": "Vector2(0, 0.3)",
+   "drops": {}
+  },
+  "dummy_heavy": {
+   "sprite": "res://assets/enemies/siege_barge.png",
+   "tier": "elite",
+   "hp": 2400.0,
+   "armor": 3.0,
+   "size": 330.0,
+   "radius": 70.0,
+   "speed": 0.0,
+   "score": 0,
+   "charge": 10.0,
+   "threat": 0.0,
+   "lens": "Vector2(0, 0.4)",
+   "drops": {}
+  }
+ },
+ "spawnable": [
+  "moth",
+  "weaver",
+  "tender",
+  "diver",
+  "bomber",
+  "sniper",
+  "mine_layer",
+  "carrier",
+  "repair_tender",
+  "phase_warden",
+  "relay",
+  "siege_barge",
+  "command_elite"
+ ]
+}

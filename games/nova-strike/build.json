@@ -1,0 +1,65 @@
+{
+ "game_id": "nova-strike",
+ "version": "0.1.0",
+ "updated": "2026-09-25",
+ "commit": "473bb47",
+ "links": {
+  "web": "https://kik-studio.github.io/kik-builds/games/nova-strike/web/index.html",
+  "apk": "https://kik-studio.github.io/kik-builds/games/nova-strike/nova-strike.apk"
+ },
+ "screenshots": {
+  "en": [
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/game_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/menu_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/settings_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_boot_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_briefing_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_campaign_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_credits_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_ending_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_endless_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_hangar_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_hangar_poor_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_home_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_mastery_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_results_defeat_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_results_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_settings_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_store_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_store_supporter_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_title_en.png"
+  ],
+  "ar": [
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/game_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/menu_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/settings_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_boot_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_briefing_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_campaign_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_credits_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_ending_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_endless_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_hangar_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_hangar_poor_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_home_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_mastery_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_results_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_results_defeat_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_settings_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_store_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_store_supporter_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_title_ar.png"
+  ]
+ },
+ "apk_bytes": 90123730,
+ "shapes": [
+  "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/game_en_desktop.png",
+  "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/game_en_tablet.png"
+ ],
+ "video": [
+  "https://kik-studio.github.io/kik-builds/games/nova-strike/video/gameplay.mp4"
+ ],
+ "tests": "https://kik-studio.github.io/kik-builds/games/nova-strike/tests.txt",
+ "benchmark_apk": "https://kik-studio.github.io/kik-builds/games/nova-strike/nova-strike-benchmark.apk",
+ "build_id": "0.1.0+473bb47"
+}

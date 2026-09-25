@@ -1,0 +1,300 @@
+{
+ "game": "starter-kit",
+ "slug": "t1",
+ "label": "Pipeline test (starter kit — not a game)",
+ "source_ref": "46c5b95",
+ "record_ref": "46c5b95",
+ "pinned": {
+  "game_id": "starter-kit",
+  "version": "0.1.0",
+  "updated": "2026-09-24",
+  "commit": "46c5b95",
+  "links": {
+   "web": "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/web/index.html",
+   "apk": "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/starter-kit.apk"
+  },
+  "screenshots": {
+   "en": [
+    "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/screens/game_en.png",
+    "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/screens/menu_en.png",
+    "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/screens/settings_en.png"
+   ],
+   "ar": [
+    "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/screens/game_ar.png",
+    "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/screens/menu_ar.png",
+    "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/screens/settings_ar.png"
+   ]
+  },
+  "apk_bytes": 27499589,
+  "shapes": [
+   "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/screens/game_en_desktop.png",
+   "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/screens/game_en_tablet.png"
+  ],
+  "video": [
+   "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/video/gameplay.mp4"
+  ],
+  "tests": "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/tests.txt",
+  "benchmark_apk": "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/starter-kit-benchmark.apk",
+  "build_id": "0.1.0+46c5b95",
+  "review_label": "Pipeline test (starter kit — not a game)",
+  "review_slug": "t1",
+  "source_commit": "46c5b95",
+  "pinned_utc": "2026-09-25 08:19",
+  "pinned_by": "Brain (tools/review/pin_build.py)"
+ },
+ "built_utc": "2026-09-25 08:30 UTC",
+ "disclaimer": "Automated checks below confirm files, uploads, checksums, archives and bot runs only. They do not establish visual quality, enjoyable gameplay or owner acceptance.",
+ "checks": [
+  {
+   "type": "automated",
+   "check": "package source_ref 46c5b95 matches the pinned build's source commit 46c5b95",
+   "result": "pass"
+  },
+  {
+   "type": "automated",
+   "check": "inside starter-kit/, recording commit 46c5b95 differs from source 46c5b95 only in tests/ and review/ (0 files changed)",
+   "result": "pass"
+  }
+ ],
+ "items": [
+  {
+   "id": "readme",
+   "title": "README",
+   "category": "docs",
+   "visibility": "public",
+   "path": "starter-kit/review/t1/README.md",
+   "evidence": [
+    {
+     "type": "builder",
+     "detail": "Brain-authored test package"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded README.md (public review page)",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "README.md",
+     "bytes": 407,
+     "sha256": "cca7762ebdecee0d8e257482de3569112b9be9426dbc72f771f9340ada4cdabd",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/package/readme/README.md",
+     "where": "public review page"
+    }
+   ]
+  },
+  {
+   "id": "readme_pdf",
+   "title": "README (PDF)",
+   "category": "docs",
+   "visibility": "public",
+   "pdf_from": "starter-kit/review/t1/README.md",
+   "evidence": [
+    {
+     "type": "automated",
+     "check": "PDF generated from starter-kit/review/t1/README.md at build time",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded README.pdf (public review page)",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "README.pdf",
+     "bytes": 17165,
+     "sha256": "7e0b52a673c2ba864f3606736293748d2d956edb4573bcf9ca9dbd74300385ce",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/package/readme_pdf/README.pdf",
+     "where": "public review page"
+    }
+   ]
+  },
+  {
+   "id": "rec_demo",
+   "title": "Demo round, bot-played, unedited, with audio",
+   "category": "recordings",
+   "visibility": "public",
+   "record": {
+    "scene": "res://tests/demo_run.tscn",
+    "seconds": 24,
+    "resolution": "540x1170"
+   },
+   "evidence": [
+    {
+     "type": "automated",
+     "check": "unedited bot-run recording of res://tests/demo_run.tscn at 540x1170, 23 s (Godot Movie Maker, fixed 30 fps)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "game audio track present in the recording: mean -22.2 dB, peak -2.4 dB",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded rec_demo.mp4 (public review page)",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "rec_demo.mp4",
+     "bytes": 650524,
+     "sha256": "ded55b49ce04602eb57454eb319e61383dcbc0e8fd49ba6f93b0e1da52b425e1",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/package/rec_demo/rec_demo.mp4",
+     "where": "public review page"
+    }
+   ]
+  },
+  {
+   "id": "audio",
+   "title": "All audio files",
+   "category": "audio",
+   "visibility": "public",
+   "glob": "starter-kit/assets/audio/**/*.ogg",
+   "evidence": [
+    {
+     "type": "automated",
+     "check": "uploaded coin.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded menu_music.ogg (public review page)",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "coin.ogg",
+     "bytes": 21463,
+     "sha256": "f593e2ee6d2f642fd7b1c1b5b45bb6f7f22ca2bdbd770dde117cb59f7bf871c6",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/package/audio/coin.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "menu_music.ogg",
+     "bytes": 360102,
+     "sha256": "babc0b85b77c6285da2312d36e70d23cd45b7c32b0d1d858686600dce459cab7",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/package/audio/menu_music.ogg",
+     "where": "public review page"
+    }
+   ]
+  },
+  {
+   "id": "editable",
+   "title": "Editable brand sources",
+   "category": "editable_assets",
+   "visibility": "private",
+   "glob": "brand/*.svg",
+   "evidence": [
+    {
+     "type": "pending",
+     "detail": "declared public on purpose to test that the tool forces it private"
+    },
+    {
+     "type": "automated",
+     "check": "category 'editable_assets' forced to owner-only storage",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded kik-logo-dark.svg (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded kik-logo.svg (private GitHub release (owner sign-in))",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "kik-logo-dark.svg",
+     "bytes": 13665,
+     "sha256": "02562b790143a74f4762c27a64810331381ec31820a1b9d9c83e89edef17bde0",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/starter-kit/t1/editable__kik-logo-dark.svg",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "kik-logo.svg",
+     "bytes": 13667,
+     "sha256": "e01d2c11b3ae1978f6669da5dd244e2267bddcd4c4f97da4ff12e071f20c6906",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/starter-kit/t1/editable__kik-logo.svg",
+     "where": "private GitHub release (owner sign-in)"
+    }
+   ]
+  },
+  {
+   "id": "source",
+   "title": "Source at the labelled commit",
+   "category": "source",
+   "visibility": "private",
+   "source_zip": "starter-kit",
+   "evidence": [
+    {
+     "type": "automated",
+     "check": "source archived by git at commit 46c5b95 (starter-kit): clean export, no local changes",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "zip opens and every entry passes CRC (starter-kit-t1-source-46c5b95.zip)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded starter-kit-t1-source-46c5b95.zip (private GitHub release (owner sign-in))",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "starter-kit-t1-source-46c5b95.zip",
+     "bytes": 695819,
+     "sha256": "c00577de418973e5ce64cc4a2240dfcedac8ced0d6d5a3d7a4e49b05bc9b0d67",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/starter-kit/t1/source__starter-kit-t1-source-46c5b95.zip",
+     "where": "private GitHub release (owner sign-in)"
+    }
+   ]
+  },
+  {
+   "id": "complete",
+   "title": "Complete package (1 self-contained ZIP part(s), each opens on its own)",
+   "category": "complete",
+   "visibility": "private",
+   "evidence": [
+    {
+     "type": "automated",
+     "check": "starter-kit-t1-complete-part01-of-01.zip opens and every entry passes CRC",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded starter-kit-t1-complete-part01-of-01.zip (private GitHub release (owner sign-in))",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "starter-kit-t1-complete-part01-of-01.zip",
+     "bytes": 1720194,
+     "sha256": "1b4a4b8294c34def074c1f3b03c63c55ef527a2db76c87d827a59bcdadae0ef8",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/starter-kit/t1/complete__starter-kit-t1-complete-part01-of-01.zip",
+     "where": "private GitHub release (owner sign-in)"
+    }
+   ]
+  }
+ ],
+ "published_utc": "2026-09-25 08:30 UTC",
+ "links": {
+  "public_page": "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/package/",
+  "public_release": "https://github.com/kik-studio/kik-builds/releases/tag/review-starter-kit-t1",
+  "owner_release": "https://github.com/kik-studio/studio-hq/releases/tag/review/starter-kit/t1",
+  "web": "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/web/index.html",
+  "apk": "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/starter-kit.apk"
+ }
+}
