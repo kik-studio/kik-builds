@@ -74,7 +74,7 @@
   "pinned_utc": "2026-09-25 10:38",
   "pinned_by": "Brain (tools/review/pin_build.py)"
  },
- "built_utc": "2026-09-25 11:32 UTC",
+ "built_utc": "2026-09-25 12:59 UTC",
  "disclaimer": "Automated checks below confirm files, uploads, checksums, archives and bot runs only. They do not establish visual quality, enjoyable gameplay or owner acceptance.",
  "checks": [
   {
@@ -142,7 +142,7 @@
     {
      "name": "TECHNICAL.pdf",
      "bytes": 58775,
-     "sha256": "5e157fd21b13928c01273e0cf40f7162560d67b86ee2f7fe0d78321add414775",
+     "sha256": "9bfbf6d7d386454d2b43bd90b28c7dbc3f00f22f956eb467f42ff06627142727",
      "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1a/package/tech_pdf/TECHNICAL.pdf",
      "where": "public review page"
     }
@@ -1233,12 +1233,17 @@
     },
     {
      "type": "automated",
-     "check": "unedited bot-run recording of res://tests/review/rec_journey.tscn at 1080x2340, 186 s (Godot Movie Maker, fixed 30 fps)",
+     "check": "unedited bot-run recording of res://tests/review/rec_journey.tscn, 186 s (Godot Movie Maker, fixed 30 fps)",
      "result": "pass"
     },
     {
      "type": "automated",
-     "check": "game audio track present in the recording: mean -10.3 dB, peak 0.0 dB",
+     "check": "recording resolution measured 1080x2340 (requested 1080x2340)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "game audio track present in the recording: mean -10.6 dB, peak 0.0 dB",
      "result": "pass"
     },
     {
@@ -1250,10 +1255,10 @@
    "files": [
     {
      "name": "rec_journey.mp4",
-     "bytes": 38099539,
-     "sha256": "07f898985f13713fe820b95f9e178caa3527af55b4300ea14c221a0e68851896",
+     "bytes": 132774988,
+     "sha256": "cfee539463445efd2e183e32053776c944319f670c82a9113cacda5dfd920409",
      "url": "https://github.com/kik-studio/kik-builds/releases/download/review-nova-strike-rb1a/rec_journey__rec_journey.mp4",
-     "api_url": "https://api.github.com/repos/kik-studio/kik-builds/releases/assets/588223870",
+     "api_url": "https://api.github.com/repos/kik-studio/kik-builds/releases/assets/588369277",
      "where": "public release"
     }
    ]
@@ -1275,27 +1280,33 @@
     },
     {
      "type": "automated",
-     "check": "unedited bot-run recording of res://tests/review/demo_audio.tscn at 1080x2340, 54 s (Godot Movie Maker, fixed 30 fps)",
+     "check": "unedited bot-run recording of res://tests/review/demo_audio.tscn, 54 s (Godot Movie Maker, fixed 30 fps)",
      "result": "pass"
     },
     {
      "type": "automated",
-     "check": "game audio track present in the recording: mean -7.7 dB, peak 0.0 dB",
+     "check": "recording resolution measured 1080x2340 (requested 1080x2340)",
      "result": "pass"
     },
     {
      "type": "automated",
-     "check": "uploaded demo_audio.mp4 (public review page)",
+     "check": "game audio track present in the recording: mean -7.6 dB, peak 0.0 dB",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded demo_audio.mp4 (public release)",
      "result": "pass"
     }
    ],
    "files": [
     {
      "name": "demo_audio.mp4",
-     "bytes": 8630562,
-     "sha256": "9e31b5cb2bf4adf0ca8118818949c4b71022e4257b5782006b982b762a495505",
-     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1a/package/demo_audio/demo_audio.mp4",
-     "where": "public review page"
+     "bytes": 29532605,
+     "sha256": "6737c969099cdb797994182019b68ef5c0160991e389adc2d11194a2d5ecb6c6",
+     "url": "https://github.com/kik-studio/kik-builds/releases/download/review-nova-strike-rb1a/demo_audio__demo_audio.mp4",
+     "api_url": "https://api.github.com/repos/kik-studio/kik-builds/releases/assets/588369393",
+     "where": "public release"
     }
    ]
   },
@@ -3191,15 +3202,15 @@
    "files": [
     {
      "name": "nova-strike-rb1a-complete-part01-of-01.zip",
-     "bytes": 761230135,
-     "sha256": "4105c08b479cb1aa99f60264a93433eadd0e885e6cd8099b3da66624b0ade026",
+     "bytes": 876783646,
+     "sha256": "35275b5c18b8ea596907ba53fb5f45ecbc0f523b35b5da6ca71d7d2b583f516a",
      "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1a/complete__nova-strike-rb1a-complete-part01-of-01.zip",
      "where": "private GitHub release (owner sign-in)"
     }
    ]
   }
  ],
- "published_utc": "2026-09-25 11:33 UTC",
+ "published_utc": "2026-09-25 13:00 UTC",
  "links": {
   "public_page": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1a/package/",
   "public_release": "https://github.com/kik-studio/kik-builds/releases/tag/review-nova-strike-rb1a",

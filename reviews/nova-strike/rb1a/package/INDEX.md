@@ -1,6 +1,6 @@
 # nova-strike · Review Build 1a (browser audio fix — draft)
 
-*Source commit `473bb47` · built 2026-09-25 11:32 UTC · published 2026-09-25 11:33 UTC*
+*Source commit `473bb47` · built 2026-09-25 12:59 UTC · published 2026-09-25 13:00 UTC*
 
 > Automated checks below confirm files, uploads, checksums, archives and bot runs only. They do not establish visual quality, enjoyable gameplay or owner acceptance.
 
@@ -21,7 +21,7 @@
 - Builder-reported: Review Build 1's document with the audio section updated.
 - Automated check: PDF generated from games/nova-strike/review/rb1a/TECHNICAL.md at build time — pass
 - Automated check: uploaded TECHNICAL.pdf (public review page) — pass
-  - [TECHNICAL.pdf](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1a/package/tech_pdf/TECHNICAL.pdf) · 57 KB · sha256 `5e157fd21b13928c…`
+  - [TECHNICAL.pdf](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1a/package/tech_pdf/TECHNICAL.pdf) · 57 KB · sha256 `9bfbf6d7d386454d…`
 
 ## Status matrix  `status` · status · public
 - Builder-reported: Rows changed from Review Build 1 are marked.
@@ -205,17 +205,19 @@
 
 ## Recording: journey Title → Home → Hangar → Campaign → mission 1.01 → Results → Supers → boss 1.08  `rec_journey` · recordings · public
 - Builder-reported: Bot invulnerable in this take (stated on screen); 600 credits added at start. Build ID on screen (bottom strip). Native recording: it shows the game with sound, not the browser.
-- Automated check: unedited bot-run recording of res://tests/review/rec_journey.tscn at 1080x2340, 186 s (Godot Movie Maker, fixed 30 fps) — pass
-- Automated check: game audio track present in the recording: mean -10.3 dB, peak 0.0 dB — pass
+- Automated check: unedited bot-run recording of res://tests/review/rec_journey.tscn, 186 s (Godot Movie Maker, fixed 30 fps) — pass
+- Automated check: recording resolution measured 1080x2340 (requested 1080x2340) — pass
+- Automated check: game audio track present in the recording: mean -10.6 dB, peak 0.0 dB — pass
 - Automated check: uploaded rec_journey.mp4 (public release) — pass
-  - [rec_journey.mp4](https://github.com/kik-studio/kik-builds/releases/download/review-nova-strike-rb1a/rec_journey__rec_journey.mp4) · 36 MB · sha256 `07f898985f13713f…`
+  - [rec_journey.mp4](https://github.com/kik-studio/kik-builds/releases/download/review-nova-strike-rb1a/rec_journey__rec_journey.mp4) · 127 MB · sha256 `cfee539463445efd…`
 
 ## Demo: audio behaviour (menu music, music volume 0 and back, combat, Super, Pause, boss mission)  `demo_audio` · demos · public
 - Builder-reported: Each audio step is named on screen. Build ID on screen (bottom strip). Native recording: it shows the game with sound, not the browser.
-- Automated check: unedited bot-run recording of res://tests/review/demo_audio.tscn at 1080x2340, 54 s (Godot Movie Maker, fixed 30 fps) — pass
-- Automated check: game audio track present in the recording: mean -7.7 dB, peak 0.0 dB — pass
-- Automated check: uploaded demo_audio.mp4 (public review page) — pass
-  - [demo_audio.mp4](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1a/package/demo_audio/demo_audio.mp4) · 8 MB · sha256 `9e31b5cb2bf4adf0…`
+- Automated check: unedited bot-run recording of res://tests/review/demo_audio.tscn, 54 s (Godot Movie Maker, fixed 30 fps) — pass
+- Automated check: recording resolution measured 1080x2340 (requested 1080x2340) — pass
+- Automated check: game audio track present in the recording: mean -7.6 dB, peak 0.0 dB — pass
+- Automated check: uploaded demo_audio.mp4 (public release) — pass
+  - [demo_audio.mp4](https://github.com/kik-studio/kik-builds/releases/download/review-nova-strike-rb1a/demo_audio__demo_audio.mp4) · 28 MB · sha256 `6737c969099cdb79…`
 
 ## Event logs, 48 missions + Endless (from Review Build 1)  `logs` · logs · public
 - Builder-reported: Reused from Review Build 1: the game code differs from 0c2fc79 only in core/audio.gd (sound buses), so this is unchanged.
@@ -537,4 +539,4 @@
 ## Complete package (1 self-contained ZIP part(s), each opens on its own)  `complete` · complete · 🔒 owner-only
 - Automated check: nova-strike-rb1a-complete-part01-of-01.zip opens and every entry passes CRC — pass
 - Automated check: uploaded nova-strike-rb1a-complete-part01-of-01.zip (private GitHub release (owner sign-in)) — pass
-  - [nova-strike-rb1a-complete-part01-of-01.zip](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1a) · 726 MB · sha256 `4105c08b479cb1aa…`
+  - [nova-strike-rb1a-complete-part01-of-01.zip](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1a) · 836 MB · sha256 `35275b5c18b8ea59…`
