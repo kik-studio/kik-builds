@@ -1,0 +1,38 @@
+{
+ "game_id": "starter-kit",
+ "version": "0.1.0",
+ "updated": "2026-09-24",
+ "commit": "46c5b95",
+ "links": {
+  "web": "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/web/index.html",
+  "apk": "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/starter-kit.apk"
+ },
+ "screenshots": {
+  "en": [
+   "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/screens/game_en.png",
+   "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/screens/menu_en.png",
+   "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/screens/settings_en.png"
+  ],
+  "ar": [
+   "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/screens/game_ar.png",
+   "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/screens/menu_ar.png",
+   "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/screens/settings_ar.png"
+  ]
+ },
+ "apk_bytes": 27499589,
+ "shapes": [
+  "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/screens/game_en_desktop.png",
+  "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/screens/game_en_tablet.png"
+ ],
+ "video": [
+  "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/video/gameplay.mp4"
+ ],
+ "tests": "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/tests.txt",
+ "benchmark_apk": "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/starter-kit-benchmark.apk",
+ "build_id": "0.1.0+46c5b95",
+ "review_label": "Pipeline test (starter kit — not a game)",
+ "review_slug": "t1",
+ "source_commit": "46c5b95",
+ "pinned_utc": "2026-09-25 08:19",
+ "pinned_by": "Brain (tools/review/pin_build.py)"
+}

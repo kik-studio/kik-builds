@@ -1,0 +1,73 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS screen boot builds (en)
+PASS screen boot touch targets >= 96 px (en) []
+PASS screen title builds (en)
+PASS screen title touch targets >= 96 px (en) []
+PASS screen home builds (en)
+PASS screen home touch targets >= 96 px (en) []
+PASS screen hangar builds (en)
+PASS screen hangar touch targets >= 96 px (en) []
+PASS screen campaign builds (en)
+PASS screen campaign touch targets >= 96 px (en) []
+PASS screen briefing builds (en)
+PASS screen briefing touch targets >= 96 px (en) []
+PASS screen results builds (en)
+PASS screen results touch targets >= 96 px (en) []
+PASS screen store builds (en)
+PASS screen store touch targets >= 96 px (en) []
+PASS screen settings builds (en)
+PASS screen settings touch targets >= 96 px (en) []
+PASS screen endless builds (en)
+PASS screen endless touch targets >= 96 px (en) []
+PASS screen mastery builds (en)
+PASS screen mastery touch targets >= 96 px (en) []
+PASS screen ending builds (en)
+PASS screen ending touch targets >= 96 px (en) []
+PASS screen credits builds (en)
+PASS screen credits touch targets >= 96 px (en) []
+PASS screen boot builds (ar)
+PASS screen boot touch targets >= 96 px (ar) []
+PASS screen title builds (ar)
+PASS screen title touch targets >= 96 px (ar) []
+PASS screen home builds (ar)
+PASS screen home touch targets >= 96 px (ar) []
+PASS screen hangar builds (ar)
+PASS screen hangar touch targets >= 96 px (ar) []
+PASS screen campaign builds (ar)
+PASS screen campaign touch targets >= 96 px (ar) []
+PASS screen briefing builds (ar)
+PASS screen briefing touch targets >= 96 px (ar) []
+PASS screen results builds (ar)
+PASS screen results touch targets >= 96 px (ar) []
+PASS screen store builds (ar)
+PASS screen store touch targets >= 96 px (ar) []
+PASS screen settings builds (ar)
+PASS screen settings touch targets >= 96 px (ar) []
+PASS screen endless builds (ar)
+PASS screen endless touch targets >= 96 px (ar) []
+PASS screen mastery builds (ar)
+PASS screen mastery touch targets >= 96 px (ar) []
+PASS screen ending builds (ar)
+PASS screen ending touch targets >= 96 px (ar) []
+PASS screen credits builds (ar)
+PASS screen credits touch targets >= 96 px (ar) []
+PASS double tap charged once (1000 -> 850)
+PASS double tap installed one tier
+PASS retried tx id is idempotent
+PASS purchase persists after load_profile
+PASS insufficient funds: nothing charged
+PASS 1.02 locked on a new profile
+PASS campaign refuses to open a locked mission
+PASS LAUNCH disabled for a locked mission
+PASS locked mission cannot start combat
+PASS result grants once (credits 120)
+PASS Supporter bonus once = 2x, never 4x (credits 240)
+PASS rewarded ad shown disabled with honest status
+PASS non-supporter results add nothing extra
+UI TESTS DONE, failures: 0
+WARNING: 26 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 8 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)
+exit=0
