@@ -1,0 +1,349 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Checks · 0.1.0+7334126</title>
+<style>body{font:15px/1.5 system-ui,sans-serif;background:#0f1218;color:#e8ebf0;max-width:1200px;margin:auto;padding:16px}
+table{border-collapse:collapse;display:block;overflow-x:auto;margin:8px 0}td,th{border:1px solid #2c3340;padding:4px 8px;white-space:nowrap}
+th{background:#1a1f28}a{color:#9cc8ff}img{max-width:48%;margin:4px;border:1px solid #2c3340;vertical-align:top}
+@media(max-width:700px){img{max-width:100%}}</style>
+<p><a href="../build.json">build.json</a> · automated checks for build <b>0.1.0+7334126</b></p>
+<h1>Game-feel report · build 0.1.0+7334126</h1>
+<p>Automated: measured from 3 bot run(s) (event logs). Targets: config/build_checks.json feel.targets (+ studio defaults). It shows pacing and systems working; it does <strong>not</strong> show that a person finds it fun.</p>
+<h2>Summary (runs passing each target)</h2>
+<table>
+<thead>
+<tr>
+<th>Target</th>
+<th>Threshold</th>
+<th>Passing runs</th>
+<th>Median</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Empty screen time (share of play)</td>
+<td>≤ 0.1</td>
+<td>3/3 ✅</td>
+<td>0.01</td>
+</tr>
+<tr>
+<td>Longest empty gap (s)</td>
+<td>≤ 3.0</td>
+<td>3/3 ✅</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>Empty gaps over 2 s</td>
+<td>≤ 1</td>
+<td>3/3 ✅</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Time to first power-up P2 (s)</td>
+<td>≤ 30.0</td>
+<td>2/3 ⚠️</td>
+<td>16.3</td>
+</tr>
+<tr>
+<td>Time at top power level (share)</td>
+<td>≥ 0.2</td>
+<td>0/3 ⚠️</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>Pickups collected (share)</td>
+<td>≥ 0.7</td>
+<td>3/3 ✅</td>
+<td>0.93</td>
+</tr>
+<tr>
+<td>Bot deaths</td>
+<td>≤ 0</td>
+<td>3/3 ✅</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Mean enemies on screen</td>
+<td>≥ 2.0</td>
+<td>3/3 ✅</td>
+<td>2.46</td>
+</tr>
+</tbody>
+</table>
+<h2>Per run</h2>
+<table>
+<thead>
+<tr>
+<th>Run</th>
+<th>Unit</th>
+<th>Result</th>
+<th>Play s</th>
+<th>Empty %</th>
+<th>Longest gap</th>
+<th>Gaps&gt;2s</th>
+<th>→ P2 s</th>
+<th>Time at P1/P2/P3/P4 %</th>
+<th>Pickups</th>
+<th>Mean enemies</th>
+<th>Supers</th>
+<th>Fails</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.01</td>
+<td>arcanist</td>
+<td>victory</td>
+<td>81.6</td>
+<td>1</td>
+<td>1.0</td>
+<td>0</td>
+<td>16.3</td>
+<td>20/47/34/0</td>
+<td>100%</td>
+<td>2.75</td>
+<td>3</td>
+<td>Time at top power level (share)</td>
+</tr>
+<tr>
+<td>1.05</td>
+<td>striker</td>
+<td>victory</td>
+<td>84.6</td>
+<td>1</td>
+<td>1.0</td>
+<td>0</td>
+<td>50.5</td>
+<td>60/0/40/0</td>
+<td>82%</td>
+<td>2.44</td>
+<td>2</td>
+<td>Time to first power-up P2 (s), Time at top power level (share)</td>
+</tr>
+<tr>
+<td>2.01</td>
+<td>striker</td>
+<td>victory</td>
+<td>87.4</td>
+<td>1</td>
+<td>1.0</td>
+<td>0</td>
+<td>14.9</td>
+<td>17/58/25/0</td>
+<td>93%</td>
+<td>2.46</td>
+<td>3</td>
+<td>Time at top power level (share)</td>
+</tr>
+</tbody>
+</table><h1>Art-direction check · build 0.1.0+7334126</h1>
+<p>Automated: each capture from this build beside its visual-bible target (sheets below), with measured differences. The numbers flag drift; they don't judge quality. Look at the sheets.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Screen</th>
+<th>Lightness (build / target)</th>
+<th>Contrast</th>
+<th>Colourfulness</th>
+<th>Dark share</th>
+<th>Highlights</th>
+<th>Drift flags</th>
+<th>Sheet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Gameplay</td>
+<td>15.1 / 26.5</td>
+<td>13.2 / 21.2</td>
+<td>10.8 / 12.0</td>
+<td>0.74 / 0.48</td>
+<td>0.01 / 0.03</td>
+<td>flatter</td>
+<td><a href="art_01.png">art_01.png</a></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Title</td>
+<td>29.8 / 21.1</td>
+<td>20.5 / 24.5</td>
+<td>10.6 / 7.1</td>
+<td>0.4 / 0.67</td>
+<td>0.04 / 0.05</td>
+<td>–</td>
+<td><a href="art_02.png">art_02.png</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Campaign map</td>
+<td>25.5 / 22.3</td>
+<td>22.7 / 26.0</td>
+<td>12.3 / 10.2</td>
+<td>0.57 / 0.67</td>
+<td>0.03 / 0.05</td>
+<td>–</td>
+<td><a href="art_03.png">art_03.png</a></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Briefing</td>
+<td>21.1 / 16.6</td>
+<td>19.1 / 20.8</td>
+<td>12.1 / 8.6</td>
+<td>0.66 / 0.76</td>
+<td>0.03 / 0.03</td>
+<td>–</td>
+<td><a href="art_04.png">art_04.png</a></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Results (victory)</td>
+<td>17.8 / 22.0</td>
+<td>22.2 / 24.4</td>
+<td>8.5 / 9.3</td>
+<td>0.72 / 0.66</td>
+<td>0.03 / 0.05</td>
+<td>–</td>
+<td><a href="art_05.png">art_05.png</a></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Store</td>
+<td>15.6 / 15.0</td>
+<td>14.9 / 20.2</td>
+<td>5.7 / 6.8</td>
+<td>0.74 / 0.79</td>
+<td>0.01 / 0.03</td>
+<td>–</td>
+<td><a href="art_06.png">art_06.png</a></td>
+</tr>
+<tr>
+<td>7</td>
+<td>Hangar</td>
+<td>18.6 / 25.6</td>
+<td>18.8 / 22.2</td>
+<td>7.3 / 8.5</td>
+<td>0.64 / 0.52</td>
+<td>0.02 / 0.03</td>
+<td>–</td>
+<td><a href="art_07.png">art_07.png</a></td>
+</tr>
+<tr>
+<td>8</td>
+<td>Results (defeat)</td>
+<td>13.1 / 14.8</td>
+<td>20.1 / 18.9</td>
+<td>7.0 / 7.2</td>
+<td>0.85 / 0.75</td>
+<td>0.03 / 0.02</td>
+<td>–</td>
+<td><a href="art_08.png">art_08.png</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Settings</td>
+<td>11.6 / 8.9</td>
+<td>18.1 / 12.5</td>
+<td>10.8 / 7.9</td>
+<td>0.87 / 0.93</td>
+<td>0.0 / 0.01</td>
+<td>–</td>
+<td><a href="art_09.png">art_09.png</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Main colours (6, most used first)</h2>
+<table>
+<thead>
+<tr>
+<th>Screen</th>
+<th>Build</th>
+<th>Target</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gameplay</td>
+<td>#050911 #1c293a #313948 #07192c #121b28 #5e585a</td>
+<td>#131215 #504135 #765e4a #262220 #37291f #b9a080</td>
+</tr>
+<tr>
+<td>Title</td>
+<td>#151a25 #494a54 #323139 #6e6a6e #232935 #c1aa83</td>
+<td>#2e2d2d #05070c #0b1017 #18181b #605c56 #bbb3a4</td>
+</tr>
+<tr>
+<td>Campaign map</td>
+<td>#0d1118 #323c4a #141d2a #5a6b7f #1e2228 #acac97</td>
+<td>#030d16 #202e39 #0b161e #616d71 #03121e #c7bea7</td>
+</tr>
+<tr>
+<td>Briefing</td>
+<td>#0e141d #20303d #0b2030 #3e464e #202128 #a49373</td>
+<td>#040b12 #1b2128 #081119 #3d3f44 #111317 #9c927c</td>
+</tr>
+<tr>
+<td>Results (victory)</td>
+<td>#0b0f17 #242326 #070b14 #4f483f #101114 #b59d70</td>
+<td>#2a2e31 #050e16 #0c141b #171718 #5e5e5d #c3b496</td>
+</tr>
+<tr>
+<td>Store</td>
+<td>#0a0e16 #242629 #3a3836 #19191c #10131a #6f685c</td>
+<td>#171d22 #050f17 #0b1117 #030b12 #373839 #908e89</td>
+</tr>
+<tr>
+<td>Hangar</td>
+<td>#0a0f18 #312f31 #16181d #4f4641 #070a11 #95856e</td>
+<td>#0e0f10 #473f38 #2b2723 #706254 #1b1e20 #b8a48a</td>
+</tr>
+<tr>
+<td>Results (defeat)</td>
+<td>#06090f #12161e #090d16 #0c0f14 #252b33 #998d74</td>
+<td>#04090e #0a0e13 #0c171f #3a3d3f #1c2128 #81827e</td>
+</tr>
+<tr>
+<td>Settings</td>
+<td>#090f1a #070c17 #171e2c #0d131d #09111e #7d735d</td>
+<td>#08161e #0a1822 #030b13 #06111a #031018 #313f49</td>
+</tr>
+</tbody>
+</table>
+<h2>Colour-role separation (ΔE, CIE76; higher = easier to tell apart)</h2>
+<p>Target: every role pair ≥ 25.0.</p>
+<table>
+<thead>
+<tr>
+<th>Roles</th>
+<th>Closest pair ΔE</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>enemy vs background</td>
+<td>26</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>enemy_bullets vs background</td>
+<td>65</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>enemy_bullets vs player_bullets</td>
+<td>34</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>enemy_bullets vs enemy</td>
+<td>47</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>player_bullets vs background</td>
+<td>28</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table><h2>Art sheets</h2><a href="art_01.png"><img src="art_01.png" loading="lazy"></a><a href="art_02.png"><img src="art_02.png" loading="lazy"></a><a href="art_03.png"><img src="art_03.png" loading="lazy"></a><a href="art_04.png"><img src="art_04.png" loading="lazy"></a><a href="art_05.png"><img src="art_05.png" loading="lazy"></a><a href="art_06.png"><img src="art_06.png" loading="lazy"></a><a href="art_07.png"><img src="art_07.png" loading="lazy"></a><a href="art_08.png"><img src="art_08.png" loading="lazy"></a><a href="art_09.png"><img src="art_09.png" loading="lazy"></a>

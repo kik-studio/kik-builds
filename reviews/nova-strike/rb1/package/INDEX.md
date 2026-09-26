@@ -1,0 +1,751 @@
+# nova-strike · Review Build 1 (baseline — draft)
+
+*Source commit `0c2fc79` · built 2026-09-25 14:36 UTC · published 2026-09-25 14:41 UTC*
+
+> Automated checks below confirm files, uploads, checksums, archives and bot runs only. They do not establish visual quality, enjoyable gameplay or owner acceptance.
+
+- Play (web): https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/web/index.html
+- Android APK: https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/nova-strike.apk
+- Owner-only files: https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1 (sign in to GitHub as the studio account)
+
+## Package checks
+- Automated check: package source_ref 0c2fc79 matches the pinned build's source commit 0c2fc79 — pass
+- Automated check: inside games/nova-strike/, recording commit 6bb157571217a8352836f9a6dfa46b4fcf3a0ab4 differs from source 0c2fc79 only in tests/ and review/ (33 files changed) — pass
+
+## README: what this build is, what's inside, known issues  `readme` · docs · public
+- Builder-reported: Written by the Builder for build 0.1.0+0c2fc79. Known issues and pending checks are listed, not omitted.
+- Automated check: uploaded README.md (public review page) — pass
+  - [README.md](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/readme/README.md) · 6 KB · sha256 `df4635092f988518…`
+
+## Technical documentation (PDF)  `tech_pdf` · docs · public
+- Builder-reported: Describes the code at 0c2fc79 (engine, structure, aircraft, combat order, saves, services, audio, build).
+- Automated check: PDF generated from games/nova-strike/review/rb1/TECHNICAL.md at build time — pass
+- Automated check: uploaded TECHNICAL.pdf (public review page) — pass
+  - [TECHNICAL.pdf](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/tech_pdf/TECHNICAL.pdf) · 56 KB · sha256 `8cd0ca6ec8ad5037…`
+
+## Status matrix (complete / partial / not done / new issue)  `status` · status · public
+- Builder-reported: Each row cites a test or capture. 'Complete' = in the build and shown working by a test/capture, not approved for look or feel.
+- Automated check: uploaded STATUS.md (public review page) — pass
+  - [STATUS.md](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/status/STATUS.md) · 4 KB · sha256 `81f48693871bb065…`
+
+## Screenshots: every menu screen (EN + AR) and combat per aircraft, 1080x2340  `screens` · screenshots · public
+- Builder-reported: Captured by the Builder on 2026-09-25 from an exact export of 0c2fc79 + tests/review (tests/review/review_screens.tscn running tests/ui_capture.gd and tests/rc1_capture.gd), Godot 4.7.2, Linux software rendering; build ID strip on every image. 32 menu screens + 26 combat/overlay shots. Training screenshot not produced (capture timed out).
+- Automated check: uploaded bomb_arcanist.jpg (public review page) — pass
+- Automated check: uploaded bomb_guardian.jpg (public review page) — pass
+- Automated check: uploaded bomb_striker.jpg (public review page) — pass
+- Automated check: uploaded combat_arcanist_L1.jpg (public review page) — pass
+- Automated check: uploaded combat_arcanist_L4.jpg (public review page) — pass
+- Automated check: uploaded combat_guardian_L1.jpg (public review page) — pass
+- Automated check: uploaded combat_guardian_L4.jpg (public review page) — pass
+- Automated check: uploaded combat_striker_L1.jpg (public review page) — pass
+- Automated check: uploaded combat_striker_L4.jpg (public review page) — pass
+- Automated check: uploaded endless_combat_arcanist.jpg (public review page) — pass
+- Automated check: uploaded pause_en.jpg (public review page) — pass
+- Automated check: uploaded super_arcanist_active.jpg (public review page) — pass
+- Automated check: uploaded super_arcanist_t000.jpg (public review page) — pass
+- Automated check: uploaded super_arcanist_t012.jpg (public review page) — pass
+- Automated check: uploaded super_arcanist_t024.jpg (public review page) — pass
+- Automated check: uploaded super_arcanist_t035.jpg (public review page) — pass
+- Automated check: uploaded super_guardian_active.jpg (public review page) — pass
+- Automated check: uploaded super_guardian_t000.jpg (public review page) — pass
+- Automated check: uploaded super_guardian_t012.jpg (public review page) — pass
+- Automated check: uploaded super_guardian_t024.jpg (public review page) — pass
+- Automated check: uploaded super_guardian_t035.jpg (public review page) — pass
+- Automated check: uploaded super_striker_active.jpg (public review page) — pass
+- Automated check: uploaded super_striker_t000.jpg (public review page) — pass
+- Automated check: uploaded super_striker_t012.jpg (public review page) — pass
+- Automated check: uploaded super_striker_t024.jpg (public review page) — pass
+- Automated check: uploaded super_striker_t035.jpg (public review page) — pass
+- Automated check: uploaded ui_boot_ar.jpg (public review page) — pass
+- Automated check: uploaded ui_boot_en.jpg (public review page) — pass
+- Automated check: uploaded ui_briefing_ar.jpg (public review page) — pass
+- Automated check: uploaded ui_briefing_en.jpg (public review page) — pass
+- Automated check: uploaded ui_campaign_ar.jpg (public review page) — pass
+- Automated check: uploaded ui_campaign_en.jpg (public review page) — pass
+- Automated check: uploaded ui_credits_ar.jpg (public review page) — pass
+- Automated check: uploaded ui_credits_en.jpg (public review page) — pass
+- Automated check: uploaded ui_ending_ar.jpg (public review page) — pass
+- Automated check: uploaded ui_ending_en.jpg (public review page) — pass
+- Automated check: uploaded ui_endless_ar.jpg (public review page) — pass
+- Automated check: uploaded ui_endless_en.jpg (public review page) — pass
+- Automated check: uploaded ui_hangar_ar.jpg (public review page) — pass
+- Automated check: uploaded ui_hangar_en.jpg (public review page) — pass
+- Automated check: uploaded ui_hangar_poor_ar.jpg (public review page) — pass
+- Automated check: uploaded ui_hangar_poor_en.jpg (public review page) — pass
+- Automated check: uploaded ui_home_ar.jpg (public review page) — pass
+- Automated check: uploaded ui_home_en.jpg (public review page) — pass
+- Automated check: uploaded ui_mastery_ar.jpg (public review page) — pass
+- Automated check: uploaded ui_mastery_en.jpg (public review page) — pass
+- Automated check: uploaded ui_results_ar.jpg (public review page) — pass
+- Automated check: uploaded ui_results_defeat_ar.jpg (public review page) — pass
+- Automated check: uploaded ui_results_defeat_en.jpg (public review page) — pass
+- Automated check: uploaded ui_results_en.jpg (public review page) — pass
+- Automated check: uploaded ui_settings_ar.jpg (public review page) — pass
+- Automated check: uploaded ui_settings_en.jpg (public review page) — pass
+- Automated check: uploaded ui_store_ar.jpg (public review page) — pass
+- Automated check: uploaded ui_store_en.jpg (public review page) — pass
+- Automated check: uploaded ui_store_supporter_ar.jpg (public review page) — pass
+- Automated check: uploaded ui_store_supporter_en.jpg (public review page) — pass
+- Automated check: uploaded ui_title_ar.jpg (public review page) — pass
+- Automated check: uploaded ui_title_en.jpg (public review page) — pass
+  - [bomb_arcanist.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/bomb_arcanist.jpg) · 245 KB · sha256 `b45c7fb0ae0fa07a…`
+  - [bomb_guardian.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/bomb_guardian.jpg) · 191 KB · sha256 `d659f1370da3aa9f…`
+  - [bomb_striker.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/bomb_striker.jpg) · 310 KB · sha256 `97f1e03657329235…`
+  - [combat_arcanist_L1.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/combat_arcanist_L1.jpg) · 153 KB · sha256 `c8b1dfa981d6f5c0…`
+  - [combat_arcanist_L4.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/combat_arcanist_L4.jpg) · 218 KB · sha256 `79463ecd80b2d119…`
+  - [combat_guardian_L1.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/combat_guardian_L1.jpg) · 195 KB · sha256 `f22b35f33616ca88…`
+  - [combat_guardian_L4.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/combat_guardian_L4.jpg) · 204 KB · sha256 `94686f6d052f88e0…`
+  - [combat_striker_L1.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/combat_striker_L1.jpg) · 204 KB · sha256 `720f73cbbf934ae2…`
+  - [combat_striker_L4.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/combat_striker_L4.jpg) · 211 KB · sha256 `274b967aa758e168…`
+  - [endless_combat_arcanist.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/endless_combat_arcanist.jpg) · 211 KB · sha256 `2f59600a718449ce…`
+  - [pause_en.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/pause_en.jpg) · 135 KB · sha256 `92c64c451275bcc7…`
+  - [super_arcanist_active.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/super_arcanist_active.jpg) · 314 KB · sha256 `9fce6f7e18396c07…`
+  - [super_arcanist_t000.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/super_arcanist_t000.jpg) · 224 KB · sha256 `021daa691e0602af…`
+  - [super_arcanist_t012.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/super_arcanist_t012.jpg) · 244 KB · sha256 `c6d498f2f510cf4b…`
+  - [super_arcanist_t024.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/super_arcanist_t024.jpg) · 254 KB · sha256 `d6509dda8fe59f00…`
+  - [super_arcanist_t035.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/super_arcanist_t035.jpg) · 240 KB · sha256 `199ff1357e1c9c32…`
+  - [super_guardian_active.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/super_guardian_active.jpg) · 273 KB · sha256 `499be8b355f526db…`
+  - [super_guardian_t000.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/super_guardian_t000.jpg) · 192 KB · sha256 `a25a34aab7e8d3ab…`
+  - [super_guardian_t012.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/super_guardian_t012.jpg) · 212 KB · sha256 `b759c1fd490a0cf9…`
+  - [super_guardian_t024.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/super_guardian_t024.jpg) · 251 KB · sha256 `f5e66c3878566509…`
+  - [super_guardian_t035.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/super_guardian_t035.jpg) · 252 KB · sha256 `790d002646253f6d…`
+  - [super_striker_active.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/super_striker_active.jpg) · 232 KB · sha256 `fa24a3634e0cf414…`
+  - [super_striker_t000.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/super_striker_t000.jpg) · 200 KB · sha256 `7879efdeee5bf942…`
+  - [super_striker_t012.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/super_striker_t012.jpg) · 210 KB · sha256 `66b3adf04c7b2de4…`
+  - [super_striker_t024.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/super_striker_t024.jpg) · 221 KB · sha256 `73a56844bb9eec41…`
+  - [super_striker_t035.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/super_striker_t035.jpg) · 220 KB · sha256 `86d7be9c066bf91d…`
+  - [ui_boot_ar.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_boot_ar.jpg) · 73 KB · sha256 `ca0027959c86f4bf…`
+  - [ui_boot_en.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_boot_en.jpg) · 74 KB · sha256 `4b69fbbc430d4862…`
+  - [ui_briefing_ar.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_briefing_ar.jpg) · 277 KB · sha256 `fb94f04be74208e5…`
+  - [ui_briefing_en.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_briefing_en.jpg) · 290 KB · sha256 `682d0cf879e0785e…`
+  - [ui_campaign_ar.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_campaign_ar.jpg) · 239 KB · sha256 `d000dfd731d35e64…`
+  - [ui_campaign_en.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_campaign_en.jpg) · 256 KB · sha256 `b9201ba3418f77c3…`
+  - [ui_credits_ar.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_credits_ar.jpg) · 171 KB · sha256 `a6f94c672d96a3c4…`
+  - [ui_credits_en.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_credits_en.jpg) · 183 KB · sha256 `d27f04b643abb1d3…`
+  - [ui_ending_ar.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_ending_ar.jpg) · 233 KB · sha256 `83173e975fcbe952…`
+  - [ui_ending_en.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_ending_en.jpg) · 238 KB · sha256 `0dcfff97915ac1ba…`
+  - [ui_endless_ar.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_endless_ar.jpg) · 266 KB · sha256 `613c1765c181854c…`
+  - [ui_endless_en.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_endless_en.jpg) · 275 KB · sha256 `62b913d30311dbcd…`
+  - [ui_hangar_ar.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_hangar_ar.jpg) · 326 KB · sha256 `884f59b78f58841f…`
+  - [ui_hangar_en.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_hangar_en.jpg) · 337 KB · sha256 `58688665d0e90cea…`
+  - [ui_hangar_poor_ar.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_hangar_poor_ar.jpg) · 327 KB · sha256 `77a848fb26439dfa…`
+  - [ui_hangar_poor_en.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_hangar_poor_en.jpg) · 340 KB · sha256 `13c3e40e19eab565…`
+  - [ui_home_ar.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_home_ar.jpg) · 332 KB · sha256 `a649e7ed5ce61e7d…`
+  - [ui_home_en.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_home_en.jpg) · 343 KB · sha256 `e4e20221b9e753b6…`
+  - [ui_mastery_ar.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_mastery_ar.jpg) · 231 KB · sha256 `bc031f19ab071282…`
+  - [ui_mastery_en.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_mastery_en.jpg) · 260 KB · sha256 `524157ed5b2095aa…`
+  - [ui_results_ar.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_results_ar.jpg) · 285 KB · sha256 `370db8be72b2b72b…`
+  - [ui_results_defeat_ar.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_results_defeat_ar.jpg) · 216 KB · sha256 `99e30f95970a2b2a…`
+  - [ui_results_defeat_en.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_results_defeat_en.jpg) · 216 KB · sha256 `66191f9cadad2798…`
+  - [ui_results_en.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_results_en.jpg) · 296 KB · sha256 `06797ea95834d711…`
+  - [ui_settings_ar.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_settings_ar.jpg) · 244 KB · sha256 `4a8592dd165043af…`
+  - [ui_settings_en.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_settings_en.jpg) · 253 KB · sha256 `e6ff6767c0bb2640…`
+  - [ui_store_ar.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_store_ar.jpg) · 256 KB · sha256 `0ed7a6f535b2ddda…`
+  - [ui_store_en.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_store_en.jpg) · 263 KB · sha256 `540ec4439402ee97…`
+  - [ui_store_supporter_ar.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_store_supporter_ar.jpg) · 263 KB · sha256 `7f67529a8e9c1512…`
+  - [ui_store_supporter_en.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_store_supporter_en.jpg) · 282 KB · sha256 `3caea4f2982fa24c…`
+  - [ui_title_ar.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_title_ar.jpg) · 173 KB · sha256 `7495159487b29acf…`
+  - [ui_title_en.jpg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_title_en.jpg) · 184 KB · sha256 `0b410e734b1a6e5f…`
+
+## Visual comparisons: design target page vs real screen  `comparisons` · comparisons · 🔒 owner-only
+- Builder-reported: 14 sheets made with tools/qa/review_sheet.py from this package's screenshots. No new pass/refine/fail verdicts are claimed (last scored review: RC1 on 3001dfa). Target pages are concept art.
+- Builder-reported: Owner-only because the sheets contain pages of the Visual Direction Bible (the owner's unpublished design document).
+- Automated check: uploaded COMPARISONS.md (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded sheet_briefing.jpg (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded sheet_campaign.jpg (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded sheet_combat_arcanist.jpg (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded sheet_combat_guardian.jpg (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded sheet_combat_striker.jpg (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded sheet_hangar.jpg (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded sheet_home.jpg (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded sheet_pause.jpg (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded sheet_results.jpg (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded sheet_settings.jpg (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded sheet_store.jpg (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded sheet_super_arcanist.jpg (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded sheet_super_guardian.jpg (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded sheet_super_striker.jpg (private GitHub release (owner sign-in)) — pass
+  - [COMPARISONS.md](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 1 KB · sha256 `37637cf83fa86c80…`
+  - [sheet_briefing.jpg](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 798 KB · sha256 `3fd7261fb3c6e8f9…`
+  - [sheet_campaign.jpg](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 796 KB · sha256 `8ada37564b28104b…`
+  - [sheet_combat_arcanist.jpg](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 872 KB · sha256 `5194b3bb3778318c…`
+  - [sheet_combat_guardian.jpg](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 865 KB · sha256 `64746effc94c801a…`
+  - [sheet_combat_striker.jpg](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 865 KB · sha256 `6a900ada027ebf44…`
+  - [sheet_hangar.jpg](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 960 KB · sha256 `1e60342373c66a5b…`
+  - [sheet_home.jpg](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 962 KB · sha256 `bb8bf1398570d3e7…`
+  - [sheet_pause.jpg](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 533 KB · sha256 `13d812ff78f419de…`
+  - [sheet_results.jpg](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 810 KB · sha256 `45292ba7a6a710ff…`
+  - [sheet_settings.jpg](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 597 KB · sha256 `a7e9712e0815df8b…`
+  - [sheet_store.jpg](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 790 KB · sha256 `888ec80e0a6ebcfd…`
+  - [sheet_super_arcanist.jpg](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 893 KB · sha256 `fa4ce722d77849bd…`
+  - [sheet_super_guardian.jpg](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 888 KB · sha256 `59c1406ef1293d38…`
+  - [sheet_super_striker.jpg](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 875 KB · sha256 `c2217ee298f25c8d…`
+
+## Recording: journey Title → Home → Hangar → Campaign → mission 1.01 → Results → Supers → boss 1.08  `rec_journey` · recordings · public
+- Builder-reported: Scene in tests/review/ drives the real screens like a finger would; the built-in bot pilot flies combat. Bot INVULNERABLE in this take (stated on screen) so it reaches the boss; 600 credits added at start. Build ID on screen (bottom strip). Unedited; the bot's play doesn't show how the game feels to a person.
+- Automated check: unedited bot-run recording of res://tests/review/rec_journey.tscn, 186 s (Godot Movie Maker, fixed 30 fps) — pass
+- Automated check: recording resolution measured 1080x2340 (requested 1080x2340) — pass
+- Automated check: game audio track present in the recording: mean -10.7 dB, peak 0.0 dB — pass
+- Automated check: recorded in a separate parallel CI job at the same record commit — pass
+- Automated check: uploaded rec_journey.mp4 (public release) — pass
+  - [rec_journey.mp4](https://github.com/kik-studio/kik-builds/releases/download/review-nova-strike-rb1/rec_journey__rec_journey.mp4) · 127 MB · sha256 `3ecebf9a114342be…`
+
+## Recording: Hangar, every part Mk I → Mk IV on all three aircraft  `rec_hangar` · recordings · public
+- Builder-reported: Scene in tests/review/ drives the real screens like a finger would; the built-in bot pilot flies combat. Real Install button path (prices, prerequisites, install animation); credits added for the take (stated on screen). Build ID on screen (bottom strip). Unedited; the bot's play doesn't show how the game feels to a person.
+- Automated check: unedited bot-run recording of res://tests/review/rec_hangar.tscn, 113 s (Godot Movie Maker, fixed 30 fps) — pass
+- Automated check: recording resolution measured 1080x2340 (requested 1080x2340) — pass
+- Automated check: game audio track present in the recording: mean -17.5 dB, peak 0.0 dB — pass
+- Automated check: recorded in a separate parallel CI job at the same record commit — pass
+- Automated check: uploaded rec_hangar.mp4 (public release) — pass
+  - [rec_hangar.mp4](https://github.com/kik-studio/kik-builds/releases/download/review-nova-strike-rb1/rec_hangar__rec_hangar.mp4) · 39 MB · sha256 `bb23533cc17527e1…`
+
+## Recording: Striker vs ALGOL (mission 1.08, hardware Mk I), full run  `rec_striker_algol` · recordings · public
+- Builder-reported: Scene in tests/review/ drives the real screens like a finger would; the built-in bot pilot flies combat. Bot can lose. Hardware level chosen by the Builder, bought through the real purchase path. Build ID on screen (bottom strip). Unedited; the bot's play doesn't show how the game feels to a person.
+- Automated check: unedited bot-run recording of res://tests/review/rec_boss_striker.tscn, 129 s (Godot Movie Maker, fixed 30 fps) — pass
+- Automated check: recording resolution measured 1080x2340 (requested 1080x2340) — pass
+- Automated check: game audio track present in the recording: mean -10.3 dB, peak 0.0 dB — pass
+- Automated check: recorded in a separate parallel CI job at the same record commit — pass
+- Automated check: uploaded rec_striker_algol.mp4 (public release) — pass
+  - [rec_striker_algol.mp4](https://github.com/kik-studio/kik-builds/releases/download/review-nova-strike-rb1/rec_striker_algol__rec_striker_algol.mp4) · 132 MB · sha256 `f94bf87510257148…`
+
+## Recording: Guardian vs Furnace Sovereign (mission 2.08, hardware Mk II), full run  `rec_guardian_furnace` · recordings · public
+- Builder-reported: Scene in tests/review/ drives the real screens like a finger would; the built-in bot pilot flies combat. Bot can lose. Hardware level chosen by the Builder. Build ID on screen (bottom strip). Unedited; the bot's play doesn't show how the game feels to a person.
+- Automated check: unedited bot-run recording of res://tests/review/rec_boss_guardian.tscn, 135 s (Godot Movie Maker, fixed 30 fps) — pass
+- Automated check: recording resolution measured 1080x2340 (requested 1080x2340) — pass
+- Automated check: game audio track present in the recording: mean -4.1 dB, peak 0.0 dB — pass
+- Automated check: recorded in a separate parallel CI job at the same record commit — pass
+- Automated check: uploaded rec_guardian_furnace.mp4 (public release) — pass
+  - [rec_guardian_furnace.mp4](https://github.com/kik-studio/kik-builds/releases/download/review-nova-strike-rb1/rec_guardian_furnace__rec_guardian_furnace.mp4) · 107 MB · sha256 `8880b3e6a2b3f87f…`
+
+## Recording: Arcanist vs Storm Seraph (mission 3.08, hardware Mk III), full run  `rec_arcanist_seraph` · recordings · public
+- Builder-reported: Scene in tests/review/ drives the real screens like a finger would; the built-in bot pilot flies combat. Bot can lose. Hardware level chosen by the Builder. Build ID on screen (bottom strip). Unedited; the bot's play doesn't show how the game feels to a person.
+- Automated check: unedited bot-run recording of res://tests/review/rec_boss_arcanist.tscn, 125 s (Godot Movie Maker, fixed 30 fps) — pass
+- Automated check: recording resolution measured 1080x2340 (requested 1080x2340) — pass
+- Automated check: game audio track present in the recording: mean -14.3 dB, peak 0.0 dB — pass
+- Automated check: recorded in a separate parallel CI job at the same record commit — pass
+- Automated check: uploaded rec_arcanist_seraph.mp4 (public release) — pass
+  - [rec_arcanist_seraph.mp4](https://github.com/kik-studio/kik-builds/releases/download/review-nova-strike-rb1/rec_arcanist_seraph__rec_arcanist_seraph.mp4) · 116 MB · sha256 `a832a9f525714503…`
+
+## Recording: Endless (Guardian, Mk II), ~2 min then ended from Pause  `rec_endless` · recordings · public
+- Builder-reported: Scene in tests/review/ drives the real screens like a finger would; the built-in bot pilot flies combat. Bot can lose; if alive after ~2 min the run is ended from the Pause menu (stated on screen). Build ID on screen (bottom strip). Unedited; the bot's play doesn't show how the game feels to a person.
+- Automated check: unedited bot-run recording of res://tests/review/rec_endless.tscn, 133 s (Godot Movie Maker, fixed 30 fps) — pass
+- Automated check: recording resolution measured 1080x2340 (requested 1080x2340) — pass
+- Automated check: game audio track present in the recording: mean -4.9 dB, peak 0.0 dB — pass
+- Automated check: recorded in a separate parallel CI job at the same record commit — pass
+- Automated check: uploaded rec_endless.mp4 (public release) — pass
+  - [rec_endless.mp4](https://github.com/kik-studio/kik-builds/releases/download/review-nova-strike-rb1/rec_endless__rec_endless.mp4) · 110 MB · sha256 `e326cdcd604cd441…`
+
+## Demo: environments, 24 s of mission x.03 in all six stages  `rec_stage_tour` · demos · public
+- Builder-reported: Scene in tests/review/ drives the real screens like a finger would; the built-in bot pilot flies combat. Excerpts cut on purpose by starting the next mission; bot invulnerable in this take (stated on screen). Build ID on screen (bottom strip). Unedited; the bot's play doesn't show how the game feels to a person.
+- Automated check: unedited bot-run recording of res://tests/review/rec_stages.tscn, 150 s (Godot Movie Maker, fixed 30 fps) — pass
+- Automated check: recording resolution measured 1080x2340 (requested 1080x2340) — pass
+- Automated check: game audio track present in the recording: mean -7.9 dB, peak 0.0 dB — pass
+- Automated check: recorded in a separate parallel CI job at the same record commit — pass
+- Automated check: uploaded rec_stage_tour.mp4 (public release) — pass
+  - [rec_stage_tour.mp4](https://github.com/kik-studio/kik-builds/releases/download/review-nova-strike-rb1/rec_stage_tour__rec_stage_tour.mp4) · 100 MB · sha256 `59bad27501ec3595…`
+
+## Demo: equipment, Striker hardware Mk I → Mk IV, then in combat  `demo_equipment` · demos · public
+- Builder-reported: Real Install path in the Hangar, credits added for the demo; then the same hardware in Training. Real game code; what the demo sets up is named on screen; build ID on screen (bottom strip).
+- Automated check: unedited bot-run recording of res://tests/review/demo_equipment.tscn, 43 s (Godot Movie Maker, fixed 30 fps) — pass
+- Automated check: recording resolution measured 1080x2340 (requested 1080x2340) — pass
+- Automated check: game audio track present in the recording: mean -12.8 dB, peak 0.0 dB — pass
+- Automated check: recorded in a separate parallel CI job at the same record commit — pass
+- Automated check: uploaded demo_equipment.mp4 (public release) — pass
+  - [demo_equipment.mp4](https://github.com/kik-studio/kik-builds/releases/download/review-nova-strike-rb1/demo_equipment__demo_equipment.mp4) · 20 MB · sha256 `55f1a1cd2d461abe…`
+
+## Demo: weapons, temporary levels L1 → L4 for each aircraft  `demo_weapons` · demos · public
+- Builder-reported: Training range; the level is stepped by the demo every 3 s (in play it rises with power pickups). Real game code; what the demo sets up is named on screen; build ID on screen (bottom strip).
+- Automated check: unedited bot-run recording of res://tests/review/demo_weapons.tscn, 39 s (Godot Movie Maker, fixed 30 fps) — pass
+- Automated check: recording resolution measured 1080x2340 (requested 1080x2340) — pass
+- Automated check: game audio track present in the recording: mean -6.1 dB, peak 0.0 dB — pass
+- Automated check: recorded in a separate parallel CI job at the same record commit — pass
+- Automated check: uploaded demo_weapons.mp4 (public release) — pass
+  - [demo_weapons.mp4](https://github.com/kik-studio/kik-builds/releases/download/review-nova-strike-rb1/demo_weapons__demo_weapons.mp4) · 36 MB · sha256 `cbb82d39d3da40bd…`
+
+## Demo: transformations, each aircraft's Super from open to close  `demo_supers` · demos · public
+- Builder-reported: Training; the Super meter is filled by the demo (in play it charges from destroyed enemies). Real game code; what the demo sets up is named on screen; build ID on screen (bottom strip).
+- Automated check: unedited bot-run recording of res://tests/review/demo_supers.tscn, 40 s (Godot Movie Maker, fixed 30 fps) — pass
+- Automated check: recording resolution measured 1080x2340 (requested 1080x2340) — pass
+- Automated check: game audio track present in the recording: mean -6.2 dB, peak 0.0 dB — pass
+- Automated check: recorded in a separate parallel CI job at the same record commit — pass
+- Automated check: uploaded demo_supers.mp4 (public release) — pass
+  - [demo_supers.mp4](https://github.com/kik-studio/kik-builds/releases/download/review-nova-strike-rb1/demo_supers__demo_supers.mp4) · 35 MB · sha256 `dce1ca9a47bcb972…`
+
+## Demo: pickups, power / bomb / light shard collected  `demo_pickups` · demos · public
+- Builder-reported: Drops placed in front of the aircraft by the demo; magnet, trail and effect of each kind. Real game code; what the demo sets up is named on screen; build ID on screen (bottom strip).
+- Automated check: unedited bot-run recording of res://tests/review/demo_pickups.tscn, 25 s (Godot Movie Maker, fixed 30 fps) — pass
+- Automated check: recording resolution measured 1080x2340 (requested 1080x2340) — pass
+- Automated check: game audio track present in the recording: mean -8.4 dB, peak 0.0 dB — pass
+- Automated check: recorded in a separate parallel CI job at the same record commit — pass
+- Automated check: uploaded demo_pickups.mp4 (public release) — pass
+  - [demo_pickups.mp4](https://github.com/kik-studio/kik-builds/releases/download/review-nova-strike-rb1/demo_pickups__demo_pickups.mp4) · 22 MB · sha256 `439926f01b535e24…`
+
+## Demo: audio behaviour (menu music, music volume 0 and back, combat, Super, Pause, boss mission)  `demo_audio` · demos · public
+- Builder-reported: Each audio step is named on screen. Native audio (the browser-silence issue of this build doesn't apply to recordings). Real game code; what the demo sets up is named on screen; build ID on screen (bottom strip).
+- Automated check: unedited bot-run recording of res://tests/review/demo_audio.tscn, 54 s (Godot Movie Maker, fixed 30 fps) — pass
+- Automated check: recording resolution measured 1080x2340 (requested 1080x2340) — pass
+- Automated check: game audio track present in the recording: mean -7.5 dB, peak 0.0 dB — pass
+- Automated check: recorded in a separate parallel CI job at the same record commit — pass
+- Automated check: uploaded demo_audio.mp4 (public release) — pass
+  - [demo_audio.mp4](https://github.com/kik-studio/kik-builds/releases/download/review-nova-strike-rb1/demo_audio__demo_audio.mp4) · 28 MB · sha256 `16caa5c35a85b9ce…`
+
+## Event logs: waves, enemy-free periods, pickups, L1–L4 progression (48 missions + Endless)  `logs` · logs · public
+- Builder-reported: Bot pilot (not invulnerable) flew all 48 missions and 180 s of Endless on an exact export of 0c2fc79, observed by tests/review/event_log.gd. All 48 won; standard missions 10 waves in 89–97 s; enemy-free time median 16 s per mission (max 51 s, 1.01); L4 reached in 46/48. Bot never uses Bombs. One run per mission; numbers vary a little between runs.
+- Automated check: uploaded 1.01.jsonl (public review page) — pass
+- Automated check: uploaded 1.02.jsonl (public review page) — pass
+- Automated check: uploaded 1.03.jsonl (public review page) — pass
+- Automated check: uploaded 1.04.jsonl (public review page) — pass
+- Automated check: uploaded 1.05.jsonl (public review page) — pass
+- Automated check: uploaded 1.06.jsonl (public review page) — pass
+- Automated check: uploaded 1.07.jsonl (public review page) — pass
+- Automated check: uploaded 1.08.jsonl (public review page) — pass
+- Automated check: uploaded 2.01.jsonl (public review page) — pass
+- Automated check: uploaded 2.02.jsonl (public review page) — pass
+- Automated check: uploaded 2.03.jsonl (public review page) — pass
+- Automated check: uploaded 2.04.jsonl (public review page) — pass
+- Automated check: uploaded 2.05.jsonl (public review page) — pass
+- Automated check: uploaded 2.06.jsonl (public review page) — pass
+- Automated check: uploaded 2.07.jsonl (public review page) — pass
+- Automated check: uploaded 2.08.jsonl (public review page) — pass
+- Automated check: uploaded 3.01.jsonl (public review page) — pass
+- Automated check: uploaded 3.02.jsonl (public review page) — pass
+- Automated check: uploaded 3.03.jsonl (public review page) — pass
+- Automated check: uploaded 3.04.jsonl (public review page) — pass
+- Automated check: uploaded 3.05.jsonl (public review page) — pass
+- Automated check: uploaded 3.06.jsonl (public review page) — pass
+- Automated check: uploaded 3.07.jsonl (public review page) — pass
+- Automated check: uploaded 3.08.jsonl (public review page) — pass
+- Automated check: uploaded 4.01.jsonl (public review page) — pass
+- Automated check: uploaded 4.02.jsonl (public review page) — pass
+- Automated check: uploaded 4.03.jsonl (public review page) — pass
+- Automated check: uploaded 4.04.jsonl (public review page) — pass
+- Automated check: uploaded 4.05.jsonl (public review page) — pass
+- Automated check: uploaded 4.06.jsonl (public review page) — pass
+- Automated check: uploaded 4.07.jsonl (public review page) — pass
+- Automated check: uploaded 4.08.jsonl (public review page) — pass
+- Automated check: uploaded 5.01.jsonl (public review page) — pass
+- Automated check: uploaded 5.02.jsonl (public review page) — pass
+- Automated check: uploaded 5.03.jsonl (public review page) — pass
+- Automated check: uploaded 5.04.jsonl (public review page) — pass
+- Automated check: uploaded 5.05.jsonl (public review page) — pass
+- Automated check: uploaded 5.06.jsonl (public review page) — pass
+- Automated check: uploaded 5.07.jsonl (public review page) — pass
+- Automated check: uploaded 5.08.jsonl (public review page) — pass
+- Automated check: uploaded 6.01.jsonl (public review page) — pass
+- Automated check: uploaded 6.02.jsonl (public review page) — pass
+- Automated check: uploaded 6.03.jsonl (public review page) — pass
+- Automated check: uploaded 6.04.jsonl (public review page) — pass
+- Automated check: uploaded 6.05.jsonl (public review page) — pass
+- Automated check: uploaded 6.06.jsonl (public review page) — pass
+- Automated check: uploaded 6.07.jsonl (public review page) — pass
+- Automated check: uploaded 6.08.jsonl (public review page) — pass
+- Automated check: uploaded LOGS.md (public review page) — pass
+- Automated check: uploaded SUMMARY.md (public review page) — pass
+- Automated check: uploaded endless.jsonl (public review page) — pass
+- Automated check: uploaded summary.json (public review page) — pass
+  - [1.01.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/1.01.jsonl) · 14 KB · sha256 `efeef40d6d2cf2de…`
+  - [1.02.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/1.02.jsonl) · 15 KB · sha256 `60cb284d8ce21958…`
+  - [1.03.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/1.03.jsonl) · 15 KB · sha256 `9e28a434a08ab41a…`
+  - [1.04.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/1.04.jsonl) · 16 KB · sha256 `7eb197b907df721c…`
+  - [1.05.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/1.05.jsonl) · 15 KB · sha256 `8a9f2d6e10d8bcae…`
+  - [1.06.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/1.06.jsonl) · 15 KB · sha256 `e70b49866ad46a14…`
+  - [1.07.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/1.07.jsonl) · 15 KB · sha256 `3188f336e0649061…`
+  - [1.08.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/1.08.jsonl) · 16 KB · sha256 `1b74f245b65dbf81…`
+  - [2.01.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/2.01.jsonl) · 15 KB · sha256 `1cd1ec58a9b830c3…`
+  - [2.02.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/2.02.jsonl) · 15 KB · sha256 `f88532a41222f1c0…`
+  - [2.03.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/2.03.jsonl) · 15 KB · sha256 `436066f7112450b0…`
+  - [2.04.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/2.04.jsonl) · 14 KB · sha256 `7a621f0d1470e258…`
+  - [2.05.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/2.05.jsonl) · 15 KB · sha256 `a5e04ebd7ee5c775…`
+  - [2.06.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/2.06.jsonl) · 15 KB · sha256 `8e403582ab7d3279…`
+  - [2.07.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/2.07.jsonl) · 15 KB · sha256 `19811cf096e96357…`
+  - [2.08.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/2.08.jsonl) · 18 KB · sha256 `74e42406fc158c1c…`
+  - [3.01.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/3.01.jsonl) · 15 KB · sha256 `74b42dba27966ce7…`
+  - [3.02.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/3.02.jsonl) · 15 KB · sha256 `efba7390c6d2d466…`
+  - [3.03.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/3.03.jsonl) · 15 KB · sha256 `b701cd2b10c45336…`
+  - [3.04.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/3.04.jsonl) · 15 KB · sha256 `398496aa318d1597…`
+  - [3.05.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/3.05.jsonl) · 15 KB · sha256 `c40a19edb5b079d3…`
+  - [3.06.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/3.06.jsonl) · 15 KB · sha256 `6572e8e6fe1bd95b…`
+  - [3.07.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/3.07.jsonl) · 15 KB · sha256 `e8e8e8d1f8b65400…`
+  - [3.08.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/3.08.jsonl) · 16 KB · sha256 `e6f3397033e9f7de…`
+  - [4.01.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/4.01.jsonl) · 15 KB · sha256 `a911ab6be966a5c0…`
+  - [4.02.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/4.02.jsonl) · 15 KB · sha256 `1dddcc6ea74abc61…`
+  - [4.03.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/4.03.jsonl) · 16 KB · sha256 `ee1cf31f2b17aa86…`
+  - [4.04.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/4.04.jsonl) · 15 KB · sha256 `d55be236380ed65d…`
+  - [4.05.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/4.05.jsonl) · 15 KB · sha256 `82140754e86971e9…`
+  - [4.06.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/4.06.jsonl) · 15 KB · sha256 `093ab85c048e26c5…`
+  - [4.07.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/4.07.jsonl) · 15 KB · sha256 `4c8cec042d47ac0f…`
+  - [4.08.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/4.08.jsonl) · 13 KB · sha256 `95013b849c7bb7e4…`
+  - [5.01.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/5.01.jsonl) · 15 KB · sha256 `2e8eec853e007c28…`
+  - [5.02.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/5.02.jsonl) · 15 KB · sha256 `79b3b7878be34d88…`
+  - [5.03.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/5.03.jsonl) · 15 KB · sha256 `9732300983d70309…`
+  - [5.04.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/5.04.jsonl) · 16 KB · sha256 `389450e7cb364d06…`
+  - [5.05.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/5.05.jsonl) · 15 KB · sha256 `15a97e23ce92ce09…`
+  - [5.06.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/5.06.jsonl) · 15 KB · sha256 `b2a280931c73320f…`
+  - [5.07.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/5.07.jsonl) · 15 KB · sha256 `272913007d613940…`
+  - [5.08.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/5.08.jsonl) · 24 KB · sha256 `6a35f25979b36c6d…`
+  - [6.01.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/6.01.jsonl) · 15 KB · sha256 `dceb127348524ca4…`
+  - [6.02.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/6.02.jsonl) · 15 KB · sha256 `e160f8b777791593…`
+  - [6.03.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/6.03.jsonl) · 16 KB · sha256 `80626e9b7d567854…`
+  - [6.04.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/6.04.jsonl) · 15 KB · sha256 `b02b019d9613208a…`
+  - [6.05.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/6.05.jsonl) · 16 KB · sha256 `d296c6dbdabd523c…`
+  - [6.06.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/6.06.jsonl) · 15 KB · sha256 `f413a415f08f2bc8…`
+  - [6.07.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/6.07.jsonl) · 15 KB · sha256 `ebb0d7e65b455637…`
+  - [6.08.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/6.08.jsonl) · 17 KB · sha256 `7b9d44a97543f48d…`
+  - [LOGS.md](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/LOGS.md) · 2 KB · sha256 `a608664aa286712b…`
+  - [SUMMARY.md](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/SUMMARY.md) · 6 KB · sha256 `6791847c19e76185…`
+  - [endless.jsonl](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/endless.jsonl) · 28 KB · sha256 `55872a386f8004ad…`
+  - [summary.json](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/summary.json) · 35 KB · sha256 `8e735b8e1f7aad91…`
+
+## Test reports (8 suites re-run on this build's code + browser audio test)  `tests` · tests · public
+- Builder-reported: Re-run by the Builder on 2026-09-25 on an exact export of 0c2fc79: test_runner 47/0, combat_tests 35/0, qa_suite 174/0, ui_tests 0 failures, ui_flow 0 failures, content_validator PASS, units_check PASS, economy_sim PASS. Logs included.
+- Automated check: uploaded AUDIO_BROWSER.md (public review page) — pass
+- Automated check: uploaded TESTS.md (public review page) — pass
+- Automated check: uploaded combat_tests.log (public review page) — pass
+- Automated check: uploaded content_validator.log (public review page) — pass
+- Automated check: uploaded economy_sim.log (public review page) — pass
+- Automated check: uploaded qa_suite.log (public review page) — pass
+- Automated check: uploaded test_runner.log (public review page) — pass
+- Automated check: uploaded ui_flow.log (public review page) — pass
+- Automated check: uploaded ui_tests.log (public review page) — pass
+- Automated check: uploaded units_check.log (public review page) — pass
+  - [AUDIO_BROWSER.md](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/tests/AUDIO_BROWSER.md) · 2 KB · sha256 `a8c97c440ef59575…`
+  - [TESTS.md](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/tests/TESTS.md) · 2 KB · sha256 `a0a0dca175f4ca83…`
+  - [combat_tests.log](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/tests/combat_tests.log) · 2 KB · sha256 `5c8d1babdeaf0557…`
+  - [content_validator.log](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/tests/content_validator.log) · 10 KB · sha256 `2fce2793352622d8…`
+  - [economy_sim.log](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/tests/economy_sim.log) · 1 KB · sha256 `d7862bbf78cc93ba…`
+  - [qa_suite.log](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/tests/qa_suite.log) · 13 KB · sha256 `dc7b3d23fcd4bb24…`
+  - [test_runner.log](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/tests/test_runner.log) · 2 KB · sha256 `d70eb5e72b5f30bd…`
+  - [ui_flow.log](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/tests/ui_flow.log) · 4 KB · sha256 `4f507decc2cacd68…`
+  - [ui_tests.log](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/tests/ui_tests.log) · 3 KB · sha256 `bde57581ad9307c0…`
+  - [units_check.log](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/tests/units_check.log) · 1 KB · sha256 `e1bdb44ad393fca9…`
+
+## Balance: data tables (units, prices, enemies, bosses, 48 missions) + notes  `balance` · balance · public
+- Builder-reported: JSON exported from the game's data scripts at 0c2fc79 by tests/review/export_balance.gd; BALANCE_NOTES.md = docs/BALANCE.md. Balance measured with the bot only.
+- Automated check: uploaded BALANCE_NOTES.md (public review page) — pass
+- Automated check: uploaded bosses.json (public review page) — pass
+- Automated check: uploaded enemies.json (public review page) — pass
+- Automated check: uploaded missions.json (public review page) — pass
+- Automated check: uploaded units.json (public review page) — pass
+  - [BALANCE_NOTES.md](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/balance/BALANCE_NOTES.md) · 27 KB · sha256 `cc712f5664fea0ad…`
+  - [bosses.json](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/balance/bosses.json) · 6 KB · sha256 `36888f358f867d3d…`
+  - [enemies.json](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/balance/enemies.json) · 5 KB · sha256 `cffe8fa75b220605…`
+  - [missions.json](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/balance/missions.json) · 264 KB · sha256 `85464517e8f3da83…`
+  - [units.json](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/balance/units.json) · 16 KB · sha256 `80d1d35c6b1febc6…`
+
+## Performance: measured on real phones vs pending  `performance` · performance · public
+- Builder-reported: Separates measured Test Lab results from pending checks; names the build each number was measured on.
+- Pending / unavailable: Owner phone check (Pixel 10 Pro XL APK, iPhone 16 Plus browser) not done yet.
+- Automated check: uploaded PERFORMANCE.md (public review page) — pass
+  - [PERFORMANCE.md](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/performance/PERFORMANCE.md) · 2 KB · sha256 `366d365e8b5c8863…`
+
+## All audio files (music + sound effects, OGG)  `audio` · audio · public
+- Builder-reported: The files shipped in the build (unchanged since 0c2fc79).
+- Automated check: uploaded coin.ogg (public review page) — pass
+- Automated check: uploaded music/boss.ogg (public review page) — pass
+- Automated check: uploaded music/boss_final.ogg (public review page) — pass
+- Automated check: uploaded music/combat_armada.ogg (public review page) — pass
+- Automated check: uploaded music/combat_dominion.ogg (public review page) — pass
+- Automated check: uploaded music/combat_ember.ogg (public review page) — pass
+- Automated check: uploaded music/combat_lantern.ogg (public review page) — pass
+- Automated check: uploaded music/combat_tempest.ogg (public review page) — pass
+- Automated check: uploaded music/combat_veil.ogg (public review page) — pass
+- Automated check: uploaded music/ending.ogg (public review page) — pass
+- Automated check: uploaded music/endless.ogg (public review page) — pass
+- Automated check: uploaded music/menu.ogg (public review page) — pass
+- Automated check: uploaded sfx/arc_chain.ogg (public review page) — pass
+- Automated check: uploaded sfx/arc_fire.ogg (public review page) — pass
+- Automated check: uploaded sfx/arc_impact.ogg (public review page) — pass
+- Automated check: uploaded sfx/beacon_relight.ogg (public review page) — pass
+- Automated check: uploaded sfx/bomb_arc.ogg (public review page) — pass
+- Automated check: uploaded sfx/bomb_solar.ogg (public review page) — pass
+- Automated check: uploaded sfx/bomb_void.ogg (public review page) — pass
+- Automated check: uploaded sfx/boss_explode.ogg (public review page) — pass
+- Automated check: uploaded sfx/bulwark.ogg (public review page) — pass
+- Automated check: uploaded sfx/dash.ogg (public review page) — pass
+- Automated check: uploaded sfx/enemy_charge.ogg (public review page) — pass
+- Automated check: uploaded sfx/enemy_heavy.ogg (public review page) — pass
+- Automated check: uploaded sfx/enemy_hit.ogg (public review page) — pass
+- Automated check: uploaded sfx/enemy_shot.ogg (public review page) — pass
+- Automated check: uploaded sfx/engine_loop.ogg (public review page) — pass
+- Automated check: uploaded sfx/explode_large.ogg (public review page) — pass
+- Automated check: uploaded sfx/explode_small.ogg (public review page) — pass
+- Automated check: uploaded sfx/level_up.ogg (public review page) — pass
+- Automated check: uploaded sfx/mission_complete.ogg (public review page) — pass
+- Automated check: uploaded sfx/mission_failed.ogg (public review page) — pass
+- Automated check: uploaded sfx/phase_relay.ogg (public review page) — pass
+- Automated check: uploaded sfx/pickup_light.ogg (public review page) — pass
+- Automated check: uploaded sfx/pickup_power.ogg (public review page) — pass
+- Automated check: uploaded sfx/player_hit.ogg (public review page) — pass
+- Automated check: uploaded sfx/shield_break.ogg (public review page) — pass
+- Automated check: uploaded sfx/shield_hit.ogg (public review page) — pass
+- Automated check: uploaded sfx/solar_fire.ogg (public review page) — pass
+- Automated check: uploaded sfx/solar_impact.ogg (public review page) — pass
+- Automated check: uploaded sfx/solar_seeker.ogg (public review page) — pass
+- Automated check: uploaded sfx/super_arc.ogg (public review page) — pass
+- Automated check: uploaded sfx/super_ready.ogg (public review page) — pass
+- Automated check: uploaded sfx/super_retract.ogg (public review page) — pass
+- Automated check: uploaded sfx/super_solar.ogg (public review page) — pass
+- Automated check: uploaded sfx/super_void.ogg (public review page) — pass
+- Automated check: uploaded sfx/ui_back.ogg (public review page) — pass
+- Automated check: uploaded sfx/ui_confirm.ogg (public review page) — pass
+- Automated check: uploaded sfx/ui_error.ogg (public review page) — pass
+- Automated check: uploaded sfx/ui_install.ogg (public review page) — pass
+- Automated check: uploaded sfx/ui_tap.ogg (public review page) — pass
+- Automated check: uploaded sfx/void_fire.ogg (public review page) — pass
+- Automated check: uploaded sfx/void_impact.ogg (public review page) — pass
+- Automated check: uploaded sfx/void_torpedo.ogg (public review page) — pass
+- Automated check: uploaded sfx/warning_boss.ogg (public review page) — pass
+- Automated check: uploaded sfx/wave_advance.ogg (public review page) — pass
+  - [coin.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/coin.ogg) · 21 KB · sha256 `f593e2ee6d2f642f…`
+  - [music/boss.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/music/boss.ogg) · 616 KB · sha256 `64ffcea39a1d0012…`
+  - [music/boss_final.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/music/boss_final.ogg) · 597 KB · sha256 `030765b7e1bb108b…`
+  - [music/combat_armada.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/music/combat_armada.ogg) · 607 KB · sha256 `e3d3b21ac1f40d9a…`
+  - [music/combat_dominion.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/music/combat_dominion.ogg) · 609 KB · sha256 `047bb1f1ea738e32…`
+  - [music/combat_ember.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/music/combat_ember.ogg) · 685 KB · sha256 `9b0f4c2396161740…`
+  - [music/combat_lantern.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/music/combat_lantern.ogg) · 623 KB · sha256 `654f57d9ddaccb83…`
+  - [music/combat_tempest.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/music/combat_tempest.ogg) · 588 KB · sha256 `3ef11e8e05cd7097…`
+  - [music/combat_veil.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/music/combat_veil.ogg) · 599 KB · sha256 `005f0c78d6bdeb38…`
+  - [music/ending.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/music/ending.ogg) · 524 KB · sha256 `858d8706f7c89f3a…`
+  - [music/endless.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/music/endless.ogg) · 665 KB · sha256 `e875704d951924e8…`
+  - [music/menu.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/music/menu.ogg) · 501 KB · sha256 `34cb65378efccde7…`
+  - [sfx/arc_chain.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/arc_chain.ogg) · 21 KB · sha256 `293e789a06c14012…`
+  - [sfx/arc_fire.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/arc_fire.ogg) · 12 KB · sha256 `b86ec92e18a773f9…`
+  - [sfx/arc_impact.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/arc_impact.ogg) · 14 KB · sha256 `cb28a1ed983fb555…`
+  - [sfx/beacon_relight.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/beacon_relight.ogg) · 35 KB · sha256 `2b1661e83aeeb4ce…`
+  - [sfx/bomb_arc.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/bomb_arc.ogg) · 50 KB · sha256 `eb0ed470dc36a484…`
+  - [sfx/bomb_solar.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/bomb_solar.ogg) · 35 KB · sha256 `0e313e9231b1b61c…`
+  - [sfx/bomb_void.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/bomb_void.ogg) · 42 KB · sha256 `9f7ebaaa08691eec…`
+  - [sfx/boss_explode.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/boss_explode.ogg) · 55 KB · sha256 `c57966e47f01c4be…`
+  - [sfx/bulwark.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/bulwark.ogg) · 18 KB · sha256 `23f6b33ef9e3d841…`
+  - [sfx/dash.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/dash.ogg) · 15 KB · sha256 `b168a2ab64e3417c…`
+  - [sfx/enemy_charge.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/enemy_charge.ogg) · 26 KB · sha256 `c054cfed2e5279fc…`
+  - [sfx/enemy_heavy.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/enemy_heavy.ogg) · 17 KB · sha256 `ab620520fa500847…`
+  - [sfx/enemy_hit.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/enemy_hit.ogg) · 16 KB · sha256 `fed2903b10b0b891…`
+  - [sfx/enemy_shot.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/enemy_shot.ogg) · 12 KB · sha256 `886ce68c72f7d539…`
+  - [sfx/engine_loop.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/engine_loop.ogg) · 56 KB · sha256 `e19dea342101728e…`
+  - [sfx/explode_large.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/explode_large.ogg) · 36 KB · sha256 `06103feb96b7d9bb…`
+  - [sfx/explode_small.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/explode_small.ogg) · 18 KB · sha256 `0d69a9e3444c73a3…`
+  - [sfx/level_up.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/level_up.ogg) · 29 KB · sha256 `cf10c20478494220…`
+  - [sfx/mission_complete.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/mission_complete.ogg) · 53 KB · sha256 `2e0a5fa980af8666…`
+  - [sfx/mission_failed.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/mission_failed.ogg) · 42 KB · sha256 `8064ba421317001b…`
+  - [sfx/phase_relay.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/phase_relay.ogg) · 15 KB · sha256 `3370885832f71d9e…`
+  - [sfx/pickup_light.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/pickup_light.ogg) · 12 KB · sha256 `b4f02c6716e9f606…`
+  - [sfx/pickup_power.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/pickup_power.ogg) · 22 KB · sha256 `43db1db51aee2a89…`
+  - [sfx/player_hit.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/player_hit.ogg) · 17 KB · sha256 `7ab16d7c45aa79a2…`
+  - [sfx/shield_break.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/shield_break.ogg) · 18 KB · sha256 `4f6aa49be15295c2…`
+  - [sfx/shield_hit.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/shield_hit.ogg) · 12 KB · sha256 `9f45301e1221ae6c…`
+  - [sfx/solar_fire.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/solar_fire.ogg) · 10 KB · sha256 `5a17739fcaaf6772…`
+  - [sfx/solar_impact.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/solar_impact.ogg) · 17 KB · sha256 `63e9936361b8c37c…`
+  - [sfx/solar_seeker.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/solar_seeker.ogg) · 14 KB · sha256 `3e87de716de0bb06…`
+  - [sfx/super_arc.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/super_arc.ogg) · 25 KB · sha256 `93de24327d00c4b4…`
+  - [sfx/super_ready.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/super_ready.ogg) · 17 KB · sha256 `151b386952b00220…`
+  - [sfx/super_retract.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/super_retract.ogg) · 16 KB · sha256 `4b93e3c4d6cf65ec…`
+  - [sfx/super_solar.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/super_solar.ogg) · 32 KB · sha256 `62d76f6d87d8171c…`
+  - [sfx/super_void.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/super_void.ogg) · 32 KB · sha256 `50809a3d747a4ed8…`
+  - [sfx/ui_back.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/ui_back.ogg) · 11 KB · sha256 `bf0149de2b64ab16…`
+  - [sfx/ui_confirm.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/ui_confirm.ogg) · 12 KB · sha256 `397f66a5c4ccabe0…`
+  - [sfx/ui_error.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/ui_error.ogg) · 12 KB · sha256 `259d231b7418abac…`
+  - [sfx/ui_install.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/ui_install.ogg) · 29 KB · sha256 `52b074b9af89ec1c…`
+  - [sfx/ui_tap.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/ui_tap.ogg) · 12 KB · sha256 `4d3b6a4729b67677…`
+  - [sfx/void_fire.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/void_fire.ogg) · 11 KB · sha256 `a4fd61cdb2d0c222…`
+  - [sfx/void_impact.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/void_impact.ogg) · 13 KB · sha256 `d896750be8afc941…`
+  - [sfx/void_torpedo.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/void_torpedo.ogg) · 19 KB · sha256 `a687874013fecce0…`
+  - [sfx/warning_boss.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/warning_boss.ogg) · 40 KB · sha256 `05816528c5cd1ac7…`
+  - [sfx/wave_advance.ogg](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/wave_advance.ogg) · 12 KB · sha256 `069005b1a012f862…`
+
+## Audio files (WAV sound effects)  `audio_wav` · audio · public
+- Builder-reported: The WAV files present in the build folder (unchanged since 0c2fc79).
+- Automated check: uploaded sfx/boss.wav (public review page) — pass
+- Automated check: uploaded sfx/explode.wav (public review page) — pass
+- Automated check: uploaded sfx/hurt.wav (public review page) — pass
+- Automated check: uploaded sfx/pickup.wav (public review page) — pass
+- Automated check: uploaded sfx/power.wav (public review page) — pass
+- Automated check: uploaded sfx/shot_arcanist.wav (public review page) — pass
+- Automated check: uploaded sfx/shot_guardian.wav (public review page) — pass
+- Automated check: uploaded sfx/shot_striker.wav (public review page) — pass
+- Automated check: uploaded sfx/super.wav (public review page) — pass
+- Automated check: uploaded sfx/victory.wav (public review page) — pass
+  - [sfx/boss.wav](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio_wav/sfx/boss.wav) · 190 KB · sha256 `09d80daaa07f3822…`
+  - [sfx/explode.wav](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio_wav/sfx/explode.wav) · 39 KB · sha256 `de36ca73df6bca0d…`
+  - [sfx/hurt.wav](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio_wav/sfx/hurt.wav) · 26 KB · sha256 `5413464f75c18735…`
+  - [sfx/pickup.wav](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio_wav/sfx/pickup.wav) · 6 KB · sha256 `91f08eaeb178948b…`
+  - [sfx/power.wav](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio_wav/sfx/power.wav) · 34 KB · sha256 `cc40fb44aaeb43e4…`
+  - [sfx/shot_arcanist.wav](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio_wav/sfx/shot_arcanist.wav) · 10 KB · sha256 `505de240457b4056…`
+  - [sfx/shot_guardian.wav](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio_wav/sfx/shot_guardian.wav) · 22 KB · sha256 `b40ca7444fa83ab3…`
+  - [sfx/shot_striker.wav](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio_wav/sfx/shot_striker.wav) · 8 KB · sha256 `ce20bdb58c10a1af…`
+  - [sfx/super.wav](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio_wav/sfx/super.wav) · 86 KB · sha256 `5e0679af1126240f…`
+  - [sfx/victory.wav](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio_wav/sfx/victory.wav) · 103 KB · sha256 `aaf9e46c37bba2e8…`
+
+## Audio manifest: source, tool, prompt and processing for every file  `audio_manifest` · audio_manifest · public
+- Builder-reported: Provenance written when each file was generated (ElevenLabs SFX v2, Stable Audio 3.0; no ElevenLabs Music).
+- Automated check: uploaded sources_audio.json (public review page) — pass
+  - [sources_audio.json](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio_manifest/sources_audio.json) · 26 KB · sha256 `b5480e66680b28b8…`
+
+## Asset licence log  `licences` · docs · public
+- Builder-reported: Studio licence and provenance log for the release assets.
+- Automated check: uploaded ASSET_LICENSES.md (public review page) — pass
+  - [ASSET_LICENSES.md](https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/licences/ASSET_LICENSES.md) · 6 KB · sha256 `f18dfcfcdcab868a…`
+
+## Audio masters  `audio_masters` · audio_masters · 🔒 owner-only
+- Pending / unavailable: Unavailable: the audio tools wrote the final processed files directly; no separate masters were kept. The shipped files are in 'All audio files'.
+- Pending / unavailable: no files produced for this item
+
+## 3D masters: generated models the aircraft rigs are built from  `masters_3d` · editable_assets · 🔒 owner-only
+- Builder-reported: Raw Rodin Gen-2.5 High outputs from the private asset vault; the rigs are rebuilt from these by pipeline/ scripts (in the source ZIP). Provenance: art/sources_3d.json.
+- Automated check: uploaded striker_v11_rodin25_high.glb (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded guardian_v1_rodin25_high.glb (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded arcanist_v1_rodin25_high.glb (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded lancepod_v11_rodin25.glb (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded hw_s_seeker_rodin25.glb (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded hw_g_torp_rodin25.glb (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded hw_g_pylon_rodin25.glb (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded hw_a_drone_rodin25.glb (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded hw_a_coil_rodin25.glb (private GitHub release (owner sign-in)) — pass
+  - [striker_v11_rodin25_high.glb](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 16 MB · sha256 `378f324fd8a2b2c7…`
+  - [guardian_v1_rodin25_high.glb](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 19 MB · sha256 `97d33d7757dad8cf…`
+  - [arcanist_v1_rodin25_high.glb](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 19 MB · sha256 `11a15b294b6ec8d2…`
+  - [lancepod_v11_rodin25.glb](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 2 MB · sha256 `454a5d54f501a40d…`
+  - [hw_s_seeker_rodin25.glb](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 2 MB · sha256 `8deb7b88b82e41e4…`
+  - [hw_g_torp_rodin25.glb](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 2 MB · sha256 `41933b81bfbe3e65…`
+  - [hw_g_pylon_rodin25.glb](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 4 MB · sha256 `bd58947bb76c199c…`
+  - [hw_a_drone_rodin25.glb](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 3 MB · sha256 `dc32ab4c80e57356…`
+  - [hw_a_coil_rodin25.glb](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 3 MB · sha256 `69f5ec371a61d714…`
+
+## Canon art (approved views the 3D models were generated from)  `masters_canon` · editable_assets · 🔒 owner-only
+- Builder-reported: Full-resolution canon views and sheets.
+- Automated check: uploaded arcanist/arcanist_q34.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded arcanist/arcanist_q34_right.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded arcanist/arcanist_top_base.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded arcanist/canon.md (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded arcanist/components/a_coil.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded arcanist/components/a_drone.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded guardian/canon.md (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded guardian/components/g_pylon.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded guardian/components/g_torp.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded guardian/guardian_q34.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded guardian/guardian_side.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded guardian/guardian_top_base.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded striker/STRIKER_CANONICAL_SHEET_v1_1.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded striker/canon.md (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded striker/striker_q34.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded striker/striker_side.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded striker/striker_top_base.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded striker/striker_top_lances.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded striker/striker_top_super.png (private GitHub release (owner sign-in)) — pass
+  - [arcanist/arcanist_q34.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 4 MB · sha256 `e3199abc0b465a5f…`
+  - [arcanist/arcanist_q34_right.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 4 MB · sha256 `26789498814e1951…`
+  - [arcanist/arcanist_top_base.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 3 MB · sha256 `5ac83442022a9640…`
+  - [arcanist/canon.md](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 2 KB · sha256 `1b93984a8dd4b66d…`
+  - [arcanist/components/a_coil.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 3 MB · sha256 `809d8d59d83f6981…`
+  - [arcanist/components/a_drone.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 3 MB · sha256 `bcd01beb3245165d…`
+  - [guardian/canon.md](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 2 KB · sha256 `7cb648c1038a7a8a…`
+  - [guardian/components/g_pylon.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 3 MB · sha256 `d4542a128ea6da32…`
+  - [guardian/components/g_torp.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 3 MB · sha256 `dda6086ba13b0c29…`
+  - [guardian/guardian_q34.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 3 MB · sha256 `73a74cb94ef96263…`
+  - [guardian/guardian_side.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 3 MB · sha256 `c58defd6f3d43355…`
+  - [guardian/guardian_top_base.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 3 MB · sha256 `cd938a60e3634976…`
+  - [striker/STRIKER_CANONICAL_SHEET_v1_1.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 5 MB · sha256 `17b7b5f0a27de264…`
+  - [striker/canon.md](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 3 KB · sha256 `0ec4e1c7be4348f6…`
+  - [striker/striker_q34.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 4 MB · sha256 `2fb30ebc0e81f1b1…`
+  - [striker/striker_side.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 3 MB · sha256 `e3421fb3a2d6b054…`
+  - [striker/striker_top_base.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 4 MB · sha256 `6101d679a277a88d…`
+  - [striker/striker_top_lances.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 4 MB · sha256 `f9aa95148f747fb5…`
+  - [striker/striker_top_super.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 5 MB · sha256 `426ae18314032b92…`
+
+## 2D production masters (environments, enemies, pilots)  `masters_production` · editable_assets · 🔒 owner-only
+- Builder-reported: Full-resolution production masters with their manifests.
+- Automated check: uploaded lantern_road/far_plate_v1.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded moth/moth_top_v1.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded striker/design/STRIKER_CANON.md (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded striker/design/STRIKER_CANONICAL_SHEET_v1.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded striker/design/pod_q34.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded striker/design/pod_top.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded striker/design/seeker_pod_q34.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded striker/design/striker_base_q34_front.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded striker/design/striker_base_side.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded striker/design/striker_base_top.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded striker/design/striker_base_top_v11.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded striker/design/striker_base_top_v11b.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded striker/design/striker_canon_ortho_v1.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded striker/design/striker_canon_ortho_v2.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded striker/design/striker_q34_v11.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded striker/design/striker_side_v11.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded striker/design/striker_super_top.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded striker/design/striker_super_top_ref.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded striker/design/striker_super_top_v11.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded striker/design/striker_winglances_top.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded striker/design/striker_winglances_top_v11.png (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded striker/unit_build.json (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded veyron/veyron_portrait_v1.png (private GitHub release (owner sign-in)) — pass
+  - [lantern_road/far_plate_v1.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 4 MB · sha256 `ba68f76997c42b3d…`
+  - [moth/moth_top_v1.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 4 MB · sha256 `dc95d9ee0e0cb65d…`
+  - [striker/design/STRIKER_CANON.md](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 2 KB · sha256 `655fc9cb2255cd58…`
+  - [striker/design/STRIKER_CANONICAL_SHEET_v1.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 4 MB · sha256 `65bc3ee65b84c1e2…`
+  - [striker/design/pod_q34.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 4 MB · sha256 `bc674d42524182ab…`
+  - [striker/design/pod_top.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 3 MB · sha256 `118f6a34fa12e9a0…`
+  - [striker/design/seeker_pod_q34.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 4 MB · sha256 `f5b642629e4b9948…`
+  - [striker/design/striker_base_q34_front.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 4 MB · sha256 `15c0f2b803017dfc…`
+  - [striker/design/striker_base_side.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 474 KB · sha256 `35e0cd9b464268d3…`
+  - [striker/design/striker_base_top.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 736 KB · sha256 `95a929257b3c4925…`
+  - [striker/design/striker_base_top_v11.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 4 MB · sha256 `7bf55874a840f4e6…`
+  - [striker/design/striker_base_top_v11b.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 4 MB · sha256 `770532e360b1d333…`
+  - [striker/design/striker_canon_ortho_v1.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 3 MB · sha256 `8b0a7bf7bc55b2ef…`
+  - [striker/design/striker_canon_ortho_v2.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 4 MB · sha256 `4cdba3819d5c767e…`
+  - [striker/design/striker_q34_v11.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 4 MB · sha256 `2fb30ebc0e81f1b1…`
+  - [striker/design/striker_side_v11.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 3 MB · sha256 `e3421fb3a2d6b054…`
+  - [striker/design/striker_super_top.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 4 MB · sha256 `b57d5de9a34b40fe…`
+  - [striker/design/striker_super_top_ref.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 1 MB · sha256 `b1231db4460ef5a8…`
+  - [striker/design/striker_super_top_v11.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 4 MB · sha256 `cad5293ceeaea26b…`
+  - [striker/design/striker_winglances_top.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 4 MB · sha256 `307f86f8a4f39b0e…`
+  - [striker/design/striker_winglances_top_v11.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 4 MB · sha256 `78f6989d5b110c6a…`
+  - [striker/unit_build.json](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 1 KB · sha256 `918f7600e8d99dfe…`
+  - [veyron/veyron_portrait_v1.png](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 6 MB · sha256 `5529f42f5cb67948…`
+
+## Design records: requirement matrix, decisions, pitch, research, balance notes  `design_docs` · docs · 🔒 owner-only
+- Builder-reported: Internal design documents at the time of packaging (owner-only: they quote the brief).
+- Automated check: uploaded ARCHITECTURE.md (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded ASSET_LICENSES.md (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded BALANCE.md (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded BRIEF_REVIEW.md (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded DECISIONS.md (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded FOUNDATION_PROOF_VP0.md (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded FOUNDATION_REQUESTS.md (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded OLD_BUILD_LESSONS.md (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded PITCH.md (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded PITCH_CHANGES.md (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded PITCH_v1.md (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded REQUIREMENTS.md (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded RESEARCH.md (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded RESTART_R0_AUDIT_PLAN.md (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded SOUL_ALIGNMENT.md (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded TEAM_NOTES.md (private GitHub release (owner sign-in)) — pass
+- Automated check: uploaded UPGRADE_LADDER.md (private GitHub release (owner sign-in)) — pass
+  - [ARCHITECTURE.md](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 4 KB · sha256 `3f15409e56d4f93c…`
+  - [ASSET_LICENSES.md](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 6 KB · sha256 `f18dfcfcdcab868a…`
+  - [BALANCE.md](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 27 KB · sha256 `cc712f5664fea0ad…`
+  - [BRIEF_REVIEW.md](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 5 KB · sha256 `812db039d6f8f192…`
+  - [DECISIONS.md](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 9 KB · sha256 `0cdd4dfe099b07e0…`
+  - [FOUNDATION_PROOF_VP0.md](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 8 KB · sha256 `05cacd6f9ea7fdac…`
+  - [FOUNDATION_REQUESTS.md](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 8 KB · sha256 `efb122a90cc858b5…`
+  - [OLD_BUILD_LESSONS.md](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 2 KB · sha256 `aa74d4308ebfe86c…`
+  - [PITCH.md](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 6 KB · sha256 `172a1f9a4ed26838…`
+  - [PITCH_CHANGES.md](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 9 KB · sha256 `c4f8ca40e375930e…`
+  - [PITCH_v1.md](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 5 KB · sha256 `3035ea611b711579…`
+  - [REQUIREMENTS.md](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 10 KB · sha256 `44a3eeb9b1aaf6a2…`
+  - [RESEARCH.md](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 5 KB · sha256 `86dc8d5cdfb2ef51…`
+  - [RESTART_R0_AUDIT_PLAN.md](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 8 KB · sha256 `b80b549c01f891f0…`
+  - [SOUL_ALIGNMENT.md](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 4 KB · sha256 `90d21a7bb2a90542…`
+  - [TEAM_NOTES.md](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 2 KB · sha256 `b1d7c9a464ee94a9…`
+  - [UPGRADE_LADDER.md](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 3 KB · sha256 `64e866c1b3500fce…`
+
+## Source at the labelled commit (games/nova-strike)  `source` · source · 🔒 owner-only
+- Builder-reported: The game folder exactly as committed at 0c2fc79.
+- Automated check: source archived by git at commit 0c2fc79 (games/nova-strike): clean export, no local changes — pass
+- Automated check: zip opens and every entry passes CRC (nova-strike-rb1-source-0c2fc79.zip) — pass
+- Automated check: uploaded nova-strike-rb1-source-0c2fc79.zip (private GitHub release (owner sign-in)) — pass
+  - [nova-strike-rb1-source-0c2fc79.zip](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 569 MB · sha256 `21e332806e5baa74…`
+
+## Complete package (1 self-contained ZIP part(s), each opens on its own)  `complete` · complete · 🔒 owner-only
+- Automated check: nova-strike-rb1-complete-part01-of-01.zip opens and every entry passes CRC — pass
+- Automated check: uploaded nova-strike-rb1-complete-part01-of-01.zip (private GitHub release (owner sign-in)) — pass
+  - [nova-strike-rb1-complete-part01-of-01.zip](https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1) · 2 GB · sha256 `e455105bfd261818…`

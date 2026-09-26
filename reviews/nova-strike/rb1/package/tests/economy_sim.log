@@ -1,0 +1,12 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+prices [150, 300, 520, 820]  full unit = 10740  (6 families x 4 tiers)
+48 first clears = 10577  (1.01=110 1.08=221 6.01=270 6.08=477; repeat ratio 0.70)
+baseline      earned  13124  plays  73  full main @ 6.03   2nd unit tiers 10  |  ch1  0/ 0 (    0)  ch2  7/ 4 ( 1315)  ch3 12/ 8 ( 2999)  ch4 16/12 ( 4998)  ch5 19/16 ( 7349)  ch6 23/20 (10070)  
+no-replay     earned  10811  plays  61  full main @ 6.08   2nd unit tiers  0  |  ch1  0/ 0 (    0)  ch2  6/ 4 ( 1075)  ch3 11/ 8 ( 2461)  ch4 14/12 ( 4104)  ch5 18/16 ( 6040)  ch6 21/20 ( 8288)  
+baseline+2nd  earned  13124  plays  73  full main @ 6.04   2nd unit tiers 10  |  ch1  0/ 0 (    0)  ch2  7/ 4 ( 1315)  ch3 12/ 8 ( 2999)  ch4 15/12 ( 4998)  ch5 19/16 ( 7349)  ch6 22/20 (10070)  
+ad (every)    earned  26014  plays  73  full main @ 4.03   2nd unit tiers 24  |  ch1  0/ 0 (    0)  ch2 11/ 4 ( 2630)  ch3 18/ 8 ( 5962)  ch4 22/12 ( 9942)  ch5 24/16 (14608)  ch6 24/20 (19978)  
+ad (half)     earned  19485  plays  73  full main @ 5.02   2nd unit tiers 21  |  ch1  0/ 0 (    0)  ch2  9/ 4 ( 1966)  ch3 15/ 8 ( 4464)  ch4 19/12 ( 7441)  ch5 23/16 (10934)  ch6 24/20 (14961)  
+supporter     earned  26014  plays  73  full main @ 4.03   2nd unit tiers 24  |  ch1  0/ 0 (    0)  ch2 11/ 4 ( 2630)  ch3 18/ 8 ( 5962)  ch4 22/12 ( 9942)  ch5 24/16 (14608)  ch6 24/20 (19978)  
+ECONOMY SIM: PASS (0 failures)
+exit=0 secs=1
