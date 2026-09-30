@@ -1,0 +1,43 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+COMBAT TESTS: 0 failed / 35
+PASS drag_relative_no_teleport
+PASS second_finger_button_keeps_steering
+PASS levels_change_patterns_and_reset
+PASS support_needs_purchased_hardware
+PASS bomb_clears_once_boss_capped
+PASS super_cycle_pause_expire_restore
+PASS death_during_active_clears_buffs
+PASS arc_chain_visited_dead_cap
+PASS bulwark_absorbs_only_absorbable
+PASS reward_granted_once
+PASS graze_once_per_bullet
+PASS training_unit_switch
+PASS focus_loss_pauses_resume_on_tap
+PASS left_handed_mirrors_buttons
+PASS mission_complete_resolves_hazards
+PASS statuses_heat_flare_and_compression_torpedo
+PASS gravity_well_pulls_but_escapable
+PASS mastery_counter_names
+PASS content_events_and_checkpoint
+PASS settings_keys_flash_contrast
+PASS bomb_storyboard_matches_resolve_moment
+PASS training_practice_controls
+PASS hud_arabic_mirrors_chrome_not_field
+PASS pilot_lines_events
+PASS pickups_bob_and_magnet_trail
+INFO readability unit_striker L4+Super coverage 11.2 %
+INFO readability unit_guardian L4+Super coverage 7.8 %
+INFO readability unit_arcanist L4+Super coverage 11.6 %
+PASS l4_super_shots_leave_negative_space
+PASS super_punch_damage_state_endless_record_hud
+INFO r14 unit_striker hitbox r 12 / craft 248 px
+INFO r14 unit_guardian hitbox r 14 / craft 281 px
+INFO r14 unit_arcanist hitbox r 12 / craft 248 px
+PASS hitbox_on_reactor_and_inside_craft_r14
+PASS super_punch_all_units_orb_floor
+WARNING: 12 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 6 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)
+exit=0 secs=6
