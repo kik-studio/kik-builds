@@ -1,0 +1,51 @@
+{
+ "game_id": "sunpunch",
+ "version": "0.2",
+ "updated": "2026-09-30",
+ "commit": "1144af7",
+ "links": {
+  "web": "https://kik-studio-dev.web.app/games/sunpunch/web/index.html",
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-sunpunch/sunpunch.apk"
+ },
+ "screenshots": {
+  "en": [
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/game_en.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/game_pause_en.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/game_results_en.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/menu_en.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/settings_en.png"
+  ],
+  "ar": [
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/game_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/game_pause_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/game_results_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/menu_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/settings_ar.png"
+  ]
+ },
+ "apk_bytes": 27494105,
+ "shapes": [
+  "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/game_en_desktop.png",
+  "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/game_en_tablet.png"
+ ],
+ "video": [
+  "https://kik-studio.github.io/kik-builds/games/sunpunch/video/gameplay.mp4",
+  "https://kik-studio.github.io/kik-builds/games/sunpunch/video/showcase_fx.mp4",
+  "https://kik-studio.github.io/kik-builds/games/sunpunch/video/showcase_ui.mp4"
+ ],
+ "tests": "https://kik-studio.github.io/kik-builds/games/sunpunch/tests.txt",
+ "benchmark_apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-sunpunch/sunpunch-benchmark.apk",
+ "branch": "main",
+ "checks": "https://kik-studio.github.io/kik-builds/games/sunpunch/checks/",
+ "build_id": "0.2+1144af7",
+ "review": {
+  "build_id": "0.2+c0710dc",
+  "machine": "studio PC GPU",
+  "when": "2026-09-30 22:28 UTC"
+ },
+ "screens_hd": [
+  "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/hd/game_ar.jpg",
+  "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/hd/game_en.jpg",
+  "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/hd/menu_en.jpg"
+ ]
+}
