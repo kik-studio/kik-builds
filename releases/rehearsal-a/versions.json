@@ -1,0 +1,10 @@
+[
+ {
+  "label": "v0.2",
+  "build_id": "0.2+922baeb",
+  "released": "2026-09-30 18:25 UTC",
+  "web": "https://kik-studio-dev.web.app/releases/rehearsal-a/v0.2/web/index.html",
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-rehearsal-a-v0.2/rehearsal-a.apk",
+  "notes": "Rehearsal build (Brain test of two games at once; this game will be deleted).\n"
+ }
+]
