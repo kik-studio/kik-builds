@@ -1,0 +1,1297 @@
+  PASS config: game.json loads
+  PASS config: version present
+  PASS save: value survives reload
+  PASS save: setting survives reload
+  PASS save: atomic write leaves no temp file
+  PASS save: player id generated
+  PASS loc: English text
+  PASS loc: Arabic text
+  PASS loc: Arabic is right-to-left
+  PASS loc: controls flip to RTL in Arabic
+  PASS loc: every string has English and Arabic
+  PASS audio: Music bus
+  PASS audio: SFX bus
+  PASS audio: sfx asset present
+  PASS audio: no AudioServer.add_bus() (silences web builds, FR-3)
+  PASS audio: Music and SFX route to Master
+  PASS analytics: HMAC signature matches reference
+  PASS analytics: Android os_version keeps only the version number
+  PASS analytics: iOS version kept, empty version falls back
+  PASS analytics: web/desktop send webgl 1.0
+  PASS ui: safe margins at least minimum
+  PASS theme: design tokens file present
+  PASS theme: tokens loaded
+  INFO theme placeholder = false (a game must replace it before a milestone)
+  PASS playfield: same logical area at 1080x1920
+  PASS playfield: same logical area at 1080x2340
+  PASS playfield: same logical area at 1080x2400
+  PASS playfield: same logical area at 1440x1920
+  PASS playfield: same logical area at 3413x1920
+  PASS perf: frame statistics correct
+  PASS fx: shader hit_flash loads
+  PASS fx: shader dissolve loads
+  PASS fx: shader shield loads
+  PASS fx: shader shockwave loads
+  PASS fx: shader heat_shimmer loads
+  PASS fx: texture dot generated
+  PASS fx: texture spark generated
+  PASS fx: texture ring generated
+  PASS fx: texture smoke generated
+  PASS fx: texture star generated
+  PASS fx: texture white generated
+  PASS fx: emitter pool stays bounded (96 <= 96)
+  PASS fx: hit flash applies its shader
+  PASS fx: trail lives in the effect layer
+  PASS fx: heat shimmer attaches to its node
+  PASS fx: dissolve frees the node when done
+  PASS fx: hitstop restores time
+  PASS fx: shake returns to rest
+  PASS ui kit: theme type DisplayLabel
+  PASS ui kit: theme type HeadingLabel
+  PASS ui kit: theme type H2Label
+  PASS ui kit: theme type TitleLabel
+  PASS ui kit: theme type CaptionLabel
+  PASS ui kit: theme type MicroLabel
+  PASS ui kit: theme type NumberLabel
+  PASS ui kit: theme type DangerButton
+  PASS ui kit: theme type GhostButton
+  PASS ui kit: theme type CardPanel
+  PASS ui kit: theme type ChipPanel
+  PASS ui kit: display size from type scale
+  PASS ui kit: Arabic display font renders Arabic
+  PASS ui kit: framed panel
+  PASS ui kit: count_to ends on the target
+  PASS ui kit: appear ends fully visible
+  PASS errors: logger registered
+  PASS errors: one report per distinct error
+  PASS errors: repeats are counted, not re-sent
+  PASS errors: report carries build and platform
+  PASS errors: points at the script line, not engine code
+  PASS remote: Firestore values decode
+  PASS remote: numbers with safe defaults
+  PASS remote: switches with safe defaults
+  PASS screen boot: loads
+  PASS screen boot: builds content
+  PASS screen boot: no empty labels (0 labels)
+  PASS screen boot: all buttons meet touch size
+  PASS screen menu: loads
+  PASS screen menu: builds content
+  PASS screen menu: no empty labels (4 labels)
+  PASS screen menu: all buttons meet touch size
+  PASS screen settings: loads
+  PASS screen settings: builds content
+  PASS screen settings: no empty labels (7 labels)
+  PASS screen settings: all buttons meet touch size
+  PASS screen game: loads
+  PASS screen game: builds content
+  PASS screen game: no empty labels (7 labels)
+  PASS screen game: all buttons meet touch size
+  PASS release: no developer tools on shipping screens
+  PASS dev: developer tools reachable in dev builds
+  PASS release: settings has no developer tools
+  PASS release: game has no developer tools
+  PASS cloud: failure is reported as not synced
+  PASS cloud: failure text is honest
+  PASS cloud: real round trip verified against Firebase
+  PASS tuning: config/tuning.json is valid ()
+  PASS tuning: a missing value is an error, never zero
+  PASS tuning: HEALTH scale 30/40/50/60 enforced
+  PASS tuning: Spark 30 HEALTH, ordinary damage 10 (H2)
+  PASS sweep: fast shot cannot tunnel through the core
+  PASS sweep: a near miss is a miss
+  PASS steer: first free finger steers
+  PASS steer: relative movement accumulates
+  PASS steer: second finger on ABILITY keeps the steering finger
+  PASS steer: third finger on SUPER keeps the steering finger
+  PASS steer: a button finger can never steer
+  PASS steer: steering continues while both powers are held
+  PASS steer: releasing buttons clears only their own state
+  PASS steer: an extra finger does not reset the anchor
+  PASS steer: finger replacement hands steering over without a stuck state
+  PASS steer: unknown releases are counted, not crashed on
+  PASS steer: interruption clears every pointer
+  PASS input: touch-down never teleports the aircraft
+  PASS input: nothing moves before the next simulation update
+  PASS input: drag moves the aircraft by the finger's movement
+  PASS input: ABILITY and SUPER fire from second and third fingers
+  PASS input: steering stays stable while both powers are held
+  PASS input: all pointers released cleanly
+  PASS input: sliding over a button is not a press
+  PASS input: aircraft clamped inside the play area
+  PASS opening: first 2 seconds are safe (no enemy, no shot)
+  PASS opening: one Razor enters around 2 s
+  PASS razor: eye flash >= 0.45 s before the dart (0.45 s)
+  PASS opening: no second Razor while the first shot is still coming
+  PASS razor: dart does not home after release
+  PASS razor: destroyed Razor is removed
+  PASS razor: shots already fired stay after its death
+  PASS collision: wings never collide (only the cockpit core)
+  PASS damage: a dart costs 10 HEALTH and starts grace
+  PASS damage: grace blocks a second ordinary hit
+  PASS damage: after grace ends, hits count again
+  PASS death: HEALTH 0 ends the run with its cause
+  PASS collision: swept checks never missed an overlap
+  PASS replay: 10 restarts, each a clean run at full HEALTH
+  PASS replay: warm Replay under 3 s every time
+  PASS pause: simulation, warnings and cooldowns freeze
+  PASS pause: touches do not reach the aircraft
+  PASS pause: resume continues the run
+  PASS sunpunch: clears only bullets inside its blast
+  PASS sunpunch: 12 s cooldown from use
+  PASS sunpunch: cannot be used during cooldown
+  PASS timing: movement is the same at 30 and 120 fps
+  PASS weapons: config/weapons.json is valid ()
+  PASS weapons: a missing value fails validation (never zero)
+  PASS weapons: an out-of-range value fails validation
+  PASS weapons: every FLIGHT LV must add a weapon
+  PASS weapons: LV 4 keeps nose, side cannons and rockets and adds the laser (["nose", "side", "rockets", "laser"])
+  PASS weapons: LV 1 output = the reference budget (20.0/s)
+  PASS weapons: each level is stronger, LV 4 = 2.67x LV 1 (bold, not a wipe)
+  PASS weapons: a Razor takes 0.70 s of aligned LV 1 fire (short, but its warning is seen)
+  PASS levels: every flight starts at FLIGHT LV 1
+  PASS levels: 8 stars reach FLIGHT LV 2
+  PASS levels: new side cannons do not fire while they deploy (0.35 s)
+  PASS levels: side shots are born at the cannon muzzle (WP-07)
+  PASS levels: 22 stars reach FLIGHT LV 3
+  PASS levels: LV 3 cannons float beside the aircraft with a clear gap (14 px)
+  PASS levels: LV 3 fires nose, side and rockets
+  PASS levels: 42 stars reach FLIGHT LV 4 (XP bar at MAX)
+  PASS levels: LV 4 fires nose, side cannons, rockets AND the laser (["nose", "side", "rocket"])
+  PASS levels: Replay starts again at FLIGHT LV 1
+  PASS rockets: two missiles leave the racks (one per rack)
+  PASS rockets: expire after a bounded lifetime (never orbit)
+  PASS rockets: choose a visible forward target
+  PASS rockets: retarget once when the target dies
+  PASS rockets: no second retarget; flies straight
+  PASS rockets: turn at a capped rate (4.33 deg in one step)
+  PASS laser: damage per simulation second, same at 30 and 120 fps (12.00 / 12.00)
+  PASS laser: stops at the first solid target in its path
+  PASS boulder: none before 18 s
+  PASS boulder: first shell boulder at 18 s, entering above the screen
+  PASS boulder: never spawned in the aircraft's column
+  PASS boulder: >= 1.5 s of preview from first sight before it can reach the aircraft (1.68 s)
+  PASS boulder: breaks under fire and drops stars
+  PASS boulder: contact costs 10 HEALTH (grace does not block it) and shatters it
+  PASS stars: fly to the aircraft, count as XP, never hurt
+  PASS stars: far stars drift with the reef until the aircraft comes close
+  PASS death: cause and source recorded for the clarity marker
+  PASS death: a short hold on the killing hit (the field freezes)
+  PASS death: then the breakup plays and the field moves on
+  PASS reduced effects: fewer friendly sparks (16 vs 29)
+  PASS razor death: both wings snap off and tumble (debris)
+  PASS benchmark: the busiest scenario starts at LV 4 in the late bursts with Daystar ready
+  PASS audio: config/audio_mix.json loads
+  PASS audio: every slice cue of the register is in the mix ([])
+  PASS audio: every weapon's sound cue exists ([])
+  PASS audio: warnings have their own bus and duck friendly fire
+  PASS audio: bus Weapons feeds SFX
+  PASS audio: bus Impacts feeds SFX
+  PASS audio: bus Warnings feeds SFX
+  PASS audio: bus UI feeds SFX
+  PASS audio: repeats inside the grouping gap become one voice
+  PASS audio: a limiter on Master prevents clipping in the busiest moment
+  PASS encounters: config/encounters.json is valid ()
+  PASS encounters: Reef Run has the beat 'puff_intro'
+  PASS encounters: Reef Run has the beat 'claw_intro'
+  PASS encounters: Reef Run has the beat 'salvage_1'
+  PASS encounters: Reef Run has the beat 'spire_1'
+  PASS encounters: Reef Run has the beat 'razor_burst_demo'
+  PASS encounters: Reef Run has the beat 'puff_late_demo'
+  PASS encounters: Reef Run has the beat 'gate_1'
+  PASS encounters: Reef Run has the beat 'claw_comb_demo'
+  PASS encounters: Reef Run has the beat 'wave_1'
+  PASS encounters: Reef Run has the beat 'boss'
+  PASS encounters: a beat without a time fails validation (never zero)
+  PASS encounters: a prerequisite must name an earlier beat or a condition
+  PASS encounters: collection windows 22-24, 36-38, 66-70 ([[22.0, 24.0], [36.0, 38.0], [66.0, 70.0]])
+  PASS encounters: Big Bite at 70 s, only into an empty arena
+  PASS encounters: each new pattern is taught alone first
+  PASS director: the same seed reproduces the same beats and variant
+  PASS director: no attack starts in a collection window
+  PASS director: attacks resume after the window
+  PASS director: a third pattern waits while two are in the player region
+  PASS director: a shot inside the band around the aircraft counts its pattern
+  PASS director: a slow shot far above (time-to-contact > lookahead) does not count yet
+  PASS puff: early fan of 5 spheres (5)
+  PASS puff: 0.7 s swelling cue before the fan (0.70 s)
+  PASS puff: the fan spans 96 deg (96.0)
+  PASS puff: large slow spheres (the slowest family)
+  PASS puff late: two seven-shot fans (["2.78:7", "3.48:7"])
+  PASS puff late: 0.7 s between fans (0.70)
+  PASS puff late: second fan offset 6 deg (6.00)
+  PASS puff: the wave uses the named 'reduced' five-orb variant
+  PASS claw: three capsules from each claw (3/3)
+  PASS claw: the active claw glows 0.8 s first (0.82)
+  PASS claw: left first, right 0.65 s later (0.63)
+  PASS claw: thick crimson capsules (their own family)
+  PASS claw late: four capsules per claw each cycle (8, 4 darts, atk volley)
+  PASS claw late: the next cycle shifts 10 deg (10.0)
+  PASS puff: death during its cue cancels the fan
+  PASS puff: its pattern is released from the scheduler
+  PASS foes: a destroyed enemy never starts an attack afterwards (no ghost pattern)
+  PASS claw: death cancels the right claw's volley; the left capsules stay (3 → 3)
+  PASS wave (standard): Razor locks first at 0.0
+  PASS wave (standard): Puff begins its reduced fan at 0.8 s (0.80)
+  PASS wave (standard): Claw waits >= 2.4 s and for the darts to leave (2.42)
+  PASS wave (standard): at most two patterns in the player region (2)
+  PASS wave (standard): an escape route stays reachable at the slowest steering from left, centre and right
+  PASS wave (mirrored): Razor locks first at 0.0
+  PASS wave (mirrored): Puff begins its reduced fan at 0.8 s (0.80)
+  PASS wave (mirrored): Claw waits >= 2.4 s and for the darts to leave (2.42)
+  PASS wave (mirrored): at most two patterns in the player region (2)
+  PASS wave (mirrored): an escape route stays reachable at the slowest steering from left, centre and right
+  PASS wave: the Puff is in place ([1, 200001, 200002], t 62.0, ids [200001, 200002])
+  PASS wave: a destroyed member is not replaced
+  PASS spire: never spawned in the aircraft's column
+  PASS spire: >= 1.5 s preview before it can reach the aircraft (2.30 s)
+  PASS spire: shots are absorbed; it can't be destroyed
+  PASS spire: core contact ends the run at full HEALTH, in grace and in Super
+  PASS gate: opening 300 px >= 3 core diameters
+  PASS gate: the solid outlines leave exactly the stated opening
+  PASS gate: the opening is reachable from x=100 at the slowest steering
+  PASS gate: the opening is reachable from x=540 at the slowest steering
+  PASS gate: the opening is reachable from x=980 at the slowest steering
+  PASS gate: the opening never moves or closes
+  PASS gate: flying through the opening never touches the blades (core-authoritative)
+  PASS salvage: breaks for its disclosed reward (10 coins)
+  PASS salvage: fragments are debris only (no collision)
+  PASS salvage: contact costs 10 HEALTH through grace and destroys it
+  PASS spire: the first lethal obstacle gets 2 s free of enemy fire
+  PASS boss: the closed mouth blocks (no damage)
+  PASS boss: Sunpunch can't damage a closed jaw
+  PASS boss: fixed loop fin volley → mouth fan → Furnace Breath → (recovery) → fin (["fin", "fan", "furnace", "fin"])
+  PASS boss: the mouth opens for the fan (the warning is also the damage window)
+  PASS boss: the open core takes the hit (230 → 210)
+  PASS boss: fin volley = 3 per side, a central lane >= 240 px stays open (6 shots, half-lane 125 px)
+  PASS boss: the fin volley still reaches near the centre (half-lane 125 px, not a free lane)
+  PASS boss: a hit crossing 50% is clamped at 50% and starts Inferno
+  PASS boss: the transformation clears hostile shots and flame
+  PASS boss: no damage during the 1.2 s transformation
+  PASS boss: the aircraft takes no damage during the transformation either
+  PASS boss: pause freezes the transformation
+  PASS boss: Inferno after 1.2 s; damage resumes
+  PASS boss: normal damage after Inferno (no second gate)
+  PASS boss: the transformation happens exactly once
+  PASS boss Inferno: fin volleys of 4 per side, 20% faster (8, 672 px/s)
+  PASS furnace phase 1: 20 HEALTH once per cast, through grace (30 → 10)
+  PASS furnace phase 1: aim locked at the warning start (no tracking)
+  PASS furnace phase 1: fin guns pause during the cast
+  PASS furnace phase 1: flame active 1.22 s (expected 1.2)
+  PASS furnace phase 2: 20 HEALTH once per cast, through grace (30 → 10)
+  PASS furnace phase 2: aim locked at the warning start (no tracking)
+  PASS furnace phase 2: fin guns pause during the cast
+  PASS furnace phase 2: flame active 1.62 s (expected 1.6)
+  PASS furnace Inferno: the lane is 25% wider
+  PASS furnace: from the lane centre the exit takes 0.17 s < the 0.9 s warning
+  PASS boss defeat: hostile shots cleared, the run is won
+  PASS boss defeat: no damage after victory
+  PASS boss defeat: 65 coins released
+  PASS victory: every collected coin (and first-time bonus) is credited once (65 → 150)
+  PASS victory: a repeated results call and reopening the results credit nothing more
+  PASS tie: player death resolved first ends the run as a defeat
+  PASS tie: a boss death resolved first ends every hostile damage source
+  PASS boss: the event trace is ordered (reproducible)
+  PASS boss rig: 33 parts (>= 20)
+  PASS boss rig: the three atlas pages load (normal, Inferno, additive)
+  PASS boss rig: every part region lies inside its atlas page
+  PASS boss rig: no whole-head swap picture is referenced or shipped ([])
+  PASS boss rig: phase-one idle is drawn from 19 separate parts (jaw, body, throat ...)
+  PASS boss rig: no Inferno part before the transformation
+  PASS boss rig: the closed mouth stays shut at rest (jaw 0.000)
+  PASS boss rig: the core hit point sits on the drawn core
+  PASS boss rig: the fins sway 5.6 deg about the body (>= 4)
+  PASS boss rig: the body leans 3.8 deg into its drift (3-5)
+  PASS boss rig: the jaw part drops on its hinge when the mouth opens (17 -> 118)
+  PASS boss rig: the jaw snaps open with an overshoot (peak 1.12)
+  PASS boss rig: the mouth-fan orbs are already spread on spawn (5 orbs, >= 40 apart)
+  PASS boss rig: five core hits give five distinct snap flashes (5)
+  PASS boss rig: each hit flash is ON 4 sim steps (<= 3 clip frames at 30 fps) and snaps off, no fade
+  PASS boss rig: the expanding ring shows on the first hit of the opening only (1)
+  PASS boss rig: the first-hit ring is capped at ~8 frames (0.13 s)
+  PASS boss rig: a stream of hits reads as 5 blinks with 16 dark steps (never one held glow)
+  PASS boss rig: the snap flash lights the core itself (white core copy on the add layer)
+  PASS boss rig: the body stays untinted while the core flashes (no milky ghost)
+  PASS boss rig: a shot on the armor gets a small flash where it registers
+  PASS boss rig: the Furnace tell (jaw crack + core charge) starts with the warning lane or before it (0.13 s early)
+  PASS boss rig: 1.03 s of creature warning before the flame (>= 0.9 s, lane hidden)
+  PASS boss rig: the core charges step by step to white-hot (1.00) and rears back before the flame (1.00)
+  PASS boss rig: during the tell the jaw only cracks (0.26): the gap appears only in the tell
+  PASS furnace: the jet starts AT the mouth (first tile y >= 0, lane from the mouth)
+  PASS furnace: the flame leaves from the core centre (Big Bite holds still while it breathes fire; 0.0 off)
+  PASS furnace: the warning lane border is steadily lit (no blink term)
+  PASS boss rig: the transformation starts from phase one
+  PASS boss rig: mid-transformation both armours are drawn (burn wipe, u 0.50)
+  PASS boss rig: Inferno shows its own parts (body_inf, horns, barrels) and no phase-one armour
+  PASS boss rig: no player beam is drawn or aimed at the defeated boss
+  PASS boss rig: the wreck's eyes are put out (dark lids drawn)
+  PASS boss rig: the defeat shows the wreck: the jaw splits into two halves swinging apart
+  PASS boss rig: the wreck is gone after the defeat sequence
+  PASS frames: the four permanent frames in order
+  PASS frames: spark price 0, HEALTH 30, index 100 (seed)
+  PASS frames: spark has a signature and a measured damage multiplier
+  PASS frames: striker price 300, HEALTH 40, index 120 (seed)
+  PASS frames: striker has a signature and a measured damage multiplier
+  PASS frames: phoenix price 700, HEALTH 50, index 150 (seed)
+  PASS frames: phoenix has a signature and a measured damage multiplier
+  PASS frames: helios price 1400, HEALTH 60, index 180 (seed)
+  PASS frames: helios has a signature and a measured damage multiplier
+  PASS frames: owning every frame costs 2,400 coins
+  PASS frames: Helios pierces ONE extra enemy for 60%
+  PASS frames: striker exposes cone angle and retarget delay as tuning data
+  PASS frames: phoenix exposes cone angle and retarget delay as tuning data
+  PASS PWR01 spark LV 1: weapons nose
+  PASS PWR01 spark LV 1: flies spark with 30 HEALTH
+  PASS PWR01 spark LV 1: permanent hardware stowed
+  PASS PWR01 spark LV 1: side hardware beside the wing (60, -24)
+  PASS PWR01 spark LV 2: weapons nose, side
+  PASS PWR01 spark LV 2: flies spark with 30 HEALTH
+  PASS PWR01 spark LV 2: side hardware beside the wing (60, -24)
+  PASS PWR01 spark LV 3: weapons nose, side, rockets
+  PASS PWR01 spark LV 3: flies spark with 30 HEALTH
+  PASS PWR01 spark LV 3: side hardware beside the wing (102, -9)
+  PASS PWR01 spark LV 4: weapons nose, side, rockets, laser
+  PASS PWR01 spark LV 4: flies spark with 30 HEALTH
+  PASS PWR01 spark LV 4: side hardware beside the wing (119, 17)
+  PASS PWR01 spark: LV 3 hardware floats wider than LV 2
+  PASS PWR01 striker LV 1: weapons nose
+  PASS PWR01 striker LV 1: flies striker with 40 HEALTH
+  PASS PWR01 striker LV 1: permanent hardware visible but dormant
+  PASS PWR01 striker LV 1: side hardware beside the wing (112, -26)
+  PASS PWR01 striker LV 2: weapons nose, side
+  PASS PWR01 striker LV 2: flies striker with 40 HEALTH
+  PASS PWR01 striker LV 2: side hardware beside the wing (112, -26)
+  PASS PWR01 striker LV 3: weapons nose, side, rockets
+  PASS PWR01 striker LV 3: flies striker with 40 HEALTH
+  PASS PWR01 striker LV 3: side hardware beside the wing (152, -1)
+  PASS PWR01 striker LV 4: weapons nose, side, rockets, laser
+  PASS PWR01 striker LV 4: flies striker with 40 HEALTH
+  PASS PWR01 striker LV 4: side hardware beside the wing (132, 26)
+  PASS PWR01 striker: LV 3 hardware floats wider than LV 2
+  PASS PWR01 phoenix LV 1: weapons nose
+  PASS PWR01 phoenix LV 1: flies phoenix with 50 HEALTH
+  PASS PWR01 phoenix LV 1: permanent hardware visible but dormant
+  PASS PWR01 phoenix LV 1: side hardware beside the wing (100, -6)
+  PASS PWR01 phoenix LV 2: weapons nose, side
+  PASS PWR01 phoenix LV 2: flies phoenix with 50 HEALTH
+  PASS PWR01 phoenix LV 2: side hardware beside the wing (100, -6)
+  PASS PWR01 phoenix LV 3: weapons nose, side, rockets
+  PASS PWR01 phoenix LV 3: flies phoenix with 50 HEALTH
+  PASS PWR01 phoenix LV 3: side hardware beside the wing (137, 0)
+  PASS PWR01 phoenix LV 4: weapons nose, side, rockets, laser
+  PASS PWR01 phoenix LV 4: flies phoenix with 50 HEALTH
+  PASS PWR01 phoenix LV 4: side hardware beside the wing (144, 13)
+  PASS PWR01 phoenix: LV 3 hardware floats wider than LV 2
+  PASS PWR01 helios LV 1: weapons nose
+  PASS PWR01 helios LV 1: flies helios with 60 HEALTH
+  PASS PWR01 helios LV 1: permanent hardware visible but dormant
+  PASS PWR01 helios LV 1: side hardware beside the wing (111, -32)
+  PASS PWR01 helios LV 2: weapons nose, side
+  PASS PWR01 helios LV 2: flies helios with 60 HEALTH
+  PASS PWR01 helios LV 2: side hardware beside the wing (111, -32)
+  PASS PWR01 helios LV 3: weapons nose, side, rockets
+  PASS PWR01 helios LV 3: flies helios with 60 HEALTH
+  PASS PWR01 helios LV 3: side hardware beside the wing (145, -19)
+  PASS PWR01 helios LV 4: weapons nose, side, rockets, laser
+  PASS PWR01 helios LV 4: flies helios with 60 HEALTH
+  PASS PWR01 helios LV 4: side hardware beside the wing (149, 32)
+  PASS PWR01 helios: LV 3 hardware floats wider than LV 2
+  PASS PWR02: XP 7 + one star = LV 2 exactly
+  PASS PWR02: a level change never resets HEALTH or Super charge
+  PASS PWR02: 21 → 22 = LV 3
+  PASS PWR02: 41 → 42 = LV 4
+  PASS PWR02: past MAX stars stay XP, never converted into coins
+  PASS PWR02: Replay resets XP and level, keeps the frame
+  PASS PWR03 spark LV 1: Daystar activates at 100%
+  PASS PWR03 spark LV 1: no second overlapping activation
+  PASS PWR03 spark LV 1: hardware deployed by 0.3 s
+  PASS PWR03 spark LV 1: no charge builds during Daystar
+  PASS PWR03 spark LV 1: six seconds, three heavy cycles, then back
+  PASS PWR03 spark LV 1: returns to its level, no HEALTH refill
+  PASS PWR03 spark LV 2: Daystar activates at 100%
+  PASS PWR03 spark LV 2: no second overlapping activation
+  PASS PWR03 spark LV 2: hardware deployed by 0.3 s
+  PASS PWR03 spark LV 2: no charge builds during Daystar
+  PASS PWR03 spark LV 2: six seconds, three heavy cycles, then back
+  PASS PWR03 spark LV 2: returns to its level, no HEALTH refill
+  PASS PWR03 spark LV 3: Daystar activates at 100%
+  PASS PWR03 spark LV 3: no second overlapping activation
+  PASS PWR03 spark LV 3: hardware deployed by 0.3 s
+  PASS PWR03 spark LV 3: no charge builds during Daystar
+  PASS PWR03 spark LV 3: six seconds, three heavy cycles, then back
+  PASS PWR03 spark LV 3: returns to its level, no HEALTH refill
+  PASS PWR03 spark LV 4: Daystar activates at 100%
+  PASS PWR03 spark LV 4: no second overlapping activation
+  PASS PWR03 spark LV 4: hardware deployed by 0.3 s
+  PASS PWR03 spark LV 4: no charge builds during Daystar
+  PASS PWR03 spark LV 4: six seconds, three heavy cycles, then back
+  PASS PWR03 spark LV 4: returns to its level, no HEALTH refill
+  PASS PWR03 striker LV 1: Daystar activates at 100%
+  PASS PWR03 striker LV 1: no second overlapping activation
+  PASS PWR03 striker LV 1: hardware deployed by 0.3 s
+  PASS PWR03 striker LV 1: no charge builds during Daystar
+  PASS PWR03 striker LV 1: six seconds, three heavy cycles, then back
+  PASS PWR03 striker LV 1: returns to its level, no HEALTH refill
+  PASS PWR03 striker LV 2: Daystar activates at 100%
+  PASS PWR03 striker LV 2: no second overlapping activation
+  PASS PWR03 striker LV 2: hardware deployed by 0.3 s
+  PASS PWR03 striker LV 2: no charge builds during Daystar
+  PASS PWR03 striker LV 2: six seconds, three heavy cycles, then back
+  PASS PWR03 striker LV 2: returns to its level, no HEALTH refill
+  PASS PWR03 striker LV 3: Daystar activates at 100%
+  PASS PWR03 striker LV 3: no second overlapping activation
+  PASS PWR03 striker LV 3: hardware deployed by 0.3 s
+  PASS PWR03 striker LV 3: no charge builds during Daystar
+  PASS PWR03 striker LV 3: six seconds, three heavy cycles, then back
+  PASS PWR03 striker LV 3: returns to its level, no HEALTH refill
+  PASS PWR03 striker LV 4: Daystar activates at 100%
+  PASS PWR03 striker LV 4: no second overlapping activation
+  PASS PWR03 striker LV 4: hardware deployed by 0.3 s
+  PASS PWR03 striker LV 4: no charge builds during Daystar
+  PASS PWR03 striker LV 4: six seconds, three heavy cycles, then back
+  PASS PWR03 striker LV 4: returns to its level, no HEALTH refill
+  PASS PWR03 phoenix LV 1: Daystar activates at 100%
+  PASS PWR03 phoenix LV 1: no second overlapping activation
+  PASS PWR03 phoenix LV 1: hardware deployed by 0.3 s
+  PASS PWR03 phoenix LV 1: no charge builds during Daystar
+  PASS PWR03 phoenix LV 1: six seconds, three heavy cycles, then back
+  PASS PWR03 phoenix LV 1: returns to its level, no HEALTH refill
+  PASS PWR03 phoenix LV 2: Daystar activates at 100%
+  PASS PWR03 phoenix LV 2: no second overlapping activation
+  PASS PWR03 phoenix LV 2: hardware deployed by 0.3 s
+  PASS PWR03 phoenix LV 2: no charge builds during Daystar
+  PASS PWR03 phoenix LV 2: six seconds, three heavy cycles, then back
+  PASS PWR03 phoenix LV 2: returns to its level, no HEALTH refill
+  PASS PWR03 phoenix LV 3: Daystar activates at 100%
+  PASS PWR03 phoenix LV 3: no second overlapping activation
+  PASS PWR03 phoenix LV 3: hardware deployed by 0.3 s
+  PASS PWR03 phoenix LV 3: no charge builds during Daystar
+  PASS PWR03 phoenix LV 3: six seconds, three heavy cycles, then back
+  PASS PWR03 phoenix LV 3: returns to its level, no HEALTH refill
+  PASS PWR03 phoenix LV 4: Daystar activates at 100%
+  PASS PWR03 phoenix LV 4: no second overlapping activation
+  PASS PWR03 phoenix LV 4: hardware deployed by 0.3 s
+  PASS PWR03 phoenix LV 4: no charge builds during Daystar
+  PASS PWR03 phoenix LV 4: six seconds, three heavy cycles, then back
+  PASS PWR03 phoenix LV 4: returns to its level, no HEALTH refill
+  PASS PWR03 helios LV 1: Daystar activates at 100%
+  PASS PWR03 helios LV 1: no second overlapping activation
+  PASS PWR03 helios LV 1: hardware deployed by 0.3 s
+  PASS PWR03 helios LV 1: no charge builds during Daystar
+  PASS PWR03 helios LV 1: six seconds, three heavy cycles, then back
+  PASS PWR03 helios LV 1: returns to its level, no HEALTH refill
+  PASS PWR03 helios LV 2: Daystar activates at 100%
+  PASS PWR03 helios LV 2: no second overlapping activation
+  PASS PWR03 helios LV 2: hardware deployed by 0.3 s
+  PASS PWR03 helios LV 2: no charge builds during Daystar
+  PASS PWR03 helios LV 2: six seconds, three heavy cycles, then back
+  PASS PWR03 helios LV 2: returns to its level, no HEALTH refill
+  PASS PWR03 helios LV 3: Daystar activates at 100%
+  PASS PWR03 helios LV 3: no second overlapping activation
+  PASS PWR03 helios LV 3: hardware deployed by 0.3 s
+  PASS PWR03 helios LV 3: no charge builds during Daystar
+  PASS PWR03 helios LV 3: six seconds, three heavy cycles, then back
+  PASS PWR03 helios LV 3: returns to its level, no HEALTH refill
+  PASS PWR03 helios LV 4: Daystar activates at 100%
+  PASS PWR03 helios LV 4: no second overlapping activation
+  PASS PWR03 helios LV 4: hardware deployed by 0.3 s
+  PASS PWR03 helios LV 4: no charge builds during Daystar
+  PASS PWR03 helios LV 4: six seconds, three heavy cycles, then back
+  PASS PWR03 helios LV 4: returns to its level, no HEALTH refill
+  PASS PWR03: a level-up during Daystar returns to the new level's configuration
+  PASS PWR03: pause freezes the Daystar timer
+  PASS PWR05 Striker: the rails lock one of two equal candidates
+  PASS PWR05 Striker: no flicker between two equal candidates (0 switches in 2 s)
+  PASS PWR05 Striker: both rails converge on the same target
+  PASS PWR05 Striker: the rails visibly turn toward it
+  PASS PWR05 Striker: a destroyed target is released immediately
+  PASS PWR05 Striker: no candidate = fire forward
+  PASS PWR05 Striker: no targets behind the cockpit
+  PASS PWR05 Phoenix: one target, both pods focus it
+  PASS PWR05 Phoenix: two targets, the pods split (L 1, R 2)
+  PASS PWR05 Phoenix: the right pod takes the target on its side
+  PASS PWR05 Helios: the first enemy takes the full round (10.0)
+  PASS PWR05 Helios: the second enemy takes 60% (6.0)
+  PASS PWR05 Helios: no third target (no screen-wide penetration)
+  PASS PWR05 Helios: nose fire does not pierce
+  PASS PWR05: only Helios side rounds pierce
+  PASS PWR06: spark launches with 30/30 HEALTH
+  PASS PWR06 spark: no refill on level-up or Super
+  PASS PWR06 spark: a fresh run restores full HEALTH
+  PASS PWR06: striker launches with 40/40 HEALTH
+  PASS PWR06 striker: no refill on level-up or Super
+  PASS PWR06 striker: a fresh run restores full HEALTH
+  PASS PWR06: phoenix launches with 50/50 HEALTH
+  PASS PWR06 phoenix: no refill on level-up or Super
+  PASS PWR06 phoenix: a fresh run restores full HEALTH
+  PASS PWR06: helios launches with 60/60 HEALTH
+  PASS PWR06 helios: no refill on level-up or Super
+  PASS PWR06 helios: a fresh run restores full HEALTH
+  PASS frames: flying evidence frames never changes the equipped frame
+  PASS frames: a normal launch flies the equipped frame
+  PASS bonus: a Puff fan dodged without a hit pays 20 once
+  PASS bonus: the second Puff fan pays nothing more
+  PASS bonus: a hit during the wave window earns nothing
+  PASS boss: one opening takes at most the frame's cap of Big Bite's HP (Helios 40%: 92 of 230)
+  PASS daystar: strong play reaches it in a real run (first use 47.5 s, 3 uses)
+  PASS dev menu: 'FLIGHT LV 1' in the flight debug menu
+  PASS dev menu: 'FLIGHT LV 4' in the flight debug menu
+  PASS dev menu: 'Daystar now' in the flight debug menu
+  PASS dev menu: 'Jump to Big Bite' in the flight debug menu
+  PASS dev menu: 'Inferno now' in the flight debug menu
+  PASS dev menu: 'Fly helios' in the flight debug menu
+  PASS dev menu: 'Victory results' in the flight debug menu
+  PASS dev menu: 'Defeat results' in the flight debug menu
+  PASS dev menu: FLIGHT LV 3 sets the level
+  PASS dev menu: Daystar now activates the Super
+  PASS dev menu: Defeat results ends the run
+  PASS dev menu: flight tools never change the equipped frame
+  PASS damage budget: spark LV 1 single-target output index 100 (target 100 ±10%: no signature doubles the step)
+  PASS damage budget: spark LV 2 single-target output index 100 (target 100 ±10%: no signature doubles the step)
+  PASS damage budget: spark LV 3 single-target output index 100 (target 100 ±10%: no signature doubles the step)
+  PASS damage budget: spark LV 4 single-target output index 100 (target 100 ±10%: no signature doubles the step)
+  PASS damage budget: striker LV 1 single-target output index 120 (target 120 ±10%: no signature doubles the step)
+  PASS damage budget: striker LV 2 single-target output index 120 (target 120 ±10%: no signature doubles the step)
+  PASS damage budget: striker LV 3 single-target output index 120 (target 120 ±10%: no signature doubles the step)
+  PASS damage budget: striker LV 4 single-target output index 120 (target 120 ±10%: no signature doubles the step)
+  PASS damage budget: phoenix LV 1 single-target output index 150 (target 150 ±10%: no signature doubles the step)
+  PASS damage budget: phoenix LV 2 single-target output index 150 (target 150 ±10%: no signature doubles the step)
+  PASS damage budget: phoenix LV 3 single-target output index 150 (target 150 ±10%: no signature doubles the step)
+  PASS damage budget: phoenix LV 4 single-target output index 150 (target 150 ±10%: no signature doubles the step)
+  PASS damage budget: helios LV 1 single-target output index 180 (target 180 ±10%: no signature doubles the step)
+  PASS damage budget: helios LV 2 single-target output index 180 (target 180 ±10%: no signature doubles the step)
+  PASS damage budget: helios LV 3 single-target output index 180 (target 180 ±10%: no signature doubles the step)
+  PASS damage budget: helios LV 4 single-target output index 180 (target 180 ±10%: no signature doubles the step)
+  PASS damage budget: spark output rises with every flight level (wave)
+  PASS damage budget: striker output rises with every flight level (wave)
+  PASS damage budget: phoenix output rises with every flight level (wave)
+  PASS damage budget: helios output rises with every flight level (wave)
+  PASS v0.6 Spark: canon sheet v2 in the rig (side weapons painted into each master)
+  PASS v0.6 Spark lv1: master spark/hull_lv1.png
+  PASS v0.6 Spark lv1: cockpit core at the same pivot (296.5, 362.8) as LV 1
+  PASS v0.6 Spark lv1: master loads
+  PASS v0.6 Spark lv1: turquoise canopy on the cockpit core (h 0.52 s 0.94)
+  PASS v0.6 Spark lv1: width 18.2 % of 1080 (<= 26 %)
+  PASS v0.6 Spark lv1: growth x1.000 from scales.json
+  PASS v0.6 Spark lv2: master spark/hull_lv2.png
+  PASS v0.6 Spark lv2: cockpit core at the same pivot (296.5, 362.8) as LV 1
+  PASS v0.6 Spark lv2: master loads
+  PASS v0.6 Spark lv2: turquoise canopy on the cockpit core (h 0.53 s 1.00)
+  PASS v0.6 Spark lv2: width 19.1 % of 1080 (<= 26 %)
+  PASS v0.6 Spark lv2: growth x1.044 from scales.json
+  PASS v0.6 Spark lv3: master spark/hull_lv3.png
+  PASS v0.6 Spark lv3: cockpit core at the same pivot (296.5, 362.8) as LV 1
+  PASS v0.6 Spark lv3: master loads
+  PASS v0.6 Spark lv3: turquoise canopy on the cockpit core (h 0.52 s 0.99)
+  PASS v0.6 Spark lv3: width 23.5 % of 1080 (<= 26 %)
+  PASS v0.6 Spark lv3: growth x1.090 from scales.json
+  PASS v0.6 Spark lv4: master spark/hull_lv4.png
+  PASS v0.6 Spark lv4: cockpit core at the same pivot (296.5, 362.8) as LV 1
+  PASS v0.6 Spark lv4: master loads
+  PASS v0.6 Spark lv4: turquoise canopy on the cockpit core (h 0.53 s 0.99)
+  PASS v0.6 Spark lv4: width 25.8 % of 1080 (<= 26 %)
+  PASS v0.6 Spark lv4: growth x1.140 from scales.json
+  PASS v0.6 Spark super: master spark/hull_super.png
+  PASS v0.6 Spark super: cockpit core at the same pivot (296.5, 362.8) as LV 1
+  PASS v0.6 Spark super: master loads
+  PASS v0.6 Spark super: turquoise canopy on the cockpit core (h 0.53 s 1.00)
+  PASS v0.6 Spark super: width 25.8 % of 1080 (<= 26 %)
+  PASS v0.6 Spark super: growth x1.190 from scales.json
+  PASS v0.6 Spark LV 2: new-hardware layers for the level-up (2)
+  PASS v0.6 Spark LV 3: new-hardware layers for the level-up (3)
+  PASS v0.6 Spark LV 4: new-hardware layers for the level-up (3)
+  PASS v0.6 Spark: cannons sit wider every level
+  PASS v0.6 Spark: nose guns move forward with the LV 4 growth (per-level mounts)
+  PASS v0.6 Spark: Daystar lens mount differs from LV 4 (lens_super)
+  PASS v0.6 striker: keeps its v0.5 layered art (new sheet drops in by rig data)
+  PASS v0.6 phoenix: keeps its v0.5 layered art (new sheet drops in by rig data)
+  PASS v0.6 helios: keeps its v0.5 layered art (new sheet drops in by rig data)
+  PASS v0.6 Spark: hero picture from the v2 master (1048 px wide)
+  PASS v0.6 Spark lv1: hit area = cockpit core r 15 (beside it misses, on it hits)
+  PASS v0.6 Spark lv2: hit area = cockpit core r 15 (beside it misses, on it hits)
+  PASS v0.6 Spark lv3: hit area = cockpit core r 15 (beside it misses, on it hits)
+  PASS v0.6 Spark lv4: hit area = cockpit core r 15 (beside it misses, on it hits)
+  PASS v0.6 Spark super: hit area = cockpit core r 15 (beside it misses, on it hits)
+  PASS FEEL-1: starts with the old ship, no new master, full ignition
+  PASS FEEL-1: hardware is out before the hull has settled (hardware first)
+  PASS FEEL-1: ends exactly on the new master
+  PASS FEEL-1: whole choreography 0.50 s (<= 0.6 s)
+  PASS FEEL-1 LV 2: choreography plays on the level-up
+  PASS FEEL-1 LV 2: finished, the exact LV 2 master stays
+  PASS FEEL-1 LV 3: choreography plays on the level-up
+  PASS FEEL-1 LV 3: finished, the exact LV 3 master stays
+  PASS FEEL-1 LV 4: choreography plays on the level-up
+  PASS FEEL-1 LV 4: finished, the exact LV 4 master stays
+  PASS FEEL-1: level-up during Daystar resolves to the new master after it
+  PASS FEEL-1: a level-down (evidence scenes) is instant
+  PASS ART-4 spark: Daystar motion 'wings'
+  PASS ART-4 striker: Daystar motion 'rails'
+  PASS ART-4 phoenix: Daystar motion 'racks'
+  PASS ART-4 helios: Daystar motion 'fan'
+  PASS ART-4 Spark: Daystar spine + two blade wings (layers, no picture swap)
+  PASS ART-4 Spark: blades move during deploy, full Daystar master once out
+  PASS ART-4 Striker: rail batteries extend forward in Daystar (emitters move with them)
+  PASS ART-4 Phoenix: racks rotate open in Daystar (launch point rotates with them)
+  PASS ART-4 Helios: panels fan outward in Daystar
+  PASS v0.6 Phoenix: second rocket rack mount at LV 4
+  INFO rig cost per aircraft (CPU, us): {"helios_daystar_deploy":124.905,"phoenix_daystar_deploy":133.9,"spark_daystar_deploy":26.0,"spark_level_up":44.195,"spark_lv4":16.815,"striker_daystar_deploy":130.675}
+  PASS ART-4: rig cost per aircraft 0.134 ms worst (Daystar budget 2 ms)
+  PASS ART-5 Razor: two wings + the body break apart (3 pieces)
+  PASS ART-5 Razor: debris gone within 0.6 s
+  PASS ART-5 Razor: no shot after death
+  PASS ART-5 puff: breaks into its own pieces (4)
+  PASS ART-5 puff: debris gone within 0.6 s
+  PASS ART-5 puff: no shot after death
+  PASS ART-5 claw: breaks into its own pieces (3)
+  PASS ART-5 claw: debris gone within 0.6 s
+  PASS ART-5 claw: no shot after death
+  PASS ART-5 boulder: fragments gone within 0.6 s
+  PASS ART-5: debris capped at 40 pieces (had 120 + a frame: 40)
+  PASS ART-5: budget phones (lower FX quality) keep fewer pieces
+  PASS ART-7: entrance -> deep reef -> boss territory gets darker (1.00 / 0.87 / 0.64)
+  PASS ART-7: the centre lane is never brightened (projectiles keep their contrast)
+  PASS ART-7: entrance warmth only on the edge crystals (no overall orange wash)
+  PASS ART-7: victory restores the warm entrance light
+  PASS ART-4: Daystar lifts the local reef light on the backdrop (under every game layer and warning)
+  PASS ART-4: reef light back when the Daystar ends
+  PASS m4 buy: 324 coins buying Striker ends with 24
+  PASS m4 buy: owns Spark and Striker
+  PASS m4 buy: the new frame is equipped
+  PASS m4 buy: purchase survives a reload
+  PASS m4 ledger: wallet equals ledger sum after buy 324 (24 vs 24)
+  PASS m4 shortfall: fixture 480 coins, next is Phoenix
+  PASS m4 shortfall: viewing Phoenix shows 220 short, cannot buy
+  PASS m4 shortfall: buying Phoenix refused with funds, nothing changes
+  PASS m4 ledger: wallet equals ledger sum after shortfall (480 vs 480)
+  PASS m4 exact: 300 coins can buy Striker
+  PASS m4 exact: exact price buys and ends with 0
+  PASS m4 ledger: wallet equals ledger sum after exact (0 vs 0)
+  PASS m4 one short: 299 coins is 1 short
+  PASS m4 one short: refused, wallet intact
+  PASS m4 double tap: same txn twice charges once
+  PASS m4 double tap: back-to-back new txn refused as owned, charged once
+  PASS m4 double tap: duplicate txn is still known after a relaunch
+  PASS m4 ledger: wallet equals ledger sum after double tap (700 vs 700)
+  PASS m4 sequence: Phoenix before Striker refused
+  PASS m4 sequence: Helios before Phoenix refused
+  PASS m4 owned: buying the owned starter frame refused
+  PASS m4 max: Striker, Phoenix, Helios bought in order
+  PASS m4 max: 2400 spent, next_frame is empty at max ownership
+  PASS m4 max: nothing more to buy
+  PASS m4 ledger: wallet equals ledger sum after max ownership (0 vs 0)
+  PASS m4 equip: an unowned frame cannot be equipped
+  PASS m4 equip: previewing a frame never equips or owns it
+  PASS m4 equip: an owned frame can be re-equipped
+  PASS m4 equip: the choice survives a reload
+  PASS m4 credit: first credit applies
+  PASS m4 credit: same txn twice applies once
+  PASS m4 credit: same txn after a relaunch still applies once
+  PASS m4 credit: empty txn, zero and negative amounts refused
+  PASS m4 ledger: wallet equals ledger sum after credit (40 vs 40)
+  PASS m4 results: run opens
+  PASS m4 results: three pickups credited as they happen
+  PASS m4 results: wallet and run total are 20
+  PASS m4 results: repeated callbacks credit nothing
+  PASS m4 results: run closes
+  PASS m4 results: a closed run takes no more pickups
+  PASS m4 results: totals and idempotency survive a relaunch
+  PASS m4 ledger: wallet equals ledger sum after results (20 vs 20)
+  PASS m4 bonus: first claim credits
+  PASS m4 bonus: claimed twice is once
+  PASS m4 bonus: still once after a relaunch
+  PASS m4 ledger: wallet equals ledger sum after bonus (100 vs 100)
+  PASS m4 kill: the uncommitted temp file is on disk
+  PASS m4 kill before commit: reloaded state is the old state
+  PASS m4 kill before commit: stale temp is removed at load
+  PASS m4 ledger: wallet equals ledger sum after kill before commit (500 vs 500)
+  PASS m4 kill: an unflushed pickup is lost, nothing else is
+  PASS m4 kill after commit: new state present
+  PASS m4 kill after commit: applied exactly once
+  PASS m4 ledger: wallet equals ledger sum after kill after commit (200 vs 200)
+  PASS m4 kill: primary gone and a verified temp present restores the temp (175)
+  PASS m4 ledger: wallet equals ledger sum after temp restore (175 vs 175)
+  PASS m4 failed write (before): reason save_failed
+  PASS m4 failed write (before): wallet and ownership unchanged
+  PASS m4 failed write (before): in-memory state restored exactly
+  PASS m4 failed write (before): previous valid files untouched, no temp left
+  PASS m4 failed write (before): retry with the same txn succeeds
+  PASS m4 failed write (before): retry persisted
+  PASS m4 ledger: wallet equals ledger sum after failed write before (100 vs 100)
+  PASS m4 failed write (after_tmp): reason save_failed
+  PASS m4 failed write (after_tmp): wallet and ownership unchanged
+  PASS m4 failed write (after_tmp): in-memory state restored exactly
+  PASS m4 failed write (after_tmp): previous valid files untouched, no temp left
+  PASS m4 failed write (after_tmp): retry with the same txn succeeds
+  PASS m4 failed write (after_tmp): retry persisted
+  PASS m4 ledger: wallet equals ledger sum after failed write after_tmp (100 vs 100)
+  PASS m4 failed write: a bonus whose write failed is rolled back
+  PASS m4 failed write: the bonus can be claimed again
+  PASS m4 ledger: wallet equals ledger sum after failed bonus (150 vs 150)
+  PASS m4 failed write: a failed equip keeps the previous frame
+  PASS m4 flush: pickup alone does not write within 1 s
+  PASS m4 flush: written once 2 s passed
+  PASS m4 flush: flush() writes at once
+  PASS m4 backup: a valid backup exists after the second write
+  PASS m4 corrupt primary: restored from the backup (load_status mirrors)
+  PASS m4 corrupt primary: backup state (100) restored
+  PASS m4 corrupt primary: a visible recovery message key exists in EN and AR
+  PASS m4 corrupt primary: the broken file is kept aside
+  PASS m4 corrupt primary: message can be dismissed
+  PASS m4 corrupt primary: the restored primary is valid on the next launch
+  PASS m4 ledger: wallet equals ledger sum after restored backup (100 vs 100)
+  PASS m4 hand-edited: a changed value fails the checksum, backup restored
+  PASS m4 truncated: half a file is detected, backup restored
+  PASS m4 corrupt both: reset to a fresh save
+  PASS m4 corrupt both: both broken files kept aside, nothing deleted
+  PASS m4 corrupt both: visible message key
+  PASS m4 corrupt both: a clean primary was written
+  PASS m4 truncated, no backup: corrupt_reset and the file kept
+  PASS m4 i18n: all new keys have EN and AR
+  PASS m4 migrate: schema 1 file reported as migrated
+  PASS m4 migrate: wallet kept, Spark owned and equipped
+  PASS m4 migrate: bests carried
+  PASS m4 migrate: flag, player id, session number carried
+  PASS m4 migrate: settings carried
+  PASS m4 migrate: one migrate:v1 ledger entry holds the carried wallet
+  PASS m4 migrate: original v1 file kept, v2 written
+  PASS m4 ledger: wallet equals ledger sum after migration (324 vs 324)
+  PASS m4 migrate: second launch is a normal load
+  PASS m4 migrate: a migrated wallet buys Striker
+  PASS m4 ledger: wallet equals ledger sum after migrated purchase (24 vs 24)
+  PASS m4 incompatible: schema 99 plays on defaults in memory
+  PASS m4 incompatible: visible message key
+  PASS m4 incompatible: every write refused, the newer file is untouched
+  PASS m4 incompatible: still untouched after a relaunch
+  PASS m4 incompatible: after the player confirms, the newer file is kept aside and writing resumes
+  PASS m4 incompatible: a plain dictionary with schema 99 is also refused
+  PASS m4 interrupted: the open run is detected with its credited coins
+  PASS m4 interrupted: reported only once
+  PASS m4 interrupted: coins already credited stay
+  PASS m4 interrupted: marker cleared for good
+  PASS m4 interrupted: message string exists in EN and AR
+  PASS m4 ledger: wallet equals ledger sum after interrupted run (15 vs 15)
+  PASS m4 interrupted: a normally closed run leaves no marker
+  PASS m4 run id: 300 ids all unique
+  PASS m4 run id: no separator character in an id
+  PASS m4 compaction: 40 runs x 6 + bonus 10 = 250
+  PASS m4 compaction: only the last 30 runs are kept
+  PASS m4 compaction: old runs folded into ledger_base, the bonus txn is kept
+  PASS m4 ledger: wallet equals ledger sum after compaction (250 vs 250)
+  PASS m4 ledger: wallet equals ledger sum after compaction reload (250 vs 250)
+  PASS m4 compaction: survives a reload
+  PASS m4 cloud: a newer-looking remote without the local purchase is not adopted
+  PASS m4 cloud: a remote holding every local txn and more is adopted even with an older stamp
+  PASS m4 cloud: diverged devices keep the local save
+  PASS m4 cloud: a newer-schema remote is never adopted
+  PASS m4 cloud: same ledger and a newer stamp is adopted (settings follow)
+  PASS m4 cloud: same ledger and an older stamp is not adopted
+  PASS m4 cloud: a v1 remote is migrated first, and its migrate:v1 entry is not in local, but local purchases are missing there so local wins
+  PASS m4 cloud: replace_all with a v2 copy works
+  PASS m4 cloud: replace_all refuses a newer schema
+  PASS m4 ledger: wallet equals ledger sum after cloud (40 vs 40)
+  PASS m4: router knows the campaign screen
+  PASS m4: router knows the map screen
+  PASS m4: router knows the hangar screen
+  PASS m4: router exposes is_busy for honest loading states
+  PASS m4: map.json lists the six islands
+  PASS m4: exactly one playable stage in release one
+  PASS m4: damage comparison is +20 / +25 / +20 percent
+  PASS m4: health comparison is +10
+  PASS m4 hub en: PLAY button
+  PASS m4 hub en: bottom nav CAMPAIGN / UPGRADE
+  PASS m4 hub en: nav tabs are at least 140 px tall
+  PASS m4 hub en: active tab underlined
+  PASS m4 hub en: equipped frame is the hero
+  PASS m4 hub en: wallet shows the ledger value
+  PASS m4 hub en: settings gear and Juno line
+  PASS m4 hub en: wordmark
+  PASS m4 hub en: flight starts at LV 1 line
+  PASS m4 hub en: PLAY enabled
+  PASS m4 hub en: layout direction follows the language
+  PASS m4 hub en: no empty labels
+  PASS m4 hub en: every button meets the touch size
+  PASS m4 hub en: banner restored_backup shows
+  PASS m4 hub en: banner restored_backup has an OK
+  PASS m4 hub en: banner restored_backup dismissed by OK
+  PASS m4 hub en: banner incompatible shows
+  PASS m4 hub en: banner incompatible has an OK
+  PASS m4 hub en: banner incompatible dismissed by OK
+  PASS m4 hub en: banner corrupt_reset shows
+  PASS m4 hub en: banner corrupt_reset has an OK
+  PASS m4 hub en: banner corrupt_reset dismissed by OK
+  PASS m4 hub en: banner interrupted shows
+  PASS m4 hub en: banner interrupted has an OK
+  PASS m4 hub en: banner interrupted dismissed by OK
+  PASS m4 map en: map view and LAUNCH
+  PASS m4 map en: Stage 01 and the locked islands exist
+  PASS m4 map en: READY and LOCKED chips
+  PASS m4 map en: nav and back chevron
+  PASS m4 map en: future-stages line and stage card
+  PASS m4 map en: starts with Stage 01 centred
+  PASS m4 map en: Stage 01 is on screen at the start
+  PASS m4 map en: return shortcut hidden while Stage 01 is visible
+  PASS m4 map en: LAUNCH enabled when idle
+  PASS m4 map en: no empty labels
+  PASS m4 map en: every button meets the touch size
+  PASS m4 map en: scroll is clamped (small rubber band only)
+  PASS m4 map en: the rubber band springs back to the bounds
+  PASS m4 map en: a drag that ends over a node does not select it
+  PASS m4 map en: no toast after a drag
+  PASS m4 map en: a still tap selects the node
+  PASS m4 map en: tapping a locked node shows the toast
+  PASS m4 map en: toast names the locked stage
+  PASS m4 map en: toast says Future update
+  PASS m4 map en: tapping a locked node never launches
+  PASS m4 map en: no price, countdown or unlock progress
+  PASS m4 map en: tapping Stage 01 selects it (LAUNCH launches)
+  PASS m4 map en: return shortcut appears when Stage 01 is off screen
+  PASS m4 map en: return shortcut centres Stage 01
+  PASS m4 map en: return shortcut hides again
+  PASS m4 map en: LAUNCH shows a disabled Loading state while the router is busy
+  PASS m4 map en: LAUNCH is back when idle
+  PASS m4 hangar en: opens on the next frame to buy
+  PASS m4 hangar en: unaffordable shows PLAY TO EARN, no UPGRADE
+  PASS m4 hangar en: exact shortfall (220 coins to go)
+  PASS m4 hangar en: shortfall is plain text
+  PASS m4 hangar en: progress bar is wallet / price
+  PASS m4 hangar en: 480 / 700 coins
+  PASS m4 hangar en: +25% damage vs Striker
+  PASS m4 hangar en: +10 health
+  PASS m4 hangar en: predecessor to this frame
+  PASS m4 hangar en: signature, tagline and number
+  PASS m4 hangar en: carousel arrows and dots
+  PASS m4 hangar en: UPGRADE tab active
+  PASS m4 hangar en: no empty labels
+  PASS m4 hangar en: every button meets the touch size
+  PASS m4 hangar en: previewing never equips
+  PASS m4 hangar en: a future frame is preview only
+  PASS m4 hangar en: locked state chip
+  PASS m4 hangar en: Spark has no predecessor
+  PASS m4 hangar en: the equipped frame offers PLAY
+  PASS m4 hangar en: exactly 700 shows UPGRADE
+  PASS m4 hangar en: UPGRADE shows the price
+  PASS m4 hangar en: one coin short shows PLAY TO EARN and the shortfall
+  PASS m4 hangar en: an owned frame offers SELECT
+  PASS m4 hangar en: opening an owned frame does not equip it
+  PASS m4 hangar en: SELECT equips the owned frame
+  PASS m4 hangar en: maxed opens on the equipped frame
+  PASS m4 hangar en: HELIOS OWNED
+  PASS m4 hangar en: maxed shows PLAY, no empty upgrade button
+  PASS m4 hub ar: PLAY button
+  PASS m4 hub ar: bottom nav CAMPAIGN / UPGRADE
+  PASS m4 hub ar: nav tabs are at least 140 px tall
+  PASS m4 hub ar: active tab underlined
+  PASS m4 hub ar: equipped frame is the hero
+  PASS m4 hub ar: wallet shows the ledger value
+  PASS m4 hub ar: settings gear and Juno line
+  PASS m4 hub ar: wordmark
+  PASS m4 hub ar: flight starts at LV 1 line
+  PASS m4 hub ar: PLAY enabled
+  PASS m4 hub ar: layout direction follows the language
+  PASS m4 hub ar: top bar is mirrored (wordmark at the right)
+  PASS m4 hub ar: no empty labels
+  PASS m4 hub ar: every button meets the touch size
+  PASS m4 hub ar: banner restored_backup shows
+  PASS m4 hub ar: banner restored_backup has an OK
+  PASS m4 hub ar: banner restored_backup dismissed by OK
+  PASS m4 hub ar: banner incompatible shows
+  PASS m4 hub ar: banner incompatible has an OK
+  PASS m4 hub ar: banner incompatible dismissed by OK
+  PASS m4 hub ar: banner corrupt_reset shows
+  PASS m4 hub ar: banner corrupt_reset has an OK
+  PASS m4 hub ar: banner corrupt_reset dismissed by OK
+  PASS m4 hub ar: banner interrupted shows
+  PASS m4 hub ar: banner interrupted has an OK
+  PASS m4 hub ar: banner interrupted dismissed by OK
+  PASS m4 map ar: map view and LAUNCH
+  PASS m4 map ar: Stage 01 and the locked islands exist
+  PASS m4 map ar: READY and LOCKED chips
+  PASS m4 map ar: nav and back chevron
+  PASS m4 map ar: future-stages line and stage card
+  PASS m4 map ar: starts with Stage 01 centred
+  PASS m4 map ar: Stage 01 is on screen at the start
+  PASS m4 map ar: return shortcut hidden while Stage 01 is visible
+  PASS m4 map ar: LAUNCH enabled when idle
+  PASS m4 map ar: no empty labels
+  PASS m4 map ar: every button meets the touch size
+  PASS m4 map ar: scroll is clamped (small rubber band only)
+  PASS m4 map ar: the rubber band springs back to the bounds
+  PASS m4 map ar: a drag that ends over a node does not select it
+  PASS m4 map ar: no toast after a drag
+  PASS m4 map ar: a still tap selects the node
+  PASS m4 map ar: tapping a locked node shows the toast
+  PASS m4 map ar: toast names the locked stage
+  PASS m4 map ar: toast says Future update
+  PASS m4 map ar: tapping a locked node never launches
+  PASS m4 map ar: no price, countdown or unlock progress
+  PASS m4 map ar: tapping Stage 01 selects it (LAUNCH launches)
+  PASS m4 map ar: return shortcut appears when Stage 01 is off screen
+  PASS m4 map ar: return shortcut centres Stage 01
+  PASS m4 map ar: return shortcut hides again
+  PASS m4 map ar: LAUNCH shows a disabled Loading state while the router is busy
+  PASS m4 map ar: LAUNCH is back when idle
+  PASS m4 hangar ar: opens on the next frame to buy
+  PASS m4 hangar ar: unaffordable shows PLAY TO EARN, no UPGRADE
+  PASS m4 hangar ar: exact shortfall (220 coins to go)
+  PASS m4 hangar ar: shortfall is plain text
+  PASS m4 hangar ar: progress bar is wallet / price
+  PASS m4 hangar ar: 480 / 700 coins
+  PASS m4 hangar ar: +25% damage vs Striker
+  PASS m4 hangar ar: +10 health
+  PASS m4 hangar ar: predecessor to this frame
+  PASS m4 hangar ar: signature, tagline and number
+  PASS m4 hangar ar: carousel arrows and dots
+  PASS m4 hangar ar: UPGRADE tab active
+  PASS m4 hangar ar: no empty labels
+  PASS m4 hangar ar: every button meets the touch size
+  PASS m4 hangar ar: previewing never equips
+  PASS m4 hangar ar: a future frame is preview only
+  PASS m4 hangar ar: locked state chip
+  PASS m4 hangar ar: Spark has no predecessor
+  PASS m4 hangar ar: the equipped frame offers PLAY
+  PASS m4 hangar ar: exactly 700 shows UPGRADE
+  PASS m4 hangar ar: UPGRADE shows the price
+  PASS m4 hangar ar: one coin short shows PLAY TO EARN and the shortfall
+  PASS m4 hangar ar: an owned frame offers SELECT
+  PASS m4 hangar ar: opening an owned frame does not equip it
+  PASS m4 hangar ar: SELECT equips the owned frame
+  PASS m4 hangar ar: maxed opens on the equipped frame
+  PASS m4 hangar ar: HELIOS OWNED
+  PASS m4 hangar ar: maxed shows PLAY, no empty upgrade button
+  PASS m4 purchase: double tap deducts the wallet once
+  PASS m4 purchase: phoenix owned once and equipped
+  PASS m4 purchase: the button disables at once
+  PASS m4 purchase: one purchase transaction in the ledger
+  PASS m4 purchase: the same transaction id never charges twice
+  PASS m4 purchase: the reveal starts
+  PASS m4 reveal: SKIP is there from the start
+  PASS m4 reveal: skip ends the sequence
+  PASS m4 reveal: skipping leaves ownership committed exactly once
+  PASS m4 reveal: FLY IT and BACK TO HANGAR
+  PASS m4 reveal: panel says the frame is yours
+  PASS m4 reveal: back closes the overlay
+  PASS m4 reveal: reopening shows it EQUIPPED, never charges again
+  PASS m4 reveal: no second charge
+  PASS m4 purchase: not enough coins never buys
+  PASS m4 purchase: a future frame cannot be bought
+  PASS m4 purchase: save failure shows a message and RETRY
+  PASS m4 reveal full: 0.7 s is ASSEMBLE
+  PASS m4 reveal full: YOURS is not shown yet
+  PASS m4 reveal full: 1.8 s is IGNITE
+  PASS m4 reveal full: 2.7 s shows YOURS and the name
+  PASS m4 reveal full: panel waits until the sequence ends
+  PASS m4 reveal full: panel after about 3 s
+  PASS m4 reveal reduce_fx: 0.7 s is ASSEMBLE
+  PASS m4 reveal reduce_fx: YOURS is not shown yet
+  PASS m4 reveal reduce_fx: 1.8 s is IGNITE
+  PASS m4 reveal reduce_fx: 2.7 s shows YOURS and the name
+  PASS m4 reveal reduce_fx: panel waits until the sequence ends
+  PASS m4 reveal reduce_fx: panel after about 3 s
+  PASS m4 release: campaign has no developer tools
+  PASS m4 release: map has no developer tools
+  PASS m4 release: hangar has no developer tools
+  PASS m4 dev: campaign has the debug menu button
+  PASS m4 dev: the debug menu lists coins, frames, screens, reveals and banners
+  PASS m4 dev: map has the debug menu button
+  PASS m4 dev: hangar has the debug menu button
+  PASS peak5 benchmark reaches: lv4_wave
+  PASS peak5 benchmark reaches: daystar_inferno
+  PASS peak5 benchmark reaches: strike_boulders
+  PASS peak5 benchmark reaches: levelup_in_daystar
+  PASS peak5 benchmark reaches: boss_defeat
+  PASS peak5 benchmark: the pilot never dies, so the whole 60 s run is measured (PERF2)
+  PASS comfort migrate: reduce_fx on -> reduced_flash AND reduced_shake on, old key dropped
+  PASS comfort migrate: running it twice changes nothing
+  PASS comfort migrate: reduce_fx off -> both off
+  PASS comfort migrate: a schema-1 save gets both switches on
+  PASS comfort migrate: master mute defaults off
+  PASS comfort migrate: a v0.5 save file loads with both comfort switches on
+  PASS comfort migrate: the split switches persist in save v2
+  PASS comfort: flash and shake are independent after a reload
+  PASS comfort helper: Save.comfort reads each switch
+  PASS comfort: the flight reads reduced shake without reducing flashes
+  PASS comfort: reduced shake = no flight screen shake
+  PASS comfort: kit shake strongly damped with reduced shake (trauma 0.20 of 0.8)
+  PASS comfort: the flight reads reduced flashes on its own
+  PASS comfort: screens (reveal) read reduced flashes
+  PASS comfort: shake still plays when only flashes are reduced
+  PASS comfort: master mute silences Master, Music and SFX
+  PASS comfort: unmute restores the buses
+  PASS comfort: Vibration off = no vibration
+  PASS comfort: Vibration on = vibration
+  PASS comfort settings en: mute + reduced flashes + reduced shake + vibration switches, touch targets >= 48 dp
+  PASS comfort settings en: new strings translated
+  PASS comfort settings: the mute switch saves at once
+  PASS comfort settings ar: mute + reduced flashes + reduced shake + vibration switches, touch targets >= 48 dp
+  PASS comfort settings ar: new strings translated
+  PASS music: a run starts on the entrance stem
+  PASS music: a light field stays on entrance
+  PASS music: a delayed encounter keeps the current piece (no time-based switch)
+  PASS music: a busy field brings in the pressure stem
+  PASS music: pressure holds a few seconds after the field calms
+  PASS music: then eases back to entrance (no flapping)
+  PASS music: past half of the run the pressure stays
+  PASS music: the hush waits until the arena clears
+  PASS music: boss next + arena clearing = breathing (the pre-boss hush)
+  PASS music: the hush holds until the boss
+  PASS music: the boss warning is still the hush
+  PASS music: Big Bite enters = boss track
+  PASS music: transformation = Inferno track
+  PASS music: victory leaves the music to the victory theme
+  PASS music: a defeat brings the results bed
+  PASS music: a Replay starts on entrance again
+  PASS music engine: entrance plays run_entrance.ogg
+  PASS music engine: pressure cross-fades in (<= 3 music players)
+  PASS music engine: rapid state changes never play more than 3 music players (max 3)
+  PASS music engine: boss state plays boss_bigbite.ogg
+  PASS music engine: after the cross-fade only the new piece sounds
+  PASS music engine: inferno state plays boss_inferno.ogg
+  PASS music engine: a missing stem falls back to reef_run.ogg
+  PASS music: run_entrance file is in the build
+  PASS music: run_pressure file is in the build
+  PASS music: run_breathing file is in the build
+  PASS music: results_defeat file is in the build
+  PASS music: entrance and pressure stems share one loop length (switch on the beat)
+  PASS music engine: a menu track leaves the run state machine
+  PASS music in flight: a run starts on the entrance stem
+  PASS music in flight: the opening of Reef Run is entrance/pressure (entrance)
+  PASS music in flight: the boss warning brings the hush
+  PASS music in flight: Big Bite in the arena = boss track
+  PASS music in flight: a defeat cross-fades to the results bed
+  PASS variations: random pick never repeats the same file twice in a row and uses every alternate
+  PASS variations: a single-file cue still plays
+  PASS variations: razor_death has 4 files
+  PASS variations: boulder_break has 3 files
+  PASS variations: puff_death has 3 files
+  PASS variations: the frequent sounds have pitch and gain jitter
+  PASS voices: every one-shot cue has a voice cap of 1-3
+  PASS voices: priority warnings > UI > impacts > weapons (a full pool never drops a warning for friendly fire)
+  PASS voices: one-shot pool + loops <= 24 SFX voices (22)
+  PASS mix: the Master loudness trim is applied
+  PASS voices: warnings duck the player's fire (Weapons) by 6 dB or more
+  PASS release export: no dev mode and no command-line test switches
+  PASS release export: campaign has no debug overlay, dev panel or cheat tools
+  PASS release export: game has no debug overlay, dev panel or cheat tools
+  PASS release export: settings has no debug overlay, dev panel or cheat tools
+  PASS release export: hangar has no debug overlay, dev panel or cheat tools
+  PASS release export: map has no debug overlay, dev panel or cheat tools
+  PASS release export: DevPanel.attach adds nothing
+  PASS release export: the dev panel cannot be opened
+  PASS debug build: dev tools still reachable for tests and captures
+  PASS CT-13 ordinary hostile bullets cost 10 HEALTH (dart, sphere, capsule: [10, 10, 10])
+  PASS CT-12 the shot's body is its hit area: 3 px outside the body is safe, 3 px inside it hits
+  PASS CT-15 breakable contact costs 10 HEALTH, destroys the obstacle and grants the 0.8 s grace
+  PASS CT-17 enemy body contact: 10 HEALTH with bullet grace and separation (140 px), none twice inside grace
+  PASS CT-17 Big Bite's entry never dives below its home position (entry lowest 695, home lowest 695)
+  PASS CT-20 screen shake drives the picture holder only
+  PASS CT-20 camera shake cannot displace collision or the input transform (moved (100.0, 0.0))
+  PASS AB-04 no target: the strike detonates after a bounded forward travel (1090 px ahead)
+  PASS PWR04 empty lane: the strike still detonates (the input is never lost)
+  PASS AB-05 blast radius is 18% of the play width (194 px) centred on the impact point, not the cockpit
+  PASS AB-03 bullets outside the blast remain (no screen-wide wipe)
+  PASS PWR04 removal of only the bullets inside the blast
+  PASS PWR04 one enemy: exactly one damage application (14)
+  PASS AB-02 the strike travels forward and blooms on the first enemy hit
+  PASS PWR04 enemy group: heavy area damage once per member inside the blast, none outside
+  PASS AB-02 heavy area damage around the impact
+  PASS PWR04 a frame spike does not double the damage
+  PASS PWR04 boulder: the blast breaks a worn shell boulder
+  PASS PWR04 salvage: the blast damages the salvage pod (34 → 20)
+  PASS AB-02 the blast breaks shootable obstacles
+  PASS AB-06 the strike stops at solid lethal geometry (detonated at y 1286, spire bottom 1316, target behind untouched)
+  PASS AB-06 the blast never removes lethal geometry
+  PASS PWR04 lethal obstacle: the blast stops at it and cannot destroy it
+  PASS A11 no friendly effect removes lethal geometry (Sunpunch)
+  PASS AB-07 closed Big Bite armor blocks the strike; the blast still clears nearby hostile bullets
+  PASS PWR04 closed boss: no damage through the armor
+  PASS AB-07 no heal and no invulnerability from the strike
+  PASS AB-07 an open core accepts the strike's damage (230 → 216)
+  PASS PWR04 open core: the strike damages it
+  PASS PWR04 every Sunpunch case could be triggered from a ready button
+  PASS SU-09 the activation clear is 15% of the play width around the cockpit (162 px)
+  PASS SU-10 ordinary attacks still damage the player during Daystar (not invulnerable)
+  PASS SU-10 Daystar removes bullets, never lethal geometry
+  PASS SU-10 Daystar does not remove a flame zone
+  PASS SU-11 Daystar fires its own weapon profile (spears, pulse) and returns to the latest normal level (LV 3)
+  PASS SU-11 after expiry no Super projectile is fired any more
+  PASS PWR03 pause mid-deploy freezes the Daystar timer and resumes it (0.15 s)
+  PASS PWR03 pause mid-cycle freezes the Daystar timer and resumes it (2.50 s)
+  PASS PWR03 pause mid-return freezes the Daystar timer and resumes it (5.85 s)
+  PASS A08 spark: a level-up during Daystar returns to the new level's configuration
+  PASS A08 striker: a level-up during Daystar returns to the new level's configuration
+  PASS A08 phoenix: a level-up during Daystar returns to the new level's configuration
+  PASS A08 helios: a level-up during Daystar returns to the new level's configuration
+  PASS A08 the collision core is the same cockpit circle in all sixteen configurations
+  PASS EN-R3 late Razor: three darts on one locked line, 0.16 s apart ([0.17, 0.17])
+  PASS ENC01 Razor late fixture: three shots on one fixed line, counted from the shots themselves
+  PASS EN-R3 late Razors carry the late pattern (from about 42 s)
+  PASS BO-13 Inferno mouth: two seven-orb fans 0.45 s apart, second offset 6 deg (gap 0.47, offset 6.0)
+  PASS BO-13 Inferno core window is 1.4 s (1.40)
+  PASS ENC04 Ability, laser and Super overshoot in the same update: clamped at 50%, one transformation
+  PASS ENC04 pause freezes Furnace Breath
+  PASS ENC04 reduced effects keep the same Furnace cast (20 HEALTH once, normal 20, reduced 20)
+  PASS SAV-11 Replay invalidates every shot and pending strike of the old run (no kill carries over)
+  PASS SAV-11 no cooldown, Super or level state survives Replay
+  PASS BO-21 a Replay during the victory celebration leaves no shots, coins or boss callbacks in the next run
+  PASS UI-24 Restart keeps the collected coins and never grants uncollected ones (15 → 22 → 22)
+  PASS UI-24 Exit banks nothing twice and spends nothing
+  PASS UI-17 best reach and best clear time are separate records (reach 0.4, clear 88 s)
+  PASS A14 backgrounding pauses the run; no hidden time or damage passes
+  PASS A14 resuming gives a moment of grace to re-grip
+  PASS AUD-12 reduced effects are never mechanically easier: the same seeded 30 s run ends identically ([30, 10, 2, 15, 0, 715.0, 1480.0, false])
+  PASS A09 nose and side cannon damage totals match at 30 and 120 fps (112 / 112)
+  PASS PWR05 Helios: every new rail round starts with an empty hit registry (the same enemy is hit by each round, never twice by one)
+  PASS SAV-12 a new projectile never inherits an old hit registry or target
+  PASS ENC03 boulder and salvage leave a bypass wider than three cores without firing (salvage 646 px, boulder 392 px)
+  PASS ENC02 wave: killing the razor first never brings a replacement and keeps at most two patterns (2)
+  PASS ENC02 wave: killing the puff first never brings a replacement and keeps at most two patterns (1)
+  PASS ENC02 wave: killing the claw first never brings a replacement and keeps at most two patterns (2)
+  PASS SC-03 four sequential permanent frames (Spark, Striker, Phoenix, Helios) and four flight levels
+  PASS SC-04 one sector and one playable mission (Reef Run)
+  PASS SC-05 three enemies, four obstacles and one boss in the mission data
+  PASS SC-08 coins are the only currency; no extra currency or monetization system ([])
+  PASS SC-09 no pilot roster, rarity, crafting, skill tree, login rewards or subscriptions in the build
+  PASS SC-10 no extra currency, energy timer, login streak, paid shortcut or daily quest
+  PASS SAV-17 the economy is local data: no remote economy service in the progress code
+  PASS SAV-08 progress is a local save (no account required)
+  PASS MS-04 requirement register with a FIXED/TUNE/PROPOSED/OPEN label on every row (389/389); tuning validated and kept apart from save data
+  PASS SAV-15 every frame has four normal profiles and one Super choreography; every attack pattern has a warning ([0.45, 0.7, 0.8, 0.6, 0.9])
+  PASS AUD-08 master, music, weapons, impacts, warnings and UI buses exist (["Master", "Music", "SFX", "Weapons", "Impacts", "Warnings", "UI"])
+  PASS PE-02 the Ability cooldown (12 s) is the same on every frame and survives a level change
+  PASS SC-07 pause, settings and first-run guidance exist as supporting flows
+  PASS SC-06 Campaign and Upgrade are the only main navigation tabs (["NavCampaign", "NavUpgrade"])
+  PASS UI-21 the first session asks for no account or loadout, and PLAY is an enabled, wired button
+  PASS CT-07 lifting the finger holds position; no automatic pause
+  PASS AB-01 Sunpunch is ready at launch, starts a 12 s cooldown and uses no coins, stars or Super charge
+  PASS SU-01 the Daystar ring starts empty, charges through kills, and only a full ring activates (0.05)
+  PASS SU-01 a tap at 100% activates Daystar
+  PASS PE-12 coins collected before a defeat stay in the wallet, credited once (88 to 97)
+  PASS ENC06 losing after earning coins keeps them
+  PASS FL-03 the 0.35 s deployment freezes no gameplay: movement and nose fire continue (14 nose shots)
+  PASS WP-05 the laser stops at lethal geometry (beam end y 1225) and closed boss armor blocks its damage
+  PASS MP-14 pickups are never pulled through lethal geometry (coin y 950 to 953)
+  PASS UI-26 player-facing text says HEALTH, never HULL (0 HULL strings)
+  PASS SAV-01 the save schema holds version, wallet, owned and equipped frames, bonus claims, best reach, best clear, settings and the onboarding flag ([])
+  PASS BO-05 fin cannons: ports glow 0.9 s (v0.6 rework; seed 0.6), left fires first, right 0.4 s later (glow 0.93, gap 0.40)
+  PASS BO-06 mouth fan: one slow five-orb fan across 80 deg (5 orbs, 80.0 deg)
+  PASS BO-06 the mouth opens for 1.8 s, a warning and a damage window (1.82)
+  PASS BO-18 the core window is not closed early because Daystar was activated
+  PASS MP-12 150 s with no damage dealt: no timeout kills the player and no automatic win (boss 230 HP)
+  PASS ENC05 every future node, tapped before and after winning, shows Future update and never launches or is bought
+  PASS restart: defeat results open after a death
+  PASS restart: the results card has a Replay button
+  PASS restart: a real tap on Replay starts a fresh run
+  PASS restart: the aircraft answers the finger on the first step after Replay
+  INFO restart: death->results 0.90 s, card readable 0.22 s, tap->flight 0.014 s, total 1.15 s (+ the player's own tap)
+  PASS restart: death to controllable flight <= 3 s through Replay, with a 0.6 s tap allowance (1.75 s)
+  PASS sunpunch: test field is empty
+  PASS sunpunch: fires with nothing to lock on
+  PASS sunpunch: a no-target strike flies free
+  PASS sunpunch: free flight covers its full forward range (1000 px)
+  PASS sunpunch: the orb is seen travelling (0.40 s)
+  PASS sunpunch: it detonates visibly at the end of its range, never fizzles
+  PASS sunpunch: an enemy reached in free flight detonates it there
+  PASS sunpunch: the fused blast damages what it reached
+  PASS sunpunch: lethal geometry ahead stops the orb below it
+  PASS sunpunch: it detonates at the spire's face
+  PASS sunpunch: the blast never removes lethal geometry
+  PASS sunpunch: with a target it still locks on and lands in 0.16 s
+  PASS results en: the loss cause is named
+  PASS results en: a one-line tip says how to beat it
+  PASS results en: the run is shown as a strip with the point it ended
+  PASS results en: what was kept is stated
+  PASS results en: one next goal for the next flight
+  PASS results en: Replay is on the card
+  PASS results ar: the loss cause is named
+  PASS results ar: a one-line tip says how to beat it
+  PASS results ar: the run is shown as a strip with the point it ended
+  PASS results ar: what was kept is stated
+  PASS results ar: one next goal for the next flight
+  PASS results ar: Replay is on the card
+  PASS results: every loss cause has a tip in EN and AR []
+  PASS results: short of the best reach, the goal is to beat it (Next goal: get past your best reach, 60%)
+  PASS onboarding: a returning player sees no drag cue
+  PASS onboarding: settings offer Replay first-flight tips
+  PASS onboarding: the tip flag is cleared
+  PASS onboarding: the next flight shows the drag cue again
+  PASS comfort: vibration off sends no haptics (Sunpunch, death)
+  PASS comfort: vibration on still sends them
+  PASS calm: the window before Big Bite is running
+  PASS calm: a far coin gathers to the aircraft during the calm
+  PASS calm: a short star rain falls once
+  PASS calm: Big Bite still enters on time after the calm
+  PASS calm: gathering stops once the boss is on
+  PASS bonus: Spark has no extra frame bonus (its first clear is the general one)
+  PASS bonus: the first clear flying Striker pays its once-ever bonus
+  PASS bonus: the Striker bonus states why it was earned
+  PASS bonus: the Striker first-clear bonus never pays twice
+  PASS bonus: per-frame bonuses add at most 45 coins in total (PE-11 purchase pace kept)
+  PASS reveal: parts start a full screen width away
+  PASS reveal: at 0.7 s the side hardware is still 575 px out
+  PASS reveal: every part locks home by the end of ASSEMBLE
+  PASS frames: each frame has its own hardware accent colour
+  PASS reveal: draws at 0.7 s without errors
+  PASS spark: a focus bolt marks its forward fire (10 of 54 nose shots)
+  PASS spark: focus bolts deal the same damage (looks only)
+  PASS grayscale: the reef backdrop picture loads
+  INFO grayscale: reef lane median 0.015, brightest 5% 0.043, outline 0.009; enemy { "dart": 0.35456032620839, "orb": 0.27949603043736, "capsule": 0.24095532600264 }; player { "nose core": 0.92992559144359, "side core": 0.8558661649535, "shot glow": 0.70414672712466, "flame glow": 0.60337987101891 }
+  PASS grayscale: enemy dart stands out from the reef (6.2:1)
+  PASS grayscale: enemy dart keeps its dark outline (6.9:1)
+  PASS grayscale: player nose core is clearly lighter than enemy dart (0.93 vs 0.35)
+  PASS grayscale: player side core is clearly lighter than enemy dart (0.86 vs 0.35)
+  PASS grayscale: enemy dart stands out even from the brightest reef in the lane (4.4:1)
+  PASS grayscale: enemy orb stands out from the reef (5.1:1)
+  PASS grayscale: enemy orb keeps its dark outline (5.6:1)
+  PASS grayscale: player nose core is clearly lighter than enemy orb (0.93 vs 0.28)
+  PASS grayscale: player side core is clearly lighter than enemy orb (0.86 vs 0.28)
+  PASS grayscale: enemy orb stands out even from the brightest reef in the lane (3.6:1)
+  PASS grayscale: enemy capsule stands out from the reef (4.5:1)
+  PASS grayscale: enemy capsule keeps its dark outline (4.9:1)
+  PASS grayscale: player nose core is clearly lighter than enemy capsule (0.93 vs 0.24)
+  PASS grayscale: player side core is clearly lighter than enemy capsule (0.86 vs 0.24)
+  PASS grayscale: enemy capsule stands out even from the brightest reef in the lane (3.1:1)
+  PASS grayscale: the dark outline keeps enemy fire apart from gold player fire (12.8:1)
+  PASS grayscale: player nose core is brighter than the reef (10.6:1)
+  PASS grayscale: player side core is brighter than the reef (9.8:1)
+  PASS grayscale: player shot glow is brighter than the reef (8.1:1)
+  PASS grayscale: player flame glow is brighter than the reef (7.1:1)
+  INFO comfort: window (720, 1280) -> logical (1080.0, 1920.0)
+  PASS comfort 720x1280 en: hub, map, hangar, settings and results fit, 48 dp buttons (0 issues)
+  PASS comfort 720x1280 ar: hub, map, hangar, settings and results fit, 48 dp buttons (0 issues)
+  PASS comfort 720x1280 en large: hub, map, hangar, settings and results fit, 48 dp buttons (0 issues)
+  PASS comfort 720x1280 ar large: hub, map, hangar, settings and results fit, 48 dp buttons (0 issues)
+  INFO comfort: window (1080, 2400) -> logical (1080.0, 2400.0)
+  PASS comfort 1080x2400 en: hub, map, hangar, settings and results fit, 48 dp buttons (0 issues)
+  PASS comfort 1080x2400 ar: hub, map, hangar, settings and results fit, 48 dp buttons (0 issues)
+  PASS comfort 1080x2400 en large: hub, map, hangar, settings and results fit, 48 dp buttons (0 issues)
+  PASS comfort 1080x2400 ar large: hub, map, hangar, settings and results fit, 48 dp buttons (0 issues)
+  PASS rework 1: Big Bite's fin volley glows 0.95 s before its first shot (>= 0.9 s band rule; was 0.6)
+  PASS rework 1: a red edge chevron rises on the firing side 0.93 s before the shot
+  PASS rework 1: fin shots have their own look (magenta scale shard), same hit capsule as before
+  PASS rework 1: the right side warns too (each side gets its own chevron)
+  PASS rework 1/5: every fin chevron runs 0.9-1.2 s ahead ([0.95, 0.95])
+  PASS rework 2: the first fin volley after entry is the gentle opener (2 shots per side, slower)
+  PASS rework 2: after the 10 s opener the full pattern returns (3 shots per side)
+  PASS rework 2: one opening takes Spark 30%, Striker 33%, Phoenix 36%, Helios 40% of Big Bite (data-driven)
+  PASS rework 3: each star adds 0% Daystar charge
+  PASS rework 3: reaching 100% marks Daystar ready (pulse starts, logged once)
+  PASS rework 3: a short 'ready' sound plays (cue super_ready has a file)
+  PASS rework 3: the ready pulse runs while Daystar waits
+  PASS rework 3: no second ready sound while already full (kills use the same charge path)
+  PASS rework 3: using Daystar ends the ready pulse
+  PASS rework 4: Daystar opens a gold DAYSTAR band (like INFERNO)
+  PASS rework 4: the gold reef light follows Daystar's own transform curve (super_k)
+  PASS rework 5: a spire is announced by a red chevron at the top edge, in its column
+  PASS rework 5: a Razor gate is announced by a chevron over each bank
+  PASS rework 5: a Razor entering from the left gets a chevron on the left edge
+  PASS rework 5: every edge chevron runs 0.9-1.2 s ahead ([1.2, 1.2, 1.2, 0.9])
+  PASS rework 5: chevrons clear once the danger has arrived (no stale warnings)
+  PASS rework 6: a spire hums as it nears the aircraft's lane (0.99 s ahead)
+  PASS rework 6: shots on a spire make a hit sound (cue spire_hit), and the hum has a sound
+  PASS rework 6: the spire's read grows ~20% (halo + bright rim on the hit outline); the hit outline itself is unchanged
+  PASS rework 7: SIDE CANNONS ONLINE shows in a short mint band
+  PASS rework 7: LV 2 queues a 4-round deploy salvo
+  PASS rework 7: the salvo fires from the unfolded cannons (4 side rounds)
+  PASS rework 7: only LV 2 deploys with a salvo
+  PASS rework data: fin warning 0.9 s and per-frame caps { "spark": 0.3, "striker": 0.33, "phoenix": 0.36, "helios": 0.4 } live in tuning.json
+  PASS rework data: the DAYSTAR and ONLINE band texts exist in Arabic
+RESULT passed=1290 failed=0
