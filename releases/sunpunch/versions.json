@@ -1,0 +1,34 @@
+[
+ {
+  "label": "v0.2",
+  "build_id": "0.2+1144af7",
+  "released": "2026-09-30 22:28 UTC",
+  "web": "https://kik-studio-dev.web.app/releases/sunpunch/v0.2/web/index.html",
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-sunpunch-v0.2/sunpunch.apk",
+  "notes": "SUNPUNCH v0.2 — first playable (M1 feel test, greybox shapes)\n- One finger flies the aircraft: it moves with your finger, never jumps to it. Shooting is automatic.\n- A safe start, then a Razor enters: its eye flashes before every dart, so you can see it coming and slide away.\n- HEALTH 30: each dart costs 10, with a short safe moment after a hit. Only the small bright core in the cockpit can be hit.\n- ABILITY (bottom-left): Sunpunch, a local solar blast, ready at launch, 12 s cooldown. SUPER (bottom-right): charges from kills (early version).\n- Pause, clear defeat reason, one-tap Replay (instant), steering sensitivity in Settings.\n- Arabic and English. Shapes and sounds are temporary: the real look arrives in the next milestone.\n"
+ },
+ {
+  "label": "v0.3",
+  "build_id": "0.3+1c01f3e",
+  "released": "2026-10-01 00:36 UTC",
+  "web": "https://kik-studio-dev.web.app/releases/sunpunch/v0.3/web/index.html",
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-sunpunch-v0.3/sunpunch.apk",
+  "notes": "SUNPUNCH v0.3 — the first polished combat slice (real look and sound)\n- Real art: the orange Spark, the cobalt Razors, the shell boulder and the Midnight Reef islands scroll by under the crescent moon.\n- Collect mint stars to power up during the flight: FLIGHT LV 2 side cannons, LV 3 floating cannons + tracking rockets, LV 4 the solar laser (keeps everything). Every flight starts at LV 1.\n- Shell boulders drift down from 18 s: shoot them for stars, don't fly into them.\n- Weapons kick back when they fire, enemies flash when hit, Razors snap their wings when destroyed; a short freeze shows what hit you.\n- New sound: every weapon, hit, warning, pickup and level-up, plus the Reef Run music. The Razor's charge warning stays audible over your own fire.\n- Sunpunch (ABILITY) has its real solar-orb look; Daystar (SUPER) is still the early version.\n- New setting: Reduced effects (calmer flashes and shake; threats never change).\n"
+ },
+ {
+  "label": "v0.4",
+  "build_id": "0.4+1284c9c",
+  "released": "2026-10-01 03:12 UTC",
+  "web": "https://kik-studio-dev.web.app/releases/sunpunch/v0.4/web/index.html",
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-sunpunch-v0.4/sunpunch.apk",
+  "notes": "SUNPUNCH v0.4: the whole Reef Run, from launch to Big Bite's defeat\n- **The full mission:** about 100 seconds through Midnight Reef. Razors open, then Puff, Claw, a shell boulder and a salvage pod arrive. After them come a needle spire, the Razor three-burst, Puff's double fan, a Razor gate, Claw's comb and the three-enemy wave, with calm moments to collect in between.\n- **New enemies:**\n  - Puff swells, then fires slow magenta spheres in a fan.\n  - Claw glows, then fires crimson capsules from its left claw, then its right.\n  - Each is taught alone first; in the wave they take turns, and at most two attacks come at you at once.\n- **New obstacles:**\n  - The salvage pod breaks for +10 coins.\n  - The needle spire and the Razor gate end the run if you touch them.\n  - Both are announced with a red marker before they arrive, and the gate always keeps a wide, steady opening.\n- **Big Bite, the boss:**\n  - Its armour blocks your shots; hit the glowing core while its mouth is open.\n  - It fires fin volleys, a mouth fan, and Furnace Breath: a warned flame lane you must leave, which costs 20 HEALTH.\n  - At half health it transforms once into INFERNO, with heavier guns, two fans and two flame pulses.\n- **Victory:** Big Bite's jaw splits and its coins pour out. The results show your clear time, coins and wallet, with Replay first. Coins you collect are kept, even if you lose.\n- **Sound:** new sounds for every new enemy, obstacle and boss attack. Big Bite and Inferno have their own music, and there is a victory theme.\n- **Look:** the reef edges are now separate, varied pillars, and the moon finally looks like a moon.\n"
+ },
+ {
+  "label": "v0.5",
+  "build_id": "0.5+8afa660",
+  "released": "2026-10-01 06:07 UTC",
+  "web": "https://kik-studio-dev.web.app/releases/sunpunch/v0.5/web/index.html",
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-sunpunch-v0.5/sunpunch.apk",
+  "notes": "SUNPUNCH v0.5: four aircraft to earn, a hangar, a map and progress that is never lost\n- **Four permanent aircraft:** Spark, Striker, Phoenix and Helios. Each new one has more HEALTH (30, 40, 50, 60), hits harder, and fights differently from FLIGHT LV 2:\n  - Striker's rail cannons swing in and lock onto the enemy in front of you.\n  - Phoenix's two pods pick their own targets, or both hit the same one.\n  - Helios's rail shots go through one enemy and hit the next.\n  - Every aircraft changes at each flight level, and every flight still starts at LV 1.\n- **Daystar on every aircraft:** the armour lifts and three heavy volleys fire (plasma spears, solar pulses, paired rockets) for six seconds. Good play now charges it about 50 seconds into a run.\n- **New screens:**\n  - **Campaign:** your aircraft, Juno, your coins and one PLAY button.\n  - **Midnight Reef map:** Stage 01 ready to launch; five future islands are shown locked as \"Future update\".\n  - **Upgrade hangar:** see the next aircraft, what it adds, your coins and exactly how many you still need, then buy it.\n  - **Reveal:** buying plays a short \"assemble, ignite, yours\" moment you can skip, then lets you fly the new aircraft.\n- **Coins and goals:**\n  - Every coin counts the moment you collect it and is saved within two seconds, even if you lose, restart or quit.\n  - Puffs and Claws now drop coins.\n  - Four one-time bonuses, each shown with its reason.\n  - Results show how far you got and exactly how many coins the next aircraft still needs.\n- **Safe progress:**\n  - The game keeps a backup save and recovers from a damaged one with a message.\n  - Coins and aircraft are never lost or charged twice, and a purchase is all or nothing.\n  - If the app is closed mid-flight, your collected coins stay and the game tells you.\n- **Fairer boss:** Big Bite can't be melted in seconds by the stronger aircraft. Every aircraft now gets a real fight of about 30 to 36 seconds.\n- **Sound and music:** new hangar music, sounds for every aircraft's side weapons, its own Daystar sound, and sounds for the map, hangar, purchase and reveal.\n"
+ }
+]
