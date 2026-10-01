@@ -1,0 +1,190 @@
+  PASS config: game.json loads
+  PASS config: version present
+  PASS save: value survives reload
+  PASS save: setting survives reload
+  PASS save: atomic write leaves no temp file
+  PASS save: player id generated
+  PASS loc: English text
+  PASS loc: Arabic text
+  PASS loc: Arabic is right-to-left
+  PASS loc: controls flip to RTL in Arabic
+  PASS loc: every string has English and Arabic
+  PASS audio: Music bus
+  PASS audio: SFX bus
+  PASS audio: sfx asset present
+  PASS audio: no AudioServer.add_bus() (silences web builds, FR-3)
+  PASS audio: Music and SFX route to Master
+  PASS analytics: HMAC signature matches reference
+  PASS ui: safe margins at least minimum
+  PASS theme: design tokens file present
+  PASS theme: tokens loaded
+  INFO theme placeholder = false (a game must replace it before a milestone)
+  PASS playfield: same logical area at 1080x1920
+  PASS playfield: same logical area at 1080x2340
+  PASS playfield: same logical area at 1080x2400
+  PASS playfield: same logical area at 1440x1920
+  PASS playfield: same logical area at 3413x1920
+  PASS perf: frame statistics correct
+  PASS fx: shader hit_flash loads
+  PASS fx: shader dissolve loads
+  PASS fx: shader shield loads
+  PASS fx: shader shockwave loads
+  PASS fx: shader heat_shimmer loads
+  PASS fx: texture dot generated
+  PASS fx: texture spark generated
+  PASS fx: texture ring generated
+  PASS fx: texture smoke generated
+  PASS fx: texture star generated
+  PASS fx: texture white generated
+  PASS fx: emitter pool stays bounded (96 <= 96)
+  PASS fx: hit flash applies its shader
+  PASS fx: trail lives in the effect layer
+  PASS fx: heat shimmer attaches to its node
+  PASS fx: dissolve frees the node when done
+  PASS fx: hitstop restores time
+  PASS fx: shake returns to rest
+  PASS ui kit: theme type DisplayLabel
+  PASS ui kit: theme type HeadingLabel
+  PASS ui kit: theme type H2Label
+  PASS ui kit: theme type TitleLabel
+  PASS ui kit: theme type CaptionLabel
+  PASS ui kit: theme type MicroLabel
+  PASS ui kit: theme type NumberLabel
+  PASS ui kit: theme type DangerButton
+  PASS ui kit: theme type GhostButton
+  PASS ui kit: theme type CardPanel
+  PASS ui kit: theme type ChipPanel
+  PASS ui kit: display size from type scale
+  PASS ui kit: Arabic display font renders Arabic
+  PASS ui kit: framed panel
+  PASS ui kit: count_to ends on the target
+  PASS ui kit: appear ends fully visible
+  PASS errors: logger registered
+  PASS errors: one report per distinct error
+  PASS errors: repeats are counted, not re-sent
+  PASS errors: report carries build and platform
+  PASS errors: points at the script line, not engine code
+  PASS remote: Firestore values decode
+  PASS remote: numbers with safe defaults
+  PASS remote: switches with safe defaults
+  PASS screen boot: loads
+  PASS screen boot: builds content
+  PASS screen boot: no empty labels (0 labels)
+  PASS screen boot: all buttons meet touch size
+  PASS screen menu: loads
+  PASS screen menu: builds content
+  PASS screen menu: no empty labels (4 labels)
+  PASS screen menu: all buttons meet touch size
+  PASS screen settings: loads
+  PASS screen settings: builds content
+  PASS screen settings: no empty labels (7 labels)
+  PASS screen settings: all buttons meet touch size
+  PASS screen game: loads
+  PASS screen game: builds content
+  PASS screen game: no empty labels (7 labels)
+  PASS screen game: all buttons meet touch size
+  PASS release: no developer tools on shipping screens
+  PASS dev: developer tools reachable in dev builds
+  PASS release: settings has no developer tools
+  PASS release: game has no developer tools
+  PASS cloud: failure is reported as not synced
+  PASS cloud: failure text is honest
+  PASS cloud: real round trip verified against Firebase
+  PASS tuning: config/tuning.json is valid ()
+  PASS tuning: a missing value is an error, never zero
+  PASS tuning: HEALTH scale 30/40/50/60 enforced
+  PASS tuning: Spark 30 HEALTH, ordinary damage 10 (H2)
+  PASS sweep: fast shot cannot tunnel through the core
+  PASS sweep: a near miss is a miss
+  PASS steer: first free finger steers
+  PASS steer: relative movement accumulates
+  PASS steer: second finger on ABILITY keeps the steering finger
+  PASS steer: third finger on SUPER keeps the steering finger
+  PASS steer: a button finger can never steer
+  PASS steer: steering continues while both powers are held
+  PASS steer: releasing buttons clears only their own state
+  PASS steer: an extra finger does not reset the anchor
+  PASS steer: finger replacement hands steering over without a stuck state
+  PASS steer: unknown releases are counted, not crashed on
+  PASS steer: interruption clears every pointer
+  PASS input: touch-down never teleports the aircraft
+  PASS input: nothing moves before the next simulation update
+  PASS input: drag moves the aircraft by the finger's movement
+  PASS input: ABILITY and SUPER fire from second and third fingers
+  PASS input: steering stays stable while both powers are held
+  PASS input: all pointers released cleanly
+  PASS input: sliding over a button is not a press
+  PASS input: aircraft clamped inside the play area
+  PASS opening: first 2 seconds are safe (no enemy, no shot)
+  PASS opening: one Razor enters around 2 s
+  PASS razor: eye flash >= 0.45 s before the dart (0.45 s)
+  PASS opening: no second Razor while the first shot is still coming
+  PASS razor: dart does not home after release
+  PASS razor: destroyed Razor is removed
+  PASS razor: shots already fired stay after its death
+  PASS collision: wings never collide (only the cockpit core)
+  PASS damage: a dart costs 10 HEALTH and starts grace
+  PASS damage: grace blocks a second ordinary hit
+  PASS damage: after grace ends, hits count again
+  PASS death: HEALTH 0 ends the run with its cause
+  PASS collision: swept checks never missed an overlap
+  PASS replay: 10 restarts, each a clean run at full HEALTH
+  PASS replay: warm Replay under 3 s every time
+  PASS pause: simulation, warnings and cooldowns freeze
+  PASS pause: touches do not reach the aircraft
+  PASS pause: resume continues the run
+  PASS sunpunch: clears only bullets inside its blast
+  PASS sunpunch: 12 s cooldown from use
+  PASS sunpunch: cannot be used during cooldown
+  PASS timing: movement is the same at 30 and 120 fps
+  PASS weapons: config/weapons.json is valid ()
+  PASS weapons: a missing value fails validation (never zero)
+  PASS weapons: an out-of-range value fails validation
+  PASS weapons: every FLIGHT LV must add a weapon
+  PASS weapons: LV 4 keeps nose, side cannons and rockets and adds the laser (["nose", "side", "rockets", "laser"])
+  PASS weapons: LV 1 output = the reference budget (20.0/s)
+  PASS weapons: each level is stronger, LV 4 = 2.67x LV 1 (bold, not a wipe)
+  PASS weapons: a Razor takes 0.70 s of aligned LV 1 fire (short, but its warning is seen)
+  PASS levels: every flight starts at FLIGHT LV 1
+  PASS levels: 8 stars reach FLIGHT LV 2
+  PASS levels: new side cannons do not fire while they deploy (0.35 s)
+  PASS levels: side shots are born at the cannon muzzle (WP-07)
+  PASS levels: 22 stars reach FLIGHT LV 3
+  PASS levels: LV 3 cannons float beside the aircraft with a clear gap (16 px)
+  PASS levels: LV 3 fires nose, side and rockets
+  PASS levels: 42 stars reach FLIGHT LV 4 (XP bar at MAX)
+  PASS levels: LV 4 fires nose, side cannons, rockets AND the laser (["nose", "side", "rocket"])
+  PASS levels: Replay starts again at FLIGHT LV 1
+  PASS rockets: two missiles leave the racks (one per rack)
+  PASS rockets: expire after a bounded lifetime (never orbit)
+  PASS rockets: choose a visible forward target
+  PASS rockets: retarget once when the target dies
+  PASS rockets: no second retarget; flies straight
+  PASS rockets: turn at a capped rate (4.33 deg in one step)
+  PASS laser: damage per simulation second, same at 30 and 120 fps (12.00 / 12.00)
+  PASS laser: stops at the first solid target in its path
+  PASS boulder: none before 18 s
+  PASS boulder: first shell boulder at 18 s, entering above the screen
+  PASS boulder: never spawned in the aircraft's column
+  PASS boulder: >= 1.5 s of preview from first sight before it can reach the aircraft (1.68 s)
+  PASS boulder: breaks under fire and drops stars
+  PASS boulder: contact costs 10 HEALTH (grace does not block it) and shatters it
+  PASS stars: fly to the aircraft, count as XP, never hurt
+  PASS stars: far stars drift with the reef until the aircraft comes close
+  PASS death: cause and source recorded for the clarity marker
+  PASS death: a short hold on the killing hit (the field freezes)
+  PASS death: then the breakup plays and the field moves on
+  PASS reduced effects: fewer friendly sparks (15 vs 28)
+  PASS razor death: both wings snap off and tumble (debris)
+  PASS benchmark: the busiest scenario starts at LV 4 in the late bursts with Daystar ready
+  PASS audio: config/audio_mix.json loads
+  PASS audio: every slice cue of the register is in the mix ([])
+  PASS audio: every weapon's sound cue exists ([])
+  PASS audio: warnings have their own bus and duck friendly fire
+  PASS audio: bus Weapons feeds SFX
+  PASS audio: bus Impacts feeds SFX
+  PASS audio: bus Warnings feeds SFX
+  PASS audio: bus UI feeds SFX
+  PASS audio: repeats inside the grouping gap become one voice
+  PASS audio: a limiter on Master prevents clipping in the busiest moment
+RESULT passed=188 failed=0

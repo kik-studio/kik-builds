@@ -1,0 +1,10 @@
+[
+ {
+  "label": "v0.2",
+  "build_id": "0.2+1144af7",
+  "released": "2026-09-30 22:28 UTC",
+  "web": "https://kik-studio-dev.web.app/releases/sunpunch/v0.2/web/index.html",
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-sunpunch-v0.2/sunpunch.apk",
+  "notes": "SUNPUNCH v0.2 — first playable (M1 feel test, greybox shapes)\n- One finger flies the aircraft: it moves with your finger, never jumps to it. Shooting is automatic.\n- A safe start, then a Razor enters: its eye flashes before every dart, so you can see it coming and slide away.\n- HEALTH 30: each dart costs 10, with a short safe moment after a hit. Only the small bright core in the cockpit can be hit.\n- ABILITY (bottom-left): Sunpunch, a local solar blast, ready at launch, 12 s cooldown. SUPER (bottom-right): charges from kills (early version).\n- Pause, clear defeat reason, one-tap Replay (instant), steering sensitivity in Settings.\n- Arabic and English. Shapes and sounds are temporary: the real look arrives in the next milestone.\n"
+ }
+]
