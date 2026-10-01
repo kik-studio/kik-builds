@@ -1,0 +1,26 @@
+[
+ {
+  "label": "v0.2",
+  "build_id": "0.2+1144af7",
+  "released": "2026-09-30 22:28 UTC",
+  "web": "https://kik-studio-dev.web.app/releases/sunpunch/v0.2/web/index.html",
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-sunpunch-v0.2/sunpunch.apk",
+  "notes": "SUNPUNCH v0.2 — first playable (M1 feel test, greybox shapes)\n- One finger flies the aircraft: it moves with your finger, never jumps to it. Shooting is automatic.\n- A safe start, then a Razor enters: its eye flashes before every dart, so you can see it coming and slide away.\n- HEALTH 30: each dart costs 10, with a short safe moment after a hit. Only the small bright core in the cockpit can be hit.\n- ABILITY (bottom-left): Sunpunch, a local solar blast, ready at launch, 12 s cooldown. SUPER (bottom-right): charges from kills (early version).\n- Pause, clear defeat reason, one-tap Replay (instant), steering sensitivity in Settings.\n- Arabic and English. Shapes and sounds are temporary: the real look arrives in the next milestone.\n"
+ },
+ {
+  "label": "v0.3",
+  "build_id": "0.3+1c01f3e",
+  "released": "2026-10-01 00:36 UTC",
+  "web": "https://kik-studio-dev.web.app/releases/sunpunch/v0.3/web/index.html",
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-sunpunch-v0.3/sunpunch.apk",
+  "notes": "SUNPUNCH v0.3 — the first polished combat slice (real look and sound)\n- Real art: the orange Spark, the cobalt Razors, the shell boulder and the Midnight Reef islands scroll by under the crescent moon.\n- Collect mint stars to power up during the flight: FLIGHT LV 2 side cannons, LV 3 floating cannons + tracking rockets, LV 4 the solar laser (keeps everything). Every flight starts at LV 1.\n- Shell boulders drift down from 18 s: shoot them for stars, don't fly into them.\n- Weapons kick back when they fire, enemies flash when hit, Razors snap their wings when destroyed; a short freeze shows what hit you.\n- New sound: every weapon, hit, warning, pickup and level-up, plus the Reef Run music. The Razor's charge warning stays audible over your own fire.\n- Sunpunch (ABILITY) has its real solar-orb look; Daystar (SUPER) is still the early version.\n- New setting: Reduced effects (calmer flashes and shake; threats never change).\n"
+ },
+ {
+  "label": "v0.4",
+  "build_id": "0.4+1284c9c",
+  "released": "2026-10-01 03:12 UTC",
+  "web": "https://kik-studio-dev.web.app/releases/sunpunch/v0.4/web/index.html",
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-sunpunch-v0.4/sunpunch.apk",
+  "notes": "SUNPUNCH v0.4: the whole Reef Run, from launch to Big Bite's defeat\n- **The full mission:** about 100 seconds through Midnight Reef. Razors open, then Puff, Claw, a shell boulder and a salvage pod arrive. After them come a needle spire, the Razor three-burst, Puff's double fan, a Razor gate, Claw's comb and the three-enemy wave, with calm moments to collect in between.\n- **New enemies:**\n  - Puff swells, then fires slow magenta spheres in a fan.\n  - Claw glows, then fires crimson capsules from its left claw, then its right.\n  - Each is taught alone first; in the wave they take turns, and at most two attacks come at you at once.\n- **New obstacles:**\n  - The salvage pod breaks for +10 coins.\n  - The needle spire and the Razor gate end the run if you touch them.\n  - Both are announced with a red marker before they arrive, and the gate always keeps a wide, steady opening.\n- **Big Bite, the boss:**\n  - Its armour blocks your shots; hit the glowing core while its mouth is open.\n  - It fires fin volleys, a mouth fan, and Furnace Breath: a warned flame lane you must leave, which costs 20 HEALTH.\n  - At half health it transforms once into INFERNO, with heavier guns, two fans and two flame pulses.\n- **Victory:** Big Bite's jaw splits and its coins pour out. The results show your clear time, coins and wallet, with Replay first. Coins you collect are kept, even if you lose.\n- **Sound:** new sounds for every new enemy, obstacle and boss attack. Big Bite and Inferno have their own music, and there is a victory theme.\n- **Look:** the reef edges are now separate, varied pillars, and the moon finally looks like a moon.\n"
+ }
+]
