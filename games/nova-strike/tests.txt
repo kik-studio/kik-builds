@@ -1,0 +1,128 @@
+  PASS config: game.json loads
+  PASS config: version present
+  PASS save: value survives reload
+  PASS save: setting survives reload
+  PASS save: atomic write leaves no temp file
+  PASS save: player id generated
+  PASS loc: English text
+  PASS loc: Arabic text
+  PASS loc: Arabic is right-to-left
+  PASS loc: controls flip to RTL in Arabic
+  PASS loc: every string has English and Arabic
+  PASS audio: Music bus
+  PASS audio: SFX bus
+  PASS audio: sfx asset present
+  PASS audio: Master stays bus 0
+  PASS audio: Music and SFX send to Master
+  PASS audio: no AudioServer.add_bus() (silent in browsers)
+  PASS analytics: HMAC signature matches reference
+  PASS ui: safe margins at least minimum
+  PASS theme: design tokens file present
+  PASS theme: tokens loaded
+  INFO theme placeholder = false (a game must replace it before a milestone)
+  PASS playfield: same logical area at 1080x1920
+  PASS playfield: same logical area at 1080x2340
+  PASS playfield: same logical area at 1080x2400
+  PASS playfield: same logical area at 1440x1920
+  PASS playfield: same logical area at 3413x1920
+  PASS perf: frame statistics correct
+  PASS perf: timeline marks only the slow second (1:90:1)
+  PASS quality: Galaxy A16 (Mali-G68, 2.5 Mpx) -> low
+  PASS quality: Galaxy A05s (Adreno 610) -> low
+  PASS quality: moto g 2025 (Mali-G57) -> low
+  PASS quality: Pixel 10 Pro XL -> high
+  PASS quality: flagship Adreno -> high
+  PASS quality: upper mid-range Adreno -> medium
+  PASS quality: 4 cores steps down
+  PASS quality: desktop -> high
+  PASS quality: web on a phone -> medium
+  PASS quality: v0.3 D1 phones render the ship layer native on high, capped on medium/low
+  PASS hd pack: hd/ paths from source, light fallback
+  PASS hd pack: every app export preset excludes hd/*
+  PASS quality: low preset
+  PASS quality: low field never wider than 756 px
+  PASS quality: 720p screens stay native on low
+  PASS quality: high preset native
+  PASS quality: force('') returns to automatic
+  PASS post: static bloom glows only around bright pixels (peak 0.32)
+  PASS screen boot: loads
+  PASS screen boot: builds content
+  PASS screen boot: no empty labels (1 labels)
+  PASS screen boot: all buttons meet touch size
+  PASS screen menu: loads
+  PASS screen menu: builds content
+  PASS screen menu: no empty labels (14 labels)
+  PASS screen menu: all buttons meet touch size
+  PASS screen settings: loads
+  PASS screen settings: builds content
+  PASS screen settings: no empty labels (33 labels)
+  PASS screen settings: all buttons meet touch size
+  PASS screen game: loads
+  PASS screen game: builds content
+  PASS screen game: no empty labels (2 labels)
+  PASS screen game: all buttons meet touch size
+  PASS release: no developer tools on shipping screens
+  PASS dev: developer tools reachable in dev builds
+  PASS release: settings has no developer tools
+  PASS release: game has no developer tools
+  PASS cloud: failure is reported as not synced
+  PASS cloud: failure text is honest
+  PASS cloud: real round trip verified against Firebase
+  PASS hud level: English L3
+  PASS hud level: Arabic label has no Latin letters (م⁦3⁩)
+  PASS hud level: Arabic weapon-level toast has no Latin letters
+  PASS demo caption: starts on the route caption
+  PASS demo caption: an in-effect showcase caption stays
+  PASS demo caption: event caption shows
+  PASS demo caption: event hold is a couple of seconds (2.5)
+  PASS demo caption: 'power recovered' times out back to the route caption
+  PASS demo caption: plain captions are not timed
+  PASS hd pack: start() from _ready creates the pack node
+  PASS hd pack: node entered the tree under root
+  PASS hd pack: HTTPRequest is inside the tree
+  PASS hd pack: real request state is downloading/failed (failed)
+  PASS hd pack: nothing loaded from an unreachable host
+  PASS voice: the 78 approved takes are unchanged (SHA-256 manifest) []
+  PASS v0.7 suite passes: reliability_tests.tscn
+  PASS no SHADER ERROR while running reliability_tests.tscn
+  PASS v0.7 suite passes: hd_pack_tests.tscn
+  PASS no SHADER ERROR while running hd_pack_tests.tscn
+  PASS v0.7 suite passes: progression_v07_tests.tscn
+  PASS no SHADER ERROR while running progression_v07_tests.tscn
+  PASS v0.7 suite passes: ui_v07_tests.tscn
+  PASS no SHADER ERROR while running ui_v07_tests.tscn
+  PASS v0.7 suite passes: director_tests.tscn
+  PASS no SHADER ERROR while running director_tests.tscn
+  PASS v0.7 suite passes: power_v07_tests.tscn
+  PASS no SHADER ERROR while running power_v07_tests.tscn
+  PASS v0.7 suite passes: weapons_v07_tests.tscn
+  PASS no SHADER ERROR while running weapons_v07_tests.tscn
+  PASS v0.7 suite passes: impact_v07_tests.tscn
+  PASS no SHADER ERROR while running impact_v07_tests.tscn
+  PASS v0.7 suite passes: boss_raid_tests.tscn
+  PASS no SHADER ERROR while running boss_raid_tests.tscn
+  PASS v0.7 suite passes: boss_v06b_tests.tscn
+  PASS no SHADER ERROR while running boss_v06b_tests.tscn
+  PASS v0.7 suite passes: super_tests.tscn
+  PASS no SHADER ERROR while running super_tests.tscn
+  PASS v0.7 suite passes: warnings_tests.tscn
+  PASS no SHADER ERROR while running warnings_tests.tscn
+  PASS v0.7 suite passes: attack_coverage_tests.tscn
+  PASS no SHADER ERROR while running attack_coverage_tests.tscn
+  PASS v0.7 suite passes: weapons_v08_solar_tests.tscn
+  PASS no SHADER ERROR while running weapons_v08_solar_tests.tscn
+  PASS v0.7 suite passes: look_v08_tests.tscn
+  PASS no SHADER ERROR while running look_v08_tests.tscn
+  PASS v0.7 suite passes: preload_v08_tests.tscn
+  PASS no SHADER ERROR while running preload_v08_tests.tscn
+  PASS v0.7 suite passes: boot_warm_tests.tscn
+  PASS no SHADER ERROR while running boot_warm_tests.tscn
+  PASS v0.7 suite passes: weapons_v08_void_tests.tscn
+  PASS no SHADER ERROR while running weapons_v08_void_tests.tscn
+  PASS v0.7 suite passes: voice_v08_tests.tscn
+  PASS no SHADER ERROR while running voice_v08_tests.tscn
+  PASS v0.7 suite passes: weapons_v08_arc_tests.tscn
+  PASS no SHADER ERROR while running weapons_v08_arc_tests.tscn
+  PASS fun bots: FUN_AUDIT Half 1 difficulty wall (time to death per sector, rank I can't clear S3-6 bosses)
+  PASS fun bots: every boss x 3 crafts clears >= 4/5 seeds in its window at the REACHABLE loadout (D22 success gate)
+RESULT passed=126 failed=0
