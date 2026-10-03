@@ -1,0 +1,53 @@
+{
+ "game_id": "saddah",
+ "version": "0.2",
+ "updated": "2026-10-01",
+ "commit": "19e3e69",
+ "links": {
+  "web": "https://kik-studio-dev.web.app/games/saddah/web/index.html",
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-saddah/saddah.apk"
+ },
+ "screenshots": {
+  "en": [
+   "https://kik-studio.github.io/kik-builds/games/saddah/screens/briefing_en.png",
+   "https://kik-studio.github.io/kik-builds/games/saddah/screens/game_en.png",
+   "https://kik-studio.github.io/kik-builds/games/saddah/screens/home_en.png",
+   "https://kik-studio.github.io/kik-builds/games/saddah/screens/map_en.png",
+   "https://kik-studio.github.io/kik-builds/games/saddah/screens/settings_en.png",
+   "https://kik-studio.github.io/kik-builds/games/saddah/screens/shop_en.png"
+  ],
+  "ar": [
+   "https://kik-studio.github.io/kik-builds/games/saddah/screens/briefing_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/saddah/screens/game_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/saddah/screens/home_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/saddah/screens/map_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/saddah/screens/settings_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/saddah/screens/shop_ar.png"
+  ]
+ },
+ "apk_bytes": 83957136,
+ "shapes": [
+  "https://kik-studio.github.io/kik-builds/games/saddah/screens/game_en_desktop.png",
+  "https://kik-studio.github.io/kik-builds/games/saddah/screens/game_en_tablet.png"
+ ],
+ "video": [
+  "https://kik-studio.github.io/kik-builds/games/saddah/video/gameplay.mp4",
+  "https://kik-studio.github.io/kik-builds/games/saddah/video/showcase_fx.mp4",
+  "https://kik-studio.github.io/kik-builds/games/saddah/video/showcase_ui.mp4"
+ ],
+ "tests": "https://kik-studio.github.io/kik-builds/games/saddah/tests.txt",
+ "benchmark_apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-saddah/saddah-benchmark.apk",
+ "branch": "main",
+ "checks": "https://kik-studio.github.io/kik-builds/games/saddah/checks/",
+ "build_id": "0.2+19e3e69",
+ "built_on": "cloud",
+ "review": {
+  "build_id": "0.3+010d8ad",
+  "machine": "studio PC GPU",
+  "when": "2026-10-03 21:32 UTC"
+ },
+ "screens_hd": [
+  "https://kik-studio.github.io/kik-builds/games/saddah/screens/hd/game_ar.jpg",
+  "https://kik-studio.github.io/kik-builds/games/saddah/screens/hd/game_en.jpg"
+ ]
+}

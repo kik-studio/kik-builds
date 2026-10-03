@@ -1,0 +1,1004 @@
+  PASS config: game.json loads
+  PASS config: version present
+  PASS save: value survives reload
+  PASS save: setting survives reload
+  PASS save: atomic write leaves no temp file
+  PASS save: player id generated
+  PASS loc: English text
+  PASS loc: Arabic text
+  PASS loc: Arabic is right-to-left
+  PASS loc: controls flip to RTL in Arabic
+  PASS loc: every string has English and Arabic
+  PASS audio: Music bus
+  PASS audio: SFX bus
+  PASS audio: sfx asset present
+  PASS audio: no AudioServer.add_bus() (silences web builds, FR-3)
+  PASS audio: Music and SFX route to Master
+  PASS analytics: HMAC signature matches reference
+  PASS ui: safe margins at least minimum
+  PASS theme: design tokens file present
+  PASS theme: tokens loaded
+  INFO theme placeholder = false (a game must replace it before a milestone)
+  PASS playfield: same logical area at 1080x1920
+  PASS playfield: same logical area at 1080x2340
+  PASS playfield: same logical area at 1080x2400
+  PASS playfield: same logical area at 1440x1920
+  PASS playfield: same logical area at 3413x1920
+  PASS perf: frame statistics correct
+  PASS fx: shader hit_flash loads
+  PASS fx: shader dissolve loads
+  PASS fx: shader shield loads
+  PASS fx: shader shockwave loads
+  PASS fx: shader heat_shimmer loads
+  PASS fx: texture dot generated
+  PASS fx: texture spark generated
+  PASS fx: texture ring generated
+  PASS fx: texture smoke generated
+  PASS fx: texture star generated
+  PASS fx: texture white generated
+  PASS fx: emitter pool stays bounded (96 <= 96)
+  PASS fx: hit flash applies its shader
+  PASS fx: trail lives in the effect layer
+  PASS fx: heat shimmer attaches to its node
+  PASS fx: dissolve frees the node when done
+  PASS fx: hitstop restores time
+  PASS fx: shake returns to rest
+  PASS ui kit: theme type DisplayLabel
+  PASS ui kit: theme type HeadingLabel
+  PASS ui kit: theme type H2Label
+  PASS ui kit: theme type TitleLabel
+  PASS ui kit: theme type CaptionLabel
+  PASS ui kit: theme type MicroLabel
+  PASS ui kit: theme type NumberLabel
+  PASS ui kit: theme type DangerButton
+  PASS ui kit: theme type GhostButton
+  PASS ui kit: theme type CardPanel
+  PASS ui kit: theme type ChipPanel
+  PASS ui kit: display size from type scale
+  PASS ui kit: Arabic display font renders Arabic
+  PASS ui kit: framed panel
+  PASS ui kit: count_to ends on the target
+  PASS ui kit: appear ends fully visible
+  PASS errors: logger registered
+  PASS errors: one report per distinct error
+  PASS errors: repeats are counted, not re-sent
+  PASS errors: report carries build and platform
+  PASS errors: points at the script line, not engine code
+  PASS remote: Firestore values decode
+  PASS remote: numbers with safe defaults
+  PASS remote: switches with safe defaults
+  PASS screen boot: loads
+  PASS screen boot: builds content
+  PASS screen boot: no empty labels (0 labels)
+  PASS screen boot: all buttons meet touch size
+  PASS screen menu: loads
+  PASS screen menu: builds content
+  PASS screen menu: no empty labels (7 labels)
+  PASS screen menu: all buttons meet touch size
+  PASS screen settings: loads
+  PASS screen settings: builds content
+  PASS screen settings: no empty labels (36 labels)
+  PASS screen settings: all buttons meet touch size
+  PASS screen game: loads
+  PASS screen game: builds content
+  PASS screen game: no empty labels (3 labels)
+  PASS screen game: all buttons meet touch size
+  PASS release: no developer tools on shipping screens
+  PASS dev: developer tools reachable in dev builds
+  PASS release: settings has no developer tools
+  PASS release: game has no developer tools
+  PASS cloud: unconfigured shows not available
+  PASS hd pack: start() from a boot _ready creates the pack node
+  PASS hd pack: pack node entered the tree under root
+  PASS hd pack: the download request runs inside the tree
+  PASS hd pack: request really started (state failed)
+  PASS hd pack: nothing loaded from an unreachable host
+  PASS lane: still moving one tick before TUN-02
+  PASS lane: arrives after TUN-02 (0.20 s)
+  PASS lane: no wrap past the left lane
+  PASS lane: at most one queued request (right, then one left = back to the middle, 2nd left dropped)
+  PASS lane: monotone motion, lane centres TUN-01 apart
+  PASS jump: apex 1.649 m matches TUN-04 1.65
+  PASS jump: airtime 50 ticks matches TUN-03 0.85 s
+  PASS jump: lane change in the air allowed
+  PASS jump: lands once, no auto-repeat
+  PASS jump: buffered press within TUN-06 before landing jumps again at landing
+  PASS jump: an early press far outside the buffer is dropped
+  PASS jump: no double jump without UPG-01
+  PASS jump: double jump with UPG-01, one extra in the air
+  PASS slide: capsule is the crouch height on the very next tick
+  PASS slide: stands up after TUN-05 (0.75 s)
+  PASS slide: swipe down in the air is ignored
+  PASS slide: up during a slide jumps at once when there is no ceiling
+  PASS slide: passes under an overhead beam
+  PASS slide: jump request under a ceiling waits (no standing up into the beam)
+  PASS slide: ...and jumps as soon as the beam is behind
+  PASS slide: the extension is capped (a 24 m beam is not endless cover)
+  PASS run: finishes at the stage length
+  PASS hit: a full-height rock in the lane ends the run
+  PASS hit: shield absorbs the first hit, grace lets him through the next
+  PASS hit: shield hit counted as one hard hit
+  PASS gap: walking into a void ends the run (no shield rescue)
+  PASS gap: one jump clears an OBS-11 void at the authored speed
+  PASS wet patch: cosmetic only
+  PASS determinism: identical inputs give identical state
+  PASS determinism: snapshot/restore is exact
+  PASS swept: 0 missed thin hits in 400 random placements at 12.35 m/s (max base) (a point test would miss 400)
+  PASS swept: 0 missed thin hits in 400 random placements at 14.2 m/s (boost) (a point test would miss 400)
+  PASS swept: 0 missed thin hits in 400 random placements at assist x0.85 (a point test would miss 400)
+  PASS swipe: threshold is TUN-07 of the short screen side (43.2 px)
+  PASS swipe: right past the threshold fires at once
+  PASS swipe: one action per touch
+  PASS swipe: below the threshold is a tap, not a swipe
+  PASS swipe: dominant vertical axis = up
+  PASS swipe: dominant vertical axis = down
+  PASS swipe: left
+  PASS swipe: slower than TUN-08 is a drag and is rejected
+  PASS swipe: touches starting on a button are ignored
+  PASS swipe: device independent (3:4 tablet uses its own short side)
+  PASS swipe: sensitivity presets move the threshold within a sensible band
+  PASS track: bend right turns the heading right
+  PASS track: reversed bend turns it back left
+  PASS track: slope climbs
+  PASS track: lanes stay 2.4 m apart in a bend (path-relative)
+  PASS track: distance along the path equals metres (curves and slopes)
+  PASS content: 54 levels in Level_World_Matrix
+  PASS content: level rows carry their world id
+  PASS content: tuning read from the register (TUN-09 0.65)
+  PASS content: magnet ranks parsed from Upgrade_Table
+  PASS content: boost ranks and +15% parsed
+  PASS content: shield ranks parsed
+  PASS content: slide recovery ranks parsed
+  PASS content: magnet radius parsed
+  PASS stages: all 54 stage files exist (54)
+  PASS stages: placed Qoroosh equals Level_World_Matrix on all 54 (54)
+  PASS stages: speed and length come from the matrix on all 54
+  PASS stages: only the obstacles the matrix allows (54)
+  PASS stages: about 4 s of orientation before the first obstacle on all 54 (54)
+  PASS stages: speed ladder 8 + 0.45/world + 0.15/stage (max 12.35)
+  PASS validator: accepts all 54 stages (base kit route, authored speed and assist timing) in 20 s
+  PASS validator: telegraph, relief, corridor and data rules hold on all 54 (54)
+  PASS validator: rejects a low row followed 0.3 s later by an overhead row (jump then slide)
+  PASS validator: rejects a full-height wall across all three lanes
+  PASS validator: rejects a zig-zag that needs lane changes closer than the 0.65 s action separation
+  PASS validator: accepts the same pair with 2.2 s between them
+  PASS validator: a rockfall ring shorter than the notice is rejected
+  PASS assist: hazards sit at the same place relative to progress at any speed
+  PASS bot: clears all 54 stages with the base kit through the real simulation (4 s)
+  PASS bot: no hard hit on any stage
+  PASS bot: base kit collects at least 60% of the placed Qoroosh on every stage (54)
+  PASS bot: W01-L03 also clears with assist timing
+  PASS bot: W09-L06 also clears with assist timing
+  PASS camera: 9:19.5 keeps his whole body, both outer lane edges at 8 m and the full road at 22.2 m on screen (FOV 63, 3.0 m high, 5.5 m back, follow 0.90)
+  PASS camera: 9:19.5 framing stays inside the TUN-12/13/14 test ranges
+  PASS camera: 9:16 keeps his whole body, both outer lane edges at 8 m and the full road at 22.2 m on screen (FOV 55, 3.0 m high, 5.5 m back, follow 0.90)
+  PASS camera: 9:16 framing stays inside the TUN-12/13/14 test ranges
+  PASS camera: 3:4 keeps his whole body, both outer lane edges at 8 m and the full road at 22.2 m on screen (FOV 55, 3.0 m high, 5.5 m back, follow 1.00)
+  PASS camera: 3:4 framing stays inside the TUN-12/13/14 test ranges
+  PASS camera: a real Camera3D projection agrees on 1080x2340 (all checked points on screen)
+  PASS art: all 28 obstacles OBS-01..28 build a look (28)
+  PASS art: all nine world kits build a chunk with road, ground and props (9)
+  PASS art: worlds.json has W01..W09
+  PASS art: every world has palette roles, fog, time of day and a plate file
+  PASS art: time of day follows the arc (dawn, day, afternoon, calm night in Makkah, morning, sunset, next dawn)
+  PASS strings: run.csv has 53 keys, each with English and Arabic
+  PASS art: Makkah kit code has no minaret, dome or Kaaba shape
+  PASS scene: run screen starts with stage, view and HUD
+  PASS scene: a left swipe moves to the left lane
+  PASS scene: a touch that begins on the pause button is ignored by the swipe interpreter
+  PASS scene: focus loss pauses and freezes the simulation
+  PASS scene: resume starts a 3 s countdown (TUN-17)
+  PASS scene: the countdown ends and the run continues
+  PASS scene: retry is playable again in 2 ms (limit 2000), same scene, input queue empty
+  PASS scene: the run settles exactly once
+  PASS scene: the result dictionary has the ARCH.md fields (placed 90 on W01-L01)
+  PASS scene: two bot runs of W01-L02 produce identical event streams (95 events)
+  PASS scene: reduced motion starts without shake
+  PASS scene: Makkah (W06) uses the neutral fail, no fly-off gag
+  PASS stages2: the old drift shape had the tight window the audit measured (0.27 s)
+  PASS stages2: the W01-L01 drift (depth 1.2, h 0.40) gives 0.53 s at base and 0.50 s at assist timing (>= 0.45 s)
+  PASS stages2: the validator rejects the old drift shape (22 window errors)
+  PASS stages2: the validator accepts all 54 stages (human window rule) []
+  PASS stages2: no jump or slide in any of the 54 stages gives a human under 0.45 s, base or assist (worst 0.47 s: W04-L03 OBS-11 assist)
+  PASS stages2: W01-L01 has no full-width low block (always an open escape lane)
+  PASS stages2: W01-L02 has no full-width low block (always an open escape lane)
+  PASS stages2: W01-L01 first drift is single-lane
+  PASS stages2: W01-L01 second drift is single-lane
+  PASS stages2: W01-L01 third drift (the jump lesson) leaves one lane open
+  PASS stages2: W01-L01 has a first-verb cue with a slow-motion stretch
+  PASS stages2: W01-L01 cue shows 3.30 s ahead (>= 3 s)
+  PASS stages2: W01-L01 slow stretch [145.8, 149.4] covers the obstacle at 148.1 m
+  PASS stages2: W01-L01 slow stretch starts no earlier than 0.14 s before the earliest useful swipe (scale 1.00)
+  PASS stages2: W01-L01 slow stretch starts no earlier than 0.14 s before the earliest useful swipe (scale 0.85)
+  PASS stages2: W01-L02 has a first-verb cue with a slow-motion stretch
+  PASS stages2: W01-L02 cue shows 3.30 s ahead (>= 3 s)
+  PASS stages2: W01-L02 slow stretch [48.4, 51.8] covers the obstacle at 50.5 m
+  PASS stages2: W01-L02 slow stretch starts no earlier than 0.14 s before the earliest useful swipe (scale 1.00)
+  PASS stages2: W01-L02 slow stretch starts no earlier than 0.14 s before the earliest useful swipe (scale 0.85)
+  PASS stages2: the lane cue shows >= 3 s ahead
+  PASS stages2: slow motion is off far from the first jump
+  PASS stages2: inside the stretch the pace eases to 30 % (got 0.30)
+  PASS stages2: a lane swipe does not end the teaching slow motion
+  PASS stages2: the jump swipe ends the slow motion
+  PASS stages2: the pace eases back to normal after the swipe, no jump
+  PASS stages2: the sim is deterministic with the teaching stretch (W01-L01 3901 ticks)
+  PASS stages2: disabled teaching never slows the run
+  PASS stages2: the closest two action groups of all 54 stages are 0.70 s apart (>= 0.65 s) at W07-L06
+  PASS stages2: required inputs are never closer than 0.80 s (TUN-09 0.65 s) at W07-L04
+  PASS stages2: every stage carries its pacing record
+  PASS stages2: per-world spacing multiplier runs 1.15 (Desert) -> 0.75 (NEOM)
+  PASS stages2: nine L05 rates measured
+  PASS stages2: L05 required inputs/10 s keep rising from world to world (7 of 8 steps up: [2.47, 2.69, 2.69, 2.93, 3.06, 3.42, 3.67, 3.79, 3.3])
+  PASS stages2: the last three worlds ask 3.59 inputs/10 s at L05, the first three 2.62
+  PASS stages2: L05 goes 2.47 -> 3.30 (target 2.4 -> 4.0; the last world falls short of 4.0, see docs/STAGE_CURVE.md)
+  PASS stages2: L06 asks >= L05 + 8 % (target 10 %; NEOM lands at +8.5 %) outside the set-piece peak []
+  PASS stages2: L01-L02 of every world stay gentle (teach) []
+  PASS stages2: W01-L05 stored rate 2.47 matches the measurement 2.47
+  PASS stages2: W05-L05 stored rate 3.06 matches the measurement 3.06
+  PASS stages2: W09-L02 stored rate 2.46 matches the measurement 2.46
+  PASS stages2: every stage from L02 on forces every verb its obstacle list allows []
+  PASS stages2: worlds without a jumpable obstacle keep the jump through optional raised Qoroosh lines []
+  PASS stages2: W07-L05 has no slide (no overhead obstacle in the matrix for this world)
+  PASS stages2: W09-L05 has no slide (no overhead obstacle in the matrix for this world)
+  PASS stages2: NEOM L05 asks for the jump over the linked-platform gap (15)
+  PASS stages2: W01-L06 has a set-piece record
+  PASS stages2: W01-L06 set-piece runs 22.0 s (15-25 s)
+  PASS stages2: W01-L06 authored sequence has 6 hazards
+  PASS stages2: W01-L06 set-piece uses only its own world's matrix obstacles (C-26)
+  PASS stages2: W01-L06 entry is calm (first hazard 3.0 s into the zone)
+  PASS stages2: W01-L06 relief: the last hazard is 7.0 s before the finish
+  PASS stages2: W01-L06 asks nothing new at the peak (verbs [2, 3, 0, 1] then [2, 3, 0])
+  PASS stages2: W01-L06 set-piece is validator-proven (design rules, base and assist route)
+  PASS stages2: W02-L06 has a set-piece record
+  PASS stages2: W02-L06 set-piece runs 22.0 s (15-25 s)
+  PASS stages2: W02-L06 authored sequence has 7 hazards
+  PASS stages2: W02-L06 set-piece uses only its own world's matrix obstacles (C-26)
+  PASS stages2: W02-L06 entry is calm (first hazard 3.0 s into the zone)
+  PASS stages2: W02-L06 relief: the last hazard is 6.8 s before the finish
+  PASS stages2: W02-L06 asks nothing new at the peak (verbs [2, 3, 0, 1] then [0, 2, 1, 3])
+  PASS stages2: W02-L06 set-piece is validator-proven (design rules, base and assist route)
+  PASS stages2: W03-L06 has a set-piece record
+  PASS stages2: W03-L06 set-piece runs 22.0 s (15-25 s)
+  PASS stages2: W03-L06 authored sequence has 6 hazards
+  PASS stages2: W03-L06 set-piece uses only its own world's matrix obstacles (C-26)
+  PASS stages2: W03-L06 entry is calm (first hazard 3.0 s into the zone)
+  PASS stages2: W03-L06 relief: the last hazard is 7.1 s before the finish
+  PASS stages2: W03-L06 asks nothing new at the peak (verbs [3, 1, 0] then [1, 0])
+  PASS stages2: W03-L06 set-piece is validator-proven (design rules, base and assist route)
+  PASS stages2: W04-L06 has a set-piece record
+  PASS stages2: W04-L06 set-piece runs 22.0 s (15-25 s)
+  PASS stages2: W04-L06 authored sequence has 8 hazards
+  PASS stages2: W04-L06 set-piece uses only its own world's matrix obstacles (C-26)
+  PASS stages2: W04-L06 entry is calm (first hazard 3.0 s into the zone)
+  PASS stages2: W04-L06 relief: the last hazard is 6.5 s before the finish
+  PASS stages2: W04-L06 asks nothing new at the peak (verbs [3, 2, 0, 1] then [0, 1, 3, 2])
+  PASS stages2: W04-L06 set-piece is validator-proven (design rules, base and assist route)
+  PASS stages2: W05-L06 has a set-piece record
+  PASS stages2: W05-L06 set-piece runs 22.0 s (15-25 s)
+  PASS stages2: W05-L06 authored sequence has 6 hazards
+  PASS stages2: W05-L06 set-piece uses only its own world's matrix obstacles (C-26)
+  PASS stages2: W05-L06 entry is calm (first hazard 3.0 s into the zone)
+  PASS stages2: W05-L06 relief: the last hazard is 7.4 s before the finish
+  PASS stages2: W05-L06 asks nothing new at the peak (verbs [3, 1, 0] then [0, 1, 3])
+  PASS stages2: W05-L06 set-piece is validator-proven (design rules, base and assist route)
+  PASS stages2: W06-L06 has a set-piece record
+  PASS stages2: W06-L06 set-piece runs 22.0 s (15-25 s)
+  PASS stages2: W06-L06 authored sequence has 4 hazards
+  PASS stages2: W06-L06 set-piece uses only its own world's matrix obstacles (C-26)
+  PASS stages2: W06-L06 entry is calm (first hazard 3.4 s into the zone)
+  PASS stages2: W06-L06 relief: the last hazard is 8.8 s before the finish
+  PASS stages2: W06-L06 asks nothing new at the peak (verbs [2, 3, 0, 1] then [1, 2])
+  PASS stages2: W06-L06 set-piece is validator-proven (design rules, base and assist route)
+  PASS stages2: W07-L06 has a set-piece record
+  PASS stages2: W07-L06 set-piece runs 22.0 s (15-25 s)
+  PASS stages2: W07-L06 authored sequence has 8 hazards
+  PASS stages2: W07-L06 set-piece uses only its own world's matrix obstacles (C-26)
+  PASS stages2: W07-L06 entry is calm (first hazard 3.0 s into the zone)
+  PASS stages2: W07-L06 relief: the last hazard is 6.8 s before the finish
+  PASS stages2: W07-L06 asks nothing new at the peak (verbs [2, 1, 0] then [1, 0, 2])
+  PASS stages2: W07-L06 set-piece is validator-proven (design rules, base and assist route)
+  PASS stages2: W08-L06 has a set-piece record
+  PASS stages2: W08-L06 set-piece runs 22.0 s (15-25 s)
+  PASS stages2: W08-L06 authored sequence has 7 hazards
+  PASS stages2: W08-L06 set-piece uses only its own world's matrix obstacles (C-26)
+  PASS stages2: W08-L06 entry is calm (first hazard 3.0 s into the zone)
+  PASS stages2: W08-L06 relief: the last hazard is 6.8 s before the finish
+  PASS stages2: W08-L06 asks nothing new at the peak (verbs [2, 3, 1, 0] then [0, 1, 2, 3])
+  PASS stages2: W08-L06 set-piece is validator-proven (design rules, base and assist route)
+  PASS stages2: W09-L06 has a set-piece record
+  PASS stages2: W09-L06 set-piece runs 22.0 s (15-25 s)
+  PASS stages2: W09-L06 authored sequence has 6 hazards
+  PASS stages2: W09-L06 set-piece uses only its own world's matrix obstacles (C-26)
+  PASS stages2: W09-L06 entry is calm (first hazard 3.0 s into the zone)
+  PASS stages2: W09-L06 relief: the last hazard is 7.0 s before the finish
+  PASS stages2: W09-L06 asks nothing new at the peak (verbs [2, 0, 1] then [2, 0, 1])
+  PASS stages2: W09-L06 set-piece is validator-proven (design rules, base and assist route)
+  PASS stages2: nine different set-piece kinds (9)
+  PASS stages2: set-piece curves are monotone 0 -> 1
+  PASS stages2: the W03 gate light beat changes at most 0.044 per frame at 12.35 m/s (no flash)
+  PASS stages2: W01 finish arch builds (1427 vertices)
+  PASS stages2: W01 arch leaves all three lanes clear (the outer capsule reaches 2.75 m) (closest solid at |x| = 4.09 m, between 0.3 and 3 m high)
+  PASS stages2: W02 finish arch builds (268 vertices)
+  PASS stages2: W02 arch leaves all three lanes clear (the outer capsule reaches 2.75 m) (closest solid at |x| = 3.95 m, between 0.3 and 3 m high)
+  PASS stages2: W03 finish arch builds (1116 vertices)
+  PASS stages2: W03 arch leaves all three lanes clear (the outer capsule reaches 2.75 m) (closest solid at |x| = 3.80 m, between 0.3 and 3 m high)
+  PASS stages2: W04 finish arch builds (420 vertices)
+  PASS stages2: W04 arch leaves all three lanes clear (the outer capsule reaches 2.75 m) (closest solid at |x| = 3.58 m, between 0.3 and 3 m high)
+  PASS stages2: W05 finish arch builds (1504 vertices)
+  PASS stages2: W05 arch leaves all three lanes clear (the outer capsule reaches 2.75 m) (closest solid at |x| = 3.21 m, between 0.3 and 3 m high)
+  PASS stages2: W06 finish arch builds (100 vertices)
+  PASS stages2: W06 arch leaves all three lanes clear (the outer capsule reaches 2.75 m) (closest solid at |x| = 1000000000.00 m, between 0.3 and 3 m high)
+  PASS stages2: W07 finish arch builds (734 vertices)
+  PASS stages2: W07 arch leaves all three lanes clear (the outer capsule reaches 2.75 m) (closest solid at |x| = 3.86 m, between 0.3 and 3 m high)
+  PASS stages2: W08 finish arch builds (232 vertices)
+  PASS stages2: W08 arch leaves all three lanes clear (the outer capsule reaches 2.75 m) (closest solid at |x| = 1000000000.00 m, between 0.3 and 3 m high)
+  PASS stages2: W09 finish arch builds (1540 vertices)
+  PASS stages2: W09 arch leaves all three lanes clear (the outer capsule reaches 2.75 m) (closest solid at |x| = 4.22 m, between 0.3 and 3 m high)
+  PASS stages2: nine different finish arches (distinct shapes: 9)
+  PASS stages2: Makkah's arch is the plain, calm one (100 vertices, others average 905)
+  PASS stages2: W01-L06 set-piece picture builds (wind, 24 nodes)
+  PASS stages2: W01-L06 picture stays within its limits (lift <= 1.2 m, light lift <= 0.3, fog sane)
+  PASS stages2: W02-L06 set-piece picture builds (diversion, 6 nodes)
+  PASS stages2: W02-L06 picture stays within its limits (lift <= 1.2 m, light lift <= 0.3, fog sane)
+  PASS stages2: W03-L06 set-piece picture builds (spectacle, 10 nodes)
+  PASS stages2: W03-L06 picture stays within its limits (lift <= 1.2 m, light lift <= 0.3, fog sane)
+  PASS stages2: W04-L06 set-piece picture builds (rockfall, 22 nodes)
+  PASS stages2: W04-L06 picture stays within its limits (lift <= 1.2 m, light lift <= 0.3, fog sane)
+  PASS stages2: W05-L06 set-piece picture builds (mist, 2 nodes)
+  PASS stages2: W05-L06 picture stays within its limits (lift <= 1.2 m, light lift <= 0.3, fog sane)
+  PASS stages2: W06-L06 set-piece picture builds (tunnel_exit, 4 nodes)
+  PASS stages2: W06-L06 picture stays within its limits (lift <= 1.2 m, light lift <= 0.3, fog sane)
+  PASS stages2: W07-L06 set-piece picture builds (waterfront, 29 nodes)
+  PASS stages2: W07-L06 picture stays within its limits (lift <= 1.2 m, light lift <= 0.3, fog sane)
+  PASS stages2: W08-L06 set-piece picture builds (canyon_oasis, 60 nodes)
+  PASS stages2: W08-L06 picture stays within its limits (lift <= 1.2 m, light lift <= 0.3, fog sane)
+  PASS stages2: W09-L06 set-piece picture builds (pavilions, 11 nodes)
+  PASS stages2: W09-L06 picture stays within its limits (lift <= 1.2 m, light lift <= 0.3, fog sane)
+  PASS near miss: detection never changes simulation state (snapshot identical after every call)
+  PASS near miss: no hit, no fail, no score effect from the reaction
+  PASS near miss: one close pass fires one reaction, the second barrier inside the cooldown does not (1)
+  PASS near miss: the reaction names the obstacle and has an intensity
+  PASS near miss: a clear pass (1 m of room) is not a near miss
+  PASS near miss: an obstacle that hit him never counts as a near miss
+  PASS near miss: clearing a barrier by 0.1 m counts (vertical close pass)
+  PASS near miss: a comfortable jump is not a near miss
+  PASS near miss: a real overlap measures as contact (negative gap), never as a near miss
+  PASS fx: 60 pickups in a burst keep at most 6 sparkles alive (pooled, capped)
+  PASS fx: 30 double jumps keep at most 4 rings (pooled)
+  PASS fx: events never create nodes (the pool is built once: 23 children)
+  PASS fx: boost shows restrained streaks (14 of at most 14)
+  PASS fx: reduced motion disables the boost streaks
+  PASS fx: streaks end with the boost
+  PASS fx: the falcon flies while the magnet lasts
+  PASS fx: the falcon leaves when the magnet ends
+  PASS fx: desert dust trails behind the feet on the ground
+  PASS fx: no dust while airborne
+  PASS fx: dust steps back while a warning is on screen (warning > ambience)
+  PASS fx: reduced effects turn the dust trail off
+  PASS fx: the failure star accent is skipped in Makkah (neutral), present elsewhere
+  PASS fx: no dust trail in Riyadh (Desert and AlUla only)
+  PASS view: a hit shakes the camera, reduced motion removes the shake (0.30 / 0.00)
+  PASS view: zero camera roll in the air (horizon stays level)
+  PASS view: the jump look-ahead eases in while airborne and out on landing
+  PASS view: the finish eases the camera closer, still with zero roll
+  PASS hero: Makkah (W06) uses the neutral fail
+  PASS hero: Makkah fail has no shemagh fly-off gag
+  PASS hero: the fail fly-off gag flies the shemagh off (not in Makkah)
+  PASS hero: a retry restores the costume (the flying shemagh is gone)
+  PASS hero: the shield ties the shemagh tight
+  PASS hero: a shield break flares the shemagh loose
+  PASS hero: a near miss starts the comic reaction
+  PASS hero: the near-miss reaction is short
+  PASS hero: the ART model gets the red-and-white shemagh, warm thobe and rim material
+  PASS hero: a warm key and a cool rim light that light only him (layer 2)
+  PASS materials: obstacles read sRGB vertex colours, the solid one self-lights, warning marks are unshaded
+  PASS materials: obstacle art uses the shared readable material
+  PASS camera: at 0.46 the hero and his case keep a 16 % screen-width margin in every lane (worst 0.31 of half width)
+  PASS camera: at 0.56 the hero and his case keep a 17 % screen-width margin in every lane (worst 0.34 of half width)
+  PASS camera: at 0.75 the hero and his case keep a 30 % screen-width margin in every lane (worst 0.60 of half width)
+  PASS weather: only Taif (W05) has rain and mist
+  PASS weather: L01 dry, L03 and L04 light rain
+  PASS weather: only L06 has the parting finale
+  PASS weather: the view stays closed before 75 % and is fully open at the end
+  PASS weather: the finale opening only ever increases
+  PASS ceremony: starts after 80 % of the track, complete at the finish
+  PASS relief: swells in about a second then settles
+  PASS weather: fog is never denser than the world's own inside any obstacle's notice window, all six Taif stages (19509 samples, worst +0.000000)
+  PASS weather: mist banks exist in the clear stretches (908 metres over the six stages)
+  PASS weather: no extra mist inside the notice window, mist allowed in a long clear stretch
+  PASS weather: L06 fog parts at the end (0.0022) and is untouched before the last quarter
+  PASS weather: rain streaks high 63, low 28, reduced motion 31 (fewer on low and reduced)
+  PASS weather: the centre cone of the view stays nearly dry (10 of 90 drops inside)
+  PASS weather: W01-L03 has no weather and no finale effects
+  PASS weather: through the view, the Environment fog inside a notice window is never above the world's (0.000000)
+  PASS finale W09-L06: biggest per-frame light change 0.00439 (<= 0.01, no flash), peak lift 0.340
+  PASS finale W09-L06 (reduced): biggest per-frame light change 0.00263 (<= 0.01, no flash), peak lift 0.263
+  PASS finale W06-L06: biggest per-frame light change 0.00307 (<= 0.01, no flash), peak lift 0.135
+  PASS finale W06-L06 (reduced): biggest per-frame light change 0.00184 (<= 0.01, no flash), peak lift 0.081
+  PASS finale W01-L06: biggest per-frame light change 0.00439 (<= 0.01, no flash), peak lift 0.228
+  PASS finale W01-L06 (reduced): biggest per-frame light change 0.00263 (<= 0.01, no flash), peak lift 0.151
+  PASS finale W05-L06: biggest per-frame light change 0.00439 (<= 0.01, no flash), peak lift 0.280
+  PASS finale W05-L06 (reduced): biggest per-frame light change 0.00263 (<= 0.01, no flash), peak lift 0.203
+  PASS finale: luminance proxy over ceremony and relief never jumps more than 0.01 per frame (0.00439)
+  PASS finale: Makkah W06-L06 has the warm light lift only (no sparkle, no ceremony)
+  PASS finale: NEOM W09-L06 has the ceremony and the relief
+  PASS finale: W09-L05 has neither (L06 only)
+  PASS feedback sound: all 28 obstacles name sounds and every cue exists in the register ()
+  PASS feedback sound: soft, metal and wood collision classes are all used
+  PASS feedback sound: a hit still ends with the failure accent (outside Makkah)
+  PASS feedback sound: drift thud, vehicle clang and timber knock use different cues
+  PASS feedback sound: the finish plays the case latch
+  PASS feedback sound: magnet pulls are rate capped (1 in a burst)
+  PASS feedback sound: the next pull sounds after the gap
+  PASS feedback sound: every dynamic telegraph (bus, gate, rock, cart, traffic) starts with the warning (5)
+  PASS feedback sound: bus and traffic passes play their cues
+  PASS feedback sound: gate cycles are heard
+  PASS feedback sound: the rockfall rumbles at the ring and lands with an impact
+  PASS feedback sound: warnings, passes and the rock cues play once per run (no repeats on a second pass)
+  PASS feedback sound: the hazard watch is read only
+  PASS makkah: the failure sound is the neutral stop, never the comic boing
+  PASS makkah: no clang on the impact (a soft thud only)
+  PASS makkah: no gag (the shemagh stays on)
+  PASS feedback gags: ping, face-plant, bounce and the classic fly-off (["ping", "faceplant", "bounce", "flyoff"])
+  PASS feedback gags: an arch hit sends the shemagh up (it pings back)
+  PASS feedback gags: the shemagh is back on his head after the ping
+  PASS feedback gags: the sand drift face-plants him into the sand
+  PASS feedback gags: a retry clears the gag
+  PASS feedback fail: every obstacle family has a cause and a verb in English and Arabic ()
+  PASS feedback fail: the arch teaches 'Slide under the arch'
+  PASS feedback near miss: the pop has English and Arabic text
+  PASS feedback near miss: a full run with the detector is identical to one without (same Qoroosh 75, same ticks)
+  PASS feedback near miss: capped at once per 2 s
+  PASS feedback near miss: the whoosh plays once per 2 s
+  PASS feedback near miss: the sound is never the Qoroosh chime
+  PASS feedback near miss: the detector never touches a wallet or the pickups
+  PASS feedback variety: the 7 overhead obstacles have 7 different silhouettes
+  PASS feedback variety: the 4 low barriers differ
+  PASS feedback variety: the Qiddiya gate and the NEOM gate differ
+  PASS feedback variety: the rose cart and the market cart differ
+  PASS feedback variety: the canopy's collider is still the plain overhead box
+  PASS feedback variety: the stand-in rose cart has 4 turning wheels and petals, the market cart a flapping awning
+  PASS feedback variety: the wheels turn and the awning flaps
+  PASS feedback variety: reduced motion keeps the props still
+  PASS feedback variety: the built rose cart, market cart and NEOM gate each have a small own motion
+  PASS feedback variety: the petals drift
+  PASS feedback telegraph: wet patch OBS-14 is blue and silver with ripples, no red
+  PASS feedback telegraph: wet patch OBS-21 is blue and silver with ripples, no red
+  PASS feedback telegraph: the rockfall ring has a dark under-shadow and a countdown fill
+  PASS feedback telegraph: the countdown fill grows towards the impact (0.14 -> 0.98)
+  PASS feedback telegraph: the ring stays inside its lane (2.40 m wide)
+  PASS feedback telegraph: the cart arrows are solid (they do not blink)
+  PASS feedback telegraph: the drift's top edge is its brightest part (0.95)
+  PASS feedback upgrades: the falcon wears one gold band per magnet rank (24 -> 72 vertices)
+  PASS feedback upgrades: a higher magnet rank flies a wider, faster loop
+  PASS feedback upgrades: shield rank 2 shows a second shemagh ring and a brighter outline
+  PASS feedback upgrades: the HUD ring knows the effect's full duration (one tick per second)
+  PASS feedback upgrades: boost rank lengthens the HUD ring (360 > 180 ticks)
+  PASS feedback fail: the big free Retry button comes first in the panel
+  PASS feedback fail: the panel shows the cause and the verb of what he hit
+  PASS feedback fail: the panel is anchored to the bottom (below Saddah)
+  PASS feedback near miss: the pop shows and is capped at once per 2 s
+  PASS controls: with the buttons on, every tutorial tip says Tap, in English and Arabic ()
+  PASS controls: a first swipe fires
+  PASS controls: a swipe up still fires after a press was lost (no stuck touch)
+  PASS controls: still one action per gesture
+  PASS controls: touches that began on a button stay ignored
+  PASS controls: clear forgets every touch
+  PASS controls: released touches are forgotten
+  PASS meta: economy read from Economy_Table (40 / 60 / 0.5)
+  PASS meta: six upgrades parsed from Upgrade_Table
+  PASS meta: Magnet ranks: costs 250/500/900 and 6 s -> 8 s -> 10 s -> 12 s
+  PASS meta: Qoroosh Bonus ranks 5/10/15 %
+  PASS meta: Double Jump has no extra ranks
+  PASS meta: 54 levels in 9 worlds from the level register
+  PASS meta: successor chain across worlds
+  PASS meta: skins read from the matrix (SKIN-04 disabled)
+  PASS meta: seven worked examples loaded
+  PASS meta: EX-01 Success: wallet change 200 = 200 (100 + 40 + 60)
+  PASS meta: EX-01 rows add up to the wallet change
+  PASS meta: EX-02 Replay success: wallet change 140 = 140 (100 + 40)
+  PASS meta: EX-02 rows add up to the wallet change
+  PASS meta: EX-03 Success: wallet change 205 = 205 (floor(100*1.05) + 40 + 60)
+  PASS meta: EX-03 rows add up to the wallet change
+  PASS meta: EX-04 Success with ad: wallet change 310 = 310 (105 + 40 + 60 + 105)
+  PASS meta: EX-04 rows add up to the wallet change
+  PASS meta: EX-05 Fail: wallet change 25 = 25 (floor(51*0.5); ignore bonus)
+  PASS meta: EX-05 rows add up to the wallet change
+  PASS meta: EX-06 First clear low collection: wallet change 170 = 170 (70 + 40 + 60)
+  PASS meta: EX-06 rows add up to the wallet change
+  PASS meta: EX-07 Quit: wallet change 0 = 0 (floor(0*0.5))
+  PASS meta: EX-07 rows add up to the wallet change
+  PASS meta: failed run: floor(51 x 0.5) = 25, no bonus, no completion, no first clear
+  PASS meta: a failed run clears nothing and unlocks nothing
+  PASS meta: quit uses the same half rule (9 -> 4)
+  PASS meta: first clear pays the first-clear award
+  PASS meta: stars: finish + 60% collected, one hard hit = 2 stars
+  PASS meta: replay: no second first-clear award (10 + 40)
+  PASS meta: stars are independent: finish + no hard hits, low collection
+  PASS meta: best stars are the union of the independent stars (3)
+  PASS meta: a worse replay never downgrades stars, best or the clear
+  PASS meta: the worse run itself shows one star
+  PASS meta: failing a cleared stage never revokes it
+  PASS meta: fresh profile: only W01-L01 is unlocked
+  PASS meta: later levels and worlds start locked
+  PASS meta: clearing a stage unlocks exactly its successor (no star or currency needed)
+  PASS meta: the last stage of a world unlocks the next world's first stage
+  PASS meta: next level and clear count follow the chain
+  PASS meta: unlocks are recomputed from the clears, never trusted from the cache
+  PASS meta: the Desert exit beat is owed after W01-L06
+  PASS meta: no beat is owed once it has been seen
+  PASS meta: journal written during a run
+  PASS meta: journal survives a restart (4 unique pickups)
+  PASS meta: unfinished run is settled once as abandoned from the last journal (floor(4 x 0.5) = 2)
+  PASS meta: wallet credited, journal marked settled
+  PASS meta: a second boot settles nothing more
+  PASS meta: restart after the credit: still credited exactly once
+  PASS meta: kill after the credit: no second settlement on the next boot
+  PASS meta: duplicate settle callback does not credit twice
+  PASS meta: failed write: nothing credited in memory
+  PASS meta: failed write: nothing on disk either
+  PASS meta: the same run settles correctly when the write works
+  PASS meta: an abandoned older run is settled before a new journal starts
+  PASS meta: revision counter grows with every commit
+  PASS meta: atomic write leaves no temp file
+  PASS meta: a valid backup copy of the previous save exists
+  PASS meta: corrupt save is reported, not silently reset
+  PASS meta: nothing is written while the damaged save is unresolved
+  PASS meta: recovery can offer the backup
+  PASS meta: restore backup loads it
+  PASS meta: restored progress is the last good one
+  PASS meta: the damaged file is kept aside
+  PASS meta: retry on a still-damaged save stays in recovery
+  PASS meta: explicit reset starts a clean profile
+  PASS meta: a save from a newer version is rejected safely
+  PASS meta: interrupted swap: the complete temp file is used
+  PASS meta: snapshots differ (sanity)
+  PASS meta: settings are kept independently of an unfinished run
+  PASS meta: golden schema-1 save present
+  PASS meta: schema 1 save migrates to the current schema
+  PASS meta: migration keeps the player id and old values
+  PASS meta: migration keeps the player's settings
+  PASS meta: starter 'reduce_fx' became 'reduced_motion'
+  PASS meta: migrated profile starts with zero wallet, only the first level, the default skin
+  PASS meta: new settings get their defaults
+  PASS meta: migrated save was written back in the new schema
+  PASS meta: levels that no longer exist are ignored
+  PASS meta: upgrade ranks are clamped to what the catalog allows
+  PASS meta: an equipped skin that is unavailable falls back to the default
+  PASS meta: upgrades are not offered before their clear
+  PASS meta: nothing is offered on a fresh profile
+  PASS meta: Magnet and Bonus appear after W01-L04 / W01-L06; Double Jump waits for W02-L01
+  PASS meta: buying rank 1 costs the register price
+  PASS meta: a repeated confirmation (same transaction) cannot buy twice
+  PASS meta: rank 2 costs its own price
+  PASS meta: no ranks beyond the catalog
+  PASS meta: insufficient funds: nothing bought, nothing charged, the missing amount is reported
+  PASS meta: Qoroosh Bonus rank 1 = 5% (from the register)
+  PASS meta: outfit too expensive: neutral, still available
+  PASS meta: buying an outfit debits the price and equips it
+  PASS meta: equip switches between owned outfits
+  PASS meta: the paid skin is locked / disabled and cannot be bought
+  PASS meta: an outfit that is not owned cannot be equipped
+  PASS meta: wallet reads as a nonnegative integer
+  PASS meta: failed write rolls the purchase back
+  PASS meta: UPG-01 hidden at the start
+  PASS meta: UPG-01 offered after W02-L01
+  PASS meta: UPG-02 hidden at the start
+  PASS meta: UPG-02 offered after W01-L04
+  PASS meta: UPG-03 hidden at the start
+  PASS meta: UPG-03 offered after W02-L03
+  PASS meta: UPG-04 hidden at the start
+  PASS meta: UPG-04 offered after W03-L01
+  PASS meta: UPG-05 hidden at the start
+  PASS meta: UPG-05 offered after W01-L06
+  PASS meta: UPG-06 hidden at the start
+  PASS meta: UPG-06 offered after W03-L03
+  PASS meta: live ads, live store and paid offers are OFF
+  PASS meta: offline / unavailable ad: no reward
+  PASS meta: ad cancelled: nothing granted
+  PASS meta: ad failed: nothing granted
+  PASS meta: ad pending: nothing granted
+  PASS meta: verified ad adds the collected subtotal once
+  PASS meta: the ad bonus shows in the results rows (200 + 100)
+  PASS meta: a second ad for the same run grants nothing
+  PASS meta: a replayed callback grants nothing more
+  PASS meta: an unverified callback grants nothing
+  PASS meta: no bonus for a run that was not a finished settlement
+  PASS meta: store purchase is unavailable (no paid offers)
+  PASS meta: entitlement grants are idempotent by transaction id
+  PASS meta: interstitials are OFF in this version
+  PASS meta: not due before three completed runs
+  PASS meta: due after three runs and 180 s
+  PASS meta: 180 s gap is enforced
+  PASS meta: never in a tutorial, an active run, a failure retry or the Makkah transition
+  PASS meta: every string has English and Arabic []
+  PASS meta: 54 stage titles and 9 worlds exist and fit a map node (<= 24 characters) []
+  PASS meta: world names use the real place names
+  PASS meta: every teaching goal has a route objective line []
+  PASS meta: every string key used in code exists []
+  PASS meta: dynamic string families are complete []
+  PASS meta: all 54 Arabic stage titles are Arabic
+  PASS meta: Saddah's name carries tashkeel in the voice lines
+  PASS meta: story has the opening, eight exit beats, the NEOM entry and the ending []
+  PASS meta: every story line has a string (AR/EN) and a speaker; every voice cue id exists []
+  PASS meta: the nine recorded story lines (VO-02-open-1..4, run-1, end-1..4) are wired to their cues (9)
+  PASS meta: subtitles match the recorded lines exactly (AR + EN) []
+  PASS meta: every speaker has a name []
+  PASS meta: the AlUla exit chains the NEOM entry; the ending runs into the credits
+  PASS meta: the ending has ONE continuous case transfer (never a second parcel)
+  PASS meta: nine different locals wave Saddah on (eight exits + the NEOM entry)
+  PASS meta: no flag imagery in the story script
+  PASS meta: screen setup [en]: no empty labels (0)
+  PASS meta: screen setup [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen setup [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen setup [en]: no single-line text wider than its box []
+  PASS meta: screen setup [en]: builds content (1080x2340)
+  PASS meta: screen home [en]: no empty labels (0)
+  PASS meta: screen home [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen home [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen home [en]: no single-line text wider than its box []
+  PASS meta: screen home [en]: builds content (1080x2340)
+  PASS meta: screen map [en]: no empty labels (0)
+  PASS meta: screen map [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen map [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen map [en]: no single-line text wider than its box []
+  PASS meta: screen map [en]: builds content (1080x2340)
+  PASS meta: map [en]: 54 nodes (six per world from the level data)
+  PASS meta: map [en]: nine world bands
+  PASS meta: map [en]: opens scrolled up to the current node, not at the top
+  PASS meta: map [en]: locked / current / cleared are told in words (52/1/1)
+  PASS meta: screen briefing [en]: no empty labels (0)
+  PASS meta: screen briefing [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen briefing [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen briefing [en]: no single-line text wider than its box []
+  PASS meta: screen briefing [en]: builds content (1080x2340)
+  PASS meta: briefing [en]: title, route objective, Start
+  PASS meta: briefing [en]: Start never needs a purchase
+  PASS meta: briefing [en]: Start sets the stage and goes to the run (or is guarded when there is no run scene)
+  PASS meta: screen results [en]: no empty labels (0)
+  PASS meta: screen results [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen results [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen results [en]: no single-line text wider than its box []
+  PASS meta: screen results [en]: builds content (1080x2340)
+  PASS meta: results [en]: separate rows for collected, completion, first clear and total
+  PASS meta: results [en]: stars apart, ad bonus a separate action
+  PASS meta: screen shop [en]: no empty labels (0)
+  PASS meta: screen shop [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen shop [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen shop [en]: no single-line text wider than its box []
+  PASS meta: screen shop [en]: builds content (1080x2340)
+  PASS meta: shop [en]: six upgrade cards and three outfits (SKIN-04 hidden)
+  PASS meta: screen settings [en]: no empty labels (0)
+  PASS meta: screen settings [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen settings [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen settings [en]: no single-line text wider than its box []
+  PASS meta: screen settings [en]: builds content (1080x2340)
+  PASS meta: screen recovery [en]: no empty labels (0)
+  PASS meta: screen recovery [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen recovery [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen recovery [en]: no single-line text wider than its box []
+  PASS meta: screen recovery [en]: builds content (1080x2340)
+  PASS meta: screen story [en]: no empty labels (0)
+  PASS meta: screen story [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen story [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen story [en]: no single-line text wider than its box []
+  PASS meta: screen story [en]: builds content (1080x2340)
+  PASS meta: screen setup [ar]: no empty labels (0)
+  PASS meta: screen setup [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen setup [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen setup [ar]: no single-line text wider than its box []
+  PASS meta: screen setup [ar]: builds content (1080x2340)
+  PASS meta: screen home [ar]: no empty labels (0)
+  PASS meta: screen home [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen home [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen home [ar]: no single-line text wider than its box []
+  PASS meta: screen home [ar]: builds content (1080x2340)
+  PASS meta: screen map [ar]: no empty labels (0)
+  PASS meta: screen map [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen map [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen map [ar]: no single-line text wider than its box []
+  PASS meta: screen map [ar]: builds content (1080x2340)
+  PASS meta: map [ar]: 54 nodes (six per world from the level data)
+  PASS meta: map [ar]: nine world bands
+  PASS meta: map [ar]: opens scrolled up to the current node, not at the top
+  PASS meta: map [ar]: locked / current / cleared are told in words (52/1/1)
+  PASS meta: screen briefing [ar]: no empty labels (0)
+  PASS meta: screen briefing [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen briefing [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen briefing [ar]: no single-line text wider than its box []
+  PASS meta: screen briefing [ar]: builds content (1080x2340)
+  PASS meta: briefing [ar]: title, route objective, Start
+  PASS meta: briefing [ar]: Start never needs a purchase
+  PASS meta: briefing [ar]: Start sets the stage and goes to the run (or is guarded when there is no run scene)
+  PASS meta: screen results [ar]: no empty labels (0)
+  PASS meta: screen results [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen results [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen results [ar]: no single-line text wider than its box []
+  PASS meta: screen results [ar]: builds content (1080x2340)
+  PASS meta: results [ar]: separate rows for collected, completion, first clear and total
+  PASS meta: results [ar]: stars apart, ad bonus a separate action
+  PASS meta: screen shop [ar]: no empty labels (0)
+  PASS meta: screen shop [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen shop [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen shop [ar]: no single-line text wider than its box []
+  PASS meta: screen shop [ar]: builds content (1080x2340)
+  PASS meta: shop [ar]: six upgrade cards and three outfits (SKIN-04 hidden)
+  PASS meta: screen settings [ar]: no empty labels (0)
+  PASS meta: screen settings [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen settings [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen settings [ar]: no single-line text wider than its box []
+  PASS meta: screen settings [ar]: builds content (1080x2340)
+  PASS meta: screen recovery [ar]: no empty labels (0)
+  PASS meta: screen recovery [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen recovery [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen recovery [ar]: no single-line text wider than its box []
+  PASS meta: screen recovery [ar]: builds content (1080x2340)
+  PASS meta: screen story [ar]: no empty labels (0)
+  PASS meta: screen story [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen story [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen story [ar]: no single-line text wider than its box []
+  PASS meta: screen story [ar]: builds content (1080x2340)
+  PASS meta: exit beat not seen yet
+  PASS meta: story flag is committed as soon as the story starts (before any panel plays)
+  PASS meta: the flag is already on disk
+  PASS meta: story has Skip and subtitles
+  PASS meta: first subtitle line shows with its speaker
+  PASS meta: ending: flags committed first (story complete is permanent)
+  PASS meta: story opening [en]: 5 panels build
+  PASS meta: story exit_W01 [en]: 1 panels build
+  PASS meta: story exit_W02 [en]: 1 panels build
+  PASS meta: story exit_W03 [en]: 1 panels build
+  PASS meta: story exit_W04 [en]: 1 panels build
+  PASS meta: story exit_W05 [en]: 1 panels build
+  PASS meta: story exit_W06 [en]: 1 panels build
+  PASS meta: story exit_W07 [en]: 1 panels build
+  PASS meta: story exit_W08 [en]: 1 panels build
+  PASS meta: story entry_W09 [en]: 1 panels build
+  PASS meta: story ending [en]: 5 panels build
+  PASS meta: story opening [ar]: 5 panels build
+  PASS meta: story exit_W01 [ar]: 1 panels build
+  PASS meta: story exit_W02 [ar]: 1 panels build
+  PASS meta: story exit_W03 [ar]: 1 panels build
+  PASS meta: story exit_W04 [ar]: 1 panels build
+  PASS meta: story exit_W05 [ar]: 1 panels build
+  PASS meta: story exit_W06 [ar]: 1 panels build
+  PASS meta: story exit_W07 [ar]: 1 panels build
+  PASS meta: story exit_W08 [ar]: 1 panels build
+  PASS meta: story entry_W09 [ar]: 1 panels build
+  PASS meta: story ending [ar]: 5 panels build
+  PASS meta: story paging [en]: pages 1-4 each show their own line []
+  PASS meta: story paging [ar]: pages 1-4 each show their own line []
+  PASS meta: touch: map scroll and node button exist
+  PASS meta: touch: dragging the map from a node scrolls it (12255 -> 11822)
+  PASS meta: touch: a drag that starts on a node does not open it
+  PASS meta: touch: dragging the map from empty scenery scrolls it (11822 -> 11344)
+  PASS meta: touch: a tap on a node still opens its briefing
+  PASS meta: touch: shop scroll has a drag dead zone
+  PASS meta: touch: dragging the shop up from a button scrolls it (0 -> 541)
+  PASS meta: rtl map: locked nodes found (53)
+  PASS meta: rtl map: every padlock is centred in its circle (0 off)
+  PASS meta: rtl map: the Locked word sits below the circle, not over it (0 overlapping)
+  PASS meta: rtl settings: sliders present
+  PASS meta: rtl settings: the slider runs right-to-left in Arabic
+  PASS meta: rtl settings: a low value sits on the right side of the bar
+  PASS meta: rtl settings: tapping the left end sets a high value (1.00)
+  PASS meta: english settings: the slider still runs left-to-right
+  PASS meta: settings: Replay story button exists
+  PASS meta: settings: Replay story opens the opening sequence
+  PASS meta: home en: the world card has its picture
+  PASS meta: home en: the picture is visible and sized ((230.0, 408.8889))
+  PASS meta: home en: the picture covers its header inside the card ([P: (72.0, 1970.667), S: (230.0, 408.8889)] in [P: (72.0, 2138.0), S: (230.0, 130.0)])
+  PASS meta: home ar: the world card has its picture
+  PASS meta: home ar: the picture is visible and sized ((230.0, 408.8889))
+  PASS meta: home ar: the picture covers its header inside the card ([P: (778.0, 1970.667), S: (230.0, 408.8889)] in [P: (778.0, 2138.0), S: (230.0, 130.0)])
+  PASS meta: neom label exists in en: NEOM-inspired future visualization
+  PASS meta: briefing W09 en shows the NEOM label
+  PASS meta: briefing W01 en has no NEOM label
+  PASS meta: map en: the NEOM world card carries the label
+  PASS meta: story entry_W09 en shows the NEOM label
+  PASS meta: run HUD W09 en: the NEOM label shows at start
+  PASS meta: run HUD W09 en: the label stays out of the forward zone ([P: (56.0, 292.0), S: (968.0, 39.0)])
+  PASS meta: run HUD W01 en: no NEOM label
+  PASS meta: neom label exists in ar: تصوّر مستقبلي مستوحى من نيوم
+  PASS meta: briefing W09 ar shows the NEOM label
+  PASS meta: briefing W01 ar has no NEOM label
+  PASS meta: map ar: the NEOM world card carries the label
+  PASS meta: story entry_W09 ar shows the NEOM label
+  PASS meta: run HUD W09 ar: the NEOM label shows at start
+  PASS meta: run HUD W09 ar: the label stays out of the forward zone ([P: (56.0, 292.0), S: (968.0, 39.0)])
+  PASS meta: run HUD W01 ar: no NEOM label
+  PASS meta: text scale 150% reaches the theme [en]
+  PASS meta: screen setup at 150% text [en]: no empty labels (0)
+  PASS meta: screen setup at 150% text [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen setup at 150% text [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen setup at 150% text [en]: no single-line text wider than its box []
+  PASS meta: screen setup at 150% text [en]: builds content (1080x2340)
+  PASS meta: screen home at 150% text [en]: no empty labels (0)
+  PASS meta: screen home at 150% text [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen home at 150% text [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen home at 150% text [en]: no single-line text wider than its box []
+  PASS meta: screen home at 150% text [en]: builds content (1080x2340)
+  PASS meta: screen map at 150% text [en]: no empty labels (0)
+  PASS meta: screen map at 150% text [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen map at 150% text [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen map at 150% text [en]: no single-line text wider than its box []
+  PASS meta: screen map at 150% text [en]: builds content (1080x2340)
+  PASS meta: screen briefing at 150% text [en]: no empty labels (0)
+  PASS meta: screen briefing at 150% text [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen briefing at 150% text [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen briefing at 150% text [en]: no single-line text wider than its box []
+  PASS meta: screen briefing at 150% text [en]: builds content (1080x2340)
+  PASS meta: screen results at 150% text [en]: no empty labels (0)
+  PASS meta: screen results at 150% text [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen results at 150% text [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen results at 150% text [en]: no single-line text wider than its box []
+  PASS meta: screen results at 150% text [en]: builds content (1080x2340)
+  PASS meta: screen shop at 150% text [en]: no empty labels (0)
+  PASS meta: screen shop at 150% text [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen shop at 150% text [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen shop at 150% text [en]: no single-line text wider than its box []
+  PASS meta: screen shop at 150% text [en]: builds content (1080x2340)
+  PASS meta: screen settings at 150% text [en]: no empty labels (0)
+  PASS meta: screen settings at 150% text [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen settings at 150% text [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen settings at 150% text [en]: no single-line text wider than its box []
+  PASS meta: screen settings at 150% text [en]: builds content (1080x2340)
+  PASS meta: text scale 150% reaches the theme [ar]
+  PASS meta: screen setup at 150% text [ar]: no empty labels (0)
+  PASS meta: screen setup at 150% text [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen setup at 150% text [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen setup at 150% text [ar]: no single-line text wider than its box []
+  PASS meta: screen setup at 150% text [ar]: builds content (1080x2340)
+  PASS meta: screen home at 150% text [ar]: no empty labels (0)
+  PASS meta: screen home at 150% text [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen home at 150% text [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen home at 150% text [ar]: no single-line text wider than its box []
+  PASS meta: screen home at 150% text [ar]: builds content (1080x2340)
+  PASS meta: screen map at 150% text [ar]: no empty labels (0)
+  PASS meta: screen map at 150% text [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen map at 150% text [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen map at 150% text [ar]: no single-line text wider than its box []
+  PASS meta: screen map at 150% text [ar]: builds content (1080x2340)
+  PASS meta: screen briefing at 150% text [ar]: no empty labels (0)
+  PASS meta: screen briefing at 150% text [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen briefing at 150% text [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen briefing at 150% text [ar]: no single-line text wider than its box []
+  PASS meta: screen briefing at 150% text [ar]: builds content (1080x2340)
+  PASS meta: screen results at 150% text [ar]: no empty labels (0)
+  PASS meta: screen results at 150% text [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen results at 150% text [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen results at 150% text [ar]: no single-line text wider than its box []
+  PASS meta: screen results at 150% text [ar]: builds content (1080x2340)
+  PASS meta: screen shop at 150% text [ar]: no empty labels (0)
+  PASS meta: screen shop at 150% text [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen shop at 150% text [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen shop at 150% text [ar]: no single-line text wider than its box []
+  PASS meta: screen shop at 150% text [ar]: builds content (1080x2340)
+  PASS meta: screen settings at 150% text [ar]: no empty labels (0)
+  PASS meta: screen settings at 150% text [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen settings at 150% text [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen settings at 150% text [ar]: no single-line text wider than its box []
+  PASS meta: screen settings at 150% text [ar]: builds content (1080x2340)
+  PASS meta: results [en]: the victory moment plays first
+  PASS meta: results [en]: Saddah is the 3D model (glb loaded)
+  PASS meta: results [en]: the moment plays the victory clip (then case_check)
+  PASS meta: results [en]: the model has victory and case_check clips
+  PASS meta: results [en]: the moment is skippable by a tap and the tap area is named
+  PASS meta: results [en]: the rows have not started counting during the moment
+  PASS meta: results [en]: a tap ends the moment
+  PASS meta: results [en]: the total row counts up to the wallet change
+  PASS meta: results [en]: skipping or watching the moment never changes the wallet
+  PASS meta: results [en]: RowCollected is there
+  PASS meta: results [en]: RowCompletion is there
+  PASS meta: results [en]: RowFirstClear is there
+  PASS meta: results [en]: RowTotal is there
+  PASS meta: results [en]: Stars is there
+  PASS meta: results [en]: AdButton is there
+  PASS meta: results [en]: NextButton is there
+  PASS meta: results [en]: ReplayButton is there
+  PASS meta: results [en]: MapButton is there
+  PASS meta: results rows [en]: no empty labels (0)
+  PASS meta: results rows [en]: all buttons meet the touch size (0 too small)
+  PASS meta: results rows [en]: every button has a screen-reader name (0 without)
+  PASS meta: results rows [en]: no single-line text wider than its box []
+  PASS meta: results rows [en]: builds content (1080x2340)
+  PASS meta: results [en]: no label runs off the screen []
+  PASS meta: results [en]: the moment ends by itself after about 1.5 s
+  PASS meta: results [en]: a stopped run gets no victory moment
+  PASS meta: results Makkah [en]: the moment is the calm case check (no victory raise)
+  PASS meta: results Makkah [en]: calm headline, no 'Well done' cheer
+  PASS meta: results Makkah [en]: no sparkle dots near the stars
+  PASS meta: briefing [en]: the 3D Saddah wears the equipped outfit
+  PASS meta: briefing [en]: idle and slowly turning
+  PASS meta: briefing [en]: world banner, one-line route objective, Start
+  PASS meta: briefing [en]: the stage title appears once
+  PASS meta: briefing [en]: no label runs off the screen []
+  PASS meta: shop [en]: the stall awning and a 3D try-on
+  PASS meta: shop [en]: trying an outfit swaps the texture on the model
+  PASS meta: shop [en]: trying never buys, equips or spends
+  PASS meta: shop [en]: tapping a card tries that outfit
+  PASS meta: shop [en]: back to the default outfit
+  PASS meta: shop [en]: equipped and available are told in words
+  PASS meta: shop [en]: the magnet card exists
+  PASS meta: shop [en]: no label runs off the screen []
+  PASS meta: shop [en]: with too little Qoroosh the Buy button is calm (ghost), not alarming
+  PASS meta: shop [en]: tapping Buy without funds changes nothing
+  PASS meta: home [en]: the game title appears once
+  PASS meta: home [en]: hero art and the one Play button
+  PASS meta: home [en]: no label runs off the screen []
+  PASS meta: map [en]: one Saddah marker
+  PASS meta: map [en]: the marker stands next to the current node
+  PASS meta: map [en]: the world card never covers a node []
+  PASS meta: map [en]: every node shows the one stage name from the string table (EN and AR exist) []
+  PASS meta: map [en]: Back to the map keeps the scroll position
+  PASS meta: results [ar]: the victory moment plays first
+  PASS meta: results [ar]: Saddah is the 3D model (glb loaded)
+  PASS meta: results [ar]: the moment plays the victory clip (then case_check)
+  PASS meta: results [ar]: the model has victory and case_check clips
+  PASS meta: results [ar]: the moment is skippable by a tap and the tap area is named
+  PASS meta: results [ar]: the rows have not started counting during the moment
+  PASS meta: results [ar]: a tap ends the moment
+  PASS meta: results [ar]: the total row counts up to the wallet change
+  PASS meta: results [ar]: skipping or watching the moment never changes the wallet
+  PASS meta: results [ar]: RowCollected is there
+  PASS meta: results [ar]: RowCompletion is there
+  PASS meta: results [ar]: RowFirstClear is there
+  PASS meta: results [ar]: RowTotal is there
+  PASS meta: results [ar]: Stars is there
+  PASS meta: results [ar]: AdButton is there
+  PASS meta: results [ar]: NextButton is there
+  PASS meta: results [ar]: ReplayButton is there
+  PASS meta: results [ar]: MapButton is there
+  PASS meta: results rows [ar]: no empty labels (0)
+  PASS meta: results rows [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: results rows [ar]: every button has a screen-reader name (0 without)
+  PASS meta: results rows [ar]: no single-line text wider than its box []
+  PASS meta: results rows [ar]: builds content (1080x2340)
+  PASS meta: results [ar]: no label runs off the screen []
+  PASS meta: results [ar]: the moment ends by itself after about 1.5 s
+  PASS meta: results [ar]: a stopped run gets no victory moment
+  PASS meta: results Makkah [ar]: the moment is the calm case check (no victory raise)
+  PASS meta: results Makkah [ar]: calm headline, no 'Well done' cheer
+  PASS meta: results Makkah [ar]: no sparkle dots near the stars
+  PASS meta: briefing [ar]: the 3D Saddah wears the equipped outfit
+  PASS meta: briefing [ar]: idle and slowly turning
+  PASS meta: briefing [ar]: world banner, one-line route objective, Start
+  PASS meta: briefing [ar]: the stage title appears once
+  PASS meta: briefing [ar]: no label runs off the screen []
+  PASS meta: shop [ar]: the stall awning and a 3D try-on
+  PASS meta: shop [ar]: trying an outfit swaps the texture on the model
+  PASS meta: shop [ar]: trying never buys, equips or spends
+  PASS meta: shop [ar]: tapping a card tries that outfit
+  PASS meta: shop [ar]: back to the default outfit
+  PASS meta: shop [ar]: equipped and available are told in words
+  PASS meta: shop [ar]: the magnet card exists
+  PASS meta: shop [ar]: no label runs off the screen []
+  PASS meta: shop [ar]: with too little Qoroosh the Buy button is calm (ghost), not alarming
+  PASS meta: shop [ar]: tapping Buy without funds changes nothing
+  PASS meta: home [ar]: the game title appears once
+  PASS meta: home [ar]: hero art and the one Play button
+  PASS meta: home [ar]: no label runs off the screen []
+  PASS meta: map [ar]: one Saddah marker
+  PASS meta: map [ar]: the marker stands next to the current node
+  PASS meta: map [ar]: the world card never covers a node []
+  PASS meta: map [ar]: every node shows the one stage name from the string table (EN and AR exist) []
+  PASS meta: map [ar]: Back to the map keeps the scroll position
+  PASS meta: stage name [en]: briefing and results show the same name as the map (First Steps)
+  PASS meta: stage name [ar]: briefing and results show the same name as the map (أولى الخطوات)
+  PASS meta: story: the nine locals' lines are all different (AR and EN)
+  PASS meta: story: no local hands anything over (one sealed case, no tokens) []
+  PASS meta: story: no object transfer in any world-exit panel []
+  PASS meta: story: every local line has an Arabic version
+  PASS meta: results at 150% [en]: no label runs off the screen []
+  PASS meta: briefing at 150% [en]: no label runs off the screen []
+  PASS meta: briefing at 150% [en]: Start stays on screen
+  PASS meta: shop at 150% [en]: no label runs off the screen []
+  PASS meta: home at 150% [en]: no label runs off the screen []
+  PASS meta: map at 150% [en]: the world card still stays off the nodes []
+  PASS meta: results at 150% [ar]: no label runs off the screen []
+  PASS meta: briefing at 150% [ar]: no label runs off the screen []
+  PASS meta: briefing at 150% [ar]: Start stays on screen
+  PASS meta: shop at 150% [ar]: no label runs off the screen []
+  PASS meta: home at 150% [ar]: no label runs off the screen []
+  PASS meta: map at 150% [ar]: the world card still stays off the nodes []
+RESULT passed=1002 failed=0
