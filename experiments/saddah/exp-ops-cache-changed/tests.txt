@@ -1,0 +1,2192 @@
+  PASS config: game.json loads
+  PASS config: version present
+  PASS save: value survives reload
+  PASS save: setting survives reload
+  PASS save: atomic write leaves no temp file
+  PASS save: player id generated
+  PASS loc: English text
+  PASS loc: Arabic text
+  PASS loc: Arabic is right-to-left
+  PASS loc: controls flip to RTL in Arabic
+  PASS loc: every string has English and Arabic
+  PASS audio: Music bus
+  PASS audio: SFX bus
+  PASS audio: sfx asset present
+  PASS audio: no AudioServer.add_bus() (silences web builds, FR-3)
+  PASS audio: Music and SFX route to Master
+  PASS analytics: HMAC signature matches reference
+  PASS ui: safe margins at least minimum
+  PASS theme: design tokens file present
+  PASS theme: tokens loaded
+  INFO theme placeholder = false (a game must replace it before a milestone)
+  PASS playfield: same logical area at 1080x1920
+  PASS playfield: same logical area at 1080x2340
+  PASS playfield: same logical area at 1080x2400
+  PASS playfield: same logical area at 1440x1920
+  PASS playfield: same logical area at 3413x1920
+  PASS perf: frame statistics correct
+  PASS fx: shader hit_flash loads
+  PASS fx: shader dissolve loads
+  PASS fx: shader shield loads
+  PASS fx: shader shockwave loads
+  PASS fx: shader heat_shimmer loads
+  PASS fx: texture dot generated
+  PASS fx: texture spark generated
+  PASS fx: texture ring generated
+  PASS fx: texture smoke generated
+  PASS fx: texture star generated
+  PASS fx: texture white generated
+  PASS fx: emitter pool stays bounded (96 <= 96)
+  PASS fx: hit flash applies its shader
+  PASS fx: trail lives in the effect layer
+  PASS fx: heat shimmer attaches to its node
+  PASS fx: dissolve frees the node when done
+  PASS fx: hitstop restores time
+  PASS fx: shake returns to rest
+  PASS ui kit: theme type DisplayLabel
+  PASS ui kit: theme type HeadingLabel
+  PASS ui kit: theme type H2Label
+  PASS ui kit: theme type TitleLabel
+  PASS ui kit: theme type CaptionLabel
+  PASS ui kit: theme type MicroLabel
+  PASS ui kit: theme type NumberLabel
+  PASS ui kit: theme type DangerButton
+  PASS ui kit: theme type GhostButton
+  PASS ui kit: theme type CardPanel
+  PASS ui kit: theme type ChipPanel
+  PASS ui kit: display size from type scale
+  PASS ui kit: Arabic display font renders Arabic
+  PASS ui kit: framed panel
+  PASS ui kit: count_to ends on the target
+  PASS ui kit: appear ends fully visible
+  PASS errors: logger registered
+  PASS errors: one report per distinct error
+  PASS errors: repeats are counted, not re-sent
+  PASS errors: report carries build and platform
+  PASS errors: points at the script line, not engine code
+  PASS remote: Firestore values decode
+  PASS remote: numbers with safe defaults
+  PASS remote: switches with safe defaults
+  PASS screen boot: loads
+  PASS screen boot: builds content
+  PASS screen boot: no empty labels (0 labels)
+  PASS screen boot: all buttons meet touch size
+  PASS screen menu: loads
+  PASS screen menu: builds content
+  PASS screen menu: no empty labels (7 labels)
+  PASS screen menu: all buttons meet touch size
+  PASS screen settings: loads
+  PASS screen settings: builds content
+  PASS screen settings: no empty labels (36 labels)
+  PASS screen settings: all buttons meet touch size
+  PASS screen game: loads
+  PASS screen game: builds content
+  PASS screen game: no empty labels (3 labels)
+  PASS screen game: all buttons meet touch size
+  PASS release: no developer tools on shipping screens
+  PASS dev: developer tools reachable in dev builds
+  PASS release: settings has no developer tools
+  PASS release: game has no developer tools
+  PASS cloud: unconfigured shows not available
+  PASS hd pack: start() from a boot _ready creates the pack node
+  PASS hd pack: pack node entered the tree under root
+  PASS hd pack: the download request runs inside the tree
+  PASS hd pack: request really started (state failed)
+  PASS hd pack: nothing loaded from an unreachable host
+  PASS lane: still moving one tick before TUN-02
+  PASS lane: arrives after TUN-02 (0.20 s)
+  PASS lane: no wrap past the left lane
+  PASS lane: at most one queued request (right, then one left = back to the middle, 2nd left dropped)
+  PASS lane: monotone motion, lane centres TUN-01 apart
+  PASS jump: apex 2.100 m matches TUN-04 2.10
+  PASS jump: airtime 39 ticks matches TUN-03 0.66 s
+  PASS jump: lane change in the air allowed
+  PASS jump: lands once, no auto-repeat
+  PASS jump: buffered press within TUN-06 before landing jumps again at landing
+  PASS jump: an early press far outside the buffer is dropped
+  PASS jump: no double jump without UPG-01
+  PASS jump: double jump with UPG-01, one extra in the air
+  PASS slide: capsule is the crouch height on the very next tick
+  PASS slide: stands up after TUN-05 (0.75 s)
+  PASS slide: swipe down in the air is ignored
+  PASS slide: up during a slide jumps at once when there is no ceiling
+  PASS slide: passes under an overhead beam
+  PASS slide: jump request under a ceiling waits (no standing up into the beam)
+  PASS slide: ...and jumps as soon as the beam is behind
+  PASS slide: the extension is capped (a 24 m beam is not endless cover)
+  PASS run: finishes at the stage length
+  PASS hit: a full-height rock in the lane ends the run
+  PASS hit: shield absorbs the first hit, grace lets him through the next
+  PASS hit: shield hit counted as one hard hit
+  PASS gap: walking into a void ends the run (no shield rescue)
+  PASS gap: one jump clears an OBS-11 void at the authored speed
+  PASS wet patch: cosmetic only
+  PASS determinism: identical inputs give identical state
+  PASS determinism: snapshot/restore is exact
+  PASS swept: 0 missed thin hits in 400 random placements at 12.35 m/s (max base) (a point test would miss 400)
+  PASS swept: 0 missed thin hits in 400 random placements at 14.2 m/s (boost) (a point test would miss 400)
+  PASS swept: 0 missed thin hits in 400 random placements at assist x0.85 (a point test would miss 400)
+  PASS swipe: threshold is TUN-07 of the short screen side (43.2 px)
+  PASS swipe: right past the threshold fires at once
+  PASS swipe: one action per touch
+  PASS swipe: below the threshold is a tap, not a swipe
+  PASS swipe: dominant vertical axis = up
+  PASS swipe: dominant vertical axis = down
+  PASS swipe: left
+  PASS swipe: slower than TUN-08 is a drag and is rejected
+  PASS swipe: touches starting on a button are ignored
+  PASS swipe: device independent (3:4 tablet uses its own short side)
+  PASS swipe: sensitivity presets move the threshold within a sensible band
+  PASS track: bend right turns the heading right
+  PASS track: reversed bend turns it back left
+  PASS track: slope climbs
+  PASS track: lanes stay 2.4 m apart in a bend (path-relative)
+  PASS track: distance along the path equals metres (curves and slopes)
+  PASS content: 54 levels in Level_World_Matrix
+  PASS content: level rows carry their world id
+  PASS content: tuning read from the register (TUN-09 0.65)
+  PASS content: magnet ranks parsed from Upgrade_Table
+  PASS content: boost ranks and +15% parsed
+  PASS content: shield ranks parsed
+  PASS content: slide recovery ranks parsed
+  PASS content: magnet radius parsed
+  PASS stages: all 54 stage files exist (54)
+  PASS stages: placed Qoroosh equals Level_World_Matrix on all 54 (54)
+  PASS stages: speed and length come from the matrix on all 54
+  PASS stages: only the obstacles the matrix allows (54)
+  PASS stages: about 4 s of orientation before the first obstacle on all 54 (54)
+  PASS stages: speed ladder 8 + 0.45/world + 0.15/stage (max 12.35)
+  PASS validator: accepts all 54 stages (base kit route, authored speed and assist timing) in 283 s
+  PASS validator: telegraph, relief, corridor and data rules hold on all 54 (54)
+  PASS validator: rejects a low row followed 0.3 s later by an overhead row (jump then slide)
+  PASS validator: rejects a full-height wall across all three lanes
+  PASS validator: rejects a zig-zag that needs lane changes closer than the 0.65 s action separation
+  PASS validator: accepts the same pair with 2.2 s between them
+  PASS validator: a rockfall ring shorter than the notice is rejected
+  PASS assist: hazards sit at the same place relative to progress at any speed
+  PASS bot: clears all 54 stages with the base kit through the real simulation (26 s)
+  PASS bot: no hard hit on any stage
+  PASS bot: base kit collects at least 60% of the placed Qoroosh on every stage (54)
+  PASS bot: W01-L03 also clears with assist timing
+  PASS bot: W09-L06 also clears with assist timing
+  PASS camera: 9:19.5 look-ahead framing keeps his whole body, both outer lane edges at 8 m and the full road at 22.2 m on screen (FOV 61, 3.0 m high, 6.5 m back, follow 0.80)
+  PASS camera: 9:19.5 look-ahead framing stays inside the TUN-12/13/14 test ranges
+  PASS camera: 9:16 look-ahead framing keeps his whole body, both outer lane edges at 8 m and the full road at 22.2 m on screen (FOV 60, 3.0 m high, 6.5 m back, follow 1.00)
+  PASS camera: 9:16 look-ahead framing stays inside the TUN-12/13/14 test ranges
+  PASS camera: 3:4 look-ahead framing keeps his whole body, both outer lane edges at 8 m and the full road at 22.2 m on screen (FOV 60, 3.0 m high, 6.5 m back, follow 1.00)
+  PASS camera: 3:4 look-ahead framing stays inside the TUN-12/13/14 test ranges
+  PASS camera: a real Camera3D projection of the calm framing keeps him on screen in every lane on 1080x2340 at 30 % of the height (M1 bar 18 %)
+  PASS art: all 28 obstacles OBS-01..28 build a look (28)
+  PASS art: all nine world kits build a chunk with road, ground and props (9)
+  PASS art: worlds.json has W01..W09
+  PASS art: every world has palette roles, fog, time of day and a plate file
+  PASS art: time of day follows the arc (dawn, day, afternoon, golden hour to dusk in Makkah, morning, sunset, next dawn) ["dawn", "day", "day", "afternoon", "afternoon", "golden hour to dusk", "morning", "sunset", "dawn"]
+  PASS strings: run.csv has 65 keys, each with English and Arabic
+  PASS art: Makkah kit code has no minaret, built dome, mosque or Kaaba shape (granite rock domes allowed)
+  PASS scene: run screen starts with stage, view and HUD
+  PASS scene: a left swipe moves to the left lane
+  PASS scene: a touch that begins on the pause button is ignored by the swipe interpreter
+  PASS scene: focus loss pauses and freezes the simulation
+  PASS scene: resume starts a 3 s countdown (TUN-17)
+  PASS scene: the countdown ends and the run continues
+  PASS scene: retry is playable again in 6 ms (limit 2000), same scene, input queue empty
+  PASS scene: the run settles exactly once
+  PASS scene: the result dictionary has the ARCH.md fields (placed 86 on W01-L01)
+  PASS scene: two bot runs of W01-L02 produce identical event streams (105 events)
+  PASS scene: reduced motion starts without shake
+  PASS scene: Makkah (W06) uses the neutral fail, no fly-off gag
+  PASS pause/settings 1a: Settings opens embedded over the paused run (pause menu hidden under it)
+  PASS pause/settings 1b: no screen change, the run scene stays alive
+  PASS pause/settings 1c: Back returns to the pause menu
+  PASS pause/settings 1d: same run_id, distance 13.9 m and 13 Qoroosh kept
+  PASS pause/settings 1e: nothing settled while paused or in Settings
+  PASS pause/settings 2a: Resume starts the TUN-17 countdown
+  PASS pause/settings 2b: running again from 13 Qoroosh (now 13, consistent with the pickups)
+  PASS pause/settings 3a: five open/close cycles never stack panels (max 1) and leave none
+  PASS pause/settings 3b: no leaked nodes, run state identical
+  PASS pause/settings 4a: reduced motion, buttons and handedness applied on close
+  PASS pause/settings 4b: the run is unchanged by the settings
+  PASS pause/settings 5a: Assist shows the 'next try' line and the current run keeps its timing
+  PASS pause/settings 5b: the next run starts with Assist timing
+  PASS pause/settings 6a: choosing Arabic in the run shows the 'when you leave' note and changes nothing yet
+  PASS pause/settings 6b: still English and paused after Back
+  PASS pause/settings 6c: leaving to the map applies Arabic
+  PASS pause/settings 6d/10: quit after a Settings visit settles once with the exact count (13)
+  PASS pause/settings 6e: a second leave does not settle again
+  PASS pause/settings 7: at 150 % text the embedded Settings fits the screen width (0 overflowing)
+  PASS pause/settings 8: background and back with Settings open: still paused, Settings open, run frozen
+  PASS pause/settings 11a: Back in Settings returns to the pause menu
+  PASS pause/settings 11b: Back on Pause asks to confirm leaving (still paused, nothing settled)
+  PASS pause/settings 11c: Android Back never quits the app during a run
+  PASS pause/settings 12a: Pause works during the countdown
+  PASS pause/settings 12b: the countdown starts over on Resume
+  PASS pause/settings 9: the end after a Settings visit settles once with every pickup (5)
+  PASS pause/settings 13: Settings from Home still builds and Back returns Home
+  PASS stages2: the old drift shape still has a window under the 0.45 s rule (0.23 s; v0.2 audit 0.1-0.2 s)
+  PASS stages2: the W01-L01 drift (depth 1.0, h 0.40) gives 0.48 s at base and 0.58 s at assist timing (>= 0.45 s)
+  PASS stages2: the validator rejects the old drift shape (14 window errors)
+  PASS stages2: the validator accepts all 54 stages (human window rule) []
+  PASS stages2: no jump or slide in any of the 54 stages gives a human under 0.45 s, base or assist (worst 0.45 s: W01-L06 OBS-01 base)
+  PASS stages2: W01-L01 has no full-width low block (always an open escape lane)
+  PASS stages2: W01-L02 has no full-width low block (always an open escape lane)
+  PASS stages2: W01-L01 first drift is single-lane
+  PASS stages2: W01-L01 second drift is single-lane
+  PASS stages2: W01-L01 third drift (the jump lesson) leaves one lane open
+  PASS stages2: W01-L01 has a first-verb cue with a slow-motion stretch
+  PASS stages2: W01-L01 cue shows 3.30 s ahead (>= 3 s)
+  PASS stages2: W01-L01 slow stretch [168.2, 171.8] covers the obstacle at 170.4 m
+  PASS stages2: W01-L01 slow stretch starts no earlier than 0.14 s before the earliest useful swipe (scale 1.00)
+  PASS stages2: W01-L01 slow stretch starts no earlier than 0.14 s before the earliest useful swipe (scale 0.85)
+  PASS stages2: W01-L02 has a first-verb cue with a slow-motion stretch
+  PASS stages2: W01-L02 cue shows 3.30 s ahead (>= 3 s)
+  PASS stages2: W01-L02 slow stretch [42.7, 46.1] covers the obstacle at 44.8 m
+  PASS stages2: W01-L02 slow stretch starts no earlier than 0.14 s before the earliest useful swipe (scale 1.00)
+  PASS stages2: W01-L02 slow stretch starts no earlier than 0.14 s before the earliest useful swipe (scale 0.85)
+  PASS stages2: the lane cue shows >= 3 s ahead
+  PASS stages2: slow motion is off far from the first jump
+  PASS stages2: inside the stretch the pace eases to 30 % (got 0.30)
+  PASS stages2: a lane swipe does not end the teaching slow motion
+  PASS stages2: the jump swipe ends the slow motion
+  PASS stages2: the pace eases back to normal after the swipe, no jump
+  PASS stages2: the sim is deterministic with the teaching stretch (W01-L01 3677 ticks)
+  PASS stages2: disabled teaching never slows the run
+  PASS stages2: the closest two action groups of all 54 stages are 0.90 s apart (>= 0.65 s) at W04-L06
+  PASS stages2: required inputs are never closer than 0.82 s (TUN-09 0.65 s) at W03-L01
+  PASS stages2: every stage carries its pacing record
+  PASS stages2: per-world spacing multiplier runs 1.15 (Desert) -> 0.75 (NEOM)
+  PASS stages2: nine L05 rates measured
+  PASS stages2: L05 required inputs/10 s keep rising from world to world (8 of 8 steps up: [2.7, 2.83, 2.99, 3.39, 3.18, 2.9, 3.26, 3.69, 3.72])
+  PASS stages2: the last three worlds ask 3.56 inputs/10 s at L05, the first three 2.84
+  PASS stages2: L05 goes 2.70 -> 3.72 (target 2.4 -> 4.0; the last world falls short of 4.0, see docs/STAGE_CURVE.md)
+  PASS stages2: L06 asks >= L05 + 8 % (target 10 %; NEOM lands at +8.5 %) outside the set-piece peak []
+  PASS stages2: L01-L02 of every world stay gentle (teach) []
+  PASS stages2: W01-L05 stored rate 2.70 matches the measurement 2.70
+  PASS stages2: W05-L05 stored rate 3.18 matches the measurement 3.18
+  PASS stages2: W09-L02 stored rate 3.72 matches the measurement 3.72
+  PASS stages2: every stage from L02 on forces every verb its obstacle list allows []
+  PASS stages2: worlds without a jumpable obstacle keep the jump through optional raised Qoroosh lines []
+  PASS stages2: NEOM L05 asks for the jump over the linked-platform gap (12)
+  PASS stages2: W01-L06 has a set-piece record
+  PASS stages2: W01-L06 set-piece runs 22.0 s (15-25 s)
+  PASS stages2: W01-L06 authored sequence has 6 hazards
+  PASS stages2: W01-L06 set-piece uses only its own world's matrix obstacles (C-26)
+  PASS stages2: W01-L06 entry is calm (first hazard 3.0 s into the zone)
+  PASS stages2: W01-L06 relief: the last hazard is 7.0 s before the finish
+  PASS stages2: W01-L06 asks nothing new at the peak (verbs [1, 2, 3, 0] then [0, 2, 3, 1])
+  PASS stages2: W01-L06 set-piece is validator-proven (design rules, base and assist route)
+  PASS stages2: W02-L06 has a set-piece record
+  PASS stages2: W02-L06 set-piece runs 22.0 s (15-25 s)
+  PASS stages2: W02-L06 authored sequence has 7 hazards
+  PASS stages2: W02-L06 set-piece uses only its own world's matrix obstacles (C-26)
+  PASS stages2: W02-L06 entry is calm (first hazard 3.0 s into the zone)
+  PASS stages2: W02-L06 relief: the last hazard is 6.8 s before the finish
+  PASS stages2: W02-L06 asks nothing new at the peak (verbs [0, 2, 3, 1] then [0, 2, 1, 3])
+  PASS stages2: W02-L06 set-piece is validator-proven (design rules, base and assist route)
+  PASS stages2: W03-L06 has a set-piece record
+  PASS stages2: W03-L06 set-piece runs 22.0 s (15-25 s)
+  PASS stages2: W03-L06 authored sequence has 6 hazards
+  PASS stages2: W03-L06 set-piece uses only its own world's matrix obstacles (C-26)
+  PASS stages2: W03-L06 entry is calm (first hazard 3.0 s into the zone)
+  PASS stages2: W03-L06 relief: the last hazard is 7.1 s before the finish
+  PASS stages2: W03-L06 asks nothing new at the peak (verbs [1, 2, 3, 0] then [1, 0])
+  PASS stages2: W03-L06 set-piece is validator-proven (design rules, base and assist route)
+  PASS stages2: W04-L06 has a set-piece record
+  PASS stages2: W04-L06 set-piece runs 22.0 s (15-25 s)
+  PASS stages2: W04-L06 authored sequence has 8 hazards
+  PASS stages2: W04-L06 set-piece uses only its own world's matrix obstacles (C-26)
+  PASS stages2: W04-L06 entry is calm (first hazard 3.0 s into the zone)
+  PASS stages2: W04-L06 relief: the last hazard is 6.5 s before the finish
+  PASS stages2: W04-L06 asks nothing new at the peak (verbs [0, 2, 3, 1] then [1, 0, 3, 2])
+  PASS stages2: W04-L06 set-piece is validator-proven (design rules, base and assist route)
+  PASS stages2: W05-L06 has a set-piece record
+  PASS stages2: W05-L06 set-piece runs 22.0 s (15-25 s)
+  PASS stages2: W05-L06 authored sequence has 6 hazards
+  PASS stages2: W05-L06 set-piece uses only its own world's matrix obstacles (C-26)
+  PASS stages2: W05-L06 entry is calm (first hazard 3.0 s into the zone)
+  PASS stages2: W05-L06 relief: the last hazard is 7.4 s before the finish
+  PASS stages2: W05-L06 asks nothing new at the peak (verbs [1, 2, 3, 0] then [3, 1])
+  PASS stages2: W05-L06 set-piece is validator-proven (design rules, base and assist route)
+  PASS stages2: W06-L06 has a set-piece record
+  PASS stages2: W06-L06 set-piece runs 22.0 s (15-25 s)
+  PASS stages2: W06-L06 authored sequence has 4 hazards
+  PASS stages2: W06-L06 set-piece uses only its own world's matrix obstacles (C-26)
+  PASS stages2: W06-L06 entry is calm (first hazard 3.4 s into the zone)
+  PASS stages2: W06-L06 relief: the last hazard is 8.8 s before the finish
+  PASS stages2: W06-L06 asks nothing new at the peak (verbs [0, 2, 3, 1] then [0, 2])
+  PASS stages2: W06-L06 set-piece is validator-proven (design rules, base and assist route)
+  PASS stages2: W07-L06 has a set-piece record
+  PASS stages2: W07-L06 set-piece runs 22.0 s (15-25 s)
+  PASS stages2: W07-L06 authored sequence has 6 hazards
+  PASS stages2: W07-L06 set-piece uses only its own world's matrix obstacles (C-26)
+  PASS stages2: W07-L06 entry is calm (first hazard 3.0 s into the zone)
+  PASS stages2: W07-L06 relief: the last hazard is 6.8 s before the finish
+  PASS stages2: W07-L06 asks nothing new at the peak (verbs [0, 2, 1] then [2, 0, 1])
+  PASS stages2: W07-L06 set-piece is validator-proven (design rules, base and assist route)
+  PASS stages2: W08-L06 has a set-piece record
+  PASS stages2: W08-L06 set-piece runs 22.0 s (15-25 s)
+  PASS stages2: W08-L06 authored sequence has 7 hazards
+  PASS stages2: W08-L06 set-piece uses only its own world's matrix obstacles (C-26)
+  PASS stages2: W08-L06 entry is calm (first hazard 3.0 s into the zone)
+  PASS stages2: W08-L06 relief: the last hazard is 6.8 s before the finish
+  PASS stages2: W08-L06 asks nothing new at the peak (verbs [0, 2, 3, 1] then [1, 2, 3, 0])
+  PASS stages2: W08-L06 set-piece is validator-proven (design rules, base and assist route)
+  PASS stages2: W09-L06 has a set-piece record
+  PASS stages2: W09-L06 set-piece runs 22.0 s (15-25 s)
+  PASS stages2: W09-L06 authored sequence has 6 hazards
+  PASS stages2: W09-L06 set-piece uses only its own world's matrix obstacles (C-26)
+  PASS stages2: W09-L06 entry is calm (first hazard 3.0 s into the zone)
+  PASS stages2: W09-L06 relief: the last hazard is 7.0 s before the finish
+  PASS stages2: W09-L06 asks nothing new at the peak (verbs [2, 3, 1, 0] then [0, 2, 1])
+  PASS stages2: W09-L06 set-piece is validator-proven (design rules, base and assist route)
+  PASS stages2: nine different set-piece kinds (9)
+  PASS stages2: set-piece curves are monotone 0 -> 1
+  PASS stages2: the W03 gate light beat changes at most 0.044 per frame at 12.35 m/s (no flash)
+  PASS stages2: W01 finish arch builds (1427 vertices)
+  PASS stages2: W01 arch leaves all three lanes clear (the outer capsule reaches 2.75 m) (closest solid at |x| = 4.09 m, between 0.3 and 3 m high)
+  PASS stages2: W02 finish arch builds (268 vertices)
+  PASS stages2: W02 arch leaves all three lanes clear (the outer capsule reaches 2.75 m) (closest solid at |x| = 3.95 m, between 0.3 and 3 m high)
+  PASS stages2: W03 finish arch builds (1116 vertices)
+  PASS stages2: W03 arch leaves all three lanes clear (the outer capsule reaches 2.75 m) (closest solid at |x| = 3.80 m, between 0.3 and 3 m high)
+  PASS stages2: W04 finish arch builds (420 vertices)
+  PASS stages2: W04 arch leaves all three lanes clear (the outer capsule reaches 2.75 m) (closest solid at |x| = 3.58 m, between 0.3 and 3 m high)
+  PASS stages2: W05 finish arch builds (1504 vertices)
+  PASS stages2: W05 arch leaves all three lanes clear (the outer capsule reaches 2.75 m) (closest solid at |x| = 3.21 m, between 0.3 and 3 m high)
+  PASS stages2: W06 finish arch builds (100 vertices)
+  PASS stages2: W06 arch leaves all three lanes clear (the outer capsule reaches 2.75 m) (closest solid at |x| = 1000000000.00 m, between 0.3 and 3 m high)
+  PASS stages2: W07 finish arch builds (734 vertices)
+  PASS stages2: W07 arch leaves all three lanes clear (the outer capsule reaches 2.75 m) (closest solid at |x| = 3.86 m, between 0.3 and 3 m high)
+  PASS stages2: W08 finish arch builds (232 vertices)
+  PASS stages2: W08 arch leaves all three lanes clear (the outer capsule reaches 2.75 m) (closest solid at |x| = 1000000000.00 m, between 0.3 and 3 m high)
+  PASS stages2: W09 finish arch builds (1540 vertices)
+  PASS stages2: W09 arch leaves all three lanes clear (the outer capsule reaches 2.75 m) (closest solid at |x| = 4.22 m, between 0.3 and 3 m high)
+  PASS stages2: nine different finish arches (distinct shapes: 9)
+  PASS stages2: Makkah's arch is the plain, calm one (100 vertices, others average 905)
+  PASS stages2: W01-L06 set-piece picture builds (wind, 24 nodes)
+  PASS stages2: W01-L06 picture stays within its limits (lift <= 1.2 m, light lift <= 0.3, fog sane)
+  PASS stages2: W02-L06 set-piece picture builds (diversion, 6 nodes)
+  PASS stages2: W02-L06 picture stays within its limits (lift <= 1.2 m, light lift <= 0.3, fog sane)
+  PASS stages2: W03-L06 set-piece picture builds (spectacle, 10 nodes)
+  PASS stages2: W03-L06 picture stays within its limits (lift <= 1.2 m, light lift <= 0.3, fog sane)
+  PASS stages2: W04-L06 set-piece picture builds (rockfall, 22 nodes)
+  PASS stages2: W04-L06 picture stays within its limits (lift <= 1.2 m, light lift <= 0.3, fog sane)
+  PASS stages2: W05-L06 set-piece picture builds (mist, 2 nodes)
+  PASS stages2: W05-L06 picture stays within its limits (lift <= 1.2 m, light lift <= 0.3, fog sane)
+  PASS stages2: W06-L06 set-piece picture builds (tunnel_exit, 4 nodes)
+  PASS stages2: W06-L06 picture stays within its limits (lift <= 1.2 m, light lift <= 0.3, fog sane)
+  PASS stages2: W07-L06 set-piece picture builds (waterfront, 29 nodes)
+  PASS stages2: W07-L06 picture stays within its limits (lift <= 1.2 m, light lift <= 0.3, fog sane)
+  PASS stages2: W08-L06 set-piece picture builds (canyon_oasis, 60 nodes)
+  PASS stages2: W08-L06 picture stays within its limits (lift <= 1.2 m, light lift <= 0.3, fog sane)
+  PASS stages2: W09-L06 set-piece picture builds (pavilions, 11 nodes)
+  PASS stages2: W09-L06 picture stays within its limits (lift <= 1.2 m, light lift <= 0.3, fog sane)
+  PASS near miss: detection never changes simulation state (snapshot identical after every call)
+  PASS near miss: no hit, no fail, no score effect from the reaction
+  PASS near miss: one close pass fires one reaction, the second barrier inside the cooldown does not (1)
+  PASS near miss: the reaction names the obstacle and has an intensity
+  PASS near miss: a clear pass (1 m of room) is not a near miss
+  PASS near miss: an obstacle that hit him never counts as a near miss
+  PASS near miss: clearing a barrier by 0.1 m counts (vertical close pass)
+  PASS near miss: a comfortable jump is not a near miss
+  PASS near miss: a real overlap measures as contact (negative gap), never as a near miss
+  PASS fx: 60 pickups in a burst keep at most 6 sparkles alive (pooled, capped)
+  PASS fx: 30 double jumps keep at most 4 rings (pooled)
+  PASS fx: events never create nodes (the pool is built once: 29 children)
+  PASS fx: boost shows restrained streaks (13 of at most 14)
+  PASS fx: reduced motion disables the boost streaks
+  PASS fx: streaks end with the boost
+  PASS fx: the falcon flies while the magnet lasts
+  PASS fx: the falcon leaves when the magnet ends
+  PASS fx: desert dust trails behind the feet on the ground
+  PASS fx: no dust while airborne
+  PASS fx: dust steps back while a warning is on screen (warning > ambience)
+  PASS fx: reduced effects turn the dust trail off
+  PASS fx: the failure star accent is skipped in Makkah (neutral), present elsewhere
+  PASS fx: no dust trail in Riyadh (Desert and AlUla only)
+  PASS view: a hit shakes the camera, reduced motion removes the shake (0.30 / 0.00)
+  PASS view: zero camera roll in the air (horizon stays level)
+  PASS view: the jump look-ahead eases in while airborne and out on landing
+  PASS view: the finish eases the camera closer, still with zero roll
+  PASS hero: Makkah (W06) uses the neutral fail
+  PASS hero: Makkah fail has no shemagh fly-off gag
+  PASS hero: the fail fly-off gag flies the shemagh off (not in Makkah)
+  PASS hero: a retry restores the costume (the flying shemagh is gone)
+  PASS hero: the shield ties the shemagh tight
+  PASS hero: a shield break flares the shemagh loose
+  PASS hero: a near miss starts the comic reaction
+  PASS hero: the near-miss reaction is short
+  PASS hero: the ART model gets the red-and-white shemagh, warm thobe and rim material
+  PASS hero: a warm key and a cool rim light that light only him (layer 2)
+  PASS materials: obstacles read sRGB vertex colours, the solid one self-lights, warning marks are unshaded
+  PASS materials: obstacle art uses the shared readable material
+  PASS camera: at 0.46 the hero and his case keep a 7 % screen-width margin in every lane (worst 0.15 of half width)
+  PASS camera: at 0.56 the hero and his case keep a 8 % screen-width margin in every lane (worst 0.16 of half width)
+  PASS camera: at 0.75 the hero and his case keep a 10 % screen-width margin in every lane (worst 0.21 of half width)
+  PASS weather: only Taif (W05) has rain and mist
+  PASS weather: L01 dry, L03 and L04 light rain
+  PASS weather: only L06 has the parting finale
+  PASS weather: the view stays closed before 75 % and is fully open at the end
+  PASS weather: the finale opening only ever increases
+  PASS ceremony: starts after 80 % of the track, complete at the finish
+  PASS relief: swells in about a second then settles
+  PASS weather: fog is never denser than the world's own inside any obstacle's notice window, all six Taif stages (32407 samples, worst +0.000000)
+  PASS weather: mist banks exist in the clear stretches (346 metres over the six stages)
+  PASS weather: no extra mist inside the notice window, mist allowed in a long clear stretch
+  PASS weather: L06 fog parts at the end (0.0022) and is untouched before the last quarter
+  PASS weather: rain streaks high 63, low 28, reduced motion 31 (fewer on low and reduced)
+  PASS weather: the centre cone of the view stays nearly dry (10 of 90 drops inside)
+  PASS weather: W01-L03 has no weather and no finale effects
+  PASS weather: through the view, the Environment fog inside a notice window is never above the world's (0.000000)
+  PASS finale W09-L06: biggest per-frame light change 0.00439 (<= 0.01, no flash), peak lift 0.340
+  PASS finale W09-L06 (reduced): biggest per-frame light change 0.00263 (<= 0.01, no flash), peak lift 0.263
+  PASS finale W06-L06: biggest per-frame light change 0.00307 (<= 0.01, no flash), peak lift 0.135
+  PASS finale W06-L06 (reduced): biggest per-frame light change 0.00184 (<= 0.01, no flash), peak lift 0.081
+  PASS finale W01-L06: biggest per-frame light change 0.00439 (<= 0.01, no flash), peak lift 0.228
+  PASS finale W01-L06 (reduced): biggest per-frame light change 0.00263 (<= 0.01, no flash), peak lift 0.151
+  PASS finale W05-L06: biggest per-frame light change 0.00439 (<= 0.01, no flash), peak lift 0.280
+  PASS finale W05-L06 (reduced): biggest per-frame light change 0.00263 (<= 0.01, no flash), peak lift 0.203
+  PASS finale: luminance proxy over ceremony and relief never jumps more than 0.01 per frame (0.00439)
+  PASS finale: Makkah W06-L06 has the warm light lift only (no sparkle, no ceremony)
+  PASS finale: NEOM W09-L06 has the ceremony and the relief
+  PASS finale: W09-L05 has neither (L06 only)
+  PASS feedback sound: all 28 obstacles name sounds and every cue exists in the register ()
+  PASS feedback sound: soft, metal and wood collision classes are all used
+  PASS feedback sound: a hit still ends with the failure accent (outside Makkah)
+  PASS feedback sound: drift thud, vehicle clang and timber knock use different cues
+  PASS feedback sound: the finish plays the case latch
+  PASS feedback sound: magnet pulls are rate capped (1 in a burst)
+  PASS feedback sound: the next pull sounds after the gap
+  PASS feedback sound: every dynamic telegraph (bus, gate, rock, cart, traffic) starts with the warning (5)
+  PASS feedback sound: bus and traffic passes play their cues
+  PASS feedback sound: gate cycles are heard
+  PASS feedback sound: the rockfall rumbles at the ring and lands with an impact
+  PASS feedback sound: warnings, passes and the rock cues play once per run (no repeats on a second pass)
+  PASS feedback sound: the hazard watch is read only
+  PASS makkah: the failure sound is the neutral stop, never the comic boing
+  PASS makkah: no clang on the impact (a soft thud only)
+  PASS makkah: no gag (the shemagh stays on)
+  PASS feedback gags: ping, face-plant, bounce and the classic fly-off (["ping", "faceplant", "bounce", "flyoff"])
+  PASS feedback gags: an arch hit sends the shemagh up (it pings back)
+  PASS feedback gags: the shemagh is back on his head after the ping
+  PASS feedback gags: the sand drift face-plants him into the sand
+  PASS feedback gags: a retry clears the gag
+  PASS feedback fail: every obstacle family has a cause and a verb in English and Arabic ()
+  PASS feedback fail: the arch teaches 'Slide under the arch'
+  PASS feedback near miss: the pop has English and Arabic text
+  PASS feedback near miss: a full run with the detector is identical to one without (same Qoroosh 87, same ticks)
+  PASS feedback near miss: capped at once per 2 s
+  PASS feedback near miss: the whoosh plays once per 2 s
+  PASS feedback near miss: the sound is never the Qoroosh chime
+  PASS feedback near miss: the detector never touches a wallet or the pickups
+  PASS feedback variety: the 7 overhead obstacles have 7 different silhouettes
+  PASS feedback variety: the 4 low barriers differ
+  PASS feedback variety: the Qiddiya gate and the NEOM gate differ
+  PASS feedback variety: the rose cart and the market cart differ
+  PASS feedback variety: the canopy's collider is still the plain overhead box
+  PASS feedback variety: the stand-in rose cart has 4 turning wheels and petals, the market cart a flapping awning
+  PASS feedback variety: the wheels turn and the awning flaps
+  PASS feedback variety: reduced motion keeps the props still
+  PASS feedback variety: the built rose cart, market cart and NEOM gate each have a small own motion
+  PASS feedback variety: the petals drift
+  PASS feedback telegraph: wet patch OBS-14 is blue and silver with ripples, no red
+  PASS feedback telegraph: wet patch OBS-21 is blue and silver with ripples, no red
+  PASS feedback telegraph: the rockfall ring has a dark under-shadow and a countdown fill
+  PASS feedback telegraph: the countdown fill grows towards the impact (0.14 -> 0.98)
+  PASS feedback telegraph: the ring stays inside its lane (2.40 m wide)
+  PASS feedback telegraph: the cart arrows are solid (they do not blink)
+  PASS feedback telegraph: the drift's top edge is its brightest part (0.95)
+  PASS feedback upgrades: the falcon wears one gold band per magnet rank (24 -> 72 vertices)
+  PASS feedback upgrades: a higher magnet rank flies a wider, faster loop
+  PASS feedback upgrades: shield rank 2 shows a second shemagh ring and a brighter outline
+  PASS feedback upgrades: the HUD ring knows the effect's full duration (one tick per second)
+  PASS feedback upgrades: boost rank lengthens the HUD ring (360 > 180 ticks)
+  PASS feedback fail: the big free Retry button comes first in the panel
+  PASS feedback fail: the panel shows the cause and the verb of what he hit
+  PASS feedback fail: the panel is anchored to the bottom (below Saddah)
+  PASS feedback near miss: the pop shows and is capped at once per 2 s
+  PASS controls: with the buttons on, every tutorial tip says Tap, in English and Arabic ()
+  PASS controls: a first swipe fires
+  PASS controls: a swipe up still fires after a press was lost (no stuck touch)
+  PASS controls: still one action per gesture
+  PASS controls: touches that began on a button stay ignored
+  PASS controls: clear forgets every touch
+  PASS controls: released touches are forgotten
+  PASS v03 forgiveness: a jump pressed 0.15 s before landing jumps again on landing (TUN-06 0.16 s)
+  PASS v03 forgiveness: the same press was dropped by v0.2 (0.12 s buffer)
+  PASS v03 forgiveness: a slide pressed 0.1 s before touchdown starts on the landing tick (TUN-19)
+  PASS v03 forgiveness: a slide pressed early in the jump is still ignored (no auto-play)
+  PASS v03 forgiveness: coyote 0.08 s at a ledge gap (pressed 2.5 ticks past the edge, cleared)
+  PASS v03 forgiveness: no coyote beyond 0.08 s (7 ticks late falls)
+  PASS v03 forgiveness: never coyote over a retracted deck (OBS-27)
+  PASS v03 forgiveness: a reverse swipe 3 ticks into a lane change cancels it (peak 0.37 m, back in the middle)
+  PASS v03 forgiveness: after 0.08 s the reverse swipe queues as before (two lane moves)
+  PASS v03 forgiveness: Assist jump lasts 47 ticks (~47) with the same apex 2.10 m
+  PASS v03 D-1 step-up: 5 early presses land on the drift's top near its front edge and run on (v0.2 failed 32 of the 32 presses swept)
+  PASS v03 D-1 step-up rule TUN-27 = 0.25 m
+  PASS v03 soft expiry: the shield ends at 73.6 m, not inside the second before the hazard at 71.1 m
+  PASS v03 contract 4: pu_full.shield = 8.0 s
+  PASS v03 contract 6: a pickup event is emitted
+  PASS v03 curve: speed follows speed_profile (8.80 m/s at 250 m) and the hazard clock stays progress / stage speed
+  PASS v03 NO-AUTOPLAY: idle runs on the 4 M1 stages make 0 actions
+  PASS v03 NO-AUTOPLAY: replays act exactly on their presses (74 actions, 74 presses)
+  PASS v03 probe: lanes read as ints (1.0 finds the middle lane)
+  PASS v03 replay: W01-L03, one input log at 60/30/20 fps with and without 50 ms hitches gives the identical outcome (1|5038|100|0|d4e3ec1998a)
+  PASS v03 replay: W03-L02, one input log at 60/30/20 fps with and without 50 ms hitches gives the identical outcome (1|1377|40|0|644560fb2ecf)
+  PASS v03 stages: W01-L01 carries the stage file v3 fields (contract 1)
+  PASS v03 stages: W01-L01 validator v3 0 errors at base and Assist {"forced_inputs":16,"max_rate_pct_s":2.83,"min_input_gap_s":2.5,"min_pu_expiry_s":-1.0,"min_seq_window_s":-1.0,"min_window_s":0.48,"peak_pct":6.0,"required_verbs":7,"seq_pairs":0} (1 s) []
+  PASS v03 stages: W01-L01 the bot clears it on the intended route (70/86 Qoroosh)
+  PASS v03 stages: W01-L01 also clears with Assist timing
+  PASS v03 readability: W01-L01 every hazard >= 24 px at its warning distance at the current speed, all aspects, all lanes (worst 34 px, contrast 6.43, 360 checks) []
+  PASS v03 pacing: W01-L01 required-idle share 19 % <= 35 % (decision-idle 19 %)
+  PASS v03 pacing: W01-L01 required inputs/10 s 2.94 in the W01 band 2.4-3.0
+  PASS v03 pacing: W01-L01 no stretch > 4 s without a decision outside the vista beats (longest 3.5 s)
+  PASS v03 stages: W01-L01 coins and length match the revised matrix row (RR-03)
+  PASS v03 stages: W01-L02 carries the stage file v3 fields (contract 1)
+  PASS v03 stages: W01-L02 validator v3 0 errors at base and Assist {"forced_inputs":18,"max_rate_pct_s":2.84,"min_input_gap_s":2.4,"min_pu_expiry_s":-1.0,"min_seq_window_s":-1.0,"min_window_s":0.75,"peak_pct":8.0,"required_verbs":10,"seq_pairs":0} (2 s) []
+  PASS v03 stages: W01-L02 the bot clears it on the intended route (87/96 Qoroosh)
+  PASS v03 stages: W01-L02 also clears with Assist timing
+  PASS v03 readability: W01-L02 every hazard >= 24 px at its warning distance at the current speed, all aspects, all lanes (worst 91 px, contrast 6.43, 351 checks) []
+  PASS v03 pacing: W01-L02 required-idle share 26 % <= 35 % (decision-idle 11 %)
+  PASS v03 pacing: W01-L02 required inputs/10 s 2.77 in the W01 band 2.4-3.0
+  PASS v03 pacing: W01-L02 no stretch > 4 s without a decision outside the vista beats (longest 3.6 s)
+  PASS v03 stages: W01-L02 coins and length match the revised matrix row (RR-03)
+  PASS v03 stages: W01-L03 carries the stage file v3 fields (contract 1)
+  PASS v03 stages: W01-L03 validator v3 0 errors at base and Assist {"forced_inputs":22,"max_rate_pct_s":2.82,"min_input_gap_s":0.8,"min_pu_expiry_s":-1.0,"min_seq_window_s":-1.0,"min_window_s":0.48,"peak_pct":9.9,"required_verbs":9,"seq_pairs":0} (2 s) []
+  PASS v03 stages: W01-L03 the bot clears it on the intended route (100/110 Qoroosh)
+  PASS v03 stages: W01-L03 also clears with Assist timing
+  PASS v03 readability: W01-L03 every hazard >= 24 px at its warning distance at the current speed, all aspects, all lanes (worst 32 px, contrast 6.43, 450 checks) []
+  PASS v03 pacing: W01-L03 required-idle share 33 % <= 35 % (decision-idle 16 %)
+  PASS v03 pacing: W01-L03 required inputs/10 s 2.85 in the W01 band 2.4-3.0
+  PASS v03 pacing: W01-L03 no stretch > 4 s without a decision outside the vista beats (longest 3.9 s)
+  PASS v03 stages: W01-L03 coins and length match the revised matrix row (RR-03)
+  PASS v03 stages: W03-L02 slice carries the stage file v3 fields (contract 1)
+  PASS v03 stages: W03-L02 slice validator v3 0 errors at base and Assist {"forced_inputs":10,"max_rate_pct_s":2.83,"min_input_gap_s":0.8,"min_pu_expiry_s":-1.0,"min_seq_window_s":-1.0,"min_window_s":-1.0,"peak_pct":7.0,"required_verbs":0,"seq_pairs":0} (0 s) []
+  PASS v03 stages: W03-L02 slice the bot clears it on the intended route (40/40 Qoroosh)
+  PASS v03 stages: W03-L02 slice also clears with Assist timing
+  PASS v03 readability: W03-L02 slice every hazard >= 24 px at its warning distance at the current speed, all aspects, all lanes (worst 124 px, contrast 3.29, 153 checks) []
+  PASS v03 stages: W01-L03 teaches the falcon magnet (falcon_trail flag), climax CL-05, finish prop well_house
+  PASS v03 D-2: 120 s swipe fuzz, 149 swipes in all four directions (35 on reused touch ids with a lost release), 0 drops, 0 wrong (L25 R40 U39 D45)
+  PASS v03 D-2: 120 swipe-ups across a 140 s run give 120 jumps (re-arm holds)
+  PASS v03 D-5: every tutorial/hint key (4) has a Buttons-mode twin that never says Swipe (EN/AR)
+  PASS v03 RR-05: first clear 60 + 10 x (world - 1) (W01 60, W03 80, W09 140)
+  PASS v03 RR-05: catalogue order from progression.py (Coastal Sneaker 250 first, then the falcon magnet after W01-L03)
+  PASS v03 RR-05: magnet ranks 250 / 550 / 900
+  PASS v03 RR-09: W01-L03 star 3 = every Qoroosh of the middle line between the trucks (10)
+  PASS v03 RR-09: a Try-the-finale run never earns star 3
+  PASS v03 RR-09: W01-L02 star 3 = no lane change through the camp gate
+  PASS v03 contract 2: settlement rows carry star_keys, next_goal ({"item_id":"SKIN-02","name_key":"ui.skin.SKIN-02","offered":false,"price":250,"rank":0,"unlock_after":"W01-L01","wallet":180}), next_stage, keepsake; no ad row
+  PASS v03 RR-09: star 3 follows the run's challenge result; best stars never go down
+  PASS v03 RR-05: the magnet is offered after W01-L03, the shield waits for W01-L05
+  PASS v03 settlement: exactly once per run (wallet +160 once, the repeat returns the same rows)
+  PASS v03 G-10: no assist branch in settlement
+  PASS v03 finale: not offered while running
+  PASS v03 finale: a failure inside the climax offers Try the finale (fail at 574.4 m, climax 569.4-650.7 m)
+  PASS v03 finale: try_finale() restarts just before climax.d0 (548.6 m)
+  PASS v03 finale: the finale run counts as a finish (completion, first clear) but never star 3
+  PASS v03 arrival: W01-L03 reveal -> raise; Makkah world never raises the case
+  PASS v03 finale: hud.finale_pressed is wired when the HUD has it (has_signal guard)
+  PASS v03 camera: calm framing (what the run view reads) at 9:19.5 puts Saddah at 28.8 % of the screen height (>= 22 %), hero box 0.15 inside the safe area in every lane
+  PASS v03 camera: at 9:19.5 the framing eases back toward the look-ahead as speed rises (28.8 % -> 21.1 %, never closer), lateral follow 60-90 % (0.85, 0.80; 60-70 % where the screen allows)
+  PASS v03 camera: calm framing (what the run view reads) at 9:16 puts Saddah at 28.8 % of the screen height (>= 22 %), hero box 0.16 inside the safe area in every lane
+  PASS v03 camera: at 9:16 the framing eases back toward the look-ahead as speed rises (28.8 % -> 21.6 %, never closer), lateral follow 60-90 % (0.75, 0.90; 60-70 % where the screen allows)
+  PASS v03 camera: calm framing (what the run view reads) at 3:4 puts Saddah at 28.8 % of the screen height (>= 22 %), hero box 0.21 inside the safe area in every lane
+  PASS v03 camera: at 3:4 the framing eases back toward the look-ahead as speed rises (28.8 % -> 21.6 %, never closer), lateral follow 60-90 % (0.60, 0.90; 60-70 % where the screen allows)
+  PASS v03 P2: 51 generator-3 stages beyond M1 pass validator v3 (base + Assist), pacing in their world band, readability and the matrix row []
+  PASS v03 P2: 54 levels in the matrix register
+  PASS v03 P2: all 54 stage files carry the v3 fields (matrix_id, name_key, climax, ending, finish_prop, star3, vista, speed_profile, world_event) []
+  PASS v03 P2: climax block on 54/54: a library pattern, 8-15 s, then >= 3 s of safe finish []
+  PASS v03 P2: no new input in a climax (54/54) []
+  PASS v03 P2: 54 distinct finish_prop ids []
+  PASS v03 P2: ending types are one of the five and <= 2 of a kind per world []
+  PASS v03 P2: keepsake on the 9 L06 stages (KEEP-01..09), nowhere else []
+  PASS v03 P2: W09-L06 lights the nine pavilions with the keepsakes
+  PASS v03 P2: W06 stage ids and titles carry no Kaaba / Haram / clock tower / mosque / minaret / pilgrim / skyline word []
+  PASS v03 P2: every third star is met by the intended route (54/54) []
+  PASS v03 P2: stage name, star 3 text and route from/to exist in EN and AR for 54/54 []
+  PASS v03 P2: no dev-only fact string in any loc table (82 fact phrases checked) []
+  PASS v03 save: fresh schema-2 save migrates to 3 with nothing lost (wallet 0, 0 keepsakes, settings kept)
+  PASS v03 save: mid schema-2 save migrates to 3 with nothing lost (wallet 840, 2 keepsakes, settings kept)
+  PASS v03 save: completed schema-2 save migrates to 3 with nothing lost (wallet 3120, 9 keepsakes, settings kept)
+  PASS v03 save: rich schema-2 save migrates to 3 with nothing lost (wallet 15000, 5 keepsakes, settings kept)
+  PASS v03 save: migration is idempotent (reloading a schema-3 save keeps it as is)
+  PASS v03 save: a corrupt primary is never overwritten; restoring the good schema-2 backup migrates it (wallet 3120, 9 keepsakes)
+  PASS v03 save: a write that fails mid-settlement leaves the wallet exactly as it was (15000)
+  PASS v03kit: a straight test track runs along Z with x lateral
+  PASS v03kit: W01-L01 chunks build road, ground, props, GLB instances (76) and contact shadows (107), 8946 tris
+  PASS v03kit: W01-L01 nothing taller than a flat drift inside |x| < 5.3 m (road + shoulder) (max 0.07 m)
+  PASS v03kit: W01-L01 GLB modules stand beyond 6.3 m from the centre (closest 6.80 m)
+  PASS v03kit: W01-L01 contact shadows never spill onto the shoulder (closest inner edge 5.30 m)
+  PASS v03kit: W01-L01 chunk triangle budget (2236 per 40 m chunk, limit 14k)
+  PASS v03kit: W01-L02 chunks build road, ground, props, GLB instances (70) and contact shadows (118), 9498 tris
+  PASS v03kit: W01-L02 nothing taller than a flat drift inside |x| < 5.3 m (road + shoulder) (max 0.07 m)
+  PASS v03kit: W01-L02 GLB modules stand beyond 6.3 m from the centre (closest 7.03 m)
+  PASS v03kit: W01-L02 contact shadows never spill onto the shoulder (closest inner edge 5.30 m)
+  PASS v03kit: W01-L02 chunk triangle budget (2374 per 40 m chunk, limit 14k)
+  PASS v03kit: W01-L03 chunks build road, ground, props, GLB instances (74) and contact shadows (122), 8984 tris
+  PASS v03kit: W01-L03 nothing taller than a flat drift inside |x| < 5.3 m (road + shoulder) (max 0.07 m)
+  PASS v03kit: W01-L03 GLB modules stand beyond 6.3 m from the centre (closest 6.93 m)
+  PASS v03kit: W01-L03 contact shadows never spill onto the shoulder (closest inner edge 5.30 m)
+  PASS v03kit: W01-L03 chunk triangle budget (2246 per 40 m chunk, limit 14k)
+  PASS v03kit: L01 red sand, L02 pale gravel, L03 wadi gravel use different ground
+  PASS v03kit: W01-L01 beat rules hold over 220 beats (no repeats, a quiet beat in every 4, hero spacing, never two tall flanks)
+  PASS v03kit: W01-L02 beat rules hold over 220 beats (no repeats, a quiet beat in every 4, hero spacing, never two tall flanks)
+  PASS v03kit: W01-L03 beat rules hold over 220 beats (no repeats, a quiet beat in every 4, hero spacing, never two tall flanks)
+  PASS v03kit: W01-L05 beat rules hold over 220 beats (no repeats, a quiet beat in every 4, hero spacing, never two tall flanks)
+  PASS v03kit: stage decks differ (the well on L03, winter-camp frames on L02)
+  PASS v03kit: the near-flank slot and local trees are in the decks
+  PASS v03kit: the shoulder is on the ground texture and clearly lighter than the lanes (+0.38 luminance)
+  PASS v03kit: W01 hero-module budget <= 6 (6)
+  PASS v03kit: W01 fog stays light at the warning distance (16 % at 45 m)
+  PASS v03kit: W01 sky is warm blue to gold (no pink mid band)
+  PASS v03kit: the W01 far card and sand texture exist
+  PASS v03kit: the first skyline hint shows on W01-L06 only
+  PASS v03kit: L01 morning, L02 midday, L03 golden light are different
+  PASS v03kit: L02 ground is pale grey-beige gravel (sat 0.23, lum 0.81)
+  PASS v03kit: every W01 GLB module loads (4/4)
+  PASS v03kit: big rocks have a far LOD (>= 2x fewer, no shards: 2400 -> 1200 tris)
+  PASS v03kit: contact shadows are soft and capped at ~40 % (never a hole)
+  PASS v03kit: finish prop cairn builds (503 vertices)
+  PASS v03kit: finish prop cairn leaves all three lanes clear where Saddah runs out (closest solid 0.3-3 m high within 6 m of the line at |x| = 99.00 m)
+  PASS v03kit: cairn plays its arrival payoff and sends one cue (["horn"])
+  PASS v03kit: cairn payoff ends within 2.0 s
+  PASS v03kit: finish prop camp_gate builds (1762 vertices)
+  PASS v03kit: finish prop camp_gate leaves all three lanes clear where Saddah runs out (closest solid 0.3-3 m high within 6 m of the line at |x| = 99.00 m)
+  PASS v03kit: camp_gate plays its arrival payoff and sends one cue (["gust"])
+  PASS v03kit: camp_gate payoff ends within 2.0 s
+  PASS v03kit: finish prop well_house builds (9590 vertices)
+  PASS v03kit: finish prop well_house leaves all three lanes clear where Saddah runs out (closest solid 0.3-3 m high within 6 m of the line at |x| = 99.00 m)
+  PASS v03kit: well_house plays its arrival payoff and sends one cue (["windpump"])
+  PASS v03kit: well_house payoff ends within 2.0 s
+  PASS v03kit: the windpump spins up on arrival (5.5 rad/s)
+  PASS v03kit: skip jumps to the end; reduced motion keeps the windpump calm (1.9 rad/s)
+  PASS v03kit: a stage without finish_prop keeps its world's finish arch
+  PASS v03kit: a finish_prop not built yet falls back to the arch
+  PASS v03kit: W01-L03 finish_prop well_house builds the well house
+  PASS v03kitp2: W06 kit script loads
+  PASS v03kitp2: W06 hero-module budget <= 6 (6)
+  PASS v03kitp2: W06-L01 chunks build road, ground and props (11672 tris over 8 chunks)
+  PASS v03kitp2: W06-L01 chunk triangle budget (1459 per 40 m chunk, limit 18k)
+  PASS v03kitp2: W06-L01 nothing taller than a flat drift inside |x| < 4.9 m, the lanes and their margin (max 0.00 m)
+  PASS v03kitp2: W06-L01 GLB modules stand beyond 6.3 m from the centre (closest 6.83 m)
+  PASS v03kitp2: W06-L01 contact shadows never spill onto the shoulder (closest inner edge 5.30 m)
+  PASS v03kitp2: W06-L02 chunks build road, ground and props (11348 tris over 8 chunks)
+  PASS v03kitp2: W06-L02 chunk triangle budget (1418 per 40 m chunk, limit 18k)
+  PASS v03kitp2: W06-L02 nothing taller than a flat drift inside |x| < 4.9 m, the lanes and their margin (max 0.00 m)
+  PASS v03kitp2: W06-L02 GLB modules stand beyond 6.3 m from the centre (closest 6.83 m)
+  PASS v03kitp2: W06-L02 contact shadows never spill onto the shoulder (closest inner edge 5.30 m)
+  PASS v03kitp2: W06-L03 chunks build road, ground and props (18646 tris over 8 chunks)
+  PASS v03kitp2: W06-L03 chunk triangle budget (2330 per 40 m chunk, limit 18k)
+  PASS v03kitp2: W06-L03 nothing taller than a flat drift inside |x| < 4.9 m, the lanes and their margin (max 0.00 m)
+  PASS v03kitp2: W06-L03 GLB modules stand beyond 6.3 m from the centre (closest 6.87 m)
+  PASS v03kitp2: W06-L03 contact shadows never spill onto the shoulder (closest inner edge 5.30 m)
+  PASS v03kitp2: W06-L04 chunks build road, ground and props (17256 tris over 8 chunks)
+  PASS v03kitp2: W06-L04 chunk triangle budget (2157 per 40 m chunk, limit 18k)
+  PASS v03kitp2: W06-L04 nothing taller than a flat drift inside |x| < 4.9 m, the lanes and their margin (max 7.47 m)
+  PASS v03kitp2: W06-L04 GLB modules stand beyond 6.3 m from the centre (closest 8.29 m)
+  PASS v03kitp2: W06-L04 contact shadows never spill onto the shoulder (closest inner edge 6.30 m)
+  PASS v03kitp2: W06-L05 chunks build road, ground and props (12600 tris over 8 chunks)
+  PASS v03kitp2: W06-L05 chunk triangle budget (1575 per 40 m chunk, limit 18k)
+  PASS v03kitp2: W06-L05 nothing taller than a flat drift inside |x| < 4.9 m, the lanes and their margin (max 0.00 m)
+  PASS v03kitp2: W06-L05 GLB modules stand beyond 6.3 m from the centre (closest 6.80 m)
+  PASS v03kitp2: W06-L05 contact shadows never spill onto the shoulder (closest inner edge 5.30 m)
+  PASS v03kitp2: W06-L06 chunks build road, ground and props (11616 tris over 8 chunks)
+  PASS v03kitp2: W06-L06 chunk triangle budget (1452 per 40 m chunk, limit 18k)
+  PASS v03kitp2: W06-L06 nothing taller than a flat drift inside |x| < 4.9 m, the lanes and their margin (max 0.00 m)
+  PASS v03kitp2: W06-L06 GLB modules stand beyond 6.3 m from the centre (closest 6.63 m)
+  PASS v03kitp2: W06-L06 contact shadows never spill onto the shoulder (closest inner edge 5.30 m)
+  PASS v03kitp2: W06 stages look different (6 distinct ground+light signatures of 6)
+  PASS v03kitp2: every W06 GLB module loads (4/4)
+  PASS v03kitp2: W06 big modules have a far LOD (>= 2x fewer triangles, no shards)
+  PASS v03kitp2: W06 far card and ground texture exist
+  PASS v03kitp2: W06 fog stays light at the warning distance (18 % at 45 m)
+  PASS v03kitp2: every W06 stage far card exists
+  PASS v03kitp2: W06 texture set measured in the recording notes (PERFSUM)
+  PASS v03kitp2: W07 kit script loads
+  PASS v03kitp2: W07 hero-module budget <= 6 (6)
+  PASS v03kitp2: W07-L01 chunks build road, ground and props (8626 tris over 8 chunks)
+  PASS v03kitp2: W07-L01 chunk triangle budget (1078 per 40 m chunk, limit 18k)
+  PASS v03kitp2: W07-L01 nothing taller than a flat drift inside |x| < 4.9 m, the lanes and their margin (max 0.00 m)
+  PASS v03kitp2: W07-L01 GLB modules stand beyond 6.3 m from the centre (closest 6.65 m)
+  PASS v03kitp2: W07-L01 contact shadows never spill onto the shoulder (closest inner edge 5.30 m)
+  PASS v03kitp2: W07-L02 chunks build road, ground and props (10178 tris over 8 chunks)
+  PASS v03kitp2: W07-L02 chunk triangle budget (1272 per 40 m chunk, limit 18k)
+  PASS v03kitp2: W07-L02 nothing taller than a flat drift inside |x| < 4.9 m, the lanes and their margin (max 0.00 m)
+  PASS v03kitp2: W07-L02 GLB modules stand beyond 6.3 m from the centre (closest 6.65 m)
+  PASS v03kitp2: W07-L02 contact shadows never spill onto the shoulder (closest inner edge 5.30 m)
+  PASS v03kitp2: W07-L03 chunks build road, ground and props (10750 tris over 8 chunks)
+  PASS v03kitp2: W07-L03 chunk triangle budget (1343 per 40 m chunk, limit 18k)
+  PASS v03kitp2: W07-L03 nothing taller than a flat drift inside |x| < 4.9 m, the lanes and their margin (max 0.00 m)
+  PASS v03kitp2: W07-L03 GLB modules stand beyond 6.3 m from the centre (closest 6.65 m)
+  PASS v03kitp2: W07-L03 contact shadows never spill onto the shoulder (closest inner edge 5.30 m)
+  PASS v03kitp2: W07-L04 chunks build road, ground and props (17398 tris over 8 chunks)
+  PASS v03kitp2: W07-L04 chunk triangle budget (2174 per 40 m chunk, limit 18k)
+  PASS v03kitp2: W07-L04 nothing taller than a flat drift inside |x| < 4.9 m, the lanes and their margin (max 0.00 m)
+  PASS v03kitp2: W07-L04 GLB modules stand beyond 6.3 m from the centre (closest 6.90 m)
+  PASS v03kitp2: W07-L04 contact shadows never spill onto the shoulder (closest inner edge 5.30 m)
+  PASS v03kitp2: W07-L05 chunks build road, ground and props (13006 tris over 8 chunks)
+  PASS v03kitp2: W07-L05 chunk triangle budget (1625 per 40 m chunk, limit 18k)
+  PASS v03kitp2: W07-L05 nothing taller than a flat drift inside |x| < 4.9 m, the lanes and their margin (max 0.00 m)
+  PASS v03kitp2: W07-L05 GLB modules stand beyond 6.3 m from the centre (closest 6.90 m)
+  PASS v03kitp2: W07-L05 contact shadows never spill onto the shoulder (closest inner edge 5.30 m)
+  PASS v03kitp2: W07-L06 chunks build road, ground and props (11190 tris over 8 chunks)
+  PASS v03kitp2: W07-L06 chunk triangle budget (1398 per 40 m chunk, limit 18k)
+  PASS v03kitp2: W07-L06 nothing taller than a flat drift inside |x| < 4.9 m, the lanes and their margin (max 0.00 m)
+  PASS v03kitp2: W07-L06 GLB modules stand beyond 6.3 m from the centre (closest 7.40 m)
+  PASS v03kitp2: W07-L06 contact shadows never spill onto the shoulder (closest inner edge 5.30 m)
+  PASS v03kitp2: W07 stages look different (6 distinct ground+light signatures of 6)
+  PASS v03kitp2: every W07 GLB module loads (5/5)
+  PASS v03kitp2: W07 big modules have a far LOD (>= 2x fewer triangles, no shards)
+  PASS v03kitp2: W07 far card and ground texture exist
+  PASS v03kitp2: W07 fog stays light at the warning distance (17 % at 45 m)
+  PASS v03kitp2: every W07 stage far card exists
+  PASS v03kitp2: W07 texture set measured in the recording notes (PERFSUM)
+  PASS v03kitp2: W08 kit script loads
+  PASS v03kitp2: W08 hero-module budget <= 6 (6)
+  PASS v03kitp2: W08-L01 chunks build road, ground and props (11486 tris over 8 chunks)
+  PASS v03kitp2: W08-L01 chunk triangle budget (1435 per 40 m chunk, limit 18k)
+  PASS v03kitp2: W08-L01 nothing taller than a flat drift inside |x| < 4.9 m, the lanes and their margin (max 0.00 m)
+  PASS v03kitp2: W08-L01 GLB modules stand beyond 6.3 m from the centre (closest 6.66 m)
+  PASS v03kitp2: W08-L01 contact shadows never spill onto the shoulder (closest inner edge 5.30 m)
+  PASS v03kitp2: W08-L02 chunks build road, ground and props (19332 tris over 8 chunks)
+  PASS v03kitp2: W08-L02 chunk triangle budget (2416 per 40 m chunk, limit 18k)
+  PASS v03kitp2: W08-L02 nothing taller than a flat drift inside |x| < 4.9 m, the lanes and their margin (max 0.00 m)
+  PASS v03kitp2: W08-L02 GLB modules stand beyond 6.3 m from the centre (closest 6.54 m)
+  PASS v03kitp2: W08-L02 contact shadows never spill onto the shoulder (closest inner edge 5.30 m)
+  PASS v03kitp2: W08-L03 chunks build road, ground and props (18568 tris over 8 chunks)
+  PASS v03kitp2: W08-L03 chunk triangle budget (2321 per 40 m chunk, limit 18k)
+  PASS v03kitp2: W08-L03 nothing taller than a flat drift inside |x| < 4.9 m, the lanes and their margin (max 0.00 m)
+  PASS v03kitp2: W08-L03 GLB modules stand beyond 6.3 m from the centre (closest 6.63 m)
+  PASS v03kitp2: W08-L03 contact shadows never spill onto the shoulder (closest inner edge 5.30 m)
+  PASS v03kitp2: W08-L04 chunks build road, ground and props (16870 tris over 8 chunks)
+  PASS v03kitp2: W08-L04 chunk triangle budget (2108 per 40 m chunk, limit 18k)
+  PASS v03kitp2: W08-L04 nothing taller than a flat drift inside |x| < 4.9 m, the lanes and their margin (max 0.00 m)
+  PASS v03kitp2: W08-L04 GLB modules stand beyond 6.3 m from the centre (closest 6.67 m)
+  PASS v03kitp2: W08-L04 contact shadows never spill onto the shoulder (closest inner edge 5.30 m)
+  PASS v03kitp2: W08-L05 chunks build road, ground and props (10274 tris over 8 chunks)
+  PASS v03kitp2: W08-L05 chunk triangle budget (1284 per 40 m chunk, limit 18k)
+  PASS v03kitp2: W08-L05 nothing taller than a flat drift inside |x| < 4.9 m, the lanes and their margin (max 0.00 m)
+  PASS v03kitp2: W08-L05 GLB modules stand beyond 6.3 m from the centre (closest 6.62 m)
+  PASS v03kitp2: W08-L05 contact shadows never spill onto the shoulder (closest inner edge 5.30 m)
+  PASS v03kitp2: W08-L06 chunks build road, ground and props (18036 tris over 8 chunks)
+  PASS v03kitp2: W08-L06 chunk triangle budget (2254 per 40 m chunk, limit 18k)
+  PASS v03kitp2: W08-L06 nothing taller than a flat drift inside |x| < 4.9 m, the lanes and their margin (max 0.00 m)
+  PASS v03kitp2: W08-L06 GLB modules stand beyond 6.3 m from the centre (closest 6.51 m)
+  PASS v03kitp2: W08-L06 contact shadows never spill onto the shoulder (closest inner edge 5.30 m)
+  PASS v03kitp2: W08 stages look different (6 distinct ground+light signatures of 6)
+  PASS v03kitp2: every W08 GLB module loads (8/8)
+  PASS v03kitp2: W08 big modules have a far LOD (>= 2x fewer triangles, no shards)
+  PASS v03kitp2: W08 far card and ground texture exist
+  PASS v03kitp2: W08 fog stays light at the warning distance (20 % at 45 m)
+  PASS v03kitp2: every W08 stage far card exists
+  PASS v03kitp2: W08 texture set measured in the recording notes (PERFSUM)
+  PASS v03kitp2: W09 kit script loads
+  PASS v03kitp2: W09 hero-module budget <= 6 (6)
+  PASS v03kitp2: W09-L01 chunks build road, ground and props (9112 tris over 8 chunks)
+  PASS v03kitp2: W09-L01 chunk triangle budget (1139 per 40 m chunk, limit 18k)
+  PASS v03kitp2: W09-L01 nothing taller than a flat drift inside |x| < 4.9 m, the lanes and their margin (max 0.03 m)
+  PASS v03kitp2: W09-L01 GLB modules stand beyond 6.3 m from the centre (closest 6.61 m)
+  PASS v03kitp2: W09-L01 contact shadows never spill onto the shoulder (closest inner edge 5.30 m)
+  PASS v03kitp2: W09-L02 chunks build road, ground and props (9162 tris over 8 chunks)
+  PASS v03kitp2: W09-L02 chunk triangle budget (1145 per 40 m chunk, limit 18k)
+  PASS v03kitp2: W09-L02 nothing taller than a flat drift inside |x| < 4.9 m, the lanes and their margin (max 0.03 m)
+  PASS v03kitp2: W09-L02 GLB modules stand beyond 6.3 m from the centre (closest 7.31 m)
+  PASS v03kitp2: W09-L02 contact shadows never spill onto the shoulder (closest inner edge 5.30 m)
+  PASS v03kitp2: W09-L03 chunks build road, ground and props (8298 tris over 8 chunks)
+  PASS v03kitp2: W09-L03 chunk triangle budget (1037 per 40 m chunk, limit 18k)
+  PASS v03kitp2: W09-L03 nothing taller than a flat drift inside |x| < 4.9 m, the lanes and their margin (max 0.00 m)
+  PASS v03kitp2: W09-L03 GLB modules stand beyond 6.3 m from the centre (closest 6.64 m)
+  PASS v03kitp2: W09-L03 contact shadows never spill onto the shoulder (closest inner edge 5.30 m)
+  PASS v03kitp2: W09-L04 chunks build road, ground and props (12622 tris over 8 chunks)
+  PASS v03kitp2: W09-L04 chunk triangle budget (1577 per 40 m chunk, limit 18k)
+  PASS v03kitp2: W09-L04 nothing taller than a flat drift inside |x| < 4.9 m, the lanes and their margin (max 0.00 m)
+  PASS v03kitp2: W09-L04 GLB modules stand beyond 6.3 m from the centre (closest 6.61 m)
+  PASS v03kitp2: W09-L04 contact shadows never spill onto the shoulder (closest inner edge 5.30 m)
+  PASS v03kitp2: W09-L05 chunks build road, ground and props (11552 tris over 8 chunks)
+  PASS v03kitp2: W09-L05 chunk triangle budget (1444 per 40 m chunk, limit 18k)
+  PASS v03kitp2: W09-L05 nothing taller than a flat drift inside |x| < 4.9 m, the lanes and their margin (max 0.03 m)
+  PASS v03kitp2: W09-L05 GLB modules stand beyond 6.3 m from the centre (closest 6.61 m)
+  PASS v03kitp2: W09-L05 contact shadows never spill onto the shoulder (closest inner edge 5.30 m)
+  PASS v03kitp2: W09-L06 chunks build road, ground and props (11364 tris over 8 chunks)
+  PASS v03kitp2: W09-L06 chunk triangle budget (1420 per 40 m chunk, limit 18k)
+  PASS v03kitp2: W09-L06 nothing taller than a flat drift inside |x| < 4.9 m, the lanes and their margin (max 0.03 m)
+  PASS v03kitp2: W09-L06 GLB modules stand beyond 6.3 m from the centre (closest 7.32 m)
+  PASS v03kitp2: W09-L06 contact shadows never spill onto the shoulder (closest inner edge 5.30 m)
+  PASS v03kitp2: W09 stages look different (6 distinct ground+light signatures of 6)
+  PASS v03kitp2: every W09 GLB module loads (6/6)
+  PASS v03kitp2: W09 big modules have a far LOD (>= 2x fewer triangles, no shards)
+  PASS v03kitp2: W09 far card and ground texture exist
+  PASS v03kitp2: W09 fog stays light at the warning distance (17 % at 45 m)
+  PASS v03kitp2: every W09 stage far card exists
+  PASS v03kitp2: W09 texture set measured in the recording notes (PERFSUM)
+  PASS v03kitp2: W06 code names none of the forbidden things (Kaaba, Haram, Clock Tower, mosque, minaret, pilgrims, miqat, skyline)
+  PASS v03kitp2: W06 light changes golden hour -> dusk -> night -> dawn -> morning
+  PASS v03kitp2: W06 hazards get lit rims at dusk and night (0.00 -> 0.95)
+  PASS v03kitp2: W06 L03 has a viaduct drop and L04 a tunnel at the end of the stage (zones (0.961734, 0.0, 0.0) / (0.0, 0.0, 1.0))
+  PASS v03kitp2: W06 finish prop id plain_road_marker_post is built
+  PASS v03kitp2: W06 plain_road_marker_post is a destination prop (RnFinishProp)
+  PASS v03kitp2: W06 plain_road_marker_post builds (1118 vertices)
+  PASS v03kitp2: W06 plain_road_marker_post leaves all three lanes clear where Saddah runs out (|x| = 99.00 m)
+  PASS v03kitp2: W06 plain_road_marker_post plays its arrival payoff with one cue (["lamps"])
+  PASS v03kitp2: W06 plain_road_marker_post payoff ends within 2.0 s
+  PASS v03kitp2: W06 finish prop id roadside_rest_bench is built
+  PASS v03kitp2: W06 roadside_rest_bench is a destination prop (RnFinishProp)
+  PASS v03kitp2: W06 roadside_rest_bench builds (1056 vertices)
+  PASS v03kitp2: W06 roadside_rest_bench leaves all three lanes clear where Saddah runs out (|x| = 99.00 m)
+  PASS v03kitp2: W06 roadside_rest_bench plays its arrival payoff with one cue (["breath"])
+  PASS v03kitp2: W06 roadside_rest_bench payoff ends within 2.0 s
+  PASS v03kitp2: W06 finish prop id bridge_s_end is built
+  PASS v03kitp2: W06 bridge_s_end is a destination prop (RnFinishProp)
+  PASS v03kitp2: W06 bridge_s_end builds (1319 vertices)
+  PASS v03kitp2: W06 bridge_s_end leaves all three lanes clear where Saddah runs out (|x| = 5.55 m)
+  PASS v03kitp2: W06 bridge_s_end plays its arrival payoff with one cue (["lamps"])
+  PASS v03kitp2: W06 bridge_s_end payoff ends within 2.0 s
+  PASS v03kitp2: W06 finish prop id last_tunnel_s_portal is built
+  PASS v03kitp2: W06 last_tunnel_s_portal is a destination prop (RnFinishProp)
+  PASS v03kitp2: W06 last_tunnel_s_portal builds (612 vertices)
+  PASS v03kitp2: W06 last_tunnel_s_portal leaves all three lanes clear where Saddah runs out (|x| = 99.00 m)
+  PASS v03kitp2: W06 last_tunnel_s_portal plays its arrival payoff with one cue (["lamps"])
+  PASS v03kitp2: W06 last_tunnel_s_portal payoff ends within 2.0 s
+  PASS v03kitp2: W06 finish prop id farm_gate is built
+  PASS v03kitp2: W06 farm_gate is a destination prop (RnFinishProp)
+  PASS v03kitp2: W06 farm_gate builds (1689 vertices)
+  PASS v03kitp2: W06 farm_gate leaves all three lanes clear where Saddah runs out (|x| = 99.00 m)
+  PASS v03kitp2: W06 farm_gate plays its arrival payoff with one cue (["gate"])
+  PASS v03kitp2: W06 farm_gate payoff ends within 2.0 s
+  PASS v03kitp2: W06 finish prop id overpass is built
+  PASS v03kitp2: W06 overpass is a destination prop (RnFinishProp)
+  PASS v03kitp2: W06 overpass builds (546 vertices)
+  PASS v03kitp2: W06 overpass leaves all three lanes clear where Saddah runs out (|x| = 99.00 m)
+  PASS v03kitp2: W06 overpass plays its arrival payoff with one cue (["lamps"])
+  PASS v03kitp2: W06 overpass payoff ends within 2.0 s
+  PASS v03kitp2: W07 finish prop id gate_arch is built
+  PASS v03kitp2: W07 gate_arch is a destination prop (RnFinishProp)
+  PASS v03kitp2: W07 gate_arch builds (1542 vertices)
+  PASS v03kitp2: W07 gate_arch leaves all three lanes clear where Saddah runs out (|x| = 99.00 m)
+  PASS v03kitp2: W07 gate_arch plays its arrival payoff with one cue (["lamps"])
+  PASS v03kitp2: W07 gate_arch payoff ends within 2.0 s
+  PASS v03kitp2: W07 finish prop id merchant_house_door is built
+  PASS v03kitp2: W07 merchant_house_door is a destination prop (RnFinishProp)
+  PASS v03kitp2: W07 merchant_house_door builds (9522 vertices)
+  PASS v03kitp2: W07 merchant_house_door leaves all three lanes clear where Saddah runs out (|x| = 99.00 m)
+  PASS v03kitp2: W07 merchant_house_door plays its arrival payoff with one cue (["wave"])
+  PASS v03kitp2: W07 merchant_house_door payoff ends within 2.0 s
+  PASS v03kitp2: W07 finish prop id fish_hall_door is built
+  PASS v03kitp2: W07 fish_hall_door is a destination prop (RnFinishProp)
+  PASS v03kitp2: W07 fish_hall_door builds (693 vertices)
+  PASS v03kitp2: W07 fish_hall_door leaves all three lanes clear where Saddah runs out (|x| = 99.00 m)
+  PASS v03kitp2: W07 fish_hall_door plays its arrival payoff with one cue (["gate"])
+  PASS v03kitp2: W07 fish_hall_door payoff ends within 2.0 s
+  PASS v03kitp2: W07 finish prop id marina_ring is built
+  PASS v03kitp2: W07 marina_ring is a destination prop (RnFinishProp)
+  PASS v03kitp2: W07 marina_ring builds (864 vertices)
+  PASS v03kitp2: W07 marina_ring leaves all three lanes clear where Saddah runs out (|x| = 99.00 m)
+  PASS v03kitp2: W07 marina_ring plays its arrival payoff with one cue (["lamps"])
+  PASS v03kitp2: W07 marina_ring payoff ends within 2.0 s
+  PASS v03kitp2: W07 finish prop id creek_bridge is built
+  PASS v03kitp2: W07 creek_bridge is a destination prop (RnFinishProp)
+  PASS v03kitp2: W07 creek_bridge builds (1128 vertices)
+  PASS v03kitp2: W07 creek_bridge leaves all three lanes clear where Saddah runs out (|x| = 5.25 m)
+  PASS v03kitp2: W07 creek_bridge plays its arrival payoff with one cue (["lamps"])
+  PASS v03kitp2: W07 creek_bridge payoff ends within 2.0 s
+  PASS v03kitp2: W07 finish prop id highway_sign_north is built
+  PASS v03kitp2: W07 highway_sign_north is a destination prop (RnFinishProp)
+  PASS v03kitp2: W07 highway_sign_north builds (509 vertices)
+  PASS v03kitp2: W07 highway_sign_north leaves all three lanes clear where Saddah runs out (|x| = 6.85 m)
+  PASS v03kitp2: W07 highway_sign_north plays its arrival payoff with one cue (["lamps"])
+  PASS v03kitp2: W07 highway_sign_north payoff ends within 2.0 s
+  PASS v03kitp2: W08 finish prop id first_sandstone_wall is built
+  PASS v03kitp2: W08 first_sandstone_wall is a destination prop (RnFinishProp)
+  PASS v03kitp2: W08 first_sandstone_wall builds (824 vertices)
+  PASS v03kitp2: W08 first_sandstone_wall leaves all three lanes clear where Saddah runs out (|x| = 99.00 m)
+  PASS v03kitp2: W08 first_sandstone_wall plays its arrival payoff with one cue (["lamps"])
+  PASS v03kitp2: W08 first_sandstone_wall payoff ends within 2.0 s
+  PASS v03kitp2: W08 finish prop id canyon_s_mouth is built
+  PASS v03kitp2: W08 canyon_s_mouth is a destination prop (RnFinishProp)
+  PASS v03kitp2: W08 canyon_s_mouth builds (556 vertices)
+  PASS v03kitp2: W08 canyon_s_mouth leaves all three lanes clear where Saddah runs out (|x| = 99.00 m)
+  PASS v03kitp2: W08 canyon_s_mouth plays its arrival payoff with one cue (["lamps"])
+  PASS v03kitp2: W08 canyon_s_mouth payoff ends within 2.0 s
+  PASS v03kitp2: W08 finish prop id farm_gate is built
+  PASS v03kitp2: W08 farm_gate is a destination prop (RnFinishProp)
+  PASS v03kitp2: W08 farm_gate builds (1609 vertices)
+  PASS v03kitp2: W08 farm_gate leaves all three lanes clear where Saddah runs out (|x| = 99.00 m)
+  PASS v03kitp2: W08 farm_gate plays its arrival payoff with one cue (["gate"])
+  PASS v03kitp2: W08 farm_gate payoff ends within 2.0 s
+  PASS v03kitp2: W08 finish prop id perimeter_gate is built
+  PASS v03kitp2: W08 perimeter_gate is a destination prop (RnFinishProp)
+  PASS v03kitp2: W08 perimeter_gate builds (824 vertices)
+  PASS v03kitp2: W08 perimeter_gate leaves all three lanes clear where Saddah runs out (|x| = 99.00 m)
+  PASS v03kitp2: W08 perimeter_gate plays its arrival payoff with one cue (["gate"])
+  PASS v03kitp2: W08 perimeter_gate payoff ends within 2.0 s
+  PASS v03kitp2: W08 finish prop id valley_s_stone_marker is built
+  PASS v03kitp2: W08 valley_s_stone_marker is a destination prop (RnFinishProp)
+  PASS v03kitp2: W08 valley_s_stone_marker builds (732 vertices)
+  PASS v03kitp2: W08 valley_s_stone_marker leaves all three lanes clear where Saddah runs out (|x| = 99.00 m)
+  PASS v03kitp2: W08 valley_s_stone_marker plays its arrival payoff with one cue (["lamps"])
+  PASS v03kitp2: W08 valley_s_stone_marker payoff ends within 2.0 s
+  PASS v03kitp2: W08 finish prop id old_railway_station is built
+  PASS v03kitp2: W08 old_railway_station is a destination prop (RnFinishProp)
+  PASS v03kitp2: W08 old_railway_station builds (483 vertices)
+  PASS v03kitp2: W08 old_railway_station leaves all three lanes clear where Saddah runs out (|x| = 99.00 m)
+  PASS v03kitp2: W08 old_railway_station plays its arrival payoff with one cue (["signal"])
+  PASS v03kitp2: W08 old_railway_station payoff ends within 2.0 s
+  PASS v03kitp2: W09 finish prop id tea_stall is built
+  PASS v03kitp2: W09 tea_stall is a destination prop (RnFinishProp)
+  PASS v03kitp2: W09 tea_stall builds (916 vertices)
+  PASS v03kitp2: W09 tea_stall leaves all three lanes clear where Saddah runs out (|x| = 99.00 m)
+  PASS v03kitp2: W09 tea_stall plays its arrival payoff with one cue (["wave"])
+  PASS v03kitp2: W09 tea_stall payoff ends within 2.0 s
+  PASS v03kitp2: W09 finish prop id first_juniper_grove is built
+  PASS v03kitp2: W09 first_juniper_grove is a destination prop (RnFinishProp)
+  PASS v03kitp2: W09 first_juniper_grove builds (1843 vertices)
+  PASS v03kitp2: W09 first_juniper_grove leaves all three lanes clear where Saddah runs out (|x| = 99.00 m)
+  PASS v03kitp2: W09 first_juniper_grove plays its arrival payoff with one cue (["lamps"])
+  PASS v03kitp2: W09 first_juniper_grove payoff ends within 2.0 s
+  PASS v03kitp2: W09 finish prop id tunnel_portal is built
+  PASS v03kitp2: W09 tunnel_portal is a destination prop (RnFinishProp)
+  PASS v03kitp2: W09 tunnel_portal builds (927 vertices)
+  PASS v03kitp2: W09 tunnel_portal leaves all three lanes clear where Saddah runs out (|x| = 99.00 m)
+  PASS v03kitp2: W09 tunnel_portal plays its arrival payoff with one cue (["lamps"])
+  PASS v03kitp2: W09 tunnel_portal payoff ends within 2.0 s
+  PASS v03kitp2: W09 finish prop id wadi_mouth is built
+  PASS v03kitp2: W09 wadi_mouth is a destination prop (RnFinishProp)
+  PASS v03kitp2: W09 wadi_mouth builds (1266 vertices)
+  PASS v03kitp2: W09 wadi_mouth leaves all three lanes clear where Saddah runs out (|x| = 99.00 m)
+  PASS v03kitp2: W09 wadi_mouth plays its arrival payoff with one cue (["lamps"])
+  PASS v03kitp2: W09 wadi_mouth payoff ends within 2.0 s
+  PASS v03kitp2: W09 finish prop id port_s_quay_edge is built
+  PASS v03kitp2: W09 port_s_quay_edge is a destination prop (RnFinishProp)
+  PASS v03kitp2: W09 port_s_quay_edge builds (1210 vertices)
+  PASS v03kitp2: W09 port_s_quay_edge leaves all three lanes clear where Saddah runs out (|x| = 99.00 m)
+  PASS v03kitp2: W09 port_s_quay_edge plays its arrival payoff with one cue (["lamps"])
+  PASS v03kitp2: W09 port_s_quay_edge payoff ends within 2.0 s
+  PASS v03kitp2: W09 finish prop id ceremony_stage is built
+  PASS v03kitp2: W09 ceremony_stage is a destination prop (RnFinishProp)
+  PASS v03kitp2: W09 ceremony_stage builds (1323 vertices)
+  PASS v03kitp2: W09 ceremony_stage leaves all three lanes clear where Saddah runs out (|x| = 99.00 m)
+  PASS v03kitp2: W09 ceremony_stage plays its arrival payoff with one cue (["lights"])
+  PASS v03kitp2: W09 ceremony_stage payoff ends within 2.0 s
+  PASS v03kitp2: all 24 W06-W09 destination props build and arrive (24)
+  PASS v03kitp2: map_strip.json parses
+  PASS v03kitp2: every map tile exists (18 tiles, 0 missing)
+  PASS v03kitp2: map tiles resident <= 64 MB (8 tiles x 4.2 MB = 33.8 MB)
+  PASS v03kitp2: the strip carries the 36 nodes of W01-W06 (36)
+  PASS v03kitp2: the road is one continuous line (1645 points, longest step 59 px)
+  PASS v03ui strings: every new string has English and natural Arabic (Arabic letters) 
+  PASS v03ui strings: the currency is Qoroosh / قروش, never coins 
+  PASS v03ui D-6: the five progress bands (6 % is a good start, 97 % is close)
+  PASS v03ui D-6: the bands only ever move forward as progress grows
+  PASS v03ui D-6: no 'Almost' and no exclamation in the bands below 92 % 
+  PASS v03ui D-6: the old 'Almost! Try again' line is gone
+  PASS v03ui D-6: the five band lines are all different
+  PASS v03ui ring: with 5 s left the ring is steady and silent
+  PASS v03ui ring: at 1.4 s left it warns (blink + one tick)
+  PASS v03ui ring: the warning sound plays once, not every frame
+  PASS v03ui ring: it blinks (both phases seen) and never faster than 3 Hz (2.0 Hz)
+  PASS v03ui ring: a second tick at the last half second
+  PASS v03ui ring: soft expiry, the icon goes and the warning resets for the next pickup
+  PASS v03ui ring: reduced motion = no blink, the ring just stays in its warning colour
+  PASS v03ui fail: at 6 % the panel says '6% of the road. Good start. Go a little further.'
+  PASS v03ui fail: never 'Almost!' at 6 %
+  PASS v03ui fail: Retry is on screen at once and is the first thing in the panel
+  PASS v03ui fail: the panel is below Saddah (bottom anchored, under half the screen)
+  PASS v03ui finale: no 'Try the finale' unless the run scene offers it
+  PASS v03ui finale: the offer shows 'Try the finale' on the failure panel
+  PASS v03ui finale: pressing it emits finale_pressed once
+  PASS v03ui finale: the offer is cleared with the next run
+  PASS v03ui fail: at 97 % the panel says '97% of the road. Very close to the end.'
+  PASS v03ui fail W06: the calm line, not a cheer
+  PASS v03ui fail W06: slate panel, no gold
+  PASS v03ui fail: other worlds keep the normal panel
+  PASS v03ui fail [ar]: the progress line is Arabic (قطعت 30% من الطريق. بدأت تتعوّد على الطريق.)
+  PASS v03ui G-06: the Qoroosh counter pulses on a pickup
+  PASS v03ui G-06: and settles back
+  PASS v03ui pause: collected (13) and progress (42 %) are on the card
+  PASS v03ui pause: the card is over the frozen run
+  PASS v03ui results [en 100%]: no ad button (RR-06)
+  PASS v03ui results [en 100%]: Stars is there
+  PASS v03ui results [en 100%]: RowCollected is there
+  PASS v03ui results [en 100%]: RowCompletion is there
+  PASS v03ui results [en 100%]: RowFirstClear is there
+  PASS v03ui results [en 100%]: RowTotal is there
+  PASS v03ui results [en 100%]: FirstClearBadge is there
+  PASS v03ui results [en 100%]: GoalCard is there
+  PASS v03ui results [en 100%]: KeepsakeCard is there
+  PASS v03ui results [en 100%]: NextStopCard is there
+  PASS v03ui results [en 100%]: NextButton is there
+  PASS v03ui results [en 100%]: ReplayButton is there
+  PASS v03ui results [en 100%]: MapButton is there
+  PASS v03ui results [en 100%]: every award row says why
+  PASS v03ui results [en 100%]: each star says what it was for
+  PASS v03ui results [en 100%]: the keepsake is shown by name (the world's, when the id has no name)
+  PASS v03ui results [en 100%]: the next destination card names stage 1-2
+  PASS v03ui results [en 100%]: a progress bar to the next goal (or when it opens)
+  PASS v03ui results [en 100%]: Next is the primary, Replay and Map are ghost buttons
+  PASS v03ui results [en 100%]: everything is on screen within 2.5 s of showing (1.85 s)
+  PASS v03ui results [en 100%]: the total lands on the wallet change
+  PASS v03ui results [en 100%]: showing the results never changes the wallet (settled exactly once)
+  PASS v03ui results [en 150%]: no ad button (RR-06)
+  PASS v03ui results [en 150%]: Stars is there
+  PASS v03ui results [en 150%]: RowCollected is there
+  PASS v03ui results [en 150%]: RowCompletion is there
+  PASS v03ui results [en 150%]: RowFirstClear is there
+  PASS v03ui results [en 150%]: RowTotal is there
+  PASS v03ui results [en 150%]: FirstClearBadge is there
+  PASS v03ui results [en 150%]: GoalCard is there
+  PASS v03ui results [en 150%]: KeepsakeCard is there
+  PASS v03ui results [en 150%]: NextStopCard is there
+  PASS v03ui results [en 150%]: NextButton is there
+  PASS v03ui results [en 150%]: ReplayButton is there
+  PASS v03ui results [en 150%]: MapButton is there
+  PASS v03ui results [en 150%]: every award row says why
+  PASS v03ui results [en 150%]: each star says what it was for
+  PASS v03ui results [en 150%]: the keepsake is shown by name (the world's, when the id has no name)
+  PASS v03ui results [en 150%]: the next destination card names stage 1-2
+  PASS v03ui results [en 150%]: a progress bar to the next goal (or when it opens)
+  PASS v03ui results [en 150%]: Next is the primary, Replay and Map are ghost buttons
+  PASS v03ui results [en 150%]: everything is on screen within 2.5 s of showing (1.89 s)
+  PASS v03ui results [en 150%]: the total lands on the wallet change
+  PASS v03ui results [en 150%]: showing the results never changes the wallet (settled exactly once)
+  PASS v03ui results [ar 100%]: no ad button (RR-06)
+  PASS v03ui results [ar 100%]: Stars is there
+  PASS v03ui results [ar 100%]: RowCollected is there
+  PASS v03ui results [ar 100%]: RowCompletion is there
+  PASS v03ui results [ar 100%]: RowFirstClear is there
+  PASS v03ui results [ar 100%]: RowTotal is there
+  PASS v03ui results [ar 100%]: FirstClearBadge is there
+  PASS v03ui results [ar 100%]: GoalCard is there
+  PASS v03ui results [ar 100%]: KeepsakeCard is there
+  PASS v03ui results [ar 100%]: NextStopCard is there
+  PASS v03ui results [ar 100%]: NextButton is there
+  PASS v03ui results [ar 100%]: ReplayButton is there
+  PASS v03ui results [ar 100%]: MapButton is there
+  PASS v03ui results [ar 100%]: every award row says why
+  PASS v03ui results [ar 100%]: each star says what it was for
+  PASS v03ui results [ar 100%]: the keepsake is shown by name (the world's, when the id has no name)
+  PASS v03ui results [ar 100%]: the next destination card names stage 1-2
+  PASS v03ui results [ar 100%]: a progress bar to the next goal (or when it opens)
+  PASS v03ui results [ar 100%]: Next is the primary, Replay and Map are ghost buttons
+  PASS v03ui results [ar 100%]: everything is on screen within 2.5 s of showing (1.86 s)
+  PASS v03ui results [ar 100%]: the total lands on the wallet change
+  PASS v03ui results [ar 100%]: showing the results never changes the wallet (settled exactly once)
+  PASS v03ui results [ar 150%]: no ad button (RR-06)
+  PASS v03ui results [ar 150%]: Stars is there
+  PASS v03ui results [ar 150%]: RowCollected is there
+  PASS v03ui results [ar 150%]: RowCompletion is there
+  PASS v03ui results [ar 150%]: RowFirstClear is there
+  PASS v03ui results [ar 150%]: RowTotal is there
+  PASS v03ui results [ar 150%]: FirstClearBadge is there
+  PASS v03ui results [ar 150%]: GoalCard is there
+  PASS v03ui results [ar 150%]: KeepsakeCard is there
+  PASS v03ui results [ar 150%]: NextStopCard is there
+  PASS v03ui results [ar 150%]: NextButton is there
+  PASS v03ui results [ar 150%]: ReplayButton is there
+  PASS v03ui results [ar 150%]: MapButton is there
+  PASS v03ui results [ar 150%]: every award row says why
+  PASS v03ui results [ar 150%]: each star says what it was for
+  PASS v03ui results [ar 150%]: the keepsake is shown by name (the world's, when the id has no name)
+  PASS v03ui results [ar 150%]: the next destination card names stage 1-2
+  PASS v03ui results [ar 150%]: a progress bar to the next goal (or when it opens)
+  PASS v03ui results [ar 150%]: Next is the primary, Replay and Map are ghost buttons
+  PASS v03ui results [ar 150%]: everything is on screen within 2.5 s of showing (1.86 s)
+  PASS v03ui results [ar 150%]: the total lands on the wallet change
+  PASS v03ui results [ar 150%]: showing the results never changes the wallet (settled exactly once)
+  PASS v03ui results: a tap finishes every count-up at once (7 ms)
+  PASS v03ui results: a stopped run shows no ad, no next stop, no keepsake
+  PASS v03ui briefing [en]: the route line (from -> to)
+  PASS v03ui briefing [en]: the route line ends at this stage
+  PASS v03ui briefing [en]: what is new and the third-star challenge
+  PASS v03ui briefing [en]: the power-ups on this road (or a line that there are none)
+  PASS v03ui briefing [en]: the painted portrait and Start
+  PASS v03ui briefing [ar]: the route line (from -> to)
+  PASS v03ui briefing [ar]: the route line ends at this stage
+  PASS v03ui briefing [ar]: what is new and the third-star challenge
+  PASS v03ui briefing [ar]: the power-ups on this road (or a line that there are none)
+  PASS v03ui briefing [ar]: the painted portrait and Start
+  PASS v03ui map: one continuous strip with 54 nodes
+  PASS v03ui map: a tall strip made of tiles (26 tiles, source json+top)
+  PASS v03ui map: lazy tiles, 4 resident, 16.9 MB (<= 64 MB)
+  PASS v03ui map: cleared / current / next states
+  PASS v03ui map: the current node is named for the screen reader
+  PASS v03ui map: the Saddah marker is on the current stage
+  PASS v03ui map: focused on the current stage
+  PASS v03ui D-3: a touch drag from a node scrolls the strip (24400 -> 23827), it does not open the node
+  PASS v03ui D-3: dragging up moves the view up the journey (22439 -> 22900)
+  PASS v03ui D-3: InputEventScreenDrag handled by the view itself
+  PASS v03ui map: a tap opens the stage card (stars, third-star challenge, Start)
+  PASS v03ui map: the card closes
+  PASS v03ui map: a locked stage's card says why it is locked and has no Start
+  PASS v03ui M-04: Router.state.map_scroll follows the browsing position (19784)
+  PASS v03ui M-04: coming back restores the browsing position
+  PASS v03ui M-04: opening after a clear plays the marker's walk (reduced=true)
+  PASS v03ui M-04: a touch lands the whole walk at once (2.0 s)
+  PASS v03ui M-04: the marker ends on the next stage, the cleared one is done (reduced=true, 2.0 s)
+  PASS v03ui M-04: the map remembers where the marker is
+  PASS v03ui M-04: opening after a clear plays the marker's walk (reduced=false)
+  PASS v03ui M-04: a touch lands the whole walk at once (0.7 s)
+  PASS v03ui M-04: the marker ends on the next stage, the cleared one is done (reduced=false, 0.7 s)
+  PASS v03ui M-04: the map remembers where the marker is
+  PASS v03ui M-04: the next world's reveal plays and the marker arrives at 2-1
+  PASS v03ui map [ar]: nodes and tiles sit inside the view (not mirrored away)
+  PASS v03ui audio: every cue id is in config/audio_cues.json 
+  PASS v03ui audio: the new sound files exist 
+  PASS v03ui G-06: consecutive pickups climb the ladder (13 steps)
+  PASS v03ui G-06: the ladder stops climbing at its cap (peak pitch 1.50)
+  PASS v03ui G-06: a pause between pickups resets the ladder
+  PASS v03ui G-08: land, lane, jump, slide, shield hit and finish each pulse the haptics ["land", "lane", "jump", "slide", "shield_hit", "finish"]
+  PASS v03ui G-08: each of them has its sound cue ["SFX-01-asphalt", "SFX-02-land-hard", "SFX-lane", "SFX-01-asphalt", "SFX-02", "SFX-03", "SFX-01-asphalt", "SFX-06", "UI-go", "SFX-09-latch"]
+  PASS v03ui G-08: the pulses reached AudioMgr.haptic (6)
+  PASS v03ui G-06: six quick pickups = six ladder cues, run of 6, counter pulses 6
+  PASS v03ui G-08: pickup haptics are rate limited (3 for 6 pickups)
+  PASS v03ui G-06: finishing a coin trail plays the chime once
+  PASS v03ui G-08: near miss = its whoosh + a haptic, no chime
+  PASS v03ui G-08 W06: haptics are halved in the Makkah world (22 ms)
+  PASS v03ui G-08: with the vibration toggle off nothing pulses
+  PASS v03ui G-06: music position = sim time looped; drift is the short way round the loop
+  PASS v03ui G-06: AudioMgr can realign the music to the sim clock
+  PASS v03ui2 system: screen transitions and entrances are 250 ms or less (0.18 / 0.22)
+  PASS v03ui2 system: every button is at least 96 px (48 dp) tall
+  PASS v03ui2 system: pressed, disabled, hover and focus states exist for both button kinds 
+  PASS v03ui2 system: UI.button is touch sized and focusable
+  PASS v03ui2 system: one type scale from the theme
+  PASS v03ui2 U-01: the face + case box fits every hero area 
+  PASS v03ui2 U-01 9:19.5: hero art is there
+  PASS v03ui2 U-01 9:19.5: Saddah's face and the case are fully inside the hero (box [P: (133.6, 422.9333), S: (690.88, 1119.858)] in [P: (32.0, 152.0), S: (1016.0, 1549.0)])
+  PASS v03ui2 U-01 9:19.5: the title and tagline never cover the face or the case
+  PASS v03ui2 U-01 9:19.5: Continue is the one primary button
+  PASS v03ui2 U-01: an earned keepsake hangs at his side
+  PASS v03ui2 U-01: one title
+  PASS v03ui2 U-01 9:16: hero art is there
+  PASS v03ui2 U-01 9:16: Saddah's face and the case are fully inside the hero (box [P: (295.3851, 419.0), S: (489.2298, 793.0)] in [P: (32.0, 152.0), S: (1016.0, 1129.0)])
+  PASS v03ui2 U-01 9:16: the title and tagline never cover the face or the case
+  PASS v03ui2 U-01 9:16: Continue is the one primary button
+  PASS v03ui2 U-01 3:4: hero art is there
+  PASS v03ui2 U-01 3:4: Saddah's face and the case are fully inside the hero (box [P: (475.3851, 419.0), S: (489.2297, 793.0)] in [P: (32.0, 152.0), S: (1376.0, 1129.0)])
+  PASS v03ui2 U-01 3:4: the title and tagline never cover the face or the case
+  PASS v03ui2 U-01 3:4: Continue is the one primary button
+  PASS v03ui2 U-01 16:9: hero art is there
+  PASS v03ui2 U-01 16:9: Saddah's face and the case are fully inside the hero (box [P: (1461.885, 419.0), S: (489.2298, 793.0)] in [P: (32.0, 152.0), S: (3349.0, 1129.0)])
+  PASS v03ui2 U-01 16:9: the title and tagline never cover the face or the case
+  PASS v03ui2 U-01 16:9: Continue is the one primary button
+  PASS v03ui2 U-08 [en]: nine keepsakes on the shelf (9)
+  PASS v03ui2 U-08 [en]: the earned one is named, the others say where they come from
+  PASS v03ui2 U-08 [en]: keepsakes are never sold (no button on the shelf)
+  PASS v03ui2 U-08 [en]: 'never needed to finish' and the try-on stage
+  PASS v03ui2 U-08 [ar]: nine keepsakes on the shelf (9)
+  PASS v03ui2 U-08 [ar]: the earned one is named, the others say where they come from
+  PASS v03ui2 U-08 [ar]: keepsakes are never sold (no button on the shelf)
+  PASS v03ui2 U-08 [ar]: 'never needed to finish' and the try-on stage
+  PASS v03ui2 U-09 [en]: the loading card names the destination
+  PASS v03ui2 U-09 [en]: the card is up 2 ms after Start (<= 300 ms)
+  PASS v03ui2 U-09 [en]: world-tinted, with the world named
+  PASS v03ui2 U-09 [ar]: the loading card names the destination
+  PASS v03ui2 U-09 [ar]: the card is up 5 ms after Start (<= 300 ms)
+  PASS v03ui2 U-09 [ar]: world-tinted, with the world named
+  PASS v03ui2 M-06: the world change plays its travel vignette (W01_W02)
+  PASS v03ui2 M-06: a tap skips the vignette (gone 594 ms after the tap incl. 400 ms wait) and the walk goes on
+  PASS v03ui2 M-06 reduced motion: the vignette is a still, no push-in (the picture is there)
+  PASS v03ui2 M-05: with reduced motion the marker still arrives (instant move + soft fade)
+  PASS v03ui2 M-03 [100 %]: 54 nodes, states right (25 done, 1 current, 1 next, 27 locked) 
+  PASS v03ui2 M-03 [100 %]: no two nodes or name pills overlap (54 checked) 
+  PASS v03ui2 M-03 [150 %]: 54 nodes, states right (25 done, 1 current, 1 next, 27 locked) 
+  PASS v03ui2 M-03 [150 %]: no two nodes or name pills overlap (54 checked) 
+  PASS v03ui2 A-04: a sting and a climax layer exist for each of the nine worlds 
+  PASS v03ui2 A-04: every destination-prop cue id has a sound 
+  PASS v03ui2 A-04 W06: the Makkah sting and layer are quieter than the other worlds'
+  PASS v03ui2 A-04: the first stage of a world plays the world's sting
+  PASS v03ui2 A-04: the layer is not on before climax.d0
+  PASS v03ui2 A-04: the layer comes in at climax.d0 (392 m)
+  PASS v03ui2 A-04: a failure takes the layer out
+  PASS v03ui2 A-04: later stages of a world have no sting
+  PASS v03 hero: the ART glb is the run hero
+  PASS v03 hero: body + shemagh + bag + case within the mid/high phone budget (99548 <= 100000 tris)
+  PASS v03 hero: all 13 contract clips + 4 arrival gestures exist (missing [])
+  PASS v03 hero: one square 2K-4K body albedo (rules 3.27 budget; (2048.0, 2048.0))
+  PASS v03 hero: case sockets and the shemagh/thobe driver bones are in the rig
+  PASS v03 hero: the case material keeps the black shell (no rim wash, gold-mask glow x1.7)
+  PASS v03 hero: the case shell atlas is near-black (gold only at the edges)
+  PASS v03 hero: the case grip stays below the neck in run, jump, victory, slide and the gestures (max -0.15 m vs the neck)
+  PASS v03 hero: the case stays in his right hand in every checked frame
+  PASS arrival: 'raise' plays its own gesture clip
+  PASS arrival: 'breath' plays its own gesture clip
+  PASS arrival: 'check_route' plays its own gesture clip
+  PASS arrival: 'wave' plays its own gesture clip
+  PASS arrival: every gesture lasts 0.8-2.0 s ([1.83333337306976, 1.83333337306976, 2.0, 1.83333337306976])
+  PASS arrival: skippable (back to idle at once)
+  PASS arrival: ends by itself within 2.0 s
+  PASS arrival: Makkah uses breath / check_route only
+  PASS arrival: an unknown kind falls back to the quiet breath
+  PASS arrival: in Makkah a requested wave plays the breath
+  PASS skins: three albedos (2K-4K) on the same UVs
+  PASS skins: Coastal Sneaker is clearly distinct from behind (teal sneakers: 2446 samples / 18382 changed samples)
+  PASS skins: Desert Stitch adds the embroidered hem and placket (15258 changed samples)
+  PASS skins: the Coastal skin tints the backpack sea-teal (tint (0.25, 1.35, 1.3))
+  PASS fx: quick pickups climb the coin ladder (5 steps)
+  PASS fx: the ladder resets after a pause
+  PASS fx: a new chain starts at the bottom step
+  PASS fx: a landing rolls a low dust ring
+  PASS fx: sand sprays from the feet while sliding
+  PASS fx: the spray stops with the slide
+  PASS fx: the finish burst (two gold rings + a sparkle fountain, no flash)
+  PASS fx: v0.3 effects are pooled too (no nodes created by events: 29)
+  PASS fx: the boost streaks thin out toward the end (14 -> 5)
+  PASS fx: end-of-effect blinks stay under the 3 Hz flash limit (2.5 Hz)
+  PASS fx: Makkah's finish is one soft ring (no burst)
+  PASS fx: the low preset keeps the landing and pickup cues
+  PASS fx: the stage flag turns on the falcon trail
+  PASS fx: the falcon heads for a coin a beat ahead of Saddah
+  PASS fx: the falcon flies the trail while the magnet lasts
+  PASS fx: the shield is a shemagh shield (one red-and-white band at rank 0)
+  PASS fx: the shield rim is woven in the shemagh check and stays see-through (body visible)
+  PASS menu view: the v0.3 model with its gestures
+  PASS menu view: the Coastal skin shows on the preview model
+  PASS menu view: the case keeps the black-and-gold material
+  PASS keepsake reveal: a gold halo + slow motes on the results card
+  PASS keepsake reveal: Makkah (gentle) and reduced motion keep the halo only
+  PASS keepsake reveal: never a flash (halo alpha <= 0.8)
+  PASS keepsakes: nine charm icons, transparent around the object (9 found)
+  PASS v03kitw25: W02 is registered to its v0.3 production kit
+  PASS v03kitw25: W03 is registered to its v0.3 production kit
+  PASS v03kitw25: W04 is registered to its v0.3 production kit
+  PASS v03kitw25: W05 is registered to its v0.3 production kit
+  PASS v03kitw25: the destination-prop router exists
+  PASS v03kitw25: W02 ground detail texture exists (paving_detail.png)
+  PASS v03kitw25: W02 fog stays light at the warning distance (16 % at 45 m)
+  PASS v03kitw25: W02-L01 far card exists when named (far_w02_l01.webp)
+  PASS v03kitw25: W02-L02 far card exists when named (far_w02_l02.webp)
+  PASS v03kitw25: W02-L03 far card exists when named (far_w02_l03.webp)
+  PASS v03kitw25: W02-L04 far card exists when named (far_w02_l04.webp)
+  PASS v03kitw25: W02-L05 far card exists when named (far_w02_l05.webp)
+  PASS v03kitw25: W02-L06 far card exists when named (far_w02_l06.webp)
+  PASS v03kitw25: W03 ground detail texture exists (grit_detail.png)
+  PASS v03kitw25: W03 fog stays light at the warning distance (16 % at 45 m)
+  PASS v03kitw25: W03-L01 far card exists when named (far_w03_l01.webp)
+  PASS v03kitw25: W03-L02 far card exists when named (far_w03_l02.webp)
+  PASS v03kitw25: W03-L03 far card exists when named (far_w03_l03.webp)
+  PASS v03kitw25: W03-L04 far card exists when named (far_w03_l04.webp)
+  PASS v03kitw25: W03-L05 far card exists when named (far_w03_l05.webp)
+  PASS v03kitw25: W03-L06 far card exists when named (far_w03_l06.webp)
+  PASS v03kitw25: W04 ground detail texture exists (limestone_detail.png)
+  PASS v03kitw25: W04 fog stays light at the warning distance (19 % at 45 m)
+  PASS v03kitw25: W04-L01 far card exists when named (far_w04_l01.webp)
+  PASS v03kitw25: W04-L02 far card exists when named (far_w04_l02.webp)
+  PASS v03kitw25: W04-L03 far card exists when named (far_w04_l03.webp)
+  PASS v03kitw25: W04-L04 far card exists when named (far_w04_l04.webp)
+  PASS v03kitw25: W04-L05 far card exists when named (far_w04_l05.webp)
+  PASS v03kitw25: W04-L06 far card exists when named (far_w04_l06.webp)
+  PASS v03kitw25: W05 ground detail texture exists (terrace_detail.png)
+  PASS v03kitw25: W05 fog stays light at the warning distance (22 % at 45 m)
+  PASS v03kitw25: W05-L01 far card exists when named (far_w05_l01.webp)
+  PASS v03kitw25: W05-L02 far card exists when named (far_w05_l02.webp)
+  PASS v03kitw25: W05-L03 far card exists when named (far_w05_l03.webp)
+  PASS v03kitw25: W05-L04 far card exists when named (far_w05_l04.webp)
+  PASS v03kitw25: W05-L05 far card exists when named (far_w05_l05.webp)
+  PASS v03kitw25: W05-L06 far card exists when named (far_w05_l06.webp)
+  PASS v03kitw25: W02 GLB hero modules within the budget of 6 (3)
+  PASS v03kitw25: W02-L01 has its own beat deck (6 types)
+  PASS v03kitw25: W02-L01 GLB hero modules (64) stand beyond 6.3 m from the centre (closest 6.63 m)
+  PASS v03kitw25: W02-L01 chunks build within the triangle budget (max 1523 per 40 m chunk + 64 GLB modules, limit 14000)
+  PASS v03kitw25: W02-L01 nothing taller than 0.2 m inside |x| < 5.3 m (road + shoulder) (max 0.00 m at (0.0, 0.0, 0.0))
+  PASS v03kitw25: W02-L01 has contact shadows (83) that never spill onto the shoulder (inner edge 5.30 m; x, rx (-6.009125, 0.709125))
+  PASS v03kitw25: W02-L02 has its own beat deck (6 types)
+  PASS v03kitw25: W02-L02 GLB hero modules (25) stand beyond 6.3 m from the centre (closest 6.72 m)
+  PASS v03kitw25: W02-L02 chunks build within the triangle budget (max 1639 per 40 m chunk + 25 GLB modules, limit 14000)
+  PASS v03kitw25: W02-L02 nothing taller than 0.2 m inside |x| < 5.3 m (road + shoulder) (max 0.00 m at (0.0, 0.0, 0.0))
+  PASS v03kitw25: W02-L02 has contact shadows (59) that never spill onto the shoulder (inner edge 5.30 m; x, rx (-6.009125, 0.709125))
+  PASS v03kitw25: W02-L03 has its own beat deck (6 types)
+  PASS v03kitw25: W02-L03 GLB hero modules (68) stand beyond 6.3 m from the centre (closest 6.69 m)
+  PASS v03kitw25: W02-L03 chunks build within the triangle budget (max 2030 per 40 m chunk + 68 GLB modules, limit 14000)
+  PASS v03kitw25: W02-L03 nothing taller than 0.2 m inside |x| < 5.3 m (road + shoulder) (max 0.00 m at (0.0, 0.0, 0.0))
+  PASS v03kitw25: W02-L03 has contact shadows (81) that never spill onto the shoulder (inner edge 5.30 m; x, rx (-6.009125, 0.709125))
+  PASS v03kitw25: W02-L04 has its own beat deck (6 types)
+  PASS v03kitw25: W02-L04 GLB hero modules (45) stand beyond 6.3 m from the centre (closest 6.62 m)
+  PASS v03kitw25: W02-L04 chunks build within the triangle budget (max 2274 per 40 m chunk + 45 GLB modules, limit 14000)
+  PASS v03kitw25: W02-L04 nothing taller than 0.2 m inside |x| < 5.3 m (road + shoulder) (max 0.00 m at (0.0, 0.0, 0.0))
+  PASS v03kitw25: W02-L04 has contact shadows (71) that never spill onto the shoulder (inner edge 5.30 m; x, rx (-6.009125, 0.709125))
+  PASS v03kitw25: W02-L05 has its own beat deck (6 types)
+  PASS v03kitw25: W02-L05 GLB hero modules (59) stand beyond 6.3 m from the centre (closest 6.65 m)
+  PASS v03kitw25: W02-L05 chunks build within the triangle budget (max 1852 per 40 m chunk + 59 GLB modules, limit 14000)
+  PASS v03kitw25: W02-L05 nothing taller than 0.2 m inside |x| < 5.3 m (road + shoulder) (max 0.00 m at (0.0, 0.0, 0.0))
+  PASS v03kitw25: W02-L05 has contact shadows (83) that never spill onto the shoulder (inner edge 5.30 m; x, rx (-6.042183, 0.742184))
+  PASS v03kitw25: W02-L06 has its own beat deck (6 types)
+  PASS v03kitw25: W02-L06 GLB hero modules (43) stand beyond 6.3 m from the centre (closest 6.76 m)
+  PASS v03kitw25: W02-L06 chunks build within the triangle budget (max 2455 per 40 m chunk + 43 GLB modules, limit 14000)
+  PASS v03kitw25: W02-L06 nothing taller than 0.2 m inside |x| < 5.3 m (road + shoulder) (max 0.00 m at (0.0, 0.0, 0.0))
+  PASS v03kitw25: W02-L06 has contact shadows (85) that never spill onto the shoulder (inner edge 5.30 m; x, rx (-6.009125, 0.709125))
+  PASS v03kitw25: W02 places its GLB hero modules in the stages (304 in the sampled chunks)
+  PASS v03kitw25: W02 stages use at least 4 different ground colours (6)
+  PASS v03kitw25: W02-L01 has its own sky and light
+  PASS v03kitw25: W02-L02 has its own sky and light
+  PASS v03kitw25: W02-L03 has its own sky and light
+  PASS v03kitw25: W02-L04 has its own sky and light
+  PASS v03kitw25: W02-L05 has its own sky and light
+  PASS v03kitw25: W02-L06 has its own sky and light
+  PASS v03kitw25: W02 stage lights differ (6 distinct sun colours)
+  PASS v03kitw25: W03 GLB hero modules within the budget of 6 (4)
+  PASS v03kitw25: W03-L01 has its own beat deck (6 types)
+  PASS v03kitw25: W03-L01 GLB hero modules (70) stand beyond 6.3 m from the centre (closest 6.75 m)
+  PASS v03kitw25: W03-L01 chunks build within the triangle budget (max 1598 per 40 m chunk + 70 GLB modules, limit 14000)
+  PASS v03kitw25: W03-L01 nothing taller than 0.2 m inside |x| < 5.3 m (road + shoulder) (max 0.03 m at (-4.04, 0.03, -40.0))
+  PASS v03kitw25: W03-L01 has contact shadows (108) that never spill onto the shoulder (inner edge 5.30 m; x, rx (5.979137, 0.679137))
+  PASS v03kitw25: W03-L02 has its own beat deck (6 types)
+  PASS v03kitw25: W03-L02 GLB hero modules (74) stand beyond 6.3 m from the centre (closest 6.87 m)
+  PASS v03kitw25: W03-L02 chunks build within the triangle budget (max 2092 per 40 m chunk + 74 GLB modules, limit 14000)
+  PASS v03kitw25: W03-L02 nothing taller than 0.2 m inside |x| < 5.3 m (road + shoulder) (max 0.03 m at (-4.04, 0.03, -40.0))
+  PASS v03kitw25: W03-L02 has contact shadows (111) that never spill onto the shoulder (inner edge 5.30 m; x, rx (-6.009125, 0.709125))
+  PASS v03kitw25: W03-L03 has its own beat deck (6 types)
+  PASS v03kitw25: W03-L03 GLB hero modules (78) stand beyond 6.3 m from the centre (closest 6.75 m)
+  PASS v03kitw25: W03-L03 chunks build within the triangle budget (max 2138 per 40 m chunk + 78 GLB modules, limit 14000)
+  PASS v03kitw25: W03-L03 nothing taller than 0.2 m inside |x| < 5.3 m (road + shoulder) (max 0.03 m at (-4.04, 0.03, -40.0))
+  PASS v03kitw25: W03-L03 has contact shadows (117) that never spill onto the shoulder (inner edge 5.30 m; x, rx (-6.009125, 0.709125))
+  PASS v03kitw25: W03-L04 has its own beat deck (6 types)
+  PASS v03kitw25: W03-L04 GLB hero modules (85) stand beyond 6.3 m from the centre (closest 6.75 m)
+  PASS v03kitw25: W03-L04 chunks build within the triangle budget (max 1802 per 40 m chunk + 85 GLB modules, limit 14000)
+  PASS v03kitw25: W03-L04 nothing taller than 0.2 m inside |x| < 5.3 m (road + shoulder) (max 0.03 m at (-4.04, 0.03, -40.0))
+  PASS v03kitw25: W03-L04 has contact shadows (96) that never spill onto the shoulder (inner edge 5.30 m; x, rx (-6.009125, 0.709125))
+  PASS v03kitw25: W03-L05 has its own beat deck (6 types)
+  PASS v03kitw25: W03-L05 GLB hero modules (71) stand beyond 6.3 m from the centre (closest 6.75 m)
+  PASS v03kitw25: W03-L05 chunks build within the triangle budget (max 2270 per 40 m chunk + 71 GLB modules, limit 14000)
+  PASS v03kitw25: W03-L05 nothing taller than 0.2 m inside |x| < 5.3 m (road + shoulder) (max 0.03 m at (-4.04, 0.03, -40.0))
+  PASS v03kitw25: W03-L05 has contact shadows (99) that never spill onto the shoulder (inner edge 5.30 m; x, rx (-6.009125, 0.709125))
+  PASS v03kitw25: W03-L06 has its own beat deck (6 types)
+  PASS v03kitw25: W03-L06 GLB hero modules (41) stand beyond 6.3 m from the centre (closest 6.89 m)
+  PASS v03kitw25: W03-L06 chunks build within the triangle budget (max 1659 per 40 m chunk + 41 GLB modules, limit 14000)
+  PASS v03kitw25: W03-L06 nothing taller than 0.2 m inside |x| < 5.3 m (road + shoulder) (max 0.03 m at (-4.04, 0.03, -40.0))
+  PASS v03kitw25: W03-L06 has contact shadows (46) that never spill onto the shoulder (inner edge 5.30 m; x, rx (-10.43344, 5.133445))
+  PASS v03kitw25: W03 places its GLB hero modules in the stages (419 in the sampled chunks)
+  PASS v03kitw25: W03 stages use at least 4 different ground colours (6)
+  PASS v03kitw25: W03-L01 has its own sky and light
+  PASS v03kitw25: W03-L02 has its own sky and light
+  PASS v03kitw25: W03-L03 has its own sky and light
+  PASS v03kitw25: W03-L04 has its own sky and light
+  PASS v03kitw25: W03-L05 has its own sky and light
+  PASS v03kitw25: W03-L06 has its own sky and light
+  PASS v03kitw25: W03 stage lights differ (6 distinct sun colours)
+  PASS v03kitw25: W04 GLB hero modules within the budget of 6 (2)
+  PASS v03kitw25: W04-L01 has its own beat deck (6 types)
+  PASS v03kitw25: W04-L01 GLB hero modules (35) stand beyond 6.3 m from the centre (closest 7.18 m)
+  PASS v03kitw25: W04-L01 chunks build within the triangle budget (max 1770 per 40 m chunk + 35 GLB modules, limit 14000)
+  PASS v03kitw25: W04-L01 nothing taller than 0.2 m inside |x| < 5.3 m (road + shoulder) (max 0.00 m at (0.0, 0.0, 0.0))
+  PASS v03kitw25: W04-L01 has contact shadows (86) that never spill onto the shoulder (inner edge 5.30 m; x, rx (-6.012924, 0.712924))
+  PASS v03kitw25: W04-L02 has its own beat deck (6 types)
+  PASS v03kitw25: W04-L02 GLB hero modules (37) stand beyond 6.3 m from the centre (closest 7.18 m)
+  PASS v03kitw25: W04-L02 chunks build within the triangle budget (max 1834 per 40 m chunk + 37 GLB modules, limit 14000)
+  PASS v03kitw25: W04-L02 nothing taller than 0.2 m inside |x| < 5.3 m (road + shoulder) (max 0.00 m at (0.0, 0.0, 0.0))
+  PASS v03kitw25: W04-L02 has contact shadows (91) that never spill onto the shoulder (inner edge 5.30 m; x, rx (-7.846619, 2.546619))
+  PASS v03kitw25: W04-L03 has its own beat deck (6 types)
+  PASS v03kitw25: W04-L03 GLB hero modules (61) stand beyond 6.3 m from the centre (closest 7.20 m)
+  PASS v03kitw25: W04-L03 chunks build within the triangle budget (max 2142 per 40 m chunk + 61 GLB modules, limit 14000)
+  PASS v03kitw25: W04-L03 nothing taller than 0.2 m inside |x| < 5.3 m (road + shoulder) (max 0.00 m at (0.0, 0.0, 0.0))
+  PASS v03kitw25: W04-L03 has contact shadows (102) that never spill onto the shoulder (inner edge 5.30 m; x, rx (-6.009125, 0.709125))
+  PASS v03kitw25: W04-L04 has its own beat deck (6 types)
+  PASS v03kitw25: W04-L04 GLB hero modules (31) stand beyond 6.3 m from the centre (closest 7.19 m)
+  PASS v03kitw25: W04-L04 chunks build within the triangle budget (max 1794 per 40 m chunk + 31 GLB modules, limit 14000)
+  PASS v03kitw25: W04-L04 nothing taller than 0.2 m inside |x| < 5.3 m (road + shoulder) (max 0.00 m at (0.0, 0.0, 0.0))
+  PASS v03kitw25: W04-L04 has contact shadows (87) that never spill onto the shoulder (inner edge 5.30 m; x, rx (-6.012924, 0.712924))
+  PASS v03kitw25: W04-L05 has its own beat deck (6 types)
+  PASS v03kitw25: W04-L05 GLB hero modules (59) stand beyond 6.3 m from the centre (closest 7.18 m)
+  PASS v03kitw25: W04-L05 chunks build within the triangle budget (max 1320 per 40 m chunk + 59 GLB modules, limit 14000)
+  PASS v03kitw25: W04-L05 nothing taller than 0.2 m inside |x| < 5.3 m (road + shoulder) (max 0.00 m at (0.0, 0.0, 0.0))
+  PASS v03kitw25: W04-L05 has contact shadows (83) that never spill onto the shoulder (inner edge 5.30 m; x, rx (-6.009125, 0.709125))
+  PASS v03kitw25: W04-L06 has its own beat deck (6 types)
+  PASS v03kitw25: W04-L06 GLB hero modules (23) stand beyond 6.3 m from the centre (closest 6.96 m)
+  PASS v03kitw25: W04-L06 chunks build within the triangle budget (max 1518 per 40 m chunk + 23 GLB modules, limit 14000)
+  PASS v03kitw25: W04-L06 nothing taller than 0.2 m inside |x| < 5.3 m (road + shoulder) (max 0.00 m at (0.0, 0.0, 0.0))
+  PASS v03kitw25: W04-L06 has contact shadows (86) that never spill onto the shoulder (inner edge 5.30 m; x, rx (6.015007, 0.715007))
+  PASS v03kitw25: W04 places its GLB hero modules in the stages (246 in the sampled chunks)
+  PASS v03kitw25: W04 stages use at least 4 different ground colours (6)
+  PASS v03kitw25: W04-L01 has its own sky and light
+  PASS v03kitw25: W04-L02 has its own sky and light
+  PASS v03kitw25: W04-L03 has its own sky and light
+  PASS v03kitw25: W04-L04 has its own sky and light
+  PASS v03kitw25: W04-L05 has its own sky and light
+  PASS v03kitw25: W04-L06 has its own sky and light
+  PASS v03kitw25: W04 stage lights differ (6 distinct sun colours)
+  PASS v03kitw25: W05 GLB hero modules within the budget of 6 (3)
+  PASS v03kitw25: W05-L01 has its own beat deck (6 types)
+  PASS v03kitw25: W05-L01 GLB hero modules (84) stand beyond 6.3 m from the centre (closest 6.85 m)
+  PASS v03kitw25: W05-L01 chunks build within the triangle budget (max 2836 per 40 m chunk + 84 GLB modules, limit 14000)
+  PASS v03kitw25: W05-L01 nothing taller than 0.2 m inside |x| < 5.3 m (road + shoulder) (max 0.00 m at (0.0, 0.0, 0.0))
+  PASS v03kitw25: W05-L01 has contact shadows (117) that never spill onto the shoulder (inner edge 5.30 m; x, rx (-5.997818, 0.697818))
+  PASS v03kitw25: W05-L02 has its own beat deck (7 types)
+  PASS v03kitw25: W05-L02 GLB hero modules (63) stand beyond 6.3 m from the centre (closest 7.25 m)
+  PASS v03kitw25: W05-L02 chunks build within the triangle budget (max 2734 per 40 m chunk + 63 GLB modules, limit 14000)
+  PASS v03kitw25: W05-L02 nothing taller than 0.2 m inside |x| < 5.3 m (road + shoulder) (max 0.00 m at (0.0, 0.0, 0.0))
+  PASS v03kitw25: W05-L02 has contact shadows (91) that never spill onto the shoulder (inner edge 5.30 m; x, rx (-6.009125, 0.709125))
+  PASS v03kitw25: W05-L03 has its own beat deck (6 types)
+  PASS v03kitw25: W05-L03 GLB hero modules (109) stand beyond 6.3 m from the centre (closest 6.82 m)
+  PASS v03kitw25: W05-L03 chunks build within the triangle budget (max 3968 per 40 m chunk + 109 GLB modules, limit 14000)
+  PASS v03kitw25: W05-L03 nothing taller than 0.2 m inside |x| < 5.3 m (road + shoulder) (max 0.00 m at (0.0, 0.0, 0.0))
+  PASS v03kitw25: W05-L03 has contact shadows (152) that never spill onto the shoulder (inner edge 5.30 m; x, rx (-6.009125, 0.709125))
+  PASS v03kitw25: W05-L04 has its own beat deck (5 types)
+  PASS v03kitw25: W05-L04 GLB hero modules (106) stand beyond 6.3 m from the centre (closest 6.80 m)
+  PASS v03kitw25: W05-L04 chunks build within the triangle budget (max 5060 per 40 m chunk + 106 GLB modules, limit 14000)
+  PASS v03kitw25: W05-L04 nothing taller than 0.2 m inside |x| < 5.3 m (road + shoulder) (max 0.00 m at (0.0, 0.0, 0.0))
+  PASS v03kitw25: W05-L04 has contact shadows (161) that never spill onto the shoulder (inner edge 5.30 m; x, rx (-6.009125, 0.709125))
+  PASS v03kitw25: W05-L05 has its own beat deck (6 types)
+  PASS v03kitw25: W05-L05 GLB hero modules (83) stand beyond 6.3 m from the centre (closest 6.81 m)
+  PASS v03kitw25: W05-L05 chunks build within the triangle budget (max 3402 per 40 m chunk + 83 GLB modules, limit 14000)
+  PASS v03kitw25: W05-L05 nothing taller than 0.2 m inside |x| < 5.3 m (road + shoulder) (max 0.00 m at (0.0, 0.0, 0.0))
+  PASS v03kitw25: W05-L05 has contact shadows (136) that never spill onto the shoulder (inner edge 5.30 m; x, rx (-6.009125, 0.709125))
+  PASS v03kitw25: W05-L06 has its own beat deck (6 types)
+  PASS v03kitw25: W05-L06 GLB hero modules (27) stand beyond 6.3 m from the centre (closest 7.25 m)
+  PASS v03kitw25: W05-L06 chunks build within the triangle budget (max 2076 per 40 m chunk + 27 GLB modules, limit 14000)
+  PASS v03kitw25: W05-L06 nothing taller than 0.2 m inside |x| < 5.3 m (road + shoulder) (max 0.00 m at (0.0, 0.0, 0.0))
+  PASS v03kitw25: W05-L06 has contact shadows (55) that never spill onto the shoulder (inner edge 5.30 m; x, rx (-6.009125, 0.709125))
+  PASS v03kitw25: W05 places its GLB hero modules in the stages (472 in the sampled chunks)
+  PASS v03kitw25: W05 stages use at least 4 different ground colours (6)
+  PASS v03kitw25: W05-L01 has its own sky and light
+  PASS v03kitw25: W05-L02 has its own sky and light
+  PASS v03kitw25: W05-L03 has its own sky and light
+  PASS v03kitw25: W05-L04 has its own sky and light
+  PASS v03kitw25: W05-L05 has its own sky and light
+  PASS v03kitw25: W05-L06 has its own sky and light
+  PASS v03kitw25: W05 stage lights differ (6 distinct sun colours)
+  PASS v03kitw25: W02-L01 beat rules hold over 160 beats (no repeats of a type or a pair, a quiet beat in every 4)
+  PASS v03kitw25: W02-L01 uses at least 4 beat types (6)
+  PASS v03kitw25: W02-L03 beat rules hold over 160 beats (no repeats of a type or a pair, a quiet beat in every 4)
+  PASS v03kitw25: W02-L03 uses at least 4 beat types (6)
+  PASS v03kitw25: W02-L06 beat rules hold over 160 beats (no repeats of a type or a pair, a quiet beat in every 4)
+  PASS v03kitw25: W02-L06 uses at least 4 beat types (6)
+  PASS v03kitw25: W03-L01 beat rules hold over 160 beats (no repeats of a type or a pair, a quiet beat in every 4)
+  PASS v03kitw25: W03-L01 uses at least 4 beat types (6)
+  PASS v03kitw25: W03-L03 beat rules hold over 160 beats (no repeats of a type or a pair, a quiet beat in every 4)
+  PASS v03kitw25: W03-L03 uses at least 4 beat types (6)
+  PASS v03kitw25: W03-L06 beat rules hold over 160 beats (no repeats of a type or a pair, a quiet beat in every 4)
+  PASS v03kitw25: W03-L06 uses at least 4 beat types (6)
+  PASS v03kitw25: W04-L01 beat rules hold over 160 beats (no repeats of a type or a pair, a quiet beat in every 4)
+  PASS v03kitw25: W04-L01 uses at least 4 beat types (6)
+  PASS v03kitw25: W04-L03 beat rules hold over 160 beats (no repeats of a type or a pair, a quiet beat in every 4)
+  PASS v03kitw25: W04-L03 uses at least 4 beat types (6)
+  PASS v03kitw25: W04-L06 beat rules hold over 160 beats (no repeats of a type or a pair, a quiet beat in every 4)
+  PASS v03kitw25: W04-L06 uses at least 4 beat types (6)
+  PASS v03kitw25: W05-L01 beat rules hold over 160 beats (no repeats of a type or a pair, a quiet beat in every 4)
+  PASS v03kitw25: W05-L01 uses at least 4 beat types (6)
+  PASS v03kitw25: W05-L03 beat rules hold over 160 beats (no repeats of a type or a pair, a quiet beat in every 4)
+  PASS v03kitw25: W05-L03 uses at least 4 beat types (6)
+  PASS v03kitw25: W05-L06 beat rules hold over 160 beats (no repeats of a type or a pair, a quiet beat in every 4)
+  PASS v03kitw25: W05-L06 uses at least 4 beat types (6)
+  PASS v03kitw25: W02-L01 builds its destination prop (an RnFinishProp)
+  PASS v03kitw25: W02-L01 prop builds (2750 vertices, 1290 tris)
+  PASS v03kitw25: W02-L01 leaves all three lanes clear where Saddah runs out (closest solid 0.3-3 m high within 6 m of the line at |x| = 99.00 m)
+  PASS v03kitw25: W02-L01 plays its arrival payoff and sends one cue (["chime"])
+  PASS v03kitw25: W02-L01 payoff ends within 2.0 s
+  PASS v03kitw25: W02-L01 skip jumps to the end state (reduced motion)
+  PASS v03kitw25: W02-L02 builds its destination prop (an RnFinishProp)
+  PASS v03kitw25: W02-L02 prop builds (2964 vertices, 1414 tris)
+  PASS v03kitw25: W02-L02 leaves all three lanes clear where Saddah runs out (closest solid 0.3-3 m high within 6 m of the line at |x| = 99.00 m)
+  PASS v03kitw25: W02-L02 plays its arrival payoff and sends one cue (["whoosh"])
+  PASS v03kitw25: W02-L02 payoff ends within 2.0 s
+  PASS v03kitw25: W02-L02 skip jumps to the end state (reduced motion)
+  PASS v03kitw25: W02-L03 builds its destination prop (an RnFinishProp)
+  PASS v03kitw25: W02-L03 prop builds (2598 vertices, 1242 tris)
+  PASS v03kitw25: W02-L03 leaves all three lanes clear where Saddah runs out (closest solid 0.3-3 m high within 6 m of the line at |x| = 99.00 m)
+  PASS v03kitw25: W02-L03 plays its arrival payoff and sends one cue (["train"])
+  PASS v03kitw25: W02-L03 payoff ends within 2.0 s
+  PASS v03kitw25: W02-L03 skip jumps to the end state (reduced motion)
+  PASS v03kitw25: W02-L04 builds its destination prop (an RnFinishProp)
+  PASS v03kitw25: W02-L04 prop builds (3220 vertices, 1574 tris)
+  PASS v03kitw25: W02-L04 leaves all three lanes clear where Saddah runs out (closest solid 0.3-3 m high within 6 m of the line at |x| = 99.00 m)
+  PASS v03kitw25: W02-L04 plays its arrival payoff and sends one cue (["doors"])
+  PASS v03kitw25: W02-L04 payoff ends within 2.0 s
+  PASS v03kitw25: W02-L04 skip jumps to the end state (reduced motion)
+  PASS v03kitw25: W02-L05 builds its destination prop (an RnFinishProp)
+  PASS v03kitw25: W02-L05 prop builds (3046 vertices, 1524 tris)
+  PASS v03kitw25: W02-L05 leaves all three lanes clear where Saddah runs out (closest solid 0.3-3 m high within 6 m of the line at |x| = 99.00 m)
+  PASS v03kitw25: W02-L05 plays its arrival payoff and sends one cue (["chime"])
+  PASS v03kitw25: W02-L05 payoff ends within 2.0 s
+  PASS v03kitw25: W02-L05 skip jumps to the end state (reduced motion)
+  PASS v03kitw25: W02-L06 builds its destination prop (an RnFinishProp)
+  PASS v03kitw25: W02-L06 prop builds (3046 vertices, 1438 tris)
+  PASS v03kitw25: W02-L06 leaves all three lanes clear where Saddah runs out (closest solid 0.3-3 m high within 6 m of the line at |x| = 99.00 m)
+  PASS v03kitw25: W02-L06 plays its arrival payoff and sends one cue (["chime"])
+  PASS v03kitw25: W02-L06 payoff ends within 2.0 s
+  PASS v03kitw25: W02-L06 skip jumps to the end state (reduced motion)
+  PASS v03kitw25: W03-L01 builds its destination prop (an RnFinishProp)
+  PASS v03kitw25: W03-L01 prop builds (4604 vertices, 2445 tris)
+  PASS v03kitw25: W03-L01 leaves all three lanes clear where Saddah runs out (closest solid 0.3-3 m high within 6 m of the line at |x| = 99.00 m)
+  PASS v03kitw25: W03-L01 plays its arrival payoff and sends one cue (["chime"])
+  PASS v03kitw25: W03-L01 payoff ends within 2.0 s
+  PASS v03kitw25: W03-L01 skip jumps to the end state (reduced motion)
+  PASS v03kitw25: W03-L02 builds its destination prop (an RnFinishProp)
+  PASS v03kitw25: W03-L02 prop builds (4588 vertices, 2544 tris)
+  PASS v03kitw25: W03-L02 leaves all three lanes clear where Saddah runs out (closest solid 0.3-3 m high within 6 m of the line at |x| = 99.00 m)
+  PASS v03kitw25: W03-L02 plays its arrival payoff and sends one cue (["cheer"])
+  PASS v03kitw25: W03-L02 payoff ends within 2.0 s
+  PASS v03kitw25: W03-L02 skip jumps to the end state (reduced motion)
+  PASS v03kitw25: W03-L03 builds its destination prop (an RnFinishProp)
+  PASS v03kitw25: W03-L03 prop builds (2867 vertices, 1377 tris)
+  PASS v03kitw25: W03-L03 leaves all three lanes clear where Saddah runs out (closest solid 0.3-3 m high within 6 m of the line at |x| = 99.00 m)
+  PASS v03kitw25: W03-L03 plays its arrival payoff and sends one cue (["gust"])
+  PASS v03kitw25: W03-L03 payoff ends within 2.0 s
+  PASS v03kitw25: W03-L03 skip jumps to the end state (reduced motion)
+  PASS v03kitw25: W03-L04 builds its destination prop (an RnFinishProp)
+  PASS v03kitw25: W03-L04 prop builds (2840 vertices, 1366 tris)
+  PASS v03kitw25: W03-L04 leaves all three lanes clear where Saddah runs out (closest solid 0.3-3 m high within 6 m of the line at |x| = 99.00 m)
+  PASS v03kitw25: W03-L04 plays its arrival payoff and sends one cue (["splash"])
+  PASS v03kitw25: W03-L04 payoff ends within 2.0 s
+  PASS v03kitw25: W03-L04 skip jumps to the end state (reduced motion)
+  PASS v03kitw25: W03-L05 builds its destination prop (an RnFinishProp)
+  PASS v03kitw25: W03-L05 prop builds (1508 vertices, 774 tris)
+  PASS v03kitw25: W03-L05 leaves all three lanes clear where Saddah runs out (closest solid 0.3-3 m high within 6 m of the line at |x| = 99.00 m)
+  PASS v03kitw25: W03-L05 plays its arrival payoff and sends one cue (["doors"])
+  PASS v03kitw25: W03-L05 payoff ends within 2.0 s
+  PASS v03kitw25: W03-L05 skip jumps to the end state (reduced motion)
+  PASS v03kitw25: W03-L06 builds its destination prop (an RnFinishProp)
+  PASS v03kitw25: W03-L06 prop builds (4223 vertices, 2213 tris)
+  PASS v03kitw25: W03-L06 leaves all three lanes clear where Saddah runs out (closest solid 0.3-3 m high within 6 m of the line at |x| = 99.00 m)
+  PASS v03kitw25: W03-L06 plays its arrival payoff and sends one cue (["festival"])
+  PASS v03kitw25: W03-L06 payoff ends within 2.0 s
+  PASS v03kitw25: W03-L06 skip jumps to the end state (reduced motion)
+  PASS v03kitw25: W04-L01 builds its destination prop (an RnFinishProp)
+  PASS v03kitw25: W04-L01 prop builds (2665 vertices, 1407 tris)
+  PASS v03kitw25: W04-L01 leaves all three lanes clear where Saddah runs out (closest solid 0.3-3 m high within 6 m of the line at |x| = 99.00 m)
+  PASS v03kitw25: W04-L01 plays its arrival payoff and sends one cue (["horn"])
+  PASS v03kitw25: W04-L01 payoff ends within 2.0 s
+  PASS v03kitw25: W04-L01 skip jumps to the end state (reduced motion)
+  PASS v03kitw25: W04-L02 builds its destination prop (an RnFinishProp)
+  PASS v03kitw25: W04-L02 prop builds (1824 vertices, 968 tris)
+  PASS v03kitw25: W04-L02 leaves all three lanes clear where Saddah runs out (closest solid 0.3-3 m high within 6 m of the line at |x| = 99.00 m)
+  PASS v03kitw25: W04-L02 plays its arrival payoff and sends one cue (["birds"])
+  PASS v03kitw25: W04-L02 payoff ends within 2.0 s
+  PASS v03kitw25: W04-L02 skip jumps to the end state (reduced motion)
+  PASS v03kitw25: W04-L03 builds its destination prop (an RnFinishProp)
+  PASS v03kitw25: W04-L03 prop builds (3830 vertices, 2422 tris)
+  PASS v03kitw25: W04-L03 leaves all three lanes clear where Saddah runs out (closest solid 0.3-3 m high within 6 m of the line at |x| = 99.00 m)
+  PASS v03kitw25: W04-L03 plays its arrival payoff and sends one cue (["rustle"])
+  PASS v03kitw25: W04-L03 payoff ends within 2.0 s
+  PASS v03kitw25: W04-L03 skip jumps to the end state (reduced motion)
+  PASS v03kitw25: W04-L04 builds its destination prop (an RnFinishProp)
+  PASS v03kitw25: W04-L04 prop builds (2063 vertices, 1017 tris)
+  PASS v03kitw25: W04-L04 leaves all three lanes clear where Saddah runs out (closest solid 0.3-3 m high within 6 m of the line at |x| = 99.00 m)
+  PASS v03kitw25: W04-L04 plays its arrival payoff and sends one cue (["gust"])
+  PASS v03kitw25: W04-L04 payoff ends within 2.0 s
+  PASS v03kitw25: W04-L04 skip jumps to the end state (reduced motion)
+  PASS v03kitw25: W04-L05 builds its destination prop (an RnFinishProp)
+  PASS v03kitw25: W04-L05 prop builds (2052 vertices, 1010 tris)
+  PASS v03kitw25: W04-L05 leaves all three lanes clear where Saddah runs out (closest solid 0.3-3 m high within 6 m of the line at |x| = 99.00 m)
+  PASS v03kitw25: W04-L05 plays its arrival payoff and sends one cue (["chime"])
+  PASS v03kitw25: W04-L05 payoff ends within 2.0 s
+  PASS v03kitw25: W04-L05 skip jumps to the end state (reduced motion)
+  PASS v03kitw25: W04-L06 builds its destination prop (an RnFinishProp)
+  PASS v03kitw25: W04-L06 prop builds (1854 vertices, 934 tris)
+  PASS v03kitw25: W04-L06 leaves all three lanes clear where Saddah runs out (closest solid 0.3-3 m high within 6 m of the line at |x| = 99.00 m)
+  PASS v03kitw25: W04-L06 plays its arrival payoff and sends one cue (["wind"])
+  PASS v03kitw25: W04-L06 payoff ends within 2.0 s
+  PASS v03kitw25: W04-L06 skip jumps to the end state (reduced motion)
+  PASS v03kitw25: W05-L01 builds its destination prop (an RnFinishProp)
+  PASS v03kitw25: W05-L01 prop builds (3145 vertices, 1939 tris)
+  PASS v03kitw25: W05-L01 leaves all three lanes clear where Saddah runs out (closest solid 0.3-3 m high within 6 m of the line at |x| = 99.00 m)
+  PASS v03kitw25: W05-L01 plays its arrival payoff and sends one cue (["chime"])
+  PASS v03kitw25: W05-L01 payoff ends within 2.0 s
+  PASS v03kitw25: W05-L01 skip jumps to the end state (reduced motion)
+  PASS v03kitw25: W05-L02 builds its destination prop (an RnFinishProp)
+  PASS v03kitw25: W05-L02 prop builds (2372 vertices, 1558 tris)
+  PASS v03kitw25: W05-L02 leaves all three lanes clear where Saddah runs out (closest solid 0.3-3 m high within 6 m of the line at |x| = 99.00 m)
+  PASS v03kitw25: W05-L02 plays its arrival payoff and sends one cue (["water"])
+  PASS v03kitw25: W05-L02 payoff ends within 2.0 s
+  PASS v03kitw25: W05-L02 skip jumps to the end state (reduced motion)
+  PASS v03kitw25: W05-L03 builds its destination prop (an RnFinishProp)
+  PASS v03kitw25: W05-L03 prop builds (3430 vertices, 2888 tris)
+  PASS v03kitw25: W05-L03 leaves all three lanes clear where Saddah runs out (closest solid 0.3-3 m high within 6 m of the line at |x| = 99.00 m)
+  PASS v03kitw25: W05-L03 plays its arrival payoff and sends one cue (["doors"])
+  PASS v03kitw25: W05-L03 payoff ends within 2.0 s
+  PASS v03kitw25: W05-L03 skip jumps to the end state (reduced motion)
+  PASS v03kitw25: W05-L04 builds its destination prop (an RnFinishProp)
+  PASS v03kitw25: W05-L04 prop builds (3799 vertices, 2293 tris)
+  PASS v03kitw25: W05-L04 leaves all three lanes clear where Saddah runs out (closest solid 0.3-3 m high within 6 m of the line at |x| = 99.00 m)
+  PASS v03kitw25: W05-L04 plays its arrival payoff and sends one cue (["water"])
+  PASS v03kitw25: W05-L04 payoff ends within 2.0 s
+  PASS v03kitw25: W05-L04 skip jumps to the end state (reduced motion)
+  PASS v03kitw25: W05-L05 builds its destination prop (an RnFinishProp)
+  PASS v03kitw25: W05-L05 prop builds (2904 vertices, 2382 tris)
+  PASS v03kitw25: W05-L05 leaves all three lanes clear where Saddah runs out (closest solid 0.3-3 m high within 6 m of the line at |x| = 99.00 m)
+  PASS v03kitw25: W05-L05 plays its arrival payoff and sends one cue (["birds"])
+  PASS v03kitw25: W05-L05 payoff ends within 2.0 s
+  PASS v03kitw25: W05-L05 skip jumps to the end state (reduced motion)
+  PASS v03kitw25: W05-L06 builds its destination prop (an RnFinishProp)
+  PASS v03kitw25: W05-L06 prop builds (2391 vertices, 1599 tris)
+  PASS v03kitw25: W05-L06 leaves all three lanes clear where Saddah runs out (closest solid 0.3-3 m high within 6 m of the line at |x| = 99.00 m)
+  PASS v03kitw25: W05-L06 plays its arrival payoff and sends one cue (["cablecar"])
+  PASS v03kitw25: W05-L06 payoff ends within 2.0 s
+  PASS v03kitw25: W05-L06 skip jumps to the end state (reduced motion)
+  PASS v03kitw25: 24 distinct destination props for the 24 stages (24)
+  PASS v03kitw25: a stage outside W02-W05 without finish_prop keeps its world's finish arch
+  PASS v03 hero arrival: the case stays upright in 96 arrival frames (worst 5 degrees from its run pose, limit 50)
+  PASS v03 hero arrival: the case stays in his right hand in every arrival frame (worst 0.06 m)
+  PASS v03 hero arrival: the case is never above the chest/neck (-0.15 m vs the neck)
+  PASS v03 hero arrival: the case is never dragged below the hip line (-0.13 m vs the hip)
+  PASS v03 hero arrival: the case never hides inside the torso (closest to the torso axis 0.18 m)
+  PASS feel jump: airtime 0.67 s (was 0.85 s: floaty), 0.62-0.68 s
+  PASS feel jump: the drop (0.30 s) is quicker than the rise (0.37 s)
+  PASS feel jump: gravity on the way down 49.8 >= 1.55 x the way up 30.7
+  PASS feel jump: hang at the top (|vy| < 1.5 m/s) 0.08 s <= 0.09 s (was 0.22 s)
+  PASS feel jump: take-off speed 11.4 m/s (was 7.8): a snappier rise
+  PASS feel jump: RnTuning.jump_y (generator, view) matches the simulated arc (worst 0.072 m; the 60 Hz tick of a 30-50 m/s^2 gravity costs up to ~0.07 m)
+  PASS feel jump: air_time_above() spans the whole airtime at 0 m and nothing at the apex
+  PASS feel jump: air_time_above(0.8 m) 0.519 s matches the sim 0.533 s
+  PASS feel: lane change time stays TUN-02 = 0.20 s
+  PASS feel near miss: only a real shave counts (0.18 m beside, 0.12 m above/below; was 0.5 / 0.2) and at most once per 9 s (was 2 s)
+  PASS feel near miss: 0 reactions in 412 s of shipped routes (0.00 per minute <= 1.5)
+  PASS feel near miss: a 0.10 m shave beside a block still counts
+  PASS feel near miss: running past in the next lane (1.04 m clear) is not a near miss
+  PASS feel near miss: the 'Close one!' pop is capped at once per 9 s too
+  PASS feel '!': stays beside his head while he runs on (worst 0.00 m behind him over 35 frames); it used to stay put and the camera ran into it
+  PASS feel '!': never grows past its pop size (max scale 1.00)
+  PASS feel poses: the hero glb carries the pose layer (slide drives 16 bones, jump 16)
+  PASS feel slide: a reclined feet-first slide (torso 31 deg back of upright, running 32 deg), not a kneel
+  PASS feel slide: the lead leg reaches forward along the road (dir (-0.620713, -0.0701, -0.780898))
+  PASS feel slide: a forward skid surge of 0.24 m at the start (then he eases back)
+  PASS feel slide: head >= 45 % lower from 0.12 s and held (lowest 46 % while held; run head 0.72 m)
+  PASS feel slide: pops straight back into the run (head back to 90 % of run height in 0.10 s <= 0.15 s, no kneel)
+  PASS feel slide: back to the run clip after the slide
+  PASS feel jump peak: the body is square to the road (sideways tilt 0.0 deg <= 6)
+  PASS feel jump peak: the case hand stays tucked at his right side (0.20 m out from the hips)
+  PASS feel jump peak: lead knee shows 0.20 m out vs the shoulder line 0.16 m (body width 0.32 m)
+  PASS feel jump peak: free hand 0.36 m out, past the shoulder line + 15 % of the body width
+  PASS feel lens W09-L04: no obstacle is drawn within 2.2 m of the lens (1226 close frames over 46 obstacles, 0 drawn; 1944 frames with a fade)
+  PASS feel lens W09-L04: an obstacle stays solid until it is 0.3 m behind his head (0 early fades)
+  PASS feel lens W09-L04: an overhead beam stays fully solid until he is 0.3 m past it (0 of 65 beam-frames faded)
+  PASS feel lens W09-L04: a passed overhead beam lifts out of the frame (7.0 m up by the time it is hidden, 115 beam-frames)
+  PASS feel lens W09-L04: once he is 1.5 m past an obstacle it covers at most 20 % of the phone frame (max 20 %, o043 OBS-27 @1100.6 m, 2.9 m past it)
+  PASS feel lens W09-L04: no Qoroosh crosses the lens (0 coin-frames within 0.5 m)
+  PASS feel lens W08-L02: no obstacle is drawn within 2.2 m of the lens (0 close frames over 0 obstacles, 0 drawn; 3736 frames with a fade)
+  PASS feel lens W08-L02: an obstacle stays solid until it is 0.3 m behind his head (0 early fades)
+  PASS feel lens W08-L02: no Qoroosh crosses the lens (0 coin-frames within 0.5 m)
+  PASS feel lens W01-L02: no obstacle is drawn within 2.2 m of the lens (0 close frames over 0 obstacles, 0 drawn; 2928 frames with a fade)
+  PASS feel lens W01-L02: an obstacle stays solid until it is 0.3 m behind his head (0 early fades)
+  PASS feel lens W01-L02: an overhead beam stays fully solid until he is 0.3 m past it (0 of 920 beam-frames faded)
+  PASS feel lens W01-L02: a passed overhead beam lifts out of the frame (7.0 m up by the time it is hidden, 1650 beam-frames)
+  PASS feel lens W01-L02: no Qoroosh crosses the lens (0 coin-frames within 0.5 m)
+  PASS feel lens: the solid obstacle shader fades only inside 0.60 m of the camera (was 3.8-5.3 m)
+  PASS feel lens: glow/flat obstacle materials have no distance dither
+  PASS feel lens: glow/flat obstacle materials have no distance dither
+  PASS feel lens: lifted obstacle GLB materials have no distance dither (2 materials)
+  PASS feel lens: the dither ends (0.60 m) well before the chase camera distance to his head (5.10 m)
+  PASS v03 look: phones and desktop on the Mobile renderer, web stays on Compatibility (mobile / mobile / gl_compatibility)
+  PASS v03 look: phone sun shadow map >= 2048 (2048)
+  PASS v03 look: every world has its light/post preset on the Mobile renderer: sun shadows, glow, sky ambient, fog (9/9, missing [])
+  PASS v03 look: the web build (Compatibility) keeps the v0.3 world grade untouched (no shadows, no glow, its tonemap)
+  PASS v03 look: obstacle palette harmony set in every world (9/9)
+  PASS v03 look: the road fills <= ~45 % of a 9:19.5 frame (calm 43 %, fast 44 %; was ~55-60 %), sky and landmarks get the top half (ground 50 %)
+  PASS v03 look: calm framing keeps Saddah big (29 % of the height) with his feet above 89 % of the screen (88.7 %)
+  PASS v03 look: every world has its landmark card in the mid layer (9/9, missing [])
+  PASS v03 look: W01 landmark sits between the scenery stream and the skyline card and comes closer over the stage (230 -> 150 m, skyline 235 m)
+  PASS v03 props: every world has its own prop modules in the game (9/9 worlds, 39 modules)
+  PASS v03 props: every prop loads and stays within the mid/high phone budget (<= 16k tris near) []
+  PASS v03 props: every prop has a far LOD with >= 2x fewer triangles []
+  PASS v03 props: every prop belongs to exactly one world (0 shared/misnamed)
+  PASS v03 props: no prop inside the obstacle clearance (|x| - radius >= 6.2 m) or beyond 30 m []
+  PASS v03 props: the finish stretch (last 40 m) stays clear for the finish prop (0 found)
+  PASS v03 props: every world is dressed beside the track (>= 0.5 props per 10 m per side over L01-L06) ["W01 1.39", "W02 0.90", "W03 2.06", "W04 0.95", "W05 2.26", "W06 1.40", "W07 0.68", "W08 1.04", "W09 1.32"]
+  PASS meta: economy read from Economy_Table (40 / 60 / 0.5)
+  PASS meta: six upgrades parsed from Upgrade_Table
+  PASS meta: Magnet ranks: costs 250/550/900 (v0.3 RR-05) and 6 s -> 8 s -> 10 s -> 12 s
+  PASS meta: Qoroosh Bonus ranks 5/10/15 %
+  PASS meta: Double Jump has no extra ranks
+  PASS meta: 54 levels in 9 worlds from the level register
+  PASS meta: successor chain across worlds
+  PASS meta: skins read from the matrix (SKIN-02 is the first purchase at 250, SKIN-04 disabled)
+  PASS meta: seven worked examples loaded
+  PASS meta: EX-01 Success: wallet change 200 = 200 (100 + 40 + 60)
+  PASS meta: EX-01 rows add up to the wallet change
+  PASS meta: EX-02 Replay success: wallet change 140 = 140 (100 + 40)
+  PASS meta: EX-02 rows add up to the wallet change
+  PASS meta: EX-03 Success: wallet change 205 = 205 (floor(100*1.05) + 40 + 60)
+  PASS meta: EX-03 rows add up to the wallet change
+  PASS meta: EX-04 Success with ad: wallet change 310 = 310 (105 + 40 + 60 + 105)
+  PASS meta: EX-04 rows add up to the wallet change
+  PASS meta: EX-05 Fail: wallet change 25 = 25 (floor(51*0.5); ignore bonus)
+  PASS meta: EX-05 rows add up to the wallet change
+  PASS meta: EX-06 First clear low collection: wallet change 170 = 170 (70 + 40 + 60)
+  PASS meta: EX-06 rows add up to the wallet change
+  PASS meta: EX-07 Quit: wallet change 0 = 0 (floor(0*0.5))
+  PASS meta: EX-07 rows add up to the wallet change
+  PASS meta: failed run: floor(51 x 0.5) = 25, no bonus, no completion, no first clear
+  PASS meta: a failed run clears nothing and unlocks nothing
+  PASS meta: quit uses the same half rule (9 -> 4)
+  PASS meta: first clear pays the first-clear award
+  PASS meta: stars: finish + 60% collected, one hard hit = 2 stars
+  PASS meta: replay: no second first-clear award (10 + 40)
+  PASS meta: stars are independent: finish + no hard hits, low collection
+  PASS meta: best stars are the union of the independent stars (3)
+  PASS meta: a worse replay never downgrades stars, best or the clear
+  PASS meta: the worse run itself shows one star
+  PASS meta: failing a cleared stage never revokes it
+  PASS meta: fresh profile: only W01-L01 is unlocked
+  PASS meta: later levels and worlds start locked
+  PASS meta: clearing a stage unlocks exactly its successor (no star or currency needed)
+  PASS meta: the last stage of a world unlocks the next world's first stage
+  PASS meta: next level and clear count follow the chain
+  PASS meta: unlocks are recomputed from the clears, never trusted from the cache
+  PASS meta: the Desert exit beat is owed after W01-L06
+  PASS meta: no beat is owed once it has been seen
+  PASS meta: journal written during a run
+  PASS meta: journal survives a restart (4 unique pickups)
+  PASS meta: unfinished run is settled once as abandoned from the last journal (floor(4 x 0.5) = 2)
+  PASS meta: wallet credited, journal marked settled
+  PASS meta: a second boot settles nothing more
+  PASS meta: restart after the credit: still credited exactly once
+  PASS meta: kill after the credit: no second settlement on the next boot
+  PASS meta: duplicate settle callback does not credit twice
+  PASS meta: failed write: nothing credited in memory
+  PASS meta: failed write: nothing on disk either
+  PASS meta: the same run settles correctly when the write works
+  PASS meta: an abandoned older run is settled before a new journal starts
+  PASS meta: revision counter grows with every commit
+  PASS meta: atomic write leaves no temp file
+  PASS meta: a valid backup copy of the previous save exists
+  PASS meta: corrupt save is reported, not silently reset
+  PASS meta: nothing is written while the damaged save is unresolved
+  PASS meta: recovery can offer the backup
+  PASS meta: restore backup loads it
+  PASS meta: restored progress is the last good one
+  PASS meta: the damaged file is kept aside
+  PASS meta: retry on a still-damaged save stays in recovery
+  PASS meta: explicit reset starts a clean profile
+  PASS meta: a save from a newer version is rejected safely
+  PASS meta: interrupted swap: the complete temp file is used
+  PASS meta: snapshots differ (sanity)
+  PASS meta: settings are kept independently of an unfinished run
+  PASS meta: golden schema-1 save present
+  PASS meta: schema 1 save migrates to the current schema
+  PASS meta: migration keeps the player id and old values
+  PASS meta: migration keeps the player's settings
+  PASS meta: starter 'reduce_fx' became 'reduced_motion'
+  PASS meta: migrated profile starts with zero wallet, only the first level, the default skin
+  PASS meta: new settings get their defaults
+  PASS meta: migrated save was written back in the new schema
+  PASS meta: levels that no longer exist are ignored
+  PASS meta: upgrade ranks are clamped to what the catalog allows
+  PASS meta: an equipped skin that is unavailable falls back to the default
+  PASS meta: upgrades are not offered before their clear
+  PASS meta: nothing is offered on a fresh profile
+  PASS meta: Magnet appears after W01-L03; Double Jump waits for W02-L01 and Bonus for W02-L03 (v0.3 RR-05)
+  PASS meta: buying rank 1 costs the register price
+  PASS meta: a repeated confirmation (same transaction) cannot buy twice
+  PASS meta: rank 2 costs its own price
+  PASS meta: no ranks beyond the catalog
+  PASS meta: insufficient funds: nothing bought, nothing charged, the missing amount is reported
+  PASS meta: Qoroosh Bonus rank 1 = 5% (from the register)
+  PASS meta: outfit too expensive: neutral, still available
+  PASS meta: buying an outfit debits the price and equips it
+  PASS meta: equip switches between owned outfits
+  PASS meta: the paid skin is locked / disabled and cannot be bought
+  PASS meta: an outfit that is not owned cannot be equipped
+  PASS meta: wallet reads as a nonnegative integer
+  PASS meta: failed write rolls the purchase back
+  PASS meta: UPG-01 hidden at the start
+  PASS meta: UPG-01 offered after W02-L01
+  PASS meta: UPG-02 hidden at the start
+  PASS meta: UPG-02 offered after W01-L03
+  PASS meta: UPG-03 hidden at the start
+  PASS meta: UPG-03 offered after W01-L05
+  PASS meta: UPG-04 hidden at the start
+  PASS meta: UPG-04 offered after W02-L06
+  PASS meta: UPG-05 hidden at the start
+  PASS meta: UPG-05 offered after W02-L03
+  PASS meta: UPG-06 hidden at the start
+  PASS meta: UPG-06 offered after W03-L03
+  PASS meta: live ads, live store and paid offers are OFF
+  PASS meta: offline / unavailable ad: no reward
+  PASS meta: ad cancelled: nothing granted
+  PASS meta: ad failed: nothing granted
+  PASS meta: ad pending: nothing granted
+  PASS meta: verified ad adds the collected subtotal once
+  PASS meta: the ad bonus shows in the results rows (200 + 100)
+  PASS meta: a second ad for the same run grants nothing
+  PASS meta: a replayed callback grants nothing more
+  PASS meta: an unverified callback grants nothing
+  PASS meta: no bonus for a run that was not a finished settlement
+  PASS meta: store purchase is unavailable (no paid offers)
+  PASS meta: entitlement grants are idempotent by transaction id
+  PASS meta: interstitials are OFF in this version
+  PASS meta: not due before three completed runs
+  PASS meta: due after three runs and 180 s
+  PASS meta: 180 s gap is enforced
+  PASS meta: never in a tutorial, an active run, a failure retry or the Makkah transition
+  PASS meta: every string has English and Arabic []
+  PASS meta: 54 stage titles and 9 worlds exist and fit a map node (<= 24 characters) []
+  PASS meta: world names use the real place names
+  PASS meta: every teaching goal has a route objective line []
+  PASS meta: every string key used in code exists []
+  PASS meta: dynamic string families are complete []
+  PASS meta: all 54 Arabic stage titles are Arabic
+  PASS meta: Saddah's name carries tashkeel in the voice lines
+  PASS meta: story has the opening, eight exit beats, the NEOM entry and the ending []
+  PASS meta: every story line has a string (AR/EN) and a speaker; every voice cue id exists []
+  PASS meta: the nine recorded story lines (VO-02-open-1..4, run-1, end-1..4) are wired to their cues (9)
+  PASS meta: subtitles match the recorded lines exactly (AR + EN) []
+  PASS meta: every speaker has a name []
+  PASS meta: the AlUla exit chains the NEOM entry; the ending runs into the credits
+  PASS meta: the ending has ONE continuous case transfer (never a second parcel)
+  PASS meta: nine different locals wave Saddah on (eight exits + the NEOM entry)
+  PASS meta: no flag imagery in the story script
+  PASS meta: screen setup [en]: no empty labels (0)
+  PASS meta: screen setup [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen setup [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen setup [en]: no single-line text wider than its box []
+  PASS meta: screen setup [en]: builds content (1080x2340)
+  PASS meta: screen home [en]: no empty labels (0)
+  PASS meta: screen home [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen home [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen home [en]: no single-line text wider than its box []
+  PASS meta: screen home [en]: builds content (1080x2340)
+  PASS meta: screen map [en]: no empty labels (0)
+  PASS meta: screen map [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen map [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen map [en]: no single-line text wider than its box []
+  PASS meta: screen map [en]: builds content (1080x2340)
+  PASS meta: map [en]: 54 nodes (six per world from the level data)
+  PASS meta: map [en]: nine world chips on one continuous strip
+  PASS meta: map [en]: opens scrolled up to the current node, not at the top
+  PASS meta: map [en]: cleared / current / next / locked (1/1/1/51)
+  PASS meta: screen briefing [en]: no empty labels (0)
+  PASS meta: screen briefing [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen briefing [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen briefing [en]: no single-line text wider than its box []
+  PASS meta: screen briefing [en]: builds content (1080x2340)
+  PASS meta: briefing [en]: title, route objective, Start
+  PASS meta: briefing [en]: Start never needs a purchase
+  PASS meta: briefing [en]: Start sets the stage and goes to the run (or is guarded when there is no run scene)
+  PASS meta: screen results [en]: no empty labels (0)
+  PASS meta: screen results [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen results [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen results [en]: no single-line text wider than its box []
+  PASS meta: screen results [en]: builds content (1080x2340)
+  PASS meta: results [en]: separate rows for collected, completion, first clear and total
+  PASS meta: results [en]: stars apart, NO ad button (RR-06)
+  PASS meta: screen shop [en]: no empty labels (0)
+  PASS meta: screen shop [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen shop [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen shop [en]: no single-line text wider than its box []
+  PASS meta: screen shop [en]: builds content (1080x2340)
+  PASS meta: shop [en]: six upgrade cards and three outfits (SKIN-04 hidden)
+  PASS meta: screen settings [en]: no empty labels (0)
+  PASS meta: screen settings [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen settings [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen settings [en]: no single-line text wider than its box []
+  PASS meta: screen settings [en]: builds content (1080x2340)
+  PASS meta: screen recovery [en]: no empty labels (0)
+  PASS meta: screen recovery [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen recovery [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen recovery [en]: no single-line text wider than its box []
+  PASS meta: screen recovery [en]: builds content (1080x2340)
+  PASS meta: screen story [en]: no empty labels (0)
+  PASS meta: screen story [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen story [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen story [en]: no single-line text wider than its box []
+  PASS meta: screen story [en]: builds content (1080x2340)
+  PASS meta: screen setup [ar]: no empty labels (0)
+  PASS meta: screen setup [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen setup [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen setup [ar]: no single-line text wider than its box []
+  PASS meta: screen setup [ar]: builds content (1080x2340)
+  PASS meta: screen home [ar]: no empty labels (0)
+  PASS meta: screen home [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen home [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen home [ar]: no single-line text wider than its box []
+  PASS meta: screen home [ar]: builds content (1080x2340)
+  PASS meta: screen map [ar]: no empty labels (0)
+  PASS meta: screen map [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen map [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen map [ar]: no single-line text wider than its box []
+  PASS meta: screen map [ar]: builds content (1080x2340)
+  PASS meta: map [ar]: 54 nodes (six per world from the level data)
+  PASS meta: map [ar]: nine world chips on one continuous strip
+  PASS meta: map [ar]: opens scrolled up to the current node, not at the top
+  PASS meta: map [ar]: cleared / current / next / locked (1/1/1/51)
+  PASS meta: screen briefing [ar]: no empty labels (0)
+  PASS meta: screen briefing [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen briefing [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen briefing [ar]: no single-line text wider than its box []
+  PASS meta: screen briefing [ar]: builds content (1080x2340)
+  PASS meta: briefing [ar]: title, route objective, Start
+  PASS meta: briefing [ar]: Start never needs a purchase
+  PASS meta: briefing [ar]: Start sets the stage and goes to the run (or is guarded when there is no run scene)
+  PASS meta: screen results [ar]: no empty labels (0)
+  PASS meta: screen results [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen results [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen results [ar]: no single-line text wider than its box []
+  PASS meta: screen results [ar]: builds content (1080x2340)
+  PASS meta: results [ar]: separate rows for collected, completion, first clear and total
+  PASS meta: results [ar]: stars apart, NO ad button (RR-06)
+  PASS meta: screen shop [ar]: no empty labels (0)
+  PASS meta: screen shop [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen shop [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen shop [ar]: no single-line text wider than its box []
+  PASS meta: screen shop [ar]: builds content (1080x2340)
+  PASS meta: shop [ar]: six upgrade cards and three outfits (SKIN-04 hidden)
+  PASS meta: screen settings [ar]: no empty labels (0)
+  PASS meta: screen settings [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen settings [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen settings [ar]: no single-line text wider than its box []
+  PASS meta: screen settings [ar]: builds content (1080x2340)
+  PASS meta: screen recovery [ar]: no empty labels (0)
+  PASS meta: screen recovery [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen recovery [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen recovery [ar]: no single-line text wider than its box []
+  PASS meta: screen recovery [ar]: builds content (1080x2340)
+  PASS meta: screen story [ar]: no empty labels (0)
+  PASS meta: screen story [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen story [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen story [ar]: no single-line text wider than its box []
+  PASS meta: screen story [ar]: builds content (1080x2340)
+  PASS meta: exit beat not seen yet
+  PASS meta: story flag is committed as soon as the story starts (before any panel plays)
+  PASS meta: the flag is already on disk
+  PASS meta: story has Skip and subtitles
+  PASS meta: first subtitle line shows with its speaker
+  PASS meta: ending: flags committed first (story complete is permanent)
+  PASS meta: story opening [en]: 5 panels build
+  PASS meta: story exit_W01 [en]: 1 panels build
+  PASS meta: story exit_W02 [en]: 1 panels build
+  PASS meta: story exit_W03 [en]: 1 panels build
+  PASS meta: story exit_W04 [en]: 1 panels build
+  PASS meta: story exit_W05 [en]: 1 panels build
+  PASS meta: story exit_W06 [en]: 1 panels build
+  PASS meta: story exit_W07 [en]: 1 panels build
+  PASS meta: story exit_W08 [en]: 1 panels build
+  PASS meta: story entry_W09 [en]: 1 panels build
+  PASS meta: story ending [en]: 5 panels build
+  PASS meta: story opening [ar]: 5 panels build
+  PASS meta: story exit_W01 [ar]: 1 panels build
+  PASS meta: story exit_W02 [ar]: 1 panels build
+  PASS meta: story exit_W03 [ar]: 1 panels build
+  PASS meta: story exit_W04 [ar]: 1 panels build
+  PASS meta: story exit_W05 [ar]: 1 panels build
+  PASS meta: story exit_W06 [ar]: 1 panels build
+  PASS meta: story exit_W07 [ar]: 1 panels build
+  PASS meta: story exit_W08 [ar]: 1 panels build
+  PASS meta: story entry_W09 [ar]: 1 panels build
+  PASS meta: story ending [ar]: 5 panels build
+  PASS meta: story paging [en]: pages 1-4 each show their own line []
+  PASS meta: story paging [ar]: pages 1-4 each show their own line []
+  PASS meta: touch: map view and node button exist
+  PASS meta: touch: dragging the map from a node scrolls it (24400 -> 23939)
+  PASS meta: touch: a drag that starts on a node does not open it
+  PASS meta: touch: dragging the map from empty scenery scrolls it (23939 -> 23524)
+  PASS meta: touch: a tap on a node opens its stage card
+  PASS meta: touch: Start on the stage card opens the briefing
+  PASS meta: touch: shop scroll has a drag dead zone
+  PASS meta: touch: dragging the shop up from a button scrolls it (0 -> 541)
+  PASS meta: rtl map: locked nodes found (52)
+  PASS meta: rtl map: the name pill sits below the disc, never over it (0 overlapping)
+  PASS meta: rtl map: the painted strip is never mirrored (only the words follow the language)
+  PASS meta: rtl settings: sliders present
+  PASS meta: rtl settings: the slider runs right-to-left in Arabic
+  PASS meta: rtl settings: a low value sits on the right side of the bar
+  PASS meta: rtl settings: tapping the left end sets a high value (1.00)
+  PASS meta: english settings: the slider still runs left-to-right
+  PASS meta: settings: Replay story button exists
+  PASS meta: settings: Replay story opens the opening sequence
+  PASS meta: home en: the world card has its picture
+  PASS meta: home en: the picture is visible and sized ((230.0, 408.8889))
+  PASS meta: home en: the picture covers its header inside the card ([P: (72.0, 1970.667), S: (230.0, 408.8889)] in [P: (72.0, 2138.0), S: (230.0, 130.0)])
+  PASS meta: home ar: the world card has its picture
+  PASS meta: home ar: the picture is visible and sized ((230.0, 408.8889))
+  PASS meta: home ar: the picture covers its header inside the card ([P: (778.0, 1970.667), S: (230.0, 408.8889)] in [P: (778.0, 2138.0), S: (230.0, 130.0)])
+  PASS meta: neom label exists in en: NEOM-inspired future visualization
+  PASS meta: briefing W09 en shows the NEOM label
+  PASS meta: briefing W01 en has no NEOM label
+  PASS meta: map en: the NEOM world card carries the label
+  PASS meta: story entry_W09 en shows the NEOM label
+  PASS meta: run HUD W09 en: the NEOM label shows at start
+  PASS meta: run HUD W09 en: the label stays out of the forward zone ([P: (56.0, 292.0), S: (968.0, 39.0)])
+  PASS meta: run HUD W01 en: no NEOM label
+  PASS meta: neom label exists in ar: تصوّر مستقبلي مستوحى من نيوم
+  PASS meta: briefing W09 ar shows the NEOM label
+  PASS meta: briefing W01 ar has no NEOM label
+  PASS meta: map ar: the NEOM world card carries the label
+  PASS meta: story entry_W09 ar shows the NEOM label
+  PASS meta: run HUD W09 ar: the NEOM label shows at start
+  PASS meta: run HUD W09 ar: the label stays out of the forward zone ([P: (56.0, 292.0), S: (968.0, 39.0)])
+  PASS meta: run HUD W01 ar: no NEOM label
+  PASS meta: text scale 150% reaches the theme [en]
+  PASS meta: screen setup at 150% text [en]: no empty labels (0)
+  PASS meta: screen setup at 150% text [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen setup at 150% text [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen setup at 150% text [en]: no single-line text wider than its box []
+  PASS meta: screen setup at 150% text [en]: builds content (1080x2340)
+  PASS meta: screen home at 150% text [en]: no empty labels (0)
+  PASS meta: screen home at 150% text [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen home at 150% text [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen home at 150% text [en]: no single-line text wider than its box []
+  PASS meta: screen home at 150% text [en]: builds content (1080x2340)
+  PASS meta: screen map at 150% text [en]: no empty labels (0)
+  PASS meta: screen map at 150% text [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen map at 150% text [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen map at 150% text [en]: no single-line text wider than its box []
+  PASS meta: screen map at 150% text [en]: builds content (1080x2340)
+  PASS meta: screen briefing at 150% text [en]: no empty labels (0)
+  PASS meta: screen briefing at 150% text [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen briefing at 150% text [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen briefing at 150% text [en]: no single-line text wider than its box []
+  PASS meta: screen briefing at 150% text [en]: builds content (1080x2340)
+  PASS meta: screen results at 150% text [en]: no empty labels (0)
+  PASS meta: screen results at 150% text [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen results at 150% text [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen results at 150% text [en]: no single-line text wider than its box []
+  PASS meta: screen results at 150% text [en]: builds content (1080x2340)
+  PASS meta: screen shop at 150% text [en]: no empty labels (0)
+  PASS meta: screen shop at 150% text [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen shop at 150% text [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen shop at 150% text [en]: no single-line text wider than its box []
+  PASS meta: screen shop at 150% text [en]: builds content (1080x2340)
+  PASS meta: screen settings at 150% text [en]: no empty labels (0)
+  PASS meta: screen settings at 150% text [en]: all buttons meet the touch size (0 too small)
+  PASS meta: screen settings at 150% text [en]: every button has a screen-reader name (0 without)
+  PASS meta: screen settings at 150% text [en]: no single-line text wider than its box []
+  PASS meta: screen settings at 150% text [en]: builds content (1080x2340)
+  PASS meta: text scale 150% reaches the theme [ar]
+  PASS meta: screen setup at 150% text [ar]: no empty labels (0)
+  PASS meta: screen setup at 150% text [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen setup at 150% text [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen setup at 150% text [ar]: no single-line text wider than its box []
+  PASS meta: screen setup at 150% text [ar]: builds content (1080x2340)
+  PASS meta: screen home at 150% text [ar]: no empty labels (0)
+  PASS meta: screen home at 150% text [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen home at 150% text [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen home at 150% text [ar]: no single-line text wider than its box []
+  PASS meta: screen home at 150% text [ar]: builds content (1080x2340)
+  PASS meta: screen map at 150% text [ar]: no empty labels (0)
+  PASS meta: screen map at 150% text [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen map at 150% text [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen map at 150% text [ar]: no single-line text wider than its box []
+  PASS meta: screen map at 150% text [ar]: builds content (1080x2340)
+  PASS meta: screen briefing at 150% text [ar]: no empty labels (0)
+  PASS meta: screen briefing at 150% text [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen briefing at 150% text [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen briefing at 150% text [ar]: no single-line text wider than its box []
+  PASS meta: screen briefing at 150% text [ar]: builds content (1080x2340)
+  PASS meta: screen results at 150% text [ar]: no empty labels (0)
+  PASS meta: screen results at 150% text [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen results at 150% text [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen results at 150% text [ar]: no single-line text wider than its box []
+  PASS meta: screen results at 150% text [ar]: builds content (1080x2340)
+  PASS meta: screen shop at 150% text [ar]: no empty labels (0)
+  PASS meta: screen shop at 150% text [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen shop at 150% text [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen shop at 150% text [ar]: no single-line text wider than its box []
+  PASS meta: screen shop at 150% text [ar]: builds content (1080x2340)
+  PASS meta: screen settings at 150% text [ar]: no empty labels (0)
+  PASS meta: screen settings at 150% text [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: screen settings at 150% text [ar]: every button has a screen-reader name (0 without)
+  PASS meta: screen settings at 150% text [ar]: no single-line text wider than its box []
+  PASS meta: screen settings at 150% text [ar]: builds content (1080x2340)
+  PASS meta: results [en]: the victory moment plays first
+  PASS meta: results [en]: Saddah is the painted portrait (M1: the 3D model stays out of the menus)
+  PASS meta: results [en]: the moment plays the victory clip (then case_check)
+  PASS meta: results [en]: the moment is skippable by a tap and the tap area is named
+  PASS meta: results [en]: the rows have not started counting during the moment
+  PASS meta: results [en]: a tap ends the moment
+  PASS meta: results [en]: the total row counts up to the wallet change
+  PASS meta: results [en]: skipping or watching the moment never changes the wallet
+  PASS meta: results [en]: RowCollected is there
+  PASS meta: results [en]: RowCompletion is there
+  PASS meta: results [en]: RowFirstClear is there
+  PASS meta: results [en]: RowTotal is there
+  PASS meta: results [en]: Stars is there
+  PASS meta: results [en]: NextButton is there
+  PASS meta: results [en]: ReplayButton is there
+  PASS meta: results [en]: MapButton is there
+  PASS meta: results rows [en]: no empty labels (0)
+  PASS meta: results rows [en]: all buttons meet the touch size (0 too small)
+  PASS meta: results rows [en]: every button has a screen-reader name (0 without)
+  PASS meta: results rows [en]: no single-line text wider than its box []
+  PASS meta: results rows [en]: builds content (1080x2340)
+  PASS meta: results [en]: no label runs off the screen []
+  PASS meta: results [en]: the moment ends by itself after about 1.5 s
+  PASS meta: results [en]: a stopped run gets no victory moment
+  PASS meta: results Makkah [en]: the moment is the calm case check (no victory raise)
+  PASS meta: results Makkah [en]: calm headline, no 'Well done' cheer
+  PASS meta: results Makkah [en]: no sparkle dots near the stars
+  PASS meta: briefing [en]: the painted Saddah portrait (equipped default outfit)
+  PASS meta: briefing [en]: world banner, one-line route objective, Start
+  PASS meta: briefing [en]: the stage title appears once
+  PASS meta: briefing [en]: no label runs off the screen []
+  PASS meta: shop [en]: the shop title and the painted try-on
+  PASS meta: shop [en]: trying an outfit swaps the texture on the model
+  PASS meta: shop [en]: trying never buys, equips or spends
+  PASS meta: shop [en]: tapping a card tries that outfit
+  PASS meta: shop [en]: back to the default outfit
+  PASS meta: shop [en]: equipped and available are told in words
+  PASS meta: shop [en]: the magnet card exists
+  PASS meta: shop [en]: no label runs off the screen []
+  PASS meta: shop [en]: with too little Qoroosh the Buy button is calm (ghost), not alarming
+  PASS meta: shop [en]: tapping Buy without funds changes nothing
+  PASS meta: home [en]: the game title appears once
+  PASS meta: home [en]: hero art and the one Play button
+  PASS meta: home [en]: no label runs off the screen []
+  PASS meta: map [en]: one Saddah marker
+  PASS meta: map [en]: the marker stands on the current node
+  PASS meta: map [en]: a world chip never covers a node []
+  PASS meta: map [en]: every node shows the one stage name from the string table (EN and AR exist) []
+  PASS meta: map [en]: Back to the map keeps the scroll position
+  PASS meta: results [ar]: the victory moment plays first
+  PASS meta: results [ar]: Saddah is the painted portrait (M1: the 3D model stays out of the menus)
+  PASS meta: results [ar]: the moment plays the victory clip (then case_check)
+  PASS meta: results [ar]: the moment is skippable by a tap and the tap area is named
+  PASS meta: results [ar]: the rows have not started counting during the moment
+  PASS meta: results [ar]: a tap ends the moment
+  PASS meta: results [ar]: the total row counts up to the wallet change
+  PASS meta: results [ar]: skipping or watching the moment never changes the wallet
+  PASS meta: results [ar]: RowCollected is there
+  PASS meta: results [ar]: RowCompletion is there
+  PASS meta: results [ar]: RowFirstClear is there
+  PASS meta: results [ar]: RowTotal is there
+  PASS meta: results [ar]: Stars is there
+  PASS meta: results [ar]: NextButton is there
+  PASS meta: results [ar]: ReplayButton is there
+  PASS meta: results [ar]: MapButton is there
+  PASS meta: results rows [ar]: no empty labels (0)
+  PASS meta: results rows [ar]: all buttons meet the touch size (0 too small)
+  PASS meta: results rows [ar]: every button has a screen-reader name (0 without)
+  PASS meta: results rows [ar]: no single-line text wider than its box []
+  PASS meta: results rows [ar]: builds content (1080x2340)
+  PASS meta: results [ar]: no label runs off the screen []
+  PASS meta: results [ar]: the moment ends by itself after about 1.5 s
+  PASS meta: results [ar]: a stopped run gets no victory moment
+  PASS meta: results Makkah [ar]: the moment is the calm case check (no victory raise)
+  PASS meta: results Makkah [ar]: calm headline, no 'Well done' cheer
+  PASS meta: results Makkah [ar]: no sparkle dots near the stars
+  PASS meta: briefing [ar]: the painted Saddah portrait (equipped default outfit)
+  PASS meta: briefing [ar]: world banner, one-line route objective, Start
+  PASS meta: briefing [ar]: the stage title appears once
+  PASS meta: briefing [ar]: no label runs off the screen []
+  PASS meta: shop [ar]: the shop title and the painted try-on
+  PASS meta: shop [ar]: trying an outfit swaps the texture on the model
+  PASS meta: shop [ar]: trying never buys, equips or spends
+  PASS meta: shop [ar]: tapping a card tries that outfit
+  PASS meta: shop [ar]: back to the default outfit
+  PASS meta: shop [ar]: equipped and available are told in words
+  PASS meta: shop [ar]: the magnet card exists
+  PASS meta: shop [ar]: no label runs off the screen []
+  PASS meta: shop [ar]: with too little Qoroosh the Buy button is calm (ghost), not alarming
+  PASS meta: shop [ar]: tapping Buy without funds changes nothing
+  PASS meta: home [ar]: the game title appears once
+  PASS meta: home [ar]: hero art and the one Play button
+  PASS meta: home [ar]: no label runs off the screen []
+  PASS meta: map [ar]: one Saddah marker
+  PASS meta: map [ar]: the marker stands on the current node
+  PASS meta: map [ar]: a world chip never covers a node []
+  PASS meta: map [ar]: every node shows the one stage name from the string table (EN and AR exist) []
+  PASS meta: map [ar]: Back to the map keeps the scroll position
+  PASS meta: stage name [en]: briefing and results show the same name as the map (Between the Sands)
+  PASS meta: stage name [ar]: briefing and results show the same name as the map (بين الرمال)
+  PASS meta: story: the nine locals' lines are all different (AR and EN)
+  PASS meta: story: no local hands anything over (one sealed case, no tokens) []
+  PASS meta: story: no object transfer in any world-exit panel []
+  PASS meta: story: every local line has an Arabic version
+  PASS meta: results at 150% [en]: no label runs off the screen []
+  PASS meta: briefing at 150% [en]: no label runs off the screen []
+  PASS meta: briefing at 150% [en]: Start stays on screen
+  PASS meta: shop at 150% [en]: no label runs off the screen []
+  PASS meta: home at 150% [en]: no label runs off the screen []
+  PASS meta: map at 150% [en]: the world chips still stay off the nodes []
+  PASS meta: results at 150% [ar]: no label runs off the screen []
+  PASS meta: briefing at 150% [ar]: no label runs off the screen []
+  PASS meta: briefing at 150% [ar]: Start stays on screen
+  PASS meta: shop at 150% [ar]: no label runs off the screen []
+  PASS meta: home at 150% [ar]: no label runs off the screen []
+  PASS meta: map at 150% [ar]: the world chips still stay off the nodes []
+RESULT passed=2190 failed=0
