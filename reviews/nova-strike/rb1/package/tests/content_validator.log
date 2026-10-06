@@ -1,0 +1,89 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+  note: rewards 1.01=110 6.07=294 1.08=221 6.08=477
+  note:    algol log: 3.5 phase 1 | 18.8 transition 1->2 | 20.8 phase 2 | 32.4 transition 2->3 | 34.4 phase 3 | 43.4 defeat
+  note: boss algol[parts,standard]: 46s, phases [0, 1, 2, 3], attacks 19, max bullets 48, beams 5, zones 0
+  note:    algol log: 3.5 phase 1 | 18.8 transition 1->2 | 20.8 phase 2 | 32.4 transition 2->3 | 34.4 phase 3 | 43.4 defeat
+  note: boss algol[body,standard]: 46s, phases [0, 1, 2, 3], attacks 16, max bullets 48, beams 4, zones 0
+  note:    furnace_sovereign log: 3.5 phase 1 | 18.6 transition 1->2 | 20.6 phase 2 | 29.2 transition 2->3 | 31.2 phase 3 | 40.7 defeat
+  note: boss furnace_sovereign[parts,standard]: 43s, phases [0, 1, 2, 3], attacks 19, max bullets 17, beams 4, zones 2
+  note:    furnace_sovereign log: 3.5 phase 1 | 21.1 transition 1->2 | 23.1 phase 2 | 34.4 transition 2->3 | 36.4 phase 3 | 45.8 defeat
+  note: boss furnace_sovereign[body,standard]: 48s, phases [0, 1, 2, 3], attacks 18, max bullets 16, beams 4, zones 4
+  note:    storm_seraph log: 3.5 phase 1 | 21.0 transition 1->2 | 23.0 phase 2 | 33.2 transition 2->3 | 35.2 phase 3 | 45.3 defeat
+  note: boss storm_seraph[parts,standard]: 48s, phases [0, 1, 2, 3], attacks 22, max bullets 14, beams 7, zones 0
+  note:    storm_seraph log: 3.5 phase 1 | 71.5 transition 1->2 | 73.5 phase 2 | 83.7 transition 2->3 | 85.7 phase 3 | 95.9 defeat
+  note: boss storm_seraph[body,standard]: 99s, phases [0, 1, 2, 3], attacks 37, max bullets 12, beams 48, zones 0
+  note:    null_oracle log: 3.5 phase 1 | 22.1 transition 1->2 | 24.1 phase 2 | 35.0 transition 2->3 | 37.0 phase 3 | 44.7 defeat
+  note: boss null_oracle[parts,standard]: 47s, phases [0, 1, 2, 3], attacks 24, max bullets 18, beams 1, zones 3
+  note:    null_oracle log: 3.5 phase 1 | 76.0 transition 1->2 | 78.0 phase 2 | 88.9 transition 2->3 | 90.9 phase 3 | 98.7 defeat
+  note: boss null_oracle[body,standard]: 101s, phases [0, 1, 2, 3], attacks 48, max bullets 15, beams 12, zones 11
+  note:    regents_spear log: 3.5 phase 1 | 17.9 transition 1->2 | 19.9 phase 2 | 34.2 transition 2->3 | 36.2 phase 3 | 48.4 defeat
+  note: boss regents_spear[parts,standard]: 51s, phases [0, 1, 2, 3], attacks 19, max bullets 12, beams 11, zones 3
+  note:    regents_spear log: 3.5 phase 1 | 17.9 transition 1->2 | 19.9 phase 2 | 34.2 transition 2->3 | 36.2 phase 3 | 48.4 defeat
+  note: boss regents_spear[body,standard]: 51s, phases [0, 1, 2, 3], attacks 17, max bullets 23, beams 3, zones 11
+  note:    dominion_prime log: 3.5 phase 1 | 7.6 transition 1->2 | 9.6 phase 2 | 34.1 transition 2->3 | 36.1 phase 3 | 54.2 transition 3->4 | 56.2 phase 4 | 66.7 defeat
+  note: boss dominion_prime[parts,standard]: 69s, phases [0, 1, 2, 3, 4], attacks 27, max bullets 48, beams 3, zones 2
+  note:    dominion_prime log: 3.5 phase 1 | 17.5 transition 1->2 | 19.5 phase 2 | 44.0 transition 2->3 | 46.0 phase 3 | 64.1 transition 3->4 | 66.1 phase 4 | 76.6 defeat
+  note: boss dominion_prime[body,standard]: 79s, phases [0, 1, 2, 3, 4], attacks 32, max bullets 49, beams 3, zones 2
+  note:    dominion_prime log: 3.5 phase 1 | 7.6 transition 1->2 | 9.6 phase 2 | 34.1 transition 2->3 | 36.1 phase 3 | 54.2 transition 3->4 | 56.2 phase 4 | 66.7 defeat
+  note: boss dominion_prime[parts,story]: 69s, phases [0, 1, 2, 3, 4], attacks 22, max bullets 42, beams 3, zones 2
+  note:    regents_spear log: 3.5 phase 1 | 17.9 transition 1->2 | 19.9 phase 2 | 34.2 transition 2->3 | 36.2 phase 3 | 48.4 defeat
+  note: boss regents_spear[parts,veteran]: 51s, phases [0, 1, 2, 3], attacks 20, max bullets 12, beams 13, zones 0
+  note: spear patterns: broadside_plus,artillery_plus,lance,hangar_plus -> broadside_plus,lance,lance,hangar_plus
+  note: 1.01[standard] 88s spawned 66 killed 66 escaped 0 power 7 hz 0 skip 0 maxthreat 6.0 bullets 5 forced 0 early 8 timeouts 0
+  note: 1.02[standard] 90s spawned 71 killed 71 escaped 0 power 5 hz 0 skip 0 maxthreat 12.0 bullets 10 forced 0 early 9 timeouts 0
+  note: 1.03[standard] 106s spawned 67 killed 65 escaped 2 power 8 hz 0 skip 0 maxthreat 12.5 bullets 14 forced 0 early 6 timeouts 0
+  note: 1.04[standard] 91s spawned 81 killed 81 escaped 0 power 7 hz 0 skip 0 maxthreat 12.0 bullets 10 forced 0 early 9 timeouts 0
+  note: 1.05[standard] 114s spawned 63 killed 55 escaped 8 power 7 hz 0 skip 0 maxthreat 19.5 bullets 22 forced 0 early 4 timeouts 0
+  note: 1.06[standard] 98s spawned 69 killed 68 escaped 1 power 8 hz 0 skip 0 maxthreat 14.5 bullets 11 forced 0 early 7 timeouts 0
+  note: 1.07[standard] 100s spawned 70 killed 68 escaped 2 power 8 hz 0 skip 0 maxthreat 14.5 bullets 15 forced 0 early 5 timeouts 0
+  note: 1.08[standard] 78s spawned 13 killed 13 escaped 0 power 3 hz 0 skip 0 maxthreat 6.0 bullets 48 forced 0 early 2 timeouts 0
+  note: 2.01[standard] 90s spawned 79 killed 77 escaped 2 power 5 hz 0 skip 0 maxthreat 9.5 bullets 9 forced 0 early 9 timeouts 0
+  note: 2.02[standard] 94s spawned 69 killed 60 escaped 9 power 7 hz 1 skip 0 maxthreat 19.5 bullets 36 forced 0 early 5 timeouts 0
+  note: 2.03[standard] 115s spawned 68 killed 60 escaped 8 power 7 hz 1 skip 0 maxthreat 22.6 bullets 16 forced 0 early 3 timeouts 0
+  note: 2.04[standard] 112s spawned 66 killed 60 escaped 6 power 9 hz 1 skip 0 maxthreat 17.5 bullets 25 forced 0 early 5 timeouts 0
+  note: 2.05[standard] 119s spawned 63 killed 52 escaped 11 power 9 hz 1 skip 0 maxthreat 19.5 bullets 25 forced 0 early 4 timeouts 1
+  note: 2.06[standard] 89s spawned 78 killed 76 escaped 2 power 6 hz 10 skip 0 maxthreat 9.5 bullets 10 forced 0 early 9 timeouts 0
+  note: 2.07[standard] 117s spawned 62 killed 65 escaped 9 power 6 hz 3 skip 0 maxthreat 20.0 bullets 28 forced 0 early 4 timeouts 0
+  note: 2.08[standard] 86s spawned 13 killed 13 escaped 0 power 4 hz 0 skip 0 maxthreat 6.0 bullets 16 forced 0 early 2 timeouts 0
+  note: 3.01[standard] 93s spawned 79 killed 76 escaped 3 power 9 hz 0 skip 0 maxthreat 12.0 bullets 11 forced 0 early 9 timeouts 0
+  note: 3.02[standard] 103s spawned 76 killed 70 escaped 6 power 5 hz 0 skip 0 maxthreat 12.0 bullets 17 forced 0 early 7 timeouts 0
+  note: 3.03[standard] 92s spawned 73 killed 71 escaped 2 power 7 hz 8 skip 0 maxthreat 15.5 bullets 8 forced 0 early 9 timeouts 0
+  note: 3.04[standard] 101s spawned 72 killed 58 escaped 14 power 7 hz 1 skip 0 maxthreat 15.5 bullets 29 forced 0 early 5 timeouts 0
+  note: 3.05[standard] 126s spawned 66 killed 51 escaped 15 power 8 hz 1 skip 0 maxthreat 23.0 bullets 26 forced 0 early 5 timeouts 0
+  note: 3.06[standard] 113s spawned 74 killed 69 escaped 5 power 7 hz 3 skip 0 maxthreat 12.5 bullets 15 forced 0 early 7 timeouts 0
+  note: 3.07[standard] 105s spawned 74 killed 69 escaped 5 power 5 hz 3 skip 0 maxthreat 15.5 bullets 19 forced 0 early 4 timeouts 0
+  note: 3.08[standard] 109s spawned 13 killed 13 escaped 0 power 4 hz 0 skip 0 maxthreat 6.0 bullets 14 forced 0 early 2 timeouts 0
+  note: 4.01[standard] 89s spawned 83 killed 69 escaped 14 power 8 hz 5 skip 0 maxthreat 9.0 bullets 10 forced 0 early 8 timeouts 0
+  note: 4.02[standard] 136s spawned 75 killed 54 escaped 21 power 7 hz 1 skip 0 maxthreat 28.0 bullets 48 forced 1 early 4 timeouts 0
+  note: 4.03[standard] 96s spawned 87 killed 67 escaped 20 power 8 hz 1 skip 0 maxthreat 14.0 bullets 12 forced 0 early 7 timeouts 0
+  note: 4.04[standard] 109s spawned 78 killed 54 escaped 24 power 5 hz 3 skip 0 maxthreat 22.5 bullets 14 forced 0 early 4 timeouts 0
+  note: 4.05[standard] 139s spawned 70 killed 49 escaped 21 power 11 hz 3 skip 0 maxthreat 16.5 bullets 19 forced 5 early 4 timeouts 0
+  note: 4.06[standard] 126s spawned 77 killed 54 escaped 23 power 7 hz 1 skip 0 maxthreat 27.0 bullets 32 forced 0 early 4 timeouts 0
+  note: 4.07 length 155s outside 80-150
+  note: 4.07[standard] 155s spawned 76 killed 47 escaped 29 power 6 hz 3 skip 0 maxthreat 25.8 bullets 18 forced 9 early 3 timeouts 1
+  note: 4.08[standard] 133s spawned 13 killed 11 escaped 2 power 3 hz 0 skip 0 maxthreat 7.5 bullets 18 forced 0 early 1 timeouts 0
+  note: 5.01[standard] 144s spawned 72 killed 49 escaped 23 power 7 hz 1 skip 0 maxthreat 27.0 bullets 51 forced 2 early 3 timeouts 1
+  note: 5.02[standard] 128s spawned 73 killed 59 escaped 14 power 9 hz 1 skip 0 maxthreat 20.0 bullets 24 forced 0 early 4 timeouts 0
+  note: 5.03[standard] 139s spawned 67 killed 129 escaped 22 power 7 hz 1 skip 0 maxthreat 39.5 bullets 34 forced 0 early 3 timeouts 1
+  note: 5.04[standard] 111s spawned 78 killed 71 escaped 7 power 6 hz 3 skip 0 maxthreat 21.0 bullets 18 forced 0 early 4 timeouts 0
+  note: 5.05[standard] 141s spawned 74 killed 57 escaped 17 power 6 hz 1 skip 0 maxthreat 32.0 bullets 35 forced 0 early 5 timeouts 1
+  note: 5.06[standard] 130s spawned 77 killed 55 escaped 22 power 8 hz 7 skip 0 maxthreat 32.5 bullets 35 forced 0 early 4 timeouts 2
+  note: 5.07 length 150s outside 80-150
+  note: 5.07[standard] 150s spawned 71 killed 77 escaped 30 power 6 hz 3 skip 0 maxthreat 34.7 bullets 33 forced 7 early 3 timeouts 1
+  note: 5.08[standard] 144s spawned 13 killed 19 escaped 6 power 3 hz 0 skip 0 maxthreat 13.0 bullets 20 forced 0 early 1 timeouts 0
+  note: 6.01[standard] 134s spawned 75 killed 45 escaped 30 power 6 hz 3 skip 0 maxthreat 28.0 bullets 57 forced 0 early 3 timeouts 0
+  note: 6.02[standard] 120s spawned 78 killed 59 escaped 19 power 10 hz 3 skip 0 maxthreat 23.3 bullets 18 forced 0 early 2 timeouts 0
+  note: 6.03 length 152s outside 80-150
+  note: 6.03[standard] 152s spawned 71 killed 76 escaped 31 power 8 hz 3 skip 0 maxthreat 32.1 bullets 38 forced 9 early 3 timeouts 1
+  note: 6.04[standard] 148s spawned 76 killed 50 escaped 26 power 9 hz 6 skip 0 maxthreat 37.0 bullets 70 forced 0 early 3 timeouts 2
+  note: 6.05 length 160s outside 80-150
+  note: 6.05[standard] 160s spawned 70 killed 54 escaped 28 power 6 hz 3 skip 0 maxthreat 36.5 bullets 65 forced 4 early 2 timeouts 2
+  note: 6.06[standard] 141s spawned 82 killed 58 escaped 24 power 5 hz 3 skip 0 maxthreat 16.5 bullets 24 forced 5 early 2 timeouts 0
+  note: 6.07[standard] 128s spawned 72 killed 46 escaped 26 power 7 hz 1 skip 0 maxthreat 28.0 bullets 41 forced 0 early 3 timeouts 0
+  note: 6.08[standard] 158s spawned 13 killed 11 escaped 2 power 4 hz 0 skip 0 maxthreat 9.0 bullets 49 forced 0 early 1 timeouts 0
+  note: endless: wave 26 in 274s, bosses 2, spawned 212, tracked now 0, max bullets 36
+  note: training: 29 kills in 40s, respawning ok, no enemy fire
+  note: state transitions: 27 (deaths 3088)
+CONTENT VALIDATOR: PASS (0 failures)
+exit=0 secs=8
