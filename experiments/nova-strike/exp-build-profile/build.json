@@ -1,0 +1,32 @@
+{
+ "game_id": "nova-strike",
+ "version": "0.9",
+ "updated": "2026-10-04",
+ "commit": "51962ad",
+ "links": {
+  "web": "https://kik-studio-dev.web.app/experiments/nova-strike/exp-build-profile/web/index.html",
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-nova-strike-exp-build-profile/nova-strike.apk"
+ },
+ "screenshots": {
+  "en": [],
+  "ar": []
+ },
+ "apk_bytes": 186748212,
+ "shapes": [],
+ "video": [],
+ "tests": "https://kik-studio.github.io/kik-builds/experiments/nova-strike/exp-build-profile/tests.txt",
+ "benchmark_apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-nova-strike-exp-build-profile/nova-strike-benchmark.apk",
+ "branch": "exp/build-profile",
+ "checks": null,
+ "build_id": "0.9+51962ad",
+ "built_on": "cloud",
+ "hd_pack": {
+  "files": 62,
+  "commit": "51962ad",
+  "mobile_bytes": 223019536,
+  "url_mobile": "https://kik-studio-dev.web.app/packs/nova-strike/51962ad/hd_mobile.pck",
+  "web_bytes": 223019536,
+  "url_web": "https://kik-studio-dev.web.app/packs/nova-strike/51962ad/hd_web.pck"
+ },
+ "review": null
+}
