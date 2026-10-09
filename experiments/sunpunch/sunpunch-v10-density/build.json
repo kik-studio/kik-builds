@@ -1,0 +1,14 @@
+{
+ "game_id": "sunpunch",
+ "version": "0.8",
+ "updated": "2026-10-06",
+ "branch": "sunpunch-v10-density",
+ "built_on": "studio PC (PC job)",
+ "build_id": "0.8+sunpunch-v10-density",
+ "links": {
+  "web": "https://kik-studio-dev.web.app/experiments/sunpunch/sunpunch-v10-density/web/index.html",
+  "apk": ""
+ },
+ "benchmark_apk": null,
+ "apk_bytes": 136303501
+}
