@@ -1,0 +1,25 @@
+{
+ "build": "0.12+f524e3a",
+ "targets": {
+  "empty_share_max": 0.15,
+  "longest_gap_max_s": 3.0,
+  "gaps_over_2s_max": 1,
+  "time_to_p2_max_s": 40,
+  "top_level_share_min": 0.0,
+  "pickup_collect_min": 0.7,
+  "deaths_max": 1,
+  "mean_enemies_min": 1.0
+ },
+ "targets_source": "config/build_checks.json feel.targets (+ studio defaults)",
+ "runs": [],
+ "passing_runs": {
+  "empty_share_max": 0,
+  "longest_gap_max_s": 0,
+  "gaps_over_2s_max": 0,
+  "time_to_p2_max_s": 0,
+  "top_level_share_min": 0,
+  "pickup_collect_min": 0,
+  "deaths_max": 0,
+  "mean_enemies_min": 0
+ }
+}

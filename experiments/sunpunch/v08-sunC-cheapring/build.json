@@ -1,0 +1,14 @@
+{
+ "game_id": "sunpunch",
+ "version": "0.8",
+ "updated": "2026-10-06",
+ "branch": "v08-sunC-cheapring",
+ "built_on": "studio PC (PC job)",
+ "build_id": "0.8+v08-sunC-cheapring",
+ "links": {
+  "web": "https://kik-studio-dev.web.app/experiments/sunpunch/v08-sunC-cheapring/web/index.html",
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-sunpunch-v08-sunC-cheapring/sunpunch.apk"
+ },
+ "benchmark_apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-sunpunch-v08-sunC-cheapring/sunpunch-benchmark.apk",
+ "apk_bytes": 136171073
+}
