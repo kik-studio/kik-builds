@@ -1,0 +1,23 @@
+SUNPUNCH v0.5: four aircraft to earn, a hangar, a map and progress that is never lost
+- **Four permanent aircraft:** Spark, Striker, Phoenix and Helios. Each new one has more HEALTH (30, 40, 50, 60), hits harder, and fights differently from FLIGHT LV 2:
+  - Striker's rail cannons swing in and lock onto the enemy in front of you.
+  - Phoenix's two pods pick their own targets, or both hit the same one.
+  - Helios's rail shots go through one enemy and hit the next.
+  - Every aircraft changes at each flight level, and every flight still starts at LV 1.
+- **Daystar on every aircraft:** the armour lifts and three heavy volleys fire (plasma spears, solar pulses, paired rockets) for six seconds. Good play now charges it about 50 seconds into a run.
+- **New screens:**
+  - **Campaign:** your aircraft, Juno, your coins and one PLAY button.
+  - **Midnight Reef map:** Stage 01 ready to launch; five future islands are shown locked as "Future update".
+  - **Upgrade hangar:** see the next aircraft, what it adds, your coins and exactly how many you still need, then buy it.
+  - **Reveal:** buying plays a short "assemble, ignite, yours" moment you can skip, then lets you fly the new aircraft.
+- **Coins and goals:**
+  - Every coin counts the moment you collect it and is saved within two seconds, even if you lose, restart or quit.
+  - Puffs and Claws now drop coins.
+  - Four one-time bonuses, each shown with its reason.
+  - Results show how far you got and exactly how many coins the next aircraft still needs.
+- **Safe progress:**
+  - The game keeps a backup save and recovers from a damaged one with a message.
+  - Coins and aircraft are never lost or charged twice, and a purchase is all or nothing.
+  - If the app is closed mid-flight, your collected coins stay and the game tells you.
+- **Fairer boss:** Big Bite can't be melted in seconds by the stronger aircraft. Every aircraft now gets a real fight of about 30 to 36 seconds.
+- **Sound and music:** new hangar music, sounds for every aircraft's side weapons, its own Daystar sound, and sounds for the map, hangar, purchase and reveal.

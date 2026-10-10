@@ -1,0 +1,119 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS new player: no Continue on Title
+PASS button NewGame live on Title
+PASS New Game -> home (at res://scenes/home.tscn)
+PASS button Campaign live on Home
+PASS Home Campaign -> campaign (at res://scenes/campaign.tscn)
+PASS campaign opens 1.01
+PASS mission 1.01 -> briefing (at res://scenes/briefing.tscn)
+PASS button Back live on Briefing
+PASS Briefing back -> campaign (at res://scenes/campaign.tscn)
+PASS button Back live on Campaign
+PASS Campaign back -> home (at res://scenes/home.tscn)
+PASS button Training live on Home
+PASS Home Training starts training combat
+PASS button Endless live on Home
+PASS Home Endless -> endless (at res://scenes/endless.tscn)
+PASS button BeginRun live on Endless
+PASS Endless Begin run starts endless combat
+PASS button Hangar live on Home
+PASS Home Hangar -> hangar (at res://scenes/hangar.tscn)
+PASS button Back live on Hangar
+PASS hangar back -> home (at res://scenes/home.tscn)
+PASS button Store live on Home
+PASS Home Store -> store (at res://scenes/store.tscn)
+PASS button Tab_supporter live on Store
+PASS Store supporter tab
+PASS button Tab_skins live on Store
+PASS Store skins tab
+PASS button Back live on Store
+PASS store back -> home (at res://scenes/home.tscn)
+PASS button Settings live on Home
+PASS Home Settings -> settings (at res://scenes/settings.tscn)
+PASS button Back live on Settings
+PASS settings back -> home (at res://scenes/home.tscn)
+PASS button Mastery live on Home
+PASS Home Mastery -> mastery (at res://scenes/mastery.tscn)
+PASS button Back live on Mastery
+PASS mastery back -> home (at res://scenes/home.tscn)
+PASS button Settings live on Home
+PASS button Credits live on Settings
+PASS Settings Credits -> credits (at res://scenes/credits.tscn)
+PASS button Back live on Credits
+PASS Credits back -> settings (at res://scenes/settings.tscn)
+PASS title rebuilt in ar
+PASS title/ar: no raw keys []
+PASS title/ar: no overflowing labels []
+PASS title rebuilt in en
+PASS title/en: no raw keys []
+PASS title/en: no overflowing labels []
+PASS home rebuilt in ar
+PASS home/ar: no raw keys []
+PASS home/ar: no overflowing labels []
+PASS home rebuilt in en
+PASS home/en: no raw keys []
+PASS home/en: no overflowing labels []
+PASS hangar rebuilt in ar
+PASS hangar/ar: no raw keys []
+PASS hangar/ar: no overflowing labels []
+PASS hangar rebuilt in en
+PASS hangar/en: no raw keys []
+PASS hangar/en: no overflowing labels []
+PASS campaign rebuilt in ar
+PASS campaign/ar: no raw keys []
+PASS campaign/ar: no overflowing labels []
+PASS campaign rebuilt in en
+PASS campaign/en: no raw keys []
+PASS campaign/en: no overflowing labels []
+PASS briefing rebuilt in ar
+PASS briefing/ar: no raw keys []
+PASS briefing/ar: no overflowing labels []
+PASS briefing rebuilt in en
+PASS briefing/en: no raw keys []
+PASS briefing/en: no overflowing labels []
+PASS store rebuilt in ar
+PASS store/ar: no raw keys []
+PASS store/ar: no overflowing labels []
+PASS store rebuilt in en
+PASS store/en: no raw keys []
+PASS store/en: no overflowing labels []
+PASS settings rebuilt in ar
+PASS settings/ar: no raw keys []
+PASS settings/ar: no overflowing labels []
+PASS settings rebuilt in en
+PASS settings/en: no raw keys []
+PASS settings/en: no overflowing labels []
+PASS endless rebuilt in ar
+PASS endless/ar: no raw keys []
+PASS endless/ar: no overflowing labels []
+PASS endless rebuilt in en
+PASS endless/en: no raw keys []
+PASS endless/en: no overflowing labels []
+PASS mastery rebuilt in ar
+PASS mastery/ar: no raw keys []
+PASS mastery/ar: no overflowing labels []
+PASS mastery rebuilt in en
+PASS mastery/en: no raw keys []
+PASS mastery/en: no overflowing labels []
+PASS credits rebuilt in ar
+PASS credits/ar: no raw keys []
+PASS credits/ar: no overflowing labels []
+PASS credits rebuilt in en
+PASS credits/en: no raw keys []
+PASS credits/en: no overflowing labels []
+PASS returning player: Continue on Title
+PASS button Continue live on Title
+PASS Continue -> home (at res://scenes/home.tscn)
+PASS button NextMission live on Results
+PASS Results Next mission -> briefing 1.02 (1.02)
+PASS button UpgradeHangar live on Results
+PASS Results upgrade hint -> hangar (at res://scenes/hangar.tscn)
+PASS button Home live on Results
+PASS Results Home -> home (at res://scenes/home.tscn)
+UI FLOW DONE (menus), failures: 0
+WARNING: 8 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 4 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)
+exit=0 secs=43
