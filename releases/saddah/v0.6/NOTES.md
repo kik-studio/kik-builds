@@ -1,0 +1,7 @@
+Sadّa7 v0.6: every menu and screen redesigned (Home, map, stage card, run screen, pause, fail, results, shop, settings, story, loading), clearer and calmer in English and Arabic. One tap on Play starts your next stage; a short map moment shows where you go next. Every stage now has its real place name and city area (54 places along each city's route). Stages rebuilt for more variety. Fixed: the hero showing as a white figure, shop text breaking letter by letter, crash when quitting. Honest note on the art: our own blind look scores for the new UI art and map are 3.5-4.0 of 5, below our 4.5 bar; the hero is still the earlier one (a new hero is being made). Shop: tap an upgrade to see a 2 s clip of it working. Faster first run (hero loads in the background: 7.5 s -> 0.8 s on our emulator); on our test phone the very first run after installing takes about 10 s to start, later runs under 2 s, and a few short stutters remain when a menu or run opens (being finished in v0.7).
+
+Honest note on the art:
+- 2 finished look item(s) without a passing look check yet
+- 1258 art files still use the earlier look without a passing look check
+- the game's look settings are not locked yet
+- parts of the look are still below our own 4.5 bar; it keeps improving in the next versions
