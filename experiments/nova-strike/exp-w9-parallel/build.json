@@ -1,0 +1,35 @@
+{
+ "game_id": "nova-strike",
+ "version": "0.9",
+ "updated": "2026-10-05",
+ "commit": "6e91856",
+ "links": {
+  "web": "https://kik-studio-dev.web.app/experiments/nova-strike/exp-w9-parallel/web/index.html",
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-nova-strike-exp-w9-parallel/nova-strike.apk"
+ },
+ "screenshots": {
+  "en": [],
+  "ar": []
+ },
+ "apk_bytes": 186748212,
+ "apk_sha256": "e6cb837216a1a46b0463c05691c222fea1f061cc9f5e68d8a000f680e96b85e1",
+ "pack_sha256": "5169683319b2f3a26d998f65bbd5c1505c948488f9f726b9322c2302ebafbecd",
+ "web_set_sha256": "9dd26d666121eb57dab7d69625658be83047dfcc7d3135cb5c05465d21ce52bf",
+ "shapes": [],
+ "video": [],
+ "tests": "https://kik-studio.github.io/kik-builds/experiments/nova-strike/exp-w9-parallel/tests.txt",
+ "benchmark_apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-nova-strike-exp-w9-parallel/nova-strike-benchmark.apk",
+ "branch": "exp/w9-parallel",
+ "checks": null,
+ "build_id": "0.9+6e91856",
+ "built_on": "cloud",
+ "hd_pack": {
+  "files": 62,
+  "commit": "6e91856",
+  "mobile_bytes": 223019536,
+  "url_mobile": "https://kik-studio-dev.web.app/packs/nova-strike/6e91856/hd_mobile.pck",
+  "web_bytes": 223019536,
+  "url_web": "https://kik-studio-dev.web.app/packs/nova-strike/6e91856/hd_web.pck"
+ },
+ "review": null
+}
