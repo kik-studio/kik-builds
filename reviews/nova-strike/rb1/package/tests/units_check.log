@@ -1,0 +1,16 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+unit_striker hardware parts per tier 0..4: { "primary": [0, 0, 2, 2, 2], "side": [0, 2, 4, 6, 10], "ordnance": [0, 2, 4, 6, 8], "defense": [0, 2, 4, 5, 5], "engine": [0, 4, 4, 4, 4], "reactor": [0, 1, 1, 1, 1] }
+unit_striker primary muzzle spacing 0.190 world units
+unit_striker super footprint (mods 4): span 1.62 -> 2.56 (x1.58), area x1.82, restore err 0.000000
+unit_striker super footprint (mods 0): span 1.62 -> 2.56 (x1.58), area x1.85, restore err 0.000000
+unit_guardian hardware parts per tier 0..4: { "primary": [0, 0, 2, 2, 2], "side": [0, 2, 4, 4, 8], "ordnance": [0, 2, 4, 6, 8], "defense": [0, 2, 4, 5, 5], "engine": [0, 2, 2, 2, 2], "reactor": [0, 1, 1, 1, 1] }
+unit_guardian primary muzzle spacing 0.179 world units
+unit_guardian super footprint (mods 4): span 1.80 -> 2.84 (x1.58), area x1.76, restore err 0.000000
+unit_guardian super footprint (mods 0): span 1.80 -> 2.84 (x1.58), area x1.78, restore err 0.000000
+unit_arcanist hardware parts per tier 0..4: { "primary": [0, 0, 2, 2, 2], "side": [0, 2, 4, 4, 8], "ordnance": [0, 2, 4, 6, 8], "defense": [0, 2, 4, 5, 5], "engine": [0, 2, 2, 2, 2], "reactor": [0, 1, 1, 1, 1] }
+unit_arcanist primary muzzle spacing 0.167 world units
+unit_arcanist super footprint (mods 4): span 1.68 -> 2.52 (x1.49), area x1.63, restore err 0.000000
+unit_arcanist super footprint (mods 0): span 1.68 -> 2.52 (x1.49), area x1.68, restore err 0.000000
+UNITS CHECK PASS
+exit=0 secs=11

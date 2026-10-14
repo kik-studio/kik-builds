@@ -1,0 +1,398 @@
+  PASS config: game.json loads
+  PASS config: version present
+  PASS save: value survives reload
+  PASS save: setting survives reload
+  PASS save: atomic write leaves no temp file
+  PASS save: player id generated
+  PASS loc: English text
+  PASS loc: Arabic text
+  PASS loc: Arabic is right-to-left
+  PASS loc: controls flip to RTL in Arabic
+  PASS loc: every string has English and Arabic
+  PASS audio: Music bus
+  PASS audio: SFX bus
+  PASS audio: sfx asset present
+  PASS audio: no AudioServer.add_bus() (silences web builds, FR-3)
+  PASS audio: Music and SFX route to Master
+  PASS analytics: HMAC signature matches reference
+  PASS analytics: Android os_version keeps only the version number
+  PASS analytics: iOS version kept, empty version falls back
+  PASS analytics: web/desktop send webgl 1.0
+  PASS ui: safe margins at least minimum
+  PASS theme: design tokens file present
+  PASS theme: tokens loaded
+  INFO theme placeholder = false (a game must replace it before a milestone)
+  PASS playfield: same logical area at 1080x1920
+  PASS playfield: same logical area at 1080x2340
+  PASS playfield: same logical area at 1080x2400
+  PASS playfield: same logical area at 1440x1920
+  PASS playfield: same logical area at 3413x1920
+  PASS perf: frame statistics correct
+  PASS fx: shader hit_flash loads
+  PASS fx: shader dissolve loads
+  PASS fx: shader shield loads
+  PASS fx: shader shockwave loads
+  PASS fx: shader heat_shimmer loads
+  PASS fx: texture dot generated
+  PASS fx: texture spark generated
+  PASS fx: texture ring generated
+  PASS fx: texture smoke generated
+  PASS fx: texture star generated
+  PASS fx: texture white generated
+  PASS fx: emitter pool stays bounded (96 <= 96)
+  PASS fx: hit flash applies its shader
+  PASS fx: trail lives in the effect layer
+  PASS fx: heat shimmer attaches to its node
+  PASS fx: dissolve frees the node when done
+  PASS fx: hitstop restores time
+  PASS fx: shake returns to rest
+  PASS ui kit: theme type DisplayLabel
+  PASS ui kit: theme type HeadingLabel
+  PASS ui kit: theme type H2Label
+  PASS ui kit: theme type TitleLabel
+  PASS ui kit: theme type CaptionLabel
+  PASS ui kit: theme type MicroLabel
+  PASS ui kit: theme type NumberLabel
+  PASS ui kit: theme type DangerButton
+  PASS ui kit: theme type GhostButton
+  PASS ui kit: theme type CardPanel
+  PASS ui kit: theme type ChipPanel
+  PASS ui kit: display size from type scale
+  PASS ui kit: Arabic display font renders Arabic
+  PASS ui kit: framed panel
+  PASS ui kit: count_to ends on the target
+  PASS ui kit: appear ends fully visible
+  PASS errors: logger registered
+  PASS errors: one report per distinct error
+  PASS errors: repeats are counted, not re-sent
+  PASS errors: report carries build and platform
+  PASS errors: points at the script line, not engine code
+  PASS remote: Firestore values decode
+  PASS remote: numbers with safe defaults
+  PASS remote: switches with safe defaults
+  PASS crash: marker is written while running
+  PASS crash: breadcrumb recorded
+  PASS crash: background marker is not a crash
+  PASS crash: foreground marker is filed with breadcrumbs
+  PASS events copy: every design/progression event is kept
+  PASS events copy: design line and value
+  PASS events copy: progression ids and score
+  PASS screen boot: loads
+  PASS screen boot: builds content
+  PASS screen boot: no empty labels (0 labels)
+  PASS screen boot: all buttons meet touch size
+  PASS screen menu: loads
+  PASS screen menu: builds content
+  PASS screen menu: no empty labels (15 labels)
+  PASS screen menu: all buttons meet touch size
+  PASS screen settings: loads
+  PASS screen settings: builds content
+  PASS screen settings: no empty labels (5 labels)
+  PASS screen settings: all buttons meet touch size
+  PASS screen game: loads
+  PASS screen game: builds content
+  PASS screen game: no empty labels (15 labels)
+  PASS screen game: all buttons meet touch size
+  PASS release: no developer tools on shipping screens
+  PASS dev: developer tools reachable in dev builds
+  PASS release: settings has no developer tools
+  PASS release: game has no developer tools
+  PASS cloud: unconfigured shows not available
+  PASS hd pack: start() from a boot _ready creates the pack node
+  PASS hd pack: pack node entered the tree under root
+  PASS hd pack: the download request runs inside the tree
+  PASS hd pack: request really started (state downloading)
+  PASS hd pack: nothing loaded from an unreachable host
+  PASS sha256 of the seed text
+  PASS seed state words (little-endian)
+  PASS xoshiro128** first 6 outputs match the reference: [1655526911, 4220590675, 2317668035, 751297645, 1849203640, 3804611187]
+  PASS clone continues identically
+  PASS derive(index) is stable and does not advance the parent
+  PASS different indices give different streams
+  PASS next_below stays in range
+  PASS course is deterministic from the seed (400 slots)
+  PASS a different seed gives a different course
+  PASS opening corridors = first 6 slots (first required action at 10 s)
+  PASS 2 opening corridors (variants 0 and 1)
+  PASS all three v0 families appear: { "opening_corridor": 6, "offset_fins": 58, "recovery_corridor": 234, "high_slot": 49, "low_slot": 53 }
+  PASS recovery corridors appear
+  PASS a recovery follows at most 4 demanding slots (saw 1)
+  PASS no family before its earliest introduction time
+  PASS slot 0 is an opening corridor, 32 m long
+  PASS demand starts right after the opening
+  PASS opening corridor = 4 boundary walls only
+  PASS fin and slot slots carry plates
+  PASS time_at_distance(180 m) ~ 10 s
+RESULT passed=20 failed=0
+  PASS core suite test_core_course.gd
+  PASS first eligible finger owns input
+  PASS drag delta in screen-width units
+  PASS consume clears the accumulator
+  PASS screen Y is reported down (sim flips it)
+  PASS second finger produces no deltas
+  PASS owner release frees input
+  PASS an ignored finger never becomes the owner mid-touch
+  PASS no deltas after release
+  PASS touch on UI never owns
+  PASS UI touch drags nothing
+  PASS same pointer index can own after it lifted from UI
+  PASS either thumb: identical deltas for identical motion
+  PASS re-grab at another place: target moves 0.00000 m (<= 0.02)
+  PASS re-grab: aircraft moves 0.00000 m (<= 0.02)
+  PASS after release the actuator settles on the fixed target (no drift)
+  PASS reset() clears owner and pending delta
+RESULT passed=16 failed=0
+  PASS core suite test_core_input.gd
+  PASS fresh start: no file, best 0
+  PASS mm -> cm floors (123456 mm = 12345 cm)
+  PASS tiny/negative distances -> 0 cm
+  PASS first run is a new best
+  PASS best stored as centimetres
+  PASS lower run is not a best
+  PASS best unchanged by a lower run
+  PASS higher run is a new best
+  PASS saved, no temp file left over
+  PASS previous good file kept as backup
+  PASS reload reads the main file (90012 cm)
+  PASS a different rules version has its own best
+  PASS records scoped by rules version
+  PASS verified best stored apart from local best
+  PASS corrupt main file: falls back to the backup
+  PASS backup holds a real earlier record
+  PASS checksum mismatch: falls back to the backup
+  PASS no files: fresh, no crash
+  PASS int64-range distance accepted
+RESULT passed=19 failed=0
+  PASS core suite test_core_records.gd
+  PASS TICK_HZ = 60
+  PASS tick-zero state
+  PASS rules version
+  PASS proxy envelope 2.24 m wide (half 1.120)
+  PASS 60 steps = 60 ticks
+  PASS 1 s at ~18 m/s = 18000 mm (int64 mm)
+  PASS distance is an integer
+  PASS course window = 12 slots (10 ahead + 2 behind)
+  PASS window entries carry the contract keys
+  PASS obstacle entries carry the contract keys
+  PASS window slides 2 behind the aircraft slot
+  PASS end_run ends once (voluntary)
+  PASS end_run is idempotent (token increments once)
+  PASS step after end is a no-op
+  PASS reset -> tick zero, token kept
+  PASS prev position lags current (render interpolation)
+  PASS godot position: forward = -Z
+  PASS actuator matches the P4 formulas tick for tick (max diff 0.000000423841 m)
+  PASS speed limits respected (3.601 / 1.801 m/s)
+  PASS acceleration limits respected (50.00 / 28.81 m/s2)
+  PASS target inside the steering envelope
+  PASS target clamps at +4.7 m
+  PASS actuator settles on the target with no drift (4.7000)
+  PASS moving right banks right wing down (roll -30.64 deg)
+  PASS moving up pitches nose up (pitch -9.33 deg)
+  PASS yaw follows the turn (5.41 deg)
+  PASS left/down mirrors the attitude
+  PASS full-speed travel reaches 7.5 m/s
+  PASS roll settles near -32 * v/vmax (-31.75)
+  PASS roll follows the damped response (max err 0.000000036693)
+  PASS speed at 0 s = 18
+  PASS speed at 10 s ~18.1 (18.125)
+  PASS speed at 30 s ~19.0 (19.037)
+  PASS speed at 60 s ~21.6 (21.630)
+  PASS speed at 120 s ~28.4 (28.370)
+  PASS speed caps at 32 m/s from 180 s
+  PASS aperture 6.4/5.2 -> 3.8/3.2
+  PASS speed curve is monotonic
+  PASS cap increment 533333 um/tick (32 m/s / 60)
+  PASS FIXTURE neutral opening: no contact through the 192 m opening
+  PASS neutral opening covers 192.2 m in 639 ticks
+  PASS neutral: aircraft stays on the centre line
+  PASS neutral flight ends on a hazard (s6.fin0_r) at 195.7 m
+  PASS FIXTURE full-X reversal: no contact in the opening corridor
+  PASS full-X reversal swings the full width (-4.80 .. 4.83 m)
+  PASS overshoot stays small (< 0.35 m beyond the envelope)
+  PASS reversal obeys speed and acceleration limits every tick (max v 7.5000, max a 50.0000)
+  PASS FIXTURE high-to-low: starts high (3.30 m), no contact
+  PASS high-to-low (+3.3 -> -3.3 m) takes 1.17 s (>= 1.1 s physical minimum)
+  PASS high-to-low obeys the vertical speed/acceleration limits (max v 6.0000, max a 42.0000)
+  PASS reference run hits the test wall
+  PASS one tick before contact: still flying
+  PASS paused (no steps): nothing moves, no contact, no token
+  PASS resume: contact at the same tick (195) and distance (58802 mm) as the uninterrupted run
+  PASS proxy is a union of 15 analytic spheres
+  PASS tip-to-tip envelope = 2.24 m (0.08 m forgiveness per side vs 2.4 m wings)
+  PASS proxy within the 2.2 m length (0.881)
+  PASS collision proxy and render basis agree for 200 random attitudes (max diff 0.000003841938 m)
+  PASS roll -30: right tip down (-0.71), left tip up (0.38)
+  PASS pitch -10: nose rises (0.13 m)
+  PASS face approach: centre stops 0.5 from the face (t=0.3500)
+  PASS edge graze at 0.6 m from the edge is a MISS (square-corner inflation would hit)
+  PASS edge pass at 0.49 m from the edge is a hit
+  PASS corner approach: stops at R from the corner (t=0.17783, dist 0.500000)
+  PASS starting inside the inflated box -> t = 0
+  PASS rotated (yaw 45) OBB is hit (t=0.458)
+  PASS thin plate hit by a 5 m step
+  PASS scripted set is balanced (634 contacts / 366 passes)
+  PASS every contact names the test obstacle, never a wall
+  PASS contact pose is within 0.004 m of the 0.02 m skin of the true proxy in all 634 contacts
+  PASS no contact missed and none triggered more than the skin outside the proxy
+  PASS no tunnelling through a 1 cm plate at 18-32 m/s with a 100 ms stall (0 / 300 trials)
+  PASS stall contacts land on the skin of the proxy
+  PASS contact ends once: end_token = 1 and later steps are no-ops
+  PASS 1 mm plate at 32 m/s is not tunnelled
+  PASS contact distance 39101 mm ~ 39102 mm (nose 878 mm + skin)
+  PASS slalom path flown through the opening (10 s) without contact
+  PASS tracking error bounded by the actuator lag (max 0.225 m <= 0.448)
+  PASS the lag is real (rms 0.158), the test is not trivially zero
+  PASS pilot threads 90 s of course (1856 m, 0 fallbacks to recovery corridors)
+  PASS ran the full 90 s
+  PASS same input trace twice -> same distance, contact tick and per-tick hash
+  PASS end_token incremented once
+  PASS course window identical from the same seed
+  PASS reset + replay gives the identical state (tick-zero reset)
+RESULT passed=85 failed=0
+  PASS core suite test_core_sim.gd
+  PASS tuning.json loads clean: []
+  PASS rules hash is 64 hex chars
+  PASS 12 family ids
+  PASS collision width 2.24
+  PASS array path maxSpeedXY.1 = 6
+  PASS course seed
+  PASS rules version 2
+  PASS config/tuning.json == brief tuning-baseline.json
+  PASS rules hash identical across 3 runs: 8b2527cf04bf6adc6f030cad174f76961d761194c07fa68ffc7162ff8e2d0b72
+  PASS hash independent of key order / whitespace
+  PASS camera change does not change the rules hash
+  PASS speed cap change changes the rules hash
+  PASS rejects tuning_bad_duplicate_family.json (expects 'duplicate family id'): ["duplicate family id \'offset_fins\'", "family \'slalom_corridor\' missing"]
+  PASS rejects tuning_bad_range_sensitivity.json (expects 'out of range'): ["aircraft.screenWidthSensitivityM = 14.0 out of range [8.0, 11.0]"]
+  PASS rejects tuning_bad_unit_proxy_width.json (expects 'must equal widthM'): ["aircraft.collisionWidthM + 2*tipForgivenessM must equal widthM (P7)"]
+  PASS rejects tuning_bad_units_substep.json (expects 'units.world'): ["units.world must be \'meters\'", "world.collisionSubstepMaxTranslationM = 0.5 out of range [0.001, 0.1]"]
+  PASS rejects tuning_bad_json.json (expects 'invalid JSON'): ["invalid JSON (line 1): Expected key"]
+  PASS missing file rejected
+RESULT passed=18 failed=0
+  PASS core suite test_core_tuning.gd
+  PASS discovered: test_fairness.gd exits 0 (SceneTree script)
+  PASS launch: 100 launches / retries, every double-FLY ignored
+  INFO FLY->active over 100 launches (0 host-stalled, excluded): p50 345 ms, p95 346 ms, worst 354 ms
+  PASS launch: FLY -> Flying active <= 0.6 s over 100 launches (worst 354 ms, p95 346 ms, 0 host stalls)
+  PASS launch: one aircraft rig instance across 100 launches
+  PASS launch: no node allocated in the world across 100 launches (150 == 150)
+  PASS launch: every run starts at tick zero (tick 0, distance 0, rig at the origin)
+  PASS launch: 100 runs, one termination each
+  PASS home: waiting 0 / 30 / 300 s gives the same tick-zero fixture
+  PASS home: hover <= 0.06 m, bank <= 1 deg, wing flex <= 1 deg (0.060 m, 1.00, 1.00)
+  PASS home: Reduced Motion removes hover and wing flex
+  PASS home: Reduced Motion removes camera parallax
+  PASS home: Reduced Motion launch works
+  PASS home: Reduced Motion launch is brief (77 ms)
+  PASS launch: home offsets are neutralised before tick zero
+  PASS focus: flight pauses on focus loss
+  PASS focus: a resume cue returns to Paused on focus loss
+  PASS focus: an interrupted launch returns safely to Ready
+  PASS focus: a fresh FLY works after an interrupted launch
+  PASS flight fsm: starts in Boot
+  PASS flight fsm: Boot -> Prewarm -> Ready
+  PASS flight fsm: Ready cannot jump to Flying (LaunchBlend first)
+  PASS flight fsm: a second FLY during LaunchBlend is ignored
+  PASS flight fsm: LaunchBlend -> Flying opens run 1
+  PASS flight fsm: Paused cannot return to Flying directly (fresh touch needed)
+  PASS flight fsm: Paused -> ResumePreparation -> Flying keeps the same run
+  PASS flight fsm: one termination token per run (late callbacks are no-ops)
+  PASS flight fsm: Results -> LaunchBlend (Retry) opens run 2
+  PASS flight fsm: Paused -> EndRun -> Results
+  PASS flight fsm: Settings returns to the previous state only
+  PASS flight fsm: 200 runs, exactly one termination each
+  PASS camera: aircraft stays inside 20-80% width and 58-86% height at every envelope corner 
+  PASS camera: FOV 58 -> 62 with speed
+  PASS camera: roll stays 0 (camera right axis is horizontal)
+  PASS rig: roll -32 = right wing down
+  PASS rig: pitch +10 = nose up
+  PASS rig: yaw -6 = nose right
+  PASS flight: FLY is disabled during Prewarm
+  PASS flight: FLY pressed during Prewarm is ignored
+  PASS flight: Prewarm -> Ready
+  PASS flight: FLY enabled on Ready
+  PASS flight: FLY once; a second FLY is ignored
+  PASS flight: LaunchBlend -> Flying
+  PASS flight: Flying starts at tick zero
+  PASS flight: FLY -> active <= 0.6 s (355 ms)
+  PASS input: a touch that starts on the pause button is excluded
+  PASS input: a touch on the world owns the steering
+  PASS input: dragging right moves the aircraft right
+  PASS flight: right drag banks the right wing down on the real rig
+  PASS flight: pause
+  PASS flight: paused = nothing advances, no auto-resume, touches ignored
+  PASS flight: Resume -> ResumePreparation
+  PASS flight: during the 0.6 s cue the world is frozen
+  PASS flight: cue ends -> Flying
+  PASS flight: the resume cue lasts 0.6 s (572 ms)
+  PASS flight: after resume a fresh touch is needed; same run
+  PASS flight: Pause > End run -> Results
+  PASS flight: End run keeps the earned distance
+  PASS flight: End run is idempotent (one termination)
+  PASS flight: local best saved on run end
+  PASS flight: Retry relaunches directly
+  PASS flight: flying straight reaches a contact (651 ticks)
+  PASS flight: Contact -> Results
+  PASS flight: results appear within 0.7 s of contact (451 ms)
+  PASS flight: contact terminates exactly once
+  PASS flight: Results screen shown
+  PASS flight: a late contact callback changes nothing
+  PASS flight: still the same aircraft rig instance
+  PASS flight: Results -> Settings
+  PASS flight: Settings does not start flight; Back returns to Results
+  PASS flight: Results -> Home rebuilds tick zero
+  INFO ui geometry en: game (1920.0, 1920.0) ui (1920.0, 1920.0) pause_view (1920.0, 1920.0) resume_btn (326.0, 180.0)
+  PASS ui en: overlay fills the screen ((1920.0, 1920.0) of (1920.0, 1920.0))
+  PASS ui ready/en: screen shows
+  PASS ui flying/en: screen shows
+  PASS ui paused/en: screen shows
+  PASS ui resume/en: screen shows
+  PASS ui results/en: screen shows
+  PASS ui results_best/en: screen shows
+  PASS ui settings/en: screen shows
+  PASS ui en: no currency / upgrade / power-up / combat words on any screen
+  PASS ui en: no empty label and no raw translation key (21 labels)
+  PASS ui en: every touch target is at least 48 units (96 px)
+  PASS ui en: layout direction follows the language
+  INFO ui geometry ar: game (1920.0, 1920.0) ui (1920.0, 1920.0) pause_view (1920.0, 1920.0) resume_btn (290.0, 180.0)
+  PASS ui ar: overlay fills the screen ((1920.0, 1920.0) of (1920.0, 1920.0))
+  PASS ui ready/ar: screen shows
+  PASS ui flying/ar: screen shows
+  PASS ui paused/ar: screen shows
+  PASS ui resume/ar: screen shows
+  PASS ui results/ar: screen shows
+  PASS ui results_best/ar: screen shows
+  PASS ui settings/ar: screen shows
+  PASS ui ar: no currency / upgrade / power-up / combat words on any screen
+  PASS ui ar: no empty label and no raw translation key (21 labels)
+  PASS ui ar: every touch target is at least 48 units (96 px)
+  PASS ui ar: layout direction follows the language
+  PASS i18n: key app.title exists
+  PASS i18n: key ready.fly exists
+  PASS i18n: key hud.hint exists
+  PASS i18n: key pause.resume exists
+  PASS i18n: key pause.end exists
+  PASS i18n: key results.retry exists
+  PASS i18n: key settings.reduced exists
+  PASS i18n: title VEIL / سِتَار
+  PASS i18n: every string keeps the same placeholders in English and Arabic
+  PASS analytics: run events carry no touch coordinates
+  PASS discovered: test_hd_pack.gd exits 0 (SceneTree script)
+  PASS RED on bad fixture render_bad_glow.tscn.txt (["render_bad_glow.tscn.txt: glow enabled (glow_enabled = true)"])
+  PASS RED on bad fixture render_bad_subviewport3d.tscn.txt (["render_bad_subviewport3d.tscn.txt: SubViewport \'View\' renders a 3D colour pass"])
+  PASS RED on bad fixture render_bad_screen_shader.gdshader.txt (["render_bad_screen_shader.gdshader.txt: screen-texture post shader (hint_screen_texture / SCREEN_TEXTURE)"])
+  PASS RED on bad fixture render_bad_msaa4x.tscn.txt (["render_bad_msaa4x.tscn.txt: node \'Root\' msaa_3d=2 (> 2x)"])
+  PASS RED on bad fixture render_bad_msaa_scaled.tscn.txt (["render_bad_msaa_scaled.tscn.txt: node \'View\' MSAA with scaling_3d_scale=0.75 < 1"])
+  PASS RED on bad fixture render_bad_layers.tscn.txt (["render_bad_layers.tscn.txt: 4 overlapping transparent layers (budget 3)", "render_bad_layers.tscn.txt: 5 peak transparent layers (budget 4)"])
+  PASS RED on project msaa_3d=4x
+  PASS RED on project MSAA + scaling_3d/scale < 1
+  PASS GREEN on project MSAA 2x at scale 1.0
+  PASS GREEN on a scene at exactly 3 overlapping / 4 peak layers []
+  PASS project.godot is clean []
+  PASS project uses the Mobile renderer
+  PASS found VEIL scenes (6)
+  PASS GREEN on all VEIL scenes and the resources they load
+RESULT passed=14 failed=0
+  PASS core suite test_render_rules.gd
+RESULT passed=215 failed=0
