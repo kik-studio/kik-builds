@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>nova-strike · Review Build 1a (browser audio fix — draft)</title><style>body{font:15px/1.5 system-ui,sans-serif;background:#111418;color:#e8eaee;margin:0;padding:24px;max-width:980px}
+a{color:#9cc3ff}h1{font-size:22px}h2{font-size:16px;margin:26px 0 6px}.note{background:#2a2410;border:1px solid #6b5a1c;padding:10px 12px;border-radius:8px}
+.ev{color:#aab1bd;font-size:13px;margin:2px 0}.f{margin:3px 0 3px 12px}.lock{color:#f0b35a}.fail{color:#ff7b7b}code{color:#9aa3af}</style></head>
+<body><div id="app">Loading…</div><script>
+const EV={builder:'Builder-reported',automated:'Automated check',brain:'Brain independently checked',owner:'Owner checked',pending:'Pending / unavailable'};
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const kb=n=>n>1<<30?(n/(1<<30)).toFixed(2)+' GB':n>1<<20?(n/(1<<20)).toFixed(1)+' MB':(n/1024).toFixed(0)+' KB';
+const ev=e=>`<div class="ev ${e.result==='FAIL'?'fail':''}">${esc(EV[e.type]||e.type)}: ${esc(e.check||e.detail)}${e.result?' — '+esc(e.result):''}</div>`;
+fetch('index.json',{cache:'no-store'}).then(r=>r.json()).then(x=>{
+ let h=`<h1>${esc(x.game)} · ${esc(x.label)}</h1><p><code>source ${esc(x.source_ref)}</code> · built ${esc(x.built_utc)}</p>
+ <p class="note">${esc(x.disclaimer)}</p><p>▶ <a href="${esc(x.links.web)}">Play in browser</a> · ⬇ <a href="${esc(x.links.apk)}">Android APK</a>
+ · 🔒 <a href="${esc(x.links.owner_release)}">Owner-only files</a> (GitHub sign-in as the studio account) · <a href="INDEX.md">INDEX.md</a></p>
+ <h2>Package checks</h2>${x.checks.map(ev).join('')}`;
+ for(const it of x.items){const p=it.visibility==='private';
+  h+=`<h2>${p?'<span class="lock">🔒</span> ':''}${esc(it.title||it.id)} <code>${esc(it.category)}</code></h2>${it.evidence.map(ev).join('')}`;
+  h+=it.files.map(f=>`<div class="f">${p?`<a href="${esc(x.links.owner_release)}">${esc(f.name)}</a> <span class="lock">(owner-only)</span>`:`<a href="${esc(f.url)}">${esc(f.name)}</a>`} · ${kb(f.bytes)}</div>`).join('');}
+ document.getElementById('app').innerHTML=h;});
+</script></body></html>
