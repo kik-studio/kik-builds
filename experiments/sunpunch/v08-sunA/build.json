@@ -1,0 +1,14 @@
+{
+ "game_id": "sunpunch",
+ "version": "0.8",
+ "updated": "2026-10-05",
+ "branch": "v08-sunA",
+ "built_on": "studio PC (PC job)",
+ "build_id": "0.8+v08-sunA",
+ "links": {
+  "web": "https://kik-studio-dev.web.app/experiments/sunpunch/v08-sunA/web/index.html",
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-sunpunch-v08-sunA/sunpunch.apk"
+ },
+ "benchmark_apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-sunpunch-v08-sunA/sunpunch-benchmark.apk",
+ "apk_bytes": 129650316
+}
