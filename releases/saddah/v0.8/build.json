@@ -1,0 +1,65 @@
+{
+ "game_id": "saddah",
+ "version": "0.8",
+ "updated": "2026-10-17",
+ "commit": "e5a5fef",
+ "links": {
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-saddah-v0.8/saddah.apk"
+ },
+ "screenshots": {
+  "en": [
+   "https://kik-studio.github.io/kik-builds/releases/saddah/v0.8/screens/briefing_en.jpg",
+   "https://kik-studio.github.io/kik-builds/releases/saddah/v0.8/screens/game_en.jpg",
+   "https://kik-studio.github.io/kik-builds/releases/saddah/v0.8/screens/home_en.jpg",
+   "https://kik-studio.github.io/kik-builds/releases/saddah/v0.8/screens/map_en.jpg",
+   "https://kik-studio.github.io/kik-builds/releases/saddah/v0.8/screens/results_en.jpg",
+   "https://kik-studio.github.io/kik-builds/releases/saddah/v0.8/screens/settings_en.jpg",
+   "https://kik-studio.github.io/kik-builds/releases/saddah/v0.8/screens/shop_en.jpg"
+  ],
+  "ar": [
+   "https://kik-studio.github.io/kik-builds/releases/saddah/v0.8/screens/briefing_ar.jpg",
+   "https://kik-studio.github.io/kik-builds/releases/saddah/v0.8/screens/game_ar.jpg",
+   "https://kik-studio.github.io/kik-builds/releases/saddah/v0.8/screens/home_ar.jpg",
+   "https://kik-studio.github.io/kik-builds/releases/saddah/v0.8/screens/map_ar.jpg",
+   "https://kik-studio.github.io/kik-builds/releases/saddah/v0.8/screens/results_ar.jpg",
+   "https://kik-studio.github.io/kik-builds/releases/saddah/v0.8/screens/settings_ar.jpg",
+   "https://kik-studio.github.io/kik-builds/releases/saddah/v0.8/screens/shop_ar.jpg"
+  ]
+ },
+ "apk_bytes": 392290701,
+ "apk_sha256": "b60743b2fdb0a71c6dc2d4956c15c2b44e861b12c25e8be24e50c3fc62464d17",
+ "pack_sha256": "f65ad25b17ab8f13ce1fb717ed4b2ebe97c8e557ab894a59c2005d646bfb4618",
+ "shapes": [
+  "https://kik-studio.github.io/kik-builds/releases/saddah/v0.8/screens/game_en_desktop.jpg",
+  "https://kik-studio.github.io/kik-builds/releases/saddah/v0.8/screens/game_en_tablet.jpg"
+ ],
+ "video": [
+  "https://kik-studio.github.io/kik-builds/games/saddah/video/gameplay.mp4"
+ ],
+ "tests": "https://kik-studio.github.io/kik-builds/games/saddah/tests.txt",
+ "benchmark_apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-saddah/saddah-benchmark.apk",
+ "branch": "main",
+ "checks": "https://kik-studio.github.io/kik-builds/releases/saddah/v0.8/checks/",
+ "build_id": "0.8+e5a5fef",
+ "built_on": "studio PC",
+ "review": {
+  "build_id": "0.8+e5a5fef",
+  "machine": "studio PC GPU",
+  "when": "2026-10-17 09:36 UTC"
+ },
+ "media": {
+  "build_id": "0.8+e5a5fef",
+  "version": "0.8",
+  "carried": false,
+  "label": null
+ },
+ "label": "v0.8",
+ "released": "2026-10-17 08:43 UTC",
+ "state": "accepted",
+ "final_apk_sha256": "d7745f10d9a9ed980b94cc1a05f6567d48d186367dbaab0001a791f10a381e4a",
+ "screens_hd": [
+  "https://kik-studio.github.io/kik-builds/releases/saddah/v0.8/screens/hd/game_ar.jpg",
+  "https://kik-studio.github.io/kik-builds/releases/saddah/v0.8/screens/hd/game_en.jpg"
+ ]
+}
