@@ -1,0 +1,103 @@
+{
+ "game_id": "nova-strike",
+ "version": "0.14",
+ "updated": "2026-10-17",
+ "commit": "0f96989",
+ "links": {
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-nova-strike-v0.14/nova-strike.apk"
+ },
+ "screenshots": {
+  "en": [
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/game_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/menu_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/settings_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_boot_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_briefing_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_credits_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_ending_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_endless_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_hangar_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_hangar_first_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_hangar_locked_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_hangar_poor_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_hangar_side_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_home_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_journey_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_mastery_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_more_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_results_defeat_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_results_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_settings_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_store_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_store_supporter_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_studio_test_en.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_title_en.png"
+  ],
+  "ar": [
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/game_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/menu_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/settings_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_boot_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_briefing_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_credits_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_ending_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_endless_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_hangar_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_hangar_first_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_hangar_locked_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_hangar_poor_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_hangar_side_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_home_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_journey_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_mastery_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_more_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_results_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_results_defeat_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_settings_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_store_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_store_supporter_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_studio_test_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/ui_title_ar.png"
+  ]
+ },
+ "apk_bytes": 372178358,
+ "apk_sha256": "ccc4fdf211ff14b0f0317a75cf249147582f799760de8ce9e61b41656f33142f",
+ "pack_sha256": "db24bd48b58d5dcb0472498ba2e877b5fc849d3d7d518d358b7a40821c4eeb00",
+ "shapes": [
+  "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/game_en_desktop.png",
+  "https://kik-studio.github.io/kik-builds/games/nova-strike/screens/game_en_tablet.png"
+ ],
+ "video": [
+  "https://kik-studio.github.io/kik-builds/games/nova-strike/video/gameplay.mp4"
+ ],
+ "tests": "https://kik-studio.github.io/kik-builds/games/nova-strike/tests.txt",
+ "benchmark_apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-nova-strike/nova-strike-benchmark.apk",
+ "branch": "main",
+ "checks": "https://kik-studio.github.io/kik-builds/games/nova-strike/checks/",
+ "build_id": "0.14+0f96989",
+ "built_on": "studio server",
+ "hd_pack": {
+  "files": 62,
+  "commit": "0f96989",
+  "mobile_bytes": 241254784,
+  "url_mobile": "https://kik-studio-dev.web.app/packs/nova-strike/0f96989/hd_mobile.pck",
+  "web_bytes": 241254784,
+  "url_web": "https://kik-studio-dev.web.app/packs/nova-strike/0f96989/hd_web.pck"
+ },
+ "review": {
+  "build_id": "0.13+a195cb4",
+  "machine": "studio PC GPU",
+  "when": "2026-10-17 06:33 UTC"
+ },
+ "media": {
+  "build_id": "0.13+a195cb4",
+  "version": "0.13",
+  "carried": true,
+  "label": "from v0.13 (older build)"
+ },
+ "label": "v0.14",
+ "released": "2026-10-17 07:56 UTC",
+ "state": "accepted",
+ "final_apk_sha256": "9af2f9b71f449512aaf1860dd3be2cf6514206cf34be94488a81160fd510dfe6"
+}

@@ -1,0 +1,1695 @@
+  PASS config: game.json loads
+  PASS config: version present
+  PASS save: value survives reload
+  PASS save: setting survives reload
+  PASS save: atomic write leaves no temp file
+  PASS save: player id generated
+  PASS loc: English text
+  PASS loc: Arabic text
+  PASS loc: Arabic is right-to-left
+  PASS loc: controls flip to RTL in Arabic
+  PASS loc: every string has English and Arabic
+  PASS audio: Music bus
+  PASS audio: SFX bus
+  PASS audio: sfx asset present
+  PASS audio: no AudioServer.add_bus() (silences web builds, FR-3)
+  PASS audio: Music and SFX route to Master
+  PASS analytics: HMAC signature matches reference
+  PASS analytics: Android os_version keeps only the version number
+  PASS analytics: iOS version kept, empty version falls back
+  PASS analytics: web/desktop send webgl 1.0
+  PASS ui: safe margins at least minimum
+  PASS theme: design tokens file present
+  PASS theme: tokens loaded
+  INFO theme placeholder = false (a game must replace it before a milestone)
+  PASS playfield: same logical area at 1080x1920
+  PASS playfield: same logical area at 1080x2340
+  PASS playfield: same logical area at 1080x2400
+  PASS playfield: same logical area at 1440x1920
+  PASS playfield: same logical area at 3413x1920
+  PASS perf: frame statistics correct
+  PASS fx: shader hit_flash loads
+  PASS fx: shader dissolve loads
+  PASS fx: shader shield loads
+  PASS fx: shader shockwave loads
+  PASS fx: shader heat_shimmer loads
+  PASS fx: texture dot generated
+  PASS fx: texture spark generated
+  PASS fx: texture ring generated
+  PASS fx: texture smoke generated
+  PASS fx: texture star generated
+  PASS fx: texture white generated
+  PASS fx: emitter pool stays bounded (96 <= 96)
+  PASS fx: hit flash applies its shader
+  PASS fx: trail lives in the effect layer
+  PASS fx: heat shimmer attaches to its node
+  PASS fx: dissolve frees the node when done
+  PASS fx: hitstop restores time
+  PASS fx: shake returns to rest
+  PASS ui kit: theme type DisplayLabel
+  PASS ui kit: theme type HeadingLabel
+  PASS ui kit: theme type H2Label
+  PASS ui kit: theme type TitleLabel
+  PASS ui kit: theme type CaptionLabel
+  PASS ui kit: theme type MicroLabel
+  PASS ui kit: theme type NumberLabel
+  PASS ui kit: theme type DangerButton
+  PASS ui kit: theme type GhostButton
+  PASS ui kit: theme type CardPanel
+  PASS ui kit: theme type ChipPanel
+  PASS ui kit: display size from type scale
+  PASS ui kit: Arabic display font renders Arabic
+  PASS ui kit: framed panel
+  PASS ui kit: count_to ends on the target
+  PASS ui kit: appear ends fully visible
+  PASS errors: logger registered
+  PASS errors: one report per distinct error
+  PASS errors: repeats are counted, not re-sent
+  PASS errors: report carries build and platform
+  PASS errors: points at the script line, not engine code
+  PASS remote: Firestore values decode
+  PASS remote: numbers with safe defaults
+  PASS remote: switches with safe defaults
+  PASS crash: marker is written while running
+  PASS crash: breadcrumb recorded
+  PASS crash: background marker is not a crash
+  PASS crash: foreground marker is filed with breadcrumbs
+  PASS events copy: every design/progression event is kept
+  PASS events copy: design line and value
+  PASS events copy: progression ids and score
+  PASS screen boot: loads
+  PASS screen boot: builds content
+  PASS screen boot: no empty labels (0 labels)
+  PASS screen boot: all buttons meet touch size
+  PASS screen menu: loads
+  PASS screen menu: builds content
+  PASS screen menu: no empty labels (19 labels)
+  PASS screen menu: all buttons meet touch size
+  PASS screen settings: loads
+  PASS screen settings: builds content
+  PASS screen settings: no empty labels (7 labels)
+  PASS screen settings: all buttons meet touch size
+  PASS screen game: loads
+  PASS screen game: builds content
+  PASS screen game: no empty labels (19 labels)
+  PASS screen game: all buttons meet touch size
+  PASS release: no developer tools on shipping screens
+  PASS dev: developer tools reachable in dev builds
+  PASS release: settings has no developer tools
+  PASS release: game has no developer tools
+  PASS cloud: unconfigured shows not available
+  PASS hd pack: start() from a boot _ready creates the pack node
+  PASS hd pack: pack node entered the tree under root
+  PASS hd pack: the download request runs inside the tree
+  PASS hd pack: request really started (state failed)
+  PASS hd pack: nothing loaded from an unreachable host
+  PASS thresholds come from tuning ads.* (5 / 180 s, then 3 / 120 s)
+  PASS latest run 15 s, reveal 0.35 s, attempt 0.8 s, deadline 1.2 s
+  PASS config/services.json says test ads only
+  PASS every AdMob id in config is Google's public TEST id (3940256099942544): 4 ids
+  PASS the services pick the test interstitial id from config
+  PASS 4 runs, 600 s: no ad (skipped:not_enough_runs)
+  PASS 50 runs, 179.9 s: no ad (skipped:not_enough_time)
+  PASS exactly 5 runs and 180 s: the first ad shows (shown:)
+  PASS after a shown ad, 2 runs: no ad (skipped:not_enough_runs)
+  PASS 3 runs, 119.9 s: no ad (skipped:not_enough_time)
+  PASS 3 runs, 120 s since the last shown ad: shows (shown:)
+  PASS the same counters do NOT satisfy the FIRST ad (needs 5 / 180 s)
+  PASS a 14.9 s run: no ad
+  PASS a 15.0 s run: ad allowed
+  PASS t = 0.34 s (inside the 0.35 s reveal): nothing happens
+  PASS t = 0.79 s: still waiting
+  PASS t = 0.81 s: the ONE attempt is made
+  PASS show requested at 0.8 s, not yet visible at 1.19 s: still within the deadline
+  PASS 1.2 s deadline passed without the ad on screen: skipped, counters untouched
+  PASS ...but when the platform does show it later, that is a real show: counters reset
+  PASS no ad loaded at 0.8 s: skipped at once, no waiting
+  PASS a late-arriving ad does not revive a finished results screen
+  PASS one 2 s hitch: never attempt after the deadline
+  PASS in flight: no ad
+  PASS a flight starting while the ad waits cancels it
+  PASS ...and nothing is shown afterwards
+  PASS paused: no ad
+  PASS boot: no ad
+  PASS pause during the wait cancels the ad
+  PASS last gate: ads.show_ad() itself refuses during a flight
+  PASS Retry tapped while waiting: the ad is cancelled
+  PASS ...and does not appear later
+  PASS Retry tapped before the transition even started: no ad
+  PASS after the new flight the next results screen is eligible again
+  PASS not loaded
+  PASS consent REQUIRED and not given: no ad
+  PASS consent status unknown (update failed): no ad
+  PASS app not focused: no ad
+  PASS Remove Ads owned: no ad
+  PASS consent OBTAINED counts as permitted
+  PASS ads unavailable (no plugin): skipped, no crash
+  PASS not owned when the results transition starts
+  PASS (the purchase went through)
+  PASS bought during the wait: the ad is dropped at the attempt
+  PASS owned at the start: skipped before waiting
+  PASS a failed show keeps the counters (5 runs, 180 s)
+  PASS a skipped attempt (nothing loaded) keeps the counters
+  PASS a short run skip keeps the counters
+  PASS a show that never reports back keeps the counters
+  PASS a real show resets runs and active seconds, counts the ad
+  PASS analytics hook events: ad_eligible, ad_shown
+  PASS an ad shown outside a policy request does not reset anything
+  PASS 2 runs, 190 s survive a relaunch
+  PASS after a relaunch the persisted counters (5 runs, 220 s) make the first ad eligible
+  PASS idle + consent ok + not paid: the next ad is loaded
+  PASS already loading: not again
+  PASS never preloads in flight
+  PASS never preloads when Remove Ads is owned
+  PASS never preloads before consent permits
+RESULT passed=59 failed=0
+  PASS core suite test_ad_policy.gd
+  PASS before the update: unknown, no ads
+  PASS launch() starts exactly one consent info update
+  PASS not required (e.g. outside the EEA): ads allowed, no form
+  PASS no form is ever shown when none is required
+  PASS the first Home visit starts the update, not a form
+  PASS required: no ads until the player answers
+  PASS idle at Home with REQUIRED: the form opens
+  PASS while the form is up it is not opened twice
+  PASS answered: obtained, ads allowed
+  PASS never asked again once obtained
+  PASS home_ready during a flight starts nothing
+  PASS even a direct call is refused by the service during a flight
+  PASS the privacy options are refused during a flight
+  PASS back at Home after the flight: the form opens then
+  PASS answered after the flight
+  PASS REQUIRED and unanswered: the ad plugin is never asked to load
+  PASS (the Home visit showed the form, the player agreed)
+  PASS consent obtained: the host preloaded the first ad
+  PASS update failed offline: unknown, no ads (never assume consent)
+  PASS the next Home visit retries the update
+  PASS retry succeeded: ads allowed
+  PASS form failed to load: still required, no ads
+  PASS the next Home visit tries the form again
+  PASS second try worked
+  PASS no consent plugin: unavailable, no ads, no crash
+  PASS a form that never answers times out: still no ads
+  PASS before the update: not available
+  PASS UMP says the options are required: the row is available
+  PASS opening it starts the UMP privacy options form
+  PASS ...and it returns
+  PASS not required (outside the regions): no row
+  PASS Android / desktop: no ATT, ads follow UMP only
+  PASS iOS: before anything, ads wait
+  PASS UMP form first; ATT is not asked while UMP is open
+  PASS UMP answered but ATT still pending: still no ads
+  PASS the next idle Home moment asks ATT
+  PASS ATT answered: ads may be requested
+  PASS ATT is asked once
+  PASS ATT denied still lets (non-personalised) ads run
+  PASS no ATT prompt during a flight
+  PASS an ATT prompt that never answers is given up on after the timeout: ads (non-personalised) are not held back forever
+  PASS no ATT bridge: unavailable, ads still allowed
+  PASS the iOS adapter requires ATT
+  PASS (no UMP plugin on desktop: unavailable)
+  PASS no ATT bridge present: resolves to unavailable at once
+  PASS with the bridge it calls request_authorization
+  PASS status 3 = authorized
+  PASS status 1 maps to restricted
+  PASS status 2 maps to denied
+  PASS status 0 maps to unavailable
+  PASS status 9 maps to unavailable
+RESULT passed=51 failed=0
+  PASS core suite test_consent_flow.gd
+  PASS config/catalog.json loads (authoring mode): []
+  PASS complete catalog passes the strict rules: []
+  PASS 36 distinct action signatures (>= 24)
+  PASS opening + recovery corridors present
+  PASS family offset_fins has variants
+  PASS family high_slot has variants
+  PASS family low_slot has variants
+  PASS family moving_shutters has variants
+  PASS family sweep_bar has variants
+  PASS family slalom_corridor has variants
+  PASS family moving_openings has variants
+  PASS family rotating_fins has variants
+  PASS family floor_ceiling has variants
+  PASS family curved_tunnels has variants
+  PASS family staggered_pillars has variants
+  PASS family forks_merges has variants
+  PASS catalog hash is a sha256
+  PASS catalog hash is stable
+  PASS combined rules hash covers catalog + opening
+  PASS shutter leaf edge at the reference phase = -2.210 (want -2.210)
+  PASS half a period later the leaf has breathed shut
+  PASS rotating fin meets the aircraft at its authored angle (60 deg)
+  PASS rejects duplicate ids
+  PASS rejects a family id not in tuning
+  PASS rejects a length that is not whole 32 m units
+  PASS rejects a primitive crossing a unit boundary
+  PASS rejects a non-integer motion period
+  PASS rejects a phase outside the period
+  PASS rejects an introduction earlier than tuning
+  PASS rejects an opening below the aperture floor
+  PASS rejects a declared signature that its bands contradict
+  PASS rejects 'static' timing on a moving variant
+  PASS rejects rotations other than about Z
+  PASS rejects a fork without a witness per branch
+  PASS rejects a mirrored copy as a near-duplicate
+  PASS strict: rejects a missing recovery corridor
+  PASS any geometry change changes the catalog hash
+RESULT passed=37 failed=0
+  PASS core suite test_core_catalog.gd
+  PASS a 2 x 1 m window holds 8 x 4 whole cells
+  PASS cell shift ranges are conservative
+  PASS fixture catalog (schema of LANES.md) accepted: 9 variants
+  PASS common motion period 240 ticks, 8 phase buckets of 30 ticks
+  PASS phase bucket = (arrival tick mod P) * 8 / P
+  PASS non-integer motion period rejected by the certifier's catalog check
+  PASS 200 real-sim 6-tick rollouts stay inside the abstract successor and hull intervals
+  PASS offset_fins.a certified at the plateau (phases [0], min coverage 0.54)
+  PASS offset_fins.a: certified strategy replays continuously through the real sim without contact
+  PASS offset_fins.a: authored witness flies through the real sim ()
+  PASS high_slot.a certified at the plateau (phases [0], min coverage 0.43)
+  PASS high_slot.a: certified strategy replays continuously through the real sim without contact
+  PASS high_slot.a: authored witness flies through the real sim ()
+  PASS moving_shutters.a certified at the plateau (phases [0, 3, 6], min coverage 0.27)
+  PASS moving_shutters.a: certified strategy replays continuously through the real sim without contact
+  PASS moving_shutters.a: authored witness flies through the real sim ()
+  PASS sweep_bar.a certified at the plateau (phases [0, 3, 6], min coverage 0.40)
+  PASS sweep_bar.a: certified strategy replays continuously through the real sim without contact
+  PASS sweep_bar.a: authored witness flies through the real sim ()
+  PASS rotating_fins.a certified at the plateau (phases [0, 3, 6], min coverage 0.91)
+  PASS rotating_fins.a: certified strategy replays continuously through the real sim without contact
+  PASS rotating_fins.a: authored witness flies through the real sim ()
+  PASS staggered_pillars.a certified at the plateau (phases [0], min coverage 0.53)
+  PASS staggered_pillars.a: certified strategy replays continuously through the real sim without contact
+  PASS staggered_pillars.a: authored witness flies through the real sim ()
+  PASS forks_merges.a certified at the plateau (phases [0], min coverage 0.41)
+  PASS forks_merges.a: certified strategy replays continuously through the real sim without contact
+  PASS forks_merges.a: authored witness flies through the real sim ()
+  PASS both fork branches certified separately
+  PASS extended catalog accepted
+  PASS a 0.3 m slot (narrower than the 1.7 m envelope) is not certified
+  PASS a shutter that closes during the arrival bucket (phase 2) is not certified
+  PASS and the real sim agrees: the straight path hits it (contact with A.l at 14.80 m)
+  PASS the deep low slot itself is certified (from its own in-window)
+  PASS high slot directly followed by the deep low slot (no recovery slot): NOT certified (both commitments overlap)
+  PASS the same pair over 2 recovery slots is certified ()
+  PASS and its chained strategy flies through the real sim ()
+  PASS high slot -> 2 slots -> moving shutters certified (reach, )
+  PASS gap DPs computed and cached (2)
+  PASS catalog with a phrase accepted
+  PASS phrase = high slot + 1 recovery slot + shutters laid end to end (3 units, 4 primitives)
+  PASS the phrase is certified as one unit (coverage 0.43)
+  PASS the phrase replays continuously through the real sim ()
+  PASS an exact opening sequence from the run start (rest, centre) is certified ()
+  PASS a sequence that needs the far left 1.3 s after the start is refused (reaction + reserve)
+  PASS certified sets identical on two runs (52db6918d6b3)
+  PASS one variant DP takes 0.337 s (budget check, see docs/certification)
+RESULT passed=47 failed=0
+  PASS core suite test_core_cert.gd
+  PASS sha256 of the seed text
+  PASS seed state words (little-endian)
+  PASS xoshiro128** first 6 outputs match the reference: [1655526911, 4220590675, 2317668035, 751297645, 1849203640, 3804611187]
+  PASS clone continues identically
+  PASS derive(index) is stable and does not advance the parent
+  PASS different indices give different streams
+  PASS next_below stays in range
+  PASS catalog loads strictly: []
+  PASS course is deterministic from the seed (2400 units)
+  PASS the hand-authored opening tour is the same for every seed
+  PASS a different seed gives a different generated course
+  PASS course rules hash covers tuning + catalog + opening course
+  PASS opening corridors = first 6 units
+  PASS the first 6 units are opening corridors
+  PASS first required decision at 14.5 s (>= 10 s)
+  PASS no variant before its family's earliest time or its own intro_s
+  PASS a >= 2.5 s recovery follows at most 4 encounters (longest run 4)
+  PASS every family's first appearance comes at most one encounter after a rest
+  PASS all 3 variants of offset_fins shown before 90 s
+  PASS all 3 variants of high_slot shown before 90 s
+  PASS all 3 variants of low_slot shown before 90 s
+  PASS all 3 variants of slalom_corridor shown before 90 s
+  PASS families are introduced one at a time in the P11 order: { "offset_fins": 14.1666666666667, "high_slot": 31.3333333333333, "low_slot": 34.6666666666667, "slalom_corridor": 49.1166666666667, "moving_shutters": 76.8, "sweep_bar": 95.0666666666667, "moving_openings": 121.066666666667, "rotating_fins": 150.05, "floor_ceiling": 187.378648767905, "curved_tunnels": 215.378666267916, "staggered_pillars": 245.378685017928, "forks_merges": 277.378705017941 }
+  PASS the opening tour hands over to the generator near 180 s (169.4 s)
+  PASS no generator fallback in the first 2400 units (0)
+  PASS every recovery rest lasts >= 2.5 s
+  PASS every unit has its 4 boundary walls
+  PASS moving parts: pose(arrival tick) = the emitted arrival pose (886 parts)
+  PASS gate_after finds the next decision
+  PASS time_at_distance(180 m) ~ 10 s
+  INFO tour ends at 169.4 s (unit 130); 1838 placements in 2400 units; gaps enlarged 264; visibility rejects 77
+  PASS pruning 64 units behind never changes the course (6000 units compared)
+  PASS same placement count with pruning (4582)
+  PASS held units + placements stay bounded while flying 6000 units (max 582, unpruned 10584)
+RESULT passed=33 failed=0
+  PASS core suite test_core_course.gd
+  INFO generated 100000 units (76503 placements) in 10.7 s (0.107 ms/unit)
+  PASS generator: no family twice in a row (0 cases)
+  PASS generator: the same variant >= 8 encounters apart (0 cases)
+  PASS every 60 s plateau window has >= 6 families (worst 8 at 8110 s)
+  PASS all 36 variants appear in the generated course
+  PASS no variant dominates (max 768 <= 4 x min 433)
+  PASS 14 distinct phrases used, none before 270 s
+  PASS all variants of the late families are introduced by ~450 s
+  PASS every consecutive transition is reachable with reaction + reserve (0 bad)
+  PASS certified pair table config/certified_pairs.json (shipped copy of docs/certification/pairs.json) loaded (rules hash 49e80e75 matches)
+  PASS shipped pair table config/certified_pairs.json is identical to docs/certification/pairs.json
+  PASS generator_fallback rate 0.0000% (0 events)
+  INFO gaps enlarged 10880, visibility rejects 3289
+RESULT passed=11 failed=0
+  PASS core suite test_core_course_100k.gd
+  PASS speed 18 -> 32 m/s over 180 s
+  PASS aperture width 6.4 -> 3.8 m
+  PASS aperture height 5.2 -> 3.2 m
+  PASS encounter interval 3.8 -> 2.3 s
+  PASS smoothstep: half way at 90 s
+  PASS speed never decreases
+  PASS plateau bounded: no speed above 32 m/s, no aperture below the floor (0-30 min)
+  PASS everything is constant on the plateau after 180 s
+  INFO max step per 32 m unit: speed 0.157 m/s, aperture 0.029 m, difficulty 0.0420
+  PASS speed changes by <= 0.2 m/s per unit (0.157)
+  PASS aperture changes by <= 4 cm per unit (0.029)
+  PASS difficulty d (fixed per placement) steps by <= 0.05 between placements (0.0420)
+  INFO samples: /tmp/kik_userdir.MHZ533/veil/veil_curve.csv
+RESULT passed=11 failed=0
+  PASS core suite test_core_course_curve.gd
+  PASS warning 2.8 s at the start, 2.2 s at the plateau
+  PASS peak warning distance >= 70.4 m at 32 m/s
+  PASS every decision of every variant is recognisable through its own parts (0 failures)
+  INFO 1559 decisions with earlier parts in view checked over 4000 units in 48.7 s
+  PASS no earlier part hides a required opening inside its warning window (0 failures)
+RESULT passed=4 failed=0
+  PASS core suite test_core_course_vis.gd
+  PASS first eligible finger owns input
+  PASS drag delta in screen-width units
+  PASS consume clears the accumulator
+  PASS screen Y is reported down (sim flips it)
+  PASS second finger produces no deltas
+  PASS owner release frees input
+  PASS an ignored finger never becomes the owner mid-touch
+  PASS no deltas after release
+  PASS touch on UI never owns
+  PASS UI touch drags nothing
+  PASS same pointer index can own after it lifted from UI
+  PASS either thumb: identical deltas for identical motion
+  PASS re-grab at another place: target moves 0.00000 m (<= 0.02)
+  PASS re-grab: aircraft moves 0.00000 m (<= 0.02)
+  PASS after release the actuator settles on the fixed target (no drift)
+  PASS reset() clears owner and pending delta
+RESULT passed=16 failed=0
+  PASS core suite test_core_input.gd
+  PASS fresh start: no file, best 0
+  PASS mm -> cm floors (123456 mm = 12345 cm)
+  PASS tiny/negative distances -> 0 cm
+  PASS first run is a new best
+  PASS best stored as centimetres
+  PASS lower run is not a best
+  PASS best unchanged by a lower run
+  PASS higher run is a new best
+  PASS saved, no temp file left over
+  PASS previous good file kept as backup
+  PASS reload reads the main file (90012 cm)
+  PASS a different rules version has its own best
+  PASS records scoped by rules version
+  PASS verified best stored apart from local best
+  PASS corrupt main file: falls back to the backup
+  PASS backup holds a real earlier record
+  PASS checksum mismatch: falls back to the backup
+  PASS no files: fresh, no crash
+  PASS int64-range distance accepted
+  PASS current key = 2:<rules_hash[:8]> (2:49e80e75)
+  PASS rules hash is stable (64 hex)
+  PASS a v0.1 best does not count as the v0.2 best
+  PASS the v0.1 best stays readable under its old key
+  PASS first v0.2 run is a best of its own
+  PASS after saving: v0.2 best 500 cm, v0.1 key kept (777700 cm)
+  PASS a different rules hash (changed course/collision) starts a fresh best
+RESULT passed=26 failed=0
+  PASS core suite test_core_records.gd
+  PASS TICK_HZ = 60
+  PASS tick-zero state
+  PASS rules version
+  PASS proxy envelope 2.24 m wide (half 1.120)
+  PASS 60 steps = 60 ticks
+  PASS 1 s at ~18 m/s = 18000 mm (int64 mm)
+  PASS distance is an integer
+  PASS course window = 12 slots (10 ahead + 2 behind)
+  PASS window entries carry the contract keys
+  PASS obstacle entries carry the contract keys
+  PASS window slides 2 behind the aircraft slot
+  PASS end_run ends once (voluntary)
+  PASS end_run is idempotent (token increments once)
+  PASS step after end is a no-op
+  PASS reset -> tick zero, token kept
+  PASS prev position lags current (render interpolation)
+  PASS godot position: forward = -Z
+  PASS actuator matches the P4 formulas tick for tick (max diff 0.000000423841 m)
+  PASS speed limits respected (3.601 / 1.801 m/s)
+  PASS acceleration limits respected (50.00 / 28.81 m/s2)
+  PASS target inside the steering envelope
+  PASS target clamps at +4.7 m
+  PASS actuator settles on the target with no drift (4.7000)
+  PASS moving right banks right wing down (roll -30.64 deg)
+  PASS moving up pitches nose up (pitch -9.33 deg)
+  PASS yaw follows the turn (5.41 deg)
+  PASS left/down mirrors the attitude
+  PASS full-speed travel reaches 7.5 m/s
+  PASS roll settles near -32 * v/vmax (-31.75)
+  PASS roll follows the damped response (max err 0.000000036693)
+  PASS speed at 0 s = 18
+  PASS speed at 10 s ~18.1 (18.125)
+  PASS speed at 30 s ~19.0 (19.037)
+  PASS speed at 60 s ~21.6 (21.630)
+  PASS speed at 120 s ~28.4 (28.370)
+  PASS speed caps at 32 m/s from 180 s
+  PASS aperture 6.4/5.2 -> 3.8/3.2
+  PASS speed curve is monotonic
+  PASS cap increment 533333 um/tick (32 m/s / 60)
+  PASS FIXTURE neutral opening: no contact through the 192 m opening
+  PASS neutral opening covers 192.2 m in 639 ticks
+  PASS neutral: aircraft stays on the centre line
+  PASS neutral flight ends on a hazard (s8.fin0_rim) at 261.6 m
+  PASS FIXTURE full-X reversal: no contact in the opening corridor
+  PASS full-X reversal swings the full width (-4.80 .. 4.83 m)
+  PASS overshoot stays small (< 0.35 m beyond the envelope)
+  PASS reversal obeys speed and acceleration limits every tick (max v 7.5000, max a 50.0000)
+  PASS FIXTURE high-to-low: starts high (3.30 m), no contact
+  PASS high-to-low (+3.3 -> -3.3 m) takes 1.17 s (>= 1.1 s physical minimum)
+  PASS high-to-low obeys the vertical speed/acceleration limits (max v 6.0000, max a 42.0000)
+  PASS reference run hits the test wall
+  PASS one tick before contact: still flying
+  PASS paused (no steps): nothing moves, no contact, no token
+  PASS resume: contact at the same tick (195) and distance (58802 mm) as the uninterrupted run
+  PASS proxy is a union of 15 analytic spheres
+  PASS tip-to-tip envelope = 2.24 m (0.08 m forgiveness per side vs 2.4 m wings)
+  PASS proxy within the 2.2 m length (0.881)
+  PASS collision proxy and render basis agree for 200 random attitudes (max diff 0.000003841938 m)
+  PASS roll -30: right tip down (-0.71), left tip up (0.38)
+  PASS pitch -10: nose rises (0.13 m)
+  PASS face approach: centre stops 0.5 from the face (t=0.3500)
+  PASS edge graze at 0.6 m from the edge is a MISS (square-corner inflation would hit)
+  PASS edge pass at 0.49 m from the edge is a hit
+  PASS corner approach: stops at R from the corner (t=0.17783, dist 0.500000)
+  PASS starting inside the inflated box -> t = 0
+  PASS rotated (yaw 45) OBB is hit (t=0.458)
+  PASS thin plate hit by a 5 m step
+  PASS scripted set is balanced (634 contacts / 366 passes)
+  PASS every contact names the test obstacle, never a wall
+  PASS contact pose is within 0.004 m of the 0.02 m skin of the true proxy in all 634 contacts
+  PASS no contact missed and none triggered more than the skin outside the proxy
+  PASS no tunnelling through a 1 cm plate at 18-32 m/s with a 100 ms stall (0 / 300 trials)
+  PASS stall contacts land on the skin of the proxy
+  PASS contact ends once: end_token = 1 and later steps are no-ops
+  PASS 1 mm plate at 32 m/s is not tunnelled
+  PASS contact distance 39101 mm ~ 39102 mm (nose 878 mm + skin)
+  PASS slalom path flown through the opening (10 s) without contact
+  PASS tracking error bounded by the actuator lag (max 0.225 m <= 0.448)
+  PASS the lag is real (rms 0.158), the test is not trivially zero
+  PASS pilot threads 90 s of course (1856 m, 0 fallbacks to recovery corridors)
+  PASS ran the full 90 s
+  PASS same input trace twice -> same distance, contact tick and per-tick hash
+  PASS end_token incremented once
+  PASS course window identical from the same seed
+  PASS reset + replay gives the identical state (tick-zero reset)
+RESULT passed=85 failed=0
+  PASS core suite test_core_sim.gd
+  PASS sine: 0 at phase 0, +1 at P/4, -1 at 3P/4
+  PASS phase repeats exactly after 1000 periods
+  PASS tri: phase0 shifts (peak at 0 with phase0 = P/4), linear
+  PASS tri turnaround detected only where it happens
+  PASS translate: centre + axis * amp * w
+  PASS width (A2 semantics): h += amp*w, c += axis*amp*w, the -axis face stays
+  PASS rotate: +90 deg about the pivot moves the centre from (+2, 0) to (0, +2) around it
+  PASS obstacle_pose = collision pose in Godot coordinates (z negated, rebased)
+  PASS obstacle_pose basis rotates the local x axis to +y at +90 deg
+  PASS width motion shows as a basis scale (3.0 / 2.0)
+  PASS non-integer period rejected
+  PASS unknown kind rejected
+  PASS width along a diagonal rejected
+  PASS valid motion accepted
+  PASS window obstacles carry variant_id, family_id, prim, r, solid, motion
+  PASS static obstacle pose = centre in Godot coordinates
+  PASS phase clock starts at 0
+  PASS phase clock = active ticks
+  PASS tick_events has close_pass, shutter_edge, lateral_accel
+  PASS debug_start_at_tick jumps to a calm slot at or after the plateau (tick 10951)
+  PASS debug_start_at_tick: lands in a calm slot (no contact in the next 0.5 s)
+  PASS rules hash available to records and certification
+  PASS narrowest: tip 1.82 m vs face 1.90 m passes (reference min gap 0.0804)
+  PASS narrowest: tip 1.97 m vs face 1.90 m hits (contact leafr, gap at contact 0.0200)
+  PASS widest: tip 3.77 m vs face 3.90 m passes (reference min gap 0.1284)
+  PASS widest: tip 4.07 m vs face 3.90 m hits (contact leafr, gap at contact 0.0200)
+  PASS sweep set is balanced (10 hits / 14 passes)
+  PASS every sweep near the tip agrees with the reference (contact on the skin, no missed contact)
+  PASS centred on the window at its turnaround: passes (min gap 1.0411 m)
+  PASS 1.2 m off the turnaround centre: contact on the skin (gap 0.0200)
+  PASS fin edge set has both outcomes (1 hits / 15 passes)
+  PASS rotating fin tip: every outcome matches the reference
+  PASS between the raised floor (top -1.6 m) and the ceiling (3.2 m): passes (min gap 1.5370)
+  PASS too low when the floor rises: contact with the floor on the skin
+  PASS flying the tunnel centreline across the seam: no contact, no ridge (min gap 1.6636)
+  PASS diagonal pillar set has both outcomes (12 hits / 8 passes)
+  PASS tilted cylinder: contact on the skin of the true cylinder, never missed
+  PASS left branch then merge: no contact, back on the centre line (contact , min gap 0.324, end x -0.00)
+  PASS right branch then merge: no contact, back on the centre line (contact , min gap 0.324, end x 0.00)
+  PASS same contact tick and distance offset across rebase seams ([[11014, 7801, true], [11014, 7801, true], [11014, 7801, true]])
+  PASS obstacle position relative to the aircraft has no jump across the rebase
+  PASS a visual-only (solid:false) primitive never collides
+  PASS box: head-on contact lands on the skin (gap 0.0200)
+  PASS rbox: head-on contact lands on the skin (gap 0.0200)
+  PASS cyl: head-on contact lands on the skin (gap 0.0200)
+  PASS sphere: head-on contact lands on the skin (gap 0.0200)
+  PASS fuzz set is balanced (242 contacts / 158 passes)
+  PASS every moving contact lands on the skin of the true primitive (within the chord bound)
+  PASS no moving contact missed or triggered early beyond the bound
+  PASS a 1 cm plate moving toward the aircraft is never tunnelled through at 32 m/s (0 / 60)
+  PASS certifier envelope covers the proxy + skin at every extreme attitude (1.225 / 0.925 / 1.097 within 1.244 / 0.930 / 1.200)
+  PASS one close pass on the post (clearance 0.251 m)
+  PASS shutter edge cue once per motion extremum in the second (1)
+  PASS lateral acceleration reported after a hard drag (50.0 m/s^2)
+  PASS autopilot survives 5 minutes of plateau (14180 m)
+  PASS 5-minute plateau replays identically (hash 1c836f751c50b4e3)
+RESULT passed=56 failed=0
+  PASS core suite test_core_sim_motion.gd
+  PASS torus: local origin = arc bounding-box centre (yc = ra (1 + cos a) / 2)
+  PASS apex: 1 m outside the tube centre line -> 0.6 m
+  PASS inside of the arc: circle centre is ra - r = 7.6 m from the solid
+  PASS inside of the arc: 1 m in from the centre line -> 0.6 m (concave side exact)
+  PASS on the centre line: -r
+  PASS past the tip: the end is a round cap (1 m beyond -> 0.6 m)
+  PASS both tips (symmetric about local +Y)
+  PASS out of the arc plane: z 1.5 -> 1.1 m
+  PASS arc 180 = a full ring (the bottom is solid)
+  PASS cone base: 1 m below the base centre -> 0.3 m (base sphere)
+  PASS cone tip: 1 m above the tip centre -> 0.5 m (tip sphere)
+  PASS cone taper: side distance at mid height = 2 cos(slope) - 0.6 (the tangent line)
+  PASS cone: 0.69 m inside at the base, 0.51 m outside at the tip
+  PASS exact distance = reference everywhere (worst 0.000000000002 m)
+  PASS every solid point lies inside the half extents (16115 points)
+  PASS every solid point lies inside the conservative cover (never less solid; 0 misses)
+  PASS cover never sticks out past the apex by more than 0.005 m (worst 0.0000 m)
+  PASS segment set reaches the solid (304 hits)
+  PASS never later than the first sampled contact, never missed (0 late)
+  PASS a reported contact is always within 0.0005 m of the inflated solid (errs toward MORE solid only)
+  PASS fixture: through the inside of the arc, 0.5 m clear: no contact
+  PASS fixture: the same path with 0.55 m inflation touches the inner surface
+  PASS fixture: grazing 0.2 mm into the apex: contact no later than the true one (t 0.2293 <= 0.3551), within the trace threshold (outside path: -1.0)
+  PASS fixture: flying at the tip along its tangent touches the round cap at 1 - r - rad = 0.5 m
+  PASS fixture: the taper: a path near the thin end reaches the cone later than near the thick end
+  PASS fixture: the side contact point matches the exact taper
+  PASS arch ring: flying the centre line passes, 6.31 m clear
+  PASS crescent rim apex 0.1 m into the wing path: contact on the skin (gap 0.0205)
+  PASS rim apex 0.05 m outside the wing tip: no contact (floor 0.0507)
+  PASS rotated rim (rz 30) while sliding left: agrees with the reference (contact true, floor 0.0223)
+  PASS column, near its thick base (radius ~0.67 > 0.6): contact on the skin (gap 0.0204)
+  PASS same column near its thin top (radius ~0.43 < 0.6 - skin): pass (floor 0.1278)
+  PASS translating rim: agrees with the reference (contact false)
+  PASS fuzz set is balanced (272 contacts / 128 passes)
+  PASS every contact lands on the skin of the true solid (early only by the trace threshold, within the chord bound)
+  PASS no contact missed (the reference never gets closer than the skin without a contact)
+  PASS the v0.3 catalog loads strict: []
+  PASS the catalog uses torus_seg and round_cone
+  PASS width motion on a round_cone is rejected
+  PASS two arches with the same kind/r but different ra in one variant are rejected (renderer lookup)
+  PASS a torus half-angle above 180 is rejected
+  PASS distance values are bit-identical between two prepared copies
+  PASS torus cover: odd piece count + 2 cap cubes (15 boxes)
+  PASS SIM_VERSION bumped to veil-sim-3 (rules hash follows)
+RESULT passed=44 failed=0
+  PASS core suite test_core_sim_prims.gd
+  PASS recorded run ends in a contact after the autopilot stops (tick 2527, s24.slot1_l)
+  PASS trace replays x3 to the recorded distance 786902 mm, contact tick 2527, hazard s24.slot1_l
+  PASS command `--script tools_veil/replay.gd -- trace` prints the same distance/contact 3 times, exit 0 (exit 0)
+  PASS a trace recorded under other rules is refused (exit 2)
+  PASS raw drag trace replays identically
+  PASS autopilot flies the opening tour and 60 s of plateau from tick 0 without contact (6420 m)
+  PASS autopilot flies 20 minutes of plateau without contact (43 km)
+  PASS course records stay bounded over the soak (units 285 + placements 216 held)
+RESULT passed=8 failed=0
+  PASS core suite test_core_sim_replay.gd
+  PASS tuning.json loads clean: []
+  PASS rules hash is 64 hex chars
+  PASS 12 family ids
+  PASS collision width 2.24
+  PASS array path maxSpeedXY.1 = 6
+  PASS course seed
+  PASS rules version 2
+  PASS config/tuning.json == brief tuning-baseline.json
+  PASS rules hash identical across 3 runs: 68e85167df75766704153c0e1e60d83609518244f686698f380d31c41b62d9d7
+  PASS hash independent of key order / whitespace
+  PASS camera change does not change the rules hash
+  PASS speed cap change changes the rules hash
+  PASS rejects tuning_bad_duplicate_family.json (expects 'duplicate family id'): ["duplicate family id \'offset_fins\'", "family \'slalom_corridor\' missing"]
+  PASS rejects tuning_bad_range_sensitivity.json (expects 'out of range'): ["aircraft.screenWidthSensitivityM = 14.0 out of range [8.0, 11.0]"]
+  PASS rejects tuning_bad_unit_proxy_width.json (expects 'must equal widthM'): ["aircraft.collisionWidthM + 2*tipForgivenessM must equal widthM (P7)"]
+  PASS rejects tuning_bad_units_substep.json (expects 'units.world'): ["units.world must be \'meters\'", "world.collisionSubstepMaxTranslationM = 0.5 out of range [0.001, 0.1]"]
+  PASS rejects tuning_bad_json.json (expects 'invalid JSON'): ["invalid JSON (line 1): Expected key"]
+  PASS missing file rejected
+RESULT passed=18 failed=0
+  PASS core suite test_core_tuning.gd
+  PASS decor batch: the kit decor builds batched (and the A/B switch builds the v0.3 per-node path)
+  PASS decor batch: one MultiMesh per distinct kit mesh (14)
+  PASS decor batch: same pieces (mesh + transform + visibility) as the per-node decor at 162 camera positions incl. tier changes and a jump back 
+  PASS decor batch: pieces drawn 22 = 22
+  PASS decor batch: no node created while flying (pools only move)
+  PASS decor batch: each kit mesh merges pearl + glass into ONE surface (glass flagged UV.x = 1, doubled back-to-back) 
+  PASS decor batch: decor rule unchanged (min |x| below 9 m = 9.03)
+  PASS decor batch: the 5 sun shafts as one MultiMesh, same placement and size, lead 2.2 / 0.6 per shaft
+  PASS discovered: test_fairness.gd exits 0 (SceneTree script)
+  PASS fit[fixture]: 8 primitives, 72 primitive x difficulty x phase cases
+  PASS fit[fixture]: visible mesh within primitive + 0.02 m skin (worst 0.0000 m, 0 bad)
+  PASS fit[fixture]: primitive never sticks out past the visible surface by more than 0.02 m (worst 0.0102 m, 0 bad)
+  PASS fit[fixture]: openings render empty (no witness point inside a solid, 0 bad)
+  PASS fit[fixture]: no mesher warnings []
+  PASS fit[catalog]: 364 primitives, 3276 primitive x difficulty x phase cases
+  PASS fit[catalog]: visible mesh within primitive + 0.02 m skin (worst 0.0000 m, 0 bad)
+  PASS fit[catalog]: primitive never sticks out past the visible surface by more than 0.02 m (worst 0.0077 m, 0 bad)
+  PASS fit[catalog]: openings render empty (no witness point inside a solid, 0 bad)
+  PASS fit[catalog]: no mesher warnings []
+  PASS fit[catalog]: 114 curved prims (torus_seg / round_cone): no facet sinks more than 0.02 m inside the solid (worst -0.0159 m), right mesh per prim
+  PASS fit: rounded-box triangles are clockwise seen from outside (front faces)
+  PASS fit: rounded-box mesh area 79.52 vs analytic 79.58 (within 2 percent)
+  PASS decor: a card inside the envelope is fully hidden inside the 2.2 s warning distance (70.4 m at 32 m/s)
+  PASS decor: it returns smoothly (monotonic) and is fully back beyond 1.25 x the warning distance
+  PASS decor: cards outside the flight envelope never fade
+  PASS decor: the live layer hides the card 50 m ahead (inside the warning window)
+  PASS decor: with no speed (home) nothing fades
+  PASS decor: the default cloud field sits outside the flight envelope
+  PASS open edges: high_slot.a's lower plate has its whole top edge open (the slit)
+  PASS open edges: its left plate: wall side closed, the slit side open only beside the slit ({ "mask": 2, "lo": (0.0, 0.208333, 0.0, 0.0), "hi": (0.0, 0.833333, 0.0, 0.0) })
+  PASS open edges: the moving window's lower piece borders the opening
+  PASS markers: a non-solid prim takes the kit_map 'marker' entry (not the grey marker box)
+  PASS engine: 0.90 at the start speed (-10 %)
+  PASS engine: 1.10 at the 180 s speed (+10 %)
+  PASS engine: pitch is flat after 180 s
+  PASS engine: pitch rises monotonically inside 0.90 .. 1.10 (never above +10 %): 0.900 .. 1.100
+  PASS bank air: exactly silent at wings level
+  PASS bank air: still silent for a 0.1 degree wobble
+  PASS bank air: full at full roll, both directions
+  PASS bank air: monotonic and smooth over roll (largest 0.1 degree step 0.0063)
+  PASS bank air: from lateral speed: 0 at rest, 1 at the maximum lateral speed
+  PASS brush: -2 dB at 0 m clearance down to -10 dB at the brush distance, louder when closer
+  PASS close pass: first pass plays the brush and the haptic
+  PASS close pass: the same obstacle again (even 3 s later) is ignored: max 1 per obstacle
+  PASS close pass: a different obstacle 0.5 s after the last cue is limited (>= 1 s apart)
+  PASS close pass: 1.05 s after the last cue another obstacle plays
+  PASS close pass: audio and haptic counts agree (shared limiter): 2 / 2
+  PASS close pass: a new run resets the limiter
+  PASS haptics: Haptics Off fires no vibration
+  PASS haptics: Haptics On fires one vibration for one allowed close pass
+  PASS shutter: at most one cue per 0.25 s (100 edges in 5 s -> 20 cues)
+  PASS settings: Sound off mutes the SFX bus only (engine, air, brush, shutter); the storm bed follows Sound (Music row hidden, V1-MUS)
+  PASS settings: Music off mutes the Music bus only
+  PASS settings: nothing plays without the node in the tree (silent logic object)
+  PASS ramp: storm bed reached full gain on Home
+  PASS ramp: engine start takes 30 ms (20-40 ms)
+  PASS envelope: bank sweep + start + home never change a gain faster than 20 ms full scale (worst 0.0333 per ms)
+  PASS ramp: a rebase changes no gain at all
+  PASS ramp: pause takes 30 ms to silence the engine (20-40 ms)
+  PASS envelope: pause never steeper than 20 ms full scale
+  PASS envelope: Retry restart never steeper than 20 ms full scale
+  PASS focus loss: every voice ramps to silence
+  PASS envelope: focus loss and return are 20-40 ms ramps
+  PASS mixed output: largest sample-to-sample jump 0.1795 <= bound 0.3073 over start, bank sweep, pause, Retry, rebase, focus loss
+  PASS mixed output: the scan catches a hard cut (negative control 1.259 > 0.615)
+  PASS cue: engine loop present
+  PASS cue: every wired cue file is delivered by lane B (0 missing)
+  PASS plots: audio curve samples printed (606 lines)
+  PASS autopilot (direct into the sim) flies 60 s of plateau without contact
+  PASS autopilot (through the flight's input path) flies 60 s of plateau without contact
+  PASS blend: FLY enters LaunchBlend on the same frame
+  PASS blend: a second FLY / Retry during the blend is ignored
+  INFO blend: 21 frames = 0.350 s, nodes +0, resources +0
+  PASS blend: LaunchBlend ends in Flying
+  PASS blend: length is 0.35 s (0.350 s over 21 frames)
+  PASS blend: sim tick and distance stay zero on every blend frame
+  PASS blend: touches during the blend give the sim no steering
+  PASS blend: tick zero exactly at the end of the blend (tick 0, distance 0)
+  PASS blend: the FLY touch is consumed, no steering at tick zero
+  PASS blend: no node (+0) and no resource (+0) created during the blend
+  PASS blend: the activation frame adds no node and at most the engine-start sound's one playback (nodes +0, resources +0)
+  PASS blend: the camera leaves the Home pose smoothly (first frame moved 0.008 m)
+  PASS blend: the camera ends exactly on the chase pose (0.0000 m off)
+  PASS blend: same aircraft rig and same camera before and after
+  PASS blend: first flying tick has no lateral velocity from blend touches
+  PASS retry: the run ended in Results
+  PASS retry: Retry goes straight back into the blend (no menu, no loading)
+  PASS retry: tick zero at the end of the Retry blend
+  PASS retry: Retry blend is 0.35 s on the same rig (0.350 s)
+  PASS retry: nothing created during the Retry blend but the engine-start sound's one playback (nodes +0, resources +0)
+  PASS reduced: FLY works with Reduced Motion on
+  PASS reduced: the blend is shorter (0.117 s) and still ends at tick zero
+  PASS cues: table has 'contact'
+  PASS cues: table has 'best_chime'
+  PASS cues: table has 'ui_tick'
+  PASS cues: table has 'engine_start'
+  PASS cues: table has 'brush'
+  PASS cues: table has 'shutter'
+  PASS cues: contact, best chime and UI tick files resolve
+  PASS cues: brush (4) and shutter (2) variations resolve from the table
+  PASS cues: engine_start now resolves its delivered file(s) (1)
+  PASS cues: the new variations are picked up by name (contact 2, ui_tick 2)
+  PASS cues: a cue that is not in the table, or has no files, resolves to nothing (no error)
+  PASS cues: 'contact' fade-in is 20-40 ms (20 ms)
+  PASS cues: 'best_chime' fade-in is 20-40 ms (20 ms)
+  PASS cues: 'engine_start' fade-in is 20-40 ms (30 ms)
+  PASS cues: random pick never repeats a file in a row and uses all of them (0 repeats, 4 used)
+  PASS cues: a cue with one file (or none) is safe
+  PASS cues: a new file named in the table is picked up without code
+  PASS cues: a mood bed that does not exist falls back to the one storm bed
+  PASS cues: the audio node has a one-shot pool
+  PASS cues: contact plays with a fade-in
+  PASS cues: the one-shot starts silent (no click)
+  PASS cues: the fade-in completes inside 40 ms at the table level (0.0 dB)
+  PASS cues: brush variation never repeats in a row (0 repeats, 4 files)
+  PASS cues: engine_start plays its delivered file
+  PASS cues: a cue without files returns false and stays silent
+  PASS cues: contact and ui_tick really alternate between their variations (2 / 2 files used)
+  PASS cues: nothing plays while the app is in the background
+  PASS cues: the storm bed follows the mood progress by a few dB (3.5 dB over the sweep)
+  PASS cues: the engine-start cue fires once when the run starts
+  PASS cues: contact -> Contact state
+  PASS cues: the contact sound starts in the same callback as the dissolve
+  PASS cues: the aircraft dissolves and the flash shows at that same moment
+  PASS cues: a late contact callback does not play it twice
+  PASS cues: Results shown after the contact
+  PASS cues: no chime when the run is not a new best
+  PASS cues: the best chime plays exactly once per result
+  PASS cues: a later new best may chime again (2)
+  PASS cues: Flight.set_mood_progress reaches the sound (look hook present: true)
+  PASS ticks: the pause icon ticks
+  PASS ticks: Settings has its toggles (2)
+  PASS ticks: every Settings toggle ticks
+  PASS ticks: the Sound slider ticks when released
+  PASS ticks: every button has a press handler (0 without)
+  PASS settings: the Music row stays hidden (no music ships)
+  INFO edges: 76 variants swept twice, 58 glass boxes, 34 with an opening, nodes +0, resources +0, 440 parameter sets
+  PASS edges: the catalog has glass walls with openings (58 glass boxes, 34 open)
+  PASS edges: every glass wall with an opening gets a non-zero mask on its node (34 of 34)
+  PASS edges: a glass wall without an open edge gets mask 0 (24 of 24)
+  PASS edges: the high_slot.a and moving_openings.a walls glow
+  PASS edges: assigning masks creates no node and no resource (nodes +0, resources +0)
+  PASS edges: 300 further frames of the same window set no parameter (assignment only, zero cost in flight)
+  PASS edges: nothing is set on materials that do not declare open_edges yet (lane B's shader declares it)
+  PASS hud en: the flight root has a real size ((1920.0, 1920.0)): set_anchors_preset alone keeps a 0x0 rect
+  INFO ready en: flight (1920.0, 1920.0) title [P: (32.0, 196.0), S: (1856.0, 375.0)] (font 250) fly [P: (32.0, 1642.0), S: (1856.0, 190.0)]
+  PASS ready en: title is a real title size (250 px design space)
+  PASS ready en: Fly button is wide (1856 of 1920)
+  INFO ready en: 0 visible pooled pieces inside the home clear zone
+  INFO hud en: flight (1920.0, 1920.0) hud (1920.0, 1920.0) label (1584.0, 145.0) ([P: (168.0, 32.0), S: (1584.0, 145.0)]) button [P: (1756.0, 32.0), S: (132.0, 145.0)]
+  PASS hud en: HUD root fills the screen ((1920.0, 1920.0) of (1920.0, 1920.0))
+  PASS hud en: distance label is wide (1584 of 1920 px)
+  PASS hud ar: the flight root has a real size ((1920.0, 1920.0)): set_anchors_preset alone keeps a 0x0 rect
+  INFO ready ar: flight (1920.0, 1920.0) title [P: (32.0, 196.0), S: (1856.0, 352.0)] (font 235) fly [P: (32.0, 1642.0), S: (1856.0, 190.0)]
+  PASS ready ar: title is a real title size (235 px design space)
+  PASS ready ar: Fly button is wide (1856 of 1920)
+  INFO ready ar: 0 visible pooled pieces inside the home clear zone
+  INFO hud ar: flight (1920.0, 1920.0) hud (1920.0, 1920.0) label (1584.0, 145.0) ([P: (168.0, 32.0), S: (1584.0, 145.0)]) button [P: (32.0, 32.0), S: (132.0, 145.0)]
+  PASS hud ar: HUD root fills the screen ((1920.0, 1920.0) of (1920.0, 1920.0))
+  PASS hud ar: distance label is wide (1584 of 1920 px)
+  PASS launch: 100 launches / retries, every double-FLY ignored
+  INFO FLY->active over 100 launches (0 host-stalled, excluded): p50 343 ms, p95 349 ms, worst 360 ms
+  PASS launch: FLY -> Flying active <= 0.6 s over 100 launches (worst 360 ms, p95 349 ms, 0 host stalls)
+  PASS launch: one aircraft rig instance across 100 launches
+  PASS launch: no node allocated in the world across 100 launches (518 == 518)
+  PASS launch: every run starts at tick zero (tick 0, distance 0, rig at the origin)
+  PASS launch: 100 runs, one termination each
+  PASS home: waiting 0 / 30 / 300 s gives the same tick-zero fixture
+  PASS home: hover <= 0.06 m, bank <= 1 deg, wing flex <= 1 deg (0.060 m, 1.00, 1.00)
+  PASS home: Reduced Motion removes hover and wing flex
+  PASS home: Reduced Motion removes camera parallax
+  PASS home: Reduced Motion launch works
+  PASS home: Reduced Motion launch is brief (81 ms)
+  PASS launch: home offsets are neutralised before tick zero
+  PASS focus: flight pauses on focus loss
+  PASS focus: a resume cue returns to Paused on focus loss
+  PASS focus: an interrupted launch returns safely to Ready
+  PASS focus: a fresh FLY works after an interrupted launch
+  PASS mood: sequence is Storm -> Dawn -> Twilight (then Storm again)
+  PASS mood: long holds (1500 m) and slow blends (400 m)
+  PASS mood: the run starts on Storm
+  PASS mood: Storm is held for the whole hold distance
+  PASS mood: halfway through the blend k = 0.5 (Storm -> Dawn)
+  PASS mood: then Dawn holds
+  PASS mood: Twilight blends back to Storm
+  PASS mood: the cycle repeats
+  PASS mood: a blend is monotone and smooth (largest step 0.0037 per metre)
+  PASS mood: the same distance always gives the same blend (same for everybody)
+  PASS mood: the sound axis follows the schedule (storm 0.5, dawn 0.0)
+  PASS mood: while holding Storm the blend is not re-applied every frame (0 applies in 120 frames)
+  PASS mood: the schedule never touches the sim
+  PASS mood: 2000 blend steps create no node and no resource (nodes +0, resources +0)
+  PASS mood: 204 applies over a 1000 m stretch (only when the blend moved by min_step_k)
+  PASS mood: Flight.set_mood_progress (the guard sweep) drives the same schedule
+  PASS mood: lane B's apply_mood is called with a full mood dictionary (Dawn / Twilight fall back to Storm until lane B adds them)
+  PASS mood: Retry starts on Storm again
+  PASS ticks: UI.button uses the tick table (variations)
+  PASS ticks: a UI.button press makes one tick through the table
+  PASS pool: 12 slots
+  PASS pool: 288 pooled obstacle nodes (12 x 24)
+  PASS pool: 12 slot nodes + 1 prewarm rack + 1 opening-frame MultiMesh + 1 opening-breath MultiMesh
+  PASS pool: one mesh set per catalog variant (41 of 41)
+  PASS pool: the busiest slot window entry seen over 3 km of course has 19 obstacles (pool holds 24 per slot)
+  PASS pool: prewarm rack draws every distinct mesh + material once (128 pairs)
+  PASS pose: every node equals obstacle_pose(o, tick_f) x its fitted local scale at 5 fractional ticks
+  PASS pose: all 4 moving parts change pose with the tick fraction (4 moved)
+  PASS pose: static parts do not move
+  PASS pose: posing creates no mesh set, mesh or material
+  PASS pose: posing creates no node
+  PASS pose: width motion scales the part (3.000 vs 3.000)
+  PASS flight: launch
+  PASS rebase: both 512 m shifts crossed (count 2, first at frame 397)
+  PASS rebase: camera stays fixed relative to the aircraft across the shifts (max change 0.000 m per frame)
+  PASS rebase: the whole world (aircraft included) steps back by exactly the 512 m origin (largest aircraft z step 511.47 m)
+  PASS rebase: trail history shifts with the world (max span 11.7 m)
+  PASS rebase: seed index / tick / distance untouched by the shift
+  PASS rebase: every pooled obstacle keeps its place relative to the aircraft across the shift (133197 samples, worst error 0.0000 m)
+  PASS no node created while flying across ~28 slots and a rebase (664)
+  PASS no resource created or loaded while flying (265)
+  PASS no mesh set, mesh or material built while flying (builds 24, materials 256, meshes 2490)
+  PASS no runtime fallback entry needed while flying (misses 0)
+  PASS object count steady across 1700 frames (delta 0)
+  PASS readability: brightness set is 25 / 50 / 100 %
+  PASS readability: aspect set is 9:16, 9:19.5, 9:20, iPad 3:4
+  PASS readability: aspect crops of the widest frame (810 x 1080)
+  PASS readability: luminance of white / black
+  PASS readability: green is much brighter than red in luminance
+  PASS readability: grayscale makes every channel the luma
+  PASS readability: 25 % brightness darkens (linear light)
+  PASS readability: Weber contrast 0 for equal, ~1 for white against black
+  PASS readability: a bright opening in a dark frame passes at 25 / 50 / 100 %, colour and gray (worst 0.98)
+  PASS readability: a flat picture (opening = frame) is RED (0.000)
+  PASS readability: a colour-only difference (equal luminance) is RED in grayscale (0.000)
+  PASS readability: dimming never invents contrast (100 %: 0.242, 25 %: 0.061)
+  PASS readability: no frame sample = no verdict (-1)
+  PASS readability: a disc outside the image has no pixels
+  PASS readability: the capture scene exists
+  PASS readability: res://scenes/bench/readability.gd parses and can be instantiated
+  PASS readability: res://scenes/bench/veil_guard.gd parses and can be instantiated
+  PASS readability: res://tests/soak_home.gd parses and can be instantiated
+  PASS readability: res://tests/soak_flight.gd parses and can be instantiated
+  PASS readability: res://scenes/bench/vram_probe.gd parses and can be instantiated
+  PASS readability: the harness covers 2 tiers x aspects x brightness x colour/gray
+  PASS readability: no player scene references the test-only readability code
+  PASS flight fsm: starts in Boot
+  PASS flight fsm: Boot -> Prewarm -> Ready
+  PASS flight fsm: Ready cannot jump to Flying (LaunchBlend first)
+  PASS flight fsm: a second FLY during LaunchBlend is ignored
+  PASS flight fsm: LaunchBlend -> Flying opens run 1
+  PASS flight fsm: Paused cannot return to Flying directly (fresh touch needed)
+  PASS flight fsm: Paused -> ResumePreparation -> Flying keeps the same run
+  PASS flight fsm: one termination token per run (late callbacks are no-ops)
+  PASS flight fsm: Results -> LaunchBlend (Retry) opens run 2
+  PASS flight fsm: Paused -> EndRun -> Results
+  PASS flight fsm: Settings returns to the previous state only
+  PASS flight fsm: 200 runs, exactly one termination each
+  PASS camera: aircraft stays inside 20-80% width and 58-86% height at every envelope corner 
+  PASS camera: a centred aircraft sits at 74-78 % of the height at FOV 58/60/62, tall phone and iPad (aspect/fov:y 0.45/58:0.760 0.45/60:0.760 0.45/62:0.760 0.50/58:0.760 0.50/60:0.760 0.50/62:0.760 0.75/58:0.760 0.75/60:0.760 0.75/62:0.760)
+  PASS camera: FOV 58 -> 62 with speed
+  PASS camera: roll stays 0 (camera right axis is horizontal)
+  PASS rig: roll -32 = right wing down
+  PASS rig: pitch +10 = nose up
+  PASS rig: yaw -6 = nose right
+  PASS flight: FLY is disabled during Prewarm
+  PASS flight: FLY pressed during Prewarm is ignored
+  PASS flight: Prewarm -> Ready
+  PASS flight: FLY enabled on Ready
+  PASS flight: FLY once; a second FLY is ignored
+  PASS flight: LaunchBlend -> Flying
+  PASS flight: Flying starts at tick zero
+  PASS flight: FLY -> active <= 0.6 s (353 ms)
+  PASS input: a touch that starts on the pause button is excluded
+  PASS input: a touch on the world owns the steering
+  PASS input: dragging right moves the aircraft right
+  PASS flight: right drag banks the right wing down on the real rig
+  PASS flight: pause
+  PASS flight: paused = nothing advances, no auto-resume, touches ignored
+  PASS flight: Resume -> ResumePreparation
+  PASS flight: during the 0.6 s cue the world is frozen
+  PASS flight: cue ends -> Flying
+  PASS flight: the resume cue lasts 0.6 s (607 ms)
+  PASS flight: after resume a fresh touch is needed; same run
+  PASS flight: Pause > End run -> Results
+  PASS flight: End run keeps the earned distance
+  PASS flight: End run is idempotent (one termination)
+  PASS flight: local best saved on run end
+  PASS flight: Retry relaunches directly
+  PASS flight: flying straight reaches a contact (868 ticks)
+  PASS flight: Contact -> Results
+  PASS flight: results appear within 0.7 s of contact (394 ms)
+  PASS flight: contact terminates exactly once
+  PASS flight: Results screen shown
+  PASS flight: a late contact callback changes nothing
+  PASS flight: still the same aircraft rig instance
+  PASS flight: Results -> Settings
+  PASS flight: Settings does not start flight; Back returns to Results
+  PASS flight: Results -> Home rebuilds tick zero
+  INFO ui geometry en: game (1920.0, 1920.0) ui (1920.0, 1920.0) pause_view (1920.0, 1920.0) resume_btn (326.0, 180.0)
+  PASS ui en: overlay fills the screen ((1920.0, 1920.0) of (1920.0, 1920.0))
+  PASS ui ready/en: screen shows
+  PASS ui flying/en: screen shows
+  PASS ui paused/en: screen shows
+  PASS ui resume/en: screen shows
+  PASS ui results/en: screen shows
+  PASS ui results_best/en: screen shows
+  PASS ui settings/en: screen shows
+  PASS ui en: no currency / upgrade / power-up / combat words on any screen
+  PASS ui en: no empty label and no raw translation key (24 labels)
+  PASS ui en: every touch target is at least 48 units (96 px)
+  PASS ui en: layout direction follows the language
+  INFO ui geometry ar: game (1920.0, 1920.0) ui (1920.0, 1920.0) pause_view (1920.0, 1920.0) resume_btn (290.0, 180.0)
+  PASS ui ar: overlay fills the screen ((1920.0, 1920.0) of (1920.0, 1920.0))
+  PASS ui ready/ar: screen shows
+  PASS ui flying/ar: screen shows
+  PASS ui paused/ar: screen shows
+  PASS ui resume/ar: screen shows
+  PASS ui results/ar: screen shows
+  PASS ui results_best/ar: screen shows
+  PASS ui settings/ar: screen shows
+  PASS ui ar: no currency / upgrade / power-up / combat words on any screen
+  PASS ui ar: no empty label and no raw translation key (24 labels)
+  PASS ui ar: every touch target is at least 48 units (96 px)
+  PASS ui ar: layout direction follows the language
+  PASS i18n: key app.title exists
+  PASS i18n: key ready.fly exists
+  PASS i18n: key hud.hint exists
+  PASS i18n: key pause.resume exists
+  PASS i18n: key pause.end exists
+  PASS i18n: key results.retry exists
+  PASS i18n: key settings.reduced exists
+  PASS i18n: title VEIL / سِتَار
+  PASS i18n: every string keeps the same placeholders in English and Arabic
+  PASS analytics: run events carry no touch coordinates
+  PASS discovered: test_hd_pack.gd exits 0 (SceneTree script)
+  PASS home: no loading / splash scene exists in scenes/
+  PASS home: boot goes straight to the live world (menu = the flight scene)
+  PASS home: the live world reaches Ready by itself
+  PASS home: only Prewarm then Ready (no other state, no loading step) [2]
+  PASS home: the 3D world has its environment
+  PASS home: the aircraft rig is in the live world and visible
+  PASS home: the 3D camera is current
+  PASS home: course pool and clouds are built before Ready
+  PASS home: Home UI visible, FLY enabled
+  PASS home: Settings button is on Home
+  PASS home: title, Arabic/Latin second title and best-distance label exist
+  PASS home: the Wisp breathes (hover moves over time)
+  PASS home: best distance label is filled
+  PASS home: logo title VEIL with the Arabic name under it (both always, not a language swap)
+  PASS home: title sizes are explicit (never inherited from a theme a capture scene may lack)
+  PASS home EN: the Latin VEIL is the BIG logo (250 px) with the Arabic name smaller under it (112 px)
+  PASS home AR: سِتَار is the BIG name (235 px) with VEIL smaller under it (80 px)
+  PASS home AR: the translated texts are سِتَار over VEIL
+  PASS home AR: the big Arabic name is not letter-spaced (it would break the joins)
+  PASS home: back to English the Latin logo is big again
+  PASS home: FLY is a shader-drawn pearl blade (two swept corners, ion rim and glow), not a flat pill
+  PASS home: FLY is set in the theme display font, large
+  PASS home: FLY text is deep navy on the pearl blade (strongest value contrast)
+  PASS home: Settings is a small gear icon
+  PASS home: pause icon and 'Drag to steer' are styled to match
+  PASS home: no 'Best: 0 m' on a first launch
+  PASS home: best distance is a styled chip once there is one
+  PASS home: the best-distance chip lies flat ((343.0, 71.0)), letters are not stacked
+  PASS hud: the distance counter is set in the theme display font (not the default font)
+  PASS hud: 'Drag to steer' and the best-distance chip share ONE style (same glass chip)
+  PASS hud: the pause icon button has the same glass style and size as the Home gear
+  PASS home: the Wisp (wing tips, nose, tail) is inside the frame on every aspect 
+  PASS home: the Wisp is centred, seen from behind and above, wing span 40-50 % of the width on every aspect 
+  PASS home: the decor-free box holds the aircraft and the home camera ([P: (-4.5, -2.6, -30.0), S: (9.0, 7.0, 43.5)])
+  PASS launch: the Home UI is hidden at once when the blend starts (no fading button over the scene)
+  PASS hud en: 'Drag to steer' is clear of the aircraft (hint 0.11..0.15, aircraft top 0.73, counter bottom 0.09)
+  PASS hud ar: 'Drag to steer' is clear of the aircraft (hint 0.11..0.15, aircraft top 0.73, counter bottom 0.09)
+  PASS home: app.title is VEIL / سِتَار (the studio-approved Arabic name with its تشكيل)
+  PASS home: second title shows the other name in each language
+  PASS home: the translations resolve in both languages (needs the imported .translation files)
+  PASS plugin_present() false off iOS
+  PASS both adapters report unavailable
+  PASS every request answers 'unavailable'
+  PASS a configured board id alone is not enough without the manager
+  PASS error_text of a bare value = failed
+  PASS ios_boards.gd never names an Apple class as a type
+  PASS ios_store.gd never names an Apple class as a type
+  PASS bound + board id = available, not signed in
+  PASS binding never calls authenticate() by itself (no surprise Apple sheet)
+  PASS sign_in() calls GameCenterManager.authenticate()
+  PASS authentication_error alone does not end the request
+  PASS authentication_result(true) = signed in
+  PASS authentication_result(false) = failed, not signed in
+  PASS an already authenticated local player is picked up at bind
+  PASS sign-in times out at 20 s
+  PASS ...and a late success is still adopted
+  PASS 46,080,001 cm is refused
+  PASS ...out_of_range, nothing sent
+  PASS negative scores refused
+  PASS 46,080,000 cm (the limit) is accepted
+  PASS submit_score(score, context 0, local player) on the GKLeaderboard
+  PASS a null error = submitted ok
+  PASS COMMUNICATIONS_FAILURE (5) = offline
+  PASS NOT_AUTHENTICATED (14) = not_signed_in
+  PASS any other GKError = gc_<code>
+  PASS not signed in: refused, nothing sent
+  PASS GKLeaderboard is loaded once, then reused
+  PASS top list: GLOBAL scope, ALL_TIME, from rank 1, 50 rows
+  PASS top 50 rows mapped (rank, score, alias)
+  PASS the player's row is flagged by game_player_id
+  PASS neighbours inside the top list come from it (no second call)
+  PASS ...one native call only
+  PASS neighbours: 5 above and 5 below the player (start 1229, length 11)
+  PASS page = top 50 + 11 neighbours + the player's rank
+  PASS no local entry: top only, rank 0
+  PASS a failed neighbour call keeps the top list
+  PASS load_page() does not require sign-in on our side
+  PASS CONNECTION_TIMEOUT (10) = offline
+  PASS a silent platform: nothing yet
+  PASS ...still nothing at 2.9 s
+  PASS ...'timeout' answer by 3 s
+  PASS load_leaderboards failing offline = offline
+  PASS the leaderboard id not found in Game Center = unavailable
+  PASS board load never answers: timeout at 3 s
+  PASS ...and its late answer is dropped
+  PASS bind: start() then fetch_current_entitlements()
+  PASS not owned before any verified answer
+  PASS a verified current entitlement = owned
+  PASS an empty entitlement list = not owned (the store's answer wins)
+  PASS another product's entitlement does not own Remove Ads
+  PASS query: request_products([remove_ads_permanent])
+  PASS live localised price = display_price; micros from price
+  PASS an empty product list = product_not_found (the earlier price is kept, never guessed)
+  PASS a thrown StoreKit error (status CANCELLED 2) = offline
+  PASS a query that never answers ends in timeout
+  PASS purchase() starts
+  PASS no product yet: fetch it first
+  PASS ...then StoreKitManager.purchase(StoreProduct)
+  PASS OK + verified transaction = purchased, owned
+  PASS the delivered transaction is finished
+  PASS the same transaction delivered twice changes nothing
+  PASS an owner buying again = already_owned
+  PASS StoreKit status 4 = cancelled, not owned
+  PASS StoreKit status 5 = pending, not owned
+  PASS StoreKit status 3 = failed, not owned
+  PASS StoreKit status 1 = failed, not owned
+  PASS StoreKit status 2 = failed, not owned
+  PASS StoreKit status 6 = failed, not owned
+  PASS no answer in 120 s = failed / timeout
+  PASS the product missing in the store = failed, nothing bought
+  PASS a transaction for another product never grants
+  PASS a verified update outside the app (pending purchase approved) = owned, finished
+  PASS a verified transaction WITH a revocation date (refund) = ownership gone
+  PASS an UNVERIFIED transaction never grants and is never finished
+  PASS another product's update is ignored
+  PASS a null transaction is ignored
+  PASS restore() calls restore_purchases() (= AppStore.sync())
+  PASS after sync: current entitlements decide, no answer yet
+  PASS a verified entitlement = restored
+  PASS nothing to restore = ok, not owned
+  PASS AppStore.sync() failing = offline
+  PASS restore ends in timeout at 15 s
+  PASS a late restore answer is not reported twice (the entitlement itself still counts)
+  PASS ATT step answers NOT_NEEDED (no tracking prompt, no IDFA)
+  PASS ads are test-only
+  PASS iOS interstitial = Google's public TEST unit id
+  PASS iOS app id = Google's public TEST app id
+  PASS Game Center board id + product id in config
+  PASS AdMob adapter takes the iOS unit id; unavailable without the singletons
+  PASS boards refuse calls during a flight
+  PASS store refuses calls during a flight
+  PASS a StoreKit callback during a flight is HELD, not applied
+  PASS ...and delivered after the flight
+RESULT passed=93 failed=0
+  PASS core suite test_ios_adapters.gd
+  PASS lifecycle: flying (tick 80)
+  PASS lifecycle: focus loss pauses the flight
+  PASS lifecycle: nothing is audible in the background and the live loops are held paused (3)
+  PASS lifecycle: the sim is frozen in the background (tick 80 == 80)
+  PASS lifecycle: coming back does NOT resume by itself (still Paused)
+  PASS lifecycle: sound is released on return (nothing held paused)
+  PASS lifecycle: still frozen after the return until the player resumes
+  PASS lifecycle: Resume starts the get-ready cue
+  PASS lifecycle: focus loss during the resume cue returns to Paused
+  PASS lifecycle: flying again after the cue with the same tick (80)
+  PASS lifecycle: the sim continues from the paused tick
+  PASS lifecycle: focus loss during the launch blend returns to Ready at tick zero
+  PASS lifecycle: Home in the background stays Home with its sound held paused (1 players)
+  PASS lifecycle: Home returns with the same sound playing
+  PASS reduced: the OS flag is read (test override on)
+  PASS reduced: first launch with the OS flag on turns Reduced Motion on
+  PASS reduced: the Settings toggle wins while the OS flag is unchanged
+  PASS reduced: OS flag turned off while away -> off
+  PASS reduced: OS flag turned on while away -> on
+  PASS reduced: first launch with the OS flag off keeps motion on
+  PASS reduced: gameplay is identical with Reduced Motion on / off (869 ticks, 261884 mm, 8 checkpoints)
+  PASS reduced: contact particles are off with Reduced Motion (on true / off false)
+  PASS reduced: the contact flash is smaller with Reduced Motion (1.60 < 3.20)
+  PASS reduced: Home camera sway stops with Reduced Motion
+  PASS reduced: the Home cloud drift is slower (0.50 vs 2.00 m in 10 s)
+  PASS reduced: no hover or wing flex in flight with Reduced Motion
+  PASS moodstep: veil_common declares the mood tint + haze share as global shader parameters (VEIL_MOOD_GLOBAL)
+  PASS moodstep: every mood-following shader reads the globals, canopy + sky keep their own uniforms []
+  PASS moodstep: project.godot declares both globals (shader_globals)
+  PASS moodstep: sky radiance is INCREMENTAL at the same 256 size (never a full QUALITY re-filter per mood step)
+  PASS onesky: storm / dawn / twilight each have a 4096 panorama + a 2304x3072 view window + a sun direction
+  PASS onesky: the key light comes from each panorama's own sun (dawn lower than storm)
+  PASS moodstep: apply_mood no longer loops over every material copy
+  PASS moodstep: the sweep made 272 mood steps
+  PASS onesky: the mood skies' textures change only when a blend starts (4 swaps in 272 steps)
+  PASS onesky: radiance held during every blend, switched only at a blend's end (2 switches, 0 mid-blend)
+  PASS moodstep: 272 mood steps allocate no object / node / resource (objects +0, nodes +0, resources +0)
+  PASS moodstep: 1.00 global writes per step for 31 mood-tinted material copies (O(1), not one per copy)
+  PASS moodstep: the course really has many copies (31) that the one global reaches
+  PASS moodstep: no shader / texture / material swapped by a step (uniform values only: no new pipeline)
+  PASS moodstep: a haze change is one global write (2)
+  PASS frames: the twin wall has exactly one opening (1)
+  PASS frames: opening 4.8 x 3.8 at (0, 0.4, -22), front face z -21.8 ({ "c": (0.0, 0.4, -22.0), "hw": 2.39999985694885, "hh": 1.90000009536743, "hz": 0.20000000298023, "front": -21.7999999970198, "anchor": 0 })
+  PASS frames: a slit open to the wall's foot is not framed
+  PASS frames: one box, no frame
+  PASS frames: one unit frame mesh, built once
+  PASS frames: frame width 0.36 m in range
+  PASS frames: one MultiMesh node for every frame in the window (one draw call) + one for every opening's breath (one draw call)
+  PASS breath: every framed opening also breathes (light veil + wisps, same count; 0 mismatching frames)
+  PASS frames: glass-wall openings get frames in flight over the real catalog (max 2 in a window)
+  PASS frames: every frame's opening is empty flight space and its band sits on glass []
+  PASS a v0.3 (schema 1) file loads
+  PASS the v0.3 best of the current rules is kept as the current best
+  PASS a v0.3 file has no ad ledger: zeros
+  PASS old bests are listed as previous versions, best first
+  PASS previous_best_cm is the best of the previous versions
+  PASS an older rules hash stays readable under its own key
+  PASS loading alone does not touch the disk
+  PASS the v0.3 file is kept byte for byte as <path>.v1
+  PASS after the first save the file is schema 2
+  PASS migration lost no best (current + previous versions)
+  PASS ad counters persisted: 1 run, 42.5 s
+  PASS a later save never overwrites the .v1 copy
+  PASS counters survive a relaunch (2 runs, 52.5 s)
+  PASS add_active_seconds accumulates in memory
+  PASS ...and is saved only with the next run end / ad (not on every call)
+  PASS a shown ad resets the counters and persists the total
+  PASS the ledger never touches the bests
+  PASS a new best saves with the ledger intact
+  PASS best + ledger round trip
+  PASS atomic save: no temp file, previous-good backup present
+  PASS corrupt main file: the backup is used
+  PASS the backup holds real records and ledger
+  PASS ledger is part of the saved file
+  PASS a hand-edited ledger fails the checksum: backup used
+  PASS a future schema is not read (fresh, no crash)
+  PASS rules changed: current best 0, the old best shows as previous version
+  PASS a new run starts a fresh best, the previous best stays
+RESULT passed=27 failed=0
+  PASS core suite test_records_v04.gd
+  PASS RED on bad fixture render_bad_glow.tscn.txt (["render_bad_glow.tscn.txt: glow enabled (glow_enabled = true)"])
+  PASS RED on bad fixture render_bad_subviewport3d.tscn.txt (["render_bad_subviewport3d.tscn.txt: SubViewport \'View\' renders a 3D colour pass"])
+  PASS RED on bad fixture render_bad_screen_shader.gdshader.txt (["render_bad_screen_shader.gdshader.txt: screen-texture post shader (hint_screen_texture / SCREEN_TEXTURE)"])
+  PASS RED on bad fixture render_bad_msaa4x.tscn.txt (["render_bad_msaa4x.tscn.txt: node \'Root\' msaa_3d=2 (> 2x)"])
+  PASS RED on bad fixture render_bad_msaa_scaled.tscn.txt (["render_bad_msaa_scaled.tscn.txt: node \'View\' MSAA with scaling_3d_scale=0.75 < 1"])
+  PASS RED on bad fixture render_bad_layers.tscn.txt (["render_bad_layers.tscn.txt: 4 overlapping transparent layers (budget 3)", "render_bad_layers.tscn.txt: 5 peak transparent layers (budget 4)"])
+  PASS RED on project msaa_3d=4x
+  PASS RED on project MSAA + scaling_3d/scale < 1
+  PASS GREEN on project MSAA 2x at scale 1.0
+  PASS GREEN on a scene at exactly 3 overlapping / 4 peak layers []
+  PASS project.godot is clean []
+  PASS project uses the Mobile renderer
+  PASS found VEIL scenes (14)
+  PASS GREEN on all VEIL scenes and the resources they load
+RESULT passed=14 failed=0
+  PASS core suite test_render_rules.gd
+  PASS longest: loading state first
+  PASS longest: rows shown once the board answers
+  PASS longest: top 50 + 5 neighbours each side and the player's row (got 61)
+  PASS longest: a gap marks the jump from the top 50 to the neighbours
+  PASS longest: the player's row is rank 84 (Row84)
+  PASS longest: the player's row is highlighted
+  PASS longest: rank 1 first
+  PASS longest: distance in whole metres (cm / 100)
+  PASS longest: Close is there
+  PASS longest: a link to the platform's own board
+  PASS longest: the sign-in prompt shows while not signed in (never a gate: the list is already there)
+  PASS longest: Close closes and frees the sheet
+  PASS longest: sign-in prompt signs in
+  PASS longest: signed in -> the page reloads and the prompt is gone
+  PASS longest: a failed sign-in says so and the sheet stays usable
+  PASS longest offline: 'Ranking unavailable'
+  PASS longest offline: a way to try again, no stale rows
+  PASS longest timeout: still loading at 2.9 s
+  PASS longest timeout: unavailable at 3.1 s (service timeout)
+  PASS longest guard: loading at 2.5 s
+  PASS longest guard: unavailable by 3.3 s even if the service is silent
+  PASS longest in flight: refused request -> unavailable, not a stuck spinner
+  PASS ads: loading, Buy disabled until the price arrives
+  PASS ads: the price is the store's live string (AED 25.00)
+  PASS ads: Buy shows the live price (Remove ads · AED 25.00)
+  PASS ads: buying -> owned
+  PASS ads: 'Ads removed', no Buy / Restore when owned
+  PASS ads: cancelled -> a note, Buy usable again
+  PASS ads: pending approval -> says so, not owned yet
+  PASS ads: approval arrives later -> owned
+  PASS ads offline: 'Store unavailable' shown
+  PASS ads offline: Buy is disabled
+  PASS ads network down: unavailable, no invented price
+  PASS ads: restore finds the purchase -> owned
+  PASS ads: restore with nothing to restore says so
+  PASS ads: opened when already owned -> 'Ads removed'
+  PASS data: a records file exists before deleting
+  PASS data: Delete local data waits for a confirm
+  PASS data: the confirm shows after tapping Delete
+  PASS data: Cancel deletes nothing
+  PASS data: confirmed -> the records file is gone
+  PASS data: in-memory records are empty (best and ad counters)
+  PASS data: the save is back to defaults
+  PASS data: says the data was deleted
+  PASS data: 'local data disappears on uninstall'
+  PASS data: what lives where (3 cards)
+  PASS data: account tool links open https pages
+  PASS settings: row SoundSlider exists
+  PASS settings: row HapticsToggle exists
+  PASS settings: row ReducedMotionToggle exists
+  PASS settings: row QualityButton exists
+  PASS settings: row RemoveAdsButton exists
+  PASS settings: row RestoreButton exists
+  PASS settings: row PrivacyButton exists
+  PASS settings: row DataButton exists
+  PASS settings: row BackButton exists
+  PASS settings: row LangButton exists
+  PASS settings: the Music row stays hidden
+  PASS settings: Privacy choices disabled with a note where UMP does not require it
+  PASS settings: Privacy choices enabled once the form says it is required
+  PASS settings: Privacy choices calls the Consent service's entry point
+  PASS settings: Data opens the Data screen
+  PASS settings: the Data screen closes
+  PASS settings: Remove ads opens the Remove Ads screen
+  PASS settings: owned -> the row says 'Ads removed'
+  PASS settings: Restore purchases reports the result
+  PASS settings: leaving Settings closes the sub-screen
+  PASS results: trophy + link not on screen in state 2
+  PASS results: trophy + link not on screen in state 4
+  PASS results: trophy + link not on screen in state 8
+  PASS results: trophy + link not on screen in state 9
+  PASS results: trophy + link not on screen in state 6
+  PASS results: trophy + link not on screen in state 10
+  PASS results: trophy and 'Remove ads' link shown on Results
+  PASS results: RETRY and Home do not move with or without the extras
+  PASS results: the extras never cover RETRY
+  PASS results: the extras never cover Home
+  PASS results: the trophy opens LONGEST FLIGHTS
+  PASS results: Close returns to Results with RETRY where it was
+  PASS results: the link opens Remove Ads
+  PASS results: owned -> the 'Remove ads' link is hidden
+  PASS results: leaving Results (Retry / Home) closes any open sheet
+  PASS results: a sheet is never opened while a flight runs
+  PASS results: no services given -> one shared fallback for Results and Settings
+  PASS results: set_services() hands the real ones to both screens
+  PASS remove_ads.gd: no hard-coded price
+  PASS longest_flights.gd: no hard-coded price
+  PASS data_screen.gd: no hard-coded price
+  PASS results_extras.gd: no hard-coded price
+  PASS settings_panel.gd: no hard-coded price
+  PASS flight_ui: no hard-coded price
+  PASS score limit is 0 .. 46,080,000 cm
+  PASS scores outside 0 .. 46,080,000 cm are refused
+  PASS ...and never reach the platform (error out_of_range)
+  PASS a submit before sign-in is refused: sign-in is optional, never a gate
+  PASS sign-in starts
+  PASS sign-in ok
+  PASS the limit itself is accepted; a second submit while one is pending is refused (busy)
+  PASS submit ok
+  PASS a duplicated platform callback produces ONE score_submitted
+  PASS keepBest: the fake board kept the higher score
+  PASS offline submit: error offline
+  PASS a submit with no answer times out after 10 s
+  PASS page: top 50 rows
+  PASS page: the player's row highlighted with 5 neighbours each side (11 rows)
+  PASS page: neighbours start 5 ranks above the player
+  PASS no answer at 2.9 s: still waiting
+  PASS no answer by 3 s: 'Ranking unavailable' (error timeout)
+  PASS a late answer after the timeout is dropped
+  PASS offline page: error offline
+  PASS sign-in failure leaves the player signed out
+  PASS sign-in with no answer times out
+  PASS show with nothing loaded: refused
+  PASS load starts
+  PASS ...one load at a time
+  PASS load failure carries the platform code (3 = NO_FILL)
+  PASS offline load: network error code 2
+  PASS a load with no answer times out after 10 s
+  PASS loaded; loading again is refused
+  PASS show consumes the ad (single use)
+  PASS shown fires when the ad is on screen
+  PASS dismissed fires after
+  PASS duplicate shown / dismissed callbacks count once
+  PASS show failure carries the platform code
+  PASS a show that never reports back times out after 5 s
+  PASS no price until the store answered (never a guessed price)
+  PASS live price from the store
+  PASS offline query: error offline; the last live price is kept
+  PASS query with no answer times out
+  PASS cancel: not owned, no ownership event
+  PASS pending purchase: not owned yet
+  PASS pending purchase completes later: owned, one ownership event
+  PASS a duplicated purchase callback (same token) is delivered once
+  PASS buying again while owned answers already_owned without touching the store
+  PASS a refund / revocation from the store removes ownership
+  PASS restore finds the entitlement again after a reinstall
+  PASS a failed restore does not take ownership away
+  PASS offline purchase: failed, not owned
+  PASS the store says already owned: owned
+  PASS the payment sheet may take a while: no timeout before 120 s
+  PASS a purchase with no answer ends after 120 s
+  PASS unknown status: ads may not be requested
+  PASS REQUIRED: ads still blocked
+  PASS the form is shown when required
+  PASS after the form: OBTAINED, ads may be requested
+  PASS no form when none is required
+  PASS NOT_REQUIRED: ads may be requested
+  PASS a failed consent update keeps ads blocked
+  PASS consent update with no answer times out
+  PASS Android boards: unavailable, sign-in refused
+  PASS Android boards: page = unavailable, answered at once
+  PASS Android store: unavailable
+  PASS AdMob ads: unavailable
+  PASS AdMob consent: unavailable, ads blocked
+  PASS iOS boards shell: unavailable
+  PASS iOS store shell: unavailable
+  PASS platform services on desktop: all unavailable
+  PASS every service call is refused during a flight
+  PASS ...and nothing reached an adapter (3 refusals counted)
+  PASS ...and no timer or pending state was created
+  PASS plugin callbacks during a flight are parked (16 slots; the rest counted as dropped)
+  PASS the parking ring never grows (no allocation in flight)
+  PASS advance() does nothing during a flight
+  PASS after the flight the parked callbacks are delivered in order
+  PASS timers are frozen during a flight
+  PASS ...and run again after it
+  PASS VeilServices.set_flight(true) closes every service and tells the policy
+  PASS set_flight(false) opens them again
+  PASS no plugin bound yet: unavailable
+  PASS binding initialises the plugin and asks for the sign-in state
+  PASS an unsolicited userAuthenticated(true) marks the player signed in and loads the player id
+  PASS sign_in() calls signIn
+  PASS userAuthenticated(false) = sign-in declined / failed
+  PASS userAuthenticated(true) = signed in
+  PASS submit calls submitScore(leaderboardId, centimetres)
+  PASS an answer for another board is ignored
+  PASS scoreSubmitted(true, board) = submitted
+  PASS a duplicated platform answer is ignored
+  PASS scoreSubmitted(false, board) = failed
+  PASS page asks for the top 50 and 11 player-centred scores (all time, public)
+  PASS the page waits for both answers
+  PASS top rows map rank / rawScore / scoreHolderDisplayName
+  PASS the player's row is found by playerId
+  PASS no player-centred rows (unranked): the top list still shows
+  PASS no top list: page failed
+  PASS only one answer by 3 s: 'Ranking unavailable'
+  PASS (late answers after a timeout change nothing)
+  PASS no leaderboard id configured (Khaled's console step): unavailable
+  PASS binding calls initPlugin
+  PASS not connected: startConnection first
+  PASS connected: queryProductDetails([remove_ads_permanent], 'inapp')
+  PASS price comes from one_time_purchase_offer_details_list[0].formatted_price
+  PASS NETWORK_ERROR (12) = offline
+  PASS BILLING_UNAVAILABLE (3) = billing_3
+  PASS an empty product list = product_not_found
+  PASS purchase() calls purchase(productId, '', '', false)
+  PASS PURCHASED (state 1) = owned
+  PASS ...then the purchase is acknowledged
+  PASS the same update delivered twice changes nothing
+  PASS USER_CANCELED (1) = cancelled
+  PASS PENDING (state 2) = pending, not owned, not acknowledged
+  PASS the pending purchase later turns PURCHASED = owned
+  PASS ITEM_ALREADY_OWNED (7) from the call = already_owned
+  PASS a refused launch (BILLING_UNAVAILABLE) = failed
+  PASS network loss during the sheet = failed (offline)
+  PASS connect_error(SERVICE_UNAVAILABLE) while buying = failed (offline)
+  PASS restore calls queryPurchases('inapp', false)
+  PASS restore finds the purchase: owned, nothing to acknowledge
+  PASS restore acknowledges an unacknowledged purchase
+  PASS a purchase listing without our product = refunded / revoked: no longer owned
+  PASS restore with no network: error offline
+  PASS a failed restore never removes a cached, validated entitlement
+  PASS bound with a unit id: available
+  PASS first load initialises the SDK and waits for on_initialization_complete
+  PASS then create() + load(unitId, request, keywords, uid)
+  PASS the request dictionary has the plugin's keys
+  PASS an answer for another uid is ignored
+  PASS on_interstitial_ad_loaded(uid) = loaded
+  PASS show(uid)
+  PASS showed_full_screen_content = shown (the real show)
+  PASS dismissed -> dismissed + destroy(uid)
+  PASS a duplicated dismiss is ignored
+  PASS later loads do not initialise again
+  PASS failed_to_load(uid, {code 3, message}) = NO_FILL
+  PASS NETWORK_ERROR = 2
+  PASS failed_to_show(uid, err) = show_failed + destroy
+  PASS no unit id configured: unavailable
+  PASS update(params): not under age, no debug settings in release
+  PASS success: status REQUIRED (2) read from the plugin, privacy options REQUIRED; ads blocked
+  PASS failure carries the UMP error code
+  PASS form: load_consent_form()
+  PASS loaded: show(uid)
+  PASS dismissed without error: status re-read = OBTAINED, ads may be requested
+  PASS privacy options: show_privacy_options_form()
+  PASS privacy options dismissed
+  PASS the Day-1 UMP probe can force the EEA debug geography
+  PASS form load failure = form_finished(false)
+  PASS fake mode builds the four fakes
+  PASS board limits and timeouts come from config/services.json
+  PASS store product id from config
+  PASS ad policy built from tuning
+  PASS explicit modes win
+  PASS during the flight the services were called 360 times and started nothing
+  PASS same distance, contact tick and hazard with services on / off
+  PASS same sim state hash with services on / off (89ac61d2950f)
+  PASS no core_sim file references a service ()
+RESULT passed=155 failed=0
+  PASS core suite test_services.gd
+  PASS wiring: the Services autoload is running
+  PASS wiring: desktop runs the fake services
+  PASS wiring: Home reached
+  PASS wiring: consent update answered at launch; the booting flag is off at Home
+  PASS wiring: an ad is preloaded at Home
+  PASS wiring: FLY
+  PASS wiring: a flight closes the services
+  PASS wiring: run:start and the three Crashlytics keys
+  PASS wiring: service calls are refused in flight
+  PASS wiring: End run -> Results
+  PASS wiring: the services reopen and the ledger counted the run (12 -> 13)
+  PASS wiring: the Results screen started the ad policy
+  PASS wiring: exactly one ad shown at the results transition ()
+  PASS wiring: the Results screen stayed up
+  PASS wiring: run:end, ad:eligible, ad:shown events
+  PASS wiring: Retry relaunches
+  PASS wiring: second results: the policy waits for its attempt
+  PASS wiring: Retry tapped during the wait
+  PASS wiring: Retry cancelled the ad (never an ad after Retry)
+  PASS wiring: ...and the run starts at once
+  PASS wiring: buy Remove Ads from the results screen
+  PASS wiring: owned, the entitlement saved (to the test file)
+  PASS wiring: Remove Ads owned: no ad at the results transition
+  PASS wiring: and the ad plugin is never asked to load
+  PASS wiring: Home again
+  PASS wiring screens: Home reached
+  PASS wiring screens: Results and Settings run on the Services autoload, not a private fake
+  PASS wiring screens: platform board request starts
+  PASS wiring screens: offline platform board answers 'unavailable' within 3 s
+  PASS wiring screens: a board that never answers times out as unavailable
+  PASS wiring screens: an online platform board opens
+  PASS wiring screens: Home shows the saved best
+  PASS wiring screens: the Data sheet uses the shared services
+  PASS wiring screens: after Delete local data Home no longer shows the old best
+  PASS wiring screens: Privacy row disabled while no privacy options are required
+  PASS wiring screens: Privacy row enabled once privacy options are required
+  PASS wiring screens: Remove Ads shows the store's live price string
+  PASS wiring screens: Restore goes to the store service
+  PASS wiring screens: the layout preview reaches 'owned' through the store's restore path
+  PASS signature: (the host is out of the tree)
+  PASS signature: the same run with services on and off ({ "distance_mm": 261579, "reason": "contact", "hazard": "s8.fin0_rim", "active_ticks": 868, "rules": "2" } vs { "distance_mm": 261579, "reason": "contact", "hazard": "s8.fin0_rim", "active_ticks": 868, "rules": "2" })
+  PASS no price before the store answered
+  PASS the fake store returns a placeholder, not a real price
+  PASS whatever string the store gives is shown as is
+  PASS no price is written in code ()
+  PASS a new install owns nothing
+  PASS purchase starts
+  PASS purchased: owned, one ownership change
+  PASS the validated entitlement is on disk
+  PASS acknowledged once after fulfilling
+  PASS cancelled: nothing owned, nothing saved, nothing acknowledged
+  PASS the player can try again after a cancel
+  PASS second try succeeds
+  PASS pending: not owned yet, nothing saved
+  PASS a second purchase while pending starts no second payment
+  PASS approval arrives later: owned, saved, acknowledged
+  PASS declined pending: back to not owned, can buy again
+  PASS the success callback arrived twice: one result, one ownership change, one acknowledge
+  PASS late repeats (same or new token) after ownership change nothing
+  PASS the answer never came: the purchase times out as failed, not owned yet
+  PASS ...and a reconcile is wanted (the payment may have gone through)
+  PASS the next idle moment asks the store
+  PASS the store says owned: entitlement saved and acknowledged
+  PASS network error after the charge: failed offline, reconcile wanted
+  PASS reconcile finds the purchase
+  PASS offline and NOT charged: reconcile finds nothing, nothing is granted
+  PASS fulfilled and saved before the acknowledgement was sent
+  PASS the next launch is ad-free at once (cached, validated entitlement)
+  PASS ...and a startup reconcile is queued
+  PASS startup retry acknowledged the purchase
+  PASS fresh install: not owned until the store says so
+  PASS the silent startup check restores it
+  PASS the Restore button does the same
+  PASS restore on an account that never bought: ok, owned = false
+  PASS the store says already owned: granted, saved
+  PASS buying again when owned starts no payment
+  PASS a revocation signal removes ownership and the saved entitlement
+  PASS cached ownership applies at launch
+  PASS the startup check finds the refund and withdraws ownership
+  PASS offline restore fails but ownership stays (validated cache)
+  PASS ...and it is retried later
+  PASS billing unavailable: still ad-free from the validated cache
+  PASS (the saved file reads back as owned)
+  PASS the file holds no token, order id or receipt
+  PASS a tampered file reads as not owned (edited field)
+  PASS a tampered file reads as not owned (wrong product)
+  PASS a tampered file reads as not owned (bad schema)
+  PASS a tampered file reads as not owned (no checksum)
+  PASS a corrupt file reads as not owned (no crash)
+  PASS no file: not owned
+  PASS no file but the store, its flow and the entitlement sets ownership ()
+  PASS no Save flag stands in for the entitlement
+  PASS (consent permits ads)
+  PASS not owned + consent: an ad loads, or the host already preloaded one (gate '', in_flight false, owned false, loaded false, loading true)
+  PASS ...and is cached
+  PASS (bought)
+  PASS show_ad refuses a cached ad after the purchase (gate: paid)
+  PASS load_ad and the policy's preload refuse too
+  PASS the results transition skips with reason paid
+  PASS (waiting for the attempt)
+  PASS a purchase between eligibility and the attempt cancels the ad (read fresh)
+  PASS no consent answer yet: nothing may be requested (gate: consent)
+  PASS no scene or core file loads or shows an ad directly ()
+RESULT passed=62 failed=0
+  PASS core suite test_store_flows.gd
+  PASS band edges at 100 m
+  PASS bands 250 / 500 / 1000
+  PASS bands 1000 / 2000 / 4000 and above
+  PASS a contact reports only the hazard family, never an index
+  PASS empty / odd hazard ids stay safe
+  PASS long family names are cut
+  PASS free words are reduced to a-z 0-9 _
+  PASS accepted: run:start
+  PASS accepted: run:end:m_500_999:contact_shear
+  PASS accepted: ad:skipped:not_enough_runs
+  PASS accepted: iap:success
+  PASS accepted: board:submit:fail:timeout
+  PASS every forbidden / malformed id is refused (accepted: )
+  PASS 5 sent, 19 refused and counted
+  PASS crash keys: unknown names, long values and token-like values are refused
+  PASS run start / end with distance band and cause family
+  PASS ad skipped / eligible / shown / failed (ad:skipped:short_run,ad:eligible:first,ad:shown,ad:eligible:next,ad:skipped:show_failed,ad:failed)
+  PASS purchase start / cancel / pending / fail / success
+  PASS restore owned / fail / none
+  PASS board open / submit / fail (board:open,board:open,board:open_fail:failed,board:submit:fail:not_signed_in,board:submit:ok,board:submit:fail:out_of_range)
+  PASS the gate refused none of the real events (0: )
+  PASS every event id is a plain lower-case design id ()
+  PASS no event carries a coordinate, token, receipt or ad id (27 events scanned) 
+  PASS crash key rules_version is clean
+  PASS crash key tier is clean
+  PASS crash key mood is clean
+  PASS (the scanner does catch a coordinate, a token and an ad unit)
+  PASS a call site that tries to attach a token or coordinates sends nothing
+  PASS rules version, tier and mood are set when a run starts ({ "rules_version": "2:ab12cd34", "tier": "high_end", "mood": "twilight" })
+  PASS exactly three keys
+RESULT passed=30 failed=0
+  PASS core suite test_telemetry.gd
+  PASS tier: tiers.json holds exactly balanced and high
+  PASS tier: balanced passes every tier rule []
+  PASS tier: high passes every tier rule []
+  PASS tier: balanced is lighter than high in clouds, shadow and ornament
+  PASS tier: render scale ranges follow brief P21 (balanced 0.75-1.00, high 0.90-1.00)
+  PASS tier: the directional shadow atlas is at most 2048 (16-bit): the 4096 x 4096 default cost 64 MB of video memory (balanced 2048, high 2048)
+  PASS tier: a shadow atlas that is not 1024 / 2048 / 4096 is rejected
+  PASS tier: a tier naming 'warning_distance_s' is rejected
+  PASS tier: a tier naming 'warning_s' is rejected
+  PASS tier: a tier naming 'collision_scale' is rejected
+  PASS tier: a tier naming 'edge_width' is rejected
+  PASS tier: a tier naming 'opening_width_m' is rejected
+  PASS tier: a tier naming 'obstacle_phase' is rejected
+  PASS tier: a tier naming 'tick_rate' is rejected
+  PASS tier: a tier naming 'visibility_m' is rejected
+  PASS tier: a tier naming 'speed_mps' is rejected
+  PASS tier: no allowed key can touch warning distance, edges, openings, collision or phase 
+  PASS tier S9: RED on MSAA 4x
+  PASS tier S9: RED on MSAA together with a render scale below 1
+  PASS tier: RED on a render scale below 0.75
+  PASS tier S9: on both tiers, at every render scale, MSAA is off below scale 1 and never above 2x 
+  PASS tier S9: the high tier uses MSAA 2x at scale 1.0
+  PASS tier S9: the tier manager adds no glow, SubViewport pass or screen-texture shader
+  PASS RED on bad fixture render_bad_glow.tscn.txt (["render_bad_glow.tscn.txt: glow enabled (glow_enabled = true)"])
+  PASS RED on bad fixture render_bad_subviewport3d.tscn.txt (["render_bad_subviewport3d.tscn.txt: SubViewport \'View\' renders a 3D colour pass"])
+  PASS RED on bad fixture render_bad_screen_shader.gdshader.txt (["render_bad_screen_shader.gdshader.txt: screen-texture post shader (hint_screen_texture / SCREEN_TEXTURE)"])
+  PASS RED on bad fixture render_bad_msaa4x.tscn.txt (["render_bad_msaa4x.tscn.txt: node \'Root\' msaa_3d=2 (> 2x)"])
+  PASS RED on bad fixture render_bad_msaa_scaled.tscn.txt (["render_bad_msaa_scaled.tscn.txt: node \'View\' MSAA with scaling_3d_scale=0.75 < 1"])
+  PASS RED on bad fixture render_bad_layers.tscn.txt (["render_bad_layers.tscn.txt: 4 overlapping transparent layers (budget 3)", "render_bad_layers.tscn.txt: 5 peak transparent layers (budget 4)"])
+  PASS RED on project msaa_3d=4x
+  PASS RED on project MSAA + scaling_3d/scale < 1
+  PASS GREEN on project MSAA 2x at scale 1.0
+  PASS GREEN on a scene at exactly 3 overlapping / 4 peak layers []
+  PASS project.godot is clean []
+  PASS project uses the Mobile renderer
+  PASS found VEIL scenes (14)
+  PASS GREEN on all VEIL scenes and the resources they load
+RESULT passed=14 failed=0
+  PASS tier S9: test_render_rules passes (0 failures)
+  PASS auto: a desktop GPU is the high class
+  PASS auto: Adreno 7xx, 8 cores, 12 GB = high class
+  PASS auto: Mali-G68 = mid class
+  PASS auto: PowerVR is never started on high
+  PASS auto: a strong GPU with only 4 GB stays mid
+  PASS auto: an iPhone classifies (unknown memory is not held against it)
+  PASS auto: measured warm-up + class pick the tier (8 ms high/mid = high, 10.5 ms mid = balanced, low class never high)
+  PASS auto: a very slow warm-up starts balanced at the bottom of its scale range
+  PASS auto: the warm-up median ignores a single spike
+  PASS tier: a fresh install starts on the default tier (balanced, default)
+  PASS auto: after the warm-up sample the tier is chosen (high from 8.0 ms)
+  PASS auto: the choice is stored in the save
+  PASS tier: high applied (shadow on, 16 cloud cards, scale 1.0)
+  PASS tier: all 16 cloud cards are drawn on high
+  PASS auto: the next launch uses the stored tier without measuring again
+  PASS tier: the Settings override applies at once (balanced: no shadow, 10 cards)
+  PASS tier: balanced draws 10 cloud cards at scale < 1 with MSAA off
+  PASS tier: override high
+  PASS tier: Auto goes back to the stored choice
+  PASS auto: a stored choice from another build is measured again
+  INFO tier: VeilLook.apply_tier present: true (stubbed behind has_method otherwise)
+  PASS governor: high starts at scale 1.0 with MSAA 2x
+  PASS governor: one slow window (p95 30 ms) lowers the scale by 0.05 and MSAA goes off (S9)
+  PASS governor: never below the tier minimum (0.90)
+  PASS governor: a window inside the dead band changes nothing (hysteresis)
+  PASS governor: two good windows are not enough to raise it
+  PASS governor: three good windows raise it by 0.05
+  PASS governor: back at 1.0 the MSAA 2x returns
+  PASS governor: a window with a 600 ms host stall is ignored
+  PASS governor: clouds, shadow and ornament belong to the tier and are not changed by the scale governor
+  PASS tier: the two flights ran on different tiers (balanced / high)
+  PASS tier: identical flight on both tiers: same sim, same course window, same visible obstacles and openings (17 checkpoints)
+  PASS settings: the Graphics quality row starts on Auto
+  PASS settings: tap 1 = Balanced
+  PASS settings: tap 2 = High
+  PASS settings: tap 3 = Auto again
+  PASS settings: the 4 new quality strings are in i18n (EN + AR columns)
+  PASS visual==sim: the course has a 'moving_shutters' slot
+  PASS visual==sim: the course has a 'moving_openings' slot
+  PASS visual==sim: the course has a 'rotating_fins' slot
+  PASS visual==sim: the course has a 'sweep_bar' slot
+  INFO visual==sim moving_shutters: 192 moving solids x 24 phases, 1945650 grid points, 0 drawn/sim disagreements, 0 origin errors
+  PASS visual==sim: moving_shutters has moving solids to compare
+  PASS visual==sim: moving_shutters node centre equals the sim centre at every phase (0 errors)
+  PASS visual==sim: moving_shutters drawn solid == collision solid on the grid at every phase (0 disagreements of 1945650)
+  INFO visual==sim moving_openings: 288 moving solids x 24 phases, 2092608 grid points, 0 drawn/sim disagreements, 0 origin errors
+  PASS visual==sim: moving_openings has moving solids to compare
+  PASS visual==sim: moving_openings node centre equals the sim centre at every phase (0 errors)
+  PASS visual==sim: moving_openings drawn solid == collision solid on the grid at every phase (0 disagreements of 2092608)
+  INFO visual==sim rotating_fins: 96 moving solids x 24 phases, 548114 grid points, 0 drawn/sim disagreements, 0 origin errors
+  PASS visual==sim: rotating_fins has moving solids to compare
+  PASS visual==sim: rotating_fins node centre equals the sim centre at every phase (0 errors)
+  PASS visual==sim: rotating_fins drawn solid == collision solid on the grid at every phase (0 disagreements of 548114)
+  INFO visual==sim sweep_bar: 72 moving solids x 24 phases, 547398 grid points, 0 drawn/sim disagreements, 0 origin errors
+  PASS visual==sim: sweep_bar has moving solids to compare
+  PASS visual==sim: sweep_bar node centre equals the sim centre at every phase (0 errors)
+  PASS visual==sim: sweep_bar drawn solid == collision solid on the grid at every phase (0 disagreements of 547398)
+  PASS visual==sim: the check is live (a quarter-cycle phase error is caught: 42304 points, 48 centres)
+RESULT passed=748 failed=0
