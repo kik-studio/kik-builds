@@ -1,15 +1,13 @@
-<!doctype html><meta charset=utf-8><meta name=viewport content='width=device-width'><title>nova-strike versions</title><style>body{font:16px system-ui;max-width:760px;margin:24px auto;padding:0 16px;background:#0b0f17;color:#e8e2d4}a{color:#e0b86a}pre{white-space:pre-wrap;background:#141a26;padding:12px;border-radius:8px}small{color:#8a8a8a;font-weight:400}</style><h1>nova-strike: versions for review</h1><section><h2>v0.19 <small>0.19+7d735d7 · 2026-10-22 12:33 UTC</small></h2><p><a href='https://github.com/kik-studio/kik-builds/releases/download/apk-nova-strike-v0.19/nova-strike.apk'>⬇ Android APK</a> · iPhone: TestFlight</p><pre># Nova Strike v0.19 notes
+<!doctype html><meta charset=utf-8><meta name=viewport content='width=device-width'><title>nova-strike versions</title><style>body{font:16px system-ui;max-width:760px;margin:24px auto;padding:0 16px;background:#0b0f17;color:#e8e2d4}a{color:#e0b86a}pre{white-space:pre-wrap;background:#141a26;padding:12px;border-radius:8px}small{color:#8a8a8a;font-weight:400}</style><h1>nova-strike: versions for review</h1><section><h2>v0.19 <small>0.19+7d735d7 · 2026-10-22 12:33 UTC</small></h2><p><a href='https://github.com/kik-studio/kik-builds/releases/download/apk-nova-strike-v0.19/nova-strike.apk'>⬇ Android APK</a> · iPhone: TestFlight</p><pre># Nova Strike v0.19
 
-## LOD (lane lod19)
-- One door: `Boss3DLoader.instance()` (and `apply_lod()` for raid2&#x27;s dragon, which instances its own scene) sets the rig&#x27;s `use_lod1`
-  before the rig enters the tree (rigs build their pieces in `_ready`), and tags the node `boss_lod` = 0 / 1.
-- Rule: the game&#x27;s existing quality tier (`core/quality.gd`, autoload `Quality`: device classify by GPU / screen / cores -&gt;
-  frame-time probe stored per GPU -&gt; remote `quality_tier` / per-model keys -&gt; Settings -&gt; `KIK_QUALITY`) decides.
-  `low` and `medium` (`Boss3DLoader.LOD1_TIERS`) draw LOD1 (&lt;= 30k tris, config/boss3d.json `boss_lod1_max`), `high` draws LOD0
-  (&lt;= 60k, `boss_on_screen_max`). Chosen once per boss load; a tier step mid-fight keeps the loaded mesh, the next boss follows the new tier.
-- Tests force either with `Boss3DLoader.force_lod` (0 / 1; -1 = by tier). A boss with no LOD1 yet is listed in config/boss3d.json
-  `lod1_pending` (today: none; thuban&#x27;s dragon rig got `use_lod1` + the `*_scene_lod1` exports in v0.19 from the Tripo LOD1 pieces in thuban/dragon/lod1/, 24.7k tris).
-- Test: tests/v19/boss3d_lod_tests.tscn (in the release runner).</pre></section><section><h2>v0.18 <small>0.18+82474e7 · 2026-10-21 10:57 UTC</small></h2><p><a href='https://github.com/kik-studio/kik-builds/releases/download/apk-nova-strike-v0.18/nova-strike.apk'>⬇ Android APK</a> · iPhone: TestFlight</p><pre># NOVA STRIKE v0.18 NOTES
+- All nine bosses have new, more detailed 3D models: Algol, Furnace Sovereign, Storm Seraph, Null Oracle, Regent&#x27;s Spear, Dominion Prime, and the raid bosses Husk-Wright, Thuban and the Archive of Orders. Their guns, pods and glowing parts are now made from the same models.
+- Thuban the dragon has a brand-new head, with a jaw that opens when it attacks.
+- Boss pictures on the journey map, briefings and raid cards now show the real 3D bosses.
+- The HD content download now resumes by itself if the connection drops or the server hiccups.
+- Fairer elite fights: when a sector elite dies, its escorts stop their attacks at once, so nothing hits you right after the kill.
+- Smoother play: a long freeze when some bosses arrived is fixed, and phones on lower graphics settings use a lighter boss model.
+- Smoothness in the big boss fights on mid-range phones (Galaxy A54 class) is being improved.
+</pre></section><section><h2>v0.18 <small>0.18+82474e7 · 2026-10-21 10:57 UTC</small></h2><p><a href='https://github.com/kik-studio/kik-builds/releases/download/apk-nova-strike-v0.18/nova-strike.apk'>⬇ Android APK</a> · iPhone: TestFlight</p><pre># NOVA STRIKE v0.18 NOTES
 
 ## Lane C (quality18): Q1 / Q2 / Q6, the content pack route
 
