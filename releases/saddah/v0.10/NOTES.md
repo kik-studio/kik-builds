@@ -17,4 +17,4 @@
 - NEW: results, loading, briefing and trip screens now look like one family, and your keepsakes hang on Sadّa7's case and backpack.
 - NEW: the 3D model of the first city on the map, and a download pack: the biggest art downloads once when you first play (with progress, and it carries on if it stops), so the game keeps full quality.
 
-Not in this version: the GPT 3D hero (Khaled excluded it, plan section 11); the hero stays as in v0.8. Smoothness on low-end phones (Galaxy A16 class) not measured this version.
+Not in this version: a new look for Sadّa7 himself (he stays as in the last version). Smoothness on low-end phones (Galaxy A16 class) was not measured this version.
