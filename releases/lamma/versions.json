@@ -1,0 +1,20 @@
+[
+ {
+  "label": "v0.0.1",
+  "build_id": "0.0.1+2a02433",
+  "released": "2026-10-22 20:47 UTC",
+  "state": "accepted",
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-lamma-v0.0.1/lamma.apk",
+  "notes": "لمّة 0.0.1 — نسخة معاينة للشاشات فقط\n- كل شاشات اللعبة بشكلها الجديد: الرئيسية، إنشاء لمّة (الفئات والإعدادات)، اللوبي، السؤال والرهان، إجابات اللمّة، مراجعة المضيف، نتيجة السؤال، الترتيب، الاحتفال الأخير، الدخول برمز، الانضمام المتأخر، ستايلك، المتجر والحزمة الذهبية، الإعدادات، كيف نلعب.\n- البيانات أمثلة فقط؛ ما فيه غرف حقيقية ولا مشتريات ولا إعلانات بعد.\n- ممكن تنقص بعض الكلمات العربية في شاشة السؤال في هالمعاينة؛ تنصلح في النسخة الجاية.\n\nLAMMA 0.0.1 — preview of the screens only\n- Every screen of the game in its new look: Home, Create (categories + settings), Lobby, Question and wager, live answers, host review, round results, leaderboard, final celebration, Join by code, late join, Style (3 tabs), Store + Golden Pack, Settings, How to play.\n- Sample data only; no real game rooms, purchases or ads yet.\n- Some Arabic words may be cut on the question screen in this preview; fixed in the next build."
+ },
+ {
+  "label": "v0.1",
+  "build_id": "0.1+97c07f2",
+  "released": "2026-10-23 18:55 UTC",
+  "state": "accepted",
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-lamma-v0.1/lamma.apk",
+  "notes": "لمَّتنا 0.1 — أول نسخة كاملة للتجربة\n- اللعبة كاملة مع غرف حقيقية: سوّ لمّة، شارك الرمز، وكل واحد يلعب من جواله.\n- 1200 سؤال في 12 فئة بعد مراجعتها وتدقيق معلوماتها.\n- المضيف يراجع الإجابات ويقبلها، والنتيجة والترتيب يطلعون للكل، وفي آخر اللعبة احتفال الفائز.\n- لو طلعت من التطبيق أو انقطع النت، ترجع لنفس الغرفة.\n- أصوات اللعب شغّالة، والموسيقى تشغّلها من الإعدادات إذا تبي، واهتزاز خفيف.\n- بلّغ عن لاعب أو احظره، والمضيف يقدر يطلّع لاعب من الغرفة.\n- ما فيه إعلانات في هالنسخة.\n- في نسخة التجربة هذي، «لمَّتنا بلس» والحزمة الذهبية مفتوحة لكم: كل الفئات، غرف لين 12 لاعب، والستايل الذهبي. الشراء الحقيقي يتوفر قريبًا.\n\nLammatna 0.1 — the first full test version\n- The whole game with real rooms: create a room, share the code, everyone plays on their own phone.\n- 1,200 questions in 12 categories, reviewed and fact-checked.\n- The host reviews and accepts answers; results and the leaderboard show for everyone; a winner celebration at the end.\n- Leave the app or lose the connection and you come back to the same room.\n- Game sounds are on; music is off until you turn it on in Settings; light vibration.\n- Report or block a player; the host can remove a player from the room.\n- No ads in this version.\n- In this test version Lammatna Plus and the Golden Pack are unlocked for testers: every category, rooms of up to 12 players and the gold style. Real buying comes soon."
+ }
+]
