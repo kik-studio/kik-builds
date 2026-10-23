@@ -1,0 +1,14 @@
+{
+ "game_id": "saddah",
+ "version": "0.10",
+ "updated": "2026-10-24",
+ "branch": "saddah-speedcheck-1024",
+ "built_on": "studio server kik-ovh-1 (export job)",
+ "build_id": "0.10+saddah-speedcheck-1024",
+ "links": {
+  "web": "https://kik-studio-dev.web.app/experiments/saddah/saddah-speedcheck-1024/web/index.html",
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-saddah-saddah-speedcheck-1024/saddah.apk"
+ },
+ "benchmark_apk": null,
+ "apk_bytes": 63012731
+}
