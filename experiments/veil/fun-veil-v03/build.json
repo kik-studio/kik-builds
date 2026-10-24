@@ -1,0 +1,14 @@
+{
+ "game_id": "veil",
+ "version": "0.3",
+ "updated": "2026-10-17",
+ "branch": "fun-veil-v03",
+ "built_on": "studio PC (PC job)",
+ "build_id": "0.3+fun-veil-v03",
+ "links": {
+  "web": "https://kik-studio-dev.web.app/experiments/veil/fun-veil-v03/web/index.html",
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-veil-fun-veil-v03/veil.apk"
+ },
+ "benchmark_apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-veil-fun-veil-v03/veil-benchmark.apk",
+ "apk_bytes": 146181872
+}
