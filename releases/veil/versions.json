@@ -1,0 +1,56 @@
+[
+ {
+  "label": "v0.1",
+  "build_id": "0.1+61b9f89",
+  "released": "2026-10-14 22:42 UTC",
+  "state": "accepted",
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-veil-v0.1/veil.apk",
+  "notes": "# VEIL v0.1 release notes\n\n- First playable flight: tap Fly and steer the Wisp through a storm course by dragging anywhere on the screen, with either thumb.\n- The aircraft banks into every turn and the chase camera follows it smoothly; pick it up again at any time and it never jumps.\n- One touch ends the run where you hit, and your best distance is saved on the phone.\n- Pause stops everything; when you resume, a short \"Get ready\" cue gives you time to put your thumb back.\n- A living home screen flows straight into flight in under a second, with a Reduced Motion option in Settings.\n- English and Arabic (سِتَار) menus, plus sound, music, haptics and language settings.\n- Honest note on the art: this is a grey-box. The sky, the storm structures and the clouds in the game are simple stand-ins, and the Wisp is an early model; the painted look of the target pictures is being built separately (best blind score so far 2.5 of 5) and arrives in the next rounds.\n\nHonest note on the art:\n- S1-0: step 0: paint-over chase-cam frame art/reference/flight_target.png (mock first, rules 3.40) — PARALLEL... (below the art bar, carried)\n- look spike rounds 4+: real §4 inputs (glass cell-ID/normal bake, panorama, six-way card atlas, sculpted... (below the art bar, carried)\n- style model trained from art/reference 01-06; 3 test assets >= 4.5 blind; id in... (below the art bar, carried)\n- 2 finished look item(s) without a passing look check yet\n- 123 art files still use the earlier look without a passing look check\n- the game's look settings are not locked yet\n- parts of the look are still below our own 4.5 bar; it keeps improving in the next versions"
+ },
+ {
+  "label": "v0.2",
+  "build_id": "0.2+bd667e7",
+  "released": "2026-10-16 19:14 UTC",
+  "state": "accepted",
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-veil-v0.2/veil.apk",
+  "notes": "# VEIL v0.2 release notes\n\n- The storm course is now endless: twelve kinds of storm structures, each with three different versions, plus calm breathing spaces between the hard parts.\n- Five of the twelve kinds move: shutters breathe shut, openings travel, fins rotate, bars sweep and the floor and ceiling rise; every structure and every pairing is checked so a way through always exists.\n- The first three minutes are a hand-built tour of the first eight kinds; the last four arrive one at a time up to about four and a half minutes. The course gets faster up to three minutes, then holds steady and keeps mixing them.\n- You always see the next decision coming: hard parts appear at least 2.2 seconds before you reach them.\n- New flight sounds: the engine rises with speed, air rushes when you bank, a soft brush when you pass close to something, and the storm hums around you.\n- New look work on the world: painted storm sky, pearl blades, opal glass and a deeper cloud valley.\n- Clearer screen: styled Fly and Settings buttons, the distance readout stays readable over bright clouds, and the camera keeps the whole aircraft on screen.\n- Honest note on the art: the world still looks far from the target paintings (our blind score is 2 of 5). The storm structures are still simple box shapes; reshaping them into the curved pearl blades of the paintings is the next big step for the look.\n\nHonest note on the art:\n- 2 look item(s) still being worked on (still below our art bar)\n- 166 art files still use the earlier look without a passing look check\n- the game's look settings are not locked yet\n- parts of the look are still below our own 4.5 bar; it keeps improving in the next versions"
+ },
+ {
+  "label": "v0.3",
+  "build_id": "0.3+2655796",
+  "released": "2026-10-17 06:33 UTC",
+  "state": "accepted",
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-veil-v0.3/veil.apk",
+  "notes": "# VEIL v0.3 release notes\n\n- A new look for the storm world: painted cumulus clouds, glass walls covered in pearl scales, with a glowing frame round the openings, and big curved pearl blades rising beside the cloud river.\n- The storm structures have new shapes: pearl crescent arches, curved blade edges and tapered crystal columns replace many of the old boxes. The course keeps the same kinds of structures, speeds and timing, and every way through is still checked to be fair. Because the shapes changed, your best distance starts fresh in this version.\n- The light changes as you fly: the storm drifts into a warm dawn and a dusky twilight and back again, the same for every player.\n- A rebuilt pearl aircraft with a dark glass canopy and a stronger violet ion trail.\n- A new home screen: the aircraft waits in the live storm world under a large VEIL / سِتَار title; tap Fly and you are flying in a third of a second, with no loading screen.\n- Graphics quality picks itself for your phone (Auto, Balanced or High in Settings); the game pauses by itself when you leave it, and Reduced Motion is supported.\n- New sounds: an engine start, a second crash sound and more variety for the button sounds; the whole mix is louder and clearer.\n- iPad is supported.\n- Honest note on the art: the world is closer to the target paintings but still clearly short of them, mostly in the clouds, the light and dark contrast, and the glass. The look keeps improving in the next versions.\n\nHonest note on the art:\n- the clouds, glass and storm structures look closer to the target paintings but still clearly short of them (still below our art bar)\n- the rebuilt pearl aircraft is closer to its painting but not yet as rich (still below our art bar)\n- the storm world as a whole does not yet look like the target paintings (still below our art bar)\n- some storm structures are still hard to read against the clouds in a few views (still below our art bar)\n- 206 art files still use the earlier look without a passing look check\n- the game's look settings are not locked yet\n- parts of the look are still below our own 4.5 bar; it keeps improving in the next versions"
+ },
+ {
+  "label": "v0.4",
+  "build_id": "0.4+6a40472",
+  "released": "2026-10-19 18:40 UTC",
+  "state": "accepted",
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-veil-v0.4/veil.apk",
+  "notes": "# VEIL v0.4 release notes\n\n- A new storm world below you: the clouds under the aircraft are now a floor of dark glass, with the storm still alive deep inside it, lightning glowing under the surface and the sky shining on it toward the horizon.\n- New painted skies for each mood: a storm sky with a sun break, a warm dawn and a violet twilight; one sun now lights the whole scene, its rays and the glass.\n- The aircraft stands out better: a thin dark outline, a deep indigo underside and a darker glass canopy; its violet trail now curves with your turns.\n- The camera sits a little higher behind the aircraft, so you see more of the sky ahead.\n- Leaderboards are on their way: after a run a trophy opens LONGEST FLIGHTS. In this test version it shows \"Ranking unavailable\", because the connection to the leaderboard is not switched on yet.\n- New Settings rows: Remove Ads, Restore purchases, Privacy choices and Data, where you can delete everything the game keeps on this phone.\n- Adverts between runs are ready but not switched on yet in this test version (they will never show during a flight, on pause or after Retry). The Remove Ads screen is in place; buying and restoring are not switched on yet either.\n- Smoother start: the home screen prepares its graphics over several frames, so it should no longer freeze for a moment on some phones.\n- Honest note on the art: the floor and the skies are a big step closer to the feel we want; the glass walls and their frames are still clearly short of it and are the next thing we improve.\n"
+ },
+ {
+  "label": "v0.5",
+  "build_id": "0.5+7741d64",
+  "released": "2026-10-21 23:15 UTC",
+  "state": "accepted",
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-veil-v0.5/veil.apk",
+  "notes": "# VEIL v0.5 notes\n\n- New glass walls: dark storm-glass gates with a bright opening framed in pearl light; you now fly cleanly through each opening, and the moving shutters slide open where you can see them.\n- A deeper glass sea below you, and a calmer, milkier pearl aircraft whose sheen moves as you turn.\n- A new ribbon trail that flows behind the aircraft and softens as it fades.\n- Lightning is now a real strike in the storm, with thunder, instead of a flash over the whole screen; passing a glass sign no longer blurs the view.\n- Easier to play for everyone: a Reduced Motion option, larger text, screen-reader labels and iPad support.\n- A smoother start: the home screen now builds behind a cover over several frames, so it should no longer freeze on some phones.\n- New sculpted pearl pieces: blades, arches, gate rims around the openings and fittings on the moving shutters.\n- There are no ads in this test version, and nothing to buy.\n- Smoothness on mid-range phones (for example Galaxy A54) is still being improved.\n"
+ },
+ {
+  "label": "v0.6",
+  "build_id": "0.6+3da11e3",
+  "released": "2026-10-25 20:29 UTC",
+  "state": "accepted",
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-veil-v0.6/veil.apk",
+  "notes": "# VEIL v0.6 release notes\n\n- New music: a steady beat you can feel, strings and brass that rise as the run gets harder, and thunder and wind that land on the beat.\n- A faster start: the first obstacle comes within seconds, and the run builds up much sooner. The aircraft is much faster: after one minute you fly about half again as fast as before.\n- Six new obstacles (Glass Tube, Storm Eye, Splitting Stone, Rising Spires, Liquid Pane, Storm Sails) and a storm-eye moment to fly into.\n- The tunnel around 5,660 m is fixed: you can see its edges and the way through in time.\n- A living sky: clouds drift at two depths, the sky turns as you steer, and the places change along the run. A gentle camera tilt follows your steering (Settings: On, Reduced or Off).\n- Far objects now come out of the haze smoothly instead of popping in or changing colour.\n- Rankings on the Home screen and inside the game, with your own pilot name, chosen when you first open the game.\n- Pearls to collect along the line, and the Veil to save a run once.\n- Beat My Best: share a picture of your best run.\n- A camera button to switch between the close and the high view, and a cleaner flight screen.\n- There are no ads in this test version, and nothing to buy."
+ }
+]
