@@ -1,0 +1,15 @@
+[
+ {
+  "slug": "t1",
+  "label": "Pipeline test (starter kit — not a game)",
+  "build_id": "0.1.0+46c5b95",
+  "source_commit": "46c5b95",
+  "pinned_utc": "2026-09-25 08:19",
+  "web": "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/web/index.html",
+  "apk": "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/starter-kit.apk",
+  "build_page": "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/",
+  "package": "https://kik-studio.github.io/kik-builds/reviews/starter-kit/t1/package/",
+  "owner_files": "https://github.com/kik-studio/studio-hq/releases/tag/review/starter-kit/t1",
+  "published_utc": "2026-09-25 08:30 UTC"
+ }
+]

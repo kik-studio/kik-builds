@@ -1,0 +1,47 @@
+[
+ {
+  "label": "v0.0.1",
+  "build_id": "0.0.1+2a02433",
+  "released": "2026-10-22 20:47 UTC",
+  "state": "accepted",
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-lamma-v0.0.1/lamma.apk",
+  "notes": "لمّة 0.0.1 — نسخة معاينة للشاشات فقط\n- كل شاشات اللعبة بشكلها الجديد: الرئيسية، إنشاء لمّة (الفئات والإعدادات)، اللوبي، السؤال والرهان، إجابات اللمّة، مراجعة المضيف، نتيجة السؤال، الترتيب، الاحتفال الأخير، الدخول برمز، الانضمام المتأخر، ستايلك، المتجر والحزمة الذهبية، الإعدادات، كيف نلعب.\n- البيانات أمثلة فقط؛ ما فيه غرف حقيقية ولا مشتريات ولا إعلانات بعد.\n- ممكن تنقص بعض الكلمات العربية في شاشة السؤال في هالمعاينة؛ تنصلح في النسخة الجاية.\n\nLAMMA 0.0.1 — preview of the screens only\n- Every screen of the game in its new look: Home, Create (categories + settings), Lobby, Question and wager, live answers, host review, round results, leaderboard, final celebration, Join by code, late join, Style (3 tabs), Store + Golden Pack, Settings, How to play.\n- Sample data only; no real game rooms, purchases or ads yet.\n- Some Arabic words may be cut on the question screen in this preview; fixed in the next build."
+ },
+ {
+  "label": "v0.1",
+  "build_id": "0.1+97c07f2",
+  "released": "2026-10-23 18:55 UTC",
+  "state": "accepted",
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-lamma-v0.1/lamma.apk",
+  "notes": "لمَّتنا 0.1 — أول نسخة كاملة للتجربة\n- اللعبة كاملة مع غرف حقيقية: سوّ لمّة، شارك الرمز، وكل واحد يلعب من جواله.\n- 1200 سؤال في 12 فئة بعد مراجعتها وتدقيق معلوماتها.\n- المضيف يراجع الإجابات ويقبلها، والنتيجة والترتيب يطلعون للكل، وفي آخر اللعبة احتفال الفائز.\n- لو طلعت من التطبيق أو انقطع النت، ترجع لنفس الغرفة.\n- أصوات اللعب شغّالة، والموسيقى تشغّلها من الإعدادات إذا تبي، واهتزاز خفيف.\n- بلّغ عن لاعب أو احظره، والمضيف يقدر يطلّع لاعب من الغرفة.\n- ما فيه إعلانات في هالنسخة.\n- في نسخة التجربة هذي، «لمَّتنا بلس» والحزمة الذهبية مفتوحة لكم: كل الفئات، غرف لين 12 لاعب، والستايل الذهبي. الشراء الحقيقي يتوفر قريبًا.\n\nLammatna 0.1 — the first full test version\n- The whole game with real rooms: create a room, share the code, everyone plays on their own phone.\n- 1,200 questions in 12 categories, reviewed and fact-checked.\n- The host reviews and accepts answers; results and the leaderboard show for everyone; a winner celebration at the end.\n- Leave the app or lose the connection and you come back to the same room.\n- Game sounds are on; music is off until you turn it on in Settings; light vibration.\n- Report or block a player; the host can remove a player from the room.\n- No ads in this version.\n- In this test version Lammatna Plus and the Golden Pack are unlocked for testers: every category, rooms of up to 12 players and the gold style. Real buying comes soon."
+ },
+ {
+  "label": "v0.2",
+  "build_id": "0.2+620e500",
+  "released": "2026-10-24 05:16 UTC",
+  "state": "accepted",
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-lamma-v0.2/lamma.apk",
+  "notes": "لمَّتنا 0.2\n- شاشة ترحيب أول ما تفتح: اكتب اسمك واختر ذكر أو أنثى، وكل كلام اللعبة لك يمشي على اختيارك. تقدر تغيّرها من الإعدادات.\n- حسابك محفوظ: اسمك وستايلاتك وتقدمك يرجعون لك في أي جوال. سجّل بجوجل أو أبل إذا تبي، أو كمّل بدون تسجيل، و«انقل حسابي» ينقل كل شي بين الجوالات برمز.\n- «لمَّتنا بلس» والحزمة الذهبية صارت منتجات حقيقية في المتجر، وفي نسخة التجربة هذي تبقى مفتوحة لكم. «إزالة الإعلانات» ترجع لما ترجع الإعلانات.\n- إذا تعادل أكثر من فائز، يحتفلون كلهم مع بعض في آخر اللعبة.\n- اللي ينضم متأخر يطلع له «انضم متأخرًا»، وكل لاعب يشوف كم سؤال لعب، واللي ما جاوب يطلع له «بدون إجابة».\n- النقاط تنقرى صح («+0.5»)، والأرقام ما تنقسم على سطرين.\n- «حذف بياناتي» صار يحذف فعلًا: اسمك وستايلاتك وصورتك وتقدمك وسجل غرفك.\n- في الإعدادات صار فيه «تواصل معنا»: hello@karibros.studio\n- ما فيه إعلانات في هالنسخة.\n- باقي نجرّبه على جوال حقيقي: التسجيل بجوجل وأبل، الكتابة بالكيبورد العربي، تثبيت الآيفون، وصفحة الشراء من المتجر.\n\nLammatna 0.2\n- A welcome screen at first open: type your name and choose male or female; every text that speaks to you follows your choice. Change both any time in Settings.\n- Your account is saved: your name, styles and progress come back on any phone. Sign in with Google or Apple if you like, or carry on without signing in; «Move my account» moves everything between phones with a code.\n- Lammatna Plus and the Golden Pack are now real store products; in this test version they stay unlocked for testers. Remove Ads comes back when ads are on.\n- Tied winners now celebrate together on the final screen.\n- Late joiners are marked, each player sees how many questions they played, and a player who did not answer shows «No answer».\n- Points read the right way round («+0.5»), and numbers never break over two lines.\n- Delete my data now really deletes your name, styles, photo, progress and room history.\n- Settings has a contact row: hello@karibros.studio\n- No ads in this version.\n- Still to be tried on a real phone: Google and Apple sign-in, typing with the Arabic keyboard, installing on iPhone, and the store's purchase sheet."
+ },
+ {
+  "label": "v0.2.1",
+  "build_id": "0.2.1+7b5dc2c",
+  "released": "2026-10-24 06:28 UTC",
+  "state": "accepted",
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-lamma-v0.2.1/lamma.apk",
+  "notes": "لمَّتنا 0.2.1\n- على الآيفون بأكبر حجم خط: العناوين الكبيرة ما تنقسم في نص الكلمة، وعنوان الشاشة صار في سطر لحاله تحت الشعار.\n- كأس الفائز ما يغطي اسمه بالخط الكبير.\n- كل جديد 0.2 موجود: شاشة الترحيب (الاسم + ذكر أو أنثى)، حسابك، «حذف بياناتي»، و«تواصل معنا».\n- ما فيه إعلانات في هالنسخة.\n- باقي نجرّبه على جوال حقيقي: التسجيل بجوجل وأبل، الكتابة بالكيبورد العربي، تثبيت الآيفون، وصفحة الشراء من المتجر.\n\nLammatna 0.2.1\n- iPhone at the largest text size: big headings no longer break inside a word, and the screen title has its own line under the logo.\n- The winner's trophy no longer covers the name at large text.\n- Everything new in 0.2 is here: the welcome screen (name + male or female), your account, Delete my data and the contact row.\n- No ads in this version.\n- Still to be tried on a real phone: Google and Apple sign-in, typing with the Arabic keyboard, installing on iPhone, and the store's purchase sheet."
+ },
+ {
+  "label": "v0.3",
+  "build_id": "0.3+1eff3a9",
+  "released": "2026-10-25 07:51 UTC",
+  "state": "accepted",
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-lamma-v0.3/lamma.apk",
+  "notes": "لمَّتنا 0.3\n- كلام اللعبة صار أدفأ وأوضح: ترحيب، عزايم، انتظار، احتفالات، وكل تعليمة سهلة القراءة.\n- ثلاث حركات جديدة: سرقة، صد، ودبّلها. كل لاعب له حركتين مختلفتين في كل لعبة، وتنكشف مع النتيجة.\n- أصحابي: أضيفوا أصحابكم، واعزموهم على لمّتكم بتنبيه أو برابط واتساب يفتح الغرفة على طول.\n- سجل اللمّات: كل لعبة لعبتوها مع نتيجتها، وبطاقة تشاركونها بعد كل لعبة.\n- لوحة اللمّة: أكثر فوز وأكثر نقاط، وبطاقة لكل لاعب فيها صورته وإطاره.\n- مراجعة المضيف صارت مباشرة للكل: كل لاعب يشوف قرارات المضيف أول بأول مع مرجع الإجابة.\n- النتيجة والترتيب في شاشة وحدة: خمس ثواني للملصقات والمناغشة، بعدها يطلع الترتيب لحاله (ما أحد يقدر يتخطاها، حتى المضيف).\n- اعرضها على التلفزيون: AirPlay في الآيفون، Chromecast في الأندرويد، أو أي تلفزيون من lammatna.karibros.studio/tv برمز الغرفة.\n- 18 فئة جديدة مع بلس (مفتوحة لكم في نسخة التجربة).\n- «طريقة اللعب»: شرائح سريعة بصور، وفيديو قصير بصوت عربي، ومعها زر «؟» داخل الغرفة.\n- تفاعلات متحركة (ومنها «كفو» بشكلها الجديد)، وصندوق احتفال للفائز، و«نعيدها بنفس المجموعة».\n- الأزرار والانتقالات صارت أمتع، وصفحة السؤال كلها في شاشة وحدة حتى والكيبورد مفتوح.\n- ما فيه إعلانات في هذي النسخة.\n- جرّبوا على جوالاتكم: تسجيل الدخول بجوجل وأبل، الكتابة بالكيبورد العربي، رابط واتساب يفتح الغرفة، تنبيه العزيمة، صفحة الشراء، والعرض على التلفزيون.\n\nLammatna 0.3\n- The game's words are warmer and clearer: welcomes, invites, waiting moments, celebrations, and every instruction easy to read.\n- Three new moves: Steal, Block and Double. Each player gets two different moves per game; they are revealed with the results.\n- Friends: add them and invite them to your room with a notification or a WhatsApp link that opens the room straight away.\n- Game history: every game you played with its result, and a card to share after each game.\n- Leaderboards: most wins and most points, and a player card with photo and frame.\n- The host's review is live for everyone: every player sees each decision as it happens, with the reference answers.\n- Results and ranking on one screen: five seconds for stickers and teasing, then the ranking shows by itself (nobody can skip it, not even the host).\n- Show it on the TV: AirPlay on iPhone, Chromecast on Android, or any TV at lammatna.karibros.studio/tv with the room code.\n- 18 new categories with Plus (unlocked for testers in this version).\n- How to play: quick picture slides, a short video with an Arabic voice, and a «?» button inside the room.\n- Animated reactions (including the redesigned «كفو»), a winner celebration box, and a rematch with the same group.\n- More fun buttons and transitions; the question page fits one screen even with the keyboard open.\n- No ads in this version.\n- Please try on your phone: Google and Apple sign-in, typing with the Arabic keyboard, a WhatsApp link opening the room, the invite notification, the purchase sheet, and showing it on the TV."
+ }
+]
