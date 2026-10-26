@@ -1,0 +1,56 @@
+{
+ "game_id": "veil",
+ "version": "0.6",
+ "updated": "2026-10-25",
+ "commit": "3da11e3",
+ "links": {
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-veil/veil.apk"
+ },
+ "screenshots": {
+  "en": [
+   "https://kik-studio.github.io/kik-builds/games/veil/screens/game_en.png",
+   "https://kik-studio.github.io/kik-builds/games/veil/screens/menu_en.png",
+   "https://kik-studio.github.io/kik-builds/games/veil/screens/settings_en.png"
+  ],
+  "ar": [
+   "https://kik-studio.github.io/kik-builds/games/veil/screens/game_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/veil/screens/menu_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/veil/screens/settings_ar.png"
+  ]
+ },
+ "apk_bytes": 219073388,
+ "apk_sha256": "e5e4e22351aecae4f506d0a0c9447d87f3671c95b52263418be4c2a62adc30d1",
+ "pack_sha256": "b596a30927d1ab20805a6cad580b4ab3b9907efc13d9791c248dd5d928d8e6e4",
+ "shapes": [
+  "https://kik-studio.github.io/kik-builds/games/veil/screens/game_en_desktop.png",
+  "https://kik-studio.github.io/kik-builds/games/veil/screens/game_en_tablet.png"
+ ],
+ "video": [
+  "https://kik-studio.github.io/kik-builds/games/veil/video/gameplay.mp4",
+  "https://kik-studio.github.io/kik-builds/games/veil/video/showcase_fx.mp4",
+  "https://kik-studio.github.io/kik-builds/games/veil/video/showcase_ui.mp4"
+ ],
+ "tests": "https://kik-studio.github.io/kik-builds/games/veil/tests.txt",
+ "benchmark_apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-veil/veil-benchmark.apk",
+ "branch": "main",
+ "checks": "https://kik-studio.github.io/kik-builds/games/veil/checks/",
+ "build_id": "0.6+3da11e3",
+ "built_on": "studio server",
+ "review": {
+  "build_id": "0.6+3da11e3",
+  "machine": "studio PC GPU",
+  "when": "2026-10-25 20:38 UTC"
+ },
+ "media": {
+  "build_id": "0.6+3da11e3",
+  "version": "0.6",
+  "carried": false,
+  "label": null
+ },
+ "screens_hd": [
+  "https://kik-studio.github.io/kik-builds/games/veil/screens/hd/game_ar.jpg",
+  "https://kik-studio.github.io/kik-builds/games/veil/screens/hd/game_en.jpg",
+  "https://kik-studio.github.io/kik-builds/games/veil/screens/hd/menu_en.jpg"
+ ]
+}
