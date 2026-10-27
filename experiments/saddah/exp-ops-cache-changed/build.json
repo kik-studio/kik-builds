@@ -1,0 +1,27 @@
+{
+ "game_id": "saddah",
+ "version": "0.3",
+ "updated": "2026-10-05",
+ "commit": "11d1780",
+ "links": {
+  "web": "https://kik-studio-dev.web.app/experiments/saddah/exp-ops-cache-changed/web/index.html",
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-saddah-exp-ops-cache-changed/saddah.apk"
+ },
+ "screenshots": {
+  "en": [],
+  "ar": []
+ },
+ "apk_bytes": 166315052,
+ "apk_sha256": "9be52c4486a9c7bd18507f4eda721bb68ce56f1cb955d0e1eb4640b7d870feca",
+ "pack_sha256": "ca30c185b2a51a4d3498bb9a1aaefcdf6320beef7f782c7755bbe360048e1c25",
+ "web_set_sha256": "13d910a717d134ab775cd3e7420e445c03ae2d7659e606272f983b2a796cc8b5",
+ "shapes": [],
+ "video": [],
+ "tests": "https://kik-studio.github.io/kik-builds/experiments/saddah/exp-ops-cache-changed/tests.txt",
+ "benchmark_apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-saddah-exp-ops-cache-changed/saddah-benchmark.apk",
+ "branch": "exp/ops-cache-changed",
+ "checks": null,
+ "build_id": "0.3+11d1780",
+ "built_on": "cloud",
+ "review": null
+}
