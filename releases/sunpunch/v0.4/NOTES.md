@@ -1,0 +1,17 @@
+SUNPUNCH v0.4: the whole Reef Run, from launch to Big Bite's defeat
+- **The full mission:** about 100 seconds through Midnight Reef. Razors open, then Puff, Claw, a shell boulder and a salvage pod arrive. After them come a needle spire, the Razor three-burst, Puff's double fan, a Razor gate, Claw's comb and the three-enemy wave, with calm moments to collect in between.
+- **New enemies:**
+  - Puff swells, then fires slow magenta spheres in a fan.
+  - Claw glows, then fires crimson capsules from its left claw, then its right.
+  - Each is taught alone first; in the wave they take turns, and at most two attacks come at you at once.
+- **New obstacles:**
+  - The salvage pod breaks for +10 coins.
+  - The needle spire and the Razor gate end the run if you touch them.
+  - Both are announced with a red marker before they arrive, and the gate always keeps a wide, steady opening.
+- **Big Bite, the boss:**
+  - Its armour blocks your shots; hit the glowing core while its mouth is open.
+  - It fires fin volleys, a mouth fan, and Furnace Breath: a warned flame lane you must leave, which costs 20 HEALTH.
+  - At half health it transforms once into INFERNO, with heavier guns, two fans and two flame pulses.
+- **Victory:** Big Bite's jaw splits and its coins pour out. The results show your clear time, coins and wallet, with Replay first. Coins you collect are kept, even if you lose.
+- **Sound:** new sounds for every new enemy, obstacle and boss attack. Big Bite and Inferno have their own music, and there is a victory theme.
+- **Look:** the reef edges are now separate, varied pillars, and the moon finally looks like a moon.
