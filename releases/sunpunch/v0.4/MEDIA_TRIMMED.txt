@@ -1,0 +1,1 @@
+Screens/videos of this release were removed on 2026-10-19 to keep the builds site under the GitHub Pages size limit (tools/ci/site_size.py). Notes, build.json and the APK link stay.
