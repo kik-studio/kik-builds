@@ -1,0 +1,51 @@
+{
+ "game_id": "veil",
+ "version": "0.10",
+ "updated": "2026-10-28",
+ "commit": "0f154e3",
+ "links": {
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-veil/veil.apk"
+ },
+ "screenshots": {
+  "en": [
+   "https://kik-studio.github.io/kik-builds/games/veil/screens/game_en.png",
+   "https://kik-studio.github.io/kik-builds/games/veil/screens/menu_en.png",
+   "https://kik-studio.github.io/kik-builds/games/veil/screens/settings_en.png"
+  ],
+  "ar": [
+   "https://kik-studio.github.io/kik-builds/games/veil/screens/game_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/veil/screens/menu_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/veil/screens/settings_ar.png"
+  ]
+ },
+ "apk_bytes": 221417800,
+ "apk_sha256": "78e2b30ad296e65051c7e918ea1dbccdb8684917987f67bd9cae4dddf4db10cc",
+ "pack_sha256": "082527aff3d352c3198bed79ead99cd31f37533cd5540c197d98eb155d677956",
+ "shapes": [
+  "https://kik-studio.github.io/kik-builds/games/veil/screens/game_en_desktop.png",
+  "https://kik-studio.github.io/kik-builds/games/veil/screens/game_en_tablet.png"
+ ],
+ "video": [
+  "https://kik-studio.github.io/kik-builds/games/veil/video/gameplay.mp4",
+  "https://kik-studio.github.io/kik-builds/games/veil/video/showcase_fx.mp4",
+  "https://kik-studio.github.io/kik-builds/games/veil/video/showcase_ui.mp4"
+ ],
+ "tests": "https://kik-studio.github.io/kik-builds/games/veil/tests.txt",
+ "benchmark_apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-veil/veil-benchmark.apk",
+ "branch": "main",
+ "checks": "https://kik-studio.github.io/kik-builds/games/veil/checks/",
+ "build_id": "0.10+0f154e3",
+ "built_on": "studio server",
+ "review": {
+  "build_id": "0.9+787c1a2",
+  "machine": "studio PC GPU",
+  "when": "2026-10-27 15:45 UTC"
+ },
+ "media": {
+  "build_id": "0.9+787c1a2",
+  "version": "0.9",
+  "carried": true,
+  "label": "from v0.9 (older build)"
+ }
+}
