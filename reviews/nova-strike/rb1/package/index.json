@@ -1,0 +1,4444 @@
+{
+ "game": "nova-strike",
+ "slug": "rb1",
+ "label": "Review Build 1 (baseline — draft)",
+ "source_ref": "0c2fc79",
+ "record_ref": "6bb157571217a8352836f9a6dfa46b4fcf3a0ab4",
+ "pinned": {
+  "game_id": "nova-strike",
+  "version": "0.1.0",
+  "updated": "2026-09-25",
+  "commit": "0c2fc79",
+  "links": {
+   "web": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/web/index.html",
+   "apk": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/nova-strike.apk"
+  },
+  "screenshots": {
+   "en": [
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/game_en.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/menu_en.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/settings_en.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_boot_en.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_briefing_en.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_campaign_en.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_credits_en.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_ending_en.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_endless_en.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_hangar_en.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_hangar_poor_en.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_home_en.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_mastery_en.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_results_defeat_en.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_results_en.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_settings_en.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_store_en.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_store_supporter_en.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_title_en.png"
+   ],
+   "ar": [
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/game_ar.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/menu_ar.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/settings_ar.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_boot_ar.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_briefing_ar.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_campaign_ar.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_credits_ar.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_ending_ar.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_endless_ar.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_hangar_ar.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_hangar_poor_ar.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_home_ar.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_mastery_ar.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_results_ar.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_results_defeat_ar.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_settings_ar.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_store_ar.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_store_supporter_ar.png",
+    "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/ui_title_ar.png"
+   ]
+  },
+  "apk_bytes": 90152402,
+  "shapes": [
+   "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/game_en_desktop.png",
+   "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/screens/game_en_tablet.png"
+  ],
+  "video": [
+   "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/video/gameplay.mp4"
+  ],
+  "tests": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/tests.txt",
+  "benchmark_apk": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/nova-strike-benchmark.apk",
+  "build_id": "0.1.0+0c2fc79",
+  "review_label": "Review Build 1 (baseline — draft)",
+  "review_slug": "rb1",
+  "source_commit": "0c2fc79",
+  "pinned_utc": "2026-09-25 08:13",
+  "pinned_by": "Brain (tools/review/pin_build.py)"
+ },
+ "built_utc": "2026-09-25 14:36 UTC",
+ "disclaimer": "Automated checks below confirm files, uploads, checksums, archives and bot runs only. They do not establish visual quality, enjoyable gameplay or owner acceptance.",
+ "checks": [
+  {
+   "type": "automated",
+   "check": "package source_ref 0c2fc79 matches the pinned build's source commit 0c2fc79",
+   "result": "pass"
+  },
+  {
+   "type": "automated",
+   "check": "inside games/nova-strike/, recording commit 6bb157571217a8352836f9a6dfa46b4fcf3a0ab4 differs from source 0c2fc79 only in tests/ and review/ (33 files changed)",
+   "result": "pass"
+  }
+ ],
+ "items": [
+  {
+   "id": "readme",
+   "title": "README: what this build is, what's inside, known issues",
+   "category": "docs",
+   "visibility": "public",
+   "path": "games/nova-strike/review/rb1/README.md",
+   "evidence": [
+    {
+     "type": "builder",
+     "detail": "Written by the Builder for build 0.1.0+0c2fc79. Known issues and pending checks are listed, not omitted."
+    },
+    {
+     "type": "automated",
+     "check": "uploaded README.md (public review page)",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "README.md",
+     "bytes": 5972,
+     "sha256": "df4635092f9885181496032e97ecd086f1acc411c9a2aa00220684bca754e4df",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/readme/README.md",
+     "where": "public review page"
+    }
+   ]
+  },
+  {
+   "id": "tech_pdf",
+   "title": "Technical documentation (PDF)",
+   "category": "docs",
+   "visibility": "public",
+   "pdf_from": "games/nova-strike/review/rb1/TECHNICAL.md",
+   "evidence": [
+    {
+     "type": "builder",
+     "detail": "Describes the code at 0c2fc79 (engine, structure, aircraft, combat order, saves, services, audio, build)."
+    },
+    {
+     "type": "automated",
+     "check": "PDF generated from games/nova-strike/review/rb1/TECHNICAL.md at build time",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded TECHNICAL.pdf (public review page)",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "TECHNICAL.pdf",
+     "bytes": 57598,
+     "sha256": "8cd0ca6ec8ad503731012fe62342b78b724a5945395476087aabab5c7beb6d7a",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/tech_pdf/TECHNICAL.pdf",
+     "where": "public review page"
+    }
+   ]
+  },
+  {
+   "id": "status",
+   "title": "Status matrix (complete / partial / not done / new issue)",
+   "category": "status",
+   "visibility": "public",
+   "path": "games/nova-strike/review/rb1/STATUS.md",
+   "evidence": [
+    {
+     "type": "builder",
+     "detail": "Each row cites a test or capture. 'Complete' = in the build and shown working by a test/capture, not approved for look or feel."
+    },
+    {
+     "type": "automated",
+     "check": "uploaded STATUS.md (public review page)",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "STATUS.md",
+     "bytes": 4375,
+     "sha256": "81f48693871bb0651120769f904e0b0a9170108d7083e6902baa1561be81b064",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/status/STATUS.md",
+     "where": "public review page"
+    }
+   ]
+  },
+  {
+   "id": "screens",
+   "title": "Screenshots: every menu screen (EN + AR) and combat per aircraft, 1080x2340",
+   "category": "screenshots",
+   "visibility": "public",
+   "glob": "games/nova-strike/review/rb1/screens/*.jpg",
+   "evidence": [
+    {
+     "type": "builder",
+     "detail": "Captured by the Builder on 2026-09-25 from an exact export of 0c2fc79 + tests/review (tests/review/review_screens.tscn running tests/ui_capture.gd and tests/rc1_capture.gd), Godot 4.7.2, Linux software rendering; build ID strip on every image. 32 menu screens + 26 combat/overlay shots. Training screenshot not produced (capture timed out)."
+    },
+    {
+     "type": "automated",
+     "check": "uploaded bomb_arcanist.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded bomb_guardian.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded bomb_striker.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded combat_arcanist_L1.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded combat_arcanist_L4.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded combat_guardian_L1.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded combat_guardian_L4.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded combat_striker_L1.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded combat_striker_L4.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded endless_combat_arcanist.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded pause_en.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded super_arcanist_active.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded super_arcanist_t000.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded super_arcanist_t012.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded super_arcanist_t024.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded super_arcanist_t035.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded super_guardian_active.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded super_guardian_t000.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded super_guardian_t012.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded super_guardian_t024.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded super_guardian_t035.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded super_striker_active.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded super_striker_t000.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded super_striker_t012.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded super_striker_t024.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded super_striker_t035.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_boot_ar.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_boot_en.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_briefing_ar.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_briefing_en.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_campaign_ar.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_campaign_en.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_credits_ar.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_credits_en.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_ending_ar.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_ending_en.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_endless_ar.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_endless_en.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_hangar_ar.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_hangar_en.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_hangar_poor_ar.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_hangar_poor_en.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_home_ar.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_home_en.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_mastery_ar.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_mastery_en.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_results_ar.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_results_defeat_ar.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_results_defeat_en.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_results_en.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_settings_ar.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_settings_en.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_store_ar.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_store_en.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_store_supporter_ar.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_store_supporter_en.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_title_ar.jpg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_title_en.jpg (public review page)",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "bomb_arcanist.jpg",
+     "bytes": 251171,
+     "sha256": "b45c7fb0ae0fa07aa76b49be1d67a6c9a4465e0a78264fb2c8871530f341b4c4",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/bomb_arcanist.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "bomb_guardian.jpg",
+     "bytes": 195875,
+     "sha256": "d659f1370da3aa9fa8ad5c2c63e0b093525c7df2311bf23c35bb7b74c56428b6",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/bomb_guardian.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "bomb_striker.jpg",
+     "bytes": 317296,
+     "sha256": "97f1e03657329235e7784c1314d60c08a94c4c36e45e93fd793fdc7cd00d607c",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/bomb_striker.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "combat_arcanist_L1.jpg",
+     "bytes": 156785,
+     "sha256": "c8b1dfa981d6f5c0405fad0b20c62e8a71480ef3930f7bf4cabad6ffc79848e2",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/combat_arcanist_L1.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "combat_arcanist_L4.jpg",
+     "bytes": 222809,
+     "sha256": "79463ecd80b2d119bc83bdb02d4ee75647ff0469ef04197aa551ceb11bc0178d",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/combat_arcanist_L4.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "combat_guardian_L1.jpg",
+     "bytes": 199819,
+     "sha256": "f22b35f33616ca88b0c930127e2cb74c7f2d88eea85e108f808ebd6e3354ff55",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/combat_guardian_L1.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "combat_guardian_L4.jpg",
+     "bytes": 208868,
+     "sha256": "94686f6d052f88e06d0b9aab5534f1aba3c311d276e0b3bd1a733ac2af4b943f",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/combat_guardian_L4.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "combat_striker_L1.jpg",
+     "bytes": 208955,
+     "sha256": "720f73cbbf934ae2df5a65773c4c93bc735fac103a57906a928c2a96cf3403c0",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/combat_striker_L1.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "combat_striker_L4.jpg",
+     "bytes": 215944,
+     "sha256": "274b967aa758e1685f051f895627fc9887d3ed4912009e24a92015e580f10652",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/combat_striker_L4.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "endless_combat_arcanist.jpg",
+     "bytes": 215761,
+     "sha256": "2f59600a718449cecc161f6ae36d26fe5f4f0485f87eeb7c335621faae937698",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/endless_combat_arcanist.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "pause_en.jpg",
+     "bytes": 137971,
+     "sha256": "92c64c451275bcc76b9654434bca7248ccd4599f6c34ae193bc99ae3fbf1c3db",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/pause_en.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "super_arcanist_active.jpg",
+     "bytes": 321908,
+     "sha256": "9fce6f7e18396c07fd8607426208c636378e8bd254d10d9ca238ec5596c1f635",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/super_arcanist_active.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "super_arcanist_t000.jpg",
+     "bytes": 229291,
+     "sha256": "021daa691e0602af3127e9e5f89cea04b386289b09f91f44b2785f748f5262fa",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/super_arcanist_t000.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "super_arcanist_t012.jpg",
+     "bytes": 249942,
+     "sha256": "c6d498f2f510cf4bd48f902460d09e275891f4df9093485fd66865c92ddf9ce2",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/super_arcanist_t012.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "super_arcanist_t024.jpg",
+     "bytes": 259669,
+     "sha256": "d6509dda8fe59f00988895b22bc5adfe498448140afae40e6d4117bae128fc26",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/super_arcanist_t024.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "super_arcanist_t035.jpg",
+     "bytes": 245775,
+     "sha256": "199ff1357e1c9c320d2f30a5e5f47f9d62a7048c8f6e762b3a9ab27754aaf4b7",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/super_arcanist_t035.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "super_guardian_active.jpg",
+     "bytes": 279159,
+     "sha256": "499be8b355f526db9440c5943967bde3daf0b25e11885bce57be8490b38e4fe5",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/super_guardian_active.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "super_guardian_t000.jpg",
+     "bytes": 196904,
+     "sha256": "a25a34aab7e8d3ab2a9ff091b5fe683611b81c39d3f5cd34cac4ae584b07fd87",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/super_guardian_t000.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "super_guardian_t012.jpg",
+     "bytes": 217493,
+     "sha256": "b759c1fd490a0cf95754c2e6de12c53fa7eb434e5f9f5412b2365f61250bf25d",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/super_guardian_t012.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "super_guardian_t024.jpg",
+     "bytes": 257201,
+     "sha256": "f5e66c3878566509d60ba273798aafc1cfd16130573783ef9c7109f8f88ff99b",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/super_guardian_t024.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "super_guardian_t035.jpg",
+     "bytes": 257829,
+     "sha256": "790d002646253f6dba64fc48d1b075fb676770ddbc5aedb6ce91f3393a46eee7",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/super_guardian_t035.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "super_striker_active.jpg",
+     "bytes": 237832,
+     "sha256": "fa24a3634e0cf4145639a3ad258bbc2482a415bcb991c727e5faf897805726d2",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/super_striker_active.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "super_striker_t000.jpg",
+     "bytes": 204351,
+     "sha256": "7879efdeee5bf942bc3d8d609cd85035c804e5247b5792096109688cfcb420a1",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/super_striker_t000.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "super_striker_t012.jpg",
+     "bytes": 214791,
+     "sha256": "66b3adf04c7b2de43dcd732a1e678de02be5caa2a77d263a947d60e1b60d8733",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/super_striker_t012.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "super_striker_t024.jpg",
+     "bytes": 226410,
+     "sha256": "73a56844bb9eec4108b178dd05fbbf5b3295cd36e0bcc36f38e81ee439ce5817",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/super_striker_t024.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "super_striker_t035.jpg",
+     "bytes": 225506,
+     "sha256": "86d7be9c066bf91db1d13b52e136aa07b85f1230e246a4bcdd4d6af834e17215",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/super_striker_t035.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_boot_ar.jpg",
+     "bytes": 74261,
+     "sha256": "ca0027959c86f4bf8c89508c0aac6432fb2b6dcb2e60b7be48356682537441e0",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_boot_ar.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_boot_en.jpg",
+     "bytes": 75467,
+     "sha256": "4b69fbbc430d4862937bf2ad10305e529664756d36fcdd75e02e97d092cf9bac",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_boot_en.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_briefing_ar.jpg",
+     "bytes": 283730,
+     "sha256": "fb94f04be74208e5c5fc5d8f3d924a02338ec4794aeb3fd16b8c1c5073c8864e",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_briefing_ar.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_briefing_en.jpg",
+     "bytes": 297469,
+     "sha256": "682d0cf879e0785e776e92f5d52adc8b07055fd9b04a2167d392ce0eb440f1bf",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_briefing_en.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_campaign_ar.jpg",
+     "bytes": 244880,
+     "sha256": "d000dfd731d35e64632d1d3ba2b37362fcbd01d6110f1d16592ef01f83265a5d",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_campaign_ar.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_campaign_en.jpg",
+     "bytes": 262316,
+     "sha256": "b9201ba3418f77c3be4a422a4ca019883a9655b93e5c1f2921ed51b7c67ce024",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_campaign_en.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_credits_ar.jpg",
+     "bytes": 174986,
+     "sha256": "a6f94c672d96a3c4647f3ff9aa3b2b2924aa2eaef6e63af7bb26f536f120e10b",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_credits_ar.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_credits_en.jpg",
+     "bytes": 186999,
+     "sha256": "d27f04b643abb1d3adefc0a8718c8029dfe81a4adb105fbd73668fc53880f0ba",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_credits_en.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_ending_ar.jpg",
+     "bytes": 239090,
+     "sha256": "83173e975fcbe952234a67e8d5a03c483d5527f0b10044bd67c490e0a5b65aa7",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_ending_ar.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_ending_en.jpg",
+     "bytes": 243378,
+     "sha256": "0dcfff97915ac1bad81d632598ba84f8d6478e5cb54e6cccac9b10ad8381ce80",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_ending_en.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_endless_ar.jpg",
+     "bytes": 272141,
+     "sha256": "613c1765c181854c84e9dcafb9e99facf1049ed672c7e0f234600092964ceaff",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_endless_ar.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_endless_en.jpg",
+     "bytes": 281304,
+     "sha256": "62b913d30311dbcd62da88bde0a0a22476b83e282c6b3250663ca5d7cb993e7b",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_endless_en.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_hangar_ar.jpg",
+     "bytes": 334051,
+     "sha256": "884f59b78f58841f1b9c79ded17873505fb7c9c281824da105813d2203f8d4c2",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_hangar_ar.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_hangar_en.jpg",
+     "bytes": 344764,
+     "sha256": "58688665d0e90ceaab928f5241ff201dd74f3603bb289d00fcb616405e544c9d",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_hangar_en.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_hangar_poor_ar.jpg",
+     "bytes": 334371,
+     "sha256": "77a848fb26439dfaa21230fb1e316f43b5e69e4cf034fb9d95ae53994ee19a55",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_hangar_poor_ar.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_hangar_poor_en.jpg",
+     "bytes": 347858,
+     "sha256": "13c3e40e19eab565404eb4cc65f496694cf4a0f9a46ceba0ae8d342e5f835aa3",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_hangar_poor_en.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_home_ar.jpg",
+     "bytes": 339989,
+     "sha256": "a649e7ed5ce61e7de44af26e43f8a450941fee0e5c9208a3fcd760b27743c283",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_home_ar.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_home_en.jpg",
+     "bytes": 351535,
+     "sha256": "e4e20221b9e753b61d3bc8b4a106a8379565b5ce115eed762131f8e5a9debe90",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_home_en.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_mastery_ar.jpg",
+     "bytes": 236592,
+     "sha256": "bc031f19ab0712821aeae9cbabe2f89355e339891dc39f481d05786b80846067",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_mastery_ar.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_mastery_en.jpg",
+     "bytes": 266200,
+     "sha256": "524157ed5b2095aa55348c0f5677a01ccd9b89add6658167bae83755090a0103",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_mastery_en.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_results_ar.jpg",
+     "bytes": 291566,
+     "sha256": "370db8be72b2b72b4a9e90660bb6333e7aef903684f65452e71e76da7ee8328f",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_results_ar.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_results_defeat_ar.jpg",
+     "bytes": 221381,
+     "sha256": "99e30f95970a2b2ad7fd96f6351003fd327fb73574da6ca94f0c7c0fc9e22899",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_results_defeat_ar.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_results_defeat_en.jpg",
+     "bytes": 220850,
+     "sha256": "66191f9cadad279887d2baf838bec51c78f4bac163c9e9019ad85bf1572716a9",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_results_defeat_en.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_results_en.jpg",
+     "bytes": 302822,
+     "sha256": "06797ea95834d7111b867c7cd7028316f4fc91a7da685d79b1885b12c86c8b5a",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_results_en.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_settings_ar.jpg",
+     "bytes": 249695,
+     "sha256": "4a8592dd165043afa920076c07007c4012e413f830aee2d56eb32da77d20b59d",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_settings_ar.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_settings_en.jpg",
+     "bytes": 258864,
+     "sha256": "e6ff6767c0bb2640fae4751e017d27bd8b98ac6cd246c8e90d0851a60acc8f46",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_settings_en.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_store_ar.jpg",
+     "bytes": 261833,
+     "sha256": "0ed7a6f535b2ddda708b58a7eec97fea596d31c0ac8132eba36a0be2de4a7110",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_store_ar.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_store_en.jpg",
+     "bytes": 269193,
+     "sha256": "540ec4439402ee97d59f7769cebf4ef66238309fbcfef5446b8620527b23aadc",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_store_en.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_store_supporter_ar.jpg",
+     "bytes": 268802,
+     "sha256": "7f67529a8e9c151293edd3545400f900747c59c128db4c685b752f53e45b32f1",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_store_supporter_ar.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_store_supporter_en.jpg",
+     "bytes": 288389,
+     "sha256": "3caea4f2982fa24cb4b8ea665284ec4deeb4069eaa92c1ef2cdc7a0d07dc2423",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_store_supporter_en.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_title_ar.jpg",
+     "bytes": 177543,
+     "sha256": "7495159487b29acffa548ddd8d9e2e827e01bbd957f16068e8e8ff2e6ef9d12b",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_title_ar.jpg",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_title_en.jpg",
+     "bytes": 188338,
+     "sha256": "0b410e734b1a6e5f9ce689a36fd4bf9fa7880d3e706561c3596bf7c7068082d0",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/screens/ui_title_en.jpg",
+     "where": "public review page"
+    }
+   ]
+  },
+  {
+   "id": "comparisons",
+   "title": "Visual comparisons: design target page vs real screen",
+   "category": "comparisons",
+   "visibility": "private",
+   "glob": "games/nova-strike/review/rb1/comparisons/*",
+   "evidence": [
+    {
+     "type": "builder",
+     "detail": "14 sheets made with tools/qa/review_sheet.py from this package's screenshots. No new pass/refine/fail verdicts are claimed (last scored review: RC1 on 3001dfa). Target pages are concept art."
+    },
+    {
+     "type": "builder",
+     "detail": "Owner-only because the sheets contain pages of the Visual Direction Bible (the owner's unpublished design document)."
+    },
+    {
+     "type": "automated",
+     "check": "uploaded COMPARISONS.md (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sheet_briefing.jpg (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sheet_campaign.jpg (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sheet_combat_arcanist.jpg (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sheet_combat_guardian.jpg (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sheet_combat_striker.jpg (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sheet_hangar.jpg (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sheet_home.jpg (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sheet_pause.jpg (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sheet_results.jpg (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sheet_settings.jpg (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sheet_store.jpg (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sheet_super_arcanist.jpg (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sheet_super_guardian.jpg (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sheet_super_striker.jpg (private GitHub release (owner sign-in))",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "COMPARISONS.md",
+     "bytes": 1194,
+     "sha256": "37637cf83fa86c80a597aeb0348f70b9f835a575bdc5fa0723375b9bcc975f3e",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/comparisons__COMPARISONS.md",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "sheet_briefing.jpg",
+     "bytes": 816887,
+     "sha256": "3fd7261fb3c6e8f91dc0a1fc714ab05eec8561bd8bfb7df1caf5b8a9e47db443",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/comparisons__sheet_briefing.jpg",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "sheet_campaign.jpg",
+     "bytes": 814864,
+     "sha256": "8ada37564b28104bdf269b1842408c67026cd25e11b6583a8e19a874ea3307e9",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/comparisons__sheet_campaign.jpg",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "sheet_combat_arcanist.jpg",
+     "bytes": 893167,
+     "sha256": "5194b3bb3778318cb2962a9d273f79894a97cf113383e8d8f5e27765d9f89e8e",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/comparisons__sheet_combat_arcanist.jpg",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "sheet_combat_guardian.jpg",
+     "bytes": 885262,
+     "sha256": "64746effc94c801af746a1b53206b2f0d3f2ba55d0907c678232ba1a4a754c32",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/comparisons__sheet_combat_guardian.jpg",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "sheet_combat_striker.jpg",
+     "bytes": 886146,
+     "sha256": "6a900ada027ebf44dfe75903851ebadeb0f50564ffc776fd1b5c28da748b806b",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/comparisons__sheet_combat_striker.jpg",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "sheet_hangar.jpg",
+     "bytes": 983010,
+     "sha256": "1e60342373c66a5b4701329bb09d35f26635791d032c2d40a6e786d48f7a1780",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/comparisons__sheet_hangar.jpg",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "sheet_home.jpg",
+     "bytes": 984880,
+     "sha256": "bb8bf1398570d3e7c89cfc83b7f538119b436d1f9229922879d31c0ea4235abd",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/comparisons__sheet_home.jpg",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "sheet_pause.jpg",
+     "bytes": 545620,
+     "sha256": "13d812ff78f419dec15764b2c7618c0602c2b539a92a200bc7307c83f8809ff3",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/comparisons__sheet_pause.jpg",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "sheet_results.jpg",
+     "bytes": 829549,
+     "sha256": "45292ba7a6a710ffbaea9ee3aa0a9ad307ab3f09040248acae32339796dfe6e3",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/comparisons__sheet_results.jpg",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "sheet_settings.jpg",
+     "bytes": 611460,
+     "sha256": "a7e9712e0815df8b646165c9479859f3bc62955a2039636aa4111ea16f5c168c",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/comparisons__sheet_settings.jpg",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "sheet_store.jpg",
+     "bytes": 809426,
+     "sha256": "888ec80e0a6ebcfd3aa53a6fe60f9ec923db6ab28befba479ebd7f9be318497c",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/comparisons__sheet_store.jpg",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "sheet_super_arcanist.jpg",
+     "bytes": 914489,
+     "sha256": "fa4ce722d77849bdb357dff510eeb9c25ba7e2624906b79186883db41e98fdb2",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/comparisons__sheet_super_arcanist.jpg",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "sheet_super_guardian.jpg",
+     "bytes": 909177,
+     "sha256": "59c1406ef1293d383ae3b3711e756f60016f5b3ac19f7ff989ddc7b94d5a524f",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/comparisons__sheet_super_guardian.jpg",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "sheet_super_striker.jpg",
+     "bytes": 895758,
+     "sha256": "c2217ee298f25c8d545edd9a3b86a3129674c3d7d03819630919cd7d97b1c5c5",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/comparisons__sheet_super_striker.jpg",
+     "where": "private GitHub release (owner sign-in)"
+    }
+   ]
+  },
+  {
+   "id": "rec_journey",
+   "title": "Recording: journey Title → Home → Hangar → Campaign → mission 1.01 → Results → Supers → boss 1.08",
+   "category": "recordings",
+   "visibility": "public",
+   "record": {
+    "scene": "res://tests/review/rec_journey.tscn",
+    "seconds": 205,
+    "resolution": "1080x2340"
+   },
+   "evidence": [
+    {
+     "type": "builder",
+     "detail": "Scene in tests/review/ drives the real screens like a finger would; the built-in bot pilot flies combat. Bot INVULNERABLE in this take (stated on screen) so it reaches the boss; 600 credits added at start. Build ID on screen (bottom strip). Unedited; the bot's play doesn't show how the game feels to a person."
+    },
+    {
+     "type": "automated",
+     "check": "unedited bot-run recording of res://tests/review/rec_journey.tscn, 186 s (Godot Movie Maker, fixed 30 fps)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "recording resolution measured 1080x2340 (requested 1080x2340)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "game audio track present in the recording: mean -10.7 dB, peak 0.0 dB",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "recorded in a separate parallel CI job at the same record commit",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded rec_journey.mp4 (public release)",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "rec_journey.mp4",
+     "bytes": 132727924,
+     "sha256": "3ecebf9a114342befd25d7c6f67c1c0f5d226687513e945fbd3335135630b6e6",
+     "url": "https://github.com/kik-studio/kik-builds/releases/download/review-nova-strike-rb1/rec_journey__rec_journey.mp4",
+     "api_url": "https://api.github.com/repos/kik-studio/kik-builds/releases/assets/588549904",
+     "where": "public release"
+    }
+   ]
+  },
+  {
+   "id": "rec_hangar",
+   "title": "Recording: Hangar, every part Mk I → Mk IV on all three aircraft",
+   "category": "recordings",
+   "visibility": "public",
+   "record": {
+    "scene": "res://tests/review/rec_hangar.tscn",
+    "seconds": 155,
+    "resolution": "1080x2340"
+   },
+   "evidence": [
+    {
+     "type": "builder",
+     "detail": "Scene in tests/review/ drives the real screens like a finger would; the built-in bot pilot flies combat. Real Install button path (prices, prerequisites, install animation); credits added for the take (stated on screen). Build ID on screen (bottom strip). Unedited; the bot's play doesn't show how the game feels to a person."
+    },
+    {
+     "type": "automated",
+     "check": "unedited bot-run recording of res://tests/review/rec_hangar.tscn, 113 s (Godot Movie Maker, fixed 30 fps)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "recording resolution measured 1080x2340 (requested 1080x2340)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "game audio track present in the recording: mean -17.5 dB, peak 0.0 dB",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "recorded in a separate parallel CI job at the same record commit",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded rec_hangar.mp4 (public release)",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "rec_hangar.mp4",
+     "bytes": 40605572,
+     "sha256": "bb23533cc17527e1f4f7ef2d492388546438d04db07873afed359972526569b7",
+     "url": "https://github.com/kik-studio/kik-builds/releases/download/review-nova-strike-rb1/rec_hangar__rec_hangar.mp4",
+     "api_url": "https://api.github.com/repos/kik-studio/kik-builds/releases/assets/588550292",
+     "where": "public release"
+    }
+   ]
+  },
+  {
+   "id": "rec_striker_algol",
+   "title": "Recording: Striker vs ALGOL (mission 1.08, hardware Mk I), full run",
+   "category": "recordings",
+   "visibility": "public",
+   "record": {
+    "scene": "res://tests/review/rec_boss_striker.tscn",
+    "seconds": 235,
+    "resolution": "1080x2340"
+   },
+   "evidence": [
+    {
+     "type": "builder",
+     "detail": "Scene in tests/review/ drives the real screens like a finger would; the built-in bot pilot flies combat. Bot can lose. Hardware level chosen by the Builder, bought through the real purchase path. Build ID on screen (bottom strip). Unedited; the bot's play doesn't show how the game feels to a person."
+    },
+    {
+     "type": "automated",
+     "check": "unedited bot-run recording of res://tests/review/rec_boss_striker.tscn, 129 s (Godot Movie Maker, fixed 30 fps)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "recording resolution measured 1080x2340 (requested 1080x2340)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "game audio track present in the recording: mean -10.3 dB, peak 0.0 dB",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "recorded in a separate parallel CI job at the same record commit",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded rec_striker_algol.mp4 (public release)",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "rec_striker_algol.mp4",
+     "bytes": 138164530,
+     "sha256": "f94bf8751025714803018ed039d59259cddc9f9a78ec0bf672135b5186d1a38f",
+     "url": "https://github.com/kik-studio/kik-builds/releases/download/review-nova-strike-rb1/rec_striker_algol__rec_striker_algol.mp4",
+     "api_url": "https://api.github.com/repos/kik-studio/kik-builds/releases/assets/588550367",
+     "where": "public release"
+    }
+   ]
+  },
+  {
+   "id": "rec_guardian_furnace",
+   "title": "Recording: Guardian vs Furnace Sovereign (mission 2.08, hardware Mk II), full run",
+   "category": "recordings",
+   "visibility": "public",
+   "record": {
+    "scene": "res://tests/review/rec_boss_guardian.tscn",
+    "seconds": 235,
+    "resolution": "1080x2340"
+   },
+   "evidence": [
+    {
+     "type": "builder",
+     "detail": "Scene in tests/review/ drives the real screens like a finger would; the built-in bot pilot flies combat. Bot can lose. Hardware level chosen by the Builder. Build ID on screen (bottom strip). Unedited; the bot's play doesn't show how the game feels to a person."
+    },
+    {
+     "type": "automated",
+     "check": "unedited bot-run recording of res://tests/review/rec_boss_guardian.tscn, 135 s (Godot Movie Maker, fixed 30 fps)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "recording resolution measured 1080x2340 (requested 1080x2340)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "game audio track present in the recording: mean -4.1 dB, peak 0.0 dB",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "recorded in a separate parallel CI job at the same record commit",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded rec_guardian_furnace.mp4 (public release)",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "rec_guardian_furnace.mp4",
+     "bytes": 112493795,
+     "sha256": "8880b3e6a2b3f87f05fb3bc4d65f54f7cafc3b278beabb797df54f63abfd881f",
+     "url": "https://github.com/kik-studio/kik-builds/releases/download/review-nova-strike-rb1/rec_guardian_furnace__rec_guardian_furnace.mp4",
+     "api_url": "https://api.github.com/repos/kik-studio/kik-builds/releases/assets/588550598",
+     "where": "public release"
+    }
+   ]
+  },
+  {
+   "id": "rec_arcanist_seraph",
+   "title": "Recording: Arcanist vs Storm Seraph (mission 3.08, hardware Mk III), full run",
+   "category": "recordings",
+   "visibility": "public",
+   "record": {
+    "scene": "res://tests/review/rec_boss_arcanist.tscn",
+    "seconds": 235,
+    "resolution": "1080x2340"
+   },
+   "evidence": [
+    {
+     "type": "builder",
+     "detail": "Scene in tests/review/ drives the real screens like a finger would; the built-in bot pilot flies combat. Bot can lose. Hardware level chosen by the Builder. Build ID on screen (bottom strip). Unedited; the bot's play doesn't show how the game feels to a person."
+    },
+    {
+     "type": "automated",
+     "check": "unedited bot-run recording of res://tests/review/rec_boss_arcanist.tscn, 125 s (Godot Movie Maker, fixed 30 fps)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "recording resolution measured 1080x2340 (requested 1080x2340)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "game audio track present in the recording: mean -14.3 dB, peak 0.0 dB",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "recorded in a separate parallel CI job at the same record commit",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded rec_arcanist_seraph.mp4 (public release)",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "rec_arcanist_seraph.mp4",
+     "bytes": 121357162,
+     "sha256": "a832a9f5257145033b215fd6a133549ae225ee83e054027eedf783a86d61dc4e",
+     "url": "https://github.com/kik-studio/kik-builds/releases/download/review-nova-strike-rb1/rec_arcanist_seraph__rec_arcanist_seraph.mp4",
+     "api_url": "https://api.github.com/repos/kik-studio/kik-builds/releases/assets/588550822",
+     "where": "public release"
+    }
+   ]
+  },
+  {
+   "id": "rec_endless",
+   "title": "Recording: Endless (Guardian, Mk II), ~2 min then ended from Pause",
+   "category": "recordings",
+   "visibility": "public",
+   "record": {
+    "scene": "res://tests/review/rec_endless.tscn",
+    "seconds": 150,
+    "resolution": "1080x2340"
+   },
+   "evidence": [
+    {
+     "type": "builder",
+     "detail": "Scene in tests/review/ drives the real screens like a finger would; the built-in bot pilot flies combat. Bot can lose; if alive after ~2 min the run is ended from the Pause menu (stated on screen). Build ID on screen (bottom strip). Unedited; the bot's play doesn't show how the game feels to a person."
+    },
+    {
+     "type": "automated",
+     "check": "unedited bot-run recording of res://tests/review/rec_endless.tscn, 133 s (Godot Movie Maker, fixed 30 fps)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "recording resolution measured 1080x2340 (requested 1080x2340)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "game audio track present in the recording: mean -4.9 dB, peak 0.0 dB",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "recorded in a separate parallel CI job at the same record commit",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded rec_endless.mp4 (public release)",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "rec_endless.mp4",
+     "bytes": 115035313,
+     "sha256": "e326cdcd604cd441f4e38d0688b2719b240ef60d23c07b1835a73ceecd8a70f9",
+     "url": "https://github.com/kik-studio/kik-builds/releases/download/review-nova-strike-rb1/rec_endless__rec_endless.mp4",
+     "api_url": "https://api.github.com/repos/kik-studio/kik-builds/releases/assets/588551015",
+     "where": "public release"
+    }
+   ]
+  },
+  {
+   "id": "rec_stage_tour",
+   "title": "Demo: environments, 24 s of mission x.03 in all six stages",
+   "category": "demos",
+   "visibility": "public",
+   "record": {
+    "scene": "res://tests/review/rec_stages.tscn",
+    "seconds": 165,
+    "resolution": "1080x2340"
+   },
+   "evidence": [
+    {
+     "type": "builder",
+     "detail": "Scene in tests/review/ drives the real screens like a finger would; the built-in bot pilot flies combat. Excerpts cut on purpose by starting the next mission; bot invulnerable in this take (stated on screen). Build ID on screen (bottom strip). Unedited; the bot's play doesn't show how the game feels to a person."
+    },
+    {
+     "type": "automated",
+     "check": "unedited bot-run recording of res://tests/review/rec_stages.tscn, 150 s (Godot Movie Maker, fixed 30 fps)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "recording resolution measured 1080x2340 (requested 1080x2340)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "game audio track present in the recording: mean -7.9 dB, peak 0.0 dB",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "recorded in a separate parallel CI job at the same record commit",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded rec_stage_tour.mp4 (public release)",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "rec_stage_tour.mp4",
+     "bytes": 104590617,
+     "sha256": "59bad27501ec3595c071e2a18e5d3f3af9e87c966b2007d6c17a225bcf51a583",
+     "url": "https://github.com/kik-studio/kik-builds/releases/download/review-nova-strike-rb1/rec_stage_tour__rec_stage_tour.mp4",
+     "api_url": "https://api.github.com/repos/kik-studio/kik-builds/releases/assets/588551228",
+     "where": "public release"
+    }
+   ]
+  },
+  {
+   "id": "demo_equipment",
+   "title": "Demo: equipment, Striker hardware Mk I → Mk IV, then in combat",
+   "category": "demos",
+   "visibility": "public",
+   "record": {
+    "scene": "res://tests/review/demo_equipment.tscn",
+    "seconds": 62,
+    "resolution": "1080x2340"
+   },
+   "evidence": [
+    {
+     "type": "builder",
+     "detail": "Real Install path in the Hangar, credits added for the demo; then the same hardware in Training. Real game code; what the demo sets up is named on screen; build ID on screen (bottom strip)."
+    },
+    {
+     "type": "automated",
+     "check": "unedited bot-run recording of res://tests/review/demo_equipment.tscn, 43 s (Godot Movie Maker, fixed 30 fps)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "recording resolution measured 1080x2340 (requested 1080x2340)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "game audio track present in the recording: mean -12.8 dB, peak 0.0 dB",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "recorded in a separate parallel CI job at the same record commit",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded demo_equipment.mp4 (public release)",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "demo_equipment.mp4",
+     "bytes": 21254536,
+     "sha256": "55f1a1cd2d461abecc5610cf8a72712f3d94389aac171453195aa63d9cccbcfb",
+     "url": "https://github.com/kik-studio/kik-builds/releases/download/review-nova-strike-rb1/demo_equipment__demo_equipment.mp4",
+     "api_url": "https://api.github.com/repos/kik-studio/kik-builds/releases/assets/588551433",
+     "where": "public release"
+    }
+   ]
+  },
+  {
+   "id": "demo_weapons",
+   "title": "Demo: weapons, temporary levels L1 → L4 for each aircraft",
+   "category": "demos",
+   "visibility": "public",
+   "record": {
+    "scene": "res://tests/review/demo_weapons.tscn",
+    "seconds": 52,
+    "resolution": "1080x2340"
+   },
+   "evidence": [
+    {
+     "type": "builder",
+     "detail": "Training range; the level is stepped by the demo every 3 s (in play it rises with power pickups). Real game code; what the demo sets up is named on screen; build ID on screen (bottom strip)."
+    },
+    {
+     "type": "automated",
+     "check": "unedited bot-run recording of res://tests/review/demo_weapons.tscn, 39 s (Godot Movie Maker, fixed 30 fps)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "recording resolution measured 1080x2340 (requested 1080x2340)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "game audio track present in the recording: mean -6.1 dB, peak 0.0 dB",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "recorded in a separate parallel CI job at the same record commit",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded demo_weapons.mp4 (public release)",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "demo_weapons.mp4",
+     "bytes": 37414253,
+     "sha256": "cbb82d39d3da40bd08516732843ea3a6a3c82a6b3579a74e7a9bdde11ce133e3",
+     "url": "https://github.com/kik-studio/kik-builds/releases/download/review-nova-strike-rb1/demo_weapons__demo_weapons.mp4",
+     "api_url": "https://api.github.com/repos/kik-studio/kik-builds/releases/assets/588551574",
+     "where": "public release"
+    }
+   ]
+  },
+  {
+   "id": "demo_supers",
+   "title": "Demo: transformations, each aircraft's Super from open to close",
+   "category": "demos",
+   "visibility": "public",
+   "record": {
+    "scene": "res://tests/review/demo_supers.tscn",
+    "seconds": 46,
+    "resolution": "1080x2340"
+   },
+   "evidence": [
+    {
+     "type": "builder",
+     "detail": "Training; the Super meter is filled by the demo (in play it charges from destroyed enemies). Real game code; what the demo sets up is named on screen; build ID on screen (bottom strip)."
+    },
+    {
+     "type": "automated",
+     "check": "unedited bot-run recording of res://tests/review/demo_supers.tscn, 40 s (Godot Movie Maker, fixed 30 fps)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "recording resolution measured 1080x2340 (requested 1080x2340)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "game audio track present in the recording: mean -6.2 dB, peak 0.0 dB",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "recorded in a separate parallel CI job at the same record commit",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded demo_supers.mp4 (public release)",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "demo_supers.mp4",
+     "bytes": 36676229,
+     "sha256": "dce1ca9a47bcb972c228a7c6a153a81c5347e769672981bb80b53b0e0e032c71",
+     "url": "https://github.com/kik-studio/kik-builds/releases/download/review-nova-strike-rb1/demo_supers__demo_supers.mp4",
+     "api_url": "https://api.github.com/repos/kik-studio/kik-builds/releases/assets/588551730",
+     "where": "public release"
+    }
+   ]
+  },
+  {
+   "id": "demo_pickups",
+   "title": "Demo: pickups, power / bomb / light shard collected",
+   "category": "demos",
+   "visibility": "public",
+   "record": {
+    "scene": "res://tests/review/demo_pickups.tscn",
+    "seconds": 34,
+    "resolution": "1080x2340"
+   },
+   "evidence": [
+    {
+     "type": "builder",
+     "detail": "Drops placed in front of the aircraft by the demo; magnet, trail and effect of each kind. Real game code; what the demo sets up is named on screen; build ID on screen (bottom strip)."
+    },
+    {
+     "type": "automated",
+     "check": "unedited bot-run recording of res://tests/review/demo_pickups.tscn, 25 s (Godot Movie Maker, fixed 30 fps)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "recording resolution measured 1080x2340 (requested 1080x2340)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "game audio track present in the recording: mean -8.4 dB, peak 0.0 dB",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "recorded in a separate parallel CI job at the same record commit",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded demo_pickups.mp4 (public release)",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "demo_pickups.mp4",
+     "bytes": 23429235,
+     "sha256": "439926f01b535e24ce4968835f6f671ff9705f5996e334abb3556f7ddbf88e05",
+     "url": "https://github.com/kik-studio/kik-builds/releases/download/review-nova-strike-rb1/demo_pickups__demo_pickups.mp4",
+     "api_url": "https://api.github.com/repos/kik-studio/kik-builds/releases/assets/588551841",
+     "where": "public release"
+    }
+   ]
+  },
+  {
+   "id": "demo_audio",
+   "title": "Demo: audio behaviour (menu music, music volume 0 and back, combat, Super, Pause, boss mission)",
+   "category": "demos",
+   "visibility": "public",
+   "record": {
+    "scene": "res://tests/review/demo_audio.tscn",
+    "seconds": 64,
+    "resolution": "1080x2340"
+   },
+   "evidence": [
+    {
+     "type": "builder",
+     "detail": "Each audio step is named on screen. Native audio (the browser-silence issue of this build doesn't apply to recordings). Real game code; what the demo sets up is named on screen; build ID on screen (bottom strip)."
+    },
+    {
+     "type": "automated",
+     "check": "unedited bot-run recording of res://tests/review/demo_audio.tscn, 54 s (Godot Movie Maker, fixed 30 fps)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "recording resolution measured 1080x2340 (requested 1080x2340)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "game audio track present in the recording: mean -7.5 dB, peak 0.0 dB",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "recorded in a separate parallel CI job at the same record commit",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded demo_audio.mp4 (public release)",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "demo_audio.mp4",
+     "bytes": 29668807,
+     "sha256": "16caa5c35a85b9cebbb816504f40d673340bbdf9c8463d9961ccd214dbcf0394",
+     "url": "https://github.com/kik-studio/kik-builds/releases/download/review-nova-strike-rb1/demo_audio__demo_audio.mp4",
+     "api_url": "https://api.github.com/repos/kik-studio/kik-builds/releases/assets/588551935",
+     "where": "public release"
+    }
+   ]
+  },
+  {
+   "id": "logs",
+   "title": "Event logs: waves, enemy-free periods, pickups, L1–L4 progression (48 missions + Endless)",
+   "category": "logs",
+   "visibility": "public",
+   "glob": "games/nova-strike/review/rb1/logs/*",
+   "evidence": [
+    {
+     "type": "builder",
+     "detail": "Bot pilot (not invulnerable) flew all 48 missions and 180 s of Endless on an exact export of 0c2fc79, observed by tests/review/event_log.gd. All 48 won; standard missions 10 waves in 89–97 s; enemy-free time median 16 s per mission (max 51 s, 1.01); L4 reached in 46/48. Bot never uses Bombs. One run per mission; numbers vary a little between runs."
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 1.01.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 1.02.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 1.03.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 1.04.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 1.05.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 1.06.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 1.07.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 1.08.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 2.01.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 2.02.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 2.03.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 2.04.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 2.05.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 2.06.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 2.07.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 2.08.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 3.01.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 3.02.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 3.03.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 3.04.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 3.05.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 3.06.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 3.07.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 3.08.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 4.01.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 4.02.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 4.03.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 4.04.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 4.05.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 4.06.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 4.07.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 4.08.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 5.01.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 5.02.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 5.03.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 5.04.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 5.05.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 5.06.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 5.07.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 5.08.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 6.01.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 6.02.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 6.03.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 6.04.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 6.05.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 6.06.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 6.07.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded 6.08.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded LOGS.md (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded SUMMARY.md (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded endless.jsonl (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded summary.json (public review page)",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "1.01.jsonl",
+     "bytes": 14817,
+     "sha256": "efeef40d6d2cf2de2cef4fe617eea753a20e5042dc02adc0e81c86538c9e3b2d",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/1.01.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "1.02.jsonl",
+     "bytes": 15302,
+     "sha256": "60cb284d8ce219586357f09147b8e8db9bcd597c6347a5288b0fe76fc94c3ef9",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/1.02.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "1.03.jsonl",
+     "bytes": 15100,
+     "sha256": "9e28a434a08ab41af99ecd5cf8f413cba9596e520c0f92b9d8bc9902d7ca73e7",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/1.03.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "1.04.jsonl",
+     "bytes": 16052,
+     "sha256": "7eb197b907df721c29de24ff83db3b1f0e1bab27afccfee458b758f7406440da",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/1.04.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "1.05.jsonl",
+     "bytes": 14947,
+     "sha256": "8a9f2d6e10d8bcae27ca98e15dbee0e68b67271d168ec5eaee69e3459f925c36",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/1.05.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "1.06.jsonl",
+     "bytes": 15565,
+     "sha256": "e70b49866ad46a14664f90e46ce22f9e15c2f42dddcf8a5761d7019bacc8b9d6",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/1.06.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "1.07.jsonl",
+     "bytes": 14979,
+     "sha256": "3188f336e064906119eebe91a1468406f659be5edad38bbe0b8202dd755219ed",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/1.07.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "1.08.jsonl",
+     "bytes": 16264,
+     "sha256": "1b74f245b65dbf81839cfdeafd73cb2b5f63a3371d69080b89e299e293bf84a8",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/1.08.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "2.01.jsonl",
+     "bytes": 15726,
+     "sha256": "1cd1ec58a9b830c34bfe60cca77866a40ac27f6facf7bbdb330490fe36faf4e5",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/2.01.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "2.02.jsonl",
+     "bytes": 15187,
+     "sha256": "f88532a41222f1c07ba0a1bf093ac5d1b073cae097253c78783897fba1a5f51c",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/2.02.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "2.03.jsonl",
+     "bytes": 15158,
+     "sha256": "436066f7112450b0bcfe52faa8163e7a66d34163ee5b34a7f5d71ba0513c4ca5",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/2.03.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "2.04.jsonl",
+     "bytes": 14839,
+     "sha256": "7a621f0d1470e2586a5193e7533dd74ef3e13042efbe3646de0018a1feae4bf7",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/2.04.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "2.05.jsonl",
+     "bytes": 15281,
+     "sha256": "a5e04ebd7ee5c7754b9ea64c9a4bce16ed7a2ed01e5a1dbc7dbedc9cc75842f7",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/2.05.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "2.06.jsonl",
+     "bytes": 15432,
+     "sha256": "8e403582ab7d3279817d9937d7dc1305eff304826353fe5e6b08df118cd535ee",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/2.06.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "2.07.jsonl",
+     "bytes": 14987,
+     "sha256": "19811cf096e96357cbcf87a51af9de72c00f74289534d72170478c3f4d3611c2",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/2.07.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "2.08.jsonl",
+     "bytes": 18338,
+     "sha256": "74e42406fc158c1c2fad451eb7ff04869006c2670d705f162d3a9874feff0f7b",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/2.08.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "3.01.jsonl",
+     "bytes": 15321,
+     "sha256": "74b42dba27966ce7f09f1b1853fa76f8eddabd483d6595c73bc4cecd60d6bc3a",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/3.01.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "3.02.jsonl",
+     "bytes": 15126,
+     "sha256": "efba7390c6d2d4663dffad2e4f8792cf2c7e7946c8d7e2677499d815a3fede17",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/3.02.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "3.03.jsonl",
+     "bytes": 15441,
+     "sha256": "b701cd2b10c45336e3b4153475755489d34c110e7478a61f57b1b8fe2b7962e7",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/3.03.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "3.04.jsonl",
+     "bytes": 15787,
+     "sha256": "398496aa318d1597c36d03c2c3c8e22b9104c520e33c5cd41390fe97e7ad92ee",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/3.04.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "3.05.jsonl",
+     "bytes": 14982,
+     "sha256": "c40a19edb5b079d3273e940b8b623bad504f6777ef4032d66156e63c521158bd",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/3.05.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "3.06.jsonl",
+     "bytes": 15439,
+     "sha256": "6572e8e6fe1bd95b0a3817c963bf12d634e9f721226017dc56ef1e62de24d052",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/3.06.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "3.07.jsonl",
+     "bytes": 15597,
+     "sha256": "e8e8e8d1f8b6540070ee55842590b412b2461d9751feffe1353a35f5d0c8bc1a",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/3.07.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "3.08.jsonl",
+     "bytes": 16045,
+     "sha256": "e6f3397033e9f7de6290bcc7d547b0b58bba9be8ad7c143101fdaa0668e7f4ea",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/3.08.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "4.01.jsonl",
+     "bytes": 15494,
+     "sha256": "a911ab6be966a5c089b2efd5ba74f4905215796f155b4726af005fc08a46124f",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/4.01.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "4.02.jsonl",
+     "bytes": 15646,
+     "sha256": "1dddcc6ea74abc61793b9e9d0db0947247c66ad32c5f9bcc1efac8cc7faa0c55",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/4.02.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "4.03.jsonl",
+     "bytes": 15913,
+     "sha256": "ee1cf31f2b17aa86689421cbeb2539c303033e58dbe1c8c32950750f646eb9ef",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/4.03.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "4.04.jsonl",
+     "bytes": 15643,
+     "sha256": "d55be236380ed65d70f023a3dcd1d284d328bed0ec95ea1dadca75889a51a975",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/4.04.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "4.05.jsonl",
+     "bytes": 15053,
+     "sha256": "82140754e86971e9713db1837fc640d4a9f66e3f1abb54da97a502a4898b127e",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/4.05.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "4.06.jsonl",
+     "bytes": 15658,
+     "sha256": "093ab85c048e26c5dad0e087ff70a35aff6f41fd72fd26d4424bdfe08ae34a72",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/4.06.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "4.07.jsonl",
+     "bytes": 15782,
+     "sha256": "4c8cec042d47ac0fef9373d172accddcac7c3895191d0db8a7fafb9777e09116",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/4.07.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "4.08.jsonl",
+     "bytes": 13240,
+     "sha256": "95013b849c7bb7e44fa9fb991c74e672146b318d9e76d2fbd9dcc8f6b902bc29",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/4.08.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "5.01.jsonl",
+     "bytes": 15844,
+     "sha256": "2e8eec853e007c28d146f61c1023924b370fcf1099c6ecb6a3edbfa9bd3a2619",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/5.01.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "5.02.jsonl",
+     "bytes": 15830,
+     "sha256": "79b3b7878be34d886f294561dfb3b457cd541bae0e15cb211caef7293a3cb244",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/5.02.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "5.03.jsonl",
+     "bytes": 15764,
+     "sha256": "9732300983d70309c6fcfd1ac6e54cd474ad3dbd41de2fd8f36b66bd3651288b",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/5.03.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "5.04.jsonl",
+     "bytes": 15882,
+     "sha256": "389450e7cb364d066a46b751252b89bbe96825d58295c087d2fb6087f39b9b21",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/5.04.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "5.05.jsonl",
+     "bytes": 15243,
+     "sha256": "15a97e23ce92ce09ff406994f86db5f3a2725d7497ef717668cee81563f0dbca",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/5.05.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "5.06.jsonl",
+     "bytes": 15864,
+     "sha256": "b2a280931c73320fdcd7334c8926924d057a7cc404244ee8e2154502800e5ebc",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/5.06.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "5.07.jsonl",
+     "bytes": 15800,
+     "sha256": "272913007d6139404ca1726e8faadbd94d0015833ac4c3faee001aabf4aff6c2",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/5.07.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "5.08.jsonl",
+     "bytes": 24984,
+     "sha256": "6a35f25979b36c6db1df4de33b4d0e09bf3f98ec0795c08cecdcbd246634cb4f",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/5.08.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "6.01.jsonl",
+     "bytes": 15013,
+     "sha256": "dceb127348524ca4b624453c46ff6919e6f19b6e6c6347b24dd4996b0cb09ac1",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/6.01.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "6.02.jsonl",
+     "bytes": 15783,
+     "sha256": "e160f8b777791593b3ec0e621aa2f3678c56dc7e9df58653d8ee9260daaedc43",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/6.02.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "6.03.jsonl",
+     "bytes": 16000,
+     "sha256": "80626e9b7d567854caf1a24a692411c2b2767b03ac7cc831d6ee77029df0b892",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/6.03.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "6.04.jsonl",
+     "bytes": 15770,
+     "sha256": "b02b019d9613208a1b93af9d413b4b22f5e65880ef0158712e0fcc605702982b",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/6.04.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "6.05.jsonl",
+     "bytes": 15945,
+     "sha256": "d296c6dbdabd523c8b839f78f1f8579c5a05f0ac7bec16ba7b016fb28064ae7e",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/6.05.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "6.06.jsonl",
+     "bytes": 15851,
+     "sha256": "f413a415f08f2bc8aa379aab0d14f5fedc0d9c151e93417b66f266cf05c3614a",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/6.06.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "6.07.jsonl",
+     "bytes": 15751,
+     "sha256": "ebb0d7e65b45563735aecd40c673b9213a2206fecbebe7055319fe9dd83c1c37",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/6.07.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "6.08.jsonl",
+     "bytes": 17191,
+     "sha256": "7b9d44a97543f48d445f8182f174e2abdf718f796454e89e153cf7e6f95e189d",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/6.08.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "LOGS.md",
+     "bytes": 2327,
+     "sha256": "a608664aa286712bd790b0838461ddbc42aa3a4f5ac4e18b7ffd076d942ae16c",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/LOGS.md",
+     "where": "public review page"
+    },
+    {
+     "name": "SUMMARY.md",
+     "bytes": 6334,
+     "sha256": "6791847c19e76185d8b9f0ec451f51f25fb0f2e7e3995c3d47f7122409219be3",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/SUMMARY.md",
+     "where": "public review page"
+    },
+    {
+     "name": "endless.jsonl",
+     "bytes": 29070,
+     "sha256": "55872a386f8004ad8ac3e7f6dea495a57224eb133dc1127667820b3cfce56324",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/endless.jsonl",
+     "where": "public review page"
+    },
+    {
+     "name": "summary.json",
+     "bytes": 35865,
+     "sha256": "8e735b8e1f7aad91b70bc19e18b366eab240d8d98d8556eecc609dbb8aaa8d2d",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/logs/summary.json",
+     "where": "public review page"
+    }
+   ]
+  },
+  {
+   "id": "tests",
+   "title": "Test reports (8 suites re-run on this build's code + browser audio test)",
+   "category": "tests",
+   "visibility": "public",
+   "glob": "games/nova-strike/review/rb1/tests/*",
+   "evidence": [
+    {
+     "type": "builder",
+     "detail": "Re-run by the Builder on 2026-09-25 on an exact export of 0c2fc79: test_runner 47/0, combat_tests 35/0, qa_suite 174/0, ui_tests 0 failures, ui_flow 0 failures, content_validator PASS, units_check PASS, economy_sim PASS. Logs included."
+    },
+    {
+     "type": "automated",
+     "check": "uploaded AUDIO_BROWSER.md (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded TESTS.md (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded combat_tests.log (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded content_validator.log (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded economy_sim.log (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded qa_suite.log (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded test_runner.log (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_flow.log (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ui_tests.log (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded units_check.log (public review page)",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "AUDIO_BROWSER.md",
+     "bytes": 1752,
+     "sha256": "a8c97c440ef59575027b4c6382267cc1a2f1c288b1248410628020a2b3380b2d",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/tests/AUDIO_BROWSER.md",
+     "where": "public review page"
+    },
+    {
+     "name": "TESTS.md",
+     "bytes": 1606,
+     "sha256": "a0a0dca175f4ca83408106dbe76580b39de5dfa18ef1e078fbd18945e2958cf4",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/tests/TESTS.md",
+     "where": "public review page"
+    },
+    {
+     "name": "combat_tests.log",
+     "bytes": 1719,
+     "sha256": "5c8d1babdeaf055732719d4788850968e529fab52227eb3bac445adb2dc9af2e",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/tests/combat_tests.log",
+     "where": "public review page"
+    },
+    {
+     "name": "content_validator.log",
+     "bytes": 10583,
+     "sha256": "2fce2793352622d816bf9afe8758c0982b6b14569b53e451ee48c5a7197e5c04",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/tests/content_validator.log",
+     "where": "public review page"
+    },
+    {
+     "name": "economy_sim.log",
+     "bytes": 1447,
+     "sha256": "d7862bbf78cc93bab0e30028ebd34354603121cca75b7862d28af3cbc9969aac",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/tests/economy_sim.log",
+     "where": "public review page"
+    },
+    {
+     "name": "qa_suite.log",
+     "bytes": 13100,
+     "sha256": "dc7b3d23fcd4bb244b4df4f6149bc3369e925bc47b4e65bd998c9d83844751b8",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/tests/qa_suite.log",
+     "where": "public review page"
+    },
+    {
+     "name": "test_runner.log",
+     "bytes": 2350,
+     "sha256": "d70eb5e72b5f30bd92b9cdf3dfe6382b390421a854c929f65ae0743ba5822d7b",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/tests/test_runner.log",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_flow.log",
+     "bytes": 4571,
+     "sha256": "4f507decc2cacd6863153384a9263ac2409a390e7693644c948613bb6205fc23",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/tests/ui_flow.log",
+     "where": "public review page"
+    },
+    {
+     "name": "ui_tests.log",
+     "bytes": 3028,
+     "sha256": "bde57581ad9307c06452b11a30c65f17d31b62f1d3ba5b9b4a16eaf37fb27388",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/tests/ui_tests.log",
+     "where": "public review page"
+    },
+    {
+     "name": "units_check.log",
+     "bytes": 1503,
+     "sha256": "e1bdb44ad393fca9c8f0c86377a64735a2f7f79a8a4bed3290cb2b816c51984c",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/tests/units_check.log",
+     "where": "public review page"
+    }
+   ]
+  },
+  {
+   "id": "balance",
+   "title": "Balance: data tables (units, prices, enemies, bosses, 48 missions) + notes",
+   "category": "balance",
+   "visibility": "public",
+   "glob": "games/nova-strike/review/rb1/balance/*",
+   "evidence": [
+    {
+     "type": "builder",
+     "detail": "JSON exported from the game's data scripts at 0c2fc79 by tests/review/export_balance.gd; BALANCE_NOTES.md = docs/BALANCE.md. Balance measured with the bot only."
+    },
+    {
+     "type": "automated",
+     "check": "uploaded BALANCE_NOTES.md (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded bosses.json (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded enemies.json (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded missions.json (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded units.json (public review page)",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "BALANCE_NOTES.md",
+     "bytes": 27339,
+     "sha256": "cc712f5664fea0ad52ae070226c8acc63c7a079497b09f694840d9db50a2ae06",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/balance/BALANCE_NOTES.md",
+     "where": "public review page"
+    },
+    {
+     "name": "bosses.json",
+     "bytes": 6340,
+     "sha256": "36888f358f867d3d3bb5e2e4369f7dfc9ca71ff714bd1975fb42c0d284368a5f",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/balance/bosses.json",
+     "where": "public review page"
+    },
+    {
+     "name": "enemies.json",
+     "bytes": 5408,
+     "sha256": "cffe8fa75b220605d1509f48cb31f0c77e70cd8a55f0144de11420e257270594",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/balance/enemies.json",
+     "where": "public review page"
+    },
+    {
+     "name": "missions.json",
+     "bytes": 270759,
+     "sha256": "85464517e8f3da83d7d519c68136d403d1e9508b4389da78db22009e3c551981",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/balance/missions.json",
+     "where": "public review page"
+    },
+    {
+     "name": "units.json",
+     "bytes": 16836,
+     "sha256": "80d1d35c6b1febc6fe155e9dbc9516aeb68d57cc0a126dd7cdbc5ed6a811252d",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/balance/units.json",
+     "where": "public review page"
+    }
+   ]
+  },
+  {
+   "id": "performance",
+   "title": "Performance: measured on real phones vs pending",
+   "category": "performance",
+   "visibility": "public",
+   "path": "games/nova-strike/review/rb1/performance/PERFORMANCE.md",
+   "evidence": [
+    {
+     "type": "builder",
+     "detail": "Separates measured Test Lab results from pending checks; names the build each number was measured on."
+    },
+    {
+     "type": "pending",
+     "detail": "Owner phone check (Pixel 10 Pro XL APK, iPhone 16 Plus browser) not done yet."
+    },
+    {
+     "type": "automated",
+     "check": "uploaded PERFORMANCE.md (public review page)",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "PERFORMANCE.md",
+     "bytes": 2046,
+     "sha256": "366d365e8b5c8863f3868128f674e52b5e6d3c6e58219073d31f039c323d3626",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/performance/PERFORMANCE.md",
+     "where": "public review page"
+    }
+   ]
+  },
+  {
+   "id": "audio",
+   "title": "All audio files (music + sound effects, OGG)",
+   "category": "audio",
+   "visibility": "public",
+   "glob": "games/nova-strike/assets/audio/**/*.ogg",
+   "evidence": [
+    {
+     "type": "builder",
+     "detail": "The files shipped in the build (unchanged since 0c2fc79)."
+    },
+    {
+     "type": "automated",
+     "check": "uploaded coin.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded music/boss.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded music/boss_final.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded music/combat_armada.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded music/combat_dominion.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded music/combat_ember.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded music/combat_lantern.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded music/combat_tempest.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded music/combat_veil.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded music/ending.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded music/endless.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded music/menu.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/arc_chain.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/arc_fire.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/arc_impact.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/beacon_relight.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/bomb_arc.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/bomb_solar.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/bomb_void.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/boss_explode.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/bulwark.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/dash.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/enemy_charge.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/enemy_heavy.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/enemy_hit.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/enemy_shot.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/engine_loop.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/explode_large.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/explode_small.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/level_up.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/mission_complete.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/mission_failed.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/phase_relay.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/pickup_light.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/pickup_power.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/player_hit.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/shield_break.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/shield_hit.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/solar_fire.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/solar_impact.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/solar_seeker.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/super_arc.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/super_ready.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/super_retract.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/super_solar.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/super_void.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/ui_back.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/ui_confirm.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/ui_error.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/ui_install.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/ui_tap.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/void_fire.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/void_impact.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/void_torpedo.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/warning_boss.ogg (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/wave_advance.ogg (public review page)",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "coin.ogg",
+     "bytes": 21463,
+     "sha256": "f593e2ee6d2f642fd7b1c1b5b45bb6f7f22ca2bdbd770dde117cb59f7bf871c6",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/coin.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "music/boss.ogg",
+     "bytes": 631262,
+     "sha256": "64ffcea39a1d0012933ba265dcae128f6db3d680e45681fef5f872d4b75c0224",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/music/boss.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "music/boss_final.ogg",
+     "bytes": 610892,
+     "sha256": "030765b7e1bb108b96c4782449ec4f56b8157172f1f7277b8c567cdfd69adcc0",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/music/boss_final.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "music/combat_armada.ogg",
+     "bytes": 621550,
+     "sha256": "e3d3b21ac1f40d9af51ab9adeed81917978c821a39a1c59233b6e67bc5e0213b",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/music/combat_armada.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "music/combat_dominion.ogg",
+     "bytes": 623422,
+     "sha256": "047bb1f1ea738e326d9332b58f427bb2cd3e94b1cc8f33443411a147a8740692",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/music/combat_dominion.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "music/combat_ember.ogg",
+     "bytes": 701685,
+     "sha256": "9b0f4c2396161740a10abf79e2fa2a3d77fd3ad6ad8046f9d2907748de3124f6",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/music/combat_ember.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "music/combat_lantern.ogg",
+     "bytes": 637790,
+     "sha256": "654f57d9ddaccb8334539e2872db1faf803b3e4ec1f0f13b57e76c38afb67e2d",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/music/combat_lantern.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "music/combat_tempest.ogg",
+     "bytes": 602546,
+     "sha256": "3ef11e8e05cd70977fb595afd5597ca652d26453e25de90adea05c323510a6d2",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/music/combat_tempest.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "music/combat_veil.ogg",
+     "bytes": 613416,
+     "sha256": "005f0c78d6bdeb38642d40ecf439151fc5a0af6214ef10f0170db3a49d78de02",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/music/combat_veil.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "music/ending.ogg",
+     "bytes": 536256,
+     "sha256": "858d8706f7c89f3ab0fdcaabe713744d522462c0a32acbb836540a038320b5ed",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/music/ending.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "music/endless.ogg",
+     "bytes": 681066,
+     "sha256": "e875704d951924e80c8f609e5a3337fd5f839e5e55cf004b420afa1a0787d9be",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/music/endless.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "music/menu.ogg",
+     "bytes": 513146,
+     "sha256": "34cb65378efccde72371be475bcc0bb2ff055ded73a9ac2c969d37294e2e7b46",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/music/menu.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/arc_chain.ogg",
+     "bytes": 21997,
+     "sha256": "293e789a06c14012bb87f4b54eafdb22960b819db2e5384869fd1326e9f4b2aa",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/arc_chain.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/arc_fire.ogg",
+     "bytes": 12798,
+     "sha256": "b86ec92e18a773f9ddd2ad68a44ad7f3f51f859b01e7576a6f30903dcaae0dfe",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/arc_fire.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/arc_impact.ogg",
+     "bytes": 14786,
+     "sha256": "cb28a1ed983fb5559eba015e96607cfeca24b072ae96612ed1f526b3c059fa1d",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/arc_impact.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/beacon_relight.ogg",
+     "bytes": 36073,
+     "sha256": "2b1661e83aeeb4ce3e2fe2b8eda45ce9fddea0eac262302278cd9bd8560a153e",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/beacon_relight.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/bomb_arc.ogg",
+     "bytes": 51142,
+     "sha256": "eb0ed470dc36a484bd1c50ae6e800c375320766e289b124e7bf6028d2656cd20",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/bomb_arc.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/bomb_solar.ogg",
+     "bytes": 35723,
+     "sha256": "0e313e9231b1b61c1ca6f2027559d75a17dfa24ec3e475695233dfe3e999eb48",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/bomb_solar.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/bomb_void.ogg",
+     "bytes": 42742,
+     "sha256": "9f7ebaaa08691eec427e2f7842aa342c1c4779bb0bdf178a8b18da69805845af",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/bomb_void.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/boss_explode.ogg",
+     "bytes": 56142,
+     "sha256": "c57966e47f01c4be3bbd56f81a595677d545819c92527700190b7a76a9bab981",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/boss_explode.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/bulwark.ogg",
+     "bytes": 18910,
+     "sha256": "23f6b33ef9e3d8412e18f81ea9ac44768397ff64f6020be330fe9378302219dd",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/bulwark.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/dash.ogg",
+     "bytes": 15717,
+     "sha256": "b168a2ab64e3417c4a4a882ec18c077de91be9bd706ef725bedde081551f7b50",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/dash.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/enemy_charge.ogg",
+     "bytes": 26966,
+     "sha256": "c054cfed2e5279fc757b5d0486b507ab0e3bcd893f77cab5242a26804e189840",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/enemy_charge.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/enemy_heavy.ogg",
+     "bytes": 17772,
+     "sha256": "ab620520fa5008476ef029610fe0a792588b4427e55e1b5b9359e86a81cffc76",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/enemy_heavy.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/enemy_hit.ogg",
+     "bytes": 15947,
+     "sha256": "fed2903b10b0b891113e23197051c8b492f64850c63230b9734a351a1f254db9",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/enemy_hit.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/enemy_shot.ogg",
+     "bytes": 12481,
+     "sha256": "886ce68c72f7d5391e3f9adb5f3b38c08cbbf9f79026afb1a3a1d7315d17dc11",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/enemy_shot.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/engine_loop.ogg",
+     "bytes": 57373,
+     "sha256": "e19dea342101728eeca3c801c82db9ac8eaf386734cc30b6a3e635a9fbe3e308",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/engine_loop.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/explode_large.ogg",
+     "bytes": 37328,
+     "sha256": "06103feb96b7d9bb7504bf86f00460fcea55981b5e870aebe4851560d77cb548",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/explode_large.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/explode_small.ogg",
+     "bytes": 17975,
+     "sha256": "0d69a9e3444c73a381fa200bfb2f5604e48c0b000ccb530b95423f2c9c643229",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/explode_small.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/level_up.ogg",
+     "bytes": 30112,
+     "sha256": "cf10c204784942207ccaa12a7ee0a96b29bdf9cd05e22630c1b3b892da08b917",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/level_up.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/mission_complete.ogg",
+     "bytes": 54165,
+     "sha256": "2e0a5fa980af866644d883834a7f595f886ed47f7ae99efb85e0145ee36f91d8",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/mission_complete.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/mission_failed.ogg",
+     "bytes": 42880,
+     "sha256": "8064ba421317001bc2e2aac9703a7ff448a546ded85ef232b1abd261cff743f8",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/mission_failed.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/phase_relay.ogg",
+     "bytes": 14918,
+     "sha256": "3370885832f71d9e8ce7a375d792dd8c230fe1c0d158cba0802b5724eaae0000",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/phase_relay.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/pickup_light.ogg",
+     "bytes": 12578,
+     "sha256": "b4f02c6716e9f6063f7b5245a14b7856b26ea69389259f9c1b6206bb1e05a390",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/pickup_light.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/pickup_power.ogg",
+     "bytes": 22325,
+     "sha256": "43db1db51aee2a8909fd104058a28aa9ea69e840113a59eb03609f100f7be8c7",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/pickup_power.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/player_hit.ogg",
+     "bytes": 17355,
+     "sha256": "7ab16d7c45aa79a21dcce52bd87f9e9c94652b1b2974a09f763ae4c486378e5c",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/player_hit.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/shield_break.ogg",
+     "bytes": 17977,
+     "sha256": "4f6aa49be15295c2bee784a49a40f96110b495284a12ab631330afd98e495221",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/shield_break.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/shield_hit.ogg",
+     "bytes": 12123,
+     "sha256": "9f45301e1221ae6c2ddf3bbf4c52619916bd0f5b3d0285c1564dcebf4f28b44e",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/shield_hit.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/solar_fire.ogg",
+     "bytes": 10495,
+     "sha256": "5a17739fcaaf67727abaca75559972e16a874ad4a30d0c90424ba1ab6602a095",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/solar_fire.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/solar_impact.ogg",
+     "bytes": 17232,
+     "sha256": "63e9936361b8c37ca1d65caa92ee903db6589609439b8218ddb91af456a946c8",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/solar_impact.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/solar_seeker.ogg",
+     "bytes": 14129,
+     "sha256": "3e87de716de0bb062b9e8d520155169b7f65dad41312b4a3f58cbbce6f2d1f06",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/solar_seeker.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/super_arc.ogg",
+     "bytes": 25499,
+     "sha256": "93de24327d00c4b446ea333d49217e96aa2d31c1caea52e9edc6ce1d0920bb85",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/super_arc.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/super_ready.ogg",
+     "bytes": 17206,
+     "sha256": "151b386952b002207def72ca0a793de35ebece154bd0e7f6e7632fa11357c053",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/super_ready.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/super_retract.ogg",
+     "bytes": 15876,
+     "sha256": "4b93e3c4d6cf65ec7c90640f47ccefb1508efc99fede4a315b5ef2edb9d21b0a",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/super_retract.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/super_solar.ogg",
+     "bytes": 32516,
+     "sha256": "62d76f6d87d8171cc3f374f6df4b261553abd618ea1ed2ea49541c8339ab2ef0",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/super_solar.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/super_void.ogg",
+     "bytes": 32259,
+     "sha256": "50809a3d747a4ed8aa098e29c206686c69bb97e25dc5662651b293263bc9e0ca",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/super_void.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/ui_back.ogg",
+     "bytes": 11588,
+     "sha256": "bf0149de2b64ab164afe0313bfb5b4ae94adbcca58858b8a9efe29bec02b9284",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/ui_back.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/ui_confirm.ogg",
+     "bytes": 12072,
+     "sha256": "397f66a5c4ccabe0adece88c089a35f9dbd6402f9ba21c52e2d74fdd36e8e983",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/ui_confirm.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/ui_error.ogg",
+     "bytes": 12359,
+     "sha256": "259d231b7418abace8e1cf2f6b51138678c9290ff082930a7ae5748b2eb38c3d",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/ui_error.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/ui_install.ogg",
+     "bytes": 29210,
+     "sha256": "52b074b9af89ec1c2efb526f661f476963b5f0ca4cddd0fecfa2fb4253da18b8",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/ui_install.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/ui_tap.ogg",
+     "bytes": 11891,
+     "sha256": "4d3b6a4729b676773dbb9326b868343bcfc437e5d9645a9fcf68760298d30bff",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/ui_tap.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/void_fire.ogg",
+     "bytes": 11082,
+     "sha256": "a4fd61cdb2d0c222e4a002c5ad1973f1a6295014580d25c47533d92858993f92",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/void_fire.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/void_impact.ogg",
+     "bytes": 13087,
+     "sha256": "d896750be8afc9411d4ce4769c204ae0a47f8fcf508d698fa9416206801f806e",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/void_impact.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/void_torpedo.ogg",
+     "bytes": 18987,
+     "sha256": "a687874013fecce05b7659e66f06f807f155d06fee49394f5b98934977b5cb9a",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/void_torpedo.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/warning_boss.ogg",
+     "bytes": 40475,
+     "sha256": "05816528c5cd1ac7e0adcd479d03952477291678315c2c6855cf3a6c85521c93",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/warning_boss.ogg",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/wave_advance.ogg",
+     "bytes": 12417,
+     "sha256": "069005b1a012f862e0a53b5ccac21dd1f3d7f8bf9d235deb09b3b2e07f5b2750",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio/sfx/wave_advance.ogg",
+     "where": "public review page"
+    }
+   ]
+  },
+  {
+   "id": "audio_wav",
+   "title": "Audio files (WAV sound effects)",
+   "category": "audio",
+   "visibility": "public",
+   "glob": "games/nova-strike/assets/audio/**/*.wav",
+   "evidence": [
+    {
+     "type": "builder",
+     "detail": "The WAV files present in the build folder (unchanged since 0c2fc79)."
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/boss.wav (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/explode.wav (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/hurt.wav (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/pickup.wav (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/power.wav (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/shot_arcanist.wav (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/shot_guardian.wav (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/shot_striker.wav (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/super.wav (public review page)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sfx/victory.wav (public review page)",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "sfx/boss.wav",
+     "bytes": 194084,
+     "sha256": "09d80daaa07f38224c0bc0198f53cee6d6982d56d5312598d4e6d1be74eaf0a7",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio_wav/sfx/boss.wav",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/explode.wav",
+     "bytes": 39734,
+     "sha256": "de36ca73df6bca0d904fdc1cedbdb48eeb41468f8da648e084e559ee2e465b79",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio_wav/sfx/explode.wav",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/hurt.wav",
+     "bytes": 26504,
+     "sha256": "5413464f75c187356c1ab7436a914eda72e34bdde0a15d324b22a5cb31e6fa58",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio_wav/sfx/hurt.wav",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/pickup.wav",
+     "bytes": 6218,
+     "sha256": "91f08eaeb178948b9d4a263fc8e7248854e720a25fe47809b97571ea66e79e08",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio_wav/sfx/pickup.wav",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/power.wav",
+     "bytes": 35324,
+     "sha256": "cc40fb44aaeb43e45b322693bed08e97bf3a6cc168bd3c6e525916338b4a70f9",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio_wav/sfx/power.wav",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/shot_arcanist.wav",
+     "bytes": 10628,
+     "sha256": "505de240457b405659c41f215eb7f85a880e68160b5b8e1ad05fcc1c6ef93bf2",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio_wav/sfx/shot_arcanist.wav",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/shot_guardian.wav",
+     "bytes": 22094,
+     "sha256": "b40ca7444fa83ab3908f4162204c08708a4a998c01ddb16bf1c843b535d1db1e",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio_wav/sfx/shot_guardian.wav",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/shot_striker.wav",
+     "bytes": 7982,
+     "sha256": "ce20bdb58c10a1afefbc61b45b8533b0837d0b57a3b01423dd12763ad85bb7f3",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio_wav/sfx/shot_striker.wav",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/super.wav",
+     "bytes": 88244,
+     "sha256": "5e0679af1126240f974f749c40380e019548e662fb202713128b341eb27ce8f6",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio_wav/sfx/super.wav",
+     "where": "public review page"
+    },
+    {
+     "name": "sfx/victory.wav",
+     "bytes": 105884,
+     "sha256": "aaf9e46c37bba2e8960183c5662c51762af67640eaba36f234cb08f8ecb47347",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio_wav/sfx/victory.wav",
+     "where": "public review page"
+    }
+   ]
+  },
+  {
+   "id": "audio_manifest",
+   "title": "Audio manifest: source, tool, prompt and processing for every file",
+   "category": "audio_manifest",
+   "visibility": "public",
+   "path": "games/nova-strike/art/sources_audio.json",
+   "evidence": [
+    {
+     "type": "builder",
+     "detail": "Provenance written when each file was generated (ElevenLabs SFX v2, Stable Audio 3.0; no ElevenLabs Music)."
+    },
+    {
+     "type": "automated",
+     "check": "uploaded sources_audio.json (public review page)",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "sources_audio.json",
+     "bytes": 27121,
+     "sha256": "b5480e66680b28b8d1fc5e7dcc98a605d9e59f2a66dc83f9b7aac348f10e8f94",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/audio_manifest/sources_audio.json",
+     "where": "public review page"
+    }
+   ]
+  },
+  {
+   "id": "licences",
+   "title": "Asset licence log",
+   "category": "docs",
+   "visibility": "public",
+   "path": "games/nova-strike/docs/ASSET_LICENSES.md",
+   "evidence": [
+    {
+     "type": "builder",
+     "detail": "Studio licence and provenance log for the release assets."
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ASSET_LICENSES.md (public review page)",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "ASSET_LICENSES.md",
+     "bytes": 5822,
+     "sha256": "f18dfcfcdcab868a9f4767d1e212980273b42ad6ef91ab70423d397806edc883",
+     "url": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/licences/ASSET_LICENSES.md",
+     "where": "public review page"
+    }
+   ]
+  },
+  {
+   "id": "audio_masters",
+   "title": "Audio masters",
+   "category": "audio_masters",
+   "visibility": "private",
+   "evidence": [
+    {
+     "type": "pending",
+     "detail": "Unavailable: the audio tools wrote the final processed files directly; no separate masters were kept. The shipped files are in 'All audio files'."
+    },
+    {
+     "type": "pending",
+     "detail": "no files produced for this item"
+    }
+   ],
+   "files": []
+  },
+  {
+   "id": "masters_3d",
+   "title": "3D masters: generated models the aircraft rigs are built from",
+   "category": "editable_assets",
+   "visibility": "private",
+   "vault": [
+    "striker_v11_rodin25_high.glb",
+    "guardian_v1_rodin25_high.glb",
+    "arcanist_v1_rodin25_high.glb",
+    "lancepod_v11_rodin25.glb",
+    "hw_s_seeker_rodin25.glb",
+    "hw_g_torp_rodin25.glb",
+    "hw_g_pylon_rodin25.glb",
+    "hw_a_drone_rodin25.glb",
+    "hw_a_coil_rodin25.glb"
+   ],
+   "evidence": [
+    {
+     "type": "builder",
+     "detail": "Raw Rodin Gen-2.5 High outputs from the private asset vault; the rigs are rebuilt from these by pipeline/ scripts (in the source ZIP). Provenance: art/sources_3d.json."
+    },
+    {
+     "type": "automated",
+     "check": "uploaded striker_v11_rodin25_high.glb (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded guardian_v1_rodin25_high.glb (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded arcanist_v1_rodin25_high.glb (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded lancepod_v11_rodin25.glb (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded hw_s_seeker_rodin25.glb (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded hw_g_torp_rodin25.glb (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded hw_g_pylon_rodin25.glb (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded hw_a_drone_rodin25.glb (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded hw_a_coil_rodin25.glb (private GitHub release (owner sign-in))",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "striker_v11_rodin25_high.glb",
+     "bytes": 17228680,
+     "sha256": "378f324fd8a2b2c7f919ad884d3e6f58f0745efe4bab8b348d9dd70e07f34001",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_3d__striker_v11_rodin25_high.glb",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "guardian_v1_rodin25_high.glb",
+     "bytes": 19567208,
+     "sha256": "97d33d7757dad8cf13d66c3f0bfa6f5af67fc9d0b011b9cd702cc70911b00b9b",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_3d__guardian_v1_rodin25_high.glb",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "arcanist_v1_rodin25_high.glb",
+     "bytes": 19513264,
+     "sha256": "11a15b294b6ec8d2f731b97ab8acd1c43db51f425a0ef237ab7173f7f979c836",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_3d__arcanist_v1_rodin25_high.glb",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "lancepod_v11_rodin25.glb",
+     "bytes": 2055336,
+     "sha256": "454a5d54f501a40d9a24dfa8409a2e19081e56c0171f6307da053b0f56f735f8",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_3d__lancepod_v11_rodin25.glb",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "hw_s_seeker_rodin25.glb",
+     "bytes": 2241368,
+     "sha256": "8deb7b88b82e41e4c00e709b7185ef7f77a91a54c295f8f4fda346314c7f10ec",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_3d__hw_s_seeker_rodin25.glb",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "hw_g_torp_rodin25.glb",
+     "bytes": 2515360,
+     "sha256": "41933b81bfbe3e6576ed7efda6d272c5b3e101d8f792be4073cf597a596f1908",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_3d__hw_g_torp_rodin25.glb",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "hw_g_pylon_rodin25.glb",
+     "bytes": 3972516,
+     "sha256": "bd58947bb76c199ce3da3fd5ff86b2d24f5f9b829fbdac34b6d8ab5f20c5c231",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_3d__hw_g_pylon_rodin25.glb",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "hw_a_drone_rodin25.glb",
+     "bytes": 3272812,
+     "sha256": "dc32ab4c80e573567e19cfd9df71dc4ccdac34cc4f4d393509d9ea30804a20da",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_3d__hw_a_drone_rodin25.glb",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "hw_a_coil_rodin25.glb",
+     "bytes": 3207564,
+     "sha256": "69f5ec371a61d71430afccd0beb4f476522b05b8c41c7d4cc19ac79bfc0cf82f",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_3d__hw_a_coil_rodin25.glb",
+     "where": "private GitHub release (owner sign-in)"
+    }
+   ]
+  },
+  {
+   "id": "masters_canon",
+   "title": "Canon art (approved views the 3D models were generated from)",
+   "category": "editable_assets",
+   "visibility": "private",
+   "glob": "games/nova-strike/art/canon/**/*",
+   "evidence": [
+    {
+     "type": "builder",
+     "detail": "Full-resolution canon views and sheets."
+    },
+    {
+     "type": "automated",
+     "check": "uploaded arcanist/arcanist_q34.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded arcanist/arcanist_q34_right.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded arcanist/arcanist_top_base.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded arcanist/canon.md (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded arcanist/components/a_coil.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded arcanist/components/a_drone.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded guardian/canon.md (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded guardian/components/g_pylon.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded guardian/components/g_torp.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded guardian/guardian_q34.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded guardian/guardian_side.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded guardian/guardian_top_base.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded striker/STRIKER_CANONICAL_SHEET_v1_1.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded striker/canon.md (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded striker/striker_q34.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded striker/striker_side.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded striker/striker_top_base.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded striker/striker_top_lances.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded striker/striker_top_super.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "arcanist/arcanist_q34.png",
+     "bytes": 3770211,
+     "sha256": "e3199abc0b465a5f9556227fd3e81d3139384ae1f4ef5aab23c06184150e7d58",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_canon__arcanist__arcanist_q34.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "arcanist/arcanist_q34_right.png",
+     "bytes": 4068113,
+     "sha256": "26789498814e19510c827b891bda2789487ccad5f09552aa47ec8a9d692e5933",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_canon__arcanist__arcanist_q34_right.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "arcanist/arcanist_top_base.png",
+     "bytes": 3245969,
+     "sha256": "5ac83442022a96407e74e600146ec0e84d4fb3c4b79fdaf72ad92ad921216555",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_canon__arcanist__arcanist_top_base.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "arcanist/canon.md",
+     "bytes": 2094,
+     "sha256": "1b93984a8dd4b66d3e561573692acb4b2949621778d1bd30585de20a826f6afc",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_canon__arcanist__canon.md",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "arcanist/components/a_coil.png",
+     "bytes": 3049976,
+     "sha256": "809d8d59d83f6981cb0a7dc129c2e593a9c546b71036b1b1f24f7e211f7e8aa1",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_canon__arcanist__components__a_coil.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "arcanist/components/a_drone.png",
+     "bytes": 2976077,
+     "sha256": "bcd01beb3245165d196465f5d90f07c7995b14dd1648479a772775af4e0512fe",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_canon__arcanist__components__a_drone.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "guardian/canon.md",
+     "bytes": 1927,
+     "sha256": "7cb648c1038a7a8a6af42f552cb2e44fc85726621b9756599ba7d50d7d35ed5c",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_canon__guardian__canon.md",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "guardian/components/g_pylon.png",
+     "bytes": 3550106,
+     "sha256": "d4542a128ea6da32db4927a68750fa6c4bae9374e83656e95cc567f46930d954",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_canon__guardian__components__g_pylon.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "guardian/components/g_torp.png",
+     "bytes": 2815918,
+     "sha256": "dda6086ba13b0c29eaba04ebe615b74cb2f01da6d17feef120eba8d429c34055",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_canon__guardian__components__g_torp.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "guardian/guardian_q34.png",
+     "bytes": 3452878,
+     "sha256": "73a74cb94ef96263c29f27553ab111f9934b3fb08ed8f14eec382c8a417598b5",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_canon__guardian__guardian_q34.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "guardian/guardian_side.png",
+     "bytes": 3239975,
+     "sha256": "c58defd6f3d43355a73ecf448d42d681e83779eb530dddad57de03be5ccf8f11",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_canon__guardian__guardian_side.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "guardian/guardian_top_base.png",
+     "bytes": 3463760,
+     "sha256": "cd938a60e36349766078081984e4f48515ffa58b6bf7e5233a93e21aa3c23b9f",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_canon__guardian__guardian_top_base.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "striker/STRIKER_CANONICAL_SHEET_v1_1.png",
+     "bytes": 4956425,
+     "sha256": "17b7b5f0a27de264e091bc82168d2339005b04fe560c010b8fc57edd3ed8ac27",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_canon__striker__STRIKER_CANONICAL_SHEET_v1_1.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "striker/canon.md",
+     "bytes": 2563,
+     "sha256": "0ec4e1c7be4348f63bf167465f94f2bd3bded7f91bb36ca8ab8848ab8e007508",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_canon__striker__canon.md",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "striker/striker_q34.png",
+     "bytes": 4192258,
+     "sha256": "2fb30ebc0e81f1b1fc7eaa1ec4f09d8e543fe9fbf0a52d028dd5c2bfa0e267fd",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_canon__striker__striker_q34.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "striker/striker_side.png",
+     "bytes": 3502552,
+     "sha256": "e3421fb3a2d6b054c4877bd6c450fa487598e38e2ecb9a97ae75bc29e854f7f9",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_canon__striker__striker_side.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "striker/striker_top_base.png",
+     "bytes": 4311203,
+     "sha256": "6101d679a277a88de7c2f156d466a83378c1c39e8875bb09f3c041592466b08d",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_canon__striker__striker_top_base.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "striker/striker_top_lances.png",
+     "bytes": 4375281,
+     "sha256": "f9aa95148f747fb5c2c04bcf785b3a5d82c6e4561867fbc7d3fbd5d740654c40",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_canon__striker__striker_top_lances.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "striker/striker_top_super.png",
+     "bytes": 4745243,
+     "sha256": "426ae18314032b92b9b2a3967d5756d9542f314a521174410d5db2d1286a4612",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_canon__striker__striker_top_super.png",
+     "where": "private GitHub release (owner sign-in)"
+    }
+   ]
+  },
+  {
+   "id": "masters_production",
+   "title": "2D production masters (environments, enemies, pilots)",
+   "category": "editable_assets",
+   "visibility": "private",
+   "glob": "games/nova-strike/art/production/**/*",
+   "evidence": [
+    {
+     "type": "builder",
+     "detail": "Full-resolution production masters with their manifests."
+    },
+    {
+     "type": "automated",
+     "check": "uploaded lantern_road/far_plate_v1.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded moth/moth_top_v1.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded striker/design/STRIKER_CANON.md (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded striker/design/STRIKER_CANONICAL_SHEET_v1.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded striker/design/pod_q34.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded striker/design/pod_top.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded striker/design/seeker_pod_q34.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded striker/design/striker_base_q34_front.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded striker/design/striker_base_side.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded striker/design/striker_base_top.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded striker/design/striker_base_top_v11.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded striker/design/striker_base_top_v11b.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded striker/design/striker_canon_ortho_v1.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded striker/design/striker_canon_ortho_v2.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded striker/design/striker_q34_v11.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded striker/design/striker_side_v11.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded striker/design/striker_super_top.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded striker/design/striker_super_top_ref.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded striker/design/striker_super_top_v11.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded striker/design/striker_winglances_top.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded striker/design/striker_winglances_top_v11.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded striker/unit_build.json (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded veyron/veyron_portrait_v1.png (private GitHub release (owner sign-in))",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "lantern_road/far_plate_v1.png",
+     "bytes": 4618740,
+     "sha256": "ba68f76997c42b3dea096ab609502d987f2b60f872a0a1fe8258f7dc8f2aa904",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_production__lantern_road__far_plate_v1.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "moth/moth_top_v1.png",
+     "bytes": 4330587,
+     "sha256": "dc95d9ee0e0cb65d5d7eafb5604f147e275788476a0d391a6b53bf04bb05e6e7",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_production__moth__moth_top_v1.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "striker/design/STRIKER_CANON.md",
+     "bytes": 1804,
+     "sha256": "655fc9cb2255cd5859abc79463d7c0cfd3db2c144c557f0c1369d662b0c064f5",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_production__striker__design__STRIKER_CANON.md",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "striker/design/STRIKER_CANONICAL_SHEET_v1.png",
+     "bytes": 4453449,
+     "sha256": "65bc3ee65b84c1e28348055364fa270f2593bf30ce887944947baca430a3d00a",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_production__striker__design__STRIKER_CANONICAL_SHEET_v1.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "striker/design/pod_q34.png",
+     "bytes": 3678491,
+     "sha256": "bc674d42524182ab0f0753119e932fdc48ab0df60bb49790af4289bde1a06b30",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_production__striker__design__pod_q34.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "striker/design/pod_top.png",
+     "bytes": 3590954,
+     "sha256": "118f6a34fa12e9a0b0fdff6bf3d7e31dfe064a2347740f6fd13f75bf8038fb8a",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_production__striker__design__pod_top.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "striker/design/seeker_pod_q34.png",
+     "bytes": 3956913,
+     "sha256": "f5b642629e4b9948135a4cfdf549f2c19600cfe9536d3d3567fcecad0e1e8997",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_production__striker__design__seeker_pod_q34.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "striker/design/striker_base_q34_front.png",
+     "bytes": 4626582,
+     "sha256": "15c0f2b803017dfcbf6a27c875d548b0bf95daf0ae45337fbebb49ac4206c219",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_production__striker__design__striker_base_q34_front.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "striker/design/striker_base_side.png",
+     "bytes": 485590,
+     "sha256": "35e0cd9b464268d36487c183d8569db873bd0d0290a4af7feab56f3817e830b1",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_production__striker__design__striker_base_side.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "striker/design/striker_base_top.png",
+     "bytes": 753303,
+     "sha256": "95a929257b3c4925c50888f8b09a77b5fe1fad69d6a493d24b8fd834806bbe03",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_production__striker__design__striker_base_top.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "striker/design/striker_base_top_v11.png",
+     "bytes": 4061681,
+     "sha256": "7bf55874a840f4e66997cf2881f3ee03216616acfa4bddd35678396d762154ab",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_production__striker__design__striker_base_top_v11.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "striker/design/striker_base_top_v11b.png",
+     "bytes": 4280065,
+     "sha256": "770532e360b1d33300d1b821fe9eeee6059115a4c47f9ec815ddf3dcca1a7f24",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_production__striker__design__striker_base_top_v11b.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "striker/design/striker_canon_ortho_v1.png",
+     "bytes": 3182827,
+     "sha256": "8b0a7bf7bc55b2efabfea52046ba6ba466fdae8cbeb07737b46bab78925cd951",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_production__striker__design__striker_canon_ortho_v1.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "striker/design/striker_canon_ortho_v2.png",
+     "bytes": 4185256,
+     "sha256": "4cdba3819d5c767ed121f8e43e78f04cf95569487a161c9917fc7b8703101127",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_production__striker__design__striker_canon_ortho_v2.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "striker/design/striker_q34_v11.png",
+     "bytes": 4192258,
+     "sha256": "2fb30ebc0e81f1b1fc7eaa1ec4f09d8e543fe9fbf0a52d028dd5c2bfa0e267fd",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_production__striker__design__striker_q34_v11.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "striker/design/striker_side_v11.png",
+     "bytes": 3502552,
+     "sha256": "e3421fb3a2d6b054c4877bd6c450fa487598e38e2ecb9a97ae75bc29e854f7f9",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_production__striker__design__striker_side_v11.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "striker/design/striker_super_top.png",
+     "bytes": 4483965,
+     "sha256": "b57d5de9a34b40fe1195531eb13df2e0a072d49332bafb3ce8d0434156bd3608",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_production__striker__design__striker_super_top.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "striker/design/striker_super_top_ref.png",
+     "bytes": 1300886,
+     "sha256": "b1231db4460ef5a829d11a0c46cb39886c91cf2f22fb90b96b13a445febe44bc",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_production__striker__design__striker_super_top_ref.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "striker/design/striker_super_top_v11.png",
+     "bytes": 4709938,
+     "sha256": "cad5293ceeaea26b801be98b59860377e6634e432bc4844127ff2b94a9d6ae55",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_production__striker__design__striker_super_top_v11.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "striker/design/striker_winglances_top.png",
+     "bytes": 4221276,
+     "sha256": "307f86f8a4f39b0eef710194b069657a97ba27523595fd7b38535ac6ef8c53e5",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_production__striker__design__striker_winglances_top.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "striker/design/striker_winglances_top_v11.png",
+     "bytes": 4334219,
+     "sha256": "78f6989d5b110c6aa4fb802beaa889807da95c46424e6128bfdd5cff21bb394a",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_production__striker__design__striker_winglances_top_v11.png",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "striker/unit_build.json",
+     "bytes": 1470,
+     "sha256": "918f7600e8d99dfea4d2bce2b156d96182c6d52a6bdaec80ad6ecdae6ec64df7",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_production__striker__unit_build.json",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "veyron/veyron_portrait_v1.png",
+     "bytes": 6014134,
+     "sha256": "5529f42f5cb67948062423c57d546c33f86c8f890bfe7781977e5c5d08b603ca",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/masters_production__veyron__veyron_portrait_v1.png",
+     "where": "private GitHub release (owner sign-in)"
+    }
+   ]
+  },
+  {
+   "id": "design_docs",
+   "title": "Design records: requirement matrix, decisions, pitch, research, balance notes",
+   "category": "docs",
+   "visibility": "private",
+   "glob": "games/nova-strike/docs/*.md",
+   "evidence": [
+    {
+     "type": "builder",
+     "detail": "Internal design documents at the time of packaging (owner-only: they quote the brief)."
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ARCHITECTURE.md (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded ASSET_LICENSES.md (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded BALANCE.md (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded BRIEF_REVIEW.md (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded DECISIONS.md (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded FOUNDATION_PROOF_VP0.md (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded FOUNDATION_REQUESTS.md (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded OLD_BUILD_LESSONS.md (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded PITCH.md (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded PITCH_CHANGES.md (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded PITCH_v1.md (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded REQUIREMENTS.md (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded RESEARCH.md (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded RESTART_R0_AUDIT_PLAN.md (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded SOUL_ALIGNMENT.md (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded TEAM_NOTES.md (private GitHub release (owner sign-in))",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded UPGRADE_LADDER.md (private GitHub release (owner sign-in))",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "ARCHITECTURE.md",
+     "bytes": 4543,
+     "sha256": "3f15409e56d4f93c20b43100411c6900768ed3cc73244901ab8c427d641fd9e8",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/design_docs__ARCHITECTURE.md",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "ASSET_LICENSES.md",
+     "bytes": 5822,
+     "sha256": "f18dfcfcdcab868a9f4767d1e212980273b42ad6ef91ab70423d397806edc883",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/design_docs__ASSET_LICENSES.md",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "BALANCE.md",
+     "bytes": 27339,
+     "sha256": "cc712f5664fea0ad52ae070226c8acc63c7a079497b09f694840d9db50a2ae06",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/design_docs__BALANCE.md",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "BRIEF_REVIEW.md",
+     "bytes": 5262,
+     "sha256": "812db039d6f8f192338696ccf67299c25bbf93119d1fbcd7ee34825cfaf6e69d",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/design_docs__BRIEF_REVIEW.md",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "DECISIONS.md",
+     "bytes": 9224,
+     "sha256": "0cdd4dfe099b07e0bc713b244cedfec9172138e0c294f59b5e5b41fd7c6720f0",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/design_docs__DECISIONS.md",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "FOUNDATION_PROOF_VP0.md",
+     "bytes": 7870,
+     "sha256": "05cacd6f9ea7fdac06ceb27626727fe4f4576e3d2f37c3e6f2c1a1ce503f994b",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/design_docs__FOUNDATION_PROOF_VP0.md",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "FOUNDATION_REQUESTS.md",
+     "bytes": 8012,
+     "sha256": "efb122a90cc858b5cd670e7b842adba4fff0e9da82072c99389389699561656a",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/design_docs__FOUNDATION_REQUESTS.md",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "OLD_BUILD_LESSONS.md",
+     "bytes": 1653,
+     "sha256": "aa74d4308ebfe86c15717d6bafb92bf657eecf515166b07ae8ef29c46a676d4f",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/design_docs__OLD_BUILD_LESSONS.md",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "PITCH.md",
+     "bytes": 6257,
+     "sha256": "172a1f9a4ed26838cae336b7a57d914af511eb836a5476374c1794c76b42f1ba",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/design_docs__PITCH.md",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "PITCH_CHANGES.md",
+     "bytes": 9229,
+     "sha256": "c4f8ca40e375930e0d213ced43141a54beeb3c62b53448bf296a212e81a5608f",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/design_docs__PITCH_CHANGES.md",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "PITCH_v1.md",
+     "bytes": 4631,
+     "sha256": "3035ea611b7115794c7edf4f4c3d58ee66365e7d335844fcdf431b1c7eb09760",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/design_docs__PITCH_v1.md",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "REQUIREMENTS.md",
+     "bytes": 10416,
+     "sha256": "44a3eeb9b1aaf6a2caf6037c26e07f201d395fbad9f04ee46ef8b7529e28a9a2",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/design_docs__REQUIREMENTS.md",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "RESEARCH.md",
+     "bytes": 5135,
+     "sha256": "86dc8d5cdfb2ef514019c5d54662dbf65c036f28d5c1483877dfb074bfbdf2f2",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/design_docs__RESEARCH.md",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "RESTART_R0_AUDIT_PLAN.md",
+     "bytes": 8396,
+     "sha256": "b80b549c01f891f02b542c7175cf043459d47b874eb39e359291291a25a91e73",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/design_docs__RESTART_R0_AUDIT_PLAN.md",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "SOUL_ALIGNMENT.md",
+     "bytes": 3757,
+     "sha256": "90d21a7bb2a9054258437ed7a79f869e2619f444a32645f2fcc0d72fcaf9421e",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/design_docs__SOUL_ALIGNMENT.md",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "TEAM_NOTES.md",
+     "bytes": 2180,
+     "sha256": "b1d7c9a464ee94a9c0618c870afe7a5e4b72f4644e837714cd20435480421552",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/design_docs__TEAM_NOTES.md",
+     "where": "private GitHub release (owner sign-in)"
+    },
+    {
+     "name": "UPGRADE_LADDER.md",
+     "bytes": 2814,
+     "sha256": "64e866c1b3500fce04da04da0ffe1cbeaa58a1cffcc38debe4a61b50c596834d",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/design_docs__UPGRADE_LADDER.md",
+     "where": "private GitHub release (owner sign-in)"
+    }
+   ]
+  },
+  {
+   "id": "source",
+   "title": "Source at the labelled commit (games/nova-strike)",
+   "category": "source",
+   "visibility": "private",
+   "source_zip": "games/nova-strike",
+   "evidence": [
+    {
+     "type": "builder",
+     "detail": "The game folder exactly as committed at 0c2fc79."
+    },
+    {
+     "type": "automated",
+     "check": "source archived by git at commit 0c2fc79 (games/nova-strike): clean export, no local changes",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "zip opens and every entry passes CRC (nova-strike-rb1-source-0c2fc79.zip)",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded nova-strike-rb1-source-0c2fc79.zip (private GitHub release (owner sign-in))",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "nova-strike-rb1-source-0c2fc79.zip",
+     "bytes": 596848015,
+     "sha256": "21e332806e5baa748f61d8b01f6f5983b9e80f98f34a27794090e353250ce7c5",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/source__nova-strike-rb1-source-0c2fc79.zip",
+     "where": "private GitHub release (owner sign-in)"
+    }
+   ]
+  },
+  {
+   "id": "complete",
+   "title": "Complete package (1 self-contained ZIP part(s), each opens on its own)",
+   "category": "complete",
+   "visibility": "private",
+   "evidence": [
+    {
+     "type": "automated",
+     "check": "nova-strike-rb1-complete-part01-of-01.zip opens and every entry passes CRC",
+     "result": "pass"
+    },
+    {
+     "type": "automated",
+     "check": "uploaded nova-strike-rb1-complete-part01-of-01.zip (private GitHub release (owner sign-in))",
+     "result": "pass"
+    }
+   ],
+   "files": [
+    {
+     "name": "nova-strike-rb1-complete-part01-of-01.zip",
+     "bytes": 1739170561,
+     "sha256": "e455105bfd261818e58225381b6cd03128c664746998770a68d0f9cacfb58852",
+     "url": "https://github.com/kik-studio/studio-hq/releases/download/review/nova-strike/rb1/complete__nova-strike-rb1-complete-part01-of-01.zip",
+     "where": "private GitHub release (owner sign-in)"
+    }
+   ]
+  }
+ ],
+ "published_utc": "2026-09-25 14:41 UTC",
+ "links": {
+  "public_page": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/package/",
+  "public_release": "https://github.com/kik-studio/kik-builds/releases/tag/review-nova-strike-rb1",
+  "owner_release": "https://github.com/kik-studio/studio-hq/releases/tag/review/nova-strike/rb1",
+  "web": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/web/index.html",
+  "apk": "https://kik-studio.github.io/kik-builds/reviews/nova-strike/rb1/nova-strike.apk"
+ }
+}

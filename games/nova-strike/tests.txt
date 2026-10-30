@@ -1,0 +1,555 @@
+  PASS config: game.json loads
+  PASS config: version present
+  PASS save: value survives reload
+  PASS save: setting survives reload
+  PASS save: atomic write leaves no temp file
+  PASS save: player id generated
+  PASS loc: English text
+  PASS loc: Arabic text
+  PASS loc: Arabic is right-to-left
+  PASS loc: controls flip to RTL in Arabic
+  PASS loc: every string has English and Arabic
+  PASS audio: Music bus
+  PASS audio: SFX bus
+  PASS audio: sfx asset present
+  PASS audio: Master stays bus 0
+  PASS audio: Music and SFX send to Master
+  PASS audio: no AudioServer.add_bus() (silent in browsers)
+  PASS analytics: HMAC signature matches reference
+  PASS analytics: Android os_version keeps only the version number
+  PASS analytics: iOS version kept, empty version falls back
+  PASS analytics: web/desktop send webgl 1.0
+  PASS analytics: device <= 64 chars, os_version starts with the platform (webgl 1.0 / webgl)
+  PASS ui: safe margins at least minimum
+  PASS theme: design tokens file present
+  PASS theme: tokens loaded
+  INFO theme placeholder = false (a game must replace it before a milestone)
+  PASS playfield: same logical area at 1080x1920
+  PASS playfield: same logical area at 1080x2340
+  PASS playfield: same logical area at 1080x2400
+  PASS playfield: same logical area at 1440x1920
+  PASS playfield: same logical area at 3413x1920
+  PASS perf: frame statistics correct
+  PASS perf: timeline marks only the slow second (1:90:1)
+  PASS quality: Galaxy A16 (8-core Mali-G68) -> medium (v0.11 C4)
+  PASS quality: a 4-core Mali-G68 -> low (v0.11 C4)
+  PASS quality: Galaxy A05s (Adreno 610) -> low
+  PASS quality: moto g 2025 (Mali-G57) -> low
+  PASS quality: Pixel 10 Pro XL -> high
+  PASS quality: flagship Adreno -> high
+  PASS quality: upper mid-range Adreno -> medium
+  PASS quality: 4 cores steps down
+  PASS quality: desktop -> high
+  PASS quality: web on a phone -> medium
+  PASS quality: v0.3 D1 phones render the ship layer native on high, capped on medium/low
+  PASS hd pack: hd/ paths from source, light fallback
+  PASS hd pack: every app export preset excludes hd/*
+  PASS pack route: hd_pack.json is live with the 3 N1/N2 globs
+  PASS pack route: the app preset excludes assets/env/*_v10/*
+  PASS pack route: the app preset excludes assets/fx/expl_*
+  PASS pack route: the app preset excludes assets/craft_v09/*
+  PASS pack route: the app preset excludes assets/env/*_v10/*
+  PASS pack route: the app preset excludes assets/fx/expl_*
+  PASS pack route: the app preset excludes assets/craft_v09/*
+  PASS pack route: Web and Android presets found
+  PASS pack route: N1/N2 imports stay lossless
+  PASS hd pack: hd/ exists, so config/game.json opts in to the pack upload (hd_upload true)
+  PASS quality: low preset
+  PASS quality: low field never wider than 756 px
+  PASS quality: 720p screens stay native on low
+  PASS quality: high preset native
+  PASS quality: force('') returns to automatic
+  PASS post: static bloom glows only around bright pixels (peak 0.32)
+  PASS screen boot: loads
+  PASS screen boot: builds content
+  PASS screen boot: no empty labels (1 labels)
+  PASS screen boot: all buttons meet touch size
+  PASS screen menu: loads
+  PASS screen menu: builds content
+  PASS screen menu: no empty labels (5 labels)
+  PASS screen menu: all buttons meet touch size
+  PASS screen settings: loads
+  PASS screen settings: builds content
+  PASS screen settings: no empty labels (36 labels)
+  PASS screen settings: all buttons meet touch size
+  PASS screen game: loads
+  PASS screen game: builds content
+  PASS screen game: no empty labels (2 labels)
+  PASS screen game: all buttons meet touch size
+  PASS release: no developer tools on shipping screens
+  PASS dev: developer tools reachable in dev builds
+  PASS release: settings has no developer tools
+  PASS release: game has no developer tools
+  PASS cloud: unconfigured shows not available
+  PASS hud level: English P3 (v0.9: the in-mission ladder is POWER; Level names the craft design)
+  PASS hud level: Arabic label has no Latin letters (ط⁦3⁩)
+  PASS hud level: Arabic weapon-level toast has no Latin letters
+  PASS demo caption: starts on the route caption
+  PASS demo caption: an in-effect showcase caption stays
+  PASS demo caption: event caption shows
+  PASS demo caption: event hold is a couple of seconds (2.5)
+  PASS demo caption: 'power recovered' times out back to the route caption
+  PASS demo caption: plain captions are not timed
+  PASS hd pack: start() from _ready creates the pack node
+  PASS hd pack: node entered the tree under root
+  PASS hd pack: HTTPRequest is inside the tree
+  PASS hd pack: real request state is downloading/failed (failed)
+  PASS hd pack: nothing loaded from an unreachable host
+  PASS voice: the 78 approved takes are unchanged (SHA-256 manifest) []
+  INFO v0.7 suites: 151, 4 at a time
+  PASS fun bots: FUN_AUDIT Half 1 difficulty wall (time to death per sector, rank I can't clear S3-6 bosses)
+  PASS fun bots: every boss x 3 crafts clears >= 4/5 seeds in its window at the REACHABLE loadout (D22 success gate)
+  INFO suite reliability_tests.tscn: 3.9 s
+  PASS v0.7 suite passes: reliability_tests.tscn
+  PASS no SHADER ERROR while running reliability_tests.tscn
+  INFO suite hd_pack_tests.tscn: 27.2 s
+  PASS v0.7 suite passes: hd_pack_tests.tscn
+  PASS no SHADER ERROR while running hd_pack_tests.tscn
+  INFO suite progression_v07_tests.tscn: 2.8 s
+  PASS v0.7 suite passes: progression_v07_tests.tscn
+  PASS no SHADER ERROR while running progression_v07_tests.tscn
+  INFO suite ui_v07_tests.tscn: 5.9 s
+  PASS v0.7 suite passes: ui_v07_tests.tscn
+  PASS no SHADER ERROR while running ui_v07_tests.tscn
+  INFO suite director_tests.tscn: 13.9 s
+  PASS v0.7 suite passes: director_tests.tscn
+  PASS no SHADER ERROR while running director_tests.tscn
+  INFO suite power_v07_tests.tscn: 8.0 s
+  PASS v0.7 suite passes: power_v07_tests.tscn
+  PASS no SHADER ERROR while running power_v07_tests.tscn
+  INFO suite weapons_v07_tests.tscn: 33.9 s
+  PASS v0.7 suite passes: weapons_v07_tests.tscn
+  PASS no SHADER ERROR while running weapons_v07_tests.tscn
+  INFO suite impact_v07_tests.tscn: 5.9 s
+  PASS v0.7 suite passes: impact_v07_tests.tscn
+  PASS no SHADER ERROR while running impact_v07_tests.tscn
+  INFO suite boss_raid_tests.tscn: 28.9 s
+  PASS v0.7 suite passes: boss_raid_tests.tscn
+  PASS no SHADER ERROR while running boss_raid_tests.tscn
+  INFO suite boss_v06b_tests.tscn: 17.7 s
+  PASS v0.7 suite passes: boss_v06b_tests.tscn
+  PASS no SHADER ERROR while running boss_v06b_tests.tscn
+  INFO suite super_tests.tscn: 48.2 s
+  PASS v0.7 suite passes: super_tests.tscn
+  PASS no SHADER ERROR while running super_tests.tscn
+  INFO suite warnings_tests.tscn: 58.9 s
+  PASS v0.7 suite passes: warnings_tests.tscn
+  PASS no SHADER ERROR while running warnings_tests.tscn
+  INFO suite attack_coverage_tests.tscn: 20.7 s
+  PASS v0.7 suite passes: attack_coverage_tests.tscn
+  PASS no SHADER ERROR while running attack_coverage_tests.tscn
+  INFO suite restore_lossless_tests.tscn: 4.4 s
+  PASS v0.7 suite passes: restore_lossless_tests.tscn
+  PASS no SHADER ERROR while running restore_lossless_tests.tscn
+  INFO suite hitstop_tests.tscn: 3.0 s
+  PASS v0.7 suite passes: hitstop_tests.tscn
+  PASS no SHADER ERROR while running hitstop_tests.tscn
+  INFO suite feel_v013_tests.tscn: 5.8 s
+  PASS v0.7 suite passes: feel_v013_tests.tscn
+  PASS no SHADER ERROR while running feel_v013_tests.tscn
+  INFO suite shard_v013_tests.tscn: 5.2 s
+  PASS v0.7 suite passes: shard_v013_tests.tscn
+  PASS no SHADER ERROR while running shard_v013_tests.tscn
+  INFO suite weapons_v08_solar_tests.tscn: 10.3 s
+  PASS v0.7 suite passes: weapons_v08_solar_tests.tscn
+  PASS no SHADER ERROR while running weapons_v08_solar_tests.tscn
+  INFO suite look_v08_tests.tscn: 3.3 s
+  PASS v0.7 suite passes: look_v08_tests.tscn
+  PASS no SHADER ERROR while running look_v08_tests.tscn
+  INFO suite preload_v08_tests.tscn: 98.4 s
+  PASS v0.7 suite passes: preload_v08_tests.tscn
+  PASS no SHADER ERROR while running preload_v08_tests.tscn
+  INFO suite boot_warm_tests.tscn: 16.0 s
+  PASS v0.7 suite passes: boot_warm_tests.tscn
+  PASS no SHADER ERROR while running boot_warm_tests.tscn
+  INFO suite weapons_v08_void_tests.tscn: 14.9 s
+  PASS v0.7 suite passes: weapons_v08_void_tests.tscn
+  PASS no SHADER ERROR while running weapons_v08_void_tests.tscn
+  INFO suite voice_v08_tests.tscn: 14.5 s
+  PASS v0.7 suite passes: voice_v08_tests.tscn
+  PASS no SHADER ERROR while running voice_v08_tests.tscn
+  INFO suite weapons_v08_arc_tests.tscn: 12.6 s
+  PASS v0.7 suite passes: weapons_v08_arc_tests.tscn
+  PASS no SHADER ERROR while running weapons_v08_arc_tests.tscn
+  INFO suite craft_fire_sockets_tests.tscn: 7.9 s
+  PASS v0.7 suite passes: craft_fire_sockets_tests.tscn
+  PASS no SHADER ERROR while running craft_fire_sockets_tests.tscn
+  INFO suite craft_finishes_tests.tscn: 2.8 s
+  PASS v0.7 suite passes: craft_finishes_tests.tscn
+  PASS no SHADER ERROR while running craft_finishes_tests.tscn
+  INFO suite craft_no_3d_tests.tscn: 5.2 s
+  PASS v0.7 suite passes: craft_no_3d_tests.tscn
+  PASS no SHADER ERROR while running craft_no_3d_tests.tscn
+  INFO suite hostile_beam2_tests.tscn: 7.1 s
+  PASS v0.7 suite passes: hostile_beam2_tests.tscn
+  PASS no SHADER ERROR while running hostile_beam2_tests.tscn
+  INFO suite migrate_v5_tests.tscn: 3.4 s
+  PASS v0.7 suite passes: migrate_v5_tests.tscn
+  PASS no SHADER ERROR while running migrate_v5_tests.tscn
+  INFO suite foes_tests.tscn: 31.5 s
+  PASS v0.7 suite passes: foes_tests.tscn
+  PASS no SHADER ERROR while running foes_tests.tscn
+  INFO suite front_v09_tests.tscn: 17.7 s
+  PASS v0.7 suite passes: front_v09_tests.tscn
+  PASS no SHADER ERROR while running front_v09_tests.tscn
+  INFO suite milestones_v09_tests.tscn: 16.3 s
+  PASS v0.7 suite passes: milestones_v09_tests.tscn
+  PASS no SHADER ERROR while running milestones_v09_tests.tscn
+  INFO suite fairness_escape.tscn: 75.5 s
+  PASS v0.7 suite passes: fairness_escape.tscn
+  PASS no SHADER ERROR while running fairness_escape.tscn
+  INFO suite world_v09_tests.tscn: 4.6 s
+  PASS v0.7 suite passes: world_v09_tests.tscn
+  PASS no SHADER ERROR while running world_v09_tests.tscn
+  INFO suite journey_tests.tscn: 56.7 s
+  PASS v0.7 suite passes: journey_tests.tscn
+  PASS no SHADER ERROR while running journey_tests.tscn
+  INFO suite a_all_tests.tscn: 480.5 s
+  PASS v0.7 suite passes: a_all_tests.tscn
+  PASS no SHADER ERROR while running a_all_tests.tscn
+  INFO suite tech11_quality_tests.tscn: 4.0 s
+  PASS v0.7 suite passes: tech11_quality_tests.tscn
+  PASS no SHADER ERROR while running tech11_quality_tests.tscn
+  INFO suite tech11_bullet_tests.tscn: 2.8 s
+  PASS v0.7 suite passes: tech11_bullet_tests.tscn
+  PASS no SHADER ERROR while running tech11_bullet_tests.tscn
+  INFO suite a2_spread_tests.tscn: 3.6 s
+  PASS v0.7 suite passes: a2_spread_tests.tscn
+  PASS no SHADER ERROR while running a2_spread_tests.tscn
+  INFO suite a2_rows_tests.tscn: 3.7 s
+  PASS v0.7 suite passes: a2_rows_tests.tscn
+  PASS no SHADER ERROR while running a2_rows_tests.tscn
+  INFO suite breakable_tests.tscn: 3.4 s
+  PASS v0.7 suite passes: breakable_tests.tscn
+  PASS no SHADER ERROR while running breakable_tests.tscn
+  INFO suite algol_pace_tests.tscn: 4.1 s
+  PASS v0.7 suite passes: algol_pace_tests.tscn
+  PASS no SHADER ERROR while running algol_pace_tests.tscn
+  INFO suite b_death_tests.tscn: 3.9 s
+  PASS v0.7 suite passes: b_death_tests.tscn
+  PASS no SHADER ERROR while running b_death_tests.tscn
+  INFO suite raid12_tests.tscn: 3.2 s
+  PASS v0.7 suite passes: raid12_tests.tscn
+  PASS no SHADER ERROR while running raid12_tests.tscn
+  INFO suite hint_band_tests.tscn: 3.2 s
+  PASS v0.7 suite passes: hint_band_tests.tscn
+  PASS no SHADER ERROR while running hint_band_tests.tscn
+  INFO suite draw_order_tests.tscn: 3.2 s
+  PASS v0.7 suite passes: draw_order_tests.tscn
+  PASS no SHADER ERROR while running draw_order_tests.tscn
+  INFO suite g6_tests.tscn: 3.4 s
+  PASS v0.7 suite passes: g6_tests.tscn
+  PASS no SHADER ERROR while running g6_tests.tscn
+  INFO suite look_v017_tests.tscn: 3.5 s
+  PASS v0.7 suite passes: look_v017_tests.tscn
+  PASS no SHADER ERROR while running look_v017_tests.tscn
+  INFO suite ghost_tests.tscn: 12.5 s
+  PASS v0.7 suite passes: ghost_tests.tscn
+  PASS no SHADER ERROR while running ghost_tests.tscn
+  INFO suite polish_tests.tscn: 3.3 s
+  PASS v0.7 suite passes: polish_tests.tscn
+  PASS no SHADER ERROR while running polish_tests.tscn
+  INFO suite algol3d_tests.tscn: 7.7 s
+  PASS v0.7 suite passes: algol3d_tests.tscn
+  PASS no SHADER ERROR while running algol3d_tests.tscn
+  INFO suite furnace3d_tests.tscn: 6.7 s
+  PASS v0.7 suite passes: furnace3d_tests.tscn
+  PASS no SHADER ERROR while running furnace3d_tests.tscn
+  INFO suite seraph3d_tests.tscn: 5.2 s
+  PASS v0.7 suite passes: seraph3d_tests.tscn
+  PASS no SHADER ERROR while running seraph3d_tests.tscn
+  INFO suite oracle3d_tests.tscn: 5.2 s
+  PASS v0.7 suite passes: oracle3d_tests.tscn
+  PASS no SHADER ERROR while running oracle3d_tests.tscn
+  INFO suite spear3d_tests.tscn: 6.3 s
+  PASS v0.7 suite passes: spear3d_tests.tscn
+  PASS no SHADER ERROR while running spear3d_tests.tscn
+  INFO suite dominion3d_tests.tscn: 7.6 s
+  PASS v0.7 suite passes: dominion3d_tests.tscn
+  PASS no SHADER ERROR while running dominion3d_tests.tscn
+  INFO suite husk3d_tests.tscn: 11.8 s
+  PASS v0.7 suite passes: husk3d_tests.tscn
+  PASS no SHADER ERROR while running husk3d_tests.tscn
+  INFO suite archive3d_tests.tscn: 11.8 s
+  PASS v0.7 suite passes: archive3d_tests.tscn
+  PASS no SHADER ERROR while running archive3d_tests.tscn
+  INFO suite boss_hall_tests.tscn: 27.5 s
+  PASS v0.7 suite passes: boss_hall_tests.tscn
+  PASS no SHADER ERROR while running boss_hall_tests.tscn
+  INFO suite perf_report_tests.tscn: 3.2 s
+  PASS v0.7 suite passes: perf_report_tests.tscn
+  PASS no SHADER ERROR while running perf_report_tests.tscn
+  INFO suite boss_renders_tests.tscn: 5.6 s
+  PASS v0.7 suite passes: boss_renders_tests.tscn
+  PASS no SHADER ERROR while running boss_renders_tests.tscn
+  INFO suite boss3d_lod_tests.tscn: 4.1 s
+  PASS v0.7 suite passes: boss3d_lod_tests.tscn
+  PASS no SHADER ERROR while running boss3d_lod_tests.tscn
+  INFO suite perf19d_tests.tscn: 3.3 s
+  PASS v0.7 suite passes: perf19d_tests.tscn
+  PASS no SHADER ERROR while running perf19d_tests.tscn
+  INFO suite boss_reel_smoke.tscn: 197.1 s
+  PASS v0.7 suite passes: boss_reel_smoke.tscn
+  PASS no SHADER ERROR while running boss_reel_smoke.tscn
+  INFO suite hitch_boss_bench_tests.tscn: 29.4 s
+  PASS v0.7 suite passes: hitch_boss_bench_tests.tscn
+  PASS no SHADER ERROR while running hitch_boss_bench_tests.tscn
+  INFO suite zone_table_tests.tscn: 25.3 s
+  PASS v0.7 suite passes: zone_table_tests.tscn
+  PASS no SHADER ERROR while running zone_table_tests.tscn
+  INFO suite gp20_tests.tscn: 7.1 s
+  PASS v0.7 suite passes: gp20_tests.tscn
+  PASS no SHADER ERROR while running gp20_tests.tscn
+  INFO suite brief20_tests.tscn: 8.3 s
+  PASS v0.7 suite passes: brief20_tests.tscn
+  PASS no SHADER ERROR while running brief20_tests.tscn
+  INFO suite test_account.tscn: 8.4 s
+  PASS v0.7 suite passes: test_account.tscn
+  PASS no SHADER ERROR while running test_account.tscn
+  INFO suite test_account_ui.tscn: 4.9 s
+  PASS v0.7 suite passes: test_account_ui.tscn
+  PASS no SHADER ERROR while running test_account_ui.tscn
+  INFO suite acc22_tests.tscn: 17.9 s
+  PASS v0.7 suite passes: acc22_tests.tscn
+  PASS no SHADER ERROR while running acc22_tests.tscn
+  INFO suite locg21_tests.tscn: 3.5 s
+  PASS v0.7 suite passes: locg21_tests.tscn
+  PASS no SHADER ERROR while running locg21_tests.tscn
+  INFO suite turn20a_furnace_tests.tscn: 6.1 s
+  PASS v0.7 suite passes: turn20a_furnace_tests.tscn
+  PASS no SHADER ERROR while running turn20a_furnace_tests.tscn
+  INFO suite turn20a_seraph_tests.tscn: 5.3 s
+  PASS v0.7 suite passes: turn20a_seraph_tests.tscn
+  PASS no SHADER ERROR while running turn20a_seraph_tests.tscn
+  INFO suite turn20a_superbreak_tests.tscn: 3.8 s
+  PASS v0.7 suite passes: turn20a_superbreak_tests.tscn
+  PASS no SHADER ERROR while running turn20a_superbreak_tests.tscn
+  INFO suite turn20b_oracle_tests.tscn: 6.5 s
+  PASS v0.7 suite passes: turn20b_oracle_tests.tscn
+  PASS no SHADER ERROR while running turn20b_oracle_tests.tscn
+  INFO suite turn20b_spear_tests.tscn: 6.2 s
+  PASS v0.7 suite passes: turn20b_spear_tests.tscn
+  PASS no SHADER ERROR while running turn20b_spear_tests.tscn
+  INFO suite turn20b_dominion_tests.tscn: 7.9 s
+  PASS v0.7 suite passes: turn20b_dominion_tests.tscn
+  PASS no SHADER ERROR while running turn20b_dominion_tests.tscn
+  INFO suite cpu20_tests.tscn: 3.4 s
+  PASS v0.7 suite passes: cpu20_tests.tscn
+  PASS no SHADER ERROR while running cpu20_tests.tscn
+  INFO suite ring21_tests.tscn: 3.8 s
+  PASS v0.7 suite passes: ring21_tests.tscn
+  PASS no SHADER ERROR while running ring21_tests.tscn
+  INFO suite cone21_tests.tscn: 3.6 s
+  PASS v0.7 suite passes: cone21_tests.tscn
+  PASS no SHADER ERROR while running cone21_tests.tscn
+  INFO suite ovr21_tests.tscn: 4.3 s
+  PASS v0.7 suite passes: ovr21_tests.tscn
+  PASS no SHADER ERROR while running ovr21_tests.tscn
+  INFO suite fspk21_tests.tscn: 3.3 s
+  PASS v0.7 suite passes: fspk21_tests.tscn
+  PASS no SHADER ERROR while running fspk21_tests.tscn
+  INFO suite en21_tests.tscn: 3.1 s
+  PASS v0.7 suite passes: en21_tests.tscn
+  PASS no SHADER ERROR while running en21_tests.tscn
+  INFO suite boot21_tests.tscn: 27.4 s
+  PASS v0.7 suite passes: boot21_tests.tscn
+  PASS no SHADER ERROR while running boot21_tests.tscn
+  INFO suite node21_tests.tscn: 4.3 s
+  PASS v0.7 suite passes: node21_tests.tscn
+  PASS no SHADER ERROR while running node21_tests.tscn
+  INFO suite tile21_tests.tscn: 7.4 s
+  PASS v0.7 suite passes: tile21_tests.tscn
+  PASS no SHADER ERROR while running tile21_tests.tscn
+  INFO suite tile22_tests.tscn: 7.8 s
+  PASS v0.7 suite passes: tile22_tests.tscn
+  PASS no SHADER ERROR while running tile22_tests.tscn
+  INFO suite uik_tests.tscn: 3.3 s
+  PASS v0.7 suite passes: uik_tests.tscn
+  PASS no SHADER ERROR while running uik_tests.tscn
+  INFO suite flow_tests.tscn: 48.5 s
+  PASS v0.7 suite passes: flow_tests.tscn
+  PASS no SHADER ERROR while running flow_tests.tscn
+  INFO suite wb_tests.tscn: 9.6 s
+  PASS v0.7 suite passes: wb_tests.tscn
+  PASS no SHADER ERROR while running wb_tests.tscn
+  INFO suite home22_tests.tscn: 16.1 s
+  PASS v0.7 suite passes: home22_tests.tscn
+  PASS no SHADER ERROR while running home22_tests.tscn
+  INFO suite wb3_tests.tscn: 7.5 s
+  PASS v0.7 suite passes: wb3_tests.tscn
+  PASS no SHADER ERROR while running wb3_tests.tscn
+  INFO suite rest_tests.tscn: 13.1 s
+  PASS v0.7 suite passes: rest_tests.tscn
+  PASS no SHADER ERROR while running rest_tests.tscn
+  INFO suite hud22_tests.tscn: 9.7 s
+  PASS v0.7 suite passes: hud22_tests.tscn
+  PASS no SHADER ERROR while running hud22_tests.tscn
+  INFO suite perf22_nav_tests.tscn: 27.5 s
+  PASS v0.7 suite passes: perf22_nav_tests.tscn
+  PASS no SHADER ERROR while running perf22_nav_tests.tscn
+  INFO suite perf2_tests.tscn: 4.5 s
+  PASS v0.7 suite passes: perf2_tests.tscn
+  PASS no SHADER ERROR while running perf2_tests.tscn
+  INFO suite perf3_tests.tscn: 3.2 s
+  PASS v0.7 suite passes: perf3_tests.tscn
+  PASS no SHADER ERROR while running perf3_tests.tscn
+  INFO suite turn20c_thuban_tests.tscn: 9.4 s
+  PASS v0.7 suite passes: turn20c_thuban_tests.tscn
+  PASS no SHADER ERROR while running turn20c_thuban_tests.tscn
+  INFO suite turn20c_husk_tests.tscn: 15.2 s
+  PASS v0.7 suite passes: turn20c_husk_tests.tscn
+  PASS no SHADER ERROR while running turn20c_husk_tests.tscn
+  INFO suite turn20c_archive_tests.tscn: 10.3 s
+  PASS v0.7 suite passes: turn20c_archive_tests.tscn
+  PASS no SHADER ERROR while running turn20c_archive_tests.tscn
+  INFO suite warm20_tests.tscn: 9.5 s
+  PASS v0.7 suite passes: warm20_tests.tscn
+  PASS no SHADER ERROR while running warm20_tests.tscn
+  INFO suite vis20_tests.tscn: 43.7 s
+  PASS v0.7 suite passes: vis20_tests.tscn
+  PASS no SHADER ERROR while running vis20_tests.tscn
+  INFO suite look20_tests.tscn: 17.0 s
+  PASS v0.7 suite passes: look20_tests.tscn
+  PASS no SHADER ERROR while running look20_tests.tscn
+  INFO suite sector_density_tests.tscn: 728.5 s
+  PASS v0.7 suite passes: sector_density_tests.tscn
+  PASS no SHADER ERROR while running sector_density_tests.tscn
+  INFO suite sector_twist_tests.tscn: 6.2 s
+  PASS v0.7 suite passes: sector_twist_tests.tscn
+  PASS no SHADER ERROR while running sector_twist_tests.tscn
+  INFO suite sector_a_tests.tscn: 6.9 s
+  PASS v0.7 suite passes: sector_a_tests.tscn
+  PASS no SHADER ERROR while running sector_a_tests.tscn
+  INFO suite sector_b_tests.tscn: 7.3 s
+  PASS v0.7 suite passes: sector_b_tests.tscn
+  PASS no SHADER ERROR while running sector_b_tests.tscn
+  INFO suite sector_c_tests.tscn: 12.0 s
+  PASS v0.7 suite passes: sector_c_tests.tscn
+  PASS no SHADER ERROR while running sector_c_tests.tscn
+  INFO suite transaction_tests.tscn: 4.0 s
+  PASS v0.7 suite passes: transaction_tests.tscn
+  PASS no SHADER ERROR while running transaction_tests.tscn
+  INFO suite ui_tests.tscn: 10.3 s
+  PASS v0.7 suite passes: ui_tests.tscn
+  PASS no SHADER ERROR while running ui_tests.tscn
+  INFO suite feedback_tests.tscn: 8.1 s
+  PASS v0.7 suite passes: feedback_tests.tscn
+  PASS no SHADER ERROR while running feedback_tests.tscn
+  INFO suite feel_tests.tscn: 10.2 s
+  PASS v0.7 suite passes: feel_tests.tscn
+  PASS no SHADER ERROR while running feel_tests.tscn
+  INFO suite a_boss_reach_tests.tscn: 70.1 s
+  PASS v0.7 suite passes: a_boss_reach_tests.tscn
+  PASS no SHADER ERROR while running a_boss_reach_tests.tscn
+  INFO suite b_bundle_tests.tscn: 4.4 s
+  PASS v0.7 suite passes: b_bundle_tests.tscn
+  PASS no SHADER ERROR while running b_bundle_tests.tscn
+  INFO suite b_endless_tests.tscn: 11.0 s
+  PASS v0.7 suite passes: b_endless_tests.tscn
+  PASS no SHADER ERROR while running b_endless_tests.tscn
+  INFO suite b_hud_controls_tests.tscn: 3.9 s
+  PASS v0.7 suite passes: b_hud_controls_tests.tscn
+  PASS no SHADER ERROR while running b_hud_controls_tests.tscn
+  INFO suite b_meta_tests.tscn: 3.2 s
+  PASS v0.7 suite passes: b_meta_tests.tscn
+  PASS no SHADER ERROR while running b_meta_tests.tscn
+  INFO suite b_raid_tests.tscn: 191.4 s
+  PASS v0.7 suite passes: b_raid_tests.tscn
+  PASS no SHADER ERROR while running b_raid_tests.tscn
+  INFO suite b_victory_defeat_tests.tscn: 6.3 s
+  PASS v0.7 suite passes: b_victory_defeat_tests.tscn
+  PASS no SHADER ERROR while running b_victory_defeat_tests.tscn
+  INFO suite b_raid11_tests.tscn: 7.7 s
+  PASS v0.7 suite passes: b_raid11_tests.tscn
+  PASS no SHADER ERROR while running b_raid11_tests.tscn
+  INFO suite a_g1_tests.tscn: 8.2 s
+  PASS v0.7 suite passes: a_g1_tests.tscn
+  PASS no SHADER ERROR while running a_g1_tests.tscn
+  INFO suite a_p1_tests.tscn: 3.9 s
+  PASS v0.7 suite passes: a_p1_tests.tscn
+  PASS no SHADER ERROR while running a_p1_tests.tscn
+  INFO suite g1l_tests.tscn: 243.6 s
+  PASS v0.7 suite passes: g1l_tests.tscn
+  PASS no SHADER ERROR while running g1l_tests.tscn
+  INFO suite g1n_tests.tscn: 166.5 s
+  PASS v0.7 suite passes: g1n_tests.tscn
+  PASS no SHADER ERROR while running g1n_tests.tscn
+  INFO suite combat_tests.tscn: 41.3 s
+  PASS v0.7 suite passes: combat_tests.tscn
+  PASS no SHADER ERROR while running combat_tests.tscn
+  INFO suite art18d_tests.tscn: 18.6 s
+  PASS v0.7 suite passes: art18d_tests.tscn
+  PASS no SHADER ERROR while running art18d_tests.tscn
+  INFO suite mid18_tests.tscn: 6.0 s
+  PASS v0.7 suite passes: mid18_tests.tscn
+  PASS no SHADER ERROR while running mid18_tests.tscn
+  INFO suite audio18_tests.tscn: 5.9 s
+  PASS v0.7 suite passes: audio18_tests.tscn
+  PASS no SHADER ERROR while running audio18_tests.tscn
+  INFO suite dragon_body_tests.tscn: 4.9 s
+  PASS v0.7 suite passes: dragon_body_tests.tscn
+  PASS no SHADER ERROR while running dragon_body_tests.tscn
+  INFO suite dragon_debris_tests.tscn: 3.5 s
+  PASS v0.7 suite passes: dragon_debris_tests.tscn
+  PASS no SHADER ERROR while running dragon_debris_tests.tscn
+  INFO suite g1_tests.tscn: 11.6 s
+  PASS v0.7 suite passes: g1_tests.tscn
+  PASS no SHADER ERROR while running g1_tests.tscn
+  INFO suite g1d_tests.tscn: 15.8 s
+  PASS v0.7 suite passes: g1d_tests.tscn
+  PASS no SHADER ERROR while running g1d_tests.tscn
+  INFO suite g1e_tests.tscn: 8.1 s
+  PASS v0.7 suite passes: g1e_tests.tscn
+  PASS no SHADER ERROR while running g1e_tests.tscn
+  INFO suite g1f_tests.tscn: 8.0 s
+  PASS v0.7 suite passes: g1f_tests.tscn
+  PASS no SHADER ERROR while running g1f_tests.tscn
+  INFO suite g1h_tests.tscn: 9.9 s
+  PASS v0.7 suite passes: g1h_tests.tscn
+  PASS no SHADER ERROR while running g1h_tests.tscn
+  INFO suite g1j_tests.tscn: 12.3 s
+  PASS v0.7 suite passes: g1j_tests.tscn
+  PASS no SHADER ERROR while running g1j_tests.tscn
+  INFO suite g3_tests.tscn: 4.7 s
+  PASS v0.7 suite passes: g3_tests.tscn
+  PASS no SHADER ERROR while running g3_tests.tscn
+  INFO suite green_tests.tscn: 92.8 s
+  PASS v0.7 suite passes: green_tests.tscn
+  PASS no SHADER ERROR while running green_tests.tscn
+  INFO suite thuban_fight_tests.tscn: 11.0 s
+  PASS v0.7 suite passes: thuban_fight_tests.tscn
+  PASS no SHADER ERROR while running thuban_fight_tests.tscn
+  INFO suite thuban_real_death_tests.tscn: 11.5 s
+  PASS v0.7 suite passes: thuban_real_death_tests.tscn
+  PASS no SHADER ERROR while running thuban_real_death_tests.tscn
+  INFO suite thuban_t7_t15_tests.tscn: 36.2 s
+  PASS v0.7 suite passes: thuban_t7_t15_tests.tscn
+  PASS no SHADER ERROR while running thuban_t7_t15_tests.tscn
+  INFO suite wake_tests.tscn: 13.7 s
+  PASS v0.7 suite passes: wake_tests.tscn
+  PASS no SHADER ERROR while running wake_tests.tscn
+  INFO suite test_depth_bands.tscn: 873.9 s
+  PASS v0.7 suite passes: test_depth_bands.tscn
+  PASS no SHADER ERROR while running test_depth_bands.tscn
+  INFO suite test_depth_gap.tscn: 190.3 s
+  PASS v0.7 suite passes: test_depth_gap.tscn
+  PASS no SHADER ERROR while running test_depth_gap.tscn
+  INFO suite test_hull_geometry.tscn: 4.1 s
+  PASS v0.7 suite passes: test_hull_geometry.tscn
+  PASS no SHADER ERROR while running test_hull_geometry.tscn
+  INFO suite test_geo_coverage.tscn: 3.2 s
+  PASS v0.7 suite passes: test_geo_coverage.tscn
+  PASS no SHADER ERROR while running test_geo_coverage.tscn
+  INFO suite sup_tests.tscn: 37.9 s
+  PASS v0.7 suite passes: sup_tests.tscn
+  PASS no SHADER ERROR while running sup_tests.tscn
+  INFO suite sol_tests.tscn: 15.0 s
+  PASS v0.7 suite passes: sol_tests.tscn
+  PASS no SHADER ERROR while running sol_tests.tscn
+  INFO suite sol_boss.tscn: 71.9 s
+  PASS v0.7 suite passes: sol_boss.tscn
+  PASS no SHADER ERROR while running sol_boss.tscn
+  INFO suite core22_tests.tscn: 4.9 s
+  PASS v0.7 suite passes: core22_tests.tscn
+  PASS no SHADER ERROR while running core22_tests.tscn
+RESULT passed=401 failed=0
