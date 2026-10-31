@@ -1,0 +1,20 @@
+[
+ {
+  "label": "v0.1",
+  "build_id": "0.1+70c4512",
+  "released": "2026-10-30 17:26 UTC",
+  "state": "accepted",
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-qanadeel-v0.1/qanadeel.apk",
+  "notes": "- First test version of Qanadeel: join matching lights and fill every tile to light a lantern.\n- 300 levels in 6 chapters; every level you solve lights one lantern in the chapter's painting.\n- A daily puzzle every day, playable offline.\n- The first three levels teach the game with a moving finger, no long texts.\n- Every chapter has its own calm music, and each finished pair plays a note that builds into a chord.\n- Finishing a chapter wakes its whole painting before the next one opens.\n- No lives, no timers: undo and restart at any time; draw by tapping instead of dragging from Settings > Accessibility.\n- Hints show the next path; coins come from solving boards, daily puzzles and gifts.\n- Arabic and English; pick your name and play.\n- Shop, themes and achievements are in. The shop shows its items and prices, but buying is switched off in this test; hint videos are not available yet.\n- The logo is plain text for now. Android first; iPhone comes after 1 November."
+ },
+ {
+  "label": "v0.2",
+  "build_id": "0.2+0ab0235",
+  "released": "2026-10-31 18:19 UTC",
+  "state": "accepted",
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-qanadeel-v0.2/qanadeel.apk",
+  "notes": "- Qanadeel is now a collection: a new home with six puzzle games, three to play now and three coming soon.\n- Light Trails (the light-path game you know): all 300 levels and your progress, coins and hints kept, with a new carved-stone board and glowing gems. Each level you solve still lights a lantern in the chapter's painting.\n- New: Color Dew, pour the colors between glass tubes until each tube holds one color. 60 levels and a daily board.\n- New: Pocket Exit, slide the cars until the coral car can leave the harbor. 60 levels and a daily board.\n- One wallet and one hint stock for all games; a daily puzzle that rotates between the games; a 7-day gift you claim at your own pace.\n- Resume takes you back to the exact puzzle you left. Collection shows what you solved in each game.\n- New shop with four items (remove ads, two coin packs, five hints). Buying is a test purchase in this version: nothing is charged.\n- Every colored piece carries a symbol, and reduce motion turns the celebrations into simple fades.\n- Please try on your phone: type your name in Arabic with the keyboard, drag very fast, and touch the board with two fingers at once (only one move should happen).\n- Qanadeel has its new logo and app icon."
+ }
+]
