@@ -1,0 +1,55 @@
+{
+ "game_id": "qanadeel",
+ "version": "0.2",
+ "updated": "2026-10-31",
+ "commit": "0ab0235",
+ "links": {
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-qanadeel-v0.2/qanadeel.apk"
+ },
+ "screenshots": {
+  "en": [
+   "https://kik-studio.github.io/kik-builds/games/qanadeel/screens/game_en.png",
+   "https://kik-studio.github.io/kik-builds/games/qanadeel/screens/menu_en.png",
+   "https://kik-studio.github.io/kik-builds/games/qanadeel/screens/settings_en.png"
+  ],
+  "ar": [
+   "https://kik-studio.github.io/kik-builds/games/qanadeel/screens/game_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/qanadeel/screens/menu_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/qanadeel/screens/settings_ar.png"
+  ]
+ },
+ "apk_bytes": 180530680,
+ "apk_sha256": "d4c1b8886703fe0cd2f1a6fe3ddfcce830f994a0b41438dac703e7752a2bf923",
+ "pack_sha256": "aa105717787e4c1b5f30faa8d6c1224aa9e70db3c54799cfb32e0ba689bce2a6",
+ "shapes": [
+  "https://kik-studio.github.io/kik-builds/games/qanadeel/screens/game_en_desktop.png",
+  "https://kik-studio.github.io/kik-builds/games/qanadeel/screens/game_en_tablet.png"
+ ],
+ "video": [
+  "https://kik-studio.github.io/kik-builds/games/qanadeel/video/gameplay.mp4",
+  "https://kik-studio.github.io/kik-builds/games/qanadeel/video/showcase_fx.mp4",
+  "https://kik-studio.github.io/kik-builds/games/qanadeel/video/showcase_ui.mp4"
+ ],
+ "tests": "https://kik-studio.github.io/kik-builds/games/qanadeel/tests.txt",
+ "benchmark_apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-qanadeel/qanadeel-benchmark.apk",
+ "branch": "main",
+ "checks": "https://kik-studio.github.io/kik-builds/games/qanadeel/checks/",
+ "build_id": "0.2+0ab0235",
+ "built_on": "studio server",
+ "review": {
+  "build_id": "0.1+70c4512",
+  "machine": "studio PC GPU",
+  "when": "2026-10-30 18:46 UTC"
+ },
+ "media": {
+  "build_id": "0.1+70c4512",
+  "version": "0.1",
+  "carried": true,
+  "label": "from v0.1 (older build)"
+ },
+ "label": "v0.2",
+ "released": "2026-10-31 18:19 UTC",
+ "state": "accepted",
+ "final_apk_sha256": "16185e4ccd5f54663028f43750ebd770a763a6cf279674d1253343b7098407d0"
+}
