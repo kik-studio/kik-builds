@@ -1,0 +1,32 @@
+{
+ "game_id": "sunpunch-rebels",
+ "version": "0.1",
+ "updated": "2026-10-31",
+ "commit": "2507526",
+ "links": {
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-sunpunch-rebels/sunpunch-rebels.apk"
+ },
+ "screenshots": {
+  "en": [],
+  "ar": []
+ },
+ "apk_bytes": 61136770,
+ "apk_sha256": "70201c5ffa29c121692600164ee34c464fbbcb89cbb2cebdcdfeea67bbc9aed5",
+ "pack_sha256": "887edbd9d099f0b2d911b6de9cc4a4705cea6f6ac5c8a55e1c2e3122277a5535",
+ "shapes": [],
+ "video": [],
+ "tests": "https://kik-studio.github.io/kik-builds/games/sunpunch-rebels/tests.txt",
+ "benchmark_apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-sunpunch-rebels/sunpunch-rebels-benchmark.apk",
+ "branch": "main",
+ "checks": null,
+ "build_id": "0.1+2507526",
+ "built_on": "studio server",
+ "review": null,
+ "media": {
+  "build_id": null,
+  "version": null,
+  "carried": true,
+  "label": "from an older build"
+ }
+}
