@@ -1,0 +1,12 @@
+{
+ "build_id": "0.0.1+2a02433",
+ "pack_sha256": "fac4140c643e68a1e4b8d9e16d0e368b21a537af804178d599adf9d38b6b211d",
+ "apk_sha256": "fac4140c643e68a1e4b8d9e16d0e368b21a537af804178d599adf9d38b6b211d",
+ "links": {
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-lamma-v0.0.1/lamma.apk"
+ },
+ "label": "v0.0.1",
+ "released": "2026-10-22 20:47 UTC",
+ "state": "accepted"
+}
