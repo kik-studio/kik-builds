@@ -1,0 +1,11 @@
+[
+ {
+  "label": "v0.1",
+  "build_id": "0.1+70c4512",
+  "released": "2026-10-30 17:26 UTC",
+  "state": "accepted",
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-qanadeel-v0.1/qanadeel.apk",
+  "notes": "- First test version of Qanadeel: join matching lights and fill every tile to light a lantern.\n- 300 levels in 6 chapters; every level you solve lights one lantern in the chapter's painting.\n- A daily puzzle every day, playable offline.\n- The first three levels teach the game with a moving finger, no long texts.\n- Every chapter has its own calm music, and each finished pair plays a note that builds into a chord.\n- Finishing a chapter wakes its whole painting before the next one opens.\n- No lives, no timers: undo and restart at any time; draw by tapping instead of dragging from Settings > Accessibility.\n- Hints show the next path; coins come from solving boards, daily puzzles and gifts.\n- Arabic and English; pick your name and play.\n- Shop, themes and achievements are in. The shop shows its items and prices, but buying is switched off in this test; hint videos are not available yet.\n- The logo is plain text for now. Android first; iPhone comes after 1 November."
+ }
+]
