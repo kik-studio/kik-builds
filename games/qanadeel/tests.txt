@@ -1,0 +1,1964 @@
+  PASS config: game.json loads
+  PASS config: version present
+  PASS save: value survives reload
+  PASS save: setting survives reload
+  PASS save: atomic write leaves no temp file
+  PASS save: player id generated
+  PASS loc: English text
+  PASS loc: Arabic text
+  PASS loc: Arabic is right-to-left
+  PASS loc: controls flip to RTL in Arabic
+  PASS loc: every string has English and Arabic
+  PASS audio: Music bus
+  PASS audio: SFX bus
+  PASS audio: sfx asset present
+  PASS audio: no AudioServer.add_bus() (silences web builds, FR-3)
+  PASS audio: Music and SFX route to Master
+  PASS audio R12: button 60/140 ms
+  PASS audio R12: node 70/100 ms
+  PASS audio R12: pair ring 140 + sweep 180 ms
+  PASS audio R12: board pulse 240 ms
+  PASS audio R12: coin flight 420 ms
+  PASS audio R12: chapter reveal 600 ms
+  PASS audio R12: board view uses the ring / sweep / pulse timings
+  PASS audio R12: chapter reveal uses 600 ms
+  PASS audio R12: button press feel uses 60/140 ms
+  PASS audio R12: lantern pick bump peaks at 70 ms, settles by 170 ms
+  PASS audio: every sound in the bank loads (44 files) []
+  PASS audio: 'tap' has 3-5 takes
+  PASS audio: 'pick' has 3-5 takes
+  PASS audio: 'grain' has 3-5 takes
+  PASS audio: 'erase' has 3-5 takes
+  PASS audio: 'invalid' has 3-5 takes
+  PASS audio: 'hint' has 3-5 takes
+  PASS audio: 'coin' has 3-5 takes
+  PASS audio: no sound file outside the bank []
+  PASS audio: six chapter beds >= 60 s and six 1.2 s cadences []
+  PASS audio: never more than 8 sound voices (8 used)
+  PASS audio: a 9th sound steals the oldest voice
+  PASS audio duck: music at full volume when no sound plays
+  PASS audio duck: music ducks 2 dB under a sound (-2.00)
+  PASS audio duck: the Music bus itself is 2 dB lower
+  PASS audio duck: holds while the burst lasts
+  PASS audio duck: music comes back after the burst
+  PASS audio M1: chapter 1 (D minor) pair notes and the full-board chord stay in one chord
+  PASS audio M1: chapter 2 (F major) pair notes and the full-board chord stay in one chord
+  PASS audio M1: chapter 3 (E sus) pair notes and the full-board chord stay in one chord
+  PASS audio M1: chapter 4 (G major) pair notes and the full-board chord stay in one chord
+  PASS audio M1: chapter 5 (C major) pair notes and the full-board chord stay in one chord
+  PASS audio M1: chapter 6 (A minor) pair notes and the full-board chord stay in one chord
+  PASS audio M1: one key per chapter, six different keys
+  PASS audio M1: the last 3 pairs add a low chord tone (the chord builds)
+  PASS audio M1: each of the last 3 pairs adds a different chord tone
+  PASS audio: a quiet grain every 2 cells drawn (["grain", "pair"])
+  PASS audio M1: a closed pair plays its note once
+  PASS audio: a shortened / replaced path plays the hush
+  PASS audio: a refused step plays the wooden tick
+  PASS audio M1: the full board resolves the chord (["grain", "pair", "erase", "invalid", "pair", "resolve"])
+  PASS audio: chapter_cadence plays once per moment
+  PASS audio R12: the last coin lands at 420 ms
+  PASS palette U0: every sound of both games loads (36 files) []
+  PASS palette U0: color_dew has 'select'
+  PASS palette U0: color_dew has 'pour'
+  PASS palette U0: color_dew has 'denied'
+  PASS palette U0: color_dew has 'complete'
+  PASS palette U0: color_dew has 'win'
+  PASS palette U0: color_dew has 'undo'
+  PASS palette U0: color_dew has 'hint'
+  PASS palette U0: no color_dew file outside the palette []
+  PASS palette U0: color_dew bed is a 60-90 s loop
+  PASS palette U0: pocket_exit has 'drag'
+  PASS palette U0: pocket_exit has 'snap'
+  PASS palette U0: pocket_exit has 'blocked'
+  PASS palette U0: pocket_exit has 'leave'
+  PASS palette U0: pocket_exit has 'win'
+  PASS palette U0: pocket_exit has 'undo'
+  PASS palette U0: pocket_exit has 'hint'
+  PASS palette U0: no pocket_exit file outside the palette []
+  PASS palette U0: pocket_exit bed is a 60-90 s loop
+  PASS palette U0: pour is short (0.32 s)
+  PASS palette U0: unknown sound is refused
+  PASS palette U0: voice cap - 6 snaps at once play 2 (cap 2)
+  PASS palette U0: the capped calls are recorded as dropped
+  PASS palette U0: a second 'denied' inside its gap is dropped
+  PASS palette U0: never more than 8 voices with both palettes firing (8)
+  PASS palette U0: the game's bed plays
+  PASS palette U0: a pour is playing before focus loss
+  PASS palette U0: focus lost -> the music and the playing pour pause (2 players paused)
+  PASS palette U0: nothing starts while the app is out of focus
+  PASS palette U0: the OS focus-out notification pauses the audio
+  PASS palette U0: focus back -> the music resumes where it was
+  PASS palette U0: sounds start again after focus returns
+  PASS palette U0: stop_music stops the bed
+  PASS analytics: HMAC signature matches reference
+  PASS analytics: Android os_version keeps only the version number
+  PASS analytics: iOS version kept, empty version falls back
+  PASS analytics: web/desktop send webgl 1.0
+  PASS ui: safe margins at least minimum
+  PASS theme: design tokens file present
+  PASS theme: tokens loaded
+  INFO theme placeholder = true (a game must replace it before a milestone)
+  PASS playfield: same logical area at 1080x1920
+  PASS playfield: same logical area at 1080x2340
+  PASS playfield: same logical area at 1080x2400
+  PASS playfield: same logical area at 1440x1920
+  PASS playfield: same logical area at 3413x1920
+  PASS perf: frame statistics correct
+  PASS rules: load: size and open cells (stone excluded)
+  PASS rules: load: [x,y] = column from left, row from top
+  PASS rules: load: direction tile E
+  PASS rules: load: refuses a pair with one cell
+  PASS rules: load: refuses duplicate endpoints
+  PASS rules: load: refuses an endpoint on a stone
+  PASS rules: load: refuses a direction tile on an endpoint
+  PASS rules: gesture: release keeps the partial path
+  PASS rules: gesture: committed fires once per gesture
+  PASS rules: gesture: touching a path cell keeps the prefix to it
+  PASS rules: gesture: continues from the touched cell
+  PASS rules: gesture: entering an earlier cell trims back to it
+  PASS rules: gesture: touching the endpoint replaces the path
+  PASS rules: gesture: drawing from either endpoint closes; origin first
+  PASS rules: gesture: reaching the matching endpoint seals the gesture
+  PASS rules: gesture: touching an empty cell starts nothing
+  PASS rules: gesture: touching off the board starts nothing
+  PASS rules: gesture: second finger cannot start a gesture
+  PASS rules: gesture: second finger moves/ups are ignored
+  PASS rules: gesture: first finger up ends it
+  PASS rules: blocked: entering another colour's cell fires blocked
+  PASS rules: blocked: nothing lost on either path
+  PASS rules: blocked: one pulse per blocked cell, not one per sample
+  PASS rules: blocked: another colour's endpoint blocks
+  PASS rules: blocked: gesture continued after the pulse
+  PASS rules: blocked: stones cannot be entered
+  PASS rules: blocked: board stays consistent
+  PASS rules: dirs: entering from the side is blocked
+  PASS rules: dirs: entering against the arrow is blocked
+  PASS rules: dirs: leaving sideways is blocked
+  PASS rules: dirs: straight through along the arrow closes
+  PASS rules: dirs: model refuses a reversed pass
+  PASS rules: walk: one sample across a row visits every cell
+  PASS rules: walk: exact diagonal = orthogonal staircase, x first on a full tie
+  PASS rules: walk: corner tie goes along the larger travel axis (y)
+  PASS rules: walk: corner tie goes along the larger travel axis (x)
+  PASS rules: walk: 0.05 cell past a boundary = no step (dead zone)
+  PASS rules: walk: 0.15 cell past a boundary = one step
+  PASS rules: walk: jitter back inside the dead zone keeps the cell
+  PASS rules: walk: back past the dead zone steps back
+  PASS rules: walk: a stale start point restarts from the head's centre
+  PASS rules: walk: 2,000 random segments = orthogonal steps ending under the finger
+  PASS rules: convert: point to cell with a board rect, off-board = -1
+  PASS rules: fast: a whole row in one sample fills every cell and closes
+  PASS rules: fast: restart from endpoint
+  PASS rules: fast: stops at the first blocked cell, never jumps over it
+  PASS rules: fast: the other colour is untouched
+  PASS rules: fast: dragging back over the path trims cell by cell
+  PASS rules: fast: dragging off the board walks back, never leaves the board
+  PASS rules: fast: dragging above the board adds nothing
+  PASS rules: fast: board consistent
+  PASS rules: tap: empty cell with nothing selected does nothing
+  PASS rules: tap: endpoint selects its colour
+  PASS rules: tap: adjacent cells extend the route
+  PASS rules: tap: a far empty cell is ignored
+  PASS rules: tap: another colour's endpoint next to the head is blocked
+  PASS rules: tap: an earlier cell trims
+  PASS rules: tap: nothing committed before Done
+  PASS rules: tap: reaching the matching endpoint closes and commits
+  PASS rules: tap: second colour from its other endpoint
+  PASS rules: tap: Done commits the partial route
+  PASS rules: tap: undo takes back exactly one route
+  PASS rules: tap: tapping another colour commits this route and selects that one
+  PASS rules: tap: cancel restores the route's start state
+  PASS rules: tap: board consistent
+  PASS rules: undo: nothing to undo or restart on a fresh board
+  PASS rules: undo: setup (new path replaced the closed one)
+  PASS rules: undo: restores the erased suffix exactly
+  PASS rules: undo: one more = empty board
+  PASS rules: undo: a touch that changes nothing is not an undo step
+  PASS rules: undo: touching the head of a path changes nothing
+  PASS rules: restart: clears every path
+  PASS rules: restart: is undoable
+  PASS rules: win: all pairs joined but cells empty = not won
+  PASS rules: win: [2,1]/[2,2] left = not won
+  PASS rules: win: joined + every cell covered = won, signal once
+  PASS rules: win(stone): two cells left
+  PASS rules: win(stone): [0,1] empty = not won
+  PASS rules: win(stone): every non-stone cell covered = won
+  PASS rules: win(dirs): straight through the W arrow wins
+  PASS rules: win(dirs): from the far end the arrow blocks (one-way)
+  PASS rules: save: snapshot -> JSON -> restore gives the same paths
+  PASS rules: save: origin side survives
+  PASS rules: save: a broken snapshot is refused and changes nothing
+  PASS rules: save: a snapshot of another level is refused
+  PASS rules: save: a snapshot of another rules version is refused
+  PASS rules: pre: pre-drawn part shown at start
+  PASS rules: pre: a part listed towards its endpoint is turned round
+  PASS rules: pre: overlapping parts are refused
+  PASS rules: pre: a part not starting at an endpoint is refused
+  PASS rules: pre: undo/restart do nothing at the start state
+  PASS rules: pre: a pre part is a normal path (touching the endpoint replaces it)
+  PASS rules: pre: undo comes back to the start state and never below it
+  PASS rules: pre: continuing a pre part from its head closes the pair
+  PASS rules: pre: restart restores the pre parts
+  PASS rules: pre: a pre-drawn board can be won
+  PASS rules: witness: fixture file present
+  PASS rules: witness: 8 package boards
+  PASS rules: witness pkg-base_3_2 (slow drag): replays through the real gesture path and wins
+  PASS rules: witness pkg-base_3_2 (fast drag): replays through the real gesture path and wins
+  PASS rules: witness pkg-base_4_7 (slow drag): replays through the real gesture path and wins
+  PASS rules: witness pkg-base_4_7 (fast drag): replays through the real gesture path and wins
+  PASS rules: witness pkg-base_5_12 (slow drag): replays through the real gesture path and wins
+  PASS rules: witness pkg-base_5_12 (fast drag): replays through the real gesture path and wins
+  PASS rules: witness pkg-base_6_18 (slow drag): replays through the real gesture path and wins
+  PASS rules: witness pkg-base_6_18 (fast drag): replays through the real gesture path and wins
+  PASS rules: witness pkg-base_7_32 (slow drag): replays through the real gesture path and wins
+  PASS rules: witness pkg-base_7_32 (fast drag): replays through the real gesture path and wins
+  PASS rules: witness pkg-base_8_48 (slow drag): replays through the real gesture path and wins
+  PASS rules: witness pkg-base_8_48 (fast drag): replays through the real gesture path and wins
+  PASS rules: witness pkg-blocked_6 (slow drag): replays through the real gesture path and wins
+  PASS rules: witness pkg-blocked_6 (fast drag): replays through the real gesture path and wins
+  PASS rules: witness pkg-arrow_6 (slow drag): replays through the real gesture path and wins
+  PASS rules: witness pkg-arrow_6 (fast drag): replays through the real gesture path and wins
+  PASS rules: catalog: 665 stored (300 + 365 daily) solutions replay through the real drag path and win
+  INFO property: 10000 sequences, 39811 commits, 28461 undo checks, 36576 blocked pulses, 5557 ms
+  PASS rules: property: 10000 random gesture sequences keep every invariant (no overlap, contiguous orthogonal, endpoints fixed, undo exact)
+  PASS rules: property: the sequences really exercised undo and blocking
+  PASS board look: R5 cell area fits the 350/390 panel inset 3.5 %
+  PASS board look: R5 cells are square
+  PASS board look: R5 board inside the view
+  PASS board look: R5 board centred
+  PASS board look: R5 node radius 0.25 and path core 0.19
+  PASS board look: R5 core reaches the shader
+  PASS board look: R6 canvas colour #10182E drawn behind the cells
+  PASS board look: R6 colour-blind symbols are on by default
+  PASS board look: symbol source for colour 0 is art or drawn
+  PASS board look: symbol source for colour 1 is art or drawn
+  PASS board look: symbol source for colour 2 is art or drawn
+  PASS board look: symbol source for colour 3 is art or drawn
+  PASS board look: symbol source for colour 4 is art or drawn
+  PASS board look: symbol source for colour 5 is art or drawn
+  PASS board look: symbols off gives plain discs
+  PASS board look: shaped notch (0, 0) is a hole
+  PASS board look: shaped notch (1, 0) is a hole
+  PASS board look: shaped notch (4, 0) is a hole
+  PASS board look: shaped notch (5, 0) is a hole
+  PASS board look: endpoint kind
+  PASS board look: direction tile N kind
+  PASS board look: open cell kind
+  PASS board look: a level without a holes field draws every stone as a stone (7)
+  PASS board look: sync runs on gesture signals
+  PASS board look: path cell carries the path bit
+  PASS board look: path cell carries its colour + 1
+  PASS board look: head cell has no E/W bit (column step)
+  PASS board look: origin cell opens S towards the next cell
+  PASS board look: head cell is the far end of the path (position 255)
+  PASS board look: undo has something to undo
+  PASS board look: undo clears the path bit
+  PASS board look: the stored solution wins through the view's drag
+  PASS board look: completed signal fires on the win
+  PASS board look: one completion flash, three connect rings
+  PASS board look: closed pair cells carry the closed bit
+  PASS board look: win clock running
+  PASS board look: restart clears every path texel
+  PASS board look: normal look: glow on
+  PASS board look: high contrast: no glow, outlines
+  PASS board look: reduced motion reaches the shader
+  PASS board look: reduced motion: lanterns do not breathe
+  PASS board look: reduced motion: 100 ms fades
+  PASS board look: normal motion: open lanterns breathe
+  PASS board look: fps text is a number
+  PASS board look: a real refused step gives a haptic tick and one ring
+  PASS board look: refused steps still give haptic ticks (21)
+  PASS board look: refused-step ring flashes at most 3 times in 1 s (3)
+  PASS board look: R13 object count steady over 300 drag+sync+tick frames (1955 -> 1955)
+  PASS board look: R13 static memory steady over 300 drag frames (+0 bytes)
+  PASS vlp: module loads the level
+  PASS vlp: the drag front-end drives the module port, not the gesture
+  PASS vlp: a drag = begin + steps + end actions (15)
+  PASS vlp: the module holds the committed drag
+  PASS vlp: module undo takes it back
+  PASS vlp: undo back at the start
+  PASS vlp: the stored solution wins through drag -> module.apply_action
+  PASS vlp: module won fires once (1)
+  PASS vlp: the recorded touch actions replay to a win on a fresh module
+  PASS vlp: replayed board equals the played board
+  PASS vlp: module restart after the win
+  PASS vlp: restart clears the board
+  PASS vlp: module loads the level
+  PASS vlp: tap on a gem starts a route
+  PASS vlp: tap next to the head steps
+  PASS vlp: tap on an earlier cell trims
+  PASS vlp: trim went through the module (trim action)
+  PASS vlp: Done commits the partial route
+  PASS vlp: tap-to-route sent module actions (5)
+  PASS vlp: the module holds the tapped route
+  PASS vlp: trim with no route drawing is refused (no change)
+  PASS vlp: module loads the level
+  PASS vlp: every drag sample went through the module
+  PASS vlp: K-R13 object count steady over 300 module drag frames (1965 -> 1965)
+  PASS vlp: K-R13 static memory steady over 300 module drag frames (+0 bytes)
+  PASS vlp: module loads the level
+  PASS vlp: R5 numbers kept (gem radius 0.25, path core 0.19)
+  PASS vlp: R5 numbers reach the shader
+  PASS vlp: the light tube is wider than the core
+  PASS vlp: GPT gem art (lt.gem.0..5) replaces the shader gems
+  PASS vlp: GPT stone tile art (lt.tile) is the tile albedo
+  PASS vlp: gem art drawn with mipmaps (no shimmer when shrunk)
+  PASS vlp: colour 0 uses gem art
+  PASS vlp: colour 1 uses gem art
+  PASS vlp: colour 2 uses gem art
+  PASS vlp: colour 3 uses gem art
+  PASS vlp: colour 4 uses gem art
+  PASS vlp: colour 5 uses gem art
+  PASS vlp: colour 0 gem carries its symbol (colour-blind safety)
+  PASS vlp: colour 1 gem carries its symbol (colour-blind safety)
+  PASS vlp: colour 2 gem carries its symbol (colour-blind safety)
+  PASS vlp: colour 3 gem carries its symbol (colour-blind safety)
+  PASS vlp: colour 4 gem carries its symbol (colour-blind safety)
+  PASS vlp: colour 5 gem carries its symbol (colour-blind safety)
+  PASS vlp: board frame node, centre not drawn
+  PASS vlp: the GPT board frame is the frame art (lt.frame)
+  PASS vlp: frame art loaded through Art.acquire
+  PASS vlp: frame shown around the board (30.2 px)
+  PASS vlp: frame stays inside the view [P: (4.42, 177.17), S: (381.16, 489.66)]
+  PASS vlp: frame surrounds the cells
+  PASS vlp: shaped board keeps its holes (4)
+  PASS vlp: screen reader names the endpoint a gem: Row 2, column 1: gem, teal circle
+  PASS vlp: the frame art is released when the board leaves
+  PASS vlp: module loads the level
+  PASS vlp: won (rm false)
+  PASS vlp: rings build up first, the burst comes at 0.60 s
+  PASS vlp: exactly one burst per win
+  PASS vlp: the burst is bright (0.85)
+  PASS vlp: every ring lights inside the build-up
+  PASS vlp: the board settles lit (rm false)
+  PASS vlp: play_win returns at once after the moment (rm false)
+  PASS vlp: module loads the level
+  PASS vlp: won (rm true)
+  PASS vlp: reduced motion: the win is a 0.25 s fade
+  PASS vlp: reduced motion: no rings, no burst
+  PASS vlp: the board settles lit (rm true)
+  PASS vlp: play_win returns at once after the moment (rm true)
+  PASS field perf: row carries scene, device and p50
+  PASS field perf: only performance fields, no identity
+  PASS field perf: short visits are not sent
+  PASS field perf: capped per session
+  PASS field perf: off unless the build asks for it (desktop and default)
+  PASS field perf: no scene is named none
+  PASS fx: shader hit_flash loads
+  PASS fx: shader dissolve loads
+  PASS fx: shader shield loads
+  PASS fx: shader shockwave loads
+  PASS fx: shader heat_shimmer loads
+  PASS fx: texture dot generated
+  PASS fx: texture spark generated
+  PASS fx: texture ring generated
+  PASS fx: texture smoke generated
+  PASS fx: texture star generated
+  PASS fx: texture white generated
+  PASS fx: emitter pool stays bounded (96 <= 96)
+  PASS fx: hit flash applies its shader
+  PASS fx: trail lives in the effect layer
+  PASS fx: heat shimmer attaches to its node
+  PASS fx: dissolve frees the node when done
+  PASS fx: hitstop restores time
+  PASS fx: shake returns to rest
+  PASS ui kit: theme type DisplayLabel
+  PASS ui kit: theme type HeadingLabel
+  PASS ui kit: theme type H2Label
+  PASS ui kit: theme type TitleLabel
+  PASS ui kit: theme type CaptionLabel
+  PASS ui kit: theme type MicroLabel
+  PASS ui kit: theme type NumberLabel
+  PASS ui kit: theme type DangerButton
+  PASS ui kit: theme type GhostButton
+  PASS ui kit: theme type CardPanel
+  PASS ui kit: theme type ChipPanel
+  PASS ui kit: display size from type scale
+  PASS ui kit: Arabic display font renders Arabic
+  PASS ui kit: framed panel
+  PASS ui kit: count_to ends on the target
+  PASS ui kit: appear ends fully visible
+  PASS errors: logger registered
+  PASS errors: one report per distinct error
+  PASS errors: repeats are counted, not re-sent
+  PASS errors: report carries build and platform
+  PASS errors: points at the script line, not engine code
+  PASS remote: Firestore values decode
+  PASS remote: numbers with safe defaults
+  PASS remote: switches with safe defaults
+  PASS crash: marker is written while running
+  PASS crash: breadcrumb recorded
+  PASS crash: background marker is not a crash
+  PASS crash: foreground marker is filed with breadcrumbs
+  PASS deleted: normal start = Crashlytics on with this install's id, stored reports kept
+  PASS deleted: delete = Crashlytics off, user id cleared, stored reports dropped
+  PASS deleted: restart while deleted = still off, no user id
+  PASS deleted: no repeated calls while nothing changes
+  PASS deleted: GameAnalytics sends nothing (queue dropped, no request)
+  PASS deleted: events copy dropped, not kept for a later account
+  PASS deleted: error records dropped (never sent, never queued)
+  PASS deleted: perf record dropped without a request
+  PASS deleted: Start again = Crashlytics on again with the id, deleted-time reports dropped
+  PASS events copy: every design/progression event is kept
+  PASS events copy: design line and value
+  PASS events copy: progression ids and score
+  PASS boot: hands over to the shell A splash
+  PASS screen menu: loads
+  PASS screen menu: builds content
+  PASS screen menu: no empty labels (1 labels)
+  PASS screen menu: all buttons meet touch size
+  PASS screen settings: loads
+  PASS screen settings: builds content
+  PASS screen settings: no empty labels (13 labels)
+  PASS screen settings: all buttons meet touch size
+  PASS screen game: loads
+  PASS screen game: builds content
+  PASS screen game: no empty labels (3 labels)
+  PASS screen game: all buttons meet touch size
+  PASS release: no developer tools on shipping screens
+  PASS dev: developer tools reachable in dev builds
+  PASS release: settings has no developer tools
+  PASS release: game has no developer tools
+  PASS cloud: unconfigured shows not available
+  PASS hd pack: start() from a boot _ready creates the pack node
+  PASS hd pack: pack node entered the tree under root
+  PASS hd pack: the download request runs inside the tree
+  PASS hd pack: request really started (state failed)
+  PASS hd pack: nothing loaded from an unreachable host
+  PASS art registry: has the package assets (118 ids)
+  PASS art registry: every path exists, loads, size matches 
+  PASS art registry: every state loads 
+  PASS art registry: chapter art is a Texture2D
+  PASS art registry: 6 chapters x dark/unlit/lit at 2340 wide + lantern rows 
+  PASS art registry: brand entries (one per language)
+  PASS art registry: brand rows point at Khaled's pick (AR1 + EN1 + ICON2)
+  PASS art registry: stand-in logo gone, boot splash = the picked mark
+  PASS art registry: app icon layers + monochrome in both Android presets
+  PASS art registry: font is a Font
+  PASS art registry: states known / unknown
+  PASS art registry: 9-slice stylebox from registry
+  PASS art registry: unknown id returns null (and push_error)
+  PASS art registry: unknown state returns null
+  PASS art registry: no load(res://art/...) outside art_registry.gd 
+  PASS shell_a progress: level ids follow the data contract
+  PASS shell_a progress: chapter from id, daily ids are no chapter
+  PASS shell_a progress: new player starts at level 1, no Home yet
+  PASS shell_a progress: Home stays hidden after 4 boards
+  PASS shell_a progress: Home unlocks after level 5
+  PASS shell_a progress: solving a board twice counts once
+  PASS shell_a progress: daily boards light no chapter lantern
+  PASS shell_a progress: daily puzzle locked before level 20
+  PASS shell_a progress: daily puzzle lights after level 20
+  PASS shell_a progress: lanterns per chapter (50/50, 12/50)
+  PASS shell_a progress: chapter 3 locked until level 101
+  PASS shell_a progress: chapter opens on its next unsolved board (replay = first)
+  PASS shell_a progress: an unsolved earlier board is offered first
+  PASS shell_a progress: merge keeps the union of solved ids
+  PASS shell_a progress: to_dict round trip
+  PASS shell_a progress: every light lit after level 300
+  PASS shell_a progress: reveal due once a chapter opens
+  PASS shell_a progress: reveal plays once
+  PASS shell_a gender: g(m, f) follows the saved gender
+  PASS shell_a gender: gtr picks the _f key for a female player
+  PASS shell_a gender: gtr falls back when no _f form exists
+  PASS shell_a save: old 'progress' journey moves once to 'journey', number 'progress' is free for the account
+  PASS shell_a save: journey saved and loaded under 'journey'
+  PASS shell_a route: first open goes to the name step
+  PASS shell_a route: with a name and < 5 boards, the hub
+  PASS shell_a route: after level 5 the app opens on the hub
+  PASS shell_a route: the play screen (or its stub) exists
+  PASS shell_a route: splash.tscn loads
+  PASS shell_a route: name_step.tscn loads
+  PASS shell_a route: home.tscn loads
+  PASS shell_a route: journey.tscn loads
+  PASS shell_a route: play_stub.tscn loads
+  PASS shell_a splash: brand moment under 800 ms
+  PASS shell_a splash [en]: shows res://art/brand/logo_en.png
+  PASS shell_a splash [en]: no stand-in text title
+  PASS shell_a splash [en]: logo inside the screen width
+  PASS shell_a splash [en]: knows where to go next
+  PASS shell_a name [en]: shows res://art/brand/logo_en.png
+  PASS shell_a name [en]: no stand-in text title
+  PASS shell_a name [en]: logo inside the screen width
+  PASS shell_a name [en]: Start is off with no name
+  PASS shell_a name [en]: Start stays off until a gender is picked
+  PASS shell_a name [en]: one tap on a gender enables Start (feminine form)
+  PASS shell_a name [en]: terms link
+  PASS shell_a name [en]: privacy link
+  PASS shell_a name [en]: terms line follows the gender
+  PASS shell_a name [en]: no lone 'and' piece in Arabic
+  PASS shell_a name [en]: no guest / later anywhere
+  PASS shell_a name [en]: one field + gender only (no sign-in, no later)
+  PASS shell_a name [en]: every target >= 44 pt
+  PASS shell_a home [en]: lanterns card shows 12/50 (reads left to right)
+  PASS shell_a home [en]: big Resume button on level 13
+  PASS shell_a home [en]: daily puzzle locked until level 20
+  PASS shell_a home [en]: daily gift card
+  PASS shell_a home [en]: bottom bar Home / Journey / Shop / Profile
+  PASS shell_a home [en]: bottom bar mirrors in Arabic
+  PASS shell_a home [en]: every target >= 44 pt
+  PASS shell_a home [en]: no scroll
+  PASS shell_a home [en]: daily card lights after level 20
+  PASS shell_a home [en]: Resume speaks to a female player
+  PASS shell_a home [en]: text 1.3 still fits one screen
+  PASS shell_a journey [en]: six paintings in the panorama
+  PASS shell_a journey [en]: painting whole, no crop (1.778 vs 1.777)
+  PASS shell_a journey [en]: panorama starts at the reading side
+  PASS shell_a journey [en]: lantern counter per chapter
+  PASS shell_a journey [en]: locked chapter shows a lock
+  PASS shell_a journey [en]: chapter picker with locks
+  PASS shell_a journey [en]: opens on the current chapter
+  PASS shell_a journey [en]: the picked chapter's painting is scrolled into view
+  PASS shell_a journey [en]: picking chapter 5 scrolls to it
+  PASS shell_a journey [en]: a locked chapter cannot be played
+  PASS shell_a journey [en]: a fully lit chapter offers replay
+  PASS shell_a journey [en]: every target >= 44 pt
+  PASS shell_a journey [en]: fits one screen (no vertical scroll)
+  PASS shell_a journey [en]: back arrow points right in Arabic
+  PASS shell_a splash: brand moment under 800 ms
+  PASS shell_a splash [ar]: shows res://art/brand/logo_ar.png
+  PASS shell_a splash [ar]: no stand-in text title
+  PASS shell_a splash [ar]: logo inside the screen width
+  PASS shell_a splash [ar]: knows where to go next
+  PASS shell_a name [ar]: shows res://art/brand/logo_ar.png
+  PASS shell_a name [ar]: no stand-in text title
+  PASS shell_a name [ar]: logo inside the screen width
+  PASS shell_a name [ar]: Start is off with no name
+  PASS shell_a name [ar]: Start stays off until a gender is picked
+  PASS shell_a name [ar]: one tap on a gender enables Start (feminine form)
+  PASS shell_a name [ar]: terms link
+  PASS shell_a name [ar]: privacy link
+  PASS shell_a name [ar]: terms line follows the gender
+  PASS shell_a name [ar]: no lone 'and' piece in Arabic
+  PASS shell_a name [ar]: no guest / later anywhere
+  PASS shell_a name [ar]: one field + gender only (no sign-in, no later)
+  PASS shell_a name [ar]: every target >= 44 pt
+  PASS shell_a home [ar]: lanterns card shows 12/50 (reads left to right)
+  PASS shell_a home [ar]: big Resume button on level 13
+  PASS shell_a home [ar]: daily puzzle locked until level 20
+  PASS shell_a home [ar]: daily gift card
+  PASS shell_a home [ar]: bottom bar Home / Journey / Shop / Profile
+  PASS shell_a home [ar]: bottom bar mirrors in Arabic
+  PASS shell_a home [ar]: every target >= 44 pt
+  PASS shell_a home [ar]: no scroll
+  PASS shell_a home [ar]: daily card lights after level 20
+  PASS shell_a home [ar]: Resume speaks to a female player
+  PASS shell_a home [ar]: text 1.3 still fits one screen
+  PASS shell_a journey [ar]: six paintings in the panorama
+  PASS shell_a journey [ar]: painting whole, no crop (1.778 vs 1.777)
+  PASS shell_a journey [ar]: panorama starts at the reading side
+  PASS shell_a journey [ar]: lantern counter per chapter
+  PASS shell_a journey [ar]: locked chapter shows a lock
+  PASS shell_a journey [ar]: chapter picker with locks
+  PASS shell_a journey [ar]: opens on the current chapter
+  PASS shell_a journey [ar]: the picked chapter's painting is scrolled into view
+  PASS shell_a journey [ar]: picking chapter 5 scrolls to it
+  PASS shell_a journey [ar]: a locked chapter cannot be played
+  PASS shell_a journey [ar]: a fully lit chapter offers replay
+  PASS shell_a journey [ar]: every target >= 44 pt
+  PASS shell_a journey [ar]: fits one screen (no vertical scroll)
+  PASS shell_a journey [ar]: back arrow points right in Arabic
+  PASS shell_a reveal: 600 ms
+  PASS shell_a reveal: one tap skips it
+  PASS shell_a reveal: ends by itself
+  PASS shell_b levels: boards 1 and 300 load from the catalog
+  PASS shell_b levels: no board outside 1..300
+  PASS shell_b daily: two days give two boards
+  PASS shell_b daily: picked by weekday, the next Sunday is another Sunday board
+  PASS shell_b daily: a year later it still has a board (wraps)
+  PASS shell_b daily: id for a date
+  PASS shell_b achievements: 50 clears earns the 50 one
+  PASS shell_b achievements: first connection / 50 / 300 (R8; clears never earn 'first')
+  PASS shell_b achievements: three, paying 20 / 50 / 100
+  PASS shell_b themes: a paid theme needs owning, a free one picks
+  PASS shell_b themes: an owned paid theme picks
+  PASS shell_b themes: endpoints are fixed, themes only repaint the tiles
+  PASS shell_b themes: night has no endpoint colours
+  PASS shell_b themes: dusk has no endpoint colours
+  PASS shell_b themes: dawn has no endpoint colours
+  PASS shell_b themes: garden has no endpoint colours
+  PASS shell_b themes: each theme has its own canvas
+  PASS shell_b route [en]: the play screen exists at QShell.PLAY
+  PASS shell_b route [en]: the daily screen exists at QShell.DAILY
+  PASS shell_b route [en]: splash -> the hub after 5 boards (v0.2)
+  PASS shell_b route [en]: Home offers level 6
+  PASS shell_b route [en]: Home resume -> play opens level 6
+  PASS shell_b play [en]: the look lane's board view (adapter) sits in ONE BoardHost slot
+  PASS shell_b play [en]: the board is never mirrored
+  PASS shell_b play [en]: HUD shows Level 1 and 0/50 (left to right)
+  PASS shell_b play [en]: Undo and Restart are off on a fresh board
+  PASS shell_b play [en]: no Hint before level 10, no Done unless tap-to-route
+  PASS shell_b play [en]: every target >= 44 pt
+  PASS shell_b play [en]: the board has room
+  PASS shell_b play [en]: a finger-solved board wins and lights its lantern
+  PASS shell_b play [en]: level_won hook fired once for S7
+  PASS shell_b play [en]: the board is locked once won
+  PASS shell_b win [en]: win sheet with praise and Next
+  PASS shell_b win [en]: lantern count 1/50
+  PASS shell_b win [en]: the unfinished-board save is cleared
+  PASS shell_b win [en]: Next opens level 2 in place
+  PASS shell_b win [en]: level 2 shows 1/50
+  PASS shell_b play [en]: Hint shows from level 10 (Tune hint_from_level)
+  PASS shell_b play [en]: Hint raises hint_requested for the commerce lane
+  PASS shell_b play [en]: Hint row targets >= 44 pt
+  PASS shell_b restart [en]: Undo turns on after a stroke
+  PASS shell_b restart [en]: every committed stroke is saved
+  PASS shell_b restart [en]: Restart asks first and locks the board
+  PASS shell_b restart [en]: Cancel keeps the strokes
+  PASS shell_b restart [en]: Start over clears the board and Undo can bring it back
+  PASS shell_b restart [en]: Undo after a restart restores the strokes
+  PASS shell_b pause [en]: pause has Resume and Settings, no Home before level 5
+  PASS shell_b pause [en]: board locked while paused
+  PASS shell_b pause [en]: Resume gives the board back
+  PASS shell_b resume [en]: the unfinished board comes back after leaving
+  PASS shell_b pause [en]: Home shows in the pause menu after level 5
+  PASS shell_b milestone [en]: the 50th lantern shows ONE celebration sheet (P22)
+  PASS shell_b milestone [en]: gift and achievement on the same sheet
+  PASS shell_b milestone [en]: the gift amount comes from Tune
+  PASS shell_b milestone [en]: achievements saved (50 clears + the first connection made on the way)
+  PASS shell_b milestone [en]: finishing chapter 1 earns the Glow Garden theme
+  PASS shell_b milestone [en]: targets >= 44 pt
+  PASS shell_b end [en]: after level 300 the 'every light is lit' screen opens
+  PASS shell_b end [en]: targets >= 44 pt
+  PASS shell_b daily [en]: the play screen opens the chosen daily board
+  PASS shell_b daily [en]: a daily win is recorded and lights no chapter lantern
+  PASS shell_b daily [en]: daily win goes back to the daily screen
+  PASS shell_b daily [en]: locked before level 20
+  PASS shell_b daily [en]: today's board after level 20
+  PASS shell_b daily [en]: archive of the last 6 days
+  PASS shell_b daily [en]: every target >= 44 pt
+  PASS shell_b profile [en]: boards cleared 30/300
+  PASS shell_b profile [en]: the three achievements are listed
+  PASS shell_b profile [en]: bottom bar, targets >= 44 pt
+  PASS shell_b settings [en]: SymbolsToggle
+  PASS shell_b settings [en]: HighContrastToggle
+  PASS shell_b settings [en]: ReduceFxToggle
+  PASS shell_b settings [en]: TapRouteToggle
+  PASS shell_b settings [en]: TextSizeToggle
+  PASS shell_b settings [en]: VibrationToggle
+  PASS shell_b settings [en]: sound sliders
+  PASS shell_b settings [en]: symbols are on by default (R6)
+  PASS shell_b settings [en]: a toggle is saved at once
+  PASS shell_b settings [en]: large text = 1.3
+  PASS shell_b settings [en]: theme choices
+  PASS shell_b settings [en]: a paid theme is locked until owned
+  PASS shell_b route [ar]: the play screen exists at QShell.PLAY
+  PASS shell_b route [ar]: the daily screen exists at QShell.DAILY
+  PASS shell_b route [ar]: splash -> the hub after 5 boards (v0.2)
+  PASS shell_b route [ar]: Home offers level 6
+  PASS shell_b route [ar]: Home resume -> play opens level 6
+  PASS shell_b play [ar]: the look lane's board view (adapter) sits in ONE BoardHost slot
+  PASS shell_b play [ar]: the board is never mirrored
+  PASS shell_b play [ar]: HUD shows Level 1 and 0/50 (left to right)
+  PASS shell_b play [ar]: Undo and Restart are off on a fresh board
+  PASS shell_b play [ar]: no Hint before level 10, no Done unless tap-to-route
+  PASS shell_b play [ar]: every target >= 44 pt
+  PASS shell_b play [ar]: the board has room
+  PASS shell_b play [ar]: a finger-solved board wins and lights its lantern
+  PASS shell_b play [ar]: level_won hook fired once for S7
+  PASS shell_b play [ar]: the board is locked once won
+  PASS shell_b win [ar]: win sheet with praise and Next
+  PASS shell_b win [ar]: lantern count 1/50
+  PASS shell_b win [ar]: the unfinished-board save is cleared
+  PASS shell_b win [ar]: Next opens level 2 in place
+  PASS shell_b win [ar]: level 2 shows 1/50
+  PASS shell_b play [ar]: Hint shows from level 10 (Tune hint_from_level)
+  PASS shell_b play [ar]: Hint raises hint_requested for the commerce lane
+  PASS shell_b play [ar]: Hint row targets >= 44 pt
+  PASS shell_b restart [ar]: Undo turns on after a stroke
+  PASS shell_b restart [ar]: every committed stroke is saved
+  PASS shell_b restart [ar]: Restart asks first and locks the board
+  PASS shell_b restart [ar]: Cancel keeps the strokes
+  PASS shell_b restart [ar]: Start over clears the board and Undo can bring it back
+  PASS shell_b restart [ar]: Undo after a restart restores the strokes
+  PASS shell_b pause [ar]: pause has Resume and Settings, no Home before level 5
+  PASS shell_b pause [ar]: board locked while paused
+  PASS shell_b pause [ar]: Resume gives the board back
+  PASS shell_b resume [ar]: the unfinished board comes back after leaving
+  PASS shell_b pause [ar]: Home shows in the pause menu after level 5
+  PASS shell_b milestone [ar]: the 50th lantern shows ONE celebration sheet (P22)
+  PASS shell_b milestone [ar]: gift and achievement on the same sheet
+  PASS shell_b milestone [ar]: the gift amount comes from Tune
+  PASS shell_b milestone [ar]: achievements saved (50 clears + the first connection made on the way)
+  PASS shell_b milestone [ar]: finishing chapter 1 earns the Glow Garden theme
+  PASS shell_b milestone [ar]: targets >= 44 pt
+  PASS shell_b end [ar]: after level 300 the 'every light is lit' screen opens
+  PASS shell_b end [ar]: targets >= 44 pt
+  PASS shell_b daily [ar]: the play screen opens the chosen daily board
+  PASS shell_b daily [ar]: a daily win is recorded and lights no chapter lantern
+  PASS shell_b daily [ar]: daily win goes back to the daily screen
+  PASS shell_b daily [ar]: locked before level 20
+  PASS shell_b daily [ar]: today's board after level 20
+  PASS shell_b daily [ar]: archive of the last 6 days
+  PASS shell_b daily [ar]: every target >= 44 pt
+  PASS shell_b profile [ar]: boards cleared 30/300
+  PASS shell_b profile [ar]: the three achievements are listed
+  PASS shell_b profile [ar]: bottom bar, targets >= 44 pt
+  PASS shell_b settings [ar]: SymbolsToggle
+  PASS shell_b settings [ar]: HighContrastToggle
+  PASS shell_b settings [ar]: ReduceFxToggle
+  PASS shell_b settings [ar]: TapRouteToggle
+  PASS shell_b settings [ar]: TextSizeToggle
+  PASS shell_b settings [ar]: VibrationToggle
+  PASS shell_b settings [ar]: sound sliders
+  PASS shell_b settings [ar]: symbols are on by default (R6)
+  PASS shell_b settings [ar]: a toggle is saved at once
+  PASS shell_b settings [ar]: large text = 1.3
+  PASS shell_b settings [ar]: theme choices
+  PASS shell_b settings [ar]: a paid theme is locked until owned
+  PASS tune: Remote autoload present
+  PASS tune: every key reads its default offline and follows the remote value 
+  PASS tune: wrong-typed remote values fall back to defaults
+  PASS tune: every remote setting has a reader 
+  PASS s8 route: no account name yet = the name step
+  PASS s8 route: account with a name = play
+  PASS s8 delete: held 14 days, phone silent, held key kept only in the hold file
+  PASS s8 route: hold card for 14 days, then the start-again card
+  PASS s8 silent while held: no request leaves the phone
+  PASS s8 cancel offline: refused honestly, hold kept, still silent
+  PASS s8 cancel: one token + one cancelDelete, account back, hold gone, not silent
+  PASS s8 cancel: sign-in file holds the account's (renewed) key again
+  PASS s8 delete now: finishDelete once, hold gone, still deleted until Start again
+  PASS s8 cancel after day 14: the account is gone, the hold is cleared
+  PASS s8 delete without a hold (old server): nothing to cancel
+  PASS s8 start again: new account route, hold cleared
+  PASS s8 name: a taken name on a first install keeps the plain message
+  PASS s8 name: after a delete a refused name says: choose another or sign in to cancel
+  PASS s8 name: other refusals keep their own message
+  PASS s8 link: a sign-in that belongs to another account is ASKED, nothing switches or merges
+  PASS s8 link: keep this phone's account = keepThis with the same sign-in, no second sheet
+  PASS s8 link: keep the other account = the switch call
+  PASS s8 link: no 'merge both' exists
+  PASS s8 link: closing the sign-in sheet sends nothing
+  PASS s8 merge: solved ids are a UNION (not max level), reveals too
+  PASS s8 merge: ledger union by id, a grant counted once (balance 120)
+  PASS s8 merge: owned union, this phone's settings stay, cloud lacks something so it is pushed
+  PASS s8 merge: identical copies = no push
+  PASS s8 merge: same result from the other direction
+  PASS s8 merge: a newer app's cloud copy is kept as it is
+  PASS s8 save: the last good save is kept as a backup
+  PASS s8 save: a torn save falls back to the backup, the player keeps their boards
+  PASS s8 save: Save.cloud_merge uses the union rule
+  PASS s8 events: level start / complete / gestures / chapter unlock reach the analytics sink
+  PASS s8 events: counts and ids only, no name, no touch traces
+  PASS s8 events: deleted account = no event at all
+  PASS s8 strings: every acct.* key has English and Arabic
+  PASS s8 strings: every feminine Arabic form has its masculine base
+  PASS s8 strings: day counts have their own forms
+  PASS perf: the record is sent
+  PASS perf: the record never carries the account uid
+  PASS perf: it carries the per-install id
+  PASS perf: (control) other records keep the uid
+  PASS commerce ledger: a grant id pays once
+  PASS commerce ledger: a spend id counts once
+  PASS commerce ledger: not enough -> nothing written
+  PASS commerce ledger: bad grants refused
+  PASS commerce ledger: reloads from its saved entries (kill-app)
+  PASS commerce ledger: merge is a union by id, twice changes nothing
+  PASS commerce ledger: a merged overspend shows 0, never negative
+  PASS commerce ledger: the store callback runs once per real change
+  PASS commerce R8: start gift 120 once
+  PASS commerce R8: a first clear pays 10
+  PASS commerce R8: replays pay nothing
+  PASS commerce R8: the 20th clear is a plain clear (achievements are first connection, 50, 300)
+  PASS commerce R8: the first connection pays 20 once (claimed at once)
+  PASS commerce R8: the 50th clear = 10 + chapter gift 100 + hint + achievement 50, ONE result (one celebration)
+  PASS commerce R8: the 300th clear pays the achievement 100
+  PASS commerce R8: achievements pay 20 / 50 / 100
+  PASS commerce R8: a daily puzzle pays 10 once (v0.2 package; v0.1 paid 30)
+  PASS commerce R8: milestones missed (cloud-merged progress) are paid once, 100 -> two gifts
+  PASS commerce R8: amounts follow the remote settings
+  PASS commerce gift: ready on a new day (no level gate in v0.2, package), first step 10
+  PASS commerce gift: once a day
+  PASS commerce gift: next day 15 (no streak reset)
+  PASS commerce gift: a clock set back pays nothing
+  PASS commerce gift: the ladder 10/15/20/25/30/40 walks one step per claim
+  PASS commerce gift: after the last step the gift is a hint
+  PASS commerce gift: the hint gift lands
+  PASS commerce hints: test board loads
+  PASS commerce hints: the button shows from level 10
+  PASS commerce hints: preview changes and spends nothing
+  PASS commerce hints: the crossing route is named as a conflict
+  PASS commerce hints: a conflict without the player's confirm changes and spends nothing
+  PASS commerce hints: confirmed reset -> conflicting route cleared, hint drawn, 60 coins spent
+  PASS commerce hints: the returned 'before' restores the board (undo)
+  PASS commerce hints: a preview older than the board is refused, nothing spent
+  PASS commerce hints: cannot pay -> nothing spent, board untouched
+  PASS commerce hints: auto spends a stored hint first
+  PASS commerce hints: a finished board has nothing to hint
+  PASS commerce hints: options say what the player can pay with
+  PASS commerce ads: a finished video = 1 hint
+  PASS commerce ads: 120 s apart
+  PASS commerce ads: 3 videos a day, the 4th is refused
+  PASS commerce ads: a new day opens the cap again
+  PASS commerce ads: no fill -> nothing paid, not counted
+  PASS commerce ads: closed early -> nothing paid
+  PASS commerce ads: a late reward lands once as a stored hint
+  PASS commerce ads: no consent -> no video
+  PASS commerce ads: the null provider never fills and never pays
+  PASS commerce hints: video fails -> nothing spent, board untouched
+  PASS commerce hints: video -> hint earned and used, board changed
+  PASS commerce forced: OFF by default (tests, test versions)
+  PASS commerce forced: never in the first session
+  PASS commerce forced: not before level 21
+  PASS commerce forced: not in the first 5 minutes
+  PASS commerce forced: not before 5 clears
+  PASS commerce forced: all conditions met -> allowed
+  PASS commerce forced: shown once, then 5 clears apart
+  PASS commerce forced: shown once, then 240 s apart
+  PASS commerce forced: 2 per session
+  PASS commerce forced: 6 a day
+  PASS commerce forced: not after a level that used a video hint
+  PASS commerce forced: no fill -> nothing shown, play goes on
+  PASS commerce forced: no forced ads for 7 days after any purchase
+  PASS commerce forced: still the day before the holiday ends
+  PASS commerce forced: the holiday ends after 7 days
+  PASS commerce forced: Remove Ads removes them for good
+  PASS commerce buy: verified -> 5 hints once -> store finished, 7-day holiday starts
+  PASS commerce buy: the same purchase delivered twice pays once
+  PASS commerce buy: cancel -> nothing granted
+  PASS commerce buy: store failure -> nothing granted
+  PASS commerce buy: pending -> nothing granted, the shop shows waiting
+  PASS commerce buy: late success -> granted once, waiting cleared
+  PASS commerce buy: another reconcile pays nothing more
+  PASS commerce buy: server unreachable -> nothing granted, the store keeps the purchase
+  PASS commerce buy: retry when online -> granted once, finished
+  PASS commerce kill: (setup) grant written, finish not yet
+  PASS commerce kill: app killed after the grant -> next start finishes it, no second grant
+  PASS commerce kill: app killed before the grant -> next start grants once
+  PASS commerce starter: no longer sold (v0.2)
+  PASS commerce starter: a v0.1 owner keeps it, Dusk comes with it, 10 hints once
+  PASS commerce starter: syncing again grants nothing more
+  PASS commerce refund: the entitlement goes, hints already given stay
+  PASS commerce starter: Dusk owned already -> 5 more hints instead (15)
+  PASS commerce remove ads: owned, a second buy is already_owned
+  PASS commerce restore: Remove Ads back on a new phone, no holiday, no hints
+  PASS commerce buy: no store -> unavailable, never a fake grant
+  PASS commerce shop: coins + hints packs; Remove Ads hidden while forced ads are off and no test store: ["coins_s", "coins_l", "hints_s"]
+  PASS commerce shop: Remove Ads appears when forced ads are switched on (remote setting)
+  PASS commerce shop: a player who owns Remove Ads still sees it (owned) with forced ads off
+  PASS commerce shop: no store -> no price text (never a made-up price)
+  PASS commerce shop: the store's price is shown
+  PASS commerce: config/billing.json lists exactly the shop's products with the same kinds and amounts
+  PASS commerce shop: scene loads
+  PASS commerce shop: cards in order (video, Remove Ads, 300 / 900 coins, 5 hints, test-store line, Restore + Support): ["VideoCard", "Product_remove_ads", "Product_coins_s", "Product_coins_l", "Product_hints_s", "TestNote", "Footer"]
+  PASS commerce shop: forced ads on -> the same cards: ["VideoCard", "Product_remove_ads", "Product_coins_s", "Product_coins_l", "Product_hints_s", "TestNote", "Footer"]
+  PASS commerce shop: Restore and Support are on the screen
+  PASS commerce shop: purchased and waiting cards cannot be bought again
+  PASS integ count [ar]: +1 -> عملة
+  PASS integ count [ar]: +2 -> عملتين
+  PASS integ count [ar]: +10 -> عملات
+  PASS integ count [ar]: +15 -> عملة
+  PASS integ count [ar]: +3 hints -> تلميحات
+  PASS integ count [en]: +1 hint / +10 coins
+  PASS integ view [en]: the play screen shows the look lane's board view
+  PASS integ view [en]: the view is bound to the live board and gesture
+  PASS integ view [en]: a finger drag draws a route on the board
+  PASS integ view [en]: a copied mouse click from a touch draws nothing (no double input)
+  PASS integ view [en]: the touch itself draws the route
+  PASS integ win [en]: the win sheet shows the coin reward
+  PASS integ win [en]: first clear pays once into the ledger
+  PASS integ win [en]: ONE sheet (P22)
+  PASS integ win [en]: the top bar and controls fade out under the sheet
+  PASS integ win [en]: Continue goes on to level 6
+  PASS integ win [en]: the top bar and controls come back after Continue
+  PASS integ win [en]: a replay pays nothing
+  PASS integ milestone [en]: gift and achievement on the ONE celebration sheet
+  PASS integ milestone [en]: gift hints and coins landed in the ledger
+  PASS integ hint [en]: preview shows a ghost path and the ways to pay
+  PASS integ hint [en]: the preview spends and changes nothing
+  PASS integ hint [en]: the controls row hides under the hint card
+  PASS integ hint [en]: the controls row is back after Cancel
+  PASS integ hint [en]: Cancel spends nothing, board untouched, input back
+  PASS integ hint [en]: using it spends the price and draws one route
+  PASS integ hint [en]: one Undo takes the route back
+  PASS integ hint [en]: not enough coins -> the shop is offered, nothing spent
+  PASS integ hint [en]: closing the card spends nothing
+  PASS integ hint reset [en]: (this board has no crossing pair: skipped)
+  PASS integ gift [en]: Home has a ready daily gift
+  PASS integ gift [en]: one tap claims it, once a day
+  PASS integ gift [en]: a second tap pays nothing
+  PASS integ shop [en]: QShell.SHOP is the shop scene
+  PASS integ shop [en]: the bottom bar's Shop tab goes to QShell.SHOP
+  PASS integ view [ar]: the play screen shows the look lane's board view
+  PASS integ view [ar]: the view is bound to the live board and gesture
+  PASS integ view [ar]: a finger drag draws a route on the board
+  PASS integ view [ar]: a copied mouse click from a touch draws nothing (no double input)
+  PASS integ view [ar]: the touch itself draws the route
+  PASS integ win [ar]: the win sheet shows the coin reward
+  PASS integ win [ar]: first clear pays once into the ledger
+  PASS integ win [ar]: ONE sheet (P22)
+  PASS integ win [ar]: the top bar and controls fade out under the sheet
+  PASS integ win [ar]: Continue goes on to level 6
+  PASS integ win [ar]: the top bar and controls come back after Continue
+  PASS integ win [ar]: a replay pays nothing
+  PASS integ milestone [ar]: gift and achievement on the ONE celebration sheet
+  PASS integ milestone [ar]: gift hints and coins landed in the ledger
+  PASS integ hint [ar]: preview shows a ghost path and the ways to pay
+  PASS integ hint [ar]: the preview spends and changes nothing
+  PASS integ hint [ar]: the controls row hides under the hint card
+  PASS integ hint [ar]: the controls row is back after Cancel
+  PASS integ hint [ar]: Cancel spends nothing, board untouched, input back
+  PASS integ hint [ar]: using it spends the price and draws one route
+  PASS integ hint [ar]: one Undo takes the route back
+  PASS integ hint [ar]: not enough coins -> the shop is offered, nothing spent
+  PASS integ hint [ar]: closing the card spends nothing
+  PASS integ hint reset [ar]: (this board has no crossing pair: skipped)
+  PASS integ gift [ar]: Home has a ready daily gift
+  PASS integ gift [ar]: one tap claims it, once a day
+  PASS integ gift [ar]: a second tap pays nothing
+  PASS integ shop [ar]: QShell.SHOP is the shop scene
+  PASS integ shop [ar]: the bottom bar's Shop tab goes to QShell.SHOP
+  PASS a11y: one stored label per cell (48)
+  PASS a11y: every label is real text (no raw key, no placeholder), bad=0
+  PASS a11y: sample board has lantern and hole cells
+  PASS a11y [en]: lantern cell reads 'Row 1, column 3: gem, ...' got 'Row 1, column 3: gem, lilac diamond'
+  PASS a11y: c6-251 has a stone and an arrow tile
+  PASS a11y [en]: stone cell
+  PASS a11y [en]: arrow cell, got 'Row 4, column 1: arrow pointing up'
+  PASS a11y [en]: hole cell
+  PASS a11y [en]: board summary name
+  PASS a11y [ar]: gem cell follows the language (v0.2 V-LP: lantern -> gem), got 'الصف 1، العمود 3: جوهرة، معيّن بنفسجي'
+  PASS a11y [ar]: stone cell and board name
+  PASS a11y [ar]: live label names the path on a covered cell
+  PASS a11y [en]: buttons named from text / tooltip, got 'Play' 'Pause'
+  PASS a11y [ar]: button names follow the language
+  PASS fonts: English body font is Nunito Regular
+  PASS fonts: English heading font is Nunito Bold
+  PASS fonts: Arabic glyphs fall back to Tajawal (body) and Baloo Bhaijaan 2 / Tajawal Bold (headings)
+  PASS fonts: theme uses the Nunito pair
+  PASS fonts: body font has a server font
+  PASS counts [en]: amount phrases
+  PASS counts [en]: win.gift
+  PASS counts [en]: hint.use_coins
+  PASS counts [ar]: hint.use_coins 1 -> 1 عملة
+  PASS counts [ar]: hint.use_coins 2 -> 2 عملتين
+  PASS counts [ar]: hint.use_coins 3 -> 3 عملات
+  PASS counts [ar]: hint.use_coins 10 -> 10 عملات
+  PASS counts [ar]: hint.use_coins 11 -> 11 عملة
+  PASS counts [ar]: hint.use_coins 60 -> 60 عملة
+  PASS counts [ar]: win.gift -> هدية: عملتين وتلميح واحد
+  PASS counts [ar]: win.achievement 3 coins -> إنجاز: x (⁦+3⁩ عملات)
+  PASS tut steps: levels 1-3 are tutorial steps 1-3 for a new player
+  PASS tut steps: no tutorial on level 4+ or the daily
+  PASS tut steps: a player who passed level 3 never sees it
+  PASS tut steps: never again once done
+  PASS tut 1 [en]: level 1 opens with the tutorial and its one line
+  PASS tut 1 [en]: one short line, translated
+  PASS tut 1 [en]: GameAnalytics tutorial_step sent when the step is reached
+  PASS tut 1 [en]: no finger before 3 s
+  PASS tut 1 [en]: idle finger after 3 s shows the next route
+  PASS tut 1 [en]: the finger is placed on the board
+  PASS tut 1 [en]: any touch hides the finger
+  PASS tut 1 [en]: no tap offer at first
+  PASS tut 1 [en]: 6 s hesitation offers tap-to-route once
+  PASS tut 1 [en]: the offer button is a 44 pt+ target
+  PASS tut 1 [en]: the offer switches on the Settings tap-to-route toggle (Done shows)
+  PASS tut 1 [en]: the offer goes away after use
+  PASS tut 1 [en]: the tap offer shows only once (finger still helps)
+  PASS tut 1 [en]: GameAnalytics tutorial solved event with time
+  PASS tut 1 [en]: not done after step 1
+  PASS tut offer [en]: 3 failed drags offer tap-to-route
+  PASS tut 3 [en]: level 3 is the cover lesson
+  PASS tut 3 [en]: all pairs joined but tiles empty -> the empty tiles pulse
+  PASS tut 3 [en]: the pulse ends (one rise and fall)
+  PASS tut 3 [en]: the empty tiles pulse ONCE only
+  PASS tut 3 [en]: winning level 3 finishes the tutorial
+  PASS tut done [en]: never shown again after done (even replaying level 1)
+  PASS tut skip [en]: a returning player past level 3 replays level 2 with no tutorial
+  PASS tap UI [en]: tap-to-route shows the Done button
+  PASS tap UI [en]: Done commits the tapped partial route
+  PASS tap UI [en]: a board solved only by taps + Done is won
+  PASS chapter scene [en]: the 50th lantern opens the painting-wakes scene first (no sheet yet)
+  PASS chapter scene [en]: haptic at the start
+  PASS chapter scene [en]: dark, unlit and lit layers of the painting
+  PASS chapter scene [en]: a tap in the first second does not skip
+  PASS chapter scene [en]: light moves across the lit layer
+  PASS chapter scene [en]: skippable after 1 s
+  PASS chapter scene [en]: then ONE celebration sheet (P22)
+  PASS chapter scene [en]: next chapter reveal and the gift on the same sheet
+  PASS chapter scene [en]: Next does not show the chapter 2 reveal again
+  PASS chapter scene [en]: plays 1-3 s and ends by itself
+  PASS chapter scene [en]: full motion is 2-3 s with the light band mid-way
+  PASS tut 1 [ar]: level 1 opens with the tutorial and its one line
+  PASS tut 1 [ar]: one short line, translated
+  PASS tut 1 [ar]: GameAnalytics tutorial_step sent when the step is reached
+  PASS tut 1 [ar]: no finger before 3 s
+  PASS tut 1 [ar]: idle finger after 3 s shows the next route
+  PASS tut 1 [ar]: the finger is placed on the board
+  PASS tut 1 [ar]: any touch hides the finger
+  PASS tut 1 [ar]: no tap offer at first
+  PASS tut 1 [ar]: 6 s hesitation offers tap-to-route once
+  PASS tut 1 [ar]: the offer button is a 44 pt+ target
+  PASS tut 1 [ar]: the offer switches on the Settings tap-to-route toggle (Done shows)
+  PASS tut 1 [ar]: the offer goes away after use
+  PASS tut 1 [ar]: the tap offer shows only once (finger still helps)
+  PASS tut 1 [ar]: GameAnalytics tutorial solved event with time
+  PASS tut 1 [ar]: not done after step 1
+  PASS tut offer [ar]: 3 failed drags offer tap-to-route
+  PASS tut 3 [ar]: level 3 is the cover lesson
+  PASS tut 3 [ar]: all pairs joined but tiles empty -> the empty tiles pulse
+  PASS tut 3 [ar]: the pulse ends (one rise and fall)
+  PASS tut 3 [ar]: the empty tiles pulse ONCE only
+  PASS tut 3 [ar]: winning level 3 finishes the tutorial
+  PASS tut done [ar]: never shown again after done (even replaying level 1)
+  PASS tut skip [ar]: a returning player past level 3 replays level 2 with no tutorial
+  PASS tap UI [ar]: tap-to-route shows the Done button
+  PASS tap UI [ar]: Done commits the tapped partial route
+  PASS tap UI [ar]: a board solved only by taps + Done is won
+  PASS chapter scene [ar]: the 50th lantern opens the painting-wakes scene first (no sheet yet)
+  PASS chapter scene [ar]: haptic at the start
+  PASS chapter scene [ar]: dark, unlit and lit layers of the painting
+  PASS chapter scene [ar]: a tap in the first second does not skip
+  PASS chapter scene [ar]: light moves across the lit layer
+  PASS chapter scene [ar]: skippable after 1 s
+  PASS chapter scene [ar]: then ONE celebration sheet (P22)
+  PASS chapter scene [ar]: next chapter reveal and the gift on the same sheet
+  PASS chapter scene [ar]: Next does not show the chapter 2 reveal again
+  PASS chapter scene [ar]: plays 1-3 s and ends by itself
+  PASS chapter scene [ar]: full motion is 2-3 s with the light band mid-way
+  PASS rulesecon teach: boards 61 / 101 / 151 / 201 teach stones / shape / tall / arrows ["stones", "shape", "tall", "dirs"]
+  PASS rulesecon teach: no other board and never the daily
+  PASS rulesecon teach: board 61 is the first with stones
+  PASS rulesecon teach: board 101 is the first shaped board
+  PASS rulesecon teach: board 151 opens chapter 4 with a tall board
+  PASS rulesecon teach: board 201 is the first with arrows
+  PASS rulesecon teach: a seen rule never shows again; the others still do
+  PASS rulesecon teach: board 61 opens with the stones moment and its line
+  PASS rulesecon teach: saved the moment it shows
+  PASS rulesecon teach: the motion plays
+  PASS rulesecon teach: the motion rests after 7.2 s
+  PASS rulesecon teach: the line leaves after the first move
+  PASS rulesecon teach: board 61 a second time shows nothing (once)
+  PASS rulesecon teach: board 101 shows the shape moment
+  PASS rulesecon teach: board 151 shows the tall moment
+  PASS rulesecon teach: board 201 shows the dirs moment
+  PASS rulesecon R8: the first joined pair earns 'first connection' +20 at once
+  PASS rulesecon R8: the first connection shows a toast
+  PASS rulesecon R8: the next pair pays nothing more
+  PASS rulesecon theme: Glow Garden is earned once
+  PASS rulesecon theme: the earned theme can be picked
+  PASS rulesecon theme: Settings says how Glow Garden is earned (not 'In the shop')
+  PASS rulesecon theme: Glow Garden has its own canvas
+  PASS rulesecon strings: every new line exists in EN + AR 
+  PASS rulesecon strings: the teaching lines speak to her in her form
+  PASS rulesecon strings: the mood toast names the theme
+  PASS moments painting ch1: lit lanterns (11) = solved levels of the chapter (11)
+  PASS moments painting ch1: exactly the solved levels' lanterns (level 7 skipped stays dark)
+  PASS moments painting ch1: 50 lantern rows + the lit layer through the mask shader
+  PASS moments painting ch1: lanterns sit at their registry places
+  PASS moments painting ch2: lit lanterns (3) = solved levels of the chapter (3)
+  PASS moments painting ch2: levels 51/55/60 -> lanterns 0/4/9
+  PASS moments painting ch3: lit lanterns (0) = solved levels of the chapter (0)
+  PASS moments painting: a locked chapter shows the dark layer, no lantern
+  PASS moments painting: level n -> lantern order within its chapter
+  PASS moments relight: the lantern is dark while the light flies
+  PASS moments relight: full motion takes ~1.1 s (66 frames)
+  PASS moments relight: exactly ONE new lantern (5 -> 6)
+  PASS moments relight: the lantern chime plays (QSound.lantern_relit)
+  PASS moments relight: no per-frame allocation in flight or bloom (objects { 3: 2384.0, 30: 2384.0, 40: 2387.0 } -> end 2387)
+  PASS moments relight: a tap skips to the lit lantern
+  PASS moments relight RM: a short fade (0.20 s)
+  PASS moments relight RM: the lantern fades in (0.50 half way)
+  PASS moments relight RM: done after the fade
+  PASS moments M7: empty glass is dim (0.62) and breathes
+  PASS moments M7: no breathing under reduced motion
+  PASS moments M7: high contrast = still, solid tiles
+  PASS moments M8: over the painting, empty glass lets it show through
+  PASS moments M8: on its own canvas the glass is solid
+  PASS moments play [full]: the chapter painting is the backdrop (not a flat colour)
+  PASS moments play [full]: backdrop dimmed, with the 12 solved lanterns lit
+  PASS moments play [full]: this level's lantern is in view behind the board
+  PASS moments play [full]: the board view draws no flat canvas over the painting
+  PASS moments play [full]: the relight comes before the win sheet
+  PASS moments play [full]: a tap can skip the moment
+  PASS moments play [full]: the win lights exactly one new lantern (13)
+  PASS moments play [full]: then ONE win sheet (P22)
+  PASS moments play [full]: lantern chime
+  PASS moments play [full]: next board: backdrop dimmed again with 13 lit, board back
+  PASS moments play [RM]: the chapter painting is the backdrop (not a flat colour)
+  PASS moments play [RM]: backdrop dimmed, with the 12 solved lanterns lit
+  PASS moments play [RM]: this level's lantern is in view behind the board
+  PASS moments play [RM]: the board view draws no flat canvas over the painting
+  PASS moments play [RM]: the relight comes before the win sheet
+  PASS moments play [RM]: a tap can skip the moment
+  PASS moments play [RM]: the win lights exactly one new lantern (13)
+  PASS moments play [RM]: then ONE win sheet (P22)
+  PASS moments play [RM]: lantern chime
+  PASS moments play [RM]: next board: backdrop dimmed again with 13 lit, board back
+  PASS moments play: a replayed board lights nothing new
+  PASS moments home: the chapter painting shows the 12 solved lanterns lit
+  PASS moments journey: lit lanterns per chapter = solved per chapter ([50, 12, 0])
+  PASS moments journey memory [2]: layers held only for the paintings in view (held [1, 2, 3], in view [1, 2, 3])
+  PASS moments journey memory [2]: 7 big layers alive for 3 paintings in view
+  PASS moments journey memory [5]: layers held only for the paintings in view (held [4, 5, 6], in view [4, 5, 6])
+  PASS moments journey memory [5]: 3 big layers alive for 3 paintings in view
+  PASS moments journey memory [1]: layers held only for the paintings in view (held [1, 2], in view [1, 2])
+  PASS moments journey memory [1]: 6 big layers alive for 2 paintings in view
+  PASS moments memory: Journey closed -> no big chapter layer stays in memory ([])
+  PASS mem: Art.acquire loads a chapter's layers (threaded) and announces tag_ready
+  PASS mem: one chapter's layers are 26.4 MB (20..60)
+  PASS mem: Art.release frees them (8.3 MB left)
+  PASS mem: Art.fetch during a threaded load returns the texture
+  PASS mem: every screen under 250 MB (peak 87.6 MB)
+  PASS mem: after the walk nothing big stays resident (8.6 MB)
+  PASS mem: 10 laps over all chapters and screens show no growth (["8.6", "8.6", "8.6", "8.6", "8.6", "8.6", "8.6", "8.6", "8.6", "8.6"])
+  PASS demo: runs on its own fresh save folder
+  PASS demo: no problem on the route []
+  PASS demo: boot -> splash -> the name step (fresh player)
+  PASS demo: level 1 solved by the bot's finger, win sheet shown
+  PASS demo: levels 1-5 won, Home reached from the level-5 sheet
+  PASS demo: the Journey shows at the end
+  PASS demo: every tap and drag went through real pushed input []
+  PASS demo: lasts about a minute of game time (60.9 s)
+  PASS demo: the account stayed off (name kept as pending in the demo folder)
+  PASS demo: the runner's save and scene are back
+  PASS cd board loads
+  PASS cd partial capacity: 3-unit run into room 1 pours 1
+  PASS cd partial pour applied, 2 stay on the source
+  PASS cd multi-unit run: 3 units move together
+  PASS cd empty source: no change
+  PASS cd full destination: no change
+  PASS cd same tube: no change
+  PASS cd different top colour: no change, no history
+  PASS cd a solved tube can still be poured into an empty tube
+  PASS cd win: every non-empty tube full and one colour
+  PASS cd not won: a part-filled tube
+  PASS cd board with 3 units of a colour refused
+  PASS cd over-full tube refused
+  PASS cd canonical key ignores tube order
+  PASS cd tap on an empty tube selects nothing
+  PASS cd tap selects a non-empty source
+  PASS cd tap source again cancels, nothing changes
+  PASS cd invalid destination changes nothing, keeps selection
+  PASS cd tap pour moves the run and clears the selection
+  PASS cd tap out of range ignored
+  PASS cd pack levels.json loads and matches the manifest hash ()
+  PASS cd pack daily.json loads and matches the manifest hash ()
+  PASS cd 60 levels (60)
+  PASS cd 60 daily boards (60)
+  PASS cd 120 boards checked (120)
+  PASS cd every stored witness replays to a win through pour() ()
+  PASS cd every witness length equals its min_moves
+  PASS cd unit count per colour constant along every witness
+  PASS cd no board starts won
+  PASS cd ids and boards are unique across levels + dailies (dups 0)
+  PASS cd difficulty score never falls inside a chapter of 10
+  PASS cd something new opens every chapter of 10 (6 of 6)
+  PASS cd levels 1-3 tutorial-simple (<= 3 colours, <= 6 moves, 2 spares)
+  PASS cd every level carries a forward proof (optimal or near-min)
+  PASS cd level 1 = two colours, two spare tubes (spec)
+  PASS cd random play ran 1200 pours
+  PASS cd property: unit count per colour constant under random pours
+  PASS cd property: every pour moves the maximal top run that fits
+  PASS cd property: an illegal pour never changes the board
+  PASS cd property: undo all the way returns the exact start board
+  PASS cd module loads a level
+  PASS cd resume from the saved JSON
+  PASS cd resumed board equals the saved board
+  PASS cd undo after resume walks back every pour exactly, then stops
+  PASS cd witness wins after resume + undo
+  PASS cd resume refuses a save whose tubes do not match its history
+  PASS cd resume refuses an unknown state version
+  PASS cd fast taps: no partial or ghost pours (98 pours)
+  PASS cd while a pour resolves, further taps are refused
+  PASS cd undo refused while a pour resolves
+  PASS cd after resolve the next pour is accepted
+  PASS cd paused module refuses input
+  PASS cd unpaused module takes input
+  PASS cd scramble port reproduces the stored boards from their seeds ()
+  PASS cd scramble: same seed, same board
+  PASS cd scramble: another seed, another board
+  PASS cd scrambled board proved solvable by forward search
+  PASS cd GDScript A* finds the stored minimum on sample levels and its moves win
+  PASS cd solver reports a dead end when nothing can win
+  PASS cd solver limit hit = timeout (inconclusive, never a pass)
+  PASS cd hint on the witness path = next witness pour
+  PASS cd hints from the current (off-witness) board lead to a win (15 hints)
+  PASS cd hint on a won board = no hint
+  PASS cd hint on a dead board = dead_end, not ok (no charge)
+  PASS cd hint search limit hit = no_hint (ok false: nothing spent), board unchanged
+  PASS cd hint result object always says ok or why not
+  PASS cdv module extends QGameModule, id color_dew
+  PASS cdv load_level answers "" on a shipped board
+  PASS cdv a level newer than level_schema() is refused
+  PASS cdv a broken level is refused
+  PASS cdv witness() = the stored pours as actions
+  PASS cdv apply_action answers {ok, changed, won, code}
+  PASS cdv an illegal pour: ok false, code invalid
+  PASS cdv serialize has v, game, level
+  PASS cdv restart goes back to the start and can be undone
+  PASS cdv undo after restart brings the board back
+  PASS cdv restart on an empty module = false
+  PASS cdv resume refuses a state of another level
+  PASS cdv resume on a fresh module restores the saved level
+  PASS cdv won() fires exactly once
+  PASS cdv preview_hint on a won board: ok false, code won
+  PASS cdv preview_hint is pure and returns an action
+  PASS cdv registry lists color_dew
+  PASS cdv QModules.create(color_dew) builds the module
+  PASS cdv registry reads 60 levels + 60 dailies
+  PASS cdv validator: 120/120 boards replay their witness through apply_action (120/120, [])
+  PASS cdv tube hit test finds the tube under its centre
+  PASS cdv tap a tube = select (lift)
+  PASS cdv tap it again = put it down
+  PASS cdv tap a target = pour (one transaction, animation running)
+  PASS cdv fast taps during a pour are refused and change nothing
+  PASS cdv pour + settle ends (434 ms; 300 + 120 ms planned)
+  PASS cdv a denied pour shakes (denied signal) and changes nothing
+  PASS cdv Undo button takes the pour back
+  PASS cdv reduce motion: the pour resolves with fades
+  PASS cdv hint: the move is shown with the pay row, nothing spent yet
+  PASS cdv hint preview spends nothing and keeps the board
+  PASS cdv cancel: nothing spent, board unchanged
+  PASS cdv paid hint: spend once, the move is played
+  PASS cdv a stale hint (move no longer legal) spends nothing
+  PASS cdv no hint in time: 'no hint right now', nothing spent (no_hint)
+  PASS cdv hint with no coins: shop offered, nothing spent
+  PASS cdv hint with no coins: the reason shows on the tag line above the row (no stacked toast)
+  PASS cdv win: glow ring by ring + burst + settle ran once (win_fx_done)
+  PASS cdv win card shows the first-clear reward
+  PASS cdv win card: progress line 1/60 with the 3 crystals (OWNER_EYE L4 closer to)
+  PASS cdv win card: 19 puzzles to the next crystal
+  PASS cdv first clear pays 10 coins once
+  PASS cdv first-clear key fc:color_dew:cd_001:r1 is in the ledger
+  PASS cdv win card: Next level + All games
+  PASS cdv the wallet badge is raised above the card for the coin flight
+  PASS cdv replay of a cleared board pays nothing (no reward line)
+  PASS cdv last board: no Next, the level list instead
+  PASS cdv last board: progress 60/60 + all crystals collected
+  PASS cdv last board: all 3 crystals lit
+  PASS cdv daily win card: the daily line, no n/60 progress
+  PASS cdv K-R13 object count steady over 25 select/pour/settle/undo cycles (2546 -> 2535)
+  PASS cdv K-R13 static memory steady over the tap cycles (+-46112 bytes)
+  PASS cdv backdrop fills the level list ((1080.0, 2340.0) vs (1080.0, 2340.0))
+  PASS cdv level list: 60 boards, 12 solved marks (60, 12)
+  PASS cdv the next board to play is 13
+  PASS cdv tapping a level cell picks that board
+  PASS cdv daily hook: a daily board by id
+  PASS cdv router target hub resolves to a scene
+  PASS cdv backdrop: the world painting streams in through Art
+  PASS cdv backdrop never shown above native size (0.051 screen px per painting px)
+  PASS cdv backdrop holds its art tag while shown
+  PASS cdv backdrop releases its art tag on leaving
+  PASS cdv backdrop fills the play screen ((1080.0, 2340.0) vs (1080.0, 2340.0))
+  PASS cdv GPT art: _tube_tex loaded through Art
+  PASS cdv GPT art: _tube_sel_tex loaded through Art
+  PASS cdv GPT art: _pour_tex loaded through Art
+  PASS cdv GPT art: _frame_tex loaded through Art
+  PASS cdv GPT art: the six GPT liquid slabs load (6)
+  PASS cdv GPT art: one liquid slot per colour (rose/pearl tinted or drawn)
+  PASS cdv GPT art: the board holds its art tag while shown
+  PASS cdv GPT art: tube sprite drawn at or below native size (0.337)
+  PASS cdv GPT art: pedestal at or below native size
+  PASS cdv GPT art: a pour into an empty tube plays and settles with the art path
+  PASS cdv GPT art: the stand-in path still draws when the keys are missing
+  PASS cdv GPT art: the board releases its art tag on leaving
+  PASS cdv a11y symbols drawn when ON
+  PASS cdv a11y no symbols when OFF
+  PASS cdv a11y motion normal by default
+  PASS cdv a11y reduce motion path taken when ON
+  PASS cdv a11y getters follow the settings
+  PASS cdv a11y haptics off
+  PASS cdv V-CD strings compiled in EN + AR ()
+  PASS pev module extends QGameModule, id pocket_exit
+  PASS pev load_level answers "" on a shipped board
+  PASS pev a level newer than level_schema() is refused
+  PASS pev a broken level is refused
+  PASS pev witness() = the stored moves as actions
+  PASS pev apply_action answers {ok, changed, won, code}
+  PASS pev an illegal move: ok false, code invalid
+  PASS pev serialize has v, game, level
+  PASS pev restart goes back to the start and can be undone
+  PASS pev undo after restart brings the board back
+  PASS pev restart on an empty module = false
+  PASS pev resume refuses a state of another level
+  PASS pev resume on a fresh module restores the saved level
+  PASS pev won() fires exactly once
+  PASS pev no undo after the win
+  PASS pev preview_hint on a won board: ok false, code won
+  PASS pev preview_hint is pure and returns an action
+  PASS pev registry lists pocket_exit
+  PASS pev QModules.create(pocket_exit) builds the module
+  PASS pev registry reads 60 levels + 60 dailies
+  PASS pev validator: 120/120 boards replay their witness through apply_action (120/120, [])
+  PASS pev board laid out; hit test finds the target car under its centre
+  PASS pev level 30 has a car that can slide 2+ cells ((3, 2))
+  PASS pev a finger on a car starts the drag
+  PASS pev a second finger during the drag is ignored
+  PASS pev the second finger cannot move the dragged car
+  PASS pev the car follows the finger along its axis (0.4 cell)
+  PASS pev pushed past its reach: clamped at the blocked edge + one stop pulse (1)
+  PASS pev holding against the edge does not repeat the pulse
+  PASS pev dragging changes nothing in the module until release
+  PASS pev release = one move
+  PASS pev a long drag is ONE move through free cells (2 cells)
+  PASS pev the move lands on the last legal cell ((3, 2))
+  PASS pev input refused while the snap plays
+  PASS pev snap ends (110 ms), one snap click
+  PASS pev a drag under half a cell = no move, no snap click
+  PASS pev cancel mid-drag (pause) moves nothing
+  PASS pev Undo button takes the move back
+  PASS pev reduce motion: the move resolves with a short fade
+  PASS pev hint: the move is shown with the pay row, nothing spent yet
+  PASS pev hint preview spends nothing and keeps the board
+  PASS pev cancel: nothing spent, board unchanged
+  PASS pev paid hint: spend once, the move is played
+  PASS pev a stale hint (move no longer legal) spends nothing
+  PASS pev no hint in time: 'no hint right now', nothing spent (no_hint)
+  PASS pev hint with no coins: shop offered, nothing spent
+  PASS pev the target car leaves through the gate and the gate lights
+  PASS pev the harbour lights come on behind the board (1.00)
+  PASS pev win: glow ring by ring + burst + settle ran once (win_fx_done)
+  PASS pev win card shows the first-clear reward
+  PASS pev win card: progress line 1/60 with the 3 crystals (OWNER_EYE L4 closer to)
+  PASS pev win card: 19 puzzles to the next crystal
+  PASS pev first clear pays 10 coins once
+  PASS pev first-clear key fc:pocket_exit:pe_001:r1 is in the ledger
+  PASS pev win card: Next level + All games
+  PASS pev the wallet badge is raised above the card for the coin flight
+  PASS pev replay of a cleared board pays nothing (no reward line)
+  PASS pev daily clear pays 10 coins once (fc:pocket_exit:ped_001:r1)
+  PASS pev last board: no Next, the level list instead
+  PASS pev last board: progress 60/60 + all crystals collected
+  PASS pev last board: all 3 crystals lit
+  PASS pev daily win card: the daily line, no n/60 progress
+  PASS pev reduce motion: leave + win resolve with fades
+  PASS pev K-R13 no object created while dragging (2541 -> 2540)
+  PASS pev K-R13 static memory flat while dragging (+-1284 bytes over 60 frames)
+  PASS pev K-R13 object count steady over 25 drag/snap/undo cycles (2541 -> 2540)
+  PASS pev K-R13 static memory steady over the drag cycles (+23448 bytes)
+  PASS pev level list: 60 boards, 12 solved marks (60, 12)
+  PASS pev the next board to play is 13
+  PASS pev tapping a level cell picks that board
+  PASS pev daily hook: a daily board by id
+  PASS pev a hub level id maps to its board number
+  PASS pev router target hub resolves to a scene
+  PASS pev the play screen is where the hub looks (QHub.play_scene)
+  PASS pev backdrop: the Lighthouse Bay painting streams in through Art
+  PASS pev backdrop never shown above native size (0.051 painting px per screen px)
+  PASS pev harbour lights reach full
+  PASS pev backdrop holds its art tag while shown
+  PASS pev backdrop releases its art tag on leaving
+  PASS pev board: pe.frame + pe.gate stream in and draw the lot
+  PASS pev every car draws its GPT sprite (target + car2/car3 by length)
+  PASS pev car sprites fit their cell box, never above native size
+  PASS pev the target car is pe.target
+  PASS pev the 6x6 grid sits inside the board with room for the frame
+  PASS pev backdrop fills the play screen ((1080.0, 2340.0))
+  PASS pev a11y symbols drawn when ON
+  PASS pev a11y no symbols when OFF
+  PASS pev a11y motion normal by default
+  PASS pev a11y reduce motion path taken when ON
+  PASS pev a11y getters follow the settings
+  PASS pev a11y haptics off
+  PASS pev V-PE strings compiled in EN + AR ()
+  PASS fix1 start_align label starts on the left in en
+  PASS fix1 start_align title starts on the left in en
+  PASS fix1 start_align label starts on the right in ar
+  PASS fix1 start_align title starts on the right in ar
+  PASS fix1 toasts never overlap (en scale 1.0 1080x1920)
+  PASS fix1 toasts fully on screen (en scale 1.0 1080x1920)
+  PASS fix1 all 3 toasts were shown in turn (en scale 1.0 1080x1920)
+  PASS fix1 toasts never overlap (en scale 1.0 1080x1350)
+  PASS fix1 toasts fully on screen (en scale 1.0 1080x1350)
+  PASS fix1 all 3 toasts were shown in turn (en scale 1.0 1080x1350)
+  PASS fix1 toasts never overlap (en scale 1.0 720x1280)
+  PASS fix1 toasts fully on screen (en scale 1.0 720x1280)
+  PASS fix1 all 3 toasts were shown in turn (en scale 1.0 720x1280)
+  PASS fix1 toasts never overlap (en scale 1.3 1080x1920)
+  PASS fix1 toasts fully on screen (en scale 1.3 1080x1920)
+  PASS fix1 all 3 toasts were shown in turn (en scale 1.3 1080x1920)
+  PASS fix1 toasts never overlap (en scale 1.3 1080x1350)
+  PASS fix1 toasts fully on screen (en scale 1.3 1080x1350)
+  PASS fix1 all 3 toasts were shown in turn (en scale 1.3 1080x1350)
+  PASS fix1 toasts never overlap (en scale 1.3 720x1280)
+  PASS fix1 toasts fully on screen (en scale 1.3 720x1280)
+  PASS fix1 all 3 toasts were shown in turn (en scale 1.3 720x1280)
+  PASS fix1 toasts never overlap (ar scale 1.0 1080x1920)
+  PASS fix1 toasts fully on screen (ar scale 1.0 1080x1920)
+  PASS fix1 all 3 toasts were shown in turn (ar scale 1.0 1080x1920)
+  PASS fix1 toasts never overlap (ar scale 1.0 1080x1350)
+  PASS fix1 toasts fully on screen (ar scale 1.0 1080x1350)
+  PASS fix1 all 3 toasts were shown in turn (ar scale 1.0 1080x1350)
+  PASS fix1 toasts never overlap (ar scale 1.0 720x1280)
+  PASS fix1 toasts fully on screen (ar scale 1.0 720x1280)
+  PASS fix1 all 3 toasts were shown in turn (ar scale 1.0 720x1280)
+  PASS fix1 toasts never overlap (ar scale 1.3 1080x1920)
+  PASS fix1 toasts fully on screen (ar scale 1.3 1080x1920)
+  PASS fix1 all 3 toasts were shown in turn (ar scale 1.3 1080x1920)
+  PASS fix1 toasts never overlap (ar scale 1.3 1080x1350)
+  PASS fix1 toasts fully on screen (ar scale 1.3 1080x1350)
+  PASS fix1 all 3 toasts were shown in turn (ar scale 1.3 1080x1350)
+  PASS fix1 toasts never overlap (ar scale 1.3 720x1280)
+  PASS fix1 toasts fully on screen (ar scale 1.3 720x1280)
+  PASS fix1 all 3 toasts were shown in turn (ar scale 1.3 720x1280)
+  PASS t0 registry: light_paths listed
+  PASS t0 registry: creates the Light paths module through the interface
+  PASS t0 registry: an unknown id gives null
+  PASS t0 registry: 6 chapter packs + the daily pack
+  PASS t0 registry: 300 levels + 365 dailies
+  PASS t0 module: load_level ok
+  PASS t0 module: a newer level schema is refused
+  PASS t0 module: reload ok
+  PASS t0 module: witness = one route per pair
+  PASS t0 module: a route action changes the board
+  PASS t0 module: serialize is versioned and v0.1-readable (id + snap)
+  PASS t0 module: resume restores the saved board
+  PASS t0 module: a newer state version is refused, board untouched
+  PASS t0 module: another level's state is refused
+  PASS t0 module: undo
+  PASS t0 module: restart is undoable
+  PASS t0 module: preview_hint is pure and gives an action
+  PASS t0 module: a route that is not a legal drag is refused
+  PASS t0 module: pause cancels a drag in progress
+  PASS t0 module: the witness wins through apply_action, won() once
+  PASS t0 module: no move after the win
+  PASS t0 module: dispose drops the board
+  PASS t0 keys: Light paths r1 main path = the v0.1 id
+  PASS t0 keys: Light paths r1 daily = the v0.1 id
+  PASS t0 keys: a new reward version is a new key
+  PASS t0 keys: game + level + reward version
+  PASS t0 wallet: a first clear pays once
+  PASS t0 wallet: replay plans nothing
+  PASS t0 wallet: the same transaction again pays nothing
+  PASS t0 wallet: the clear is in the game's slot
+  PASS t0 wallet: light paths plans its first clear
+  PASS t0 wallet: light paths pays its first clear
+  PASS t0 wallet: a clock jump forward pays nothing again
+  PASS t0 wallet: a clock set back pays nothing again
+  PASS t0 wallet: reinstall + restore pays nothing again, same balance
+  PASS t0 wallet: each phone paid the board offline
+  PASS t0 wallet: two phones merged = the board paid once
+  PASS t0 wallet: the daily gift stays closed after the clock is set back
+  PASS t0 kill after_begin: the journal entry survives the kill
+  PASS t0 kill after_begin: resumed, paid exactly once
+  PASS t0 kill after_begin: solved, journal empty
+  PASS t0 kill after_begin: a second start pays nothing more
+  PASS t0 kill after_solved: the journal entry survives the kill
+  PASS t0 kill after_solved: resumed, paid exactly once
+  PASS t0 kill after_solved: solved, journal empty
+  PASS t0 kill after_solved: a second start pays nothing more
+  PASS t0 kill after_grant:1: the journal entry survives the kill
+  PASS t0 kill after_grant:1: resumed, paid exactly once
+  PASS t0 kill after_grant:1: solved, journal empty
+  PASS t0 kill after_grant:1: a second start pays nothing more
+  PASS t0 kill after_grant:2: the journal entry survives the kill
+  PASS t0 kill after_grant:2: resumed, paid exactly once
+  PASS t0 kill after_grant:2: solved, journal empty
+  PASS t0 kill after_grant:2: a second start pays nothing more
+  PASS t0 kill light paths: board solved and paid on the next start
+  PASS t0 hint: an unavailable hint costs nothing
+  PASS t0 hint: a failed (no video) hint costs nothing
+  PASS t0 hint: a stale preview costs nothing
+  PASS t0 slots: a new install starts at save_v 2
+  PASS t0 slots: a new install writes nothing before a real change
+  PASS t0 slots: resume state per game
+  PASS t0 slots: solved once per game
+  PASS t0 slots: games do not share solved boards
+  PASS t0 slots: Light paths writes its v0.1 journey
+  PASS t0 slots: last game (hub Resume)
+  PASS t0 slots: Light paths resume stays in v0.1's play_state
+  PASS t0 migration: the v0.1 fixture loads (no save_v)
+  PASS t0 migration: fixture holds 240 coins
+  PASS t0 migration: v0.1 save upgraded to save_v 2
+  PASS t0 migration: the recovery copy is the untouched v0.1 save
+  PASS t0 migration: coins and hints kept
+  PASS t0 migration: a v0.1 reader sees the same coins (marks ignored)
+  PASS t0 migration: solved boards + reveals kept (old slot readable)
+  PASS t0 migration: earned theme kept
+  PASS t0 migration: account id kept
+  PASS t0 migration: the unfinished board kept
+  PASS t0 migration: light_paths slot recorded
+  PASS t0 migration: a board solved but never paid (v0.1 kill) is marked claimed, no payout
+  PASS t0 migration: replaying every solved board pays nothing (first-clear keys)
+  PASS t0 migration: today's claimed daily is not paid again
+  PASS t0 migration: today's daily gift stays claimed
+  PASS t0 migration: the module resumes the v0.1 unfinished board
+  PASS t0 migration: runs once; recovery copy kept as it was
+  PASS t0 migration: second start, same coins
+  PASS t0 mixed: v0.1 merges a v0.2 cloud copy (schema unchanged)
+  PASS t0 mixed: v0.1 counts the v0.2 coins once and ignores marks
+  PASS t0 mixed: v0.1 keeps both phones' boards
+  PASS t0 mixed: v0.2 keeps save_v after a v0.1 copy
+  PASS t0 mixed: v0.2 game slots survive a v0.1 round trip on the phone that has them
+  PASS t0 mixed: A ends with every coin once (B's level paid once)
+  PASS t0 mixed: boards B solved are never paid again on A (paid or killed)
+  PASS t0 mixed: A's own board is not paid twice
+  PASS t0 mixed: second round trip, v0.1 balance unchanged
+  PASS t0 mixed: v0.1 carries the v0.2 fields it does not know when the cloud copy is newer
+  PASS v0 light_paths: every pack matches its manifest hash
+  PASS v0 light_paths: every shipped board replays its witness to a win (665/665)
+  PASS v0 color_dew: every pack matches its manifest hash
+  PASS v0 color_dew: every shipped board replays its witness to a win (120/120)
+  PASS v0 pocket_exit: every pack matches its manifest hash
+  PASS v0 pocket_exit: every shipped board replays its witness to a win (120/120)
+  PASS v0 light_paths: 300 levels + 365 dailies = 665 boards passed
+  PASS v0 a broken witness and a missing witness fail, the good board passes
+  PASS v0 a pack that does not match its manifest fails
+  PASS v0 a timeout is inconclusive
+  PASS v0 an inconclusive board never makes the module pass
+  PASS v0 the same one-board pack passes in time
+  PASS pe board loads
+  PASS pe target reach stops at the truck (0..+1)
+  PASS pe long drag through an occupied cell refused, no history
+  PASS pe edge bound: no slide off the left edge
+  PASS pe edge bound: truck cannot leave the top
+  PASS pe truck reach -1..+2 (rows 0..5)
+  PASS pe zero move refused
+  PASS pe unknown car: no change
+  PASS pe a 2-cell slide is one move
+  PASS pe truck now rows 3-5
+  PASS pe target reach 0..+4 after the truck left
+  PASS pe not won before the target reaches the edge
+  PASS pe target at the right edge = win
+  PASS pe no move accepted after the win
+  PASS pe no undo after the win
+  PASS pe restart = start board, empty history
+  PASS pe two undos return to the start
+  PASS pe undo with no history refused
+  PASS pe target blocked by a truck spanning the exit row (col 4)
+  PASS pe vertical truck: edge bounds both ends (reach 0..+3)
+  PASS pe overlap refused
+  PASS pe car outside the board refused
+  PASS pe target off the exit row refused
+  PASS pe vertical target refused
+  PASS pe length 4 refused
+  PASS pe malformed car refused
+  PASS pe module loads a test board
+  PASS pe drag begins on touch 1
+  PASS pe second touch during a drag is ignored
+  PASS pe second touch cannot move the dragged car
+  PASS pe second touch release ignored, nothing moved
+  PASS pe drag preview clamps at the car below (truck reach +1)
+  PASS pe a direct move during a drag is ignored
+  PASS pe release snaps to the last legal cell, one move
+  PASS pe rapid second release ignored
+  PASS pe release that gains no cell = no move, no history
+  PASS pe pause drops the drag
+  PASS pe a new drag after pause is accepted
+  PASS pe drag cancel moves nothing
+  PASS pe pack levels.json loads and matches the manifest hash ()
+  PASS pe pack daily.json loads and matches the manifest hash ()
+  PASS pe 60 levels (60)
+  PASS pe 60 daily boards (60)
+  PASS pe all 120 witnesses replay to a win via apply_action, min_moves long, unique ids/boards []
+  PASS pe bands 1-5/6-20/21-45/46-60, chapter openers new, score never falls in a chapter []
+  PASS pe something new about every 10 levels (9 chapters)
+  PASS pe each band needs more moves than the one before (min { 1: 2, 2: 5, 3: 11, 4: 23 } max { 1: 4, 2: 12, 3: 21, 4: 30 })
+  PASS pe GDScript BFS re-proves every stored minimum move count (120) []
+  PASS pe random moves: accepted iff every passed cell free + inside, board stays valid (2400 tried, 303 moved, 0 bad)
+  PASS pe undo after save/resume walks back to the exact start []
+  PASS pe tampered cars / unknown version / illegal history refused
+  PASS pe the untouched state resumes
+  PASS pe one win + one reward signal for a level (1/1)
+  PASS pe replaying a won level pays no second reward
+  PASS pe claimed id from the save: win, no reward
+  PASS pe animated: no input until the snap resolves
+  PASS pe animated: no undo mid-snap
+  PASS pe after resolve_done the next move is accepted
+  PASS pe paused: input refused
+  PASS pe hint at the start = first witness move
+  PASS pe hints from an off-witness board reach the exit in <= min+1 moves (14, ["search", "witness"], worst 12 ms)
+  PASS pe hint on a won board = won (no spend)
+  PASS pe hint search limit -> no_hint, board unchanged (no spend)
+  PASS pe default hint on the hardest level answers or says no_hint inside its budget
+  PASS pe hint with no level = no_level
+  PASS hub data: six games in package order
+  PASS hub data: Light Trails, Color Dew, Pocket Exit playable; three coming soon
+  PASS hub data: Light Trails is the light_paths module
+  PASS hub data: totals 300 / 60 (got 300 / 60)
+  PASS hub data: coming-soon games have no levels or dailies
+  PASS hub data: light_trails title + tagline translated
+  PASS hub data: light_trails world painting in the registry
+  PASS hub data: light_trails card painting card.light_trails is used
+  PASS hub data: color_dew title + tagline translated
+  PASS hub data: color_dew world painting in the registry
+  PASS hub data: color_dew card painting card.color_dew is used
+  PASS hub data: pocket_exit title + tagline translated
+  PASS hub data: pocket_exit world painting in the registry
+  PASS hub data: pocket_exit card painting card.pocket_exit is used
+  PASS hub data: moon_rings title + tagline translated
+  PASS hub data: moon_rings world painting in the registry
+  PASS hub data: moon_rings card painting card.moon_rings is used
+  PASS hub data: gem_flare title + tagline translated
+  PASS hub data: gem_flare world painting in the registry
+  PASS hub data: gem_flare card painting card.gem_flare is used
+  PASS hub data: pearl_lagoon title + tagline translated
+  PASS hub data: pearl_lagoon world painting in the registry
+  PASS hub data: pearl_lagoon card painting card.pearl_lagoon is used
+  PASS hub data: one crystal per 20 solved
+  PASS hub data: 15 crystals in Light Trails, 3 in Color Dew
+  PASS hub data: crystal total adds every game (2 + 1)
+  PASS hub daily: every day has one board of a playable game from its own daily set
+  PASS hub daily: the same board all UTC day (00:00 .. 23:59:59)
+  PASS hub daily: the rotation reaches Light Trails and Color Dew
+  PASS hub daily: Pocket Exit only once it has a daily set (skipped meanwhile)
+  PASS hub daily: the next day brings another board
+  PASS hub daily pay: first clear of a daily id pays 10 coins
+  PASS hub daily pay: the id is claimed in the ledger
+  PASS hub daily pay: a second clear of the same id pays nothing
+  PASS hub daily pay: another daily id is still open
+  PASS hub daily pay: Light Trails keeps its v0.1 daily key (no second payout)
+  PASS hub resume: nothing played yet -> Light Trails
+  PASS hub resume: Light Trails board 13 exactly
+  PASS hub resume: a Light Trails daily board comes back as that daily
+  PASS hub resume: Color Dew returns to its exact board (cd_008)
+  PASS hub resume: a Color Dew daily board is resumed as a daily
+  PASS hub resume: a game that is not open falls back to Light Trails
+  PASS hub [en x1.0]: header shows the language's logo (pick AR1 + EN1)
+  PASS hub [en x1.0]: six cards, one size ([314])
+  PASS hub [en x1.0]: every title and tagline is one line that fits
+  PASS hub [en]: Light Trails shows 45/300 (left to right)
+  PASS hub [en]: three coming-soon cards, painting dimmed
+  PASS hub [en]: tagline follows the player's gender
+  PASS hub [en]: painting on the reading side (left)
+  PASS hub [en]: card painting loaded (Art)
+  PASS hub [en]: Resume names the last game
+  PASS hub route [en]: Color Dew card -> its level list
+  PASS hub route [en]: Pocket Exit card -> its level list
+  PASS hub route [en]: Light Trails card -> its v0.1 flow (Home or its next board)
+  PASS hub route [en]: a coming-soon card stays (toast)
+  PASS hub route [en]: Collection
+  PASS hub route [en]: Daily
+  PASS hub route [en]: Settings
+  PASS hub route [en]: Resume goes to the last game
+  PASS hub route [en]: Gift -> the 7-claim gift screen (lane H2)
+  PASS hub [en x1.3]: header shows the language's logo (pick AR1 + EN1)
+  PASS hub [en x1.3]: six cards, one size ([391])
+  PASS hub [en x1.3]: every title and tagline is one line that fits
+  PASS hub [en]: Light Trails shows 45/300 (left to right)
+  PASS hub [en]: three coming-soon cards, painting dimmed
+  PASS hub [en]: tagline follows the player's gender
+  PASS hub [en]: painting on the reading side (left)
+  PASS hub [en]: card painting loaded (Art)
+  PASS hub [en]: Resume names the last game
+  PASS collection [en]: one row per game
+  PASS collection [en]: Light Trails 45 solved = 2 of 15 crystals
+  PASS collection [en]: crystal total 2 + 3 + 0 = 5
+  PASS collection [en]: title one line
+  PASS collection route [en]: back -> hub
+  PASS collection route [en]: All games -> hub
+  PASS hub daily [en]: shows today's game
+  PASS hub daily [en]: reward line shows the coins
+  PASS hub daily route [en]: Play opens the board in its game (res://scenes/play/play.tscn)
+  PASS hub daily route [en]: back + All games -> hub
+  PASS hub daily [en]: shows today's game
+  PASS hub daily [en]: reward line says solved once paid
+  PASS hub daily route [en]: Play opens the board in its game (res://scenes/play/play.tscn)
+  PASS hub daily route [en]: back + All games -> hub
+  PASS levels [en]: Color Dew lists its 60 boards
+  PASS levels [en]: solved boards lit
+  PASS levels [en]: board 1 starts on the reading side
+  PASS levels route [en]: a board opens its play screen (or stays: coming soon)
+  PASS levels route [en]: the play screen gets the module + level
+  PASS levels route [en]: back + All games -> hub
+  PASS levels [en]: a game with no boards says so and keeps the way back
+  PASS exits [en]: Light Trails Home back -> hub
+  PASS exits [en]: Settings back -> hub
+  PASS exits [en]: play pause sheet All games -> hub
+  PASS hub [ar x1.0]: header shows the language's logo (pick AR1 + EN1)
+  PASS hub [ar x1.0]: six cards, one size ([314])
+  PASS hub [ar x1.0]: every title and tagline is one line that fits
+  PASS hub [ar]: Light Trails shows 45/300 (left to right)
+  PASS hub [ar]: three coming-soon cards, painting dimmed
+  PASS hub [ar]: tagline follows the player's gender
+  PASS hub [ar]: painting on the reading side (right)
+  PASS hub [ar]: card painting loaded (Art)
+  PASS hub [ar]: Resume names the last game
+  PASS hub route [ar]: Color Dew card -> its level list
+  PASS hub route [ar]: Pocket Exit card -> its level list
+  PASS hub route [ar]: Light Trails card -> its v0.1 flow (Home or its next board)
+  PASS hub route [ar]: a coming-soon card stays (toast)
+  PASS hub route [ar]: Collection
+  PASS hub route [ar]: Daily
+  PASS hub route [ar]: Settings
+  PASS hub route [ar]: Resume goes to the last game
+  PASS hub route [ar]: Gift -> the 7-claim gift screen (lane H2)
+  PASS hub [ar x1.3]: header shows the language's logo (pick AR1 + EN1)
+  PASS hub [ar x1.3]: six cards, one size ([391])
+  PASS hub [ar x1.3]: every title and tagline is one line that fits
+  PASS hub [ar]: Light Trails shows 45/300 (left to right)
+  PASS hub [ar]: three coming-soon cards, painting dimmed
+  PASS hub [ar]: tagline follows the player's gender
+  PASS hub [ar]: painting on the reading side (right)
+  PASS hub [ar]: card painting loaded (Art)
+  PASS hub [ar]: Resume names the last game
+  PASS collection [ar]: one row per game
+  PASS collection [ar]: Light Trails 45 solved = 2 of 15 crystals
+  PASS collection [ar]: crystal total 2 + 3 + 0 = 5
+  PASS collection [ar]: title one line
+  PASS collection route [ar]: back -> hub
+  PASS collection route [ar]: All games -> hub
+  PASS hub daily [ar]: shows today's game
+  PASS hub daily [ar]: reward line shows the coins
+  PASS hub daily route [ar]: Play opens the board in its game (res://scenes/play/play.tscn)
+  PASS hub daily route [ar]: back + All games -> hub
+  PASS hub daily [ar]: shows today's game
+  PASS hub daily [ar]: reward line says solved once paid
+  PASS hub daily route [ar]: Play opens the board in its game (res://scenes/play/play.tscn)
+  PASS hub daily route [ar]: back + All games -> hub
+  PASS levels [ar]: Color Dew lists its 60 boards
+  PASS levels [ar]: solved boards lit
+  PASS levels [ar]: board 1 starts on the reading side
+  PASS levels route [ar]: a board opens its play screen (or stays: coming soon)
+  PASS levels route [ar]: the play screen gets the module + level
+  PASS levels route [ar]: back + All games -> hub
+  PASS levels [ar]: a game with no boards says so and keeps the way back
+  PASS exits [ar]: Light Trails Home back -> hub
+  PASS exits [ar]: Settings back -> hub
+  PASS exits [ar]: play pause sheet All games -> hub
+  PASS a11y getters: symbols on by default, the rest as set
+  PASS a11y getters: the getter follows the saved setting (symbols off)
+  PASS a11y getters: the v0.1 keys are kept (play screen reads the same ones)
+  PASS a11y getters: no saved value = symbols ON
+  PASS settings [en]: has MusicSlider
+  PASS settings [en]: has SfxSlider
+  PASS settings [en]: has VibrationToggle
+  PASS settings [en]: has SymbolsToggle
+  PASS settings [en]: has HighContrastToggle
+  PASS settings [en]: has ReduceFxToggle
+  PASS settings [en]: has TextSizeToggle
+  PASS settings [en]: has LangButton
+  PASS settings [en]: has RestoreButton
+  PASS settings [en]: has PrivacyButton
+  PASS settings [en]: has HelpButton
+  PASS settings [en]: has OfflineButton
+  PASS settings [en]: has SupportEmail
+  PASS settings [en]: has BackButton
+  PASS settings [en]: every control has a stored screen-reader name (missing [])
+  PASS settings [en]: the symbols toggle name is translated
+  PASS settings [en]: symbols off is saved and the shared getter reads it
+  PASS settings [en]: symbols back on
+  PASS settings [en]: motion / contrast / vibration persist through the getters
+  PASS settings [en]: music volume saved
+  PASS settings [en]: Privacy -> privacy screen
+  PASS settings [en]: How to play -> help screen
+  PASS settings [en]: Offline -> offline screen
+  PASS settings [en]: back -> hub
+  PASS settings [en]: Restore purchases opens the H2 service screen
+  PASS privacy [en]: title shown
+  PASS privacy [en]: every control has a stored screen-reader name (missing [])
+  PASS privacy [en]: top back -> settings
+  PASS privacy [en]: bottom button -> settings (no dead end)
+  PASS privacy [en]: policy link opens the privacy page
+  PASS privacy [en]: support email visible
+  PASS privacy [en]: paragraph 1
+  PASS privacy [en]: paragraph 2
+  PASS privacy [en]: paragraph 3
+  PASS privacy [en]: paragraph 4
+  PASS help [en]: title shown
+  PASS help [en]: every control has a stored screen-reader name (missing [])
+  PASS help [en]: top back -> settings
+  PASS help [en]: bottom button -> settings (no dead end)
+  PASS help [en]: help for light_trails
+  PASS help [en]: help for color_dew
+  PASS help [en]: help for pocket_exit
+  PASS offline [en]: title shown
+  PASS offline [en]: every control has a stored screen-reader name (missing [])
+  PASS offline [en]: top back -> settings
+  PASS offline [en]: bottom button -> settings (no dead end)
+  PASS offline [en]: has WorksOffline
+  PASS offline [en]: has NeedsInternet
+  PASS offline [en]: has OfflineHead
+  PASS offline [en]: Try again button
+  PASS settings [ar]: has MusicSlider
+  PASS settings [ar]: has SfxSlider
+  PASS settings [ar]: has VibrationToggle
+  PASS settings [ar]: has SymbolsToggle
+  PASS settings [ar]: has HighContrastToggle
+  PASS settings [ar]: has ReduceFxToggle
+  PASS settings [ar]: has TextSizeToggle
+  PASS settings [ar]: has LangButton
+  PASS settings [ar]: has RestoreButton
+  PASS settings [ar]: has PrivacyButton
+  PASS settings [ar]: has HelpButton
+  PASS settings [ar]: has OfflineButton
+  PASS settings [ar]: has SupportEmail
+  PASS settings [ar]: has BackButton
+  PASS settings [ar]: every control has a stored screen-reader name (missing [])
+  PASS settings [ar]: the symbols toggle name is translated
+  PASS settings [ar]: symbols off is saved and the shared getter reads it
+  PASS settings [ar]: symbols back on
+  PASS settings [ar]: motion / contrast / vibration persist through the getters
+  PASS settings [ar]: music volume saved
+  PASS settings [ar]: Privacy -> privacy screen
+  PASS settings [ar]: How to play -> help screen
+  PASS settings [ar]: Offline -> offline screen
+  PASS settings [ar]: back -> hub
+  PASS settings [ar]: Restore purchases opens the H2 service screen
+  PASS privacy [ar]: title shown
+  PASS privacy [ar]: every control has a stored screen-reader name (missing [])
+  PASS privacy [ar]: top back -> settings
+  PASS privacy [ar]: bottom button -> settings (no dead end)
+  PASS privacy [ar]: policy link opens the privacy page
+  PASS privacy [ar]: support email visible
+  PASS privacy [ar]: paragraph 1
+  PASS privacy [ar]: paragraph 2
+  PASS privacy [ar]: paragraph 3
+  PASS privacy [ar]: paragraph 4
+  PASS privacy [ar]: right to left
+  PASS help [ar]: title shown
+  PASS help [ar]: every control has a stored screen-reader name (missing [])
+  PASS help [ar]: top back -> settings
+  PASS help [ar]: bottom button -> settings (no dead end)
+  PASS help [ar]: help for light_trails
+  PASS help [ar]: help for color_dew
+  PASS help [ar]: help for pocket_exit
+  PASS help [ar]: right to left
+  PASS offline [ar]: title shown
+  PASS offline [ar]: every control has a stored screen-reader name (missing [])
+  PASS offline [ar]: top back -> settings
+  PASS offline [ar]: bottom button -> settings (no dead end)
+  PASS offline [ar]: has WorksOffline
+  PASS offline [ar]: has NeedsInternet
+  PASS offline [ar]: has OfflineHead
+  PASS offline [ar]: Try again button
+  PASS offline [ar]: right to left
+  PASS router: privacy screen registered
+  PASS router: help screen registered
+  PASS router: offline screen registered
+  PASS strings [en]: every H3 key translated ([])
+  PASS strings [ar]: every H3 key translated ([])
+  PASS strings [ar]: 8 key + key_f pairs differ (8)
+  PASS strings [ar]: the app-store screens say the app store name
+  PASS strings [ar]: the shop word stays for our own shop
+  PASS h2 econ: package amounts from Tune (120 start, 10 per first clear, hint 60)
+  PASS h2 econ: the daily pays 10 in every game (Light Trails' 30 is gone)
+  PASS h2 ads: rewarded 3/day; forced 2/session, 6/day, 240 s + 5 clears apart, OFF in tester versions
+  PASS h2 products: 300 coins, 900 coins, 5 hints (amounts from Tune)
+  PASS h2 econ: a new player starts with 120 coins, once
+  PASS h2 econ: a v0.1 player keeps their coins and gets no second start gift
+  PASS h2 ledger: first-clear key = game + level + reward version
+  PASS h2 ledger: first clear pays 10
+  PASS h2 ledger: a replay pays nothing
+  PASS h2 ledger: a clock set back or forward pays nothing again
+  PASS h2 ledger: the same level id in another game is its own key
+  PASS h2 ledger: a new reward version pays the board once more (by design)
+  PASS h2 ledger: reinstall + restore: start once, the board not paid again
+  PASS h2 ledger: two devices merge: the board is granted once (130 on both)
+  PASS h2 ledger: a daily pays 10 once
+  PASS h2 ledger: Light Trails' daily pays the package 10 too
+  PASS h2 gift: a new player can claim claim 1 (10 coins) of 7
+  PASS h2 gift: claim 1 pays 10, ledger id gift2:1
+  PASS h2 gift: once per UTC day
+  PASS h2 gift: after 4 missed days the next claim is claim 2 (15): advances on claim, not on login
+  PASS h2 gift: claims 1-6 pay 10/15/20/25/30/40 (140)
+  PASS h2 gift: claim 7 is a hint
+  PASS h2 gift: then the cycle starts again (claim 8 = 10 coins)
+  PASS h2 gift: a clock set back opens nothing
+  PASS h2 gift: a clock set forward can claim (that day's claim)
+  PASS h2 gift: back to the real day: no second claim until the forward day has passed
+  PASS h2 gift: open again after that day
+  PASS h2 gift: two devices claim the same claim the same day: merged, granted once
+  PASS h2 gift: a claim made on the other phone counts here (cycle + today closed)
+  PASS h2 gift: reinstall + restore keeps the cycle position
+  PASS h2 gift: v0.1 claims count (next = claim 4) and today's v0.1 gift stays claimed
+  PASS h2 gift: v0.1 player continues the cycle (25 coins, gift2:4)
+  PASS h2 gift: QEconomy.gift_status/claim_gift wrap QGift
+  PASS h2 hint: a hint that changes nothing costs nothing
+  PASS h2 hint: no hint in stock: refused, nothing spent
+  PASS h2 hint: no video: nothing spent, nothing changed
+  PASS h2 hint: video watched but the hint failed: the earned hint stays in the stock
+  PASS h2 hint: one universal hint used in another game
+  PASS h2 hint: a hint for 60 coins
+  PASS h2 hint: not enough coins: refused, nothing spent
+  PASS h2 shop: the package's 4 products in order, no theme / starter pack: ["remove_ads", "coins_s", "coins_l", "hints_s"]
+  PASS h2 shop: prices come from the (test) store
+  PASS h2 shop: no store and no test store: no made-up price
+  PASS h2 shop: 300 coins bought (test store) land in the one wallet
+  PASS h2 shop: 900 coins and 5 hints land
+  PASS h2 shop: a purchase key credited twice pays once
+  PASS h2 shop: cancelled pays nothing
+  PASS h2 shop: failed pays nothing
+  PASS h2 shop: offline pays nothing
+  PASS h2 shop: not_verified pays nothing
+  PASS h2 shop: pending: nothing yet, card waits
+  PASS h2 shop: pending completes later: paid once
+  PASS h2 shop: Remove Ads owned; a second buy is already_owned
+  PASS h2 shop: themes / starter are no longer sold
+  PASS h2 shop: Remove Ads comes back on a new install (store entitlement)
+  PASS h2 shop: restore reports 1 restored
+  PASS h2 shop: a v0.1 starter owner keeps Dusk and its 10 hints (once)
+  PASS h2 shop: an accepted build never uses the test store
+  PASS h2 shop: a tester (internal) build may use the test store
+  PASS h2 ads: forced ads off in tester versions (Tune flag)
+  PASS h2 ads: never in the first session
+  PASS h2 ads: not before 5 clears
+  PASS h2 ads: after Continue on a win, 5 clears in: may show
+  PASS h2 ads: shown
+  PASS h2 ads: the next needs 5 more clears
+  PASS h2 ads: and 240 s apart
+  PASS h2 ads: second one
+  PASS h2 ads: max 2 per session
+  PASS h2 ads: rewarded video for a hint max 3 a day
+  PASS h2 service [en] ad_offer: title, heading and body filled
+  PASS h2 service [en] ad_offer: a main button unless waiting; All games always
+  PASS h2 service [en] ad_pending: title, heading and body filled
+  PASS h2 service [en] ad_pending: a main button unless waiting; All games always
+  PASS h2 service [en] ad_result: title, heading and body filled
+  PASS h2 service [en] ad_result: a main button unless waiting; All games always
+  PASS h2 service [en] ad_unavailable: title, heading and body filled
+  PASS h2 service [en] ad_unavailable: a main button unless waiting; All games always
+  PASS h2 service [en] purchase: title, heading and body filled
+  PASS h2 service [en] purchase: a main button unless waiting; All games always
+  PASS h2 service [en] purchase_wait: title, heading and body filled
+  PASS h2 service [en] purchase_wait: a main button unless waiting; All games always
+  PASS h2 service [en] purchase_success: title, heading and body filled
+  PASS h2 service [en] purchase_success: a main button unless waiting; All games always
+  PASS h2 service [en] purchase_failed: title, heading and body filled
+  PASS h2 service [en] purchase_failed: a main button unless waiting; All games always
+  PASS h2 service [en] purchase_cancelled: title, heading and body filled
+  PASS h2 service [en] purchase_cancelled: a main button unless waiting; All games always
+  PASS h2 service [en] purchase_pending: title, heading and body filled
+  PASS h2 service [en] purchase_pending: a main button unless waiting; All games always
+  PASS h2 service [en] restore_wait: title, heading and body filled
+  PASS h2 service [en] restore_wait: a main button unless waiting; All games always
+  PASS h2 service [en] restore: title, heading and body filled
+  PASS h2 service [en] restore: a main button unless waiting; All games always
+  PASS h2 gift screen [en]: claim 4 ready, button says 25 coins
+  PASS h2 gift screen [en]: 7 claims shown
+  PASS h2 gift screen [en]: claimed today: the state line, no button
+  PASS h2 shop screen [en]: 4 product cards: ["Product_remove_ads", "Product_coins_s", "Product_coins_l", "Product_hints_s"]
+  PASS h2 shop screen [en]: the card shows the store's price
+  PASS h2 shop screen [en]: test-store line + Restore
+  PASS h2 service [ar] ad_offer: title, heading and body filled
+  PASS h2 service [ar] ad_offer: a main button unless waiting; All games always
+  PASS h2 service [ar] ad_pending: title, heading and body filled
+  PASS h2 service [ar] ad_pending: a main button unless waiting; All games always
+  PASS h2 service [ar] ad_result: title, heading and body filled
+  PASS h2 service [ar] ad_result: a main button unless waiting; All games always
+  PASS h2 service [ar] ad_unavailable: title, heading and body filled
+  PASS h2 service [ar] ad_unavailable: a main button unless waiting; All games always
+  PASS h2 service [ar] purchase: title, heading and body filled
+  PASS h2 service [ar] purchase: a main button unless waiting; All games always
+  PASS h2 service [ar] purchase_wait: title, heading and body filled
+  PASS h2 service [ar] purchase_wait: a main button unless waiting; All games always
+  PASS h2 service [ar] purchase_success: title, heading and body filled
+  PASS h2 service [ar] purchase_success: a main button unless waiting; All games always
+  PASS h2 service [ar] purchase_failed: title, heading and body filled
+  PASS h2 service [ar] purchase_failed: a main button unless waiting; All games always
+  PASS h2 service [ar] purchase_cancelled: title, heading and body filled
+  PASS h2 service [ar] purchase_cancelled: a main button unless waiting; All games always
+  PASS h2 service [ar] purchase_pending: title, heading and body filled
+  PASS h2 service [ar] purchase_pending: a main button unless waiting; All games always
+  PASS h2 service [ar] restore_wait: title, heading and body filled
+  PASS h2 service [ar] restore_wait: a main button unless waiting; All games always
+  PASS h2 service [ar] restore: title, heading and body filled
+  PASS h2 service [ar] restore: a main button unless waiting; All games always
+  PASS h2 gift screen [ar]: claim 4 ready, button says 25 coins
+  PASS h2 gift screen [ar]: 7 claims shown
+  PASS h2 gift screen [ar]: claimed today: the state line, no button
+  PASS h2 shop screen [ar]: 4 product cards: ["Product_remove_ads", "Product_coins_s", "Product_coins_l", "Product_hints_s"]
+  PASS h2 shop screen [ar]: the card shows the store's price
+  PASS h2 shop screen [ar]: test-store line + Restore
+  PASS h2 flows: purchase confirm, success, cancelled, pending, failed reached: ["purchase", "purchase_success", "purchase_cancelled", "purchase_pending", "purchase_failed"]
+  PASS h2 flows: every purchase screen closes
+  PASS h2 flows: the waiting screen shows while the store answers
+  PASS h2 flows: restore result reached
+  PASS h2 flows: video offer reached
+  PASS h2 flows: video result reached, one hint
+  PASS h2 flows: no video right now reached, nothing paid
+  PASS h2 hub: the Gift button opens the gift screen
+  PASS h2 gift screen: preview buttons do not route (preview)
+RESULT passed=1961 failed=0
