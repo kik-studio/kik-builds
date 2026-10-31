@@ -1,0 +1,56 @@
+{
+ "game_id": "qanadeel",
+ "version": "0.1",
+ "updated": "2026-10-30",
+ "commit": "70c4512",
+ "links": {
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-qanadeel/qanadeel.apk"
+ },
+ "screenshots": {
+  "en": [
+   "https://kik-studio.github.io/kik-builds/games/qanadeel/screens/game_en.png",
+   "https://kik-studio.github.io/kik-builds/games/qanadeel/screens/menu_en.png",
+   "https://kik-studio.github.io/kik-builds/games/qanadeel/screens/settings_en.png"
+  ],
+  "ar": [
+   "https://kik-studio.github.io/kik-builds/games/qanadeel/screens/game_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/qanadeel/screens/menu_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/qanadeel/screens/settings_ar.png"
+  ]
+ },
+ "apk_bytes": 101204277,
+ "apk_sha256": "cefbd31dd1ad32b6978c4480d610872fc349f422c02d3fd726db812679144691",
+ "pack_sha256": "3fb2818d25c67580cd05a7e2e633d1b68420fc69e9df533fd5d2d600490f6d8e",
+ "shapes": [
+  "https://kik-studio.github.io/kik-builds/games/qanadeel/screens/game_en_desktop.png",
+  "https://kik-studio.github.io/kik-builds/games/qanadeel/screens/game_en_tablet.png"
+ ],
+ "video": [
+  "https://kik-studio.github.io/kik-builds/games/qanadeel/video/gameplay.mp4",
+  "https://kik-studio.github.io/kik-builds/games/qanadeel/video/showcase_fx.mp4",
+  "https://kik-studio.github.io/kik-builds/games/qanadeel/video/showcase_ui.mp4"
+ ],
+ "tests": "https://kik-studio.github.io/kik-builds/games/qanadeel/tests.txt",
+ "benchmark_apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-qanadeel/qanadeel-benchmark.apk",
+ "branch": "main",
+ "checks": "https://kik-studio.github.io/kik-builds/games/qanadeel/checks/",
+ "build_id": "0.1+70c4512",
+ "built_on": "studio server",
+ "review": {
+  "build_id": "0.1+70c4512",
+  "machine": "studio PC GPU",
+  "when": "2026-10-30 18:46 UTC"
+ },
+ "media": {
+  "build_id": "0.1+70c4512",
+  "version": "0.1",
+  "carried": false,
+  "label": null
+ },
+ "screens_hd": [
+  "https://kik-studio.github.io/kik-builds/games/qanadeel/screens/hd/game_ar.jpg",
+  "https://kik-studio.github.io/kik-builds/games/qanadeel/screens/hd/game_en.jpg",
+  "https://kik-studio.github.io/kik-builds/games/qanadeel/screens/hd/menu_en.jpg"
+ ]
+}
