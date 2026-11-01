@@ -1,0 +1,31 @@
+لمَّتنا 0.5
+- رئيسية جديدة: ترتيبك، وسجل لمّاتك بأسمائها، وزر «ابدأ لمَّتنا» وزر «ادخل برمز»، والمتجر بأيقونة العربة. وشلنا بطاقة بلس من الرئيسية (تلقونها في المتجر).
+- المتجر انعاد من أوله بنفس روح الرئيسية، وصفحات اللعبة صارت أقرب لنفس الروح.
+- العزيمة توصلك: أحد يعزمك للمّة أو يضيفك لأصحابه؟ تطلع لك بطاقة داخل اللعبة فيها صورته واسمه: قبول أو رفض. وإذا اللعبة مقفولة يوصلك إشعار، تضغط عليه وتفتح لك البطاقة. وأول مرة تفتح اللعبة نسألك عن الإشعارات.
+- صدّ جديد: لما أحد يسرق منك نقاط وتشوفها في صفحة الترتيب، زر «صدّ!» يرجّع لك نقاطك والكل يضحك. الصدّ يكون في الترتيب بس، وتحت كل زر قوة صار فيه ملاحظة صغيرة متى تستخدمه.
+- في «ساحة الغشنة»: إذا فيه جواب مثل جواب ثاني، زر «صح» صار «مختلف»، وشلنا زر «مو مكرر».
+- الترتيب: عناوين الأعمدة (السابق · الجولة · المجموع) في إطار، والاسم ما يدخل تحت الصورة مهما كان طويل، وشلنا كلمة «أنت». وإذا تنتظرون الزعيم يطلع لكم زر يتوهج ببطء.
+- التفاعلات أكبر وبنص صورتك، وشريط التفاعلات تسحبه.
+- «ننتظر الزعيم»: تقدر تطلع من اللمّة بزر «اخرج من اللمّة».
+- اللي يدير اللمّة صار اسمه «زعيم اللمّة» (أو «زعيمة اللمّة») في كل مكان.
+- طريقة اللعب: السحب يشتغل، ما تشوف طرف الصورة اللي بعدها، والكلام كله موجود (مع أكبر خط تسحبه لتحت)، و«شوف الفيديو» في كل الصفحات. والفيديو بملء الشاشة وبصوت جديد، وزر التخطي فوق على اليمين.
+- اللوقو الرسمي الجديد في أيقونة اللعبة والمقدمة والرئيسية وصفحة التلفزيون. واسم اللعبة تحت الأيقونة: لمَّتنا (وإذا لغة جوالك إنجليزي: LMTNA).
+- التلفزيون: ما يتقطع الجزء اللي فيه الباركود، ولو تغيّر الزعيم التلفزيون يكمّل.
+- صوت لمَّتنا: جمل أكثر في كل موقف وبدون تكرار.
+- ما فيه إعلانات في هذي النسخة.
+
+Lammatna 0.5
+- New Home: your rank, your past lammas with their names, «ابدأ لمَّتنا» and «ادخل برمز», and a cart icon for the Store. The Plus card left Home (it is in the Store).
+- The Store is remade in the same look, and most pages of the game follow the same look.
+- Invites reach you: when someone invites you to a lamma or adds you as a friend, a card shows their picture and name inside the game: accept or decline. If the game is closed you get a notification; tap it and the card opens. The game asks about notifications the first time you open it.
+- New Block: when someone steals points from you and you see it on the ranking page, press «Block!» and you get them back, and everyone laughs. Block works on the ranking page only, and every power button now has a small note saying when to use it.
+- In the review: when an answer is the same as another, «Correct» becomes «Different», and the «Not a repeat» button is gone.
+- Ranking: the column titles (Before · Round · Total) are framed, the name never slides under the picture however long it is, and the word «You» is gone. While waiting for the leader you see a slowly glowing button.
+- Reactions are bigger and centred on your picture, and the reaction bar scrolls sideways.
+- While waiting for the leader you can leave with «Leave the lamma».
+- The host is now «lamma leader» (زعيم / زعيمة اللمّة) everywhere.
+- How to play: swiping works, you no longer see the edge of the next picture, all the text is there (with the largest text size you scroll it), and «Watch the video» is on every page. The video is full screen with a new voice and Skip at the top right.
+- The official new logo in the app icon, the intro, Home and the TV page. The name under the icon is لمَّتنا on Arabic phones and LMTNA on English phones.
+- TV: the QR part is no longer cut off, and the TV keeps going when the leader changes.
+- Lammatna's voice has more lines for every moment, without repeats.
+- No ads in this version.
