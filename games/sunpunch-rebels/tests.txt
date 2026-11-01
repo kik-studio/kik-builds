@@ -1,0 +1,964 @@
+  PASS config: game.json loads
+  PASS config: version present
+  PASS save: value survives reload
+  PASS save: setting survives reload
+  PASS save: atomic write leaves no temp file
+  PASS save: player id generated
+  PASS loc: English text
+  PASS loc: Arabic text
+  PASS loc: Arabic is right-to-left
+  PASS loc: controls flip to RTL in Arabic
+  PASS loc: every string has English and Arabic
+  PASS audio: Music bus
+  PASS audio: SFX bus
+  PASS audio: sfx asset present
+  PASS audio: no AudioServer.add_bus() (silences web builds, FR-3)
+  PASS audio: Music and SFX route to Master
+  PASS analytics: HMAC signature matches reference
+  PASS analytics: Android os_version keeps only the version number
+  PASS analytics: iOS version kept, empty version falls back
+  PASS analytics: web/desktop send webgl 1.0
+  PASS ui: safe margins at least minimum
+  PASS theme: design tokens file present
+  PASS theme: tokens loaded
+  INFO theme placeholder = true (a game must replace it before a milestone)
+  PASS playfield: same logical area at 1080x1920
+  PASS playfield: same logical area at 1080x2340
+  PASS playfield: same logical area at 1080x2400
+  PASS playfield: same logical area at 1440x1920
+  PASS playfield: same logical area at 3413x1920
+  PASS perf: frame statistics correct
+  PASS field perf: row carries scene, device and p50
+  PASS field perf: only performance fields, no identity
+  PASS field perf: short visits are not sent
+  PASS field perf: capped per session
+  PASS field perf: off unless the build asks for it (desktop and default)
+  PASS field perf: no scene is named none
+  PASS fx: shader hit_flash loads
+  PASS fx: shader dissolve loads
+  PASS fx: shader shield loads
+  PASS fx: shader shockwave loads
+  PASS fx: shader heat_shimmer loads
+  PASS fx: texture dot generated
+  PASS fx: texture spark generated
+  PASS fx: texture ring generated
+  PASS fx: texture smoke generated
+  PASS fx: texture star generated
+  PASS fx: texture white generated
+  PASS fx: emitter pool stays bounded (96 <= 96)
+  PASS fx: hit flash applies its shader
+  PASS fx: trail lives in the effect layer
+  PASS fx: heat shimmer attaches to its node
+  PASS fx: dissolve frees the node when done
+  PASS fx: hitstop restores time
+  PASS fx: shake returns to rest
+  PASS ui kit: theme type DisplayLabel
+  PASS ui kit: theme type HeadingLabel
+  PASS ui kit: theme type H2Label
+  PASS ui kit: theme type TitleLabel
+  PASS ui kit: theme type CaptionLabel
+  PASS ui kit: theme type MicroLabel
+  PASS ui kit: theme type NumberLabel
+  PASS ui kit: theme type DangerButton
+  PASS ui kit: theme type GhostButton
+  PASS ui kit: theme type CardPanel
+  PASS ui kit: theme type ChipPanel
+  PASS ui kit: display size from type scale
+  PASS ui kit: Arabic display font renders Arabic
+  PASS ui kit: framed panel
+  PASS ui kit: count_to ends on the target
+  PASS ui kit: appear ends fully visible
+  PASS errors: logger registered
+  PASS errors: one report per distinct error
+  PASS errors: repeats are counted, not re-sent
+  PASS errors: report carries build and platform
+  PASS errors: points at the script line, not engine code
+  PASS remote: Firestore values decode
+  PASS remote: numbers with safe defaults
+  PASS remote: switches with safe defaults
+  PASS crash: marker is written while running
+  PASS crash: breadcrumb recorded
+  PASS crash: background marker is not a crash
+  PASS crash: foreground marker is filed with breadcrumbs
+  PASS deleted: normal start = Crashlytics on with this install's id, stored reports kept
+  PASS deleted: delete = Crashlytics off, user id cleared, stored reports dropped
+  PASS deleted: restart while deleted = still off, no user id
+  PASS deleted: no repeated calls while nothing changes
+  PASS deleted: GameAnalytics sends nothing (queue dropped, no request)
+  PASS deleted: events copy dropped, not kept for a later account
+  PASS deleted: error records dropped (never sent, never queued)
+  PASS deleted: perf record dropped without a request
+  PASS deleted: Start again = Crashlytics on again with the id, deleted-time reports dropped
+  PASS events copy: every design/progression event is kept
+  PASS events copy: design line and value
+  PASS events copy: progression ids and score
+  PASS screen boot: loads
+  PASS screen boot: builds content
+  PASS screen boot: no empty labels (0 labels)
+  PASS screen boot: all buttons meet touch size
+  PASS screen menu: loads
+  PASS screen menu: builds content
+  PASS screen menu: no empty labels (1 labels)
+  PASS screen menu: all buttons meet touch size
+  PASS screen settings: loads
+  PASS screen settings: builds content
+  PASS screen settings: no empty labels (11 labels)
+  PASS screen settings: all buttons meet touch size
+  PASS screen game: loads
+  PASS screen game: builds content
+  PASS screen game: no empty labels (3 labels)
+  PASS screen game: all buttons meet touch size
+  PASS release: no developer tools on shipping screens
+  PASS dev: developer tools reachable in dev builds
+  PASS release: settings has no developer tools
+  PASS release: game has no developer tools
+  PASS cloud: unconfigured shows not available
+  PASS hd pack: start() from a boot _ready creates the pack node
+  PASS hd pack: pack node entered the tree under root
+  PASS hd pack: the download request runs inside the tree
+  PASS hd pack: request really started (state failed)
+  PASS hd pack: nothing loaded from an unreachable host
+  PASS S1 catalog: validator green ()
+  PASS S1 catalog: version + prototype status
+  PASS S1 catalog: 20 frames, 12 component stages
+  PASS S1 catalog: cannons_2 typed with cost/unlock/weapon
+  PASS S1 catalog: beam weapon dps matches
+  PASS S1 catalog: reward table
+  PASS S1 validator: duplicate frame id caught
+  PASS S1 validator: missing field caught
+  PASS S1 validator: unknown requires_frame caught
+  PASS S1 validator: dps that disagrees with the schedule caught
+  PASS S1 validator: wrong type caught
+  PASS S1 validator: wrong version caught
+  PASS S1 validator: missing file is a typed error
+  PASS S1 catalog: autoload loaded the shipped file
+  PASS S1 resolver: fresh save = frame_01 + nose_1
+  PASS S1 resolver: unowned stage rejected
+  PASS S1 resolver: stage out of range rejected
+  PASS S1 resolver: unowned frame rejected
+  PASS S1 resolver: unknown frame rejected
+  PASS S1 resolver: nose is required
+  PASS S1 resolver: bad data falls back to a safe owned loadout, no charge
+  PASS S1 resolver: failed ids reported
+  PASS AC02 earn: first clear pays 100 + 100 bonus
+  PASS AC02 earn: a repeat clear pays 100, no bonus
+  PASS AC02 buy: one debit, one grant, fitted
+  PASS AC02 buy: equipped revision rises when the fit changes
+  PASS AC02 double tap, same tx id: exactly one debit
+  PASS AC02 double tap, new tx id: already owned, no second debit
+  PASS AC02 short funds: rejected, nothing changed
+  PASS AC02 short funds: a rejection is not journaled
+  PASS AC02 short funds: same tx id may be retried once funds exist
+  PASS AC02 stale expected revision rejected
+  PASS AC02 empty tx id rejected
+  PASS AC02 unlock not met: component rejected, no debit
+  PASS AC02 unlock not met: frame rejected
+  PASS AC02 require_frame: frame_03 needs frame_02 first
+  PASS AC02 cannons_3 locked by clears before stages
+  PASS AC02 rockets_1 needs 5 clears
+  PASS AC02 requires_stage: cannons_2 needs cannons_1
+  PASS AC02 stages in order succeed once unlocked
+  PASS AC02 unknown stage rejected
+  PASS AC02 balance never negative across a buying spree
+  PASS AC02 spree survives restart
+  PASS AC02 kill before commit: caller sees a crash
+  PASS AC02 kill before commit: nothing charged, nothing granted
+  PASS AC02 kill before commit: retry applies once
+  PASS AC02 kill mid-commit: a temp file was left behind
+  PASS AC02 kill mid-commit: old state restored, stale temp dropped
+  PASS AC02 kill after commit: the purchase is there after restart
+  PASS AC02 restart restores the committed fit
+  PASS AC02 repeated tx id after a lost response: prior result, no second debit
+  PASS AC02 repeated reward tx id: no second grant
+  PASS AC02 corrupt main file: previous commit recovered from the backup
+  PASS AC02 corrupt main file: the bad file is kept as a backup
+  PASS AC02 nothing readable: safe fresh loadout, no charge
+  PASS AC04 transfer: stages stay when the frame changes
+  PASS AC04 transfer: back to the old frame, no payment
+  PASS AC04 removing a part keeps its ownership
+  PASS AC02 fit with an unowned part rejected
+  PASS AC02 fit cannot remove nose
+  PASS AC02 fit with an unowned frame rejected
+  PASS S1 fit with no change does not bump the loadout revision
+  PASS S1 recipe carries the committed revision
+  PASS AC02 cloud: an older revision never overwrites a newer local save
+  PASS AC02 cloud: after a stale restore the tx id is not re-granted
+  PASS AC02 cloud: the higher committed revision wins
+  PASS AC02 cloud: a local tx id is never re-granted after a restore
+  PASS AC02 cloud: a restored tx id is never re-granted
+  PASS AC02 cloud: merge is durable across restart
+  PASS AC02 cloud: invalid remote (negative coins) refused
+  PASS AC02 cloud: remote with unknown ids refused
+  PASS S1 profile: tx ids are unique-looking
+  PASS AC03 preview: locked parts can be previewed
+  PASS AC03 preview: recipe is flagged temporary and lists the locked parts
+  PASS AC03 preview: kills, coins and damage are always zero
+  PASS AC03 preview: choosing a locked part cannot be committed
+  PASS AC03 preview then back: owned + equipped file hash unchanged
+  PASS AC03 launch: gameplay recipe has no beam and no preview frame
+  PASS AC03 preview: dropping a preview leaves the save alone
+  PASS S1 launch snapshot is a copy: a later fit does not change it
+  PASS flight: catalog loads
+  PASS AC07 nose_1 fps 30: shots fired 480 == expected 480 (ticks 3600)
+  PASS AC07 nose_1 30fps: 60 s damage 4800.00 vs expected 4800.00 (err 0.0000 %)
+  PASS AC07 nose_1 fps 60: shots fired 480 == expected 480 (ticks 3600)
+  PASS AC07 nose_1 60fps: 60 s damage 4800.00 vs expected 4800.00 (err 0.0000 %)
+  PASS AC07 nose_1 fps 120: shots fired 480 == expected 480 (ticks 3600)
+  PASS AC07 nose_1 120fps: 60 s damage 4800.00 vs expected 4800.00 (err 0.0000 %)
+  PASS AC07 nose_1 fps 0: shots fired 480 == expected 480 (ticks 3600)
+  PASS AC07 nose_1 jitter: 60 s damage 4800.00 vs expected 4800.00 (err 0.0000 %)
+  PASS AC07 nose_1: identical damage at 30/60/120/jitter render fps [4800.0, 4800.0, 4800.0, 4800.0]
+  PASS AC07 cannons_1 fps 30: shots fired 240 == expected 240 (ticks 3600)
+  PASS AC07 cannons_1 30fps: 60 s damage 1920.00 vs expected 1920.00 (err 0.0000 %)
+  PASS AC07 cannons_1 fps 60: shots fired 240 == expected 240 (ticks 3600)
+  PASS AC07 cannons_1 60fps: 60 s damage 1920.00 vs expected 1920.00 (err 0.0000 %)
+  PASS AC07 cannons_1 fps 120: shots fired 240 == expected 240 (ticks 3600)
+  PASS AC07 cannons_1 120fps: 60 s damage 1920.00 vs expected 1920.00 (err 0.0000 %)
+  PASS AC07 cannons_1 fps 0: shots fired 240 == expected 240 (ticks 3600)
+  PASS AC07 cannons_1 jitter: 60 s damage 1920.00 vs expected 1920.00 (err 0.0000 %)
+  PASS AC07 cannons_1: identical damage at 30/60/120/jitter render fps [1920.0, 1920.0, 1920.0, 1920.0]
+  PASS AC07 cannons_2 fps 30: shots fired 400 == expected 400 (ticks 3600)
+  PASS AC07 cannons_2 30fps: 60 s damage 2160.00 vs expected 2160.00 (err 0.0000 %)
+  PASS AC07 cannons_2 fps 60: shots fired 400 == expected 400 (ticks 3600)
+  PASS AC07 cannons_2 60fps: 60 s damage 2160.00 vs expected 2160.00 (err 0.0000 %)
+  PASS AC07 cannons_2 fps 120: shots fired 400 == expected 400 (ticks 3600)
+  PASS AC07 cannons_2 120fps: 60 s damage 2160.00 vs expected 2160.00 (err 0.0000 %)
+  PASS AC07 cannons_2 fps 0: shots fired 400 == expected 400 (ticks 3600)
+  PASS AC07 cannons_2 jitter: 60 s damage 2160.00 vs expected 2160.00 (err 0.0000 %)
+  PASS AC07 cannons_2: identical damage at 30/60/120/jitter render fps [2160.00000000002, 2160.00000000002, 2160.00000000002, 2160.00000000002]
+  PASS replay: input log has one entry per step (900)
+  PASS replay: same input log + seed -> same state hash
+  PASS replay: the scripted run fired (220) and hit (1540)
+  PASS replay: a changed input log gives a different hash
+  PASS preview(flag): sim is a preview
+  PASS preview(flag): awards nothing { "preview": true, "awards_allowed": false, "damage": 0.0, "kills": 0, "coins": 0, "ticks": 600 }
+  PASS preview(flag): internal counters zero, target untouched
+  PASS preview(flag): no player damage either
+  PASS preview(flag): every shot event carries preview=true (148 events)
+  PASS preview(recipe): sim is a preview
+  PASS preview(recipe): awards nothing { "preview": true, "awards_allowed": false, "damage": 0.0, "kills": 0, "coins": 0, "ticks": 600 }
+  PASS preview(recipe): internal counters zero, target untouched
+  PASS preview(recipe): no player damage either
+  PASS preview(recipe): every shot event carries preview=true (148 events)
+  PASS preview control: the same setup in combat kills and pays
+  PASS pool: one body per shot event (296 / 296)
+  PASS pool: created 16 <= peak 16 (+4), not per shot
+  PASS pool: the rest reused (280)
+  PASS pool: a despawned enemy body is reused, reset
+  PASS shot event: projectiles, VFX and audio see the same 48 events
+  PASS shot event: audio can group by weapon cycle (24 groups)
+  PASS shot event: spawn within 2 px of the rendered muzzle at release, banked (AC05 sim side)
+  PASS shot event: seq strictly increasing
+  PASS shot event: weapon id, barrel id, loadout revision 7, unit direction on every event
+  PASS shot event: both nose barrels and both cannon sides fire ["nose_L", "nose_R", "can_L0", "can_R0"]
+  PASS shot event: the run reached full bank (0.98)
+  PASS swept: a 400 px step passes through a 10 px target -> hit
+  PASS swept: a miss stays a miss
+  PASS swept: both moving toward each other -> hit
+  PASS swept: a 500 px/step projectile cannot tunnel through a 6 px enemy
+  PASS drag: one pointer owns steering
+  PASS drag: touching down does not move or teleport the aircraft
+  PASS drag: aircraft moved exactly by the finger delta ((100.0, -50.0))
+  PASS drag: a fast swipe arrives over several steps (no jump)
+  PASS drag: clamped to the playfield (x 23.8)
+  PASS drag: focus loss clears pointers and pending motion
+  PASS hurtbox: constant 2.2 % cockpit core (23.76 px) on frame_01 and frame_20
+  PASS hurtbox: wider later frame (292 > 227 px) keeps the same core
+  PASS clock: 30 fps for 1 s = 60 steps (60)
+  PASS clock: a 1 s hitch is clamped to 8 steps, rest dropped
+  PASS clock: partial frame -> interpolation alpha 0.24
+  PASS cannons C2: first slot fires one barrel per side ["can_L0", "can_R0"]
+  PASS cannons C2: second barrels alternate in ["can_L0", "can_R0", "can_L1", "can_R1"]
+  PASS end_combat: no delayed burst after combat ends
+  PASS hurtbox: a fast rose shot through the core hits once; one 40 px outside misses (1)
+  PASS loadout: catalog loads
+  PASS sockets: frame_01 (KITE) authored set parses []
+  PASS sockets: frame_20 (DAYSTAR) authored set parses []
+  PASS sockets: KITE family KITE, DAYSTAR family SOL
+  PASS sockets: frames without their own file borrow the nearest authored set (flagged borrowed_from)
+  PASS sockets: KITE pose level present
+  PASS sockets: KITE pose mild present
+  PASS sockets: KITE pose full present
+  PASS S2 validator KITE: 192/192 combos pass (1728 pose checks: fit <= 0.19, air gaps >= 1 %, cockpit core, one emitter per barrel) []
+  PASS S2 validator DAYSTAR: 192/192 combos pass (1728 pose checks: fit <= 0.19, air gaps >= 1 %, cockpit core, one emitter per barrel) []
+  PASS S2 validator: the deliberately broken socket file fails (12/192 pass; kinds { "gap": 432, "fit": 720, "arm": 432 })
+  PASS S2 validator: a stage with a missing emitter fails (144/192 pass)
+  PASS S2 validator: a muzzle off its housing fails
+  PASS cockpit core: identical 0.022 of playfield width on KITE and DAYSTAR
+  PASS cockpit core: flight hurt radius 23.76 px on both frames (wider wings never widen the hitbox)
+  PASS provider: barrel ids and firing order match the stand-in (WeaponScheduler unchanged)
+  PASS provider: muzzles move with the bank pose (56.5 px level -> full)
+  PASS provider: pose blend is continuous through level and mild (no muzzle jump)
+  PASS provider: a left bank is the mirror of the right bank
+  PASS provider: muzzle basis straight forward (-y)
+  PASS composition: starter recipe -> KITE render recipe frame_01|nose_1|r0 []
+  PASS composition: starter shows hull (canopy painted=true), nose ports and no absent part [":hull", "nose:housing"]
+  PASS composition: parts sorted by z (one draw order)
+  PASS composition: DAYSTAR full kit has 16 emitters (2 nose + 6 cannon + 6 rocket + 2 lens)
+  PASS composition: SOL adapter arms for cannons and lens pods on both sides (4)
+  PASS composition: same recipe -> identical layout (Home, Hangar and flight draw the same)
+  PASS composition: thumbnail crop holds every part
+  PASS composition: unknown frame is reported, not drawn as another frame silently
+  PASS AC05 frame_01: 60 shots spawn within 0.000 px of the RENDERED muzzle (max bank 0.98)
+  PASS AC05 frame_20: 60 shots spawn within 0.000 px of the RENDERED muzzle (max bank 0.98)
+  PASS render frame_01: every drawn part lands on the recipe rect (shear + left mirror), all banks
+  PASS render frame_01: every muzzle sits on its DRAWN housing, all banks
+  PASS render frame_20: every drawn part lands on the recipe rect (shear + left mirror), all banks
+  PASS render frame_20: every muzzle sits on its DRAWN housing, all banks
+  PASS registries: every entry has art or is flagged standin []
+  PASS registries: every part the composition draws is in the aircraft registry []
+  PASS registries: stand-in textures draw (coloured shapes)
+  PASS registries: art under res://art/ or with no art and no standin flag is refused
+  PASS registries: stand-ins are listed for the release check (94 today)
+  PASS N16: no screen or core script loads art directly (only core/registry/) []
+  PASS N16: the scan catches load/preload/ext_resource of art families
+  PASS D-R11 palette hook: stand-in pod vs hull is listed as not checked
+  PASS D-R11 palette guard (real art): nose_1.port vs frame_01 hull hue distance 0.01704601397522
+  PASS D-R11 palette guard (real art): cannons_1.pod vs frame_01 hull hue distance 0.01915695986317
+  PASS D-R11 palette guard (real art): cannons_2.pod vs frame_01 hull hue distance 0.01753093757583
+  PASS D-R11 palette guard (real art): adapter.KITE.cannons vs frame_01 hull hue distance 0.01005996202017
+  PASS D-R11 palette guard (real art): cannons_1.pod vs frame_20 hull hue distance 0.03073650671723
+  PASS D-R11 palette guard (real art): cannons_2.pod vs frame_20 hull hue distance 0.0291104844299
+  PASS D-R11 palette guard: a plum pod would fail against the orange hull
+  PASS D-R11 palette hook: hue sampler reads TANGERINE
+  PASS real art: every wave A path is imported []
+  PASS real art: registries validate []
+  PASS real art frame_01: no stand-in canopy drawn over the painting
+  PASS real art frame_01: no stand-in canopy drawn over the painting
+  PASS real art frame_01: no stand-in canopy drawn over the painting
+  PASS real art frame_01: no stand-in canopy drawn over the painting
+  PASS real art frame_01: no stand-in canopy drawn over the painting
+  PASS real art frame_01: no stand-in canopy drawn over the painting
+  PASS real art frame_01: no stand-in canopy drawn over the painting
+  PASS real art frame_01: no stand-in canopy drawn over the painting
+  PASS real art frame_01: no stand-in canopy drawn over the painting
+  PASS real art frame_01: no stand-in canopy drawn over the painting
+  PASS real art frame_01: no stand-in canopy drawn over the painting
+  PASS real art frame_01: no stand-in canopy drawn over the painting
+  PASS real art frame_01: no stand-in canopy drawn over the painting
+  PASS real art frame_01: no stand-in canopy drawn over the painting
+  PASS real art frame_01: no stand-in canopy drawn over the painting
+  PASS real art frame_01: no stand-in canopy drawn over the painting
+  PASS real art frame_01: no stand-in canopy drawn over the painting
+  PASS real art frame_01: no stand-in canopy drawn over the painting
+  PASS real art frame_01: no stand-in canopy drawn over the painting
+  PASS real art frame_01: no stand-in canopy drawn over the painting
+  PASS real art frame_01: no stand-in canopy drawn over the painting
+  PASS real art frame_01: no stand-in canopy drawn over the painting
+  PASS real art frame_01: no stand-in canopy drawn over the painting
+  PASS real art frame_01: no stand-in canopy drawn over the painting
+  PASS real art frame_01: no stand-in canopy drawn over the painting
+  PASS real art frame_01: no stand-in canopy drawn over the painting
+  PASS real art frame_01: no stand-in canopy drawn over the painting
+  PASS real art frame_01: no stand-in canopy drawn over the painting
+  PASS real art frame_01: level/mild/full painted pose by bank, left bank mirrored { 0.0: ["frame_01.pose.level", ""], 0.4: ["frame_01.pose.mild", ""], 1.0: ["frame_01.pose.full", ""], -1.0: ["frame_01.pose.full", "L"] }
+  PASS real art frame_20: no stand-in canopy drawn over the painting
+  PASS real art frame_20: no stand-in canopy drawn over the painting
+  PASS real art frame_20: no stand-in canopy drawn over the painting
+  PASS real art frame_20: no stand-in canopy drawn over the painting
+  PASS real art frame_20: no stand-in canopy drawn over the painting
+  PASS real art frame_20: no stand-in canopy drawn over the painting
+  PASS real art frame_20: no stand-in canopy drawn over the painting
+  PASS real art frame_20: no stand-in canopy drawn over the painting
+  PASS real art frame_20: no stand-in canopy drawn over the painting
+  PASS real art frame_20: no stand-in canopy drawn over the painting
+  PASS real art frame_20: no stand-in canopy drawn over the painting
+  PASS real art frame_20: no stand-in canopy drawn over the painting
+  PASS real art frame_20: no stand-in canopy drawn over the painting
+  PASS real art frame_20: no stand-in canopy drawn over the painting
+  PASS real art frame_20: no stand-in canopy drawn over the painting
+  PASS real art frame_20: no stand-in canopy drawn over the painting
+  PASS real art frame_20: no stand-in canopy drawn over the painting
+  PASS real art frame_20: no stand-in canopy drawn over the painting
+  PASS real art frame_20: no stand-in canopy drawn over the painting
+  PASS real art frame_20: no stand-in canopy drawn over the painting
+  PASS real art frame_20: no stand-in canopy drawn over the painting
+  PASS real art frame_20: no stand-in canopy drawn over the painting
+  PASS real art frame_20: no stand-in canopy drawn over the painting
+  PASS real art frame_20: no stand-in canopy drawn over the painting
+  PASS real art frame_20: no stand-in canopy drawn over the painting
+  PASS real art frame_20: no stand-in canopy drawn over the painting
+  PASS real art frame_20: no stand-in canopy drawn over the painting
+  PASS real art frame_20: no stand-in canopy drawn over the painting
+  PASS real art frame_20: level/mild/full painted pose by bank, left bank mirrored { 0.0: ["frame_20.pose.level", ""], 0.4: ["frame_20.pose.mild", ""], 1.0: ["frame_20.pose.full", ""], -1.0: ["frame_20.pose.full", "L"] }
+  PASS real art: a chassis without painted poses keeps the stand-in shapes
+  PASS kit tokens: res://ui/tokens.tres loads
+  PASS kit tokens: touch target >= 48 pt (144 px)
+  PASS kit tokens: button heights >= 48 pt, primary taller
+  PASS kit tokens: tab bar height meets touch size
+  PASS kit tokens: spacing steps sit on the 4-pt grid
+  PASS kit tokens: spacing scale rises
+  PASS kit tokens: type scale ordered, smallest text >= 10 pt
+  PASS kit tokens: corner radii ordered
+  PASS kit tokens: icon optical sizes ordered
+  PASS kit tokens: body font has Arabic and Latin glyphs
+  PASS kit tokens: head font has Arabic and Latin glyphs
+  PASS kit tokens: display font has Arabic and Latin glyphs
+  PASS kit tokens: numbers font has Arabic and Latin glyphs
+  PASS kit tokens: identity palette
+  PASS kit tokens: safe area never below the minimums
+  PASS kit tokens: number format
+  PASS kit tokens: RTL mirror of a rect
+  PASS layout lint: flags literal pixel offsets (4 of 4)
+  PASS layout lint: tokens, ratios, comments and layout-ok lines pass ([])
+  PASS layout lint: a listed file is allowed
+  PASS layout lint: a listed line is allowed
+  PASS layout lint: res://scenes/** clean or listed in docs/LAYOUT_EXCEPTIONS.md (0 hits: )
+  PASS layout lint: no stale exceptions ()
+  PASS kit button: sizes meet touch size [en]
+  PASS kit button: accessibility names (text, or explicit for icon buttons) [en]
+  PASS kit button: layout direction follows the language [en]
+  PASS kit button: normal button is live and focusable [en]
+  PASS kit button: disabled button ignores presses [en]
+  PASS kit button: loading shows the spinner and guards input [en]
+  PASS kit button: loading off re-enables [en]
+  PASS kit button/icon button: every kind x state draws [en]
+  PASS kit card: pressable card emits pressed [en]
+  PASS kit card: disabled card ignores presses [en]
+  PASS kit card: every state draws [en]
+  PASS kit wallet: thousands separators, tabular digits [en]
+  PASS kit wallet: pill height from tokens [en]
+  PASS kit rail: stages run in reading direction (RTL mirrors) [en]
+  PASS kit rail: node hit area >= touch size [en]
+  PASS kit rail: tapping node 2 reports stage index 1 [en]
+  PASS kit tab bar: tab order mirrors in Arabic [en]
+  PASS kit tab bar: tab height >= touch size [en]
+  PASS kit tab bar: tapping the 4th tab selects it [en]
+  PASS kit tab bar: a locked tab does not select [en]
+  PASS kit text: button and tab labels are noted for layout_check [en]
+  PASS kit icons: drawn pictures are noted for layout_check (11) [en]
+  PASS kit toast: never takes input [en]
+  PASS kit toast: sits under the top safe area [en]
+  PASS kit toast: removes itself [en]
+  PASS kit button: sizes meet touch size [ar]
+  PASS kit button: accessibility names (text, or explicit for icon buttons) [ar]
+  PASS kit button: layout direction follows the language [ar]
+  PASS kit button: normal button is live and focusable [ar]
+  PASS kit button: disabled button ignores presses [ar]
+  PASS kit button: loading shows the spinner and guards input [ar]
+  PASS kit button: loading off re-enables [ar]
+  PASS kit button/icon button: every kind x state draws [ar]
+  PASS kit card: pressable card emits pressed [ar]
+  PASS kit card: disabled card ignores presses [ar]
+  PASS kit card: every state draws [ar]
+  PASS kit wallet: thousands separators, tabular digits [ar]
+  PASS kit wallet: pill height from tokens [ar]
+  PASS kit rail: stages run in reading direction (RTL mirrors) [ar]
+  PASS kit rail: node hit area >= touch size [ar]
+  PASS kit rail: tapping node 2 reports stage index 1 [ar]
+  PASS kit tab bar: tab order mirrors in Arabic [ar]
+  PASS kit tab bar: tab height >= touch size [ar]
+  PASS kit tab bar: tapping the 4th tab selects it [ar]
+  PASS kit tab bar: a locked tab does not select [ar]
+  PASS kit text: button and tab labels are noted for layout_check [ar]
+  PASS kit icons: drawn pictures are noted for layout_check (11) [ar]
+  PASS kit toast: never takes input [ar]
+  PASS kit toast: sits under the top safe area [ar]
+  PASS kit toast: removes itself [ar]
+  PASS kit icons: all 22 icon ids draw (22 noted)
+  PASS BASE old save: the old game's save.json is recognised as foreign
+  PASS BASE old save: none of the old keys enter the new save
+  PASS BASE old save: fresh new-game save with its own marker
+  PASS BASE old save: the old file is kept aside untouched (never deleted)
+  PASS BASE old save: writing over it works
+  PASS BASE old save: second open is a normal load
+  PASS BASE old save: the aside copy is not overwritten by the new save
+  PASS BASE old save: new profile starts empty (no old coins, no old frames)
+  PASS BASE old save: a plain v1 file of the old game (same schema number) is also set aside
+  PASS BASE old save: a truncated file starts fresh without a crash
+  PASS BASE old files: the old purchase-credit list loads (old keys only ever block a repeat)
+  PASS BASE old files: save stays usable
+  PASS BASE cloud: a committed change is mirrored into the cloud save (data.profile + progress)
+  PASS BASE cloud: a cloud save without a profile is answered by a push
+  PASS BASE cloud: an identical remote needs no push
+  PASS BASE cloud: an older remote never overwrites the newer local profile
+  PASS BASE cloud: a fresh phone adopts the higher committed revision
+  PASS BASE cloud: after adopting, the cloud copy is already right (no push)
+  PASS BASE cloud: a restore never re-grants a tx id (coins unchanged)
+  PASS BASE cloud: the hook the account calls exists on Save
+  PASS BASE cloud: replace_all keeps the merged profile and the game marker
+  PASS settings: fresh install has sound and vibration on
+  PASS settings: fresh install has reduced motion and reduced effects OFF
+  PASS settings: language() reads the active language
+  PASS settings: music off leaves sound effects on
+  PASS settings: music off survives a reload
+  PASS settings: music back on returns the default level
+  PASS settings: music back on returns the last level the player chose
+  PASS settings: sound effects off survives a reload
+  PASS settings: vibration off survives a reload
+  PASS settings: reduced motion and effects survive a reload
+  PASS settings: the two display settings are independent
+  PASS settings: language reader follows the saved language
+  PASS settings: language back to English
+  PASS settings: music bus is not muted while music is on
+  PASS settings: music off mutes the music bus (AudioMgr applies it)
+  PASS start: a name owed -> name step
+  PASS start: first open without a name -> name step
+  PASS start: first open but the account has a name -> home
+  PASS start: deleted account -> welcome (start again)
+  PASS start: returning player -> home
+  PASS start: a refused name comes back as the name step
+  PASS start: cloud still checking, a returning player is not asked for the name twice
+  PASS router: legacy names map to home and flight
+  PASS router: screen boot loads (res://scenes/boot.tscn)
+  PASS router: screen welcome loads (res://scenes/welcome.tscn)
+  PASS router: screen home loads (res://scenes/home/home.tscn)
+  PASS router: screen hangar loads (res://scenes/hangar/hangar.tscn)
+  PASS router: screen flight loads (res://scenes/flight/flight.tscn)
+  PASS router: screen settings loads (res://scenes/settings/settings.tscn)
+  PASS router: screen menu loads (res://scenes/home/home.tscn)
+  PASS router: screen game loads (res://scenes/flight/flight.tscn)
+  PASS router: unknown screen has no path
+  PASS router: Home<->Hangar transition is 300-400 ms (360 ms)
+  PASS router: Hangar->Home takes the same time
+  PASS router: go() starts a transition
+  PASS router: taps during a transition are queued exactly once, in order (["hangar", "settings"])
+  PASS router: ends on the queued screen, idle
+  PASS router: the cover never blocks input (mouse filter ignore at every swap)
+  PASS router: a tap during the reveal lands exactly once on the new screen
+  PASS router: the Hangar transition finished after it started (its length is the table value, 300-400 ms; wall time is not measured: the test harness runs frames faster than real time)
+  PASS router: Back from Settings returns to where it came from
+  PASS router: reduced motion makes it a short fade
+  PASS router: the slide enters from the opposite side in Arabic
+  PASS router: going back slides the other way
+  PASS router: Back from hangar, settings and flight goes home
+  PASS router: Home and the name step have no Back (the name step cannot be skipped)
+  PASS router: Back at Home is not handled (the OS decides)
+  PASS router: hangar is on
+  PASS router: a screen back_requested signal returns home
+  PASS router: enter(from) hook is called with the previous screen
+  PASS router: a screen that handles Back keeps the router where it is
+  PASS settings screen (en): has MusicRow
+  PASS settings screen (en): has SfxRow
+  PASS settings screen (en): has VibrationRow
+  PASS settings screen (en): has MotionRow
+  PASS settings screen (en): has EffectsRow
+  PASS settings screen (en): has LanguageRow
+  PASS settings screen (en): has AccountBlock
+  PASS settings screen (en): no empty label
+  PASS settings screen (en): the platform sign-in button shows only when a sign-in plugin is there (none true, plugin true)
+  PASS settings screen (en): the reduce-motion toggle writes what Settings.reduced_motion() reads
+  PASS settings screen (en): and turns it off again
+  PASS settings screen (en): the sound-effects toggle writes Settings.sfx_on()
+  PASS settings screen (en): the music toggle writes Settings.music_on()
+  PASS settings screen (en): every button meets the touch size
+  PASS settings screen (en): no account actions without a cloud account (offline run)
+  PASS settings screen (ar): has MusicRow
+  PASS settings screen (ar): has SfxRow
+  PASS settings screen (ar): has VibrationRow
+  PASS settings screen (ar): has MotionRow
+  PASS settings screen (ar): has EffectsRow
+  PASS settings screen (ar): has LanguageRow
+  PASS settings screen (ar): has AccountBlock
+  PASS settings screen (ar): no empty label
+  PASS settings screen (ar): the platform sign-in button shows only when a sign-in plugin is there (none true, plugin true)
+  PASS settings screen (ar): the reduce-motion toggle writes what Settings.reduced_motion() reads
+  PASS settings screen (ar): and turns it off again
+  PASS settings screen (ar): the sound-effects toggle writes Settings.sfx_on()
+  PASS settings screen (ar): the music toggle writes Settings.music_on()
+  PASS settings screen (ar): every button meets the touch size
+  PASS settings screen (ar): no account actions without a cloud account (offline run)
+  PASS settings screen: toggles left the settings as they were
+  PASS name step (en): name field and Play button
+  PASS name step (en): no way past the name
+  PASS name step (en): 16 letters at most
+  PASS name step (en): female picked
+  PASS name step (en): English text does not change with gender
+  PASS name step (en): back to male
+  PASS name step (ar): name field and Play button
+  PASS name step (ar): no way past the name
+  PASS name step (ar): 16 letters at most
+  PASS name step (ar): female picked
+  PASS name step (ar): the Play button speaks to a girl in the feminine form
+  PASS name step (ar): back to male
+  PASS start again: AgainKeepButton
+  PASS start again: AgainFreshButton
+  PASS start again: OfflineButton
+  PASS sim: catalog loads
+  PASS reach: open pattern (300 px gap) has a safe path (min cells 45)
+  PASS reach: 120 px gap is passable (core diameter 47.5 px)
+  PASS reach: closed wall fails at the wall, t=4.55 pos=(540.0, 1884.0)
+  PASS reach: 30 px gap (narrower than the core) fails, t=4.55
+  PASS reach: wall that appears in 0.2 s cannot be escaped (needs 0.26 s of travel): fails t=0.15
+  PASS reach: the same wall appearing at 0.7 s is reachable
+  PASS reach: at 400 px/s the 0.7 s wall is no longer escapable
+  PASS reach: recorded synthetic wave (aimed bullets) is escapable, frames 360
+  PASS bot: dodging bot clears the aimed-fire wave on all seeds ([{ "seed": 40, "cleared": true, "ticks": 931, "hits": 0, "cause": "", "hash": "38b278b55c5b35c56eed4309b7d08d8161a4d4184ea4520238b9666f7253d3ba" }, { "seed": 41, "cleared": true, "ticks": 916, "hits": 0, "cause": "", "hash": "9c4da6924552fb181bf97cd74fa3cac944d56970c22fbc38d53e4c124d7cb811" }, { "seed": 42, "cleared": true, "ticks": 1006, "hits": 0, "cause": "", "hash": "1249d2b40096fcc95d67b430bbd1c3afde592237feff6608db4c38a4f4080b51" }])
+  PASS bot: the same wave kills the non-dodging bot (deaths { "synth_aimed": 3 })
+  PASS bot: every input is a DragControl step <= cap (max 30.0 px/step, total 2195 px)
+  PASS bot: dodging bot for 7 s: 0 hits, damage dealt 280
+  PASS band: JSON has clear_rate/ttk/deaths/all_attacked
+  PASS band: Nose 1 clears, every enemy attacked before dying ({ "synth": { "n": 9, "mean": 7.519, "min": 5.767, "max": 8.767 } })
+  PASS band: Cannons 1 kills faster than Nose 1 alone (5.65 s vs 7.52 s)
+  PASS band: Nose1+Cannons1 clears with all enemies attacking first
+  PASS determinism: same seeds give identical band JSON
+  PASS determinism: different seeds differ (sim.rng drives the wave)
+  PASS l1: L01.json valid 
+  PASS l1: wave gap <= 1 s
+  PASS l1: finite waves
+  PASS l1: no obstacle in wave 1 (teaching)
+  PASS l1: validator refuses gap > 1 s, early obstacle, no rage end (3)
+  PASS l1 teach: starts on the move prompt
+  PASS l1 teach: aircraft still -> nothing starts (3 s idle)
+  PASS l1 teach: first drag starts wave 1
+  PASS l1 ttk: pip 1.03 s with N1+C1 (ideal hit, 1.44 s with N1) inside 0.8-1.5
+  PASS l1 ttk: pip N1 alone is 1.40x slower than N1+C1 at ideal hits (>= 1.3)
+  PASS l1 ttk: pip first attack 0.45 s before the fastest kill 1.03 s
+  PASS l1 ttk: bop 1.43 s with N1+C1 (ideal hit, 2.00 s with N1) inside 0.8-1.5
+  PASS l1 ttk: bop N1 alone is 1.40x slower than N1+C1 at ideal hits (>= 1.3)
+  PASS l1 ttk: bop first attack 0.55 s before the fastest kill 1.43 s
+  PASS l1: no one-shot kills (worst hit 15 of 100 health)
+  PASS l1: recovery window after a hit
+  PASS l1 N1+C1: every enemy attacked before dying (12 kills) 
+  PASS l1 N1+C1: bot clears L1 (clear waves, 42.1 s, health 100, waves 5)
+  PASS l1 N1+C1: clear before the rage (42.1 s)
+  PASS l1 teach: first obstacle in wave 2 (>= 2)
+  PASS l1 gate: first appearance is the ghost
+  PASS l1 teach: first SunPunch ready paused the flight
+  PASS l1 teach: the pause holds until the button (drag does not resume)
+  PASS l1 sunpunch: used in play (2)
+  PASS l1 N1: every enemy attacked before dying (12 kills) 
+  INFO l1 N1 run: clear waves 49.8 s health 70 waves 5
+  PASS l1 rage: starts at 100.0 s (100.02)
+  PASS l1 rage: a pure dodger cannot survive forever (defeat rage at 120.0 s)
+  PASS l1: a player who never moves gets hit (9 hits, health 0)
+  PASS l1 gate: open route 516 px >= reach min 324 px
+  PASS l1 gate: open route wider than the KITE body
+  PASS l1 gate: shut gate must be timed (tip gap < core)
+  PASS l1 gate: open/shut on the beat cycle
+  PASS l1 gate: one warning before it shuts
+  PASS l1 gate: open centre is safe
+  PASS l1 gate: shut centre hits
+  PASS l1 gate: the ghost never hurts
+  PASS l1 gate: ghost plays the motion once, slow (4.82 s)
+  PASS l1 sunpunch: not ready -> nothing
+  PASS l1 sunpunch: fires when ready
+  PASS l1 sunpunch: clears rose shots
+  PASS l1 sunpunch: damages enemies on screen (grunt down)
+  PASS l1 sunpunch: hit-stop 83 ms in sim time (80)
+  PASS l1 sunpunch: charge spent
+  PASS l1 sunpunch: no charge from waiting
+  PASS l1 sunpunch: reduced motion dampens the shake
+  PASS l1 sunpunch: the Settings Reduce motion switch dampens the shake (0.2), Reduce effects alone does not (1.0)
+  PASS l1 reward: first clear pays 200 (200)
+  PASS l1 reward: the same run settled twice pays once
+  PASS l1 reward: second clear has no first-clear bonus (100)
+  PASS l1 reward: two clears = one first-clear grant
+  PASS l1 reward: defeat keeps pickups + share (30)
+  PASS l1 preview: a preview flight awards nothing
+  PASS l1 preview: even a preview 'clear' pays nothing
+  PASS l1 scene: res://scenes/flight/flight.tscn loads
+  PASS l1 scene: starts still with the move prompt
+  PASS l1 scene: aircraft drawn through AircraftView + Composition
+  PASS l1 scene: SunPunch is an icon button with an accessibility name, no text label
+  PASS l1 scene: a drag starts the level (t 1.50)
+  PASS l1 scene: SunPunch button enabled when full
+  PASS l1 scene: button press fires SunPunch (hit-stop running)
+  PASS l1 scene: Super is an icon button with its own accessibility name (Super), no text label
+  PASS l1 scene: Super draws its own painted icon from the registry (not the SunPunch one)
+  PASS l1 scene: Super sits in the other bottom corner, >= 48 pt, apart from SunPunch ([P: (64.0, 1856.0), S: (0.0, 0.0)] vs [P: (1856.0, 1856.0), S: (0.0, 0.0)])
+  PASS l1 scene: Super disabled and does nothing while empty
+  PASS l1 scene: Super button enabled when full
+  PASS l1 scene: button press starts Super (every weapon x1.5)
+  PASS l1 scene: Super lasts 7 s of sim time, then weapons back to x1.0 (7.02 s)
+  PASS l1 scene: defeat panel with retry/home
+  PASS l1 scene: preview flight settled nothing
+  PASS l1 scene (en): health bar inside the safe margin (anchor 0, offsets 64..453)
+  PASS l1 scene (ar): health bar inside the safe margin (anchor 1, offsets -453..-64)
+  PASS benchmark: config points at the L1 bot scene (res://scenes/bench/l1_benchmark.tscn)
+  PASS benchmark: the bench scene uses only exported files (tools/sim/l1_bot.gd)
+  PASS l1 band N1+C1: clears on fixed seeds (rate 1.00, deaths {  })
+  PASS l1 band N1+C1: every killed enemy attacked before dying (unattacked {  })
+  PASS l1 band N1: every killed enemy attacked before dying (unattacked {  })
+  PASS l1 band N1+C1: clears before the storm, mean 44.8 s
+  PASS l1 band: pip N1 alone 4.30 s vs N1+C1 1.95 s = 2.21x slower (>= 1.4)
+  PASS l1 band: bop N1 alone 6.56 s vs N1+C1 4.91 s = 1.34x slower (>= 1.3)
+  PASS l1 band N1 alone: L1 stays clearable (rate 1.00, deaths {  })
+  PASS l1 band: clear time N1 53.1 s vs N1+C1 44.8 s, Cannons 1 clears >= 7 % sooner
+  PASS l1 band: the same seeds replay byte-identically
+  PASS l1 reach: the recording played all 5 waves (waves 5, outcome 'clear', t 44.7)
+  PASS l1 reach: a safe path exists at every moment of L1 incl. the Petal Gates (fail t=45.73 pos=(540.0, 960.0))
+  PASS journey: a fresh install starts at the name step
+  PASS journey: name step on screen with the name field
+  PASS journey: name step has Play
+  PASS journey: after the name step -> Home
+  PASS journey: Home shows one next goal on a fresh profile ('Side Cannons 1 · clear level 1'), nothing cleared
+  PASS journey: Home -> Hangar wired (hangar)
+  PASS journey: Back from the hangar -> Home
+  PASS journey: Home -> Settings wired
+  PASS journey: Play -> flight
+  PASS journey: Play launches L1 and returns to Home
+  PASS journey: the flight uses the fitted recipe from Profile.recipe()
+  PASS journey: the bot clears L1 (outcome 'clear', 49.8 s)
+  PASS journey: clear panel shown
+  PASS journey: first clear paid 260 coins
+  PASS journey: clear -> Home
+  PASS journey: Home profile has level 1 cleared and 260 coins
+  PASS journey: the wallet pill on Home shows the new balance
+  PASS journey: the next goal moved on after the clear: 'Side Cannons 1 · Buy & Fit 180' (was 'Side Cannons 1 · clear level 1')
+  PASS journey: Back from the flight goes Home
+  PASS home AC08 tall en: no shot rect touches a UI rect (0 hits)
+  PASS home AC08 tall en: nose and cannons demonstrate in the loop { "nose": 6, "cannons": 6, "rockets": 2 }
+  PASS home AC08 tall en: rockets show one pair at most (2)
+  PASS home AC08 tall en: shots are really on screen
+  PASS home AC08 tall en: zero targets, kills, coins and damage
+  PASS home AC08 tall en: preview result never allows awards
+  PASS home AC08 tall en: shot events are preview events
+  PASS home AC08 tall ar: no shot rect touches a UI rect (0 hits)
+  PASS home AC08 tall ar: nose and cannons demonstrate in the loop { "nose": 6, "cannons": 6, "rockets": 2 }
+  PASS home AC08 tall ar: rockets show one pair at most (2)
+  PASS home AC08 tall ar: shots are really on screen
+  PASS home AC08 tall ar: zero targets, kills, coins and damage
+  PASS home AC08 tall ar: preview result never allows awards
+  PASS home AC08 tall ar: shot events are preview events
+  PASS home AC08 short en: no shot rect touches a UI rect (0 hits)
+  PASS home AC08 short en: nose and cannons demonstrate in the loop { "nose": 6, "cannons": 6, "rockets": 2 }
+  PASS home AC08 short en: rockets show one pair at most (2)
+  PASS home AC08 short en: shots are really on screen
+  PASS home AC08 short en: zero targets, kills, coins and damage
+  PASS home AC08 short en: preview result never allows awards
+  PASS home AC08 short en: shot events are preview events
+  PASS home AC08 short ar: no shot rect touches a UI rect (0 hits)
+  PASS home AC08 short ar: nose and cannons demonstrate in the loop { "nose": 6, "cannons": 6, "rockets": 2 }
+  PASS home AC08 short ar: rockets show one pair at most (2)
+  PASS home AC08 short ar: shots are really on screen
+  PASS home AC08 short ar: zero targets, kills, coins and damage
+  PASS home AC08 short ar: preview result never allows awards
+  PASS home AC08 short ar: shot events are preview events
+  PASS home tall: aircraft centre at (50 %, 57 %) of the safe area
+  PASS home tall: body width 0.42 of safe width (40-46 %)
+  PASS home tall: full arsenal 0.619 of width (<= 68 %)
+  PASS home tall: aircraft clear of goal line, buttons, header and Kid
+  PASS home tall: goal / Play / Hangar keep their order, no overlap, inside the safe area (flexible gap)
+  PASS home short: aircraft centre at (50 %, 57 %) of the safe area
+  PASS home short: body width 0.42 of safe width (40-46 %)
+  PASS home short: full arsenal 0.619 of width (<= 68 %)
+  PASS home short: aircraft clear of goal line, buttons, header and Kid
+  PASS home short: goal / Play / Hangar keep their order, no overlap, inside the safe area (flexible gap)
+  PASS home loop: nose fires only inside 3.0-3.6 s
+  PASS home loop: cannons fire only inside 5.5-6.1 s
+  PASS home loop: one loop is 18 s (catalog home_loop_seconds)
+  PASS home loop: the loop repeats after 18 s
+  PASS home pause: mid nose burst before pausing
+  PASS home pause: hidden = no shots, no active weapon
+  PASS home pause: nothing runs while hidden (10 s of frames)
+  PASS home resume: a long first frame fires nothing (no queued burst)
+  PASS home resume: restarts at rest (no shot in the first 2.9 s)
+  PASS home resume: then one normal nose burst (6 shots)
+  PASS home after buy: the first loop fires ONLY the new part { "cannons": 4 }
+  PASS home after buy: its test starts 0.6 s in (0.60)
+  PASS home after buy: the next loop is the normal loop { "nose": 6, "cannons": 4 }
+  PASS home after buy: new part = the stage that went up
+  PASS home after buy: same revision or first visit = no new part
+  PASS home prefs: reduced motion reader follows the setting
+  PASS home reduced motion: the aircraft stays still
+  PASS home reduced motion: no automatic demonstration
+  PASS home reduced motion: 'Show weapons' plays one short sample { "nose": 6, "cannons": 4 }
+  PASS home prefs: reduced motion off
+  PASS home prefs: reduced effects reader follows the setting
+  PASS home reduced effects: shots keep their shape, flashes are gone
+  PASS home goal: fresh player -> Side Cannons 1, opens after level 1 ({ "category": "cannons", "stage": 1, "cost": 180, "unlock_clear": 1, "locked": true, "to_go": 180 })
+  PASS home goal: after L1 -> cannons, 140 to go
+  PASS home goal: everything owned -> no goal line
+  PASS kid: leans on the balcony on Home
+  PASS kid: install reaction starts with its line key
+  PASS kid: the install line has text
+  PASS kid: reaction ends after 1.2 s
+  PASS kid: mirrored to the right edge in Arabic
+  PASS kid: stays small (<= 16 % of width)
+  PASS home scene: res://scenes/home/home.tscn loads
+  PASS home parity: Home's recipe == Profile.recipe() incl. revision 0
+  PASS home parity: AircraftView draws that recipe (frame_01|nose_1|r0)
+  PASS home: first visit plays the normal loop
+  PASS home: one next-goal line (Side Cannons 1 · clear level 1)
+  PASS home: Play fires play_requested once
+  PASS home: the goal line opens the Hangar on its part
+  PASS home buy: test purchase of Side Cannons 1 commits
+  PASS home parity: after the buy Home shows the new recipe, revision 1
+  PASS home buy: first loop after the buy = only the new part
+  PASS home buy: the cannons are drawn on the aircraft
+  PASS home: hidden = paused, no shots
+  PASS home: visible again = running
+  PASS home: exit() pauses the loop
+  PASS hangar: [en] state LOCKED (clear level 5)
+  PASS hangar: [en] LOCKED: buy disabled, labelled
+  PASS hangar: [en] LOCKED: shows the exact level
+  PASS hangar: [en] LOCKED: preview available (PREVIEW ONLY)
+  PASS hangar: [en] state LOCKED (previous stage first)
+  PASS hangar: [en] state SHORT, action disabled
+  PASS hangar: [en] SHORT: '100 / 180' and '80 to go'
+  PASS hangar: [en] state FUNDED 'BUY & FIT 180'
+  PASS hangar: [en] state OWNED_REMOVED 'FIT' free
+  PASS hangar: [en] state FITTED + Remove
+  PASS hangar: [en] FITTED: no preview outline
+  PASS hangar: [en] state MAX 'FULLY UPGRADED', nose not removable
+  PASS hangar: [en] state PENDING: spinner + guard
+  PASS hangar: [en] state FAILURE: retry + plain message
+  PASS hangar: [en] all 5 tabs render a card with an action label
+  PASS hangar: [ar] state LOCKED (clear level 5)
+  PASS hangar: [ar] LOCKED: buy disabled, labelled
+  PASS hangar: [ar] LOCKED: shows the exact level
+  PASS hangar: [ar] LOCKED: preview available (PREVIEW ONLY)
+  PASS hangar: [ar] state LOCKED (previous stage first)
+  PASS hangar: [ar] state SHORT, action disabled
+  PASS hangar: [ar] SHORT: '100 / 180' and '80 to go'
+  PASS hangar: [ar] state FUNDED 'BUY & FIT 180'
+  PASS hangar: [ar] state OWNED_REMOVED 'FIT' free
+  PASS hangar: [ar] state FITTED + Remove
+  PASS hangar: [ar] FITTED: no preview outline
+  PASS hangar: [ar] state MAX 'FULLY UPGRADED', nose not removable
+  PASS hangar: [ar] state PENDING: spinner + guard
+  PASS hangar: [ar] state FAILURE: retry + plain message
+  PASS hangar: [ar] all 5 tabs render a card with an action label
+  PASS hangar: AC02 double tap buys once (500 - 180 = 320)
+  PASS hangar: AC02 double tap: one journal entry
+  PASS hangar: AC02 tap after install: FITTED, nothing charged
+  PASS hangar: AC02 short funds charges nothing, save unchanged
+  PASS hangar: AC02 short funds keeps showing SHORT
+  PASS hangar: failure before commit: balance unchanged
+  PASS hangar: retry commits once
+  PASS hangar: retry reuses the same tx id
+  PASS hangar: AC03 preview: cyan dashed outline on
+  PASS hangar: AC03 preview shows Cannons 2
+  PASS hangar: AC03 preview locked Beams 3 shown
+  PASS hangar: AC03 another category restores the equipped state
+  PASS hangar: AC03 preview leaves the save hash unchanged
+  PASS hangar: AC03 launch has no previewed part
+  PASS hangar: install marks 0/150/600/800/1200 ms within one frame at 30 fps
+  PASS hangar: install at 30 fps: committed before the animation, once
+  PASS hangar: install marks 0/150/600/800/1200 ms within one frame at 60 fps
+  PASS hangar: install at 60 fps: committed before the animation, once
+  PASS hangar: install marks 0/150/600/800/1200 ms within one frame at 120 fps
+  PASS hangar: install at 120 fps: committed before the animation, once
+  PASS hangar: test volley fires the new part (cannons_1), every shot flagged preview
+  PASS hangar: test volley awards nothing
+  PASS hangar: test volley changes no coins and no save
+  PASS hangar: kill during install: new state kept, one debit
+  PASS hangar: after restart the Hangar shows Cannons FITTED
+  PASS hangar: response lost after commit: treated as done, installs
+  PASS hangar: response lost after commit: never charged twice
+  PASS hangar: navigating away skips the install
+  PASS hangar: skip keeps the committed fit
+  PASS hangar: frame window starts at the owned frame
+  PASS hangar: frame tab: KITE fitted
+  PASS registry: HangarArt is in ArtRegistries.all() (aircraft_parts, enemies, icons, kid_faces, hangar, scenes)
+  PASS registry: SceneArt is in ArtRegistries.all() (aircraft_parts, enemies, icons, kid_faces, hangar, scenes)
+  PASS registry: wave A art landed: hangar, scenes and kid.neutral carry no stand-in ([])
+  PASS registry: every family validates ([])
+  PASS D5: fresh profile on Home, no cannons
+  PASS D5: Play -> L1
+  PASS D5: the bot clears L1 (clear)
+  PASS D5: clear -> Home
+  PASS D5: the first clear paid enough for Cannons 1 (260 coins)
+  PASS D5: the Home goal points at the cannons ('Side Cannons 1 · Buy & Fit 180')
+  PASS D5: Home goal -> Hangar
+  PASS D5: the router passed category cannons (tab 'cannons')
+  PASS D5: Hangar offers BUY AND FIT 180 ('BUY & FIT 180')
+  PASS D5: Cannons 1 owned and fitted, 180 paid once (260 -> 80)
+  PASS D5: Hangar recorded last_install cannons 1
+  PASS D5: Hangar Back -> Home
+  PASS D5: Zaid reacts to the install (cannons_1)
+  PASS D5: the first Home loop fires only the cannons (["cannons"])
+  PASS D5: Home loop shots = cannons only (["cannons"])
+  PASS D5: Play -> L1 again
+  PASS D5: L1 cannon shots carry the cannon socket barrel ids ["can_L0", "can_R0"] (seen { "can_L0": 12, "can_R0": 12 })
+  PASS D5: every cannon barrel fired (2 of 2)
+  PASS delete hold (en): a normal first name step has no hold note
+  PASS delete hold (en): the name step after a delete says the name is held ('Your old name stays reserved for 14 days. Choose another name to start fresh.')
+  PASS delete hold (en): 14 days, choose another name, no undo promised (FR-SPR-10)
+  PASS delete hold (ar): a normal first name step has no hold note
+  PASS delete hold (ar): the name step after a delete says the name is held ('اسمك القديم محجوز لك 14 يومًا. يمكنك اختيار اسم آخر والبدء من جديد.')
+  PASS delete hold (en): Settings promises no in-app undo
+  PASS delete hold (ar): Settings promises no in-app undo
+  PASS bench: 20 navigation cycles ran (20)
+  PASS bench: static memory flat (199.53 -> 200.20 MB)
+  PASS bench: node count stable (61 -> 61)
+  PASS bench: object count flat (13911 -> 13913)
+  PASS bench: no orphan nodes pile up (0 -> 0)
+  PASS R1 config/game.json parses
+  PASS R1 the new game id replaces the old game (sunpunch)
+  PASS R1 iOS bundle id = studio.karibros.sunpunch (the existing app)
+  PASS R1 Firebase project of the existing app (kik-studio-dev, same key)
+  PASS R1 GameAnalytics keys come from the existing app (keys_from sunpunch)
+  PASS R1/G-BASE Crashlytics enabled
+  PASS R1 export_presets.cfg reads
+  PASS R1 Android package id = studio.karibros.sunpunch (preset.1.options)
+  PASS R1 versionCode 10001 is above the old upload 10000 (preset.1.options)
+  PASS R1 Android package id = studio.karibros.sunpunch (preset.2.options)
+  PASS R1 versionCode 10001 is above the old upload 10000 (preset.2.options)
+  PASS R1 at least one preset carries the package id (2)
+  PASS G-BASE word guard: i18n/strings.csv reads
+  PASS G-BASE word guard: 151 strings, no forbidden word ([])
+  PASS AC01 setup: KITE with Nose 1 + Cannons 2 fitted (frame_01|nose_1|cannons_2|r0)
+  PASS AC01: Home, Hangar and FL1 each draw a composed aircraft
+  PASS AC01 recipe id identical: Home frame_01|nose_1|cannons_2|r0 / Hangar frame_01|nose_1|cannons_2|r0 / FL1 frame_01|nose_1|cannons_2|r0
+  PASS AC01 frame is KITE on all three
+  PASS AC01 stages identical on all three ({ "nose": 1, "cannons": 2, "rockets": 0, "beams": 0 })
+  PASS AC01 proportions: same parts, sides and rects on all three (7 parts)
+  PASS AC01 palette: the same art textures on all three (7 painted parts)
+  PASS AC01 palette: no tint differs between the three views
+  PASS AC01 muzzle points identical on all three (6 emitters)
+  PASS AC01 rendered muzzles identical per unit of screen scale (["nose_L|-0.0263,-0.0577", "nose_R|0.0263,-0.0577", "can_L0|-0.1385,-0.0334", "can_R0|0.1385,-0.0334", "can_L1|-0.1467,-0.0334", "can_R1|0.1467,-0.0334"] | ["nose_L|-0.0263,-0.0577", "nose_R|0.0263,-0.0577", "can_L0|-0.1385,-0.0334", "can_R0|0.1385,-0.0334", "can_L1|-0.1467,-0.0334", "can_R1|0.1467,-0.0334"] | ["nose_L|-0.0263,-0.0577", "nose_R|0.0263,-0.0577", "can_L0|-0.1385,-0.0334", "can_R0|0.1385,-0.0334", "can_L1|-0.1467,-0.0334", "can_R1|0.1467,-0.0334"])
+  PASS AC01 no decorative-only gun, no installed module without a muzzle (["nose", "cannons"])
+  PASS AC01 FL1's shot sockets are the drawn cannon muzzles ["can_L0", "can_R0", "can_L1", "can_R1"]
+  PASS art2: scenes registry validates ([])
+  PASS art2: scenes registry has no stand-in
+  PASS art2: home.sky is the full 1024x1536 layer ((1024.0, 1536.0))
+  PASS art2: home.islands_far is the full 1024x1536 layer ((1024.0, 1536.0))
+  PASS art2: home.islands_near is the full 1024x1536 layer ((1024.0, 1536.0))
+  PASS art2: home.apron_deck is the full 1024x1536 layer ((1024.0, 1536.0))
+  PASS art2: cg.sky is the full 1024x1536 layer ((1024.0, 1536.0))
+  PASS art2: cg.far is the full 1024x1536 layer ((1024.0, 1536.0))
+  PASS art2: cg.mid is the full 1024x1536 layer ((1024.0, 1536.0))
+  PASS art2: cg.edge_left is the full 1024x1536 layer ((1024.0, 1536.0))
+  PASS art2: cg.edge_right is the full 1024x1536 layer ((1024.0, 1536.0))
+  PASS art2: kid.pose.balcony_lean is the painted cut ((762.0, 1491.0))
+  PASS art2: kid.pose.install_cheer is the painted cut ((750.0, 1436.0))
+  PASS art2: kid.neutral = the painted front face
+  PASS art2: hangar workshop back + props are real art
+  PASS art2: only the owner-picked Arabic logo v3 ships
+  PASS art2: unpicked/misspelled Arabic logos are never shipped ([])
+  PASS art2: logo.ar.v3 loads, wide ((1408.0, 572.0))
+  PASS art2: an unknown/dropped option falls back to v3
+  PASS art2: Home layers start at rest
+  PASS art2: near islands drift gently (max 17.3 px)
+  PASS art2: one full drift per 18 s loop (back at rest after 18 s: 0.00 px)
+  PASS art2: reduced motion = still layers
+  PASS art2: L1 layer sky uses real art cg.sky
+  PASS art2: L1 layer far uses real art cg.far
+  PASS art2: L1 layer mid uses real art cg.mid
+  PASS art2: L1 layer edge uses real art cg.edge_left
+  PASS art2: L1 layer edge uses real art cg.edge_right
+  PASS art2: L1 Cloud Garden = painted sky + far + mid islands + painted edges (["art", "art", "art", "edges_art"])
+  PASS art2: edge strips stay in the outer 15 % each side, centre 70 % clear ([[P: (0.0, 0.0), S: (162.0, 1920.0)], [P: (918.0, 0.0), S: (162.0, 1920.0)]])
+  PASS art2: Home in English keeps the English lockup
+  PASS art2: Home backdrop mirrors with the screen (en)
+  PASS art2: Home in Arabic shows the Arabic logo v1, not the English lockup
+  PASS art2: Arabic logo stays in the logo rect
+  PASS art2: Home backdrop mirrors with the screen (ar)
+  PASS art2: Hangar with the painted workshop draws without error
+  PASS audio bank: every registered variation has its file []
+  PASS audio bank: 3-5 variations per sound []
+  PASS audio bank: music loops present []
+  PASS audio bank: Cloud Garden loop is whole bars at 100 BPM (24.000 bars)
+  PASS audio bank: shot mapping (nose, C1, C2 heavier, missing gear stays quiet)
+  PASS audio bank: first play starts
+  PASS audio bank: a second start inside the gap is refused
+  PASS audio bank: hit voices capped at 3 (peak 3)
+  PASS audio bank: whole bank <= 16 voices (16)
+  PASS audio bank: never the same coin take twice in a row (0 repeats)
+  PASS audio bank: all coin takes get used (5)
+  PASS audio bank: one sound per weapon cycle, C2 uses the heavy cannon ["nose_shot#4", "cannon_c2#1"]
+  PASS audio bank: next cycle sounds again
+  PASS audio bank: Home/Hangar preview shots play in the quiet mix (-17.0 dB vs -9.0)
+  PASS audio bank: no duck at rest
+  PASS audio bank: SunPunch ducks cosmetic sounds and music
+  PASS audio bank: a ringing gun voice is pulled down under SunPunch
+  PASS audio bank: SunPunch and danger cues are never ducked
+  PASS audio bank: duck released after SunPunch
+  PASS audio bank: a danger cue ducks cosmetic sounds only
+  PASS audio bank: L1 bot run hears the M1 palette (outcome clear, missing [])
+  PASS audio bank: gun sounds grouped per cycle (254 sounds for 508 shots)
+  PASS audio bank: voice total stays capped through the run
+  PASS audio bank: one Master hard limiter at -1 dB (1)
+RESULT passed=961 failed=0
