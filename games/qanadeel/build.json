@@ -1,0 +1,63 @@
+{
+ "game_id": "qanadeel",
+ "version": "0.4",
+ "updated": "2026-11-01",
+ "commit": "6a2c93e",
+ "links": {
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-qanadeel/qanadeel.apk"
+ },
+ "screenshots": {
+  "en": [
+   "https://kik-studio.github.io/kik-builds/games/qanadeel/screens/game_en.png",
+   "https://kik-studio.github.io/kik-builds/games/qanadeel/screens/menu_en.png",
+   "https://kik-studio.github.io/kik-builds/games/qanadeel/screens/settings_en.png"
+  ],
+  "ar": [
+   "https://kik-studio.github.io/kik-builds/games/qanadeel/screens/game_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/qanadeel/screens/menu_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/qanadeel/screens/settings_ar.png"
+  ]
+ },
+ "apk_bytes": 152874498,
+ "apk_sha256": "94adac93b6a660d3f0b97cc03cd4113f1bb87087ff01d86adb256e61b96c9dfc",
+ "pack_sha256": "21356717b0d5adc39bac0e09ba4a00f9246c0447915487be9ed96dfd801f1874",
+ "shapes": [
+  "https://kik-studio.github.io/kik-builds/games/qanadeel/screens/game_en_desktop.png",
+  "https://kik-studio.github.io/kik-builds/games/qanadeel/screens/game_en_tablet.png"
+ ],
+ "video": [
+  "https://kik-studio.github.io/kik-builds/games/qanadeel/video/gameplay.mp4",
+  "https://kik-studio.github.io/kik-builds/games/qanadeel/video/showcase_fx.mp4",
+  "https://kik-studio.github.io/kik-builds/games/qanadeel/video/showcase_ui.mp4"
+ ],
+ "tests": "https://kik-studio.github.io/kik-builds/games/qanadeel/tests.txt",
+ "benchmark_apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-qanadeel/qanadeel-benchmark.apk",
+ "branch": "main",
+ "checks": "https://kik-studio.github.io/kik-builds/games/qanadeel/checks/",
+ "build_id": "0.4+6a2c93e",
+ "built_on": "studio server",
+ "hd_pack": {
+  "files": 25,
+  "commit": "6a2c93e",
+  "mobile_bytes": 46452340,
+  "url_mobile": "https://kik-studio-test.web.app/packs/qanadeel/6a2c93e/hd_mobile.pck",
+  "web_bytes": 46452340,
+  "url_web": "https://kik-studio-test.web.app/packs/qanadeel/6a2c93e/hd_web.pck",
+  "mobile_content_hash": "473882e7ce5933d0619e4048da43b231a82c89f8859b59da1d52f7e516ea8713",
+  "mobile_sha256": "f35ee603a9527a20f59368c9233f1d17c6c4ede536a07622dbfc5c93b2e0c298",
+  "web_content_hash": "473882e7ce5933d0619e4048da43b231a82c89f8859b59da1d52f7e516ea8713",
+  "web_sha256": "f35ee603a9527a20f59368c9233f1d17c6c4ede536a07622dbfc5c93b2e0c298"
+ },
+ "review": {
+  "build_id": "0.3+c54d8eb",
+  "machine": "studio PC GPU",
+  "when": "2026-11-01 11:23 UTC"
+ },
+ "media": {
+  "build_id": "0.3+c54d8eb",
+  "version": "0.3",
+  "carried": true,
+  "label": "from v0.3 (older build)"
+ }
+}
