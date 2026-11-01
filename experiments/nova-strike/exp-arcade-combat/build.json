@@ -1,0 +1,31 @@
+{
+ "game_id": "nova-strike",
+ "version": "0.4",
+ "updated": "2026-09-29",
+ "commit": "95a0fe5",
+ "links": {
+  "web": "https://kik-studio-dev.web.app/experiments/nova-strike/exp-arcade-combat/web/index.html",
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-nova-strike-exp-arcade-combat/nova-strike.apk"
+ },
+ "screenshots": {
+  "en": [],
+  "ar": []
+ },
+ "apk_bytes": 171679310,
+ "shapes": [],
+ "video": [],
+ "tests": "https://kik-studio.github.io/kik-builds/experiments/nova-strike/exp-arcade-combat/tests.txt",
+ "benchmark_apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-nova-strike-exp-arcade-combat/nova-strike-benchmark.apk",
+ "branch": "exp/arcade-combat",
+ "checks": null,
+ "build_id": "0.4+95a0fe5",
+ "hd_pack": {
+  "files": 39,
+  "commit": "95a0fe5",
+  "mobile_bytes": 245350244,
+  "url_mobile": "https://kik-studio-dev.web.app/packs/nova-strike/95a0fe5/hd_mobile.pck",
+  "web_bytes": 245350244,
+  "url_web": "https://kik-studio-dev.web.app/packs/nova-strike/95a0fe5/hd_web.pck"
+ },
+ "review": null
+}
