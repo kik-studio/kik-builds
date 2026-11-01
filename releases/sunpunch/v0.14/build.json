@@ -1,0 +1,75 @@
+{
+ "game_id": "sunpunch",
+ "version": "0.14",
+ "updated": "2026-10-11",
+ "commit": "bc11d8c",
+ "links": {
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-sunpunch-v0.14/sunpunch.apk"
+ },
+ "screenshots": {
+  "en": [
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/game_busy_en.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/game_en.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/game_pause_en.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/game_results_en.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/game_victory_en.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/hangar_affordable_en.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/hangar_en.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/hub_en.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/map_en.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/menu_en.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/reveal_en.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/reveal_panel_en.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/settings_en.png"
+  ],
+  "ar": [
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/game_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/game_busy_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/game_pause_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/game_results_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/game_victory_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/hangar_affordable_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/hangar_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/hub_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/map_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/menu_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/reveal_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/reveal_panel_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/settings_ar.png"
+  ]
+ },
+ "apk_bytes": 184818930,
+ "apk_sha256": "4aada462120003b456cd4a8278e8d62677dff57d38056f2c8c741e42b1c899b5",
+ "shapes": [
+  "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/game_en_desktop.png",
+  "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/game_en_tablet.png"
+ ],
+ "video": [
+  "https://kik-studio.github.io/kik-builds/games/sunpunch/video/gameplay.mp4",
+  "https://kik-studio.github.io/kik-builds/games/sunpunch/video/showcase_fx.mp4",
+  "https://kik-studio.github.io/kik-builds/games/sunpunch/video/showcase_m4.mp4",
+  "https://kik-studio.github.io/kik-builds/games/sunpunch/video/showcase_ui.mp4"
+ ],
+ "tests": "https://kik-studio.github.io/kik-builds/games/sunpunch/tests.txt",
+ "benchmark_apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-sunpunch/sunpunch-benchmark.apk",
+ "branch": "main",
+ "checks": "https://kik-studio.github.io/kik-builds/games/sunpunch/checks/",
+ "build_id": "0.14+bc11d8c",
+ "built_on": "studio PC",
+ "review": {
+  "build_id": "0.14+827bdd7",
+  "machine": "studio PC GPU",
+  "when": "2026-10-11 12:26 UTC"
+ },
+ "screens_hd": [
+  "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/hd/game_ar.jpg",
+  "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/hd/game_en.jpg",
+  "https://kik-studio.github.io/kik-builds/games/sunpunch/screens/hd/menu_en.jpg"
+ ],
+ "pack_sha256": "c865ec1217153d9c9b3a7eeac4461ef8208549a9f74c43931c123da2e4ba4dfe",
+ "label": "v0.14",
+ "released": "2026-10-11 14:38 UTC",
+ "state": "accepted",
+ "final_apk_sha256": "d94c2b85857f731e765fa75d8596203adba2b5f17425a6424a8b1514ff842313"
+}
