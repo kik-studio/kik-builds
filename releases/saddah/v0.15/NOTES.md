@@ -1,6 +1,6 @@
 # Sadّa7 v0.15: what's new (for players)
 
-- NEW: at the hand-over Sadّa7 celebrates, with a different move each time (never the same one twice in a row), and the camera turns for a moment so you see his face. At the quiet heritage stations (Makkah and the Hejaz Railway Station) he stays calm and checks his route instead.
+- NEW: at the hand-over at the end of each region (its last stage) Sadّa7 celebrates, with a different move each time (never the same one twice in a row), and the camera turns for a moment so you see his face. At the quiet heritage stations (Makkah and the Hejaz Railway Station) he stays calm and checks his route instead.
 - IMPROVED: on bends the view turns a little into the bend early, so the boxes on the AlUla bends come into view in time.
 - IMPROVED: obstacles are easier to read in the wide view: the ones on the road cast their own shadow, barriers and overhead beams carry reflective tape, and falling rocks keep their warning ring.
 - IMPROVED: the results stamp shows the city name in a size you can read, on a tag beside his case.
