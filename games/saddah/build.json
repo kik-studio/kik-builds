@@ -1,0 +1,58 @@
+{
+ "game_id": "saddah",
+ "version": "0.14",
+ "updated": "2026-11-01",
+ "commit": "6b121cd",
+ "links": {
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-saddah/saddah.apk"
+ },
+ "screenshots": {
+  "en": [
+   "https://kik-studio.github.io/kik-builds/games/saddah/screens/briefing_en.png",
+   "https://kik-studio.github.io/kik-builds/games/saddah/screens/home_en.png",
+   "https://kik-studio.github.io/kik-builds/games/saddah/screens/map_en.png"
+  ],
+  "ar": []
+ },
+ "apk_bytes": 111729630,
+ "apk_sha256": "23e43491dfd82ffc35f4daba1bbbb0834157d27e66c311c9befcb58813f81053",
+ "pack_sha256": "b6dd34cf20f167d3f83871bf57a8c636740fa4062a04f8b7df21e71270d1c7ac",
+ "shapes": [
+  "https://kik-studio.github.io/kik-builds/games/saddah/screens/game_en_desktop.png",
+  "https://kik-studio.github.io/kik-builds/games/saddah/screens/game_en_tablet.png"
+ ],
+ "video": [
+  "https://kik-studio.github.io/kik-builds/games/saddah/video/gameplay.mp4"
+ ],
+ "tests": "https://kik-studio.github.io/kik-builds/games/saddah/tests.txt",
+ "benchmark_apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-saddah/saddah-benchmark.apk",
+ "branch": "main",
+ "checks": "https://kik-studio.github.io/kik-builds/games/saddah/checks/",
+ "build_id": "0.14+6b121cd",
+ "built_on": "studio server",
+ "hd_pack": {
+  "files": 1552,
+  "commit": "6b121cd",
+  "mobile_bytes": 1665988396,
+  "url_mobile": "https://kik-studio-test.web.app/packs/saddah/6b121cd/hd_mobile.pck",
+  "web_bytes": 1665988396,
+  "url_web": "https://kik-studio-test.web.app/packs/saddah/6b121cd/hd_web.pck",
+  "mobile_content_hash": "359567aa8c7c2cde4da430eddd37bdd528c17b7fc99aa0418cf7dbb8684298ef",
+  "mobile_sha256": "bff633619d0d5b599adfa14d9267eb1b7ff94523e74f7b989ab17004560b2eeb",
+  "web_content_hash": "359567aa8c7c2cde4da430eddd37bdd528c17b7fc99aa0418cf7dbb8684298ef",
+  "web_sha256": "bff633619d0d5b599adfa14d9267eb1b7ff94523e74f7b989ab17004560b2eeb"
+ },
+ "review": {
+  "build_id": "0.14+6b121cd",
+  "machine": "studio PC GPU",
+  "when": "2026-11-01 19:16 UTC"
+ },
+ "media": {
+  "build_id": "0.14+6b121cd",
+  "version": "0.14",
+  "carried": false,
+  "label": null
+ },
+ "screens_hd": []
+}
