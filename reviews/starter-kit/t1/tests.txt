@@ -1,0 +1,49 @@
+  PASS config: game.json loads
+  PASS config: version present
+  PASS save: value survives reload
+  PASS save: setting survives reload
+  PASS save: atomic write leaves no temp file
+  PASS save: player id generated
+  PASS loc: English text
+  PASS loc: Arabic text
+  PASS loc: Arabic is right-to-left
+  PASS loc: controls flip to RTL in Arabic
+  PASS loc: every string has English and Arabic
+  PASS audio: Music bus
+  PASS audio: SFX bus
+  PASS audio: sfx asset present
+  PASS analytics: HMAC signature matches reference
+  PASS ui: safe margins at least minimum
+  PASS theme: design tokens file present
+  PASS theme: tokens loaded
+  INFO theme placeholder = true (a game must replace it before a milestone)
+  PASS playfield: same logical area at 1080x1920
+  PASS playfield: same logical area at 1080x2340
+  PASS playfield: same logical area at 1080x2400
+  PASS playfield: same logical area at 1440x1920
+  PASS playfield: same logical area at 3413x1920
+  PASS perf: frame statistics correct
+  PASS screen boot: loads
+  PASS screen boot: builds content
+  PASS screen boot: no empty labels (0 labels)
+  PASS screen boot: all buttons meet touch size
+  PASS screen menu: loads
+  PASS screen menu: builds content
+  PASS screen menu: no empty labels (1 labels)
+  PASS screen menu: all buttons meet touch size
+  PASS screen settings: loads
+  PASS screen settings: builds content
+  PASS screen settings: no empty labels (6 labels)
+  PASS screen settings: all buttons meet touch size
+  PASS screen game: loads
+  PASS screen game: builds content
+  PASS screen game: no empty labels (3 labels)
+  PASS screen game: all buttons meet touch size
+  PASS release: no developer tools on shipping screens
+  PASS dev: developer tools reachable in dev builds
+  PASS release: settings has no developer tools
+  PASS release: game has no developer tools
+  PASS cloud: failure is reported as not synced
+  PASS cloud: failure text is honest
+  PASS cloud: real round trip verified against Firebase
+RESULT passed=47 failed=0

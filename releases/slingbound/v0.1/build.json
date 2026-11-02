@@ -1,0 +1,36 @@
+{
+ "game_id": "slingbound",
+ "version": "0.1",
+ "updated": "2026-11-02",
+ "commit": "0bbe0f6",
+ "links": {
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-slingbound-v0.1/slingbound.apk"
+ },
+ "screenshots": {
+  "en": [],
+  "ar": []
+ },
+ "apk_bytes": 120245649,
+ "apk_sha256": "23f95e6b733c652a53472a6052bcfba0cfd605bd2a099896ce3004abfc197f66",
+ "pack_sha256": "337e86ebdc8074200ba16ae51f4b0bd11f0251b575185ae2e2b680523535b18e",
+ "shapes": [],
+ "video": [],
+ "tests": "https://kik-studio.github.io/kik-builds/games/slingbound/tests.txt",
+ "benchmark_apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-slingbound/slingbound-benchmark.apk",
+ "branch": "main",
+ "checks": null,
+ "build_id": "0.1+0bbe0f6",
+ "built_on": "studio server",
+ "review": null,
+ "media": {
+  "build_id": null,
+  "version": null,
+  "carried": true,
+  "label": "from an older build"
+ },
+ "label": "v0.1",
+ "released": "2026-11-02 22:58 UTC",
+ "state": "accepted",
+ "final_apk_sha256": "2c5a46eba25585760975c2de3710bd3fb47765b56732b3795312abf6b112ff05"
+}
