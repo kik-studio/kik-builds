@@ -1,0 +1,557 @@
+{
+  "_note": "Audio provenance for Nova Strike. ElevenLabs Sound Effects (paid plan) and Stable Audio 3.0 (Stability AI): commercial use allowed on our plans. No ElevenLabs Music used.",
+  "sfx": {
+    "assets/audio/sfx/solar_fire.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Sci-fi laser gun shot, fast bright ignition crack, white-hot plasma lance bolt, very short and punchy, sharp transient, no reverb tail",
+      "requested_seconds": 0.5,
+      "loop": false,
+      "final_seconds": 0.25,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS; trimmed to target length",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/solar_seeker.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Small sci-fi micro missile launch, quick fiery whoosh with a short hiss, punchy, tight, no tail",
+      "requested_seconds": 0.6,
+      "loop": false,
+      "final_seconds": 0.6,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/solar_impact.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Hot sharp sci-fi plasma bullet impact, loud bright fiery flare burst with crackling sizzle, punchy hit, short",
+      "requested_seconds": 0.5,
+      "loop": false,
+      "final_seconds": 0.48,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS; gain trim",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/void_fire.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Heavy deep sci-fi graviton cannon shot, loud punchy low bass boom with warped gravity wobble, powerful shell launch, short",
+      "requested_seconds": 0.6,
+      "loop": false,
+      "final_seconds": 0.5,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS; trimmed to target length",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/void_torpedo.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Heavy sci-fi torpedo launch, deep bass thump and pressurized release, dark and weighty, short",
+      "requested_seconds": 0.8,
+      "loop": false,
+      "final_seconds": 0.8,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/void_impact.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Compressed inward sci-fi bass implosion impact, deep sucking whump, reversed energy collapse, short and punchy",
+      "requested_seconds": 0.6,
+      "loop": false,
+      "final_seconds": 0.6,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/arc_fire.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Precise sci-fi electric snap shot, crisp high voltage zap, tight and clean, very short, no tail",
+      "requested_seconds": 0.5,
+      "loop": false,
+      "final_seconds": 0.48,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/arc_chain.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Brief crackling electric chain lightning arc jumping between targets, fast sizzling crackle, short",
+      "requested_seconds": 0.6,
+      "loop": false,
+      "final_seconds": 0.6,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/arc_impact.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Electric zap burst impact, crackling spark pop, bright and short, sci-fi",
+      "requested_seconds": 0.5,
+      "loop": false,
+      "final_seconds": 0.48,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/enemy_shot.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Dim alien machine energy shot, soft low buzzy plasma pew, muted, sci-fi harvester robot weapon, short",
+      "requested_seconds": 0.5,
+      "loop": false,
+      "final_seconds": 0.48,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS; gain trim",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/enemy_heavy.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Heavy alien machine cannon blast, deep metallic boom, sci-fi robot artillery shot, punchy",
+      "requested_seconds": 0.8,
+      "loop": false,
+      "final_seconds": 0.8,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/enemy_charge.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Rising sci-fi energy charge-up warning, ominous alien machine weapon powering up, pitch rising whine, ends abruptly",
+      "requested_seconds": 1.0,
+      "loop": false,
+      "final_seconds": 1.0,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/enemy_hit.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Small metal armor hit tick, bullet ricochet on robot plating, sharp metallic clink, very short",
+      "requested_seconds": 0.5,
+      "loop": false,
+      "final_seconds": 0.48,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS; gain trim",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/explode_small.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Small sci-fi robot machine explosion, quick punchy blast with metallic crunch, short tail",
+      "requested_seconds": 0.8,
+      "loop": false,
+      "final_seconds": 0.8,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/explode_large.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Big sci-fi machine explosion with flying metal debris and shrapnel, powerful deep boom, spaceship destroyed",
+      "requested_seconds": 1.6,
+      "loop": false,
+      "final_seconds": 1.6,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/boss_explode.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Huge cascading sci-fi explosion, chain of massive blasts on a giant alien mothership, rumbling debris, final enormous boom",
+      "requested_seconds": 3.0,
+      "loop": false,
+      "final_seconds": 3.0,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/player_hit.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Spaceship hull hit, crunchy metal impact with electronic warning glitch, damage alert, punchy",
+      "requested_seconds": 0.6,
+      "loop": false,
+      "final_seconds": 0.6,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/shield_hit.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Energy shield absorbing a hit, sci-fi force field shimmer thud, soft electric ripple, short",
+      "requested_seconds": 0.5,
+      "loop": false,
+      "final_seconds": 0.48,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/shield_break.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Sci-fi energy shield shattering, glassy force field break with electric crackle, dramatic but short",
+      "requested_seconds": 0.9,
+      "loop": false,
+      "final_seconds": 0.88,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/pickup_power.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Rising magical tech power-up sound, shimmering sci-fi ascending sparkle synth, rewarding, clean",
+      "requested_seconds": 0.9,
+      "loop": false,
+      "final_seconds": 0.88,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/pickup_light.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Soft crystal chime pickup, gentle bright glassy ding, pleasant, short",
+      "requested_seconds": 0.5,
+      "loop": false,
+      "final_seconds": 0.48,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/level_up.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Weapon level up flourish, triumphant ascending sci-fi synth arpeggio with shimmer, energetic and rewarding",
+      "requested_seconds": 1.2,
+      "loop": false,
+      "final_seconds": 1.2,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/dash.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Spaceship afterburner dash whoosh, fiery rocket boost burst, fast swoosh, short",
+      "requested_seconds": 0.6,
+      "loop": false,
+      "final_seconds": 0.6,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/bulwark.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Sci-fi shield barrier raising, deep resonant energy hum swelling up, heavy protective force field activation",
+      "requested_seconds": 1.0,
+      "loop": false,
+      "final_seconds": 1.0,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/phase_relay.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Sci-fi teleport blink, quick electric zip and pop, spaceship warps a short distance, crisp",
+      "requested_seconds": 0.6,
+      "loop": false,
+      "final_seconds": 0.6,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/bomb_solar.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Golden nova shockwave explosion, massive bright fiery energy blast expanding outward, sci-fi superweapon, whooshing roar",
+      "requested_seconds": 2.0,
+      "loop": false,
+      "final_seconds": 2.0,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/bomb_void.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Massive sci-fi gravitational implosion, everything collapsing inward, deep bass suction ending in a heavy thump, black hole",
+      "requested_seconds": 2.0,
+      "loop": false,
+      "final_seconds": 2.0,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/bomb_arc.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Massive branching lightning discharge, huge electric thunder crack and crackling electricity storm, sci-fi superweapon",
+      "requested_seconds": 2.0,
+      "loop": false,
+      "final_seconds": 2.0,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/super_solar.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Mechanical transformation of a spaceship, servos whirring, heavy locking clamps, rising fiery engine roar, sci-fi mech power up",
+      "requested_seconds": 1.2,
+      "loop": false,
+      "final_seconds": 1.2,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/super_void.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Heavy armor plates sliding and locking into place, deep bass power up hum, sci-fi mech transformation, dark and weighty",
+      "requested_seconds": 1.2,
+      "loop": false,
+      "final_seconds": 1.2,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/super_arc.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Electric coils charging up, crackling electric lattice forming, rising high voltage hum, sci-fi mech power up",
+      "requested_seconds": 1.2,
+      "loop": false,
+      "final_seconds": 1.2,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/super_retract.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Mechanical servos retracting, sci-fi power down whine descending, short",
+      "requested_seconds": 0.6,
+      "loop": false,
+      "final_seconds": 0.6,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/super_ready.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Short confident sci-fi ready chime, two-note bright synth tone, clean UI notification",
+      "requested_seconds": 0.6,
+      "loop": false,
+      "final_seconds": 0.6,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/warning_boss.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Deep alarm klaxon warning, sci-fi battleship red alert siren, two long ominous blasts, no voice",
+      "requested_seconds": 2.0,
+      "loop": false,
+      "final_seconds": 2.0,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/wave_advance.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Subtle soft UI tick, clean futuristic interface blip, very quiet and short",
+      "requested_seconds": 0.5,
+      "loop": false,
+      "final_seconds": 0.48,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS; gain trim",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/ui_tap.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Soft premium UI click, clean subtle futuristic button tap, very short",
+      "requested_seconds": 0.5,
+      "loop": false,
+      "final_seconds": 0.46,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS; gain trim",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/ui_confirm.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Premium UI confirm sound, clean bright two-tone futuristic interface chime, short",
+      "requested_seconds": 0.5,
+      "loop": false,
+      "final_seconds": 0.48,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/ui_back.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Premium UI back sound, soft descending futuristic interface blip, short",
+      "requested_seconds": 0.5,
+      "loop": false,
+      "final_seconds": 0.48,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS; gain trim",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/ui_install.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Sci-fi weapon module installed into spaceship: loud metallic clamp clunk, short servo motor whir, heavy solid lock click, mechanical hardware",
+      "requested_seconds": 1.2,
+      "loop": false,
+      "final_seconds": 1.2,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/ui_error.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Soft denied UI sound, gentle low double buzz, futuristic interface error, not harsh",
+      "requested_seconds": 0.5,
+      "loop": false,
+      "final_seconds": 0.48,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/mission_complete.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Short victory sting, heroic orchestral brass and synth fanfare, triumphant sci-fi, no voice",
+      "requested_seconds": 2.5,
+      "loop": false,
+      "final_seconds": 2.48,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/mission_failed.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Short somber failure sting, low descending orchestral strings and synth pad, sad sci-fi, no voice",
+      "requested_seconds": 2.0,
+      "loop": false,
+      "final_seconds": 2.0,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/beacon_relight.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Warm luminous swell, glowing golden light beacon reigniting, rising shimmering choir-like synth pad, hopeful, no voice",
+      "requested_seconds": 2.0,
+      "loop": false,
+      "final_seconds": 2.0,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/sfx/engine_loop.ogg": {
+      "tool": "tools/audio/sfx.py",
+      "model": "ElevenLabs eleven_text_to_sound_v2",
+      "prompt": "Spaceship engine hum, steady smooth sci-fi fighter thruster drone, low constant rumble, seamless loop",
+      "requested_seconds": 3.0,
+      "loop": true,
+      "final_seconds": 3.0,
+      "post": "loudnorm -16 LUFS (tool); leading-silence trim, 20 ms fade-out, limiter -1 dBFS",
+      "date": "2026-09-24"
+    }
+  },
+  "music": {
+    "assets/audio/music/combat_lantern.ogg": {
+      "tool": "tools/audio/music.py",
+      "model": "Stability AI Stable Audio 3.0 (v2beta text-to-audio)",
+      "prompt": "Cinematic sci-fi hybrid orchestral electronic action music, driving and hopeful, heroic brass melody, pulsing synth bass, energetic taiko and electronic drums, soaring strings, space shooter battle theme, instrumental, no vocals, 124 BPM",
+      "bpm": 124,
+      "generated_seconds": 68,
+      "loop_seconds": 65.81,
+      "post": "tool loop: cut on whole bars + 1.5 s tail/head crossfade, loudnorm -18 LUFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/music/menu.ogg": {
+      "tool": "tools/audio/music.py",
+      "model": "Stability AI Stable Audio 3.0 (v2beta text-to-audio)",
+      "prompt": "Calm majestic cinematic sci-fi hangar theme, warm orchestral strings and French horns over soft ambient synth pads and gentle pulsing arpeggio, hopeful and heroic, spacious, instrumental, no vocals, 90 BPM",
+      "bpm": 90,
+      "generated_seconds": 68,
+      "loop_seconds": 64.0,
+      "post": "tool loop: cut on whole bars + 1.5 s tail/head crossfade, loudnorm -18 LUFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/music/boss.ogg": {
+      "tool": "tools/audio/music.py",
+      "model": "Stability AI Stable Audio 3.0 (v2beta text-to-audio)",
+      "prompt": "Intense cinematic sci-fi boss battle music, aggressive hybrid orchestral electronic, pounding drums, staccato strings, menacing brass stabs, distorted synth bass, urgent and powerful, instrumental, no vocals, 140 BPM",
+      "bpm": 140,
+      "generated_seconds": 84,
+      "loop_seconds": 66.86,
+      "post": "generated 84 s, cut to first 69 s (drop outro), then tool loop: cut on whole bars + 1.5 s tail/head crossfade, loudnorm -18 LUFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/music/combat_ember.ogg": {
+      "tool": "tools/audio/music.py",
+      "model": "Stability AI Stable Audio 3.0 (v2beta text-to-audio)",
+      "prompt": "Industrial heavy percussion sci-fi action music, hybrid orchestral electronic, metallic hits and anvil strikes, driving low brass, gritty synth bass, fiery and relentless, heroic, instrumental, no vocals, 128 BPM",
+      "bpm": 128,
+      "generated_seconds": 68,
+      "loop_seconds": 65.63,
+      "post": "tool loop: cut on whole bars + 1.5 s tail/head crossfade, loudnorm -18 LUFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/music/combat_tempest.ogg": {
+      "tool": "tools/audio/music.py",
+      "model": "Stability AI Stable Audio 3.0 (v2beta text-to-audio)",
+      "prompt": "Tense icy sci-fi action music, cold glassy synth arpeggios, fast staccato strings, hybrid orchestral electronic, driving drums, frosty atmosphere, instrumental, no vocals, 126 BPM",
+      "bpm": 126,
+      "generated_seconds": 68,
+      "loop_seconds": 64.76,
+      "post": "tool loop: cut on whole bars + 1.5 s tail/head crossfade, loudnorm -18 LUFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/music/combat_veil.ogg": {
+      "tool": "tools/audio/music.py",
+      "model": "Stability AI Stable Audio 3.0 (v2beta text-to-audio)",
+      "prompt": "Mysterious sci-fi action music, deep pulsing synth bass, dark ambient textures, low strings and muted brass, steady hybrid electronic percussion, enigmatic and tense, instrumental, no vocals, 118 BPM",
+      "bpm": 118,
+      "generated_seconds": 68,
+      "loop_seconds": 65.08,
+      "post": "tool loop: cut on whole bars + 1.5 s tail/head crossfade, loudnorm -18 LUFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/music/combat_armada.ogg": {
+      "tool": "tools/audio/music.py",
+      "model": "Stability AI Stable Audio 3.0 (v2beta text-to-audio)",
+      "prompt": "Epic militaristic sci-fi battle music, marching snare and war drums, powerful brass fanfares, hybrid orchestral electronic, driving strings, heroic space fleet battle, instrumental, no vocals, 132 BPM",
+      "bpm": 132,
+      "generated_seconds": 68,
+      "loop_seconds": 65.45,
+      "post": "tool loop: cut on whole bars + 1.5 s tail/head crossfade, loudnorm -18 LUFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/music/combat_dominion.ogg": {
+      "tool": "tools/audio/music.py",
+      "model": "Stability AI Stable Audio 3.0 (v2beta text-to-audio)",
+      "prompt": "Dark epic climactic sci-fi battle music, massive hybrid orchestral electronic, thunderous drums, ominous low brass, fast strings, grand and intense, instrumental, no vocals, 136 BPM",
+      "bpm": 136,
+      "generated_seconds": 68,
+      "loop_seconds": 65.29,
+      "post": "tool loop: cut on whole bars + 1.5 s tail/head crossfade, loudnorm -18 LUFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/music/boss_final.ogg": {
+      "tool": "tools/audio/music.py",
+      "model": "Stability AI Stable Audio 3.0 (v2beta text-to-audio)",
+      "prompt": "Grand final battle music, epic cinematic sci-fi hybrid orchestral electronic, choir-like synth pads without words, thunderous drums, heroic brass, soaring strings, climactic and triumphant, instrumental, no vocals, 144 BPM",
+      "bpm": 144,
+      "generated_seconds": 68,
+      "loop_seconds": 65.0,
+      "post": "tool loop: cut on whole bars + 1.5 s tail/head crossfade, loudnorm -18 LUFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/music/endless.ogg": {
+      "tool": "tools/audio/music.py",
+      "model": "Stability AI Stable Audio 3.0 (v2beta text-to-audio)",
+      "prompt": "Relentless night-drive synthwave action music, driving arpeggiated synths, punchy electronic drums, pulsing bass, cinematic sci-fi energy, instrumental, no vocals, 130 BPM",
+      "bpm": 130,
+      "generated_seconds": 84,
+      "loop_seconds": 70.15,
+      "post": "generated 84 s, skipped 4-bar intro and outro, then tool loop: cut on whole bars + 1.5 s tail/head crossfade, loudnorm -18 LUFS",
+      "date": "2026-09-24"
+    },
+    "assets/audio/music/ending.ogg": {
+      "tool": "tools/audio/music.py",
+      "model": "Stability AI Stable Audio 3.0 (v2beta text-to-audio)",
+      "prompt": "Warm triumphant resolution theme, cinematic orchestral strings and noble horns, soft sci-fi synth pads, hopeful uplifting finale, gentle and emotional, instrumental, no vocals, 84 BPM",
+      "bpm": 84,
+      "generated_seconds": 68,
+      "loop_seconds": 65.71,
+      "post": "tool loop: cut on whole bars + 1.5 s tail/head crossfade, loudnorm -18 LUFS",
+      "date": "2026-09-24"
+    }
+  }
+}
