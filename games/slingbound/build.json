@@ -1,0 +1,56 @@
+{
+ "game_id": "slingbound",
+ "version": "0.1",
+ "updated": "2026-11-02",
+ "commit": "0bbe0f6",
+ "links": {
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-slingbound/slingbound.apk"
+ },
+ "screenshots": {
+  "en": [
+   "https://kik-studio.github.io/kik-builds/games/slingbound/screens/game_en.png",
+   "https://kik-studio.github.io/kik-builds/games/slingbound/screens/menu_en.png",
+   "https://kik-studio.github.io/kik-builds/games/slingbound/screens/settings_en.png"
+  ],
+  "ar": [
+   "https://kik-studio.github.io/kik-builds/games/slingbound/screens/game_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/slingbound/screens/menu_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/slingbound/screens/settings_ar.png"
+  ]
+ },
+ "apk_bytes": 120245649,
+ "apk_sha256": "23f95e6b733c652a53472a6052bcfba0cfd605bd2a099896ce3004abfc197f66",
+ "pack_sha256": "337e86ebdc8074200ba16ae51f4b0bd11f0251b575185ae2e2b680523535b18e",
+ "shapes": [
+  "https://kik-studio.github.io/kik-builds/games/slingbound/screens/game_en_desktop.png",
+  "https://kik-studio.github.io/kik-builds/games/slingbound/screens/game_en_tablet.png"
+ ],
+ "video": [
+  "https://kik-studio.github.io/kik-builds/games/slingbound/video/gameplay.mp4",
+  "https://kik-studio.github.io/kik-builds/games/slingbound/video/showcase_fx.mp4",
+  "https://kik-studio.github.io/kik-builds/games/slingbound/video/showcase_ui.mp4"
+ ],
+ "tests": "https://kik-studio.github.io/kik-builds/games/slingbound/tests.txt",
+ "benchmark_apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-slingbound/slingbound-benchmark.apk",
+ "branch": "main",
+ "checks": "https://kik-studio.github.io/kik-builds/games/slingbound/checks/",
+ "build_id": "0.1+0bbe0f6",
+ "built_on": "studio server",
+ "review": {
+  "build_id": "0.1+0bbe0f6",
+  "machine": "studio PC GPU",
+  "when": "2026-11-03 00:51 UTC"
+ },
+ "media": {
+  "build_id": "0.1+0bbe0f6",
+  "version": "0.1",
+  "carried": false,
+  "label": null
+ },
+ "screens_hd": [
+  "https://kik-studio.github.io/kik-builds/games/slingbound/screens/hd/game_ar.jpg",
+  "https://kik-studio.github.io/kik-builds/games/slingbound/screens/hd/game_en.jpg",
+  "https://kik-studio.github.io/kik-builds/games/slingbound/screens/hd/menu_en.jpg"
+ ]
+}
