@@ -1,0 +1,62 @@
+{
+ "build": "0.13+ed4132a",
+ "targets": {
+  "finished": null,
+  "hard_hits": null,
+  "coin_share": null
+ },
+ "targets_source": "config/build_checks.json feel.runner (event runner_metrics; shooter table skipped)",
+ "runs": [
+  {
+   "run": "W01-L03",
+   "unit": "saddah",
+   "build": null,
+   "result": "unknown",
+   "seconds": 75.0,
+   "opening_s": 0.0,
+   "play_s": 75.0,
+   "empty_s": 4.0,
+   "empty_share": 0.053,
+   "longest_gap_s": 3.0,
+   "gaps_over_2s": 1,
+   "level_time_s": {},
+   "level_share": {},
+   "time_to_p2_s": null,
+   "top_level_share": 0.0,
+   "pickups": {},
+   "pickup_collect": null,
+   "deaths": 0,
+   "min_hull": 0,
+   "supers": 0,
+   "bombs": null,
+   "mean_enemies": 3.89,
+   "mean_hostile_bullets": 0,
+   "waves": null,
+   "checks": {
+    "finished": {
+     "value": true,
+     "pass": true
+    },
+    "hard_hits": {
+     "value": 0,
+     "pass": true
+    },
+    "coin_share": {
+     "value": 0.8,
+     "pass": true
+    }
+   }
+  }
+ ],
+ "passing_runs": {
+  "finished": 1,
+  "hard_hits": 1,
+  "coin_share": 1
+ },
+ "unknown_runs": {
+  "finished": 0,
+  "hard_hits": 0,
+  "coin_share": 0
+ },
+ "unknown_total": 0
+}

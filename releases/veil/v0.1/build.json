@@ -1,0 +1,36 @@
+{
+ "game_id": "veil",
+ "version": "0.1",
+ "updated": "2026-10-14",
+ "commit": "61b9f89",
+ "links": {
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-veil-v0.1/veil.apk"
+ },
+ "screenshots": {
+  "en": [],
+  "ar": []
+ },
+ "apk_bytes": 33340427,
+ "apk_sha256": "e5c37769381fc6c8883ae7190aead3dac30397e955edbe29cbdaafa2599cedbc",
+ "pack_sha256": "5205fcfeed7dfe9c1977328a8575faebaf51ff4dffd9cfb963159e6c4eb1b055",
+ "shapes": [],
+ "video": [],
+ "tests": "https://kik-studio.github.io/kik-builds/games/veil/tests.txt",
+ "benchmark_apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-veil/veil-benchmark.apk",
+ "branch": "main",
+ "checks": null,
+ "build_id": "0.1+61b9f89",
+ "built_on": "studio PC",
+ "review": null,
+ "media": {
+  "build_id": null,
+  "version": null,
+  "carried": true,
+  "label": "from an older build"
+ },
+ "label": "v0.1",
+ "released": "2026-10-14 22:42 UTC",
+ "state": "accepted",
+ "final_apk_sha256": "264ceaf201fa6dcee443a0c8e5911b58f14364e126c8b1fc01c660e0d8a8ed67"
+}
