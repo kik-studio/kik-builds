@@ -1,0 +1,1298 @@
+  PASS config: game.json loads
+  PASS config: version present
+  PASS save: value survives reload
+  PASS save: setting survives reload
+  PASS save: atomic write leaves no temp file
+  PASS save: player id generated
+  PASS loc: English text
+  PASS loc: Arabic text
+  PASS loc: Arabic is right-to-left
+  PASS loc: controls flip to RTL in Arabic
+  PASS loc: every string has English and Arabic
+  PASS audio: Music bus
+  PASS audio: SFX bus
+  PASS audio: sfx asset present
+  PASS audio: no AudioServer.add_bus() (silences web builds, FR-3)
+  PASS audio: Music and SFX route to Master
+  PASS analytics: HMAC signature matches reference
+  PASS analytics: Android os_version keeps only the version number
+  PASS analytics: iOS version kept, empty version falls back
+  PASS analytics: web/desktop send webgl 1.0
+  PASS ui: safe margins at least minimum
+  PASS theme: design tokens file present
+  PASS theme: tokens loaded
+  INFO theme placeholder = true (a game must replace it before a milestone)
+  PASS playfield: same logical area at 1080x1920
+  PASS playfield: same logical area at 1080x2340
+  PASS playfield: same logical area at 1080x2400
+  PASS playfield: same logical area at 1440x1920
+  PASS playfield: same logical area at 3413x1920
+  PASS perf: frame statistics correct
+  PASS field perf: row carries scene, device and p50
+  PASS field perf: only performance fields, no identity
+  PASS field perf: short visits are not sent
+  PASS field perf: capped per session
+  PASS field perf: off unless the build asks for it (desktop and default)
+  PASS field perf: no scene is named none
+  PASS fx: shader hit_flash loads
+  PASS fx: shader dissolve loads
+  PASS fx: shader shield loads
+  PASS fx: shader shockwave loads
+  PASS fx: shader heat_shimmer loads
+  PASS fx: texture dot generated
+  PASS fx: texture spark generated
+  PASS fx: texture ring generated
+  PASS fx: texture smoke generated
+  PASS fx: texture star generated
+  PASS fx: texture white generated
+  PASS fx: emitter pool stays bounded (96 <= 96)
+  PASS fx: hit flash applies its shader
+  PASS fx: trail lives in the effect layer
+  PASS fx: heat shimmer attaches to its node
+  PASS fx: dissolve frees the node when done
+  PASS fx: hitstop restores time
+  PASS fx: shake returns to rest
+  PASS ui kit: theme type DisplayLabel
+  PASS ui kit: theme type HeadingLabel
+  PASS ui kit: theme type H2Label
+  PASS ui kit: theme type TitleLabel
+  PASS ui kit: theme type CaptionLabel
+  PASS ui kit: theme type MicroLabel
+  PASS ui kit: theme type NumberLabel
+  PASS ui kit: theme type DangerButton
+  PASS ui kit: theme type GhostButton
+  PASS ui kit: theme type CardPanel
+  PASS ui kit: theme type ChipPanel
+  PASS ui kit: display size from type scale
+  PASS ui kit: Arabic display font renders Arabic
+  PASS ui kit: framed panel
+  PASS ui kit: count_to ends on the target
+  PASS ui kit: appear ends fully visible
+  PASS errors: logger registered
+  PASS errors: one report per distinct error
+  PASS errors: repeats are counted, not re-sent
+  PASS errors: report carries build and platform
+  PASS errors: points at the script line, not engine code
+  PASS remote: Firestore values decode
+  PASS remote: numbers with safe defaults
+  PASS remote: switches with safe defaults
+  PASS crash: marker is written while running
+  PASS crash: breadcrumb recorded
+  PASS crash: background marker is not a crash
+  PASS crash: foreground marker is filed with breadcrumbs
+  PASS deleted: normal start = Crashlytics on with this install's id, stored reports kept
+  PASS deleted: delete = Crashlytics off, user id cleared, stored reports dropped
+  PASS deleted: restart while deleted = still off, no user id
+  PASS deleted: no repeated calls while nothing changes
+  PASS deleted: GameAnalytics sends nothing (queue dropped, no request)
+  PASS deleted: events copy dropped, not kept for a later account
+  PASS deleted: error records dropped (never sent, never queued)
+  PASS deleted: perf record dropped without a request
+  PASS deleted: Start again = Crashlytics on again with the id, deleted-time reports dropped
+  PASS events copy: every design/progression event is kept
+  PASS events copy: design line and value
+  PASS events copy: progression ids and score
+  PASS screen boot: loads
+  PASS screen boot: builds content
+  PASS screen boot: no empty labels (0 labels)
+  PASS screen boot: all buttons meet touch size
+  PASS screen menu: loads
+  PASS screen menu: builds content
+  PASS screen menu: no empty labels (4 labels)
+  PASS screen menu: all buttons meet touch size
+  PASS screen settings: loads
+  PASS screen settings: builds content
+  PASS screen settings: no empty labels (6 labels)
+  PASS screen settings: all buttons meet touch size
+  PASS screen game: loads
+  PASS screen game: builds content
+  PASS screen game: no empty labels (3 labels)
+  PASS screen game: all buttons meet touch size
+  PASS release: no developer tools on shipping screens
+  PASS dev: developer tools reachable in dev builds
+  PASS release: settings has no developer tools
+  PASS release: game has no developer tools
+  PASS cloud: unconfigured shows not available
+  PASS hd pack: start() from a boot _ready creates the pack node
+  PASS hd pack: pack node entered the tree under root
+  PASS hd pack: the download request runs inside the tree
+  PASS hd pack: request really started (state failed)
+  PASS hd pack: nothing loaded from an unreachable host
+  PASS setup keeps the products handed in (game config ignored)
+  PASS consumable: verified -> credited once -> consumed
+  PASS duplicate delivery of the same purchase: no second credit
+  PASS cancel: nothing credited
+  PASS store error: nothing credited
+  PASS pending: nothing credited yet
+  PASS pending -> purchased later: credited once and consumed
+  PASS offline: never credited unverified, purchase kept unfinished
+  PASS back online: reconcile credits it once and consumes it
+  PASS server refuses the proof: nothing credited
+  PASS finish fails after credit: credited, still held by the store
+  PASS relaunch: interrupted purchase finished without a second credit
+  PASS credit refused: not finished, nothing credited
+  PASS next reconcile: server says already recorded, game credits once, consumed
+  PASS every credit has its own key, none twice
+  PASS non-consumable: server entitlement, no coins
+  PASS non-consumable owned: no second sheet
+  PASS already owned (interrupted earlier): settled once by reconcile
+  PASS restore: non-consumable re-verified and owned again
+  PASS unknown product: failed
+  PASS desktop / no plugin: unavailable, nothing credited
+  PASS google: purchase dictionary normalized
+  PASS google: pending purchase without an order id gets a token key
+  PASS apple adapter compiles on desktop
+  PASS billing: test_billing.gd all checks pass (0 failed)
+  PASS controls: R3 priority order catch>hang>climb>throw>push>ride>slide>grab>ring>fun
+  PASS controls: priority pick push over ring/slide
+  PASS controls: priority pick catch first
+  PASS controls: priority pick empty = none
+  PASS controls: hold time snaps to 180/300/500 ms (0.9 s -> 500)
+  PASS controls: settings survive a save round trip
+  PASS controls: button offset survives a save round trip
+  PASS controls: fun never the same twice in a row
+  PASS controls: Spark never does Crag's rock roll
+  PASS controls: fun set rotates through many kinds (9)
+  PASS controls[package]: stick appears where the thumb lands
+  PASS controls[package]: stick dead zone 12 %
+  PASS controls[package]: stick full up = move (0,-1)
+  PASS controls[package]: stick release = move zero
+  PASS controls[package]: JUMP emits, shows pressed, haptic
+  PASS controls[package]: JUMP press state clears
+  PASS controls[package]: JUMP is 72 units
+  PASS controls[package]: camera zone drag emits camera_drag
+  PASS controls[package]: dead gap beside JUMP does nothing
+  PASS controls[package]: camera sensitivity + invert Y
+  PASS controls[package]: TOOL slot works
+  PASS controls[package]: recenter + camera lock buttons
+  PASS controls[package]: touch on own hero starts a sling finger
+  PASS controls[package]: sling: inside dead zone draws nothing
+  PASS controls[package]: sling: 60 units = pull 0.5
+  PASS controls[package]: sling: pull caps at 1
+  PASS controls[package]: sling: back in the dead zone cancels
+  PASS controls[package]: sling: release after cancel launches nothing
+  PASS controls[package]: sling: release launches; the sling finger never orbits the camera
+  PASS controls[action]: stick appears where the thumb lands
+  PASS controls[action]: stick dead zone 12 %
+  PASS controls[action]: stick full up = move (0,-1)
+  PASS controls[action]: stick release = move zero
+  PASS controls[action]: JUMP emits, shows pressed, haptic
+  PASS controls[action]: JUMP press state clears
+  PASS controls[action]: JUMP is 72 units
+  PASS controls[action]: camera zone drag emits camera_drag
+  PASS controls[action]: dead gap beside JUMP does nothing
+  PASS controls[action]: camera sensitivity + invert Y
+  PASS controls[action]: TOOL slot works
+  PASS controls[action]: recenter + camera lock buttons
+  PASS controls[action]: touch on own hero starts a sling finger
+  PASS controls[action]: sling: inside dead zone draws nothing
+  PASS controls[action]: sling: 60 units = pull 0.5
+  PASS controls[action]: sling: pull caps at 1
+  PASS controls[action]: sling: back in the dead zone cancels
+  PASS controls[action]: sling: release after cancel launches nothing
+  PASS controls[action]: sling: release launches; the sling finger never orbits the camera
+  PASS controls[action]: default hold threshold 300 ms
+  PASS controls[action]: no brace before the hold time
+  PASS controls[action]: hold 0.3 s = brace on
+  PASS controls[action]: release ends brace, no tap
+  PASS controls[action]: hold time setting 180 ms works
+  PASS controls[action]: verb word shows before the press
+  PASS controls[action]: tap = the context verb
+  PASS controls[action]: fun waits the 0.25 s no-verb check
+  PASS controls[action]: fun fires after the check
+  PASS controls[action]: fun goes out as Net event
+  PASS controls[action]: fun cooldown 1.5 s
+  PASS controls[action]: a verb a frame away wins over fun
+  PASS controls[action]: toggle brace stays on after release
+  PASS controls[action]: toggle brace off on the next hold
+  PASS controls[package]: BRACE braces on press
+  PASS controls[package]: BRACE release ends brace, no fun
+  PASS controls[package]: Classic HOLD/GRAB acts at once on the press (ledge)
+  PASS controls[package]: a grab press runs once, holding it never braces
+  PASS controls: scheme switch at runtime (action: no instant brace)
+  PASS controls: new player starts with move only
+  PASS controls: JUMP after its unlock
+  PASS controls: sling locked until its step
+  PASS controls: default = everything unlocked
+  PASS fun: ten kinds in the set
+  PASS fun: nine kinds per hero (+ the other's solo one excluded)
+  PASS fun: every spaced tap plays one action (40)
+  PASS fun: never the same kind twice in a row over 40 taps
+  PASS fun: Spark never rolls rocks
+  PASS fun: 1.5 s cooldown ignores a second tap at 0.5 s
+  PASS fun: plays again once the cooldown is over
+  PASS fun: partner gets fun_started(kind, who) from the event
+  PASS fun: never steals a real verb
+  PASS high five: taps 0.3 s apart, 1.5 m -> both play it
+  PASS high five: sparkle on both phones
+  PASS high five: host counts the pair total once
+  PASS high five: taps 0.5 s apart -> no high five
+  PASS high five: no count without one
+  PASS high five: taps 0.2 s apart but 2.5 m away -> no high five
+  PASS high five: no count without one
+  PASS high five: same instant, exactly 2 m -> both play it
+  PASS high five: sparkle on both phones
+  PASS high five: host counts the pair total once
+  PASS high five: remote side gets fun_started(high_five)
+  PASS wobble: only paper_plane / ribbon_flick wobble the partner (15)
+  PASS wobble: the partner phone hears every wobble
+  PASS wobble: owner phone adds only a tiny bounce to its own hero
+  PASS wobble: no bounce while airborne (never disturbs a launch)
+  PASS ping: tapping the ping button opens the radial
+  PASS ping: first option = look here, radial closes
+  PASS ping: partner gets the same world point
+  PASS ping: marker still there at 2.9 s
+  PASS ping: markers fade away after 3 s on both phones
+  PASS ping: a tap elsewhere closes the radial, sends nothing
+  PASS ping: go now reaches the partner
+  PASS ping: countdown GO moment is session time + 3 on both
+  PASS ping: both screens show the same number at every moment
+  PASS ping: 3 - 2 - 1 - GO - gone ([3, 2, 1, 0, -1])
+  PASS ping: value depends only on session time
+  PASS ping: hidden while locked
+  PASS ping: locked ping cannot be sent
+  PASS settings: scheme package -> BRACE on the right-hand slot, live
+  PASS settings: scheme action -> ACTION, live
+  PASS settings: package scheme braces on press
+  PASS settings: action scheme does not brace on press
+  PASS settings: hold time 500 ms live
+  PASS settings: hold ACTION past the new hold time braces
+  PASS settings: hold time snaps to 500 ms at most
+  PASS settings: brace mode toggle
+  PASS settings: brace mode hold
+  PASS settings: button size 140 % grows the buttons
+  PASS settings: left-handed puts JUMP on the left
+  PASS settings: invert Y and camera speed 2x apply live
+  PASS settings: vibration off -> no haptics
+  PASS settings: vibration on -> haptics again
+  PASS unlock: new player sees no JUMP / ACTION / TOOL / ping
+  PASS unlock: the stick shows its prompt first
+  PASS unlock: a locked control does nothing
+  PASS unlock: JUMP appears with a pulse + prompt
+  PASS unlock: (signals use the hero name as tag)
+  PASS unlock: prompt stays after the first use
+  PASS unlock: prompt gone after the second use
+  PASS unlock: ACTION still hidden before its step
+  PASS unlock: ACTION appears with a prompt
+  PASS unlock: extras bring the ping button
+  PASS unlock: show-everything switches everything on
+  PASS unlock: default is everything unlocked
+  PASS unlock: new-player flow restarts from move only
+  PASS hero[spark]: walk speed 4.73 ~ 4.8
+  PASS hero[spark]: run speed 7.00 ~ 7.0
+  PASS hero[spark]: stick up runs forward (-Z), state run
+  PASS hero[crag]: walk speed 4.14 ~ 4.2
+  PASS hero[crag]: run speed 6.20 ~ 6.2
+  PASS hero[crag]: stick up runs forward (-Z), state run
+  PASS hero: movement is camera-relative
+  PASS hero[spark]: jump apex 1.50 ~ 1.5 m
+  PASS hero[spark]: landed signal with speed 7.2
+  PASS hero[crag]: jump apex 1.20 ~ 1.2 m
+  PASS hero[crag]: landed signal with speed 6.2
+  PASS hero: jump buffered 0.05 s before landing still jumps
+  PASS hero: jump pressed 0.3 s early is not buffered
+  PASS hero: ledge grace 0.08 s (jump 0.05 s after the edge works)
+  PASS hero: no jump 0.13 s after the edge
+  PASS hero: gravity 18 m/s2
+  PASS hero: air control 25 % (1.20 m/s after 0.1 s)
+  PASS hero: apply_impulse -> fly
+  PASS hero: flight keeps momentum, steering capped (vx 10.00)
+  PASS hero: air steering never adds speed past the launch
+  PASS hero: brace plants (no slide)
+  PASS hero: no jump while braced
+  PASS hero: floor grip read from collider metadata
+  PASS hero: low grip = slippery start (1.03 vs 4.20)
+  PASS hero+controls[package]: stick input moves the hero in the first physics step
+  PASS hero+controls[package]: stick runs the hero
+  PASS hero+controls[package]: stick release stops (idle)
+  PASS hero+controls[package]: JUMP button jumps (1.50 m)
+  PASS hero+controls[package]: brace from the BRACE button
+  PASS hero+controls[package]: brace ends on release
+  PASS hero+controls[action]: stick input moves the hero in the first physics step
+  PASS hero+controls[action]: stick runs the hero
+  PASS hero+controls[action]: stick release stops (idle)
+  PASS hero+controls[action]: JUMP button jumps (1.50 m)
+  PASS hero+controls[action]: brace from the ACTION hold button
+  PASS hero+controls[action]: brace ends on release
+  PASS hero net: snapshot has every contract key
+  PASS hero net: snapshot round trip places the remote hero (pos, state, tension)
+  PASS hero net: remote interpolation error 0.005 m < 0.3 at 30 Hz with jitter + loss
+  PASS hero net: remote stays ~100 ms behind (0.70 m at 7 m/s)
+  PASS hero net: flight shown by ballistic prediction (err 0.028 m)
+  PASS hero net: correction goes into a visual offset (no visible snap)
+  PASS hero net: visual offset decays within 0.5 s (0.009)
+  PASS hero net: platform-local snapshot follows the mover
+  PASS hero net: riding hero sends plat id
+  PASS hero net: lp is the hero's place on the mover
+  PASS camera: explore 5 m back, 3 m up (5.0, 3.8)
+  PASS camera: explore looks at the hero
+  PASS camera: drag orbits (yaw -0.60)
+  PASS camera: aim blend is under way at 0.12 s
+  PASS camera: aim reached in 0.25 s
+  PASS camera: aim views the launch plane from the side (three-quarter)
+  PASS camera: stick orientation kept through the aim blend
+  PASS camera: recenters behind a moving hero after a pause
+  PASS camera: lock keeps the angle (no recenter)
+  PASS camera: chase mode reached
+  PASS camera: side mode reached
+  PASS camera: runner mode reached
+  PASS camera: runner behind-above
+  PASS verbs[action]: grab shows on the button before the press
+  PASS verbs[action]: grab -> carry
+  PASS verbs[action]: carried parcel follows the hand
+  PASS verbs[action]: while carrying the verb is throw
+  PASS verbs[action]: throw releases along the aim (15.3 m/s)
+  PASS verbs[action]: bell offers ring
+  PASS verbs[action]: ring rings the bell (+ Net toy event)
+  PASS verbs[action]: R3: a prop behind the hero is not offered (reach cone)
+  PASS verbs[action]: priority: grab beats ring
+  PASS verbs[action]: crate offers push
+  PASS verbs[action]: push grips the crate
+  PASS verbs[action]: push moves the crate at reduced speed (2.40 m in 1 s)
+  PASS verbs[action]: tap again lets go of the crate
+  PASS verbs[action]: ladder offers climb
+  PASS verbs[action]: climb starts
+  PASS verbs[action]: climb goes up and over the top (y 3.00)
+  PASS verbs[action]: bar offers hang
+  PASS verbs[action]: hang starts
+  PASS verbs[action]: shimmy along the bar (1.60 m)
+  PASS verbs[action]: jump lets go of the bar
+  PASS verbs[action]: slope offers slide
+  PASS verbs[action]: slide is fast (13.0 m/s)
+  PASS verbs[action]: slide ends at the end of the slope
+  PASS verbs[action]: carousel offers ride
+  PASS verbs[action]: ride starts
+  PASS verbs[action]: riding hero turns with the carousel
+  PASS verbs[action]: jump leaves the ride
+  PASS verbs[package]: grab shows on the button before the press
+  PASS verbs[package]: grab -> carry
+  PASS verbs[package]: carried parcel follows the hand
+  PASS verbs[package]: while carrying the verb is throw
+  PASS verbs[package]: throw releases along the aim (15.3 m/s)
+  PASS verbs[package]: bell offers ring
+  PASS verbs[package]: ring rings the bell (+ Net toy event)
+  PASS verbs[package]: R3: a prop behind the hero is not offered (reach cone)
+  PASS verbs[package]: priority: grab beats ring
+  PASS verbs[package]: Classic: grab on HOLD/GRAB, the bell on INTERACT at the same time
+  PASS verbs[package]: crate offers push
+  PASS verbs[package]: push grips the crate
+  PASS verbs[package]: push moves the crate at reduced speed (2.40 m in 1 s)
+  PASS verbs[package]: tap again lets go of the crate
+  PASS verbs[package]: ladder offers climb
+  PASS verbs[package]: climb starts
+  PASS verbs[package]: climb goes up and over the top (y 3.00)
+  PASS verbs[package]: bar offers hang
+  PASS verbs[package]: hang starts
+  PASS verbs[package]: shimmy along the bar (1.60 m)
+  PASS verbs[package]: jump lets go of the bar
+  PASS verbs[package]: slope offers slide
+  PASS verbs[package]: slide is fast (13.0 m/s)
+  PASS verbs[package]: slide ends at the end of the slope
+  PASS verbs[package]: carousel offers ride
+  PASS verbs[package]: ride starts
+  PASS verbs[package]: riding hero turns with the carousel
+  PASS verbs[package]: jump leaves the ride
+  PASS r3 table: ranks follow CONTROL_PRIORITY.json (catch 1, ledge 2, carry 3, machine 4, pickup 5, toy 6)
+  PASS r3 table: catch beats ledge beats carry beats machine beats pickup beats toy ([&"catch", &"hang", &"throw", &"push", &"grab", &"ring"])
+  PASS r3 table: Classic HOLD/GRAB owns ranks 1/2/3/5, INTERACT owns 4/6
+  PASS r3 table: one table, per-slot pick
+  PASS r3 table[package]: catch wins the main slot
+  PASS r3 table[action]: catch wins the main slot
+  PASS r3 lock[action]: the verb is locked on pointer-down
+  PASS r3 lock[action]: no re-target while held, executed once (grab)
+  PASS r3 cancel[action]: sliding off the button cancels; nothing runs (0 taps)
+  PASS r3 lock[package]: the verb is locked on pointer-down
+  PASS r3 lock[package]: no re-target while held, executed once (grab)
+  PASS r3 lock[package]: Classic grab acts at once on the press
+  PASS r3 cancel[package]: sliding off the button cancels; nothing runs (0 taps)
+  PASS r3 interact: the toy is locked and previewed, not run on the press
+  PASS r3 interact: the toy runs on release, once
+  PASS r3 interact: slide off cancels the toy
+  PASS r3 throw[package]: holding with nothing braces
+  PASS r3 throw[package]: no surprise throw from a brace hold
+  PASS r3 throw[package]: press shows the aim preview, no throw yet
+  PASS r3 throw[package]: the carried object owns the slot (no brace while aiming)
+  PASS r3 throw[package]: throw on release after the preview, once
+  PASS r3 throw[package]: cancel while aiming throws nothing
+  PASS r3 throw[action]: holding with nothing braces
+  PASS r3 throw[action]: no surprise throw from a brace hold
+  PASS r3 throw[action]: press shows the aim preview, no throw yet
+  PASS r3 throw[action]: the carried object owns the slot (no brace while aiming)
+  PASS r3 throw[action]: throw on release after the preview, once
+  PASS r3 throw[action]: cancel while aiming throws nothing
+  PASS r3 interact: hidden with no machine / toy / tool
+  PASS r3 interact: a pickup alone does not show INTERACT
+  PASS r3 interact: shows near a machine with its picture (push)
+  PASS r3 interact: shows near a toy (ring) next to the grab
+  PASS r3 interact: nothing local = ribbon tug tool
+  PASS r3 interact: appears and disappears smoothly (0.40 -> 1.00 -> 0.60 -> 0.00)
+  PASS r3 interact: Action scheme keeps one ACTION button + TOOL slot
+  PASS r3 hud: every verb button keeps the 48 dp minimum
+  PASS r3 hud: left-handed setting mirrors the buttons
+  PASS r3 threshold 180 ms: brace exactly after the chosen hold
+  PASS r3 threshold 180 ms: a shorter press is the verb
+  PASS r3 threshold 180 ms: catch is immediate on the press, once
+  PASS r3 threshold 300 ms: brace exactly after the chosen hold
+  PASS r3 threshold 300 ms: a shorter press is the verb
+  PASS r3 threshold 300 ms: catch is immediate on the press, once
+  PASS r3 threshold 500 ms: brace exactly after the chosen hold
+  PASS r3 threshold 500 ms: a shorter press is the verb
+  PASS r3 threshold 500 ms: catch is immediate on the press, once
+  PASS r3 classic: Classic is the default scheme
+  PASS r3 classic: HOLD with nothing braces at once (no delay threshold)
+  PASS r3 classic: sling draw unaffected by the HOLD button
+  PASS r3 classic: release ends the brace, nothing else
+  PASS r3 hero: parcel in front offers grab
+  PASS r3 hero: the locked target left reach -> nothing (never re-targets to another prop)
+  PASS r3 hero: next press picks the focused parcel
+  PASS r3 hero: carry press shows the real throw arc
+  PASS r3 hero: release throws along the previewed arc
+  PASS r3 hero: grounded idle next to the bell offers the toy
+  PASS r3 hero: no toy while airborne (safe grounded only)
+  PASS look: spark stand-in loads
+  PASS look: spark has RingPoint
+  PASS look: spark height 1.029 m within 5% of 1.00
+  PASS look: spark stand-in has pulse_squash/attach_point
+  PASS look: spark attach point at chest height
+  PASS look: crag stand-in loads
+  PASS look: crag has CorePoint
+  PASS look: crag height 1.330 m within 5% of 1.35
+  PASS look: crag stand-in has pulse_squash/attach_point
+  PASS look: crag attach point at chest height
+  PASS look: spark fur shells on by default
+  PASS look: spark plush when fur is off
+  PASS look: kit wall loads
+  PASS look: kit wall has collision
+  PASS look: kit wall has grip metadata
+  PASS look: kit roof_slope loads
+  PASS look: kit roof_slope has collision
+  PASS look: kit roof_slope has grip metadata
+  PASS look: kit roshan_balcony loads
+  PASS look: kit roshan_balcony has collision
+  PASS look: kit roshan_balcony has grip metadata
+  PASS look: kit stair loads
+  PASS look: kit stair has collision
+  PASS look: kit stair has grip metadata
+  PASS look: kit ledge loads
+  PASS look: kit ledge has collision
+  PASS look: kit ledge has grip metadata
+  PASS look: kit pillar loads
+  PASS look: kit pillar has collision
+  PASS look: kit pillar has grip metadata
+  PASS look: kit crate loads
+  PASS look: kit crate has collision
+  PASS look: kit crate has grip metadata
+  PASS look: kit parcel_stack loads
+  PASS look: kit parcel_stack has collision
+  PASS look: kit parcel_stack has grip metadata
+  PASS look: kit awning loads
+  PASS look: kit awning has collision
+  PASS look: kit awning has grip metadata
+  PASS look: kit lamp loads
+  PASS look: kit lamp has collision
+  PASS look: kit lamp has grip metadata
+  PASS look: kit crane_arm loads
+  PASS look: kit crane_arm has collision
+  PASS look: kit crane_arm has grip metadata
+  PASS look: kit floor_tiles loads
+  PASS look: kit floor_tiles has collision
+  PASS look: kit floor_tiles has grip metadata
+  PASS look: kit ground_stone loads
+  PASS look: kit ground_stone has collision
+  PASS look: kit ground_stone has grip metadata
+  PASS look: ribbon material has tension uniform
+  PASS look: ribbon width curve exists
+  PASS look: last_post_env loads
+  PASS look: env sun casts shadows
+  PASS look: env has sky + fog
+  PASS look: env has FAR + MID backdrop cards
+  PASS look: look_test scene loads
+  PASS look g2: ribbon looks woven/band/sadu/thread
+  PASS look g2: ribbon woven has tension
+  PASS look g2: ribbon woven has width_m/length_m/split
+  PASS look g2: ribbon woven width 0.085 m in range
+  PASS look g2: ribbon woven V-split strand width 0.043 <= 0.085
+  PASS look g2: ribbon woven split flag set on V-split strands
+  PASS look g2: ribbon woven tension clamps to 1
+  PASS look g2: ribbon woven length_m set
+  PASS look g2: ribbon band has tension
+  PASS look g2: ribbon band has width_m/length_m/split
+  PASS look g2: ribbon band width 0.090 m in range
+  PASS look g2: ribbon band V-split strand width 0.054 <= 0.090
+  PASS look g2: ribbon band split flag set on V-split strands
+  PASS look g2: ribbon band tension clamps to 1
+  PASS look g2: ribbon band length_m set
+  PASS look g2: ribbon sadu has tension
+  PASS look g2: ribbon sadu has width_m/length_m/split
+  PASS look g2: ribbon sadu width 0.080 m in range
+  PASS look g2: ribbon sadu V-split strand width 0.052 <= 0.080
+  PASS look g2: ribbon sadu split flag set on V-split strands
+  PASS look g2: ribbon sadu tension clamps to 1
+  PASS look g2: ribbon sadu length_m set
+  PASS look g2: ribbon thread has tension
+  PASS look g2: ribbon thread has width_m/length_m/split
+  PASS look g2: ribbon thread width 0.024 m in range
+  PASS look g2: ribbon thread V-split strand width 0.024 <= 0.024
+  PASS look g2: ribbon thread split flag set on V-split strands
+  PASS look g2: ribbon thread tension clamps to 1
+  PASS look g2: ribbon thread length_m set
+  PASS look g2: four distinct ribbon shaders
+  PASS look g2: each strand owns its material (tension not shared)
+  PASS look g2: unknown look falls back to woven
+  PASS look g2: follows saved look (band)
+  PASS look g2: live switch to sadu
+  PASS look g2: live switch keeps tension
+  PASS look g2: live switch to thread (no shadow)
+  PASS look g2: kit najdi_wall loads
+  PASS look g2: kit najdi_wall has collision
+  PASS look g2: kit najdi_wall has grip metadata
+  PASS look g2: kit najdi_wall has no lights
+  PASS look g2: kit najdi_parapet loads
+  PASS look g2: kit najdi_parapet has collision
+  PASS look g2: kit najdi_parapet has grip metadata
+  PASS look g2: kit najdi_parapet has no lights
+  PASS look g2: kit najdi_tower loads
+  PASS look g2: kit najdi_tower has collision
+  PASS look g2: kit najdi_tower has grip metadata
+  PASS look g2: kit najdi_tower has no lights
+  PASS look g2: kit najdi_roof_deck loads
+  PASS look g2: kit najdi_roof_deck has collision
+  PASS look g2: kit najdi_roof_deck has grip metadata
+  PASS look g2: kit najdi_roof_deck has no lights
+  PASS look g2: kit palm_beam loads
+  PASS look g2: kit palm_beam has collision
+  PASS look g2: kit palm_beam has grip metadata
+  PASS look g2: kit palm_beam has no lights
+  PASS look g2: kit coral_wall loads
+  PASS look g2: kit coral_wall has collision
+  PASS look g2: kit coral_wall has grip metadata
+  PASS look g2: kit coral_wall has no lights
+  PASS look g2: kit coral_door loads
+  PASS look g2: kit coral_door has collision
+  PASS look g2: kit coral_door has grip metadata
+  PASS look g2: kit coral_door has no lights
+  PASS look g2: kit roshan_bay loads
+  PASS look g2: kit roshan_bay has collision
+  PASS look g2: kit roshan_bay has grip metadata
+  PASS look g2: kit roshan_bay has no lights
+  PASS look g2: kit sadu_awning loads
+  PASS look g2: kit sadu_awning has collision
+  PASS look g2: kit sadu_awning has grip metadata
+  PASS look g2: kit sadu_awning has no lights
+  PASS look g2: kit sadu_banner loads
+  PASS look g2: kit sadu_banner has collision
+  PASS look g2: kit sadu_banner has grip metadata
+  PASS look g2: kit sadu_banner has no lights
+  PASS look g2: kit lantern_hanging loads
+  PASS look g2: kit lantern_hanging has collision
+  PASS look g2: kit lantern_hanging has grip metadata
+  PASS look g2: lantern lantern_hanging has exactly one light (1)
+  PASS look g2: lantern lantern_hanging unshadowed by default
+  PASS look g2: lantern lantern_hanging has the lattice_shadow switch
+  PASS look g2: kit lantern_standing loads
+  PASS look g2: kit lantern_standing has collision
+  PASS look g2: kit lantern_standing has grip metadata
+  PASS look g2: lantern lantern_standing has exactly one light (1)
+  PASS look g2: lantern lantern_standing unshadowed by default
+  PASS look g2: lantern lantern_standing has the lattice_shadow switch
+  PASS look g2: lattice cookie texture exists
+  PASS look g2: lattice_shadow lantern casts the lattice cookie
+  PASS look g2: look_test loads
+  PASS look g2: look_test shadowed lanterns 2 within budget 3
+  PASS look g2: look_test shows the three looks side by side
+  PASS look g2: look_test shows the V split
+  PASS look g2: last_post_env_dusk loads
+  PASS look g2: dusk sun is low and weak
+  PASS look g2: dusk ambient is dim (lanterns matter)
+  PASS look g2: package MID card (domes) is out of the game
+  PASS look g2: MID backdrop uses our own card
+  PASS look g3: side part has no mesh without a material []
+  PASS look g3: side gap floor is honey stone, not the indigo tile grid
+  PASS look g3: runner part has no mesh without a material []
+  PASS look g3: FAR sky card is tall (covers a portrait view)
+  PASS look g3: FAR card extends the painted sky upward
+  PASS look g3: FAR card top edge (480 m) is above a portrait view
+  PASS look g3: training area has no mesh without a material []
+  PASS look n: spark all 1 surfaces matte as fur []
+  PASS look n: matte shader has no clearcoat and clamps the Tripo roughness map to the floor
+  PASS look n: crag all 1 surfaces matte as stone []
+  PASS look n: matte shader has no clearcoat and clamps the Tripo roughness map to the floor
+  PASS look n: prop dallah has a matte kind (brass)
+  PASS look n: dallah all 1 surfaces matte as brass []
+  PASS look n: matte shader has no clearcoat and clamps the Tripo roughness map to the floor
+  PASS look n: prop postal_bell has a matte kind (brass)
+  PASS look n: postal_bell all 1 surfaces matte as brass []
+  PASS look n: matte shader has no clearcoat and clamps the Tripo roughness map to the floor
+  PASS look n: prop parcel_shutter has a matte kind (timber)
+  PASS look n: parcel_shutter all 1 surfaces matte as timber []
+  PASS look n: matte shader has no clearcoat and clamps the Tripo roughness map to the floor
+  PASS look n: prop roshan_balcony has a matte kind (timber)
+  PASS look n: roshan_balcony all 1 surfaces matte as timber []
+  PASS look n: matte shader has no clearcoat and clamps the Tripo roughness map to the floor
+  PASS look n: prop recovery_parcel has a matte kind (paper)
+  PASS look n: recovery_parcel all 1 surfaces matte as paper []
+  PASS look n: matte shader has no clearcoat and clamps the Tripo roughness map to the floor
+  PASS look n: crag stone carries the moss tint
+  PASS look n: crag has no metal
+  PASS look n: Tripo Spark body carries a fur layer of 4 shells
+  PASS look n: the body mesh is skinned to the Tripo skeleton
+  PASS look n: fur layer shares the body's mesh, skin and skeleton
+  PASS look n: fur layer casts no shadow (perf)
+  PASS look n: body surface draws once (shells only on the fur layer)
+  PASS look n: every shell is the Tripo fur shader reading the Tripo texture (pink-only mask)
+  PASS look n: fur_tris = body tris x shells
+  PASS look n: fur off removes the fur layer (plush matte)
+  PASS look n: fur on again
+  PASS look n: shells grow along the skinned normal and only on the pink fur
+  PASS look n: found a body vertex bound to the left forearm
+  PASS look n: bone moves -> fur-carrying skin moves (0.048 m)
+  PASS look n: matte off restores the Tripo export materials
+  PASS look n: matte on again
+  PASS look n: spark_body.tres roughness 0.88 >= 0.80, no clearcoat
+  PASS look n: brass.tres roughness 0.50 >= 0.45, no clearcoat
+  PASS look n: teak.tres roughness 0.82 >= 0.80, no clearcoat
+  PASS look n: shader warm-up with the matte + fur materials runs and cleans up
+  PASS look w: default ribbon look is woven
+  PASS look w: comparison looks band/sadu/thread kept
+  PASS look w: unknown look -> woven
+  PASS look w: current look uses the woven shader
+  PASS look w: woven has uniform tension
+  PASS look w: woven has uniform width_m
+  PASS look w: woven has uniform length_m
+  PASS look w: woven has uniform split
+  PASS look w: woven has uniform tension_glow
+  PASS look w: woven takes tension
+  PASS look w: tension 0 stays 0
+  PASS look w: no glow by default (tension_glow 0)
+  PASS look w: the only emission is scaled by tension_glow
+  PASS look w: no permanent glow uniform
+  PASS look w: V branch 0.043 m narrower than the strip 0.085 m
+  PASS look w: both V branches together stay within the strip width (open air between)
+  PASS look w: V strand material carries split + narrow width
+  PASS look w: each strand owns its material
+  PASS motion: both stand-ins bind in parts mode
+  PASS motion spark: every hero state maps to its pose ()
+  PASS motion spark: every non-idle state moves the limbs ()
+  PASS motion spark: arms never sit on the eyes in any state ()
+  PASS motion spark: an unknown state falls back to idle
+  PASS motion crag: every hero state maps to its pose ()
+  PASS motion crag: every non-idle state moves the limbs ()
+  PASS motion crag: arms never sit on the eyes in any state ()
+  PASS motion crag: shoulder boulders stay on the torso
+  PASS motion crag: an unknown state falls back to idle
+  PASS motion spark: idle hands hang below the shoulder
+  PASS motion spark: carry lifts the hands above the shoulders
+  PASS motion spark: push leans forward with the hands in front (+Z = model front)
+  PASS motion spark: brace is a wide low stance
+  PASS motion spark: a fast flight tumbles tucked
+  PASS motion spark: a slow flight spreads the arms
+  PASS motion spark: tumble settles upright after the flight
+  PASS motion spark: every fun kind (10) plays, moves and ends ()
+  PASS motion spark: verb ring plays a one-shot
+  PASS motion spark: verb throw plays a one-shot
+  PASS motion spark: verb grab plays a one-shot
+  PASS motion crag: every fun kind (10) plays, moves and ends ()
+  PASS motion crag: verb ring plays a one-shot
+  PASS motion crag: verb throw plays a one-shot
+  PASS motion crag: verb grab plays a one-shot
+  PASS motion spark: land squash grows with speed (0.12 at 3 m/s, 0.36 at 14 m/s)
+  PASS motion spark: land squash is capped
+  PASS motion spark: squash springs back after landing
+  PASS motion spark: feet stay on the ground at rest
+  PASS motion crag: land squash grows with speed (0.14 at 3 m/s, 0.36 at 14 m/s)
+  PASS motion crag: land squash is capped
+  PASS motion crag: squash springs back after landing
+  PASS motion crag: feet stay on the ground at rest
+  PASS motion: the head turns toward the partner
+  PASS motion: Spark blinks (eye scale y down to 0.09)
+  PASS motion: a paper-plane hit makes the partner wobble
+  PASS motion: Crag boulders wobble on a speed change (2.308)
+  PASS motion: Crag torso boulder moves
+  PASS motion: Spark tuft jiggles on fluff shake (0.53 rad)
+  PASS motion: a remote hero's speed comes from its shown position (6.0 m/s)
+  PASS motion: stand-in idle script handed over
+  PASS motion: no new objects per frame (2029 -> 2029)
+  PASS motion: one hero update under 1.5 ms on the test server (12 us)
+  PASS rig map: bone name families ()
+  PASS rig map: bone name sides ()
+  PASS rig map mixamo: finds hips, head and both hands
+  PASS rig map mixamo: every slot on the right bone ()
+  PASS rig map mixamo: no finger, toe or clavicle mapped
+  PASS rig map L_/R_: finds hips, head and both hands
+  PASS rig map L_/R_: every slot on the right bone ()
+  PASS rig map L_/R_: no finger, toe or clavicle mapped
+  PASS rig mixamo: HeroMotion drives the bones
+  PASS rig mixamo: idle hangs the T-pose arms down (hand y 0.61, shoulder 0.90)
+  PASS rig mixamo: carry lifts the hands over the head
+  PASS rig mixamo: push puts the hands in front (+Z)
+  PASS rig mixamo: knees bend in the tucked flight (2.00 rad)
+  PASS rig mixamo: every state and fun kind drives the bones without errors
+  PASS rig L_/R_: HeroMotion drives the bones
+  PASS rig L_/R_: idle hangs the T-pose arms down (hand y 0.57, shoulder 0.86)
+  PASS rig L_/R_: carry lifts the hands over the head
+  PASS rig L_/R_: push puts the hands in front (+Z)
+  PASS rig L_/R_: knees bend in the tucked flight (2.00 rad)
+  PASS rig L_/R_: every state and fun kind drives the bones without errors
+  PASS tripo: Tripo heroes are the default look
+  PASS tripo: stand-in stays selectable
+  PASS tripo: export flag slingbound/hero_look=standin picks the stand-in
+  PASS tripo spark: scene loads with the visual contract
+  PASS tripo spark: height 1.000 m within 5 % of 1.00 m
+  PASS tripo spark: RingPoint rides a bone (BoneAttachment3D)
+  PASS tripo spark: RingPoint on the chest front ((-0.018009, 0.437214, -0.291517))
+  PASS tripo spark: rig_map reads the real skeleton (hips=mixamorig_Hips spine=mixamorig_Spine chest=mixamorig_Spine2 neck=mixamorig_Neck head=mixamorig_Head upper_arm_l=mixamorig_LeftArm lower_arm_l=mixamorig_LeftForeArm hand_l=mixamorig_LeftHand upper_arm_r=mixamorig_RightArm lower_arm_r=mixamorig_RightForeArm hand_r=mixamorig_RightHand upper_leg_l=mixamorig_LeftUpLeg lower_leg_l=mixamorig_LeftLeg foot_l=mixamorig_LeftFoot upper_leg_r=mixamorig_RightUpLeg lower_leg_r=mixamorig_RightLeg foot_r=mixamorig_RightFoot missing=eye_l,eye_r)
+  PASS tripo spark: left/right read right (faces the hero's front)
+  PASS tripo spark: 47938 tris <= 60000
+  PASS tripo spark: HeroMotion drives the bones
+  PASS tripo spark: the idle script hands over to HeroMotion
+  PASS tripo crag: scene loads with the visual contract
+  PASS tripo crag: height 1.350 m within 5 % of 1.35 m
+  PASS tripo crag: CorePoint rides a bone (BoneAttachment3D)
+  PASS tripo crag: CorePoint on the chest front ((0.116429, 0.791717, -0.382105))
+  PASS tripo crag: rig_map reads the real skeleton (hips=mixamorig_Hips spine=mixamorig_Spine chest=mixamorig_Spine2 neck=mixamorig_Neck head=mixamorig_Head upper_arm_l=mixamorig_LeftArm lower_arm_l=mixamorig_LeftForeArm hand_l=mixamorig_LeftHand upper_arm_r=mixamorig_RightArm lower_arm_r=mixamorig_RightForeArm hand_r=mixamorig_RightHand upper_leg_l=mixamorig_LeftUpLeg lower_leg_l=mixamorig_LeftLeg foot_l=mixamorig_LeftFoot upper_leg_r=mixamorig_RightUpLeg lower_leg_r=mixamorig_RightLeg foot_r=mixamorig_RightFoot missing=eye_l,eye_r)
+  PASS tripo crag: left/right read right (faces the hero's front)
+  PASS tripo crag: 57207 tris <= 60000
+  PASS tripo crag: HeroMotion drives the bones
+  PASS tripo crag: the idle script hands over to HeroMotion
+  PASS tripo spark: every hero state maps to its pose on the bones ()
+  PASS tripo spark: every non-idle state moves the bones ()
+  PASS tripo spark: hands keep off the face and out of the head in every state ()
+  PASS tripo spark: the ribbon point follows the body's motion
+  PASS tripo spark: every fun kind, high five and verb plays on the bones ()
+  PASS tripo spark: a hard landing squashes the body
+  PASS tripo crag: every hero state maps to its pose on the bones ()
+  PASS tripo crag: every non-idle state moves the bones ()
+  PASS tripo crag: hands keep off the face and out of the head in every state ()
+  PASS tripo crag: the ribbon point follows the body's motion
+  PASS tripo crag: every fun kind, high five and verb plays on the bones ()
+  PASS tripo crag: a hard landing squashes the body
+  PASS tripo prop postal_bell: scene loads
+  PASS tripo prop postal_bell: StaticBody3D root with grip
+  PASS tripo prop postal_bell: collision shapes carry grip
+  PASS tripo prop postal_bell: 0.60 m as planned ((0.526722, 0.6, 0.512653))
+  PASS tripo prop postal_bell: 20086 tris <= 25000
+  PASS tripo prop parcel_shutter: scene loads
+  PASS tripo prop parcel_shutter: StaticBody3D root with grip
+  PASS tripo prop parcel_shutter: collision shapes carry grip
+  PASS tripo prop parcel_shutter: 2.80 m as planned ((0.518417, 2.58935, 2.8))
+  PASS tripo prop parcel_shutter: 18299 tris <= 25000
+  PASS tripo prop roshan_balcony: scene loads
+  PASS tripo prop roshan_balcony: StaticBody3D root with grip
+  PASS tripo prop roshan_balcony: collision shapes carry grip
+  PASS tripo prop roshan_balcony: 2.00 m as planned ((0.880313, 1.906204, 2.0))
+  PASS tripo prop roshan_balcony: 19178 tris <= 25000
+  PASS tripo prop dallah: scene loads
+  PASS tripo prop dallah: RigidBody3D root with grip
+  PASS tripo prop dallah: collision shapes carry grip
+  PASS tripo prop dallah: 0.45 m as planned ((0.431094, 0.45, 0.233683))
+  PASS tripo prop dallah: 19351 tris <= 25000
+  PASS tripo prop dallah: grab / carry / throw like the parcel
+  PASS tripo prop recovery_parcel: scene loads
+  PASS tripo prop recovery_parcel: RigidBody3D root with grip
+  PASS tripo prop recovery_parcel: collision shapes carry grip
+  PASS tripo prop recovery_parcel: 0.50 m as planned ((0.412066, 0.336834, 0.5))
+  PASS tripo prop recovery_parcel: 20344 tris <= 25000
+  PASS tripo prop recovery_parcel: grab / carry / throw like the parcel
+  PASS net: clock syncs at 0 ms
+  PASS net: clock error 0.00 ms < 5 at 0 ms fake lag
+  PASS net: guest clock never goes back at 0 ms
+  PASS net: measured rtt 0.0 ms near fake 0
+  PASS net: clock syncs at 150 ms
+  PASS net: clock error 0.00 ms < 5 at 150 ms fake lag
+  PASS net: guest clock never goes back at 150 ms
+  PASS net: measured rtt 150.0 ms near fake 150
+  PASS net: ENet LAN server listens (port 43714)
+  PASS net: ENet guest connects over LAN ({ "role": "guest", "path": "lan" })
+  PASS net: event + snapshot cross the ENet link
+  PASS net: snapshot keeps Vector3 values
+  PASS net: stats path is lan
+  PASS net[udp]: 100+25 events in order exactly once at 150 ms + 2 % loss (got 100+25)
+  PASS net[tcp]: 40+10 events in order exactly once at 150 ms + 2 % loss (got 40+10)
+  PASS net: joined over the relay first
+  PASS net: LAN direct wins the race (324 ms, guest won)
+  PASS net: events in order exactly once across the path switch (20)
+  PASS net: dead LAN falls back to the relay in 1511 ms
+  PASS net: 2000 room codes are 5 chars from the alphabet
+  PASS net: room codes rarely repeat (2000 unique of 2000)
+  PASS net: no look-alike characters in the code alphabet
+  PASS net: typed code is cleaned (spaces, dash, lower case)
+  PASS net: impossible codes refused
+  PASS net: shared state set before join reaches the guest
+  PASS net: host shared change reaches the guest
+  PASS net: guest request goes through the host and back
+  PASS net: loopback pair connects with lag
+  PASS net: snapshots newest-wins (no older after newer, 59 received)
+  PASS net: ~30 Hz snapshots arrive at 2 % loss (59 in 2 s)
+  PASS net: latest snapshot is recent
+  PASS runner: chaser, bells, carts are pure functions of session time
+  PASS runner: fold waits before the anchor time
+  PASS runner: fold front moves forward (-Z)
+  PASS runner: fold never enters the plaza
+  PASS runner: sorting cart crosses the whole street
+  PASS runner: gap lookup
+  PASS runner: checkpoint lookup
+  PASS runner controls: drag steers relative (0.75 m)
+  PASS runner controls: steering is smoothed
+  PASS runner controls: a drag is not a jump
+  PASS runner controls: tap jumps
+  PASS runner controls: swipe down ducks
+  PASS runner controls: hold on own hero starts a hold
+  PASS runner controls: release gives sling power (0.69)
+  PASS runner controls: quick tap on the hero jumps
+  PASS runner: no start while one phone is sideways
+  PASS runner: nobody runs before both orient
+  PASS runner: only the turned phone sent orient
+  PASS runner: both turned -> host GO reaches both
+  PASS runner: same GO time on both phones
+  PASS runner: GO is in the future (both start together)
+  PASS runner: chaser at the same place on both phones at the same session time (150 ms lag)
+  PASS runner: chaser advanced (7.3 -> -44.3)
+  PASS runner: both heroes run forward
+  PASS runner: caught hero starts a reel (partner ahead)
+  PASS runner: host heard the caught event
+  PASS runner: reeled to the partner in 1.5 s (1.88 m)
+  PASS runner: reeled hero is safe ahead of the fold
+  PASS runner: free again, no restart
+  PASS runner: host-owned checkpoint 1 reached on both
+  PASS runner: both caught -> host restart on both
+  PASS runner: back at the last post box (z -110.0 / -110.0)
+  PASS runner: fold re-anchored behind the post box on both
+  PASS runner: nobody still caught after the restart
+  PASS runner: bot pair reaches the plaza and turns back (lag 0 ms, sim 67 s)
+  PASS runner: run length 64 s is about 60-90 s (lag 0)
+  PASS runner: host sends part training once (lag 0)
+  PASS runner: ribbon slings happened and arrived (lag 0)
+  PASS runner: bot pair reaches the plaza and turns back (lag 150 ms, sim 66 s)
+  PASS runner: run length 63 s is about 60-90 s (lag 150)
+  PASS runner: host sends part training once (lag 150)
+  PASS runner: ribbon slings happened and arrived (lag 150)
+  PASS side: same light state = identical ledges on two instances (7 ledges)
+  PASS side: a lantern push sends one reliable toy event
+  PASS side: after the event both phones have identical ledges through the slide
+  PASS side: simultaneous pushes end in the same state on both phones
+  PASS side: 4 lantern notches (1 m left) move the shadow stairs 4.333 m right (want 4.33)
+  PASS side: lantern at the start: the stairs stop 4.53 m short of the balcony (not reachable)
+  PASS side: lantern at notch 4: top step 0.20 m from the balcony, 0.60 m below
+  PASS side: a ray stands on the shadow step's collision at y 5.60
+  PASS side: lantern moved back: that step's collision is gone
+  PASS side: the shadows slide with the lantern (mid-slide 27.53)
+  PASS side: the bar starts flat overhead: no way to the nook (3.05), heroes walk under (bottom 2.75)
+  PASS side: 2 crank turns: the shadow ramp reaches the hidden nook (top 4.46 at x 13.6, nook 4.30)
+  PASS side: stick up 1 s: still on the front line (z 0.0000)
+  PASS side: diagonal stick + jump: moves along the alley only (x 5.42 z 0.0000)
+  PASS side: no layer change from walking or jumping
+  PASS side: the stair door does nothing from the front while bolted
+  PASS side: sling into the screen lands on the back roofs layer (z -12.00)
+  PASS side: that layer change is the sling's
+  PASS side: the camera glided to the back layer (depth -11.94)
+  PASS side: the stair door unbolts from the back (no travel)
+  PASS side: the partner takes the stair door to the back roofs
+  PASS side: a fall into the gap respawns on the same layer
+  PASS side: the camera leads in the running direction (2.39 m)
+  PASS side: start() makes this phone's hero
+  PASS side: the partner is shown from Net snapshots
+  PASS side: sling + side camera in place
+  PASS side: a partner's push event moves this phone's lantern
+  PASS side: the partner leaving through the end door ends the part here too
+  PASS side: bots never stuck
+  PASS side: walking past nook 1 sets off its paper birds
+  PASS side: Spark changed layer by sling, Crag by the stair door ([{ "who": "spark", "from": 0, "to": 1, "how": "sling" }, { "who": "crag", "from": 0, "to": 1, "how": "door" }])
+  PASS side: the bot pair reaches the end door and goes back to training (22.4 s game time, 2786 ms)
+  PASS side tripo: the heroes wear the tripo body (res://assets/heroes/tripo_idle.gd)
+  PASS side tripo: the rope sim holds both heroes at their gameplay point, not the body's marker (worst 0.0000 m)
+  PASS side tripo: Spark's sling to the back roofs never turns into a pole swing (0)
+  PASS side tripo: the bot pair with the hero bodies on reaches the end door (22.4 s game time, 22250 ms, switches [{ "who": "spark", "from": 0, "to": 1, "how": "sling" }, { "who": "crag", "from": 0, "to": 1, "how": "door" }])
+  PASS side standin: the heroes wear the standin body (res://assets/heroes/standin_idle.gd)
+  PASS side standin: the rope sim holds both heroes at their gameplay point, not the body's marker (worst 0.0000 m)
+  PASS side standin: Spark's sling to the back roofs never turns into a pole swing (0)
+  PASS side standin: the bot pair with the hero bodies on reaches the end door (22.3 s game time, 11030 ms, switches [{ "who": "spark", "from": 0, "to": 1, "how": "sling" }, { "who": "crag", "from": 0, "to": 1, "how": "door" }])
+  PASS catch 0 ms: the CATCHER's phone decides within 0.35 m of the contact volume, allowance 0 ms (capped 150) (0.7740091085434 m / 0.0)
+  PASS catch 0 ms: the flyer's phone confirms (0 disagreements) and holds the flyer at the catcher's hands
+  PASS answer chain: a draw right after the catch launches with +5.14 m/s (30 % of 17.1 m/s) (got 5.13762531280518, 21.58 vs 16.44)
+  PASS catch: the flyer is let go after the 0.30 s hold
+  PASS catch 80 ms: the CATCHER's phone decides within 0.35 m of the contact volume, allowance 40 ms (capped 150) (0.66113752126694 m / 0.04)
+  PASS catch 80 ms: the flyer's phone confirms (0 disagreements) and holds the flyer at the catcher's hands
+  PASS answer chain: the 0.30 s window closes (a later draw is refused: 'no_anchor')
+  PASS catch 400 ms: the CATCHER's phone decides within 0.35 m of the contact volume, allowance 150 ms (capped 150) (0.77400487661362 m / 0.15)
+  PASS catch 400 ms: the flyer's phone confirms (0 disagreements) and holds the flyer at the catcher's hands
+  PASS catch: without BRACE/CATCH held the flyer passes (the CATCH verb was offered: true)
+  PASS catch disagreement outside 0.35 m + allowance: refused, logged, the catcher hears catch_no ({ "decided": 0, "confirmed": 0, "disagree": 1, "favoured": 0, "refused": 1, "max_disagree_m": 2.11102374076843 })
+  PASS catch disagreement inside 0.35 m + allowance: favoured (a catch), logged (2 logged)
+  PASS recall: the fallen hero is back in 1.77 s (1.5-2 s)
+  PASS recall: back beside the partner on the ledge (1.20 m off, y 8.00, on floor true), the partner kept position (0.020 m), the partner phone got `recall`
+  PASS anchor reach: a braced partner 15.5 m away anchors (<= 16 m)
+  PASS anchor reach: 17 m away is out of reach ('too_far')
+  PASS anchor reach: the draw is refused with a visible slack ribbon (slack_t 0.78)
+  PASS anchor reach: the slack ribbon shows for under a second
+  PASS anchor reach: back inside 16 m the draw starts
+  PASS request_recall: not for the other phone's hero
+  PASS request_recall: both below the kill plane = false (checkpoint)
+  PASS request_recall: partner safe = recall starts and returns true
+  PASS request_recall: asked again during the recall = still true
+  PASS request_recall: the faller is beside the partner after the recall (1.20 m off, y -0.00), the partner kept still
+  PASS tug: the tugger's phone never moves the partner's body (view moved 0.0000 m; partner unmoved before the event 0.0000 m)
+  PASS tug: the partner's phone reels its own hero toward the tugger, capped (2.90 m in ~1 s, cap 4.5 m/s)
+  PASS tug: letting go of TOOL stops the pull
+  PASS paired launch: the anchor releases 0.1 s after / before the flyer = both fly ({ "flew": true, "ok": true } / { "flew": true, "ok": true }), both phones agree; 0.3 s later = no ({ "flew": false, "ok": true })
+  PASS cannonball: Crag fully drawn from a braced Spark flies low and hard (pitch 32.0 deg, apex 2.7 m vs a lob 7.7 m)
+  PASS cannonball: the crate in group fragile breaks with a burst on Crag's phone and the `smash` reaches the partner's phone
+  PASS cannonball: Spark's flight leaves a fragile crate whole; Spark flies farther (21.1 m) than the cannonball (17.4 m)
+  PASS pole swing: the ribbon wraps the post (true), the flyer circles it at a steady radius (3.00-3.00 m), JUMP releases along the tangent (true), the partner gets the launch (true)
+  PASS trampoline: landing on the braced partner's head bounces up 7.0 m/s (small), the partner phone sees it
+  PASS trampoline: no bounce off a partner who is not braced
+  PASS sling moves: every pair step ran inside a physics frame (0 outside)
+  PASS sling rope: relaxed 6 m sags with no tension (rest 6.00, tension 0.00, mid y 0.46)
+  PASS sling rope: walking apart tugs (max tension 1.00) and the rest length follows to 10 m (10.00, tension now 0.00)
+  PASS sling rope: pays out during a 30 m+ flight (rest 40.0 m for 40.0 m, max tension 0.00)
+  PASS sling rope: reels back to 6 m when slack (6.00)
+  PASS sling rope: tension is capped at 1 (1.000)
+  PASS sling rope: wraps around a post (path 9.24 m vs straight 8.00 m, no point inside the post)
+  PASS sling force: capped at 10 m/s^2 even for a 19 m stretch (10.00)
+  PASS sling force: a 300 ms old partner 18 m off moves us at most 3.00 m/s in 0.3 s (got 2.72, max per step 0.167)
+  PASS sling draw: refused with no braced partner and no post (no_anchor)
+  PASS sling V: drawing opens two strands from the anchor's core spread by the hands to the ring (gap 0.87 m, open-air area 1.65 m^2)
+  PASS sling V: two split strand meshes (own material each) draw while loaded, the band hides (92 tris, look woven)
+  PASS sling V: the anchor's phone shows the same V from the flyer's snapshot
+  PASS sling charge: grows with time (0.37 at 0.3 s) and is full at 0.8 s (1.00 at 0.8 s)
+  PASS sling charge: a release at 0.2 s is no launch
+  PASS sling charge: a release at 0.26 s launches
+  PASS sling launch: one reliable launch event per release
+  PASS sling V: on release the strands return to one band
+  PASS sling net 0 ms: the partner gets the same launch event (who, vel)
+  PASS sling net 0 ms: event arrives after ~half the round trip (17 ms)
+  PASS sling net 0 ms: predicted landing vs owner landing 0.039 m over a 15.0 m sling (max rope tension in flight 0.00)
+  PASS sling net 0 ms: the partner's view of the flyer at the owner's landing is 0.072 m off
+  PASS sling net 80 ms: the partner gets the same launch event (who, vel)
+  PASS sling net 80 ms: event arrives after ~half the round trip (50 ms)
+  PASS sling net 80 ms: predicted landing vs owner landing 0.039 m over a 15.0 m sling (max rope tension in flight 0.00)
+  PASS sling net 80 ms: the partner's view of the flyer at the owner's landing is 0.072 m off
+  PASS sling net 150 ms: the partner gets the same launch event (who, vel)
+  PASS sling net 150 ms: event arrives after ~half the round trip (83 ms)
+  PASS sling net 150 ms: predicted landing vs owner landing 0.039 m over a 15.0 m sling (max rope tension in flight 0.00)
+  PASS sling net 150 ms: the partner's view of the flyer at the owner's landing is 0.072 m off
+  PASS sling envelope spark: distance 12-22 m, apex 6-10 m: p0.0: 12.9 m/6.0 m (hero 13.1/6.0) p0.5: 17.0 m/7.9 m (hero 17.1/7.9) p1.0: 21.1 m/9.8 m (hero 21.2/9.8)
+  PASS sling envelope crag: distance 8-16 m, apex 4-8 m: p0.0: 8.3 m/4.0 m (hero 8.4/4.0) p0.5: 12.0 m/5.8 m (hero 12.1/5.8) p1.0: 15.8 m/7.7 m (hero 15.8/7.7)
+  PASS sling bodies: the drawn ring sits on the body's marker, apart from the gameplay point (0.33 m)
+  PASS sling bodies: the rope sim holds the heroes at their gameplay point for every look (worst 0.0000 m)
+  PASS sling bodies: a 15 m sling lands on the same spot with no body / stand-in / Tripo ((0.0, 0.000741, -15.03875); off 0.000 / 0.000 m)
+  PASS sling tests: every pair step ran inside a physics frame (0 outside)
+  PASS analytics: fixture ANALYTICS_EVENTS_R3.json present
+  PASS analytics: pair_invite_created is an event of the file
+  PASS analytics: pair_invite_created payload fields and order match the file
+  PASS analytics: pair_join_result is an event of the file
+  PASS analytics: pair_join_result payload fields and order match the file
+  PASS analytics: pair_ready is an event of the file
+  PASS analytics: pair_ready payload fields and order match the file
+  PASS analytics: local_permission_result is an event of the file
+  PASS analytics: local_permission_result payload fields and order match the file
+  PASS analytics: network_sample is an event of the file
+  PASS analytics: network_sample payload fields and order match the file
+  PASS analytics: reconnect_result is an event of the file
+  PASS analytics: reconnect_result payload fields and order match the file
+  PASS analytics: tutorial_skill is an event of the file
+  PASS analytics: tutorial_skill payload fields and order match the file
+  PASS analytics: control_candidate is an event of the file
+  PASS analytics: control_candidate payload fields and order match the file
+  PASS analytics: sling_attempt is an event of the file
+  PASS analytics: sling_attempt payload fields and order match the file
+  PASS analytics: catch_result is an event of the file
+  PASS analytics: catch_result payload fields and order match the file
+  PASS analytics: pocket_attempt_end is an event of the file
+  PASS analytics: pocket_attempt_end payload fields and order match the file
+  PASS analytics: orientation_choice is an event of the file
+  PASS analytics: orientation_choice payload fields and order match the file
+  PASS analytics: ping_used is an event of the file
+  PASS analytics: ping_used payload fields and order match the file
+  PASS analytics: settings_changed is an event of the file
+  PASS analytics: settings_changed payload fields and order match the file
+  PASS analytics: extra session_start does not shadow a file event
+  PASS analytics: extra session_end does not shadow a file event
+  PASS analytics: extra ring_enter does not shadow a file event
+  PASS analytics: extra ring_complete does not shadow a file event
+  PASS analytics: extra counterweight_exchange does not shadow a file event
+  PASS analytics: extra part_entered does not shadow a file event
+  PASS analytics: extra scheme_in_use does not shadow a file event
+  PASS analytics: sling_attempt id (sling_attempt:t1:spark:crag:high-lan)
+  PASS analytics: second chance catch
+  PASS analytics: pair_ready
+  PASS analytics: join fail
+  PASS analytics: Classic has no hold threshold
+  PASS analytics: Action scheme threshold
+  PASS analytics: session start carries the join path
+  PASS analytics: ring enter / complete
+  PASS analytics: counterweight exchange
+  PASS analytics: part entered
+  PASS analytics: unknown names are refused
+  PASS analytics: payload_ok checks fields
+  PASS analytics: test mode prefix keeps tests out of funnels
+  PASS analytics: id shape ok (sling_attempt:t1:spark:crag:high-lan)
+  PASS analytics: id has no spaces / capitals
+  PASS analytics: id shape ok (catch_result:t3:crag:second_chance:mid)
+  PASS analytics: id has no spaces / capitals
+  PASS analytics: id shape ok (pair_ready:relay:spark_crag:yes)
+  PASS analytics: id has no spaces / capitals
+  PASS analytics: id shape ok (pair_join_result:relay:fail:bad_code:2_5)
+  PASS analytics: id has no spaces / capitals
+  PASS analytics: id shape ok (scheme_in_use:classic:0)
+  PASS analytics: id has no spaces / capitals
+  PASS analytics: id shape ok (scheme_in_use:action:500)
+  PASS analytics: id has no spaces / capitals
+  PASS analytics: id shape ok (session_start:lan:package:300)
+  PASS analytics: id has no spaces / capitals
+  PASS analytics: id shape ok (ring_enter:t2)
+  PASS analytics: id has no spaces / capitals
+  PASS analytics: id shape ok (ring_complete:t2:30_120)
+  PASS analytics: id has no spaces / capitals
+  PASS analytics: id shape ok (counterweight_exchange:t4:ok)
+  PASS analytics: id has no spaces / capitals
+  PASS analytics: id shape ok (part_entered:runner:spark)
+  PASS analytics: id has no spaces / capitals
+  PASS analytics: id shape ok (test_ring_enter:t0)
+  PASS analytics: id has no spaces / capitals
+  PASS analytics: free text is reduced to enum-like words
+  PASS classic fun: partner at 3 m, grounded = fun action, no tug (fun 1 tool 0)
+  PASS classic fun: partner at 6 m stays the ribbon tug
+  PASS classic fun: in the air it stays the tug
+  PASS classic fun: a machine nearby wins over fun
+  PASS classic fun: the Action scheme keeps the tug on its tool slot
+  PASS hero snapshot: kept when it arrives before the hero is in the tree
+  PASS ui lobby: host got a 5-character code from Net.host()
+  PASS ui lobby: code shown big
+  PASS ui lobby: host has a Share button
+  PASS ui lobby: host = Spark, guest = Crag
+  PASS ui lobby: READY waits for the partner
+  PASS ui lobby: partner arrives -> READY enabled
+  PASS ui lobby: partner card shown
+  PASS ui lobby: one READY is not enough
+  PASS ui lobby: both READY -> go to play
+  PASS ui lobby model: hello shows the partner
+  PASS ui lobby model: asking does not swap yet
+  PASS ui lobby model: a No keeps the heroes
+  PASS ui lobby model: partner asked
+  PASS ui lobby model: both accepted -> swapped, READY cleared
+  PASS ui lobby model: swap back
+  PASS ui rejoin: hidden at first
+  PASS ui rejoin: names the partner
+  PASS ui rejoin: hides when the partner is back
+  PASS net notice: no card on a healthy path
+  PASS net notice: same /24 + LAN timeout = guest Wi-Fi card
+  PASS net notice: LAN attempt from another network says nothing (a friend on cellular)
+  PASS net notice: a refused LAN attempt = local network off
+  PASS net notice: iPhone host whose LAN server cannot start = local network off
+  PASS net notice: desktop without a LAN port is not a permission problem
+  PASS net notice: same /24 test
+  PASS net notice: hidden when all is well
+  PASS net notice: guest Wi-Fi card shows on a LAN timeout
+  PASS net notice: plain words, names guest networks
+  PASS net notice: tapped away stays away while the same failure lasts
+  PASS net notice: local network off card has Open Settings
+  PASS net notice: card hides on recovery
+  PASS net notice: without Online it says so, never pretends
+  PASS net notice: with Online it says the game continues Online
+  PASS reconnect: our own leave shows no card
+  PASS reconnect: card names the friend
+  PASS reconnect: says the game is paused
+  PASS reconnect: card hides when the friend is back
+  PASS reconnect: the clocks freeze while waiting
+  PASS reconnect: and resume when the friend is back
+  PASS reconnect: a card leaving the tree drops its freeze
+  PASS turn: the way into the runner has a Not now button
+  PASS turn: partner said Not now -> card closes, nothing starts
+  PASS turn: my Not now closes it too
+  PASS turn: coming back to landscape cannot be declined
+  PASS pill: 1 s of bad rtt is not weak yet
+  PASS pill: exactly 2 s is not yet (needs more than 2 s)
+  PASS pill: weak after more than 2 s above 200 ms
+  PASS pill: stays weak while recovering (no flicker)
+  PASS pill: clears after 2 s of good rtt
+  PASS pill: a good sample resets the bad timer
+  PASS pill: exactly 200 ms is not weak
+  PASS pill: shows Same Wi-Fi badge and weak chip
+  PASS pill: online badge only when the line is fine
+  PASS pill: never takes touches
+  PASS ui pause: scheme switch exists
+  PASS ui pause: Action button writes controls.scheme = action
+  PASS ui pause: Package writes controls.scheme = package
+  PASS ui pause: Action hold time choice 180 / 300 / 500 ms
+  PASS ui pause: hold time saved (500 ms)
+  PASS ui pause: brace toggle mode saved
+  PASS ui pause: ribbon look saved
+  PASS ui pause: left-handed saved
+  PASS ui pause: show me everything defaults ON
+  PASS ui pause: has NewPlayerToggle
+  PASS ui pause: has InvertYToggle
+  PASS ui pause: has HapticsToggle
+  PASS ui pause: has CamSensSlider
+  PASS ui pause: has ButtonSizeSlider
+  PASS ui pause: has PartTraining
+  PASS ui pause: has PartSide
+  PASS ui pause: has PartRunner
+  PASS ui pause: has LeaveButton
+  PASS ui pause: has ResumeButton
+  PASS ui pause: go to part Side view
+  PASS ui pause: path badge Same Wi-Fi / Online
+  PASS ui pause: weak above 200 ms
+  PASS ui turn: hidden at first
+  PASS ui turn: shows when the part needs the other way
+  PASS ui turn: stays while the phone is still the wrong way
+  PASS ui turn: turned but waits for the partner
+  PASS ui turn: both turned -> hides
+  PASS ui turn: back to landscape works too
+  PASS ui code: upper-cases
+  PASS ui code: 0 O 1 I are dropped
+  PASS ui code: L and I are dropped
+  PASS ui code: cut to 5
+  PASS ui code: look-alike detected
+  PASS ui code: valid = 5 safe characters
+  PASS ui code: keypad has no I
+  PASS ui code: keypad has no L
+  PASS ui code: keypad has no O
+  PASS ui code: keypad has no 0
+  PASS ui code: keypad has no 1
+  PASS ui code: paste of the link gives the code
+  PASS ui code: paste of a message gives the code
+  PASS ui code: paste of nothing useful gives nothing
+  PASS ui link: slingbound:// deep link
+  PASS ui link: https link
+  PASS ui link: other hosts ignored
+  PASS ui link: found among launch args
+  PASS ui link: share link shape
+  PASS ui wifi note: iOS once
+  PASS ui join: typed look-alikes rejected
+  PASS ui join: keys add characters
+  PASS ui join: no O or 0 key
+  PASS ui join: backspace
+  PASS ui join: every key meets touch size
+  PASS play: the training part loads
+  PASS play: two heroes (2)
+  PASS play: one local hero, one shown from the net
+  PASS play: host plays Spark, partner Crag
+  PASS play: heroes wear the lane G stand-ins
+  PASS play: camera rig with the current camera
+  PASS play: rig follows the local hero and steers its stick
+  PASS play: Controls knows the hero and the camera
+  PASS play: touch HUD wired to Controls
+  PASS play: pause button
+  PASS play: TEST watermark shows with the first-test override
+  PASS play: watermark is small, top-left corner, hidden without the override
+  PASS play: turn-phone and rejoin cards are there
+  PASS play: one Sling node with the camera rig
+  PASS play: test partner bot running
+  PASS play: the local hero stands at the yard spawn
+  PASS play: the partner hero (from net snapshots) stands near you
+  PASS play: Controls gets the partner distance (2.3 m)
+  PASS play: the test partner follows you
+  PASS play: the test partner braces while you draw
+  PASS play: falling out of the world brings you back (recall along the ribbon or checkpoint)
+  PASS play: an unknown part keeps the current one
+  PASS play: event part runner starts the runner part
+  PASS play: training camera, HUD and heroes parked while the runner runs
+  PASS play: training hero takes no input in the runner
+  PASS play: runner finished -> back in training with camera + HUD
+  PASS play: training hero takes input again
+  PASS play: event part side starts the side view with training parked
+  PASS play: side view finished -> back in training
+  PASS second chance: no window without a sling flight first
+  PASS second chance: a missed flyer opens the window
+  PASS second chance: the catcher on the rail gets catch_ready (lane K rank-1 catch verb)
+  PASS second chance: catch beats every other verb in the priority table
+  PASS second chance: no catch_ready while the flyer is out of reach (> 4 m)
+  PASS second chance: no catch without the catch input
+  PASS second chance: holding catch inside the window sends ONE catch2 event (1)
+  PASS second chance: one try per miss; catch_ready clears
+  PASS second chance: the swing back lands on the return point ((0.0, 8.200001, -79.5))
+  PASS second chance: the flyer's phone swings its own hero back
+  PASS second chance: a catch after the short window is no save
+  PASS counterweight: loopback host + guest online with a synced clock
+  PASS counterweight: one hero on each platform, platform 0 up
+  PASS counterweight: the guest's drop request starts the exchange on both phones
+  PASS counterweight: both phones show the same pulley position (1.000 / 1.000)
+  PASS counterweight: dropper goes down, partner rises 6.0 m (dirs [-1] / [-1])
+  PASS counterweight: the lower platform cannot drop
+  PASS counterweight: the exchange runs the other way too (dirs [-1, 1] / [-1, 1]; p 0.0001 moving false upper 1 on 0/1 ok true)
+  PASS counterweight: it needs both heroes on the platforms
+  PASS counterweight: the pulley handle offers lane K's rank-4 machine verb
+  PASS counterweight: brake eases it to a stop mid-way (p 0.57)
+  PASS counterweight: a redirect mid-cycle is the secret on both phones ({ "h": 1, "g": 1 })
+  PASS counterweight: the redirect sends the platforms back smoothly
+  PASS toys: host's sling distance shows on the guest board (12.3)
+  PASS toys: the guest's longer flight is the pair best on both, a shorter one does not lower it
+  PASS toys: ring-the-bells pair time reaches the guest
+  PASS toys: a guest's caught letter counts once on both
+  PASS toys: tug-of-war knot is host state seen by the guest (-1.2)
+  PASS toys: bowling pins are in group fragile
+  PASS toys: show-me board (guest) turns show-me-everything off on both phones
+  PASS toys: the gates follow the board (closed)
+  PASS toys: show-me board (host) turns it back on for both; gates open
+  PASS course: one time per control scheme (1.8 / 1.6)
+  PASS course: each scheme keeps its own time
+  PASS course: both times shown side by side on the board
+  PASS course: the finish bell needs the brace step first
+  PASS merge: 4600 kit meshes became 436 merged meshes
+  PASS merge: fewer mesh nodes after (4794 -> 635)
+  PASS merge: every collision shape kept (389 / 389)
+  PASS merge: every merged mesh keeps its material
+  PASS demo: demo_run plays ~60 s with autoplay
+  PASS demo: the autopilot is playing within 5 s (778 ms)
+  PASS demo: walk and jump beats run (["play", "walk", "jump"])
+  PASS toys: suite under 60 s (4228 ms)
+  PASS world: the Postyard is about 180 x 180 m (183 x 183)
+  PASS world: vertical reach to the 24 m tower (top 29.0 m)
+  PASS world: every solid (365) carries a grip value
+  PASS world: surfaces include stone (1.0), paper slope (0.25) and wet tile (0.0)
+  PASS world: movers of all three kinds (rotate, path, swing)
+  PASS world: crane arm, mail carousel and parcel shutter run on the shared clock
+  PASS world: gates for 7 different moves
+  PASS world: one ring gate per ring (["T0", "T1", "T2", "T3", "T4", "T5"])
+  PASS world: doors to the side-view alley and the runner street
+  PASS world: checkpoints on every ring (6)
+  PASS world: two swing poles the ribbon wraps
+  PASS world: sturdy posts the sling can anchor on
+  PASS world: lane D2's toy plaza is in the Postyard
+  PASS world: interactables for grab, push, climb, hang, slide, ring, ride (missing [])
+  PASS world: the counterweight tower stands 24 m in T4 (top 29.0 m)
+  PASS world: the Tripo props stand in the Postyard ({ "dallah": 1, "recovery_parcel": 1, "postal_bell": 2, "roshan_balcony": 1 }, shutter on its mover true)
+  PASS world: the Postyard is dressed (coral walls, Hijazi decks, Najdi mud, posts, deck tops, palms, planters) { "walls": 27, "hijazi": 21, "najdi": 6, "posts": 11, "timber": 4, "floors": 13, "palms": 6, "planters": 14, "sails": 3, "flat_no_shadow": 549 }
+  PASS world: dressing is look only (no stray collision) []
+  PASS world: static merge keeps the merged mesh count down (4600 pieces -> 436 meshes, 95 of them small far-fading)
+  PASS world: no merged mesh is touched by more than 10 lanterns (Mobile renderer lights 8 per mesh): worst 10 of 41
+  PASS world: small merged pieces fade out far away (HLOD), big pieces always drawn (95 small, 0 bad)
+  PASS world: six rings stand at their package centres: []
+  PASS world: bot stands on every ring point (19): []
+  PASS world: stand-on never falls out of the world
+  PASS world: the bot walks from the T0 spawn to every ring (7 routes, gates open): []
+  PASS world: a hero on the lower counterweight platform rides 6 m up (6.00 -> 12.00)
+  PASS world: the closed T0 ring gate stops the west exit (x -20.5)
+  PASS world: with the T0 rule met the bot walks out west (x -34.1)
+  PASS world: without the test override every ring gate starts closed
+  PASS world: each ring gate opens on its own rule (["T0", "T1", "T2", "T3", "T4", "T5"] of { "T0": true, "T1": true, "T2": true, "T3": true, "T4": true, "T5": true })
+  PASS world: turning Test toys off closes T5 again
+  PASS world: training suite under 90 s (45768 ms)
+  PASS world: mover rotate gives the same transform on two clocks at the same session time
+  PASS world: mover rotate actually moves
+  PASS world: mover path gives the same transform on two clocks at the same session time
+  PASS world: mover path actually moves
+  PASS world: path mover ping-pongs back to its start each period
+  PASS world: path mover reaches the far end at half period
+  PASS world: mover swing gives the same transform on two clocks at the same session time
+  PASS world: mover swing actually moves
+  PASS world: swing stays within its amplitude (40.0 deg)
+  PASS world: a guest's checkpoint goes through the host and reaches both phones
+  PASS world: both phones respawn at the same shared checkpoint
+  PASS world: the host's checkpoint reaches the guest
+  PASS world: checkpoint gives the two heroes separate spawn spots
+  PASS world: with nothing shared the start checkpoint (order 0) is used
+  PASS world: every gate is open with 'show me everything' on
+  PASS world: gates close (bars block) with show-everything off and nothing unlocked
+  PASS world: a closed gate has solid bars
+  PASS world: unlocking a move opens only its gate
+  PASS world: a move outside the unlock table stays shut without show-all
+  PASS world: a learned move (host shared) opens its gate
+  PASS world: switching show-everything on opens the gates live
+  PASS world: a gate shows its picture on both faces
+  PASS world: part door does nothing with one hero in it (2 s)
+  PASS world: part door waits the hold time with both in
+  PASS world: both in for 1 s sends ONE part event {name}
+  PASS world: stepping out resets the door's timer
+  PASS world: the guest's door never sends (the host decides)
+RESULT passed=1272 failed=0

@@ -1,0 +1,10 @@
+- New: Pearl Lagoon, the sixth game. Drag up from the shell to aim (the dots show the path, even off a wall), let go to shoot. Three or more pearls of a colour pop, and pearls left hanging fall free and thread onto a necklace along the shore. 60 levels and a daily board. Out of shots? Retry for free or undo your last shot.
+- All six games are now playable from the home, and the daily puzzle rotates between all six (one daily reward per day).
+- A lighter app on Android: the download is now about 150 MB instead of about 205 MB, with nothing made smaller. Light Trails chapters 2 to 6 download by themselves after the first start on Android (the iPhone app carries them inside); every game plays meanwhile, and a chapter still on its way shows a small download ring.
+- Light Trails now uses the same hint bar as the other games, and its won coins fly to your wallet at the top.
+- In this test version the video hint button gives the hint at once (no video plays). If a hint does not work, nothing is spent.
+- Pearl Lagoon hints aim the shell for you: tap to shoot along the dots. Some hints first take a few shots back, for free.
+- Tall phones: the painting behind every game now reaches the top of the screen.
+- Moon Rings: a locked ring now shakes clearly, and the guiding hand follows the ring's curve.
+- Small fixes: bigger coin and hint icons in the shop, a dark backing behind the Pocket Exit hint line, a shorter Arabic hint line in Gem Flare, and the first achievement message no longer covers the Light Trails guide line.
+- New sounds and music for Pearl Lagoon.

@@ -1,0 +1,11 @@
+- First test version of Qanadeel: join matching lights and fill every tile to light a lantern.
+- 300 levels in 6 chapters; every level you solve lights one lantern in the chapter's painting.
+- A daily puzzle every day, playable offline.
+- The first three levels teach the game with a moving finger, no long texts.
+- Every chapter has its own calm music, and each finished pair plays a note that builds into a chord.
+- Finishing a chapter wakes its whole painting before the next one opens.
+- No lives, no timers: undo and restart at any time; draw by tapping instead of dragging from Settings > Accessibility.
+- Hints show the next path; coins come from solving boards, daily puzzles and gifts.
+- Arabic and English; pick your name and play.
+- Shop, themes and achievements are in. The shop shows its items and prices, but buying is switched off in this test; hint videos are not available yet.
+- The logo is plain text for now. Android first; iPhone comes after 1 November.

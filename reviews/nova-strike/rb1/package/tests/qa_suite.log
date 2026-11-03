@@ -1,0 +1,240 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+
+=== saves
+PASS [saves] fresh install: new profile, 0 Credits, Striker
+PASS [saves] fresh install: no modules, schema v2, only 1.01 unlocked
+PASS [saves] fresh install: every default key present
+PASS [saves] atomic write: main written, no tmp file left
+PASS [saves] second save keeps the previous file as backup
+ERROR: Parse JSON failed. Error at line 0: Unterminated string
+   at: parse_string (core/io/json.cpp:629)
+   GDScript backtrace (most recent call first):
+       [0] _read (res://game/profile.gd:111)
+       [1] load_profile (res://game/profile.gd:80)
+       [2] _t_saves (res://tests/qa_suite.gd:191)
+       [3] _ready (res://tests/qa_suite.gd:39)
+       [4] _frames (res://tests/qa_suite.gd:81)
+PASS [saves] corrupt main -> backup loaded (source=backup, credits=500)
+PASS [saves] save after backup-load keeps a valid backup (corrupt main discarded)
+ERROR: Parse JSON failed. Error at line 0: Expected 'true', 'false', or 'null', got 'garbage'
+   at: parse_string (core/io/json.cpp:629)
+   GDScript backtrace (most recent call first):
+       [0] _read (res://game/profile.gd:111)
+       [1] load_profile (res://game/profile.gd:80)
+       [2] _t_saves (res://tests/qa_suite.gd:196)
+       [3] _ready (res://tests/qa_suite.gd:39)
+       [4] _frames (res://tests/qa_suite.gd:81)
+PASS [saves] second corruption still recovers from backup (backup, 500)
+ERROR: Parse JSON failed. Error at line 0: Expected 'true', 'false', or 'null', got 'not'
+   at: parse_string (core/io/json.cpp:629)
+   GDScript backtrace (most recent call first):
+       [0] _read (res://game/profile.gd:111)
+       [1] load_profile (res://game/profile.gd:80)
+       [2] _t_saves (res://tests/qa_suite.gd:201)
+       [3] _ready (res://tests/qa_suite.gd:39)
+       [4] _frames (res://tests/qa_suite.gd:81)
+ERROR: Parse JSON failed. Error at line 0: Unterminated string
+   at: parse_string (core/io/json.cpp:629)
+   GDScript backtrace (most recent call first):
+       [0] _read (res://game/profile.gd:111)
+       [1] load_profile (res://game/profile.gd:92)
+       [2] _t_saves (res://tests/qa_suite.gd:201)
+       [3] _ready (res://tests/qa_suite.gd:39)
+       [4] _frames (res://tests/qa_suite.gd:81)
+PASS [saves] both corrupt -> safe new profile
+PASS [saves] interrupted write (tmp present, main missing) recovers the newest complete write (credits 900)
+PASS [saves] recovered tmp promoted to main, no tmp left
+PASS [saves] partial tmp ignored + removed, main kept
+PASS [saves] v1 migration keeps credits (640) in wallet, schema v2
+PASS [saves] v1 migration keeps installed hardware (striker P1 S2, guardian D1)
+PASS [saves] v1 migration keeps selection, mission records and unknown keys
+PASS [saves] migrated profile unchanged after relaunch
+PASS [saves] round trip: reloaded profile equals the saved one
+PASS [saves] round trip: integers stay integers (tiers/credits)
+PASS [saves] round trip is a fixed point (text + config hash stable)
+PASS [saves] unknown future keys preserved through load/modify/save
+PASS [saves] profile with future keys stays usable (credit + purchase applied)
+
+=== purchase
+PASS [purchase] tier-1 module price is 150
+PASS [purchase] rapid double tap: one charge (300 -> 150), one tier
+PASS [purchase] one purchase transaction logged for tx tx-1129155-17c2a465
+PASS [purchase] retried callback with the same tx id charges nothing
+PASS [purchase] Hangar showcase shows the installed side hardware
+PASS [purchase] same state after relaunch (150 Credits, side Mk I)
+PASS [purchase] tx id still idempotent after relaunch
+PASS [purchase] component preview shows the next tier (reactor Mk I)
+PASS [purchase] main craft keeps the installed config while previewing
+PASS [purchase] preview canceled: no charge, no install, save untouched
+PASS [purchase] interrupted after persist: equipment kept, no second deduction
+PASS [purchase] interrupted purchase: retried tx id after relaunch charges nothing
+PASS [purchase] interrupted before charge: nothing charged, nothing installed
+PASS [purchase] the purchase can then complete exactly once
+PASS [purchase] insufficient Credits: refused, nothing changes
+
+=== rewards
+PASS [rewards] normal claim grants 120 once
+PASS [rewards] repeated result callback grants 0
+PASS [rewards] repeated callback after relaunch grants 0
+PASS [rewards] completed ad adds 120 once (240)
+PASS [rewards] repeated ad callback adds 0
+PASS [rewards] ad unavailable: offer disabled with honest status
+PASS [rewards] canceled/unavailable ad keeps the base reward (120)
+PASS [rewards] Supporter bonus once: 240 total after 3 Results visits (got 240)
+PASS [rewards] Supporter + accidental ad callback still caps at 240
+PASS [rewards] Supporter bonus not re-granted after relaunch (never 4x)
+PASS [rewards] defeat salvage (20) granted once, not doubled (got 260)
+PASS [rewards] training result grants 0
+PASS [rewards] Game.finish_combat(training) pays nothing
+PASS [rewards] training returns to Home
+
+=== campaign
+PASS [campaign] all 48 missions exist (1.01..6.08) with definitions
+PASS [campaign] new profile: only 1.01 unlocked
+PASS [campaign] locked mission (3.04): LAUNCH disabled, _launch refused, no session
+PASS [campaign] each mission unlocks the next only after clear (stopped at )
+PASS [campaign] 6.08 is last; campaign_complete set
+PASS [campaign] 6.08 victory routes to ending (res://scenes/ending.tscn)
+PASS [campaign] ending offers Credits
+PASS [campaign] ending -> credits
+
+=== equipment
+PASS [equipment] purchases for the equipment check
+PASS [equipment] after purchase striker: Home == Hangar == combat rig (primary=0 side=1 ordnance=1 defense=0 engine=0 reactor=0 |ordnance[1-2]hw_seeker_pod_mk1,ordnance[1-2]hw_seeker_pod_mk1,side[1-2]LancePod_L,side[1-2]LancePod_R)
+PASS [equipment] after purchase guardian: Home == Hangar == combat rig (primary=1 side=2 ordnance=1 defense=3 engine=0 reactor=1 |defense[3-3]shield_mk1,defense[3-4]plate_mk2_L1,defense[3-4]plate_mk2_L2,defense[3-4]plate_mk2_R1,defe)
+PASS [equipment] after purchase arcanist: Home == Hangar == combat rig (primary=0 side=1 ordnance=2 defense=0 engine=1 reactor=0 |engine[1-1]nozzle_t1,engine[1-1]nozzle_t1,ordnance[1-2]hw_coil_pod_mk1,ordnance[1-2]hw_coil_pod_mk1,or)
+PASS [equipment] after relaunch striker: Home == Hangar == combat rig (primary=0 side=1 ordnance=1 defense=0 engine=0 reactor=0 |ordnance[1-2]hw_seeker_pod_mk1,ordnance[1-2]hw_seeker_pod_mk1,side[1-2]LancePod_L,side[1-2]LancePod_R)
+PASS [equipment] after relaunch guardian: Home == Hangar == combat rig (primary=1 side=2 ordnance=1 defense=3 engine=0 reactor=1 |defense[3-3]shield_mk1,defense[3-4]plate_mk2_L1,defense[3-4]plate_mk2_L2,defense[3-4]plate_mk2_R1,defe)
+PASS [equipment] after relaunch arcanist: Home == Hangar == combat rig (primary=0 side=1 ordnance=2 defense=0 engine=1 reactor=0 |engine[1-1]nozzle_t1,engine[1-1]nozzle_t1,ordnance[1-2]hw_coil_pod_mk1,ordnance[1-2]hw_coil_pod_mk1,or)
+PASS [equipment] base Striker: Home == combat (no hardware leaks)
+
+=== arabic
+PASS [arabic] raw-key detector self-test
+PASS [arabic] overflow detector self-test catches a label wider than its container
+PASS [arabic] Settings has the Arabic language button
+PASS [arabic] language switch applies and is stored
+PASS [arabic] locale persisted on disk
+PASS [arabic] Arabic restored after relaunch
+PASS [arabic] RTL layout active in Arabic
+PASS [arabic] i18n/ui.csv: 320 keys translated in AR+EN []
+PASS [arabic] i18n/combat.csv: 74 keys translated in AR+EN []
+PASS [arabic] i18n/content.csv: 202 keys translated in AR+EN []
+PASS [arabic] i18n/strings.csv: 114 keys translated in AR+EN []
+PASS [arabic] boot builds (ar)
+PASS [arabic] boot (ar): no raw keys in 2 texts []
+PASS [arabic] boot (ar): no text wider than its container []
+PASS [arabic] title builds (ar)
+PASS [arabic] title (ar): no raw keys in 7 texts []
+PASS [arabic] title (ar): no text wider than its container []
+PASS [arabic] home builds (ar)
+PASS [arabic] home (ar): no raw keys in 19 texts []
+PASS [arabic] home (ar): no text wider than its container []
+PASS [arabic] hangar builds (ar)
+PASS [arabic] hangar (ar): no raw keys in 25 texts []
+PASS [arabic] hangar (ar): no text wider than its container []
+PASS [arabic] campaign builds (ar)
+PASS [arabic] campaign (ar): no raw keys in 19 texts []
+PASS [arabic] campaign (ar): no text wider than its container []
+PASS [arabic] briefing builds (ar)
+PASS [arabic] briefing (ar): no raw keys in 24 texts []
+PASS [arabic] briefing (ar): no text wider than its container []
+PASS [arabic] results builds (ar)
+PASS [arabic] results (ar): no raw keys in 22 texts []
+PASS [arabic] results (ar): no text wider than its container []
+PASS [arabic] store builds (ar)
+PASS [arabic] store (ar): no raw keys in 9 texts []
+PASS [arabic] store (ar): no text wider than its container []
+PASS [arabic] settings builds (ar)
+PASS [arabic] settings (ar): no raw keys in 37 texts []
+PASS [arabic] settings (ar): no text wider than its container []
+PASS [arabic] endless builds (ar)
+PASS [arabic] endless (ar): no raw keys in 16 texts []
+PASS [arabic] endless (ar): no text wider than its container []
+PASS [arabic] mastery builds (ar)
+PASS [arabic] mastery (ar): no raw keys in 29 texts []
+PASS [arabic] mastery (ar): no text wider than its container []
+PASS [arabic] ending builds (ar)
+PASS [arabic] ending (ar): no raw keys in 7 texts []
+PASS [arabic] ending (ar): no text wider than its container []
+PASS [arabic] credits builds (ar)
+PASS [arabic] credits (ar): no raw keys in 21 texts []
+PASS [arabic] credits (ar): no text wider than its container []
+PASS [arabic] boot builds (en)
+PASS [arabic] boot (en): no raw keys in 2 texts []
+PASS [arabic] boot (en): no text wider than its container []
+PASS [arabic] title builds (en)
+PASS [arabic] title (en): no raw keys in 7 texts []
+PASS [arabic] title (en): no text wider than its container []
+PASS [arabic] home builds (en)
+PASS [arabic] home (en): no raw keys in 19 texts []
+PASS [arabic] home (en): no text wider than its container []
+PASS [arabic] hangar builds (en)
+PASS [arabic] hangar (en): no raw keys in 25 texts []
+PASS [arabic] hangar (en): no text wider than its container []
+PASS [arabic] campaign builds (en)
+PASS [arabic] campaign (en): no raw keys in 19 texts []
+PASS [arabic] campaign (en): no text wider than its container []
+PASS [arabic] briefing builds (en)
+PASS [arabic] briefing (en): no raw keys in 24 texts []
+PASS [arabic] briefing (en): no text wider than its container []
+PASS [arabic] results builds (en)
+PASS [arabic] results (en): no raw keys in 22 texts []
+PASS [arabic] results (en): no text wider than its container []
+PASS [arabic] store builds (en)
+PASS [arabic] store (en): no raw keys in 9 texts []
+PASS [arabic] store (en): no text wider than its container []
+PASS [arabic] settings builds (en)
+PASS [arabic] settings (en): no raw keys in 37 texts []
+PASS [arabic] settings (en): no text wider than its container []
+PASS [arabic] endless builds (en)
+PASS [arabic] endless (en): no raw keys in 16 texts []
+PASS [arabic] endless (en): no text wider than its container []
+PASS [arabic] mastery builds (en)
+PASS [arabic] mastery (en): no raw keys in 29 texts []
+PASS [arabic] mastery (en): no text wider than its container []
+PASS [arabic] ending builds (en)
+PASS [arabic] ending (en): no raw keys in 7 texts []
+PASS [arabic] ending (en): no text wider than its container []
+PASS [arabic] credits builds (en)
+PASS [arabic] credits (en): no raw keys in 21 texts []
+PASS [arabic] credits (en): no text wider than its container []
+
+=== focus
+PASS [focus] combat is live
+PASS [focus] focus loss pauses combat and shows the pause overlay
+PASS [focus] no accumulated simulation time kept (no fast-forward on return)
+PASS [focus] resume unpauses
+PASS [focus] no fast-forward after 1 s away (0.000 s advanced)
+PASS [focus] app pause (mobile background) also pauses
+PASS [focus] leaving combat while paused never leaves the tree paused
+
+=== offline
+PASS [offline] services: no ads/billing claimed, no fake price
+PASS [offline] service status 'svc.ads_unavailable' has player text
+PASS [offline] service status 'svc.billing_unavailable' has player text
+PASS [offline] service status 'svc.restore_unavailable' has player text
+PASS [offline] Cloud.online only when a round trip is verified
+PASS [offline] main loop never blocked by Cloud/Analytics (worst frame gap 7 ms)
+PASS [offline] Analytics send with live network does not throw
+PASS [offline] boot reaches Title (res://scenes/title.tscn)
+PASS [offline] Title -> Home
+PASS [offline] Home -> combat 1.01
+PASS [offline] combat plays online (state=live, +3.0s sim)
+PASS [offline] back to Home, not paused
+
+QA SUMMARY
+  saves      PASS
+  purchase   PASS
+  rewards    PASS
+  campaign   PASS
+  equipment  PASS
+  arabic     PASS
+  focus      PASS
+  offline    PASS
+QA SUITE DONE passed=174 failed=0
+WARNING: 4 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 2 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)
+exit=0 secs=23
