@@ -1,0 +1,319 @@
+{
+ "order": [
+  "algol",
+  "furnace_sovereign",
+  "storm_seraph",
+  "null_oracle",
+  "regents_spear",
+  "dominion_prime"
+ ],
+ "bosses": {
+  "algol": {
+   "name_key": "boss.algol",
+   "sprite": "res://assets/bosses/algol.png",
+   "part_sprite": "res://assets/bosses/algol_part.png",
+   "size": 740.0,
+   "hp": 6000.0,
+   "home": "Vector2(540, 595)",
+   "radius": 165.0,
+   "armor": 0.8,
+   "phases": 3,
+   "phase_until": [
+    0.66,
+    0.33,
+    0.0
+   ],
+   "reward_id": "boss_algol",
+   "music": "boss_algol",
+   "entrance": "dim_beacons",
+   "parts": [
+    {
+     "id": "battery_a1",
+     "kind": "battery",
+     "pair": 0,
+     "ang": 210.0,
+     "dist": 0.4,
+     "hp": 420.0,
+     "size": 165.0
+    },
+    {
+     "id": "battery_a2",
+     "kind": "battery",
+     "pair": 0,
+     "ang": 30.0,
+     "dist": 0.4,
+     "hp": 420.0,
+     "size": 165.0
+    },
+    {
+     "id": "battery_b1",
+     "kind": "battery",
+     "pair": 1,
+     "ang": 330.0,
+     "dist": 0.4,
+     "hp": 420.0,
+     "size": 165.0
+    },
+    {
+     "id": "battery_b2",
+     "kind": "battery",
+     "pair": 1,
+     "ang": 150.0,
+     "dist": 0.4,
+     "hp": 420.0,
+     "size": 165.0
+    }
+   ],
+   "scar": "Vector2(0.3, -0.3)"
+  },
+  "furnace_sovereign": {
+   "name_key": "boss.furnace_sovereign",
+   "sprite": "res://assets/bosses/furnace_sovereign.png",
+   "part_sprite": "res://assets/bosses/furnace_sovereign_part.png",
+   "size": 830.0,
+   "hp": 7000.0,
+   "home": "Vector2(540, 640)",
+   "radius": 165.0,
+   "phases": 3,
+   "phase_until": [
+    0.6,
+    0.3,
+    0.0
+   ],
+   "reward_id": "boss_furnace",
+   "music": "boss_furnace",
+   "entrance": "rise_from_trench",
+   "parts": [
+    {
+     "id": "cooling_l",
+     "kind": "cooling",
+     "off": "Vector2(-0.17, -0.3)",
+     "hp": 480.0,
+     "size": 132.0
+    },
+    {
+     "id": "cooling_r",
+     "kind": "cooling",
+     "off": "Vector2(0.17, -0.3)",
+     "hp": 480.0,
+     "size": 132.0
+    },
+    {
+     "id": "bay_l",
+     "kind": "launcher",
+     "off": "Vector2(-0.11, 0.17)",
+     "hp": 380.0,
+     "size": 0.0,
+     "r": 44.0
+    },
+    {
+     "id": "bay_r",
+     "kind": "launcher",
+     "off": "Vector2(0.13, 0.17)",
+     "hp": 380.0,
+     "size": 0.0,
+     "r": 44.0
+    }
+   ],
+   "vents": [
+    "Vector2(-0.11, 0.17)",
+    "Vector2(0.13, 0.17)"
+   ]
+  },
+  "storm_seraph": {
+   "name_key": "boss.storm_seraph",
+   "sprite": "res://assets/bosses/storm_seraph.png",
+   "part_sprite": "res://assets/bosses/storm_seraph_part.png",
+   "size": 900.0,
+   "hp": 7500.0,
+   "home": "Vector2(540, 620)",
+   "radius": 120.0,
+   "phases": 3,
+   "phase_until": [
+    0.6,
+    0.3,
+    0.0
+   ],
+   "reward_id": "boss_seraph",
+   "music": "boss_seraph",
+   "entrance": "lightning_descend",
+   "parts": [
+    {
+     "id": "pylon_0",
+     "kind": "pylon",
+     "off": "Vector2(-0.31, -0.22)",
+     "hp": 400.0,
+     "size": 121.0
+    },
+    {
+     "id": "pylon_1",
+     "kind": "pylon",
+     "off": "Vector2(-0.18, -0.27)",
+     "hp": 400.0,
+     "size": 121.0
+    },
+    {
+     "id": "pylon_2",
+     "kind": "pylon",
+     "off": "Vector2(0.18, -0.27)",
+     "hp": 400.0,
+     "size": 121.0
+    },
+    {
+     "id": "pylon_3",
+     "kind": "pylon",
+     "off": "Vector2(0.31, -0.22)",
+     "hp": 400.0,
+     "size": 121.0
+    }
+   ]
+  },
+  "null_oracle": {
+   "name_key": "boss.null_oracle",
+   "sprite": "res://assets/bosses/null_oracle.png",
+   "part_sprite": "res://assets/bosses/null_oracle_part.png",
+   "size": 760.0,
+   "hp": 8000.0,
+   "home": "Vector2(540, 605)",
+   "radius": 132.0,
+   "phases": 3,
+   "phase_until": [
+    0.6,
+    0.3,
+    0.0
+   ],
+   "reward_id": "boss_oracle",
+   "music": "boss_oracle",
+   "entrance": "fold_in",
+   "parts": [
+    {
+     "id": "sensor_memory",
+     "kind": "sensor",
+     "predict": "lane_memory",
+     "off": "Vector2(-0.31, -0.18)",
+     "hp": 420.0,
+     "size": 121.0
+    },
+    {
+     "id": "sensor_lead",
+     "kind": "sensor",
+     "predict": "lead_shot",
+     "off": "Vector2(0.31, -0.18)",
+     "hp": 420.0,
+     "size": 121.0
+    },
+    {
+     "id": "sensor_return",
+     "kind": "sensor",
+     "predict": "return_trap",
+     "off": "Vector2(-0.32, 0.17)",
+     "hp": 420.0,
+     "size": 121.0
+    },
+    {
+     "id": "sensor_echo",
+     "kind": "sensor",
+     "predict": "echo",
+     "off": "Vector2(0.32, 0.17)",
+     "hp": 420.0,
+     "size": 121.0
+    }
+   ]
+  },
+  "regents_spear": {
+   "name_key": "boss.regents_spear",
+   "sprite": "res://assets/bosses/regents_spear.png",
+   "part_sprite": "res://assets/bosses/regents_spear_part.png",
+   "size": 830.0,
+   "hp": 9000.0,
+   "home": "Vector2(540, 640)",
+   "radius": 100.0,
+   "phases": 3,
+   "phase_until": [
+    0.65,
+    0.3,
+    0.0
+   ],
+   "reward_id": "boss_spear",
+   "music": "boss_spear",
+   "entrance": "gate_breach",
+   "parts": [
+    {
+     "id": "sub_broadside",
+     "kind": "subsystem",
+     "sub": "broadside",
+     "off": "Vector2(-0.21, -0.2)",
+     "hp": 600.0,
+     "size": 143.0
+    },
+    {
+     "id": "sub_artillery",
+     "kind": "subsystem",
+     "sub": "artillery",
+     "off": "Vector2(0.21, -0.2)",
+     "hp": 600.0,
+     "size": 143.0
+    },
+    {
+     "id": "sub_hangar",
+     "kind": "subsystem",
+     "sub": "hangar",
+     "off": "Vector2(0, 0.22)",
+     "hp": 600.0,
+     "size": 143.0
+    }
+   ]
+  },
+  "dominion_prime": {
+   "name_key": "boss.dominion_prime",
+   "sprite": "res://assets/bosses/dominion_prime.png",
+   "part_sprite": "res://assets/bosses/dominion_prime_part.png",
+   "size": 830.0,
+   "hp": 12000.0,
+   "home": "Vector2(540, 640)",
+   "radius": 143.0,
+   "phases": 4,
+   "phase_until": [
+    "gate",
+    0.55,
+    0.25,
+    0.0
+   ],
+   "gate_fallback": 80.0,
+   "reward_id": "boss_dominion",
+   "music": "boss_dominion",
+   "entrance": "crown_unseal",
+   "checkpoint": true,
+   "parts": [
+    {
+     "id": "authority_0",
+     "kind": "module",
+     "off": "Vector2(-0.34, -0.05)",
+     "hp": 380.0,
+     "size": 154.0
+    },
+    {
+     "id": "authority_1",
+     "kind": "module",
+     "off": "Vector2(-0.19, -0.32)",
+     "hp": 380.0,
+     "size": 154.0
+    },
+    {
+     "id": "authority_2",
+     "kind": "module",
+     "off": "Vector2(0.19, -0.32)",
+     "hp": 380.0,
+     "size": 154.0
+    },
+    {
+     "id": "authority_3",
+     "kind": "module",
+     "off": "Vector2(0.34, -0.05)",
+     "hp": 380.0,
+     "size": 154.0
+    }
+   ]
+  }
+ }
+}
