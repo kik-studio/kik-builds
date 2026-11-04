@@ -1,0 +1,22 @@
+# VEIL v0.12 release notes
+
+- New power: Overdrive. Pearls fill the power button (it replaces the Veil button); when it is full, tap it for 10 seconds of faster flight that breaks through the obstacles you hit. Pearls you catch during a burst start filling the next one; they never make the current burst longer.
+- During Overdrive a see-through bubble surrounds the aircraft for the whole 10 seconds, and the time left drains around its rim, thinner in the last 2 seconds; it ends exactly when the burst ends.
+- Every obstacle you break shatters into pieces that fly out away from your path, with a short flash where you hit it (no flash with Reduced Motion on).
+- If you catch every pearl, your first Overdrive is ready about 40 seconds in, at a slalom where a trail of pearls leads you straight into a wall so you can feel your first break.
+- A marker shows where the burst will end, and the music lifts during the burst and lands on that spot.
+- The one automatic save per run and the see-through Veil are gone: Overdrive takes their place.
+- The whole run is harder, not only the first minute: measured on 8 test runs, every part of the run asks for at least 2.27 times the moves of version 0.10 (2.39 times or more after the first minute; 0.11 had raised only the first minute).
+- Fewer quiet stretches: after the first minute, 1,797 of 1,802 gaps between required moves are 4 seconds or shorter; 5 longer gaps remain (the longest about 7 seconds).
+- New places to fly through: a deep Cloud Sea, the Opal Forest, the Crystal Canyon and the rare Storm Cathedral, each a place of its own along the flight.
+- The three newest storm obstacles each have their own shape and look.
+- New ranking course for Overdrive: a fresh ranking starts with this version, and your best on the earlier course stays visible on its own page.
+- The ranking screen is light and clear: every player has their own card, the top three stand out and your own card is marked.
+- When you crash, the results show what you hit and a short tip, with a faint line of the path you flew; Retry stays instant.
+- Lighter, see-through best score and rank on Home and Results, and no grey square behind the arch on Home.
+- Look: less glare from bright walls close up, the aircraft stands out in the Dawn sky in the High view, solid glass and pass-through panes are easier to tell apart, and the ground in flight has more depth.
+- With Reduced Motion on, the intro now glides to Home without a jump.
+- The music keeps its opening and builds through the whole run, with a payoff when you reach the Storm Cathedral.
+- In Arabic, the text-size choices in Settings use the same digits as the rest of the game.
+- There are no ads in this test version, and nothing to buy.
+- This test version is for Android; the iPhone build follows.
