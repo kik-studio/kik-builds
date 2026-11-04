@@ -1,0 +1,21 @@
+- Two new games in the collection: five of the six games are now playable from the home.
+- New: Moon Rings. Turn the stone rings until the moon's light can flow from the pearl to the gate; the water runs on its own as soon as the way is open. 60 levels and a daily board.
+- New: Gem Flare. Tap groups of three or more matching gems to collect the colors the board asks for, within the moves you have. 60 levels and a daily board. Out of moves? Retry for free or undo your last move.
+- The daily puzzle now rotates between all five games, and you can earn one daily reward per day.
+- One hint bar in Color Dew, Pocket Exit, Moon Rings and Gem Flare: use a stored hint or spend coins. If a hint does not work, nothing is spent. The video hint is not on yet in this test version: its button says "no video right now".
+- Pocket Exit hints now always help, even on the hardest boards ("This hint goes back a few moves, then plays the right one.").
+- A guiding hand shows the first moves on levels 1 to 3 of Color Dew and Pocket Exit.
+- Pocket Exit levels now get harder step by step inside each chapter (19 of the 60 levels changed places; your progress is kept).
+- New sounds and music for Moon Rings and Gem Flare.
+- Won coins in Color Dew, Pocket Exit, Moon Rings and Gem Flare now fly to your wallet at the top.
+- The home's collection shows how many levels you finished in each game.
+- Color Dew keeps its mix of tall and short tubes.
+- Small fixes: the opening painting fills the screen, a smoother lantern edge in Light Trails, the right coin and hint icons in the shop, and Pocket Exit's floor stones line up with the parking spaces.
+
+Still being worked on (next versions):
+- Moon Rings: the shake of a locked ring is small on a phone screen.
+- Very tall phones: a plain dark band shows above the world painting.
+- Light Trails: won coins fly to the win card, not yet to the wallet at the top like the other four games.
+- Shop: the coin and hint icons look small next to their numbers.
+- Pocket Exit: the Arabic rewind hint line is hard to read where it crosses the bright pier lamps.
+- Gem Flare: the Arabic rewind hint line wraps to two lines at normal text size.

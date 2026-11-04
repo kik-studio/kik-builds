@@ -1,0 +1,12 @@
+- This first build is the moves test: try every move together. The Postyard is still simple shapes; the next build brings the real open world.
+- First test of Slingbound: two friends, two phones, one ribbon, with Spark and Crag as real 3D heroes.
+- Invite a friend with a 5-letter code; on the same Wi-Fi the phones connect directly.
+- The Postyard: six practice rings to explore together (welcome court, small roofs, return yard, catch arcade, counterweight tower, borrowed-tools garden), all open for this test.
+- Walk, jump, brace, sling each other, catch in mid-air (with a second-chance catch), throw Crag like a cannonball, ride the counterweight, grab, carry, push, climb, hang, slide and ring the bells.
+- Two control styles to compare (Pause > Controls): Classic with a Hold / Grab button, or one Action button with a quick, normal or slow hold.
+- Little extras: pings to point the way, a fun move or a high five when you tap with nothing to do, "Start from scratch" (in Pause) to see the controls unlock one by one.
+- A new woven ribbon, plus three other looks to try (Pause > Ribbon look).
+- A side-view alley where lantern shadows become ledges, and an upright runner street that folds up behind you.
+- Toys only here: distance sling board, bell course, catch the falling letters, parcel bowling and more.
+- Known: online play outside the same Wi-Fi can feel slow for now (about a quarter of a second there and back from Riyadh in our test); same Wi-Fi is the smooth way to play.
+- The small TEST mark in the corner of the play screen is on purpose (first test build).
