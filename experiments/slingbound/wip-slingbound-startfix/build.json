@@ -1,0 +1,32 @@
+{
+ "game_id": "slingbound",
+ "version": "0.2",
+ "updated": "2026-11-04",
+ "commit": "dc4655a",
+ "links": {
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-slingbound-wip-slingbound-startfix/slingbound.apk"
+ },
+ "screenshots": {
+  "en": [],
+  "ar": []
+ },
+ "apk_bytes": 571582151,
+ "apk_sha256": "739e122fb686290eac0e682943db202c8dd414da0de8f65b8a0807b282fe829e",
+ "pack_sha256": "99040460b42316fc49252c30211cc4018afff45cfd144e641458f0af172fef4f",
+ "shapes": [],
+ "video": [],
+ "tests": "https://kik-studio.github.io/kik-builds/experiments/slingbound/wip-slingbound-startfix/tests.txt",
+ "benchmark_apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-slingbound-wip-slingbound-startfix/slingbound-benchmark.apk",
+ "branch": "wip/slingbound/startfix",
+ "checks": null,
+ "build_id": "0.2+dc4655a",
+ "built_on": "studio server",
+ "review": null,
+ "media": {
+  "build_id": null,
+  "version": null,
+  "carried": true,
+  "label": "from an older build"
+ }
+}

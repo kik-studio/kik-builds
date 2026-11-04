@@ -1,0 +1,14 @@
+{
+ "game_id": "sunpunch",
+ "version": "0.22",
+ "updated": "2026-10-17",
+ "branch": "fun-sunpunch-v022",
+ "built_on": "studio PC (PC job)",
+ "build_id": "0.22+fun-sunpunch-v022",
+ "links": {
+  "web": "https://kik-studio-dev.web.app/experiments/sunpunch/fun-sunpunch-v022/web/index.html",
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-sunpunch-fun-sunpunch-v022/sunpunch.apk"
+ },
+ "benchmark_apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-sunpunch-fun-sunpunch-v022/sunpunch-benchmark.apk",
+ "apk_bytes": 390124131
+}
