@@ -1,0 +1,15 @@
+SUNPUNCH v0.6: a living boss, the new Spark, music that follows the run, comfort options and performance work (release candidate)
+- **Big Bite is alive:** no more picture swaps. Its jaw really hinges open and snaps, the solar core charges and flashes white on every hit, the fins sway, the eyes and head follow you, and it rears back before the Furnace fire (a full second of warning). At half health you watch it transform into Inferno (plates split, horns rise, barrels swing out, fire), and at the end the core ruptures and the jaw splits into a wreck.
+- **The new Spark:** your approved Spark design is now in the game. It grows a little bigger and better at every FLIGHT LV; new hardware slides out first, then the ship settles, with a warm ignition glow. Daystar unfolds with real moving parts on every aircraft.
+- **Enemies break apart** in their own way when destroyed, and the reef light tells the story: warm at the start, darker toward Big Bite, warm again after you win.
+- **Music that follows the run:** a calm start, rising pressure, a hush before the boss, the boss and Inferno themes, and a short results piece after a loss. More variety in the most frequent sounds.
+- **Fairer, clearer fights:**
+  - Red edge arrows warn before spires, gates, side attacks and Big Bite's fin volley (now a 0.9-second warning).
+  - Big Bite starts a little gentler for its first 10 seconds; stronger aircraft now beat it faster.
+  - Collecting stars also charges Daystar a little, and the button pulses when it's ready.
+  - Daystar lights up the reef in gold with heavier spears.
+- **Losing helps you:** the defeat card shows what got you, a tip, how far you got and one next goal. Replay is back in flight in about one second.
+- **Comfort settings:** master mute, Reduced flashes and Reduced shake as separate switches, Larger text, vibration off everywhere, and "Replay first-flight tips". Text is checked to fit on small phones in English and Arabic.
+- **Performance work for budget phones:** phones now use the lighter renderer we chose, hidden full-screen layers are gone, graphics and sounds load before the flight, and the game thread does less work per frame. The busiest moments still dip below a steady 60 on the cheapest phones; more work follows.
+- **Release candidate:** no developer tools in the player build; full test suite run after the last change; handover pack written.
+- Striker, Phoenix and Helios keep their current look until their new designs are approved.

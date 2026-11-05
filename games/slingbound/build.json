@@ -1,0 +1,51 @@
+{
+ "game_id": "slingbound",
+ "version": "0.3",
+ "updated": "2026-11-05",
+ "commit": "7fe4e6f",
+ "links": {
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-slingbound/slingbound.apk"
+ },
+ "screenshots": {
+  "en": [
+   "https://kik-studio.github.io/kik-builds/games/slingbound/screens/game_en.png",
+   "https://kik-studio.github.io/kik-builds/games/slingbound/screens/menu_en.png",
+   "https://kik-studio.github.io/kik-builds/games/slingbound/screens/settings_en.png"
+  ],
+  "ar": [
+   "https://kik-studio.github.io/kik-builds/games/slingbound/screens/game_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/slingbound/screens/menu_ar.png",
+   "https://kik-studio.github.io/kik-builds/games/slingbound/screens/settings_ar.png"
+  ]
+ },
+ "apk_bytes": 609677252,
+ "apk_sha256": "fbf9ac5ffef2cf75b2b6717f8040f0c5a04148a734ed69799087135062cde359",
+ "pack_sha256": "3e2424d319968d5b53bcd3dd58c02598cb85593546b68666d758242f48155baf",
+ "shapes": [
+  "https://kik-studio.github.io/kik-builds/games/slingbound/screens/game_en_desktop.png",
+  "https://kik-studio.github.io/kik-builds/games/slingbound/screens/game_en_tablet.png"
+ ],
+ "video": [
+  "https://kik-studio.github.io/kik-builds/games/slingbound/video/gameplay.mp4",
+  "https://kik-studio.github.io/kik-builds/games/slingbound/video/showcase_fx.mp4",
+  "https://kik-studio.github.io/kik-builds/games/slingbound/video/showcase_ui.mp4"
+ ],
+ "tests": "https://kik-studio.github.io/kik-builds/games/slingbound/tests.txt",
+ "benchmark_apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-slingbound/slingbound-benchmark.apk",
+ "branch": "main",
+ "checks": "https://kik-studio.github.io/kik-builds/games/slingbound/checks/",
+ "build_id": "0.3+7fe4e6f",
+ "built_on": "studio server",
+ "review": {
+  "build_id": "0.2+7f9d260",
+  "machine": "studio PC GPU",
+  "when": "2026-11-04 12:44 UTC"
+ },
+ "media": {
+  "build_id": "0.2+7f9d260",
+  "version": "0.2",
+  "carried": true,
+  "label": "from v0.2 (older build)"
+ }
+}

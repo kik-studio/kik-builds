@@ -1,0 +1,9 @@
+- New "Powers" chapter in Gem Flare (27 boards) and in Pearl Lagoon (24 boards), after the 60 levels. It opens once you have solved level 20 of that game.
+- Gem Flare powers: a big group leaves a Rocket (5-6 gems), a Bomb (7-8) or an all-colours gem (9 or more). Clearing gems of a bomb's own colour charges it; when its rim reaches 12 it grows from 3x3 to 5x5. The all-colours gem shows all four colours and clears the one you pick. Magnets gather gems, and a rocket or bomb next to another rocket or bomb can be fused.
+- Pearl Lagoon powers: swipe on the shell to swap your two colours, a Rainbow pearl every 12 matched pearls, Comet shots that pass through up to three pearls, clasps that break after two hits, and a Burst after three bank-shot matches.
+- Every power shows exactly what it will do before you confirm, and Cancel costs nothing. New sounds for every power.
+- All the old levels of every game, your stars, collection, coins and saved games are exactly the same; powers never appear on old boards.
+- The level lists now put a small mark on the very hard levels.
+- Fixed: after updating from an older test version, the name step could say "No connection" with working internet; this version starts a fresh test account instead. "No connection" now shows only when there really is no internet.
+- Bigger Back, Levels, Hint and "All games" buttons, pop-up sheet buttons and hub links at large text sizes.
+- Not finished yet: some checks still need a real phone (name step after an update install, iPhone opening, a new account from a phone); black pictures on the slowest test emulator (emulator limit); a studio purchase test still fails (store purchases only); no Google Play closed test and no store version this round.

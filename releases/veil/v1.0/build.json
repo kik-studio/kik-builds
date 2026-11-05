@@ -1,0 +1,60 @@
+{
+ "game_id": "veil",
+ "version": "1.0",
+ "updated": "2026-11-05",
+ "commit": "dedfaf7",
+ "links": {
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-veil-v1.0/veil.apk"
+ },
+ "screenshots": {
+  "en": [
+   "https://kik-studio.github.io/kik-builds/releases/veil/v1.0/screens/game_en.jpg",
+   "https://kik-studio.github.io/kik-builds/releases/veil/v1.0/screens/menu_en.jpg",
+   "https://kik-studio.github.io/kik-builds/releases/veil/v1.0/screens/settings_en.jpg"
+  ],
+  "ar": [
+   "https://kik-studio.github.io/kik-builds/releases/veil/v1.0/screens/game_ar.jpg",
+   "https://kik-studio.github.io/kik-builds/releases/veil/v1.0/screens/menu_ar.jpg",
+   "https://kik-studio.github.io/kik-builds/releases/veil/v1.0/screens/settings_ar.jpg"
+  ]
+ },
+ "apk_bytes": 226466191,
+ "apk_sha256": "3144a74ab6c11466d71f550c5c6529249e603daa96294c363013231180ad79ad",
+ "pack_sha256": "f1633064296a4abe3b08ad13674f1d2133830ec2dbfb8d1b6d6b79f137891faf",
+ "shapes": [
+  "https://kik-studio.github.io/kik-builds/releases/veil/v1.0/screens/game_en_desktop.jpg",
+  "https://kik-studio.github.io/kik-builds/releases/veil/v1.0/screens/game_en_tablet.jpg"
+ ],
+ "video": [
+  "https://kik-studio.github.io/kik-builds/games/veil/video/gameplay.mp4",
+  "https://kik-studio.github.io/kik-builds/games/veil/video/showcase_fx.mp4",
+  "https://kik-studio.github.io/kik-builds/games/veil/video/showcase_ui.mp4"
+ ],
+ "tests": "https://kik-studio.github.io/kik-builds/games/veil/tests.txt",
+ "benchmark_apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-veil/veil-benchmark.apk",
+ "branch": "main",
+ "checks": "https://kik-studio.github.io/kik-builds/releases/veil/v1.0/checks/",
+ "build_id": "1.0+dedfaf7",
+ "built_on": "studio server",
+ "review": {
+  "build_id": "1.0+dedfaf7",
+  "machine": "studio PC GPU",
+  "when": "2026-11-05 03:36 UTC"
+ },
+ "media": {
+  "build_id": "1.0+dedfaf7",
+  "version": "1.0",
+  "carried": false,
+  "label": null
+ },
+ "label": "v1.0",
+ "released": "2026-11-05 03:30 UTC",
+ "state": "accepted",
+ "final_apk_sha256": "dba25f9281fe960381dfc9997addad357fecfdaf00a5378d186579aac7ac5d03",
+ "screens_hd": [
+  "https://kik-studio.github.io/kik-builds/releases/veil/v1.0/screens/hd/game_ar.jpg",
+  "https://kik-studio.github.io/kik-builds/releases/veil/v1.0/screens/hd/game_en.jpg",
+  "https://kik-studio.github.io/kik-builds/releases/veil/v1.0/screens/hd/menu_en.jpg"
+ ]
+}

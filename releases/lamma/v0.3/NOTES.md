@@ -1,0 +1,31 @@
+لمَّتنا 0.3
+- كلام اللعبة صار أدفأ وأوضح: ترحيب، عزايم، انتظار، احتفالات، وكل تعليمة سهلة القراءة.
+- ثلاث حركات جديدة: سرقة، صد، ودبّلها. كل لاعب له حركتين مختلفتين في كل لعبة، وتنكشف مع النتيجة.
+- أصحابي: أضيفوا أصحابكم، واعزموهم على لمّتكم بتنبيه أو برابط واتساب يفتح الغرفة على طول.
+- سجل اللمّات: كل لعبة لعبتوها مع نتيجتها، وبطاقة تشاركونها بعد كل لعبة.
+- لوحة اللمّة: أكثر فوز وأكثر نقاط، وبطاقة لكل لاعب فيها صورته وإطاره.
+- مراجعة المضيف صارت مباشرة للكل: كل لاعب يشوف قرارات المضيف أول بأول مع مرجع الإجابة.
+- النتيجة والترتيب في شاشة وحدة: خمس ثواني للملصقات والمناغشة، بعدها يطلع الترتيب لحاله (ما أحد يقدر يتخطاها، حتى المضيف).
+- اعرضها على التلفزيون: AirPlay في الآيفون، Chromecast في الأندرويد، أو أي تلفزيون من lammatna.karibros.studio/tv برمز الغرفة.
+- 18 فئة جديدة مع بلس (مفتوحة لكم في نسخة التجربة).
+- «طريقة اللعب»: شرائح سريعة بصور، وفيديو قصير بصوت عربي، ومعها زر «؟» داخل الغرفة.
+- تفاعلات متحركة (ومنها «كفو» بشكلها الجديد)، وصندوق احتفال للفائز، و«نعيدها بنفس المجموعة».
+- الأزرار والانتقالات صارت أمتع، وصفحة السؤال كلها في شاشة وحدة حتى والكيبورد مفتوح.
+- ما فيه إعلانات في هذي النسخة.
+- جرّبوا على جوالاتكم: تسجيل الدخول بجوجل وأبل، الكتابة بالكيبورد العربي، رابط واتساب يفتح الغرفة، تنبيه العزيمة، صفحة الشراء، والعرض على التلفزيون.
+
+Lammatna 0.3
+- The game's words are warmer and clearer: welcomes, invites, waiting moments, celebrations, and every instruction easy to read.
+- Three new moves: Steal, Block and Double. Each player gets two different moves per game; they are revealed with the results.
+- Friends: add them and invite them to your room with a notification or a WhatsApp link that opens the room straight away.
+- Game history: every game you played with its result, and a card to share after each game.
+- Leaderboards: most wins and most points, and a player card with photo and frame.
+- The host's review is live for everyone: every player sees each decision as it happens, with the reference answers.
+- Results and ranking on one screen: five seconds for stickers and teasing, then the ranking shows by itself (nobody can skip it, not even the host).
+- Show it on the TV: AirPlay on iPhone, Chromecast on Android, or any TV at lammatna.karibros.studio/tv with the room code.
+- 18 new categories with Plus (unlocked for testers in this version).
+- How to play: quick picture slides, a short video with an Arabic voice, and a «?» button inside the room.
+- Animated reactions (including the redesigned «كفو»), a winner celebration box, and a rematch with the same group.
+- More fun buttons and transitions; the question page fits one screen even with the keyboard open.
+- No ads in this version.
+- Please try on your phone: Google and Apple sign-in, typing with the Arabic keyboard, a WhatsApp link opening the room, the invite notification, the purchase sheet, and showing it on the TV.
