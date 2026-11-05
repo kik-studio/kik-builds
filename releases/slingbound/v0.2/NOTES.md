@@ -1,0 +1,24 @@
+- The Postyard is now a real open world in the sky: pink-rock islands with mossy cliffs and waterfalls over a sea of clouds, linked by red stone arches, a rope-net sky bridge, cloth-ribbon bridges and timber bridges, with a rope net hung over the sling gap.
+- Stone courts and streets to walk in: ivory and pink paving, walls with crenellations, arches and arcades, tile-roof houses with wooden balconies, market stalls, a shadow-puppet theatre, woven banners and awnings, palms, plants and lanterns.
+- The counterweight tower is a tall earth-plaster tower with turning brass pulleys and red belts; the crane by the ring rig swings its hook and net.
+- The toys court has rugs, a rug roller, a fountain and drums; the east yard has striped awnings and stepping posts.
+- Blue sky, warm sun and soft shadows; the rope-net and cloth bridges sag a little under your steps; parcels and barrels stay put, bowling pins still fall.
+- Spark is soft pink and furry again, with clear eyes that blink.
+- The side alley and the runner street are dressed in the same stone, brass and cloth.
+- Should be fixed: the game could crash when both players tapped Ready in the room and the world started.
+- Should be fixed: a crash on Android after leaving a lobby and joining it again.
+- After both tap Ready, a loading screen (three dots) builds the world for both phones together.
+- In the runner street you now see your partner duck on your own phone.
+- A raised terrace with a curved stair in the main court, under a shade sail.
+- Fall off an island and you come back right where you last stood.
+- Bigger letter keys on the join screen.
+- The Classic controls now show a Hold / Grab label on screen.
+- Arabic: clearer words for "local network is off" and for the ring button.
+- Known: online play outside the same Wi-Fi can still feel slow; same Wi-Fi is the smooth way to play.
+- Known: Arabic lines that talk about your partner do not use the female form yet.
+- Known: the invite link opens the studio page, not the game yet: type the 5-letter code on the Join screen.
+- Known: this test is Android only; iPhone comes in a later test.
+- Known: two phones on the same Wi-Fi was tested as two copies of the game talking over the network, not yet on two real phones: tell us how your game goes.
+- Known: some wide views of the world are heavier to draw than we want; tell us if any place stutters on your phone.
+- Known: the first time the world builds after you both tap Ready it can take a minute or more on a phone; it is faster the next time.
+- Known: how smooth online play is on real phones is measured from your games in this test.

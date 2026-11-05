@@ -1,0 +1,60 @@
+{
+ "game_id": "sunpunch-rebels",
+ "version": "0.1",
+ "updated": "2026-10-31",
+ "commit": "2507526",
+ "links": {
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-sunpunch-rebels-v0.1/sunpunch-rebels.apk"
+ },
+ "screenshots": {
+  "en": [
+   "https://kik-studio.github.io/kik-builds/releases/sunpunch-rebels/v0.1/screens/game_en.png",
+   "https://kik-studio.github.io/kik-builds/releases/sunpunch-rebels/v0.1/screens/menu_en.png",
+   "https://kik-studio.github.io/kik-builds/releases/sunpunch-rebels/v0.1/screens/settings_en.png"
+  ],
+  "ar": [
+   "https://kik-studio.github.io/kik-builds/releases/sunpunch-rebels/v0.1/screens/game_ar.png",
+   "https://kik-studio.github.io/kik-builds/releases/sunpunch-rebels/v0.1/screens/menu_ar.png",
+   "https://kik-studio.github.io/kik-builds/releases/sunpunch-rebels/v0.1/screens/settings_ar.png"
+  ]
+ },
+ "apk_bytes": 61136770,
+ "apk_sha256": "70201c5ffa29c121692600164ee34c464fbbcb89cbb2cebdcdfeea67bbc9aed5",
+ "pack_sha256": "887edbd9d099f0b2d911b6de9cc4a4705cea6f6ac5c8a55e1c2e3122277a5535",
+ "shapes": [
+  "https://kik-studio.github.io/kik-builds/releases/sunpunch-rebels/v0.1/screens/game_en_desktop.png",
+  "https://kik-studio.github.io/kik-builds/releases/sunpunch-rebels/v0.1/screens/game_en_tablet.png"
+ ],
+ "video": [
+  "https://kik-studio.github.io/kik-builds/games/sunpunch-rebels/video/gameplay.mp4",
+  "https://kik-studio.github.io/kik-builds/games/sunpunch-rebels/video/showcase_fx.mp4",
+  "https://kik-studio.github.io/kik-builds/games/sunpunch-rebels/video/showcase_ui.mp4"
+ ],
+ "tests": "https://kik-studio.github.io/kik-builds/games/sunpunch-rebels/tests.txt",
+ "benchmark_apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-sunpunch-rebels/sunpunch-rebels-benchmark.apk",
+ "branch": "main",
+ "checks": "https://kik-studio.github.io/kik-builds/releases/sunpunch-rebels/v0.1/checks/",
+ "build_id": "0.1+2507526",
+ "built_on": "studio server",
+ "review": {
+  "build_id": "0.1+2507526",
+  "machine": "studio PC GPU",
+  "when": "2026-11-01 01:53 UTC"
+ },
+ "media": {
+  "build_id": "0.1+2507526",
+  "version": "0.1",
+  "carried": false,
+  "label": null
+ },
+ "label": "v0.1",
+ "released": "2026-10-31 22:16 UTC",
+ "state": "accepted",
+ "final_apk_sha256": "c3b611b1b6474159eeae3f202fcdf2ac6b2182ba13b89fa35a65b67d450aa0d2",
+ "screens_hd": [
+  "https://kik-studio.github.io/kik-builds/releases/sunpunch-rebels/v0.1/screens/hd/game_ar.jpg",
+  "https://kik-studio.github.io/kik-builds/releases/sunpunch-rebels/v0.1/screens/hd/game_en.jpg",
+  "https://kik-studio.github.io/kik-builds/releases/sunpunch-rebels/v0.1/screens/hd/menu_en.jpg"
+ ]
+}

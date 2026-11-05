@@ -1,0 +1,11 @@
+[
+ {
+  "label": "v0.1",
+  "build_id": "0.1+2507526",
+  "released": "2026-10-31 22:16 UTC",
+  "state": "accepted",
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-sunpunch-rebels-v0.1/sunpunch-rebels.apk",
+  "notes": "# SUNPUNCH v0.1 release notes\n\n- A brand-new SUNPUNCH: this test replaces the old game, with a fresh start (old saves are not carried over).\n- Fly KITE, the orange racer, through Cloud Garden level 1: Pips, Bops and the Petal Gate that opens on the music's beat.\n- SunPunch: fill the meter and hit the sun button to blast every enemy on screen and clear their shots.\n- Super: fill the blue shield button for 7 seconds of stronger shots.\n- The Hangar: spend the gold you earn in flight on Cannons 1 and watch them fire from your plane, at Home and in flight.\n- Zaid leans on the balcony at Home and cheers when you come back with a new part fitted.\n- Play in Arabic or English (Settings > Language); pick your player name to start.\n- There is no real-money shop and no ads in this test: parts are bought only with gold earned in flight."
+ }
+]
