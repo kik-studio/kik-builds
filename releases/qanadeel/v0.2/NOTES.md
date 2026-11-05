@@ -1,0 +1,10 @@
+- Qanadeel is now a collection: a new home with six puzzle games, three to play now and three coming soon.
+- Light Trails (the light-path game you know): all 300 levels and your progress, coins and hints kept, with a new carved-stone board and glowing gems. Each level you solve still lights a lantern in the chapter's painting.
+- New: Color Dew, pour the colors between glass tubes until each tube holds one color. 60 levels and a daily board.
+- New: Pocket Exit, slide the cars until the coral car can leave the harbor. 60 levels and a daily board.
+- One wallet and one hint stock for all games; a daily puzzle that rotates between the games; a 7-day gift you claim at your own pace.
+- Resume takes you back to the exact puzzle you left. Collection shows what you solved in each game.
+- New shop with four items (remove ads, two coin packs, five hints). Buying is a test purchase in this version: nothing is charged.
+- Every colored piece carries a symbol, and reduce motion turns the celebrations into simple fades.
+- Please try on your phone: type your name in Arabic with the keyboard, drag very fast, and touch the board with two fingers at once (only one move should happen).
+- Qanadeel has its new logo and app icon.
