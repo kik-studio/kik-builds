@@ -1,0 +1,8 @@
+- Pearl Lagoon has its own painted look: pearls with their colour symbols, a pearl shell on a lily leaf that opens for every shot, a leaf rail along the top, mother-of-pearl side posts, a gold necklace along the shore and the new Lily Shore painting behind the board.
+- Pearl Lagoon boards are new: each of the 60 levels and the daily boards now has one big planned moment, a bank shot into a hidden pocket or one cut that sets a big part of the board free. Boards are not longer than before, and your cleared levels stay cleared.
+- Pearl Lagoon hints now always end with the shell aimed forward: when a board can no longer be won, the hint first takes a few shots back for free, then aims the next good shot.
+- Light Trails wins reached with a hint are now checked like every other win.
+- On iPhone, the app no longer downloads the Light Trails chapters it already carries inside.
+- Arabic: the first achievement message in Light Trails no longer covers the pause button, the level title and the wallet.
+- Your test account starts fresh once in this version: please type your name again at the first start (test accounts are now kept apart from the future store version).
+- In this test version the video hint button still gives the hint at once (no video plays).
