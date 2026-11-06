@@ -1,0 +1,60 @@
+{
+ "game_id": "qanadeel",
+ "version": "0.3",
+ "updated": "2026-11-01",
+ "commit": "c54d8eb",
+ "links": {
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-qanadeel-v0.3/qanadeel.apk"
+ },
+ "screenshots": {
+  "en": [
+   "https://kik-studio.github.io/kik-builds/releases/qanadeel/v0.3/screens/game_en.png",
+   "https://kik-studio.github.io/kik-builds/releases/qanadeel/v0.3/screens/menu_en.png",
+   "https://kik-studio.github.io/kik-builds/releases/qanadeel/v0.3/screens/settings_en.png"
+  ],
+  "ar": [
+   "https://kik-studio.github.io/kik-builds/releases/qanadeel/v0.3/screens/game_ar.png",
+   "https://kik-studio.github.io/kik-builds/releases/qanadeel/v0.3/screens/menu_ar.png",
+   "https://kik-studio.github.io/kik-builds/releases/qanadeel/v0.3/screens/settings_ar.png"
+  ]
+ },
+ "apk_bytes": 204930634,
+ "apk_sha256": "ec1a29a907e7917470210844a9daf61b9b2e64762f6e3831aeca8489332c524c",
+ "pack_sha256": "62ab8b74c6dd96567ab76aed44ccbbef80c6e6ba6f59c6b8f5a366b959c8aba4",
+ "shapes": [
+  "https://kik-studio.github.io/kik-builds/releases/qanadeel/v0.3/screens/game_en_desktop.png",
+  "https://kik-studio.github.io/kik-builds/releases/qanadeel/v0.3/screens/game_en_tablet.png"
+ ],
+ "video": [
+  "https://kik-studio.github.io/kik-builds/games/qanadeel/video/gameplay.mp4",
+  "https://kik-studio.github.io/kik-builds/games/qanadeel/video/showcase_fx.mp4",
+  "https://kik-studio.github.io/kik-builds/games/qanadeel/video/showcase_ui.mp4"
+ ],
+ "tests": "https://kik-studio.github.io/kik-builds/games/qanadeel/tests.txt",
+ "benchmark_apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-qanadeel/qanadeel-benchmark.apk",
+ "branch": "main",
+ "checks": "https://kik-studio.github.io/kik-builds/releases/qanadeel/v0.3/checks/",
+ "build_id": "0.3+c54d8eb",
+ "built_on": "studio server",
+ "review": {
+  "build_id": "0.3+c54d8eb",
+  "machine": "studio PC GPU",
+  "when": "2026-11-01 11:23 UTC"
+ },
+ "media": {
+  "build_id": "0.3+c54d8eb",
+  "version": "0.3",
+  "carried": false,
+  "label": null
+ },
+ "label": "v0.3",
+ "released": "2026-11-01 11:17 UTC",
+ "state": "accepted",
+ "final_apk_sha256": "4d5cd5b2588a69ed1b45c8753db2303c72ba12f6720b4873cca0968866be8b28",
+ "screens_hd": [
+  "https://kik-studio.github.io/kik-builds/releases/qanadeel/v0.3/screens/hd/game_ar.jpg",
+  "https://kik-studio.github.io/kik-builds/releases/qanadeel/v0.3/screens/hd/game_en.jpg",
+  "https://kik-studio.github.io/kik-builds/releases/qanadeel/v0.3/screens/hd/menu_en.jpg"
+ ]
+}

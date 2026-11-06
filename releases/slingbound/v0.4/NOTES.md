@@ -1,0 +1,7 @@
+- Fixed: the lobby is usable again. The small connection light now reads on one line, so the hero cards and the Ready button are back on screen and you can start the game together.
+- Everything else is the same as the third test: carry the parcel through five stations to the Post Tower together.
+- Known: the start is much faster but not yet measured with your phones; tell us if it takes longer than half a minute or the picture freezes.
+- Known: some Arabic lines that name your friend still use the male form.
+- Known: the small striped flask tag on the play screen is on purpose: this is a test build, and after "Delivered!" every place of the Postyard is open.
+- Known: on some older phones the game closes just as the world finishes loading after Ready. We are fixing it next; newer phones work.
+- Known: this test is Android only.

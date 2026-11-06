@@ -1,0 +1,16 @@
+- One clear job: carry the parcel to the glowing Post Tower through five stations. Each one opens only when you solve it together: the gate (both stand on the two pads), the low wall (climb the ladder), the gap (brace and sling your partner, then they kick down a plank for you), the high ledge (sling one up to pull the lever, a ladder drops for the other) and the delivery at the tower.
+- A see-through pair shows each station's move once when you arrive, and again if you are stuck. Each station gives a stamp on your postcard (top left) with a stamp sound; five stamps and the parcel in the tower box = "Delivered!".
+- After the delivery the whole Postyard is free to explore. From the menu you can restart the path or jump to any station.
+- Slinging is now simple: posts are no longer anchors, only your partner is. Your partner holds ACTION to brace (you see their glow and feel a buzz), then you alone pull and aim. A short pull lands near, a full pull goes 14 m, and you land exactly where the thick white line and ring show. The camera rises behind you while you aim and stays still.
+- A calm camera: it follows smoothly, keeps both heroes in view and only turns behind you while you run straight ahead. It moves in close at walls so it never hides inside one, and finds your partner again if a wall is in the way. The standing plank at the gap steps out of the picture while it hides you. Tap the small recenter button to bring it behind you. The lock button is gone.
+- The heroes move a bit slower, speed up and stop smoothly and turn in a curve. You can't drift far apart (about 8 m); a sling stretches further, then the ribbon pulls back.
+- Spark is quicker and hops higher; Crag is heavier and lands with a thump.
+- Only two big buttons: JUMP and ACTION (its picture shows what it will do). Ping: press the ping button, drag to the spot and let go.
+- Things that look solid are solid now: walls, crates, carts, houses and railings block you; grass, flowers and cloth you brush through.
+- Same Wi-Fi: both tap "Same Wi-Fi" on the home screen, tap your friend's card, they say yes, and you are in the room together, even with no internet. A small light shows how good the connection is, and Ready waits until the link is steady.
+- The world builds faster after you both tap Ready, with a bar that really moves, and the connection holds while it loads.
+- Known: the start is much faster but not yet measured on a real phone; tell us if it takes longer than half a minute or the picture freezes.
+- Known: Same Wi-Fi was tested on one computer, not yet on two real phones; tell us how it goes.
+- Known: the small striped flask tag on the play screen is on purpose: this is a test build, and after "Delivered!" every place of the Postyard is open.
+- Known: some Arabic lines that name your friend still use the male form.
+- Known: this test is Android only.
