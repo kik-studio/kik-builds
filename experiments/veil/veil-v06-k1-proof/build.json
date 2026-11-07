@@ -1,0 +1,14 @@
+{
+ "game_id": "veil",
+ "version": "0.6",
+ "updated": "2026-10-23",
+ "branch": "veil-v06-k1-proof",
+ "built_on": "studio server kik-ovh-1 (export job)",
+ "build_id": "0.6+veil-v06-k1-proof",
+ "links": {
+  "web": "https://kik-studio-dev.web.app/experiments/veil/veil-v06-k1-proof/web/index.html",
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-veil-veil-v06-k1-proof/veil.apk"
+ },
+ "benchmark_apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-veil-veil-v06-k1-proof/veil-benchmark.apk",
+ "apk_bytes": 156555803
+}

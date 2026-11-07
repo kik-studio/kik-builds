@@ -1,0 +1,15 @@
+- Steadier on good phones: the game now prepares the graphics while the loading screen is up, so the world appears without the long stuck moments. The world keeps its full look: every lantern keeps its light and shadow.
+- Smoother start: the world is put together in small steps behind the loading bar, so the bar keeps moving instead of stopping for seconds.
+- Playing together: if one of you leaves the game for a moment (home button, a call), you are back together when you return; the connection sign can take up to about 20 seconds to turn green again.
+- One connection sign: the top-right corner shows how you are connected; the second, cut-off line in the top-left corner is gone.
+- Same Wi-Fi: your friend's card no longer flickers, and one tap sends one invitation.
+- Same Wi-Fi in Arabic: lines about your friend now use the right form for your friend (he or she).
+- Bigger buttons: every button is now easy to tap on small screens.
+- Known: some older or lower-cost phones are not tuned yet: there the game may still close after Ready, the start can be very long, and the picture is less sharp; this test is for newer phones.
+- Known: in a game started with a code, Arabic lines about your friend still use the male form.
+- Known: the final look of the heroes and the Postyard (faces, fur, materials) comes later; this test is about playing.
+- Known: some decorations were moved off the walking paths, so a few path edges look different.
+- Known: the start still takes about 33-39 seconds and the loading bar can still pause briefly; making it shorter is next.
+- Known: on some phones the first station can feel a little less smooth than the rest.
+- Known: if the game closes, the crash report reaches us, but reading it back in full is still being set up.
+- Known: this test is Android only.
