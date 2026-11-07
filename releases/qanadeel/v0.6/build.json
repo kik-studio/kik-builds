@@ -1,0 +1,74 @@
+{
+ "game_id": "qanadeel",
+ "version": "0.6",
+ "updated": "2026-11-02",
+ "commit": "04a847b",
+ "links": {
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-qanadeel-v0.6/qanadeel.apk"
+ },
+ "screenshots": {
+  "en": [
+   "https://kik-studio.github.io/kik-builds/releases/qanadeel/v0.6/screens/color_dew_1_en.jpg",
+   "https://kik-studio.github.io/kik-builds/releases/qanadeel/v0.6/screens/gem_flare_1_en.jpg",
+   "https://kik-studio.github.io/kik-builds/releases/qanadeel/v0.6/screens/hub_en.jpg",
+   "https://kik-studio.github.io/kik-builds/releases/qanadeel/v0.6/screens/moon_rings_1_en.jpg",
+   "https://kik-studio.github.io/kik-builds/releases/qanadeel/v0.6/screens/pearl_lagoon_1_en.jpg",
+   "https://kik-studio.github.io/kik-builds/releases/qanadeel/v0.6/screens/pocket_exit_1_en.jpg",
+   "https://kik-studio.github.io/kik-builds/releases/qanadeel/v0.6/screens/splash_en.jpg"
+  ],
+  "ar": [
+   "https://kik-studio.github.io/kik-builds/releases/qanadeel/v0.6/screens/color_dew_1_ar.jpg",
+   "https://kik-studio.github.io/kik-builds/releases/qanadeel/v0.6/screens/gem_flare_1_ar.jpg",
+   "https://kik-studio.github.io/kik-builds/releases/qanadeel/v0.6/screens/hub_ar.jpg",
+   "https://kik-studio.github.io/kik-builds/releases/qanadeel/v0.6/screens/moon_rings_1_ar.jpg",
+   "https://kik-studio.github.io/kik-builds/releases/qanadeel/v0.6/screens/pearl_lagoon_1_ar.jpg",
+   "https://kik-studio.github.io/kik-builds/releases/qanadeel/v0.6/screens/pocket_exit_1_ar.jpg",
+   "https://kik-studio.github.io/kik-builds/releases/qanadeel/v0.6/screens/splash_ar.jpg"
+  ]
+ },
+ "apk_bytes": 159646808,
+ "apk_sha256": "38460f9e10fc3585834269f2ba86d00c86c4671c6e022e367974e21c0fc44280",
+ "pack_sha256": "cb7f858097106e4b7b0e13d4bfa14425fd42379f5af5fe74b23f9d38ff909b56",
+ "shapes": [
+  "https://kik-studio.github.io/kik-builds/releases/qanadeel/v0.6/screens/moon_rings_1_en_desktop.jpg",
+  "https://kik-studio.github.io/kik-builds/releases/qanadeel/v0.6/screens/moon_rings_1_en_tablet.jpg"
+ ],
+ "video": [
+  "https://kik-studio.github.io/kik-builds/games/qanadeel/video/gameplay.mp4"
+ ],
+ "tests": "https://kik-studio.github.io/kik-builds/games/qanadeel/tests.txt",
+ "benchmark_apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-qanadeel/qanadeel-benchmark.apk",
+ "branch": "main",
+ "checks": "https://kik-studio.github.io/kik-builds/releases/qanadeel/v0.6/checks/",
+ "build_id": "0.6+04a847b",
+ "built_on": "studio server",
+ "hd_pack": {
+  "files": 25,
+  "commit": "04a847b",
+  "mobile_bytes": 46452340,
+  "url_mobile": "https://kik-studio-test-env.web.app/packs/qanadeel/04a847b/hd_mobile.pck",
+  "web_bytes": 46452340,
+  "url_web": "https://kik-studio-test-env.web.app/packs/qanadeel/04a847b/hd_web.pck",
+  "mobile_content_hash": "473882e7ce5933d0619e4048da43b231a82c89f8859b59da1d52f7e516ea8713",
+  "mobile_sha256": "f35ee603a9527a20f59368c9233f1d17c6c4ede536a07622dbfc5c93b2e0c298",
+  "web_content_hash": "473882e7ce5933d0619e4048da43b231a82c89f8859b59da1d52f7e516ea8713",
+  "web_sha256": "f35ee603a9527a20f59368c9233f1d17c6c4ede536a07622dbfc5c93b2e0c298"
+ },
+ "review": {
+  "build_id": "0.6+04a847b",
+  "machine": "studio PC GPU",
+  "when": "2026-11-02 21:35 UTC"
+ },
+ "media": {
+  "build_id": "0.6+04a847b",
+  "version": "0.6",
+  "carried": false,
+  "label": null
+ },
+ "label": "v0.6",
+ "released": "2026-11-02 21:26 UTC",
+ "state": "accepted",
+ "final_apk_sha256": "2a98e41cab7f9f5c7431164654a0cec61ae0f4fb8a3c4a22a980786a4ac62416",
+ "screens_hd": []
+}

@@ -1,0 +1,60 @@
+{
+ "game_id": "slingbound",
+ "version": "0.3",
+ "updated": "2026-11-05",
+ "commit": "7fe4e6f",
+ "links": {
+  "web": null,
+  "apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-slingbound-v0.3/slingbound.apk"
+ },
+ "screenshots": {
+  "en": [
+   "https://kik-studio.github.io/kik-builds/releases/slingbound/v0.3/screens/game_en.png",
+   "https://kik-studio.github.io/kik-builds/releases/slingbound/v0.3/screens/menu_en.png",
+   "https://kik-studio.github.io/kik-builds/releases/slingbound/v0.3/screens/settings_en.png"
+  ],
+  "ar": [
+   "https://kik-studio.github.io/kik-builds/releases/slingbound/v0.3/screens/game_ar.png",
+   "https://kik-studio.github.io/kik-builds/releases/slingbound/v0.3/screens/menu_ar.png",
+   "https://kik-studio.github.io/kik-builds/releases/slingbound/v0.3/screens/settings_ar.png"
+  ]
+ },
+ "apk_bytes": 609677252,
+ "apk_sha256": "fbf9ac5ffef2cf75b2b6717f8040f0c5a04148a734ed69799087135062cde359",
+ "pack_sha256": "3e2424d319968d5b53bcd3dd58c02598cb85593546b68666d758242f48155baf",
+ "shapes": [
+  "https://kik-studio.github.io/kik-builds/releases/slingbound/v0.3/screens/game_en_desktop.png",
+  "https://kik-studio.github.io/kik-builds/releases/slingbound/v0.3/screens/game_en_tablet.png"
+ ],
+ "video": [
+  "https://kik-studio.github.io/kik-builds/games/slingbound/video/gameplay.mp4",
+  "https://kik-studio.github.io/kik-builds/games/slingbound/video/showcase_fx.mp4",
+  "https://kik-studio.github.io/kik-builds/games/slingbound/video/showcase_ui.mp4"
+ ],
+ "tests": "https://kik-studio.github.io/kik-builds/games/slingbound/tests.txt",
+ "benchmark_apk": "https://github.com/kik-studio/kik-builds/releases/download/apk-slingbound/slingbound-benchmark.apk",
+ "branch": "main",
+ "checks": "https://kik-studio.github.io/kik-builds/releases/slingbound/v0.3/checks/",
+ "build_id": "0.3+7fe4e6f",
+ "built_on": "studio server",
+ "review": {
+  "build_id": "0.3+7fe4e6f",
+  "machine": "studio PC GPU",
+  "when": "2026-11-05 13:09 UTC"
+ },
+ "media": {
+  "build_id": "0.3+7fe4e6f",
+  "version": "0.3",
+  "carried": false,
+  "label": null
+ },
+ "label": "v0.3",
+ "released": "2026-11-05 12:13 UTC",
+ "state": "accepted",
+ "final_apk_sha256": "c8a51624d973c7d361e7b0a28fafdf38221b3e728e55e359ed2a1a590f5ec187",
+ "screens_hd": [
+  "https://kik-studio.github.io/kik-builds/releases/slingbound/v0.3/screens/hd/game_ar.jpg",
+  "https://kik-studio.github.io/kik-builds/releases/slingbound/v0.3/screens/hd/game_en.jpg",
+  "https://kik-studio.github.io/kik-builds/releases/slingbound/v0.3/screens/hd/menu_en.jpg"
+ ]
+}
