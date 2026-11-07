@@ -1,0 +1,7 @@
+- Fixed: playing as Crag no longer closes the game after Ready. Crag's picture files had names some phones could not open; every picture file now has a short simple name.
+- Safer start: if a hero's model ever fails to load, the game shows the simple hero shape instead of closing.
+- Everything else is the same as the last test: carry the parcel through five stations to the Post Tower together.
+- Known: some Arabic lines that name your friend still use the male form.
+- Known: the small striped flask tag on the play screen is on purpose: this is a test build, and after "Delivered!" every place of the Postyard is open.
+- Known: on some older phones the game closes just as the world finishes loading after Ready. We are fixing it next; newer phones work.
+- Known: this test is Android only.

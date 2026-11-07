@@ -1,0 +1,71 @@
+لمَّتنا 0.17
+- صفحة السؤال: صار لها كيبورد خاص بلمّتنا، ما يطلع كيبورد الجوال ولا اقتراحات. الحروف بنفس الترتيب العربي المعتاد، وزر «EN» يبدّل للإنجليزي وفيه شفت، وجنب المسافة زر «ثبّت جوابي».
+- الكيبورد: لما تضغطون حرف أو رقم يطلع فوقه بحجم أكبر، وإذا ثبّتم على الألف أو الياء أو الهاء أو الواو تطلع لكم أشكالها (مثل أ إ آ ء وئ وة وؤ) وتختارون منها، وإذا ثبّتم على زر المسح يمسح لين تشيلون إصبعكم.
+- صفحة السؤال بعد التعديل: نص السؤال في الوسط وصورته على الجنب، صناديق الرهان بحجم واحد صغير مهما كان عددها، مسافات متساوية بين كل الأقسام، وسؤال «إيش جوابك؟» أكبر وصندوق الجواب أطول، والقدرات فوق الكيبورد مباشرة.
+- شاشة إعدادات اللمّة بتصميم جديد: اختيار الإجراءات تحت الثواني، وخيارات الزعيم جنب بعض، وبطاقات أنظف.
+- الردهة: شلنا النص وحطينا ترس يفتح الإعدادات. الزعيم يعدّل، وباقي اللاعبين يشوفونها وتتغيّر قدامهم مباشرة بدون تعديل.
+- آخر جولة: ختم «آخر جولة!» يبدأ بقرع طبول يعلى ثم ينزل بضربة، وتحته سطر يقول مين المتقدّم ومين وراه، على الجوال وعلى التلفزيون.
+- صفحة الفائز: بطاقة الفائز أصغر وصفوف اللاعبين أقصر في كل الصفحات.
+- لو التلفزيون شغّال يختفي زر الصوت، ولو الصوت كان شغّال ينتهي برسالة قصيرة. وإذا طلع التلفزيون يرجع الزر.
+- التابلت: التطبيق يطلع بعرض الجوال في منتصف الشاشة.
+- التصويت على زعيم جديد ينتهي أول ما يصوّت كل اللي في اللمّة.
+- الصفحة الرئيسية: لو خدمة الحساب ما ترد يطلع سطر هادي يقول إننا نحفظ على جوالك لين يرجع النت، وتقدرون تنشئون أو تدخلون اللمّة عادي.
+- التلفزيون: قفل الصوت ما عاد يغطي شاشة كتابة الرمز.
+- كلمة «للمّة» تنكتب بشكل واحد في التطبيق والتلفزيون، وأرقام الأسئلة كلها بشكل واحد.
+- نهاية الجولة: بعد «انتهى الوقت» تطلع الإجابات فوراً، حتى في الجولة الأولى (كانت تتأخر أحياناً لين 30 ثانية تقريباً). جرّبناها في 9 لمّات تجريبية وكان التأخير أقل من ثانيتين.
+- لما تقرب اللمّة تنتهي، تنبيه الخمس دقايق صار شريط صغير مكان عنوان السؤال (أو فوق الزر تحت)، وما عاد يدفّ الصفحة ولا يغطي الكيبورد.
+- صفوف الترتيب والنتائج صارت سطر واحد: علامة الحركة (سرقة، دبّلها، صدّ، انسرق) وعلامة البوت صارت شارة صغيرة على الصورة، وتفاصيلها في «إيش صار هذي الجولة؟».
+- صفحة الفائز: زر «نعيدها بنفس المجموعة» وزر «الرئيسية» تحت بعض بعرض الصفحة، والكلام ما ينقسم.
+- التلفزيون: لحظة آخر جولة مع «دبّلها؟» تطلع كاملة، والأسماء الطويلة ما تنقص في سطر المتقدّم.
+ما خلصناها في هذي النسخة:
+- الكيبورد الجديد أحرفه صغيرة شوي، وبعض الجوالات الصغيرة ما تلقون المفتاح بسهولة: ارتفاع المفتاح بين 27 و38.
+- صفحة الفائز: لو اسم اللاعب طويل جداً تطول البطاقة ولا تبان معها كل الصفوف بدون تمرير.
+- صفحة الفائز: لو انتهت اللمّة بتعادل تطول البطاقة وتنزل الصفوف.
+- صفحة الفائز على الجوال الصغير جداً: زر «أضفه» ياخذ مكان من الصف فيطول.
+- صفحة الترتيب والنتائج ممكن تحسّون فيها بتقطيع خفيف في الحركة.
+- صفحة الدخول بدون رمز تعرض اسم لمّتنا: تنتظر مراجعة Apple لنسخة 1.0.
+- على Chromecast يطلع التلفزيون بالشكل القديم لين مراجعة Apple لنسخة 1.0، والتغييرات الجديدة تبان لما تفتحون صفحة التلفزيون من متصفح التلفزيون بالرمز.
+- على أصغر الجوالات (عرض 320) صفوف الترتيب سطرين: الاسم فوق والنقاط تحته.
+- لما يطلع تنبيه الخمس دقايق، رقم السؤال («السؤال 3 من 10») يختفي لين يخلص التنبيه.
+- لحظة «آخر جولة» على الخط الكبير جداً: الختم يلمس الحلقة اللي حوله شوي.
+- على الجوال الحقيقي ما جرّبنا الأزرار الممسوكة في الكيبورد: أشكال الحروف عند الضغط المطوّل ومسح الحروف بالإمساك. جرّبوها وقولوا لنا.
+- صوت مذيعة لمَّتنا عند الفائز: واحد من الأصوات الرجالية موقوف لين نسمعه ونعتمده، فتطلع الأصوات الرجالية أقل شوي من النسائية.
+- تصليحات السيرفر لنسخة المتجر تنتظر مراجعة Apple لنسخة 1.0.
+- نسخ التجربة تنتقل لسيرفر التجربة بعد مراجعة Apple لنسخة 1.0.
+- على الآيفون ما جرّبنا بجهاز حقيقي: الصوت مع زر الصامت، الكيبورد في سؤال الصورة، البث على Chromecast، وإشعار الهدية. جرّبوها وقولوا لنا.
+
+Lammatna 0.17
+- Question page: it now has Lammatna's own keyboard. The phone keyboard and suggestions never appear. The letters follow the usual Arabic layout, the «EN» key switches to English with a shift key, and next to the space bar sits the «Lock my answer» button.
+- Keyboard: when you press a letter or a number it shows bigger above the key; hold the alef, yaa, haa or waw to pick its other forms (like أ إ آ ء, ئ, ة, ؤ); hold the delete key and it keeps deleting until you let go.
+- Question page layout: the question text sits in the middle with its picture at the side, the bet boxes are one small size whatever their number, the gaps between all sections are even, «What's your answer?» is bigger with a taller answer box, and the powers sit right above the keyboard.
+- The room setup screen has a new design: the action choice is under the seconds, the host's choices sit side by side, and the cards are cleaner.
+- Lobby: the text block is gone and a gear opens the settings. The host edits; other players see them and watch them change live without editing.
+- Last round: the «Last round!» stamp starts with a drum roll that builds and lands on a hit, with a line under it saying who leads and who is chasing, on the phone and on the TV.
+- Winner page: the winner card is smaller and the player rows are shorter on every page.
+- While a TV is on, the voice button disappears, and if voice was on it ends with one short message. When the TV leaves the button comes back.
+- Tablet: the app shows at phone width in the middle of the screen.
+- The vote for a new host ends as soon as everyone in the room has voted.
+- Home: when the account service does not answer, one calm line says we are saving on your phone until the net is back, and you can still create or join a room.
+- TV: the sound lock no longer covers the code entry screen.
+- The word for «a lamma» is now spelled one way across the app and the TV, and numbers in the questions use one digit style.
+- Round end: after «time is up» the answers now show right away, even in the first round (it was sometimes up to about 30 seconds late). We tried it in 9 test games and it was always under 2 seconds.
+- The 5-minute closing warning is now a small strip in the question title's place (or above the bottom button) and no longer pushes the page down or covers the keyboard.
+- Ranking and results rows are one line: the move mark (steal, double, block, stolen from) and the bot mark are a small badge on the picture; the details are in "What happened this round?".
+- Winner page: «Play again with the same group» and «Home» sit one under the other at full width, never split over two lines.
+- TV: the last round with "Double it?" fits, and long names are never cut in the leader line.
+Not finished in this version:
+- The new keyboard keys are a little small, and on small phones they can be hard to hit: key height is between 27 and 38.
+- Winner page: with a very long player name the card grows and not all rows show without scrolling.
+- Winner page: when a lamma ends in a tie the card grows and the rows move down.
+- Winner page on the smallest phones: the add-friend button takes room in the row, so the row grows.
+- The ranking and results pages may show a slight stutter in motion.
+- The join page with no code showing the Lammatna name waits for Apple's review of version 1.0.
+- On a Chromecast the TV still shows the older TV page until Apple's review of version 1.0; the new TV changes show when you open the TV page in the TV's browser with the code.
+- On the smallest phones (320 wide) the ranking rows are two lines: the name above and the points under it.
+- While the 5-minute closing warning shows, the question number («Question 3 of 10») is hidden.
+- The «last round» moment at the very largest text size: the stamp slightly touches the ring around it.
+- On a real phone we have not tried the held keyboard keys yet: the letter forms on a long press and deleting by holding. Please try them and tell us.
+- Lammatna's host voice at the winner: one of the man's voice lines is paused until we hear it and approve it, so man lines play a little less than woman lines.
+- Server fixes for the store app wait for Apple's review of version 1.0.
+- Test builds move to the test server after Apple's review of version 1.0.
+- On iPhone, not tried on a real phone yet: voice with the silent switch, the keyboard on a picture question, casting to a Chromecast, and the gift notification: please try them and tell us.

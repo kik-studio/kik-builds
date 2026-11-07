@@ -1,0 +1,7 @@
+- The game is now called LAMBA «لمبة», with its new logo on the first screen and the hub, and under the app icon.
+- A calmer, simpler look on every screen: a hub of six equal game cards with one Resume line, one flat level grid per game, and plain list screens for Collection, Daily, Gift, Shop, Settings and How to play.
+- Game screens put the board first: one small header (back, level, wallet), one row of Undo / Restart / Hint, and the world picture only at the edges.
+- Moon Rings is easier to understand: START on the pearl and EXIT on each exit, only the channels really joined to the pearl light up in teal, the light stops where a channel breaks, locked rings show a padlock, and the first three boards teach in three short steps (replay them from Settings > How to play).
+- How to play (in Settings) now explains all six games.
+- Puzzles, levels, prices and rewards are exactly the same, and your progress carries over.
+- Your test account starts fresh once in this version: please type your name again at the first start (test play now has its own separate test servers).

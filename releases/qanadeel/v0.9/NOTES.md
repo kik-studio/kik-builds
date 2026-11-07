@@ -1,0 +1,13 @@
+- Moon Rings gets its "Powers" chapter after level 20, like the other games: rings joined by a gear (turn one, its partner turns the other way), a gold key that keeps a door open once the light has reached it, rings with a second face you flip with the moon button, and a separate "Twin light" section where a teal light and a gold light must each reach their own exits without touching.
+- New "Mixed review" boards at the end of the Powers chapter in Light Trails (4), Color Dew (4), Pocket Exit (3), Gem Flare (3) and Pearl Lagoon (3): they combine powers you have already learned.
+- New "Powers board of the day" card on the daily screen of every game, once you have finished that game's power lessons: the same board for everyone each day, easier on Monday and hardest on Sunday, paid once per board; finish all seven of a week and that week's small lantern lights. The normal daily puzzle, its reward and its streak stay exactly the same.
+- Hints now work on every new board, including the Light Trails mirror boards and constellation relays.
+- The help pages explain each game's powers, and every new line was checked in Arabic and English.
+- In Light Trails one drawn stroke on a Powers board is now one undo; the gate confirm card no longer covers the board on small phones; after a win the Powers chapter goes straight to its next board.
+- Constellation relays: the sky takes on the colours of the boards you solved, and a shooting star leads to the next board.
+- New sounds for gears, keys, doors, face flips, the twin lights and the Powers board of the day.
+- Also changed: a Powers board's win card now names it as its header does ("Powers board 7"); the help list's fold buttons and the Back link are bigger on small phones; the Pearl Lagoon clasp on Powers boards has a gold rim so it is easier to see.
+- The game uses less memory while you play: about 17 MB less on our slowest test path after playing every board, including the new ones (143.5 MB instead of 160.6 MB).
+- Small fixes: the + / - sign in the help list is now drawn in the middle of its row, and on the Light Trails daily screen the whole page scrolls when the Powers board card shows, so the list of earlier days is never squeezed.
+- All old levels, stars, coins, collection and saved games are exactly the same; old boards never get powers.
+- Not finished yet: some checks still need a real phone (a new account made on a phone, the name step after an update install, the iPhone app opening); black pictures on the slowest test emulator (emulator limit); a studio purchase test still fails (store purchases only); no store version and no Google Play closed test this round.

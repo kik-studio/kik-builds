@@ -1,0 +1,57 @@
+لمَّتنا 0.19
+- القوانين: تحت كل سلايد في طريقة اللعب صاروا «شوف الفيديو» و«القوانين» جنب بعض. «القوانين» تفتح صفحة قوانين جديدة، وأزرار أقسامها ثابتة فوق: تضغطون على أي قسم ويوديكم له. وفريقنا يقدر يحدّث كلامها.
+- الانتقال بين الصفحات صار انزلاقة بسيطة، عشان الصفحة ما تطلع مقسومة نصين على الآيفون. وما عاد تطلع شاشة فاضية بين صفحة وصفحة، إلا ومضة قصيرة جدًا قبل بطاقة الجولة الأخيرة، وبطاقة السؤال تبان كلماتها من أول لحظة.
+- بطاقة السؤال أكبر على الجوالات الطويلة، والسؤال القصير تبقى صورته معه.
+- الترتيب: علامة ½ صارت بعد الرقم («192½»)، وأرقام المراكز ما عادت تلزق في الأسماء، والمنصة مرتّبة. وصفّكم يبان كامل فوق شريط التفاعلات أول ما تنفتح صفحة الترتيب، في كل جولة وحتى مع أكبر حجم خط.
+- صفحة المراجعة: نقاط كل جواب («1 نقطة» أو «10 نقاط») في سطر واحد. وعنوان «الجولة 3 من 10» فوق صفحة السؤال يبان كامل.
+- الردهة: لما تمتلي اللمّة والزعيم ما عنده بلس، بطاقة بلس تطلع فوق الأزرار اللي تحت، والأعضاء يطلعون اثنين اثنين في كل صف. علامة «الزعيم» تطلع على طرف صورته لما ما يكفي المكان جنب الاسم، ورمز اللمّة يبان كامل في سطر واحد. والكلام على شريط وقت اللمّة يبان كامل على سطر أو سطرين، وعلى الجوالات الصغيرة يبقى الوقت بس.
+- نتائج الجولة: صورة الزعيم ما عادت مكبّرة. وفي «ستايلك»، قسم «خلي أفاتارك سيلفي» صار تحت في آخر الصفحة.
+- الشريط اللي فوق أثناء اللعب: لما تكثر فيه أزرار الزعيم، زر المحادثة الصوتية يصير أيقونة بس، عشان كلمة «لمَّتنا» تبان كاملة.
+- نهاية اللمّة: بطاقة «إنجاز جديد» تطلع تحت شريط الفائز بدل ما تغطيه.
+- مراجعة الزعيم: في الأسئلة المفتوحة، بطاقة «مرجع الإجابة» صارت تعرض قاعدة القبول بدل ما تطلع فاضية. وفي صفحة الترتيب، رقم المركز الثالث على المنصة يبان كامل.
+- طريقة اللعب: صورة السلايد الخامس ما عادت تطلع فاضية على أندرويد، وصفحة القوانين جنب عنوانها صورة الحكم.
+- الكلام ما عاد ينقطع بالخط الكبير، خصوصًا على أندرويد: الكلمة تبقى كاملة أو تنتهي بـ«…»، وما تصغر لين ما تنقرى. تشوفون هذا في علامة «الزعيم» و«معنا» في الردهة، وأنواع اللعب في إعدادات اللمّة، وكلمة «لمَّتنا» فوق الصفحة، و«صدّ» و«دافع!»، وأرقام مربعات الرهان وأرقام الترتيب والثواني في دائرة الوقت، وأزرار المحادثة الصوتية وصفحة التلفزيون. واسمكم في الرئيسية يبقى كامل (الاسم الطويل ينزل على سطرين)، وشارة ترتيبكم جنبه لما يكفي المكان، وعلى الجوالات الصغيرة الشارة تختفي أول قبل ما ينزل الاسم لسطر ثاني.
+- صفحة الاسم: زر «احفظ اسمي» صار في آخر صف من الكيبورد، فتحفظون الاسم والكيبورد مفتوح بدون ما تضغطون «تم». سطر الخطأ صار واضح دايم، و«ألغِ الحذف» يبان بدون تمرير، وفي صفحة الحساب للضيف «اختار اسمك» تطلع مرة وحدة.
+- اللمس صار أسهل والشكل نفسه: اللمسة بين حرفين في الكيبورد أو بين مربعات الرهان تروح لأقرب واحد، والأزرار الصغيرة صارت مساحة لمسها أكبر: خيارات الأجوبة، تبويبات لوحة اللمّات، زر الكتم وزر الإغلاق في المحادثة الصوتية، زر المشاركة في سجل اللمّات، والروابط اللي تحت في الإعدادات. وفي الإعدادات تقدرون تضغطون على أي مكان في الصف عشان تشغّلونه أو تطفّونه، بنفس صوت المفتاح، ولما تفعّلون الاهتزاز يهتز الجوال مرة وحدة.
+- إعدادات اللمّة: على الجوالات العادية رجعت بطاقات العدد كل وحدة لحالها مع صور أنواع اللعب، وعلى الجوالات الصغيرة أسماء أنواع اللعب تنكتب كاملة على سطرين. وفي الردهة، الوقت الباقي على شريط وقت اللمّة يبان كامل دايم. وإذا زرّين جنب بعض ما يكفيهم المكان (مثل تأكيد حذف بياناتي أو الخروج من اللمّة) ينزلون تحت بعض بعرض الصفحة. وعلامة «معك» في صفحة العزيمة تعرف أصحابكم من حسابهم مو من اسمهم بس.
+ما خلصناها في هذي النسخة:
+- لما تنزّلون التطبيق من رابط عزيمة، يطلع لكم اسم وصورة اللي عزمكم. هذا يشتغل بعد ما تتحدّث صفحة الرابط، ويوصل مع تحديث المتجر الجاي (1.0.1).
+- صياغة الأسئلة الجديدة («نوافق على» بدل «اقبل» و«تُقبل»، وتصحيح إملاء كم كلمة مثل «زيلوفون») توصل لأسئلتكم مع تحديث المتجر الجاي (1.0.1).
+- على Chromecast تطلع شاشة التلفزيون بالشكل القديم لين تحديث المتجر الجاي (1.0.1). الشكل الجديد يبان لما تفتحون صفحة التلفزيون من متصفّح التلفزيون وتكتبون رمز اللمّة.
+- بعض حسابات ولمّات التجربة القديمة باقية على سيرفر التجربة.
+- تصليحات السيرفر لنسخة المتجر تجي مع تحديث المتجر الجاي (1.0.1).
+- نُسخ التجربة تنتقل لسيرفر التجربة مع تحديث المتجر الجاي (1.0.1).
+- زر Google في بطاقة الحساب للضيف لازق بطرف البطاقة تحت على بعض الجوالات.
+- بعد ما تختارون «أدير اللعب بس» في إعدادات اللمّة، يطلع فراغ فوق «والزعيم؟».
+- قبل بطاقة الجولة الأخيرة تطلع ومضة فاضية قصيرة جدًا، وبعض صفوف الأجوبة والصور تتأخر لحظة بسيطة بعد ما تنفتح الصفحة.
+- شارة الترتيب في الرئيسية أحيانًا تختفي حتى لو فيه مكان لها جنب الاسم.
+- على الآيفون ما جرّبناها على جهاز حقيقي: الصوت مع زر الصامت، الكيبورد، البث على Chromecast، وإشعار الهدية، والانتقال بين الصفحات وأنتم ما تلمسون الشاشة. جرّبوها وقولوا لنا.
+
+Lammatna 0.19
+- Rules: under every slide in How to play, «شوف الفيديو» and «القوانين» now sit side by side. «القوانين» opens a new rulebook page; its section buttons stay pinned at the top, tap one to jump to that section. Our team can update its words.
+- Page changes are now a simple slide, so a page no longer arrives in halves on iPhone. No blank frame shows between two pages, except a very short flash before the last-round card, and the question card shows its words from the first moment.
+- The question card is bigger on tall phones, and a short question keeps its picture.
+- Ranking: the ½ now comes after the number («192½»), place numbers no longer touch the names, and the podium is tidied. Your own row shows whole above the reactions bar as soon as the ranking page opens, every round, also at the biggest text size.
+- Answer review: each answer's points («1 نقطة» or «10 نقاط») stay on one line. The «الجولة 3 من 10» title on the question page shows whole.
+- Lobby: when the lamma is full and the host has no Plus, the Plus card sits just above the buttons at the bottom of the page, and members show in even rows of two. The «الزعيم» tag sits on the edge of the host's picture when there is no room beside the name, and the room code shows whole on one line. The words on the lamma time ribbon show whole on one or two lines; on small phones only the time shows.
+- Round results: the host's picture is no longer zoomed in. In Your style, the «خلي أفاتارك سيلفي» section is now at the bottom of the page.
+- Top bar during the game: when the host's top bar is full, the voice chat button shows as an icon only, so the «لمَّتنا» word shows whole.
+- End of the lamma: the «إنجاز جديد» achievement card shows under the winner band instead of covering it.
+- Host's answer review: on open questions the «مرجع الإجابة» card now shows the rule for accepting answers instead of an empty bar. On the ranking page the 3rd-place number on the podium shows whole.
+- How to play: slide 5 no longer shows an empty picture box on Android, and the rulebook page has a judge picture beside its title.
+- Text no longer gets cut at big text sizes, above all on Android: a word stays whole or ends with «…», and never shrinks below a readable size. You can see it in the «الزعيم» and «معنا» tags in the lobby, the game types in room setup, the «لمَّتنا» word at the top of the page, «صدّ» and «دافع!», the numbers in the bet boxes, the ranking numbers and the seconds in the ring, the voice chat buttons and the TV sheet. Your name on Home stays whole (a long name goes on two lines) and your rank badge sits beside it when there is room; on small phones the badge hides first, before a name moves to a second line.
+- Name page: «احفظ اسمي» is now the last-row key of the keyboard, so you save your name with the keyboard open, no «تم» first. The error line is always clear, «ألغِ الحذف» shows without scrolling, and the guest account sheet shows «اختار اسمك» only once.
+- Easier taps with the same look: a tap between two keys of the keyboard or between two bet boxes goes to the nearest one, and small buttons got a bigger touch area: answer options, the lamma board tabs, the mute and close buttons in voice chat, the share button in the lamma history, and the links at the bottom of Settings. In Settings you can tap anywhere on a row to turn it on or off, with the same switch sound; turning vibration on gives one buzz.
+- Room setup: on regular phones the number cards are back on their own with the game type pictures; on small phones the game type names show whole on two lines. In the lobby the time left on the time ribbon always stays whole. When two buttons side by side do not fit (like confirming delete-my-data or leaving the lamma), they stack full width. The «معك» tag on the invite sheet knows your friends by their account, not only by their name.
+Not finished in this version:
+- When you install from an invite link, the name and picture of who invited you show once the link page is updated, with the next store update (1.0.1).
+- The new question wording («نوافق على» in place of «اقبل» and «تُقبل», and a few spelling fixes like «زيلوفون») reaches your questions with the next store update (1.0.1).
+- On a Chromecast the TV still shows the older TV page until the next store update (1.0.1); the new look shows when you open the TV page in the TV's browser with the code.
+- Some old test accounts and test lammas are still on the test server.
+- Server fixes for the store app come with the next store update (1.0.1).
+- Test builds move to the test server with the next store update (1.0.1).
+- The Google button on the guest profile card touches the card's bottom edge on some phones.
+- After picking «أدير اللعب بس» in room setup, a gap shows above «والزعيم؟».
+- A very short blank flash shows before the last-round card, and some answer rows and pictures land a moment after their page.
+- The Home rank badge sometimes hides even when there is room for it beside the name.
+- On iPhone, not tried on a real phone yet: voice with the silent switch, the keyboard, casting to a Chromecast, the gift notification, and page changes with no touch: please try them and tell us.
